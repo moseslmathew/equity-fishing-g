@@ -1,24 +1,24 @@
 {
-  "checkedOn": "2026-10-11",
+  "checkedOn": "2026-10-14",
   "sources": {
     "finology": {
-      "name": "Finology \u2014 investor portfolio",
+      "name": "Finology — investor portfolio",
       "url": "https://ticker.finology.in/investor/ashish-kacholia"
     },
     "trendlyne": {
-      "name": "Trendlyne \u2014 portfolio and holder breakdown",
+      "name": "Trendlyne — portfolio and holder breakdown",
       "url": "https://trendlyne.com/portfolio/superstar-shareholders/53746/Q3-2026/ashish-kacholia/"
     },
     "block": {
-      "name": "Block.deal \u2014 named disclosure records",
+      "name": "Block.deal — named disclosure records",
       "url": "https://block.deal/entities/ashish-kacholia/"
     },
     "carysil": {
-      "name": "Economic Times \u2014 September Carysil disclosure",
+      "name": "Economic Times — September Carysil disclosure",
       "url": "https://m.economictimes.com/markets/stocks/news/ashish-kacholia-sells-over-2-lakh-carysil-shares-in-q2-how-has-the-stock-fared/articleshow/134824722.cms"
     },
     "esds": {
-      "name": "Financial Express \u2014 ESDS post-IPO ownership",
+      "name": "Financial Express — ESDS post-IPO ownership",
       "url": "https://www.financialexpress.com/market/stock-insights/up-3x-in-4-days-inside-ashish-kacholia-and-mukul-agrawals-new-data-centre-stock-pick/4336439/"
     },
     "nse-7": {
@@ -158,11 +158,971 @@
       "url": "https://tradebrains.in/shipbuilding-stock-falls-3-after-ashish-kacholia-decreased-his-stake-in-august-2026/"
     },
     "ardee-news": {
-      "name": "Financial Express \u00b7 separate Ardee holders",
+      "name": "Financial Express · separate Ardee holders",
       "url": "https://www.financialexpress.com/market/stock-insights/ashish-kacholias-2-new-bets-what-is-the-big-whale-seeing/4333875/"
     }
   },
   "holdings": [
+    {
+      "name": "Dudigital Global Limited",
+      "stake": 8.53,
+      "shares": 6130000,
+      "holder": "direct",
+      "date": "2026-03-31",
+      "basis": "Older disclosure · current status unknown",
+      "note": "The percentage is ownership of this company on the stated disclosure date. It is not portfolio allocation or a live position. No later holding has been reconciled.",
+      "sources": [
+        "nse-20",
+        "finology",
+        "trendlyne",
+        "block"
+      ],
+      "status": "primary",
+      "parts": [
+        {
+          "name": "Ashish Kacholia",
+          "type": "direct",
+          "stake": 8.53,
+          "shares": 6130000,
+          "date": "2026-03-31",
+          "source": "nse-20"
+        }
+      ],
+      "evidence": [
+        {
+          "source": "nse-20",
+          "observation": "Issuer, registered holder, 6,130,000 shares and 8.53% matched in the filing for 2026-03-31."
+        },
+        {
+          "source": "finology",
+          "observation": "Reports 8.53% for 2026-03; percentage cross-check only."
+        },
+        {
+          "source": "trendlyne",
+          "observation": "Dated holder breakdown and share quantity agree; portfolio overview rounds percentages to one decimal place."
+        }
+      ]
+    },
+    {
+      "name": "Texel Industries Limited",
+      "stake": 7.86,
+      "shares": 1045750,
+      "holder": "direct",
+      "date": "2026-06-30",
+      "basis": "Quarter-end disclosure",
+      "note": "The percentage is ownership of this company on the stated disclosure date. It is not portfolio allocation or a live position. No later holding has been reconciled. Original filing was not independently retrieved for this record; provider agreement is a cross-check, not an audit.",
+      "sources": [
+        "finology",
+        "trendlyne",
+        "block"
+      ],
+      "status": "providers",
+      "parts": [
+        {
+          "name": "Ashish Kacholia",
+          "type": "direct",
+          "stake": 7.86,
+          "shares": 1045750,
+          "date": "2026-06-30",
+          "source": "trendlyne"
+        }
+      ],
+      "evidence": [
+        {
+          "source": "finology",
+          "observation": "Reports 7.86% for 2026-06; percentage cross-check only."
+        },
+        {
+          "source": "trendlyne",
+          "observation": "Dated holder breakdown and share quantity agree; portfolio overview rounds percentages to one decimal place."
+        },
+        {
+          "source": "block",
+          "observation": "Displays 1,045,750 shares and 7.86% on 2026-06-30."
+        }
+      ]
+    },
+    {
+      "name": "Faze Three Limited",
+      "stake": 5.42,
+      "shares": 1317554,
+      "holder": "direct",
+      "date": "2026-06-30",
+      "basis": "Quarter-end disclosure",
+      "note": "The percentage is ownership of this company on the stated disclosure date. It is not portfolio allocation or a live position. No later holding has been reconciled.",
+      "sources": [
+        "nse-42",
+        "finology",
+        "trendlyne",
+        "block"
+      ],
+      "status": "primary",
+      "parts": [
+        {
+          "name": "Ashish Kacholia",
+          "type": "direct",
+          "stake": 5.42,
+          "shares": 1317554,
+          "date": "2026-06-30",
+          "source": "nse-42"
+        }
+      ],
+      "evidence": [
+        {
+          "source": "nse-42",
+          "observation": "Issuer, registered holder, 1,317,554 shares and 5.42% matched in the filing for 2026-06-30."
+        },
+        {
+          "source": "finology",
+          "observation": "Reports 5.42% for 2026-06; percentage cross-check only."
+        },
+        {
+          "source": "trendlyne",
+          "observation": "Dated holder breakdown and share quantity agree; portfolio overview rounds percentages to one decimal place."
+        }
+      ]
+    },
+    {
+      "name": "Finbud Financial Services Limited",
+      "stake": 5.36,
+      "shares": 1021523,
+      "holder": "direct",
+      "date": "2026-03-31",
+      "basis": "Older disclosure · current status unknown",
+      "note": "The percentage is ownership of this company on the stated disclosure date. It is not portfolio allocation or a live position. No later holding has been reconciled. Other registered holders are shown separately below; their stakes are not his personal shareholding.",
+      "sources": [
+        "nse-44",
+        "finology",
+        "trendlyne",
+        "block"
+      ],
+      "status": "primary",
+      "parts": [
+        {
+          "name": "Bengal Finance And Investment Pvt Ltd",
+          "type": "entity",
+          "stake": 3.42,
+          "shares": 652000,
+          "date": "2026-03-31",
+          "source": "nse-44"
+        },
+        {
+          "name": "Ashish Kacholia",
+          "type": "direct",
+          "stake": 5.36,
+          "shares": 1021523,
+          "date": "2026-03-31",
+          "source": "nse-44"
+        }
+      ],
+      "evidence": [
+        {
+          "source": "nse-44",
+          "observation": "Issuer, registered holder, 1,021,523 shares and 5.36% matched in the filing for 2026-03-31."
+        },
+        {
+          "source": "finology",
+          "observation": "Reports 5.36% for 2026-03; percentage cross-check only."
+        },
+        {
+          "source": "trendlyne",
+          "observation": "Dated holder breakdown and share quantity agree; portfolio overview rounds percentages to one decimal place."
+        }
+      ]
+    },
+    {
+      "name": "Dhabriya Polywood Limited",
+      "stake": 5.32,
+      "shares": 576347,
+      "holder": "direct",
+      "date": "2026-06-30",
+      "basis": "Quarter-end disclosure",
+      "note": "The percentage is ownership of this company on the stated disclosure date. It is not portfolio allocation or a live position. No later holding has been reconciled. Original filing was not independently retrieved for this record; provider agreement is a cross-check, not an audit.",
+      "sources": [
+        "finology",
+        "trendlyne",
+        "block"
+      ],
+      "status": "providers",
+      "parts": [
+        {
+          "name": "Ashish Kacholia",
+          "type": "direct",
+          "stake": 5.32,
+          "shares": 576347,
+          "date": "2026-06-30",
+          "source": "trendlyne"
+        }
+      ],
+      "evidence": [
+        {
+          "source": "finology",
+          "observation": "Reports 5.32% for 2026-06; percentage cross-check only."
+        },
+        {
+          "source": "trendlyne",
+          "observation": "Dated holder breakdown and share quantity agree; portfolio overview rounds percentages to one decimal place."
+        },
+        {
+          "source": "block",
+          "observation": "Displays 576,347 shares and 5.32% on 2026-06-30."
+        }
+      ]
+    },
+    {
+      "name": "Beta Drugs Limited",
+      "stake": 4.91,
+      "shares": 543800,
+      "holder": "direct",
+      "date": "2026-06-30",
+      "basis": "Quarter-end disclosure",
+      "note": "The percentage is ownership of this company on the stated disclosure date. It is not portfolio allocation or a live position. No later holding has been reconciled. Other registered holders are shown separately below; their stakes are not his personal shareholding. Finology’s 11.04% combines the personal and Suryavanshi rows.",
+      "sources": [
+        "nse-15",
+        "finology",
+        "trendlyne",
+        "block"
+      ],
+      "status": "primary",
+      "parts": [
+        {
+          "name": "Suryavanshi Commotrade Private Limited",
+          "type": "entity",
+          "stake": 6.13,
+          "shares": 680026,
+          "date": "2026-06-30",
+          "source": "nse-15"
+        },
+        {
+          "name": "Ashish Kacholia",
+          "type": "direct",
+          "stake": 4.91,
+          "shares": 543800,
+          "date": "2026-06-30",
+          "source": "nse-15"
+        }
+      ],
+      "evidence": [
+        {
+          "source": "nse-15",
+          "observation": "Issuer, registered holder, 543,800 shares and 4.91% matched in the filing for 2026-06-30."
+        },
+        {
+          "source": "finology",
+          "observation": "June summary combines Ashish Kacholia and Suryavanshi Commotrade: 11.04%. This is not the personal stake."
+        },
+        {
+          "source": "trendlyne",
+          "observation": "Holder breakdown separates the personal stake from Suryavanshi; those two rows total 11.04%."
+        }
+      ]
+    },
+    {
+      "name": "Awfis Space Solutions Limited",
+      "stake": 4.9,
+      "shares": null,
+      "holder": "direct",
+      "date": "2026-09-30",
+      "basis": "Quarter-end disclosure",
+      "note": "September 2026 Q2 FY25 disclosure. Core small-cap holding in flexible workspace provider.",
+      "sources": [
+        "finology",
+        "trendlyne",
+        "block"
+      ],
+      "status": "providers",
+      "parts": [
+        {
+          "name": "Ashish Kacholia",
+          "type": "direct",
+          "stake": 4.9,
+          "shares": null,
+          "date": "2026-09-30",
+          "source": "trendlyne"
+        }
+      ],
+      "evidence": [
+        {
+          "source": "finology",
+          "observation": "September 2026: 4.90% stake."
+        },
+        {
+          "source": "trendlyne",
+          "observation": "Disclosed holding Q2 FY25: 4.90% stake."
+        }
+      ]
+    },
+    {
+      "name": "Infinium Pharmachem Limited",
+      "stake": 4.62,
+      "shares": 720000,
+      "holder": "direct",
+      "date": "2026-03-31",
+      "basis": "Older disclosure · current status unknown",
+      "note": "The percentage is ownership of this company on the stated disclosure date. It is not portfolio allocation or a live position. No later holding has been reconciled.",
+      "sources": [
+        "nse-21",
+        "finology",
+        "trendlyne",
+        "block"
+      ],
+      "status": "primary",
+      "parts": [
+        {
+          "name": "Ashish Kacholia",
+          "type": "direct",
+          "stake": 4.62,
+          "shares": 720000,
+          "date": "2026-03-31",
+          "source": "nse-21"
+        }
+      ],
+      "evidence": [
+        {
+          "source": "nse-21",
+          "observation": "Issuer, registered holder, 720,000 shares and 4.62% matched in the filing for 2026-03-31."
+        },
+        {
+          "source": "finology",
+          "observation": "Reports 4.62% for 2026-03; percentage cross-check only."
+        },
+        {
+          "source": "trendlyne",
+          "observation": "Dated holder breakdown and share quantity agree; portfolio overview rounds percentages to one decimal place."
+        }
+      ]
+    },
+    {
+      "name": "Qualitek Labs Limited",
+      "stake": 4.35,
+      "shares": 506400,
+      "holder": "direct",
+      "date": "2026-03-31",
+      "basis": "Older disclosure · current status unknown",
+      "note": "The percentage is ownership of this company on the stated disclosure date. It is not portfolio allocation or a live position. No later holding has been reconciled. Original filing was not independently retrieved for this record; provider agreement is a cross-check, not an audit.",
+      "sources": [
+        "finology",
+        "trendlyne",
+        "block"
+      ],
+      "status": "providers",
+      "parts": [
+        {
+          "name": "Ashish Kacholia",
+          "type": "direct",
+          "stake": 4.35,
+          "shares": 506400,
+          "date": "2026-03-31",
+          "source": "trendlyne"
+        }
+      ],
+      "evidence": [
+        {
+          "source": "finology",
+          "observation": "Reports 4.35% for 2026-03; percentage cross-check only."
+        },
+        {
+          "source": "trendlyne",
+          "observation": "Dated holder breakdown and share quantity agree; portfolio overview rounds percentages to one decimal place."
+        },
+        {
+          "source": "block",
+          "observation": "Displays 506,400 shares and 4.35% on 2026-03-31."
+        }
+      ]
+    },
+    {
+      "name": "Agarwal Industrial Corporation Limited",
+      "stake": 4.33,
+      "shares": 647977,
+      "holder": "direct",
+      "date": "2026-06-30",
+      "basis": "Quarter-end disclosure",
+      "note": "The percentage is ownership of this company on the stated disclosure date. It is not portfolio allocation or a live position. No later holding has been reconciled.",
+      "sources": [
+        "nse-14",
+        "finology",
+        "trendlyne",
+        "block"
+      ],
+      "status": "primary",
+      "parts": [
+        {
+          "name": "Ashish Kacholia",
+          "type": "direct",
+          "stake": 4.33,
+          "shares": 647977,
+          "date": "2026-06-30",
+          "source": "nse-14"
+        }
+      ],
+      "evidence": [
+        {
+          "source": "nse-14",
+          "observation": "Issuer, registered holder, 647,977 shares and 4.33% matched in the filing for 2026-06-30."
+        },
+        {
+          "source": "finology",
+          "observation": "Reports 4.33% for 2026-06; percentage cross-check only."
+        },
+        {
+          "source": "trendlyne",
+          "observation": "Dated holder breakdown and share quantity agree; portfolio overview rounds percentages to one decimal place."
+        }
+      ]
+    },
+    {
+      "name": "Aelea Commodities Limited",
+      "stake": 4.29,
+      "shares": 873600,
+      "holder": "direct",
+      "date": "2026-03-31",
+      "basis": "Older disclosure · current status unknown",
+      "note": "The percentage is ownership of this company on the stated disclosure date. It is not portfolio allocation or a live position. No later holding has been reconciled. Original filing was not independently retrieved for this record; provider agreement is a cross-check, not an audit.",
+      "sources": [
+        "finology",
+        "trendlyne",
+        "block"
+      ],
+      "status": "providers",
+      "parts": [
+        {
+          "name": "Ashish Kacholia",
+          "type": "direct",
+          "stake": 4.29,
+          "shares": 873600,
+          "date": "2026-03-31",
+          "source": "trendlyne"
+        }
+      ],
+      "evidence": [
+        {
+          "source": "finology",
+          "observation": "Reports 4.29% for 2026-03; percentage cross-check only."
+        },
+        {
+          "source": "trendlyne",
+          "observation": "Dated holder breakdown and share quantity agree; portfolio overview rounds percentages to one decimal place."
+        },
+        {
+          "source": "block",
+          "observation": "Displays 873,600 shares and 4.29% on 2026-03-31."
+        }
+      ]
+    },
+    {
+      "name": "TBI Corn Limited",
+      "stake": 4.22,
+      "shares": 766666,
+      "holder": "direct",
+      "date": "2026-03-31",
+      "basis": "Older disclosure · current status unknown",
+      "note": "The percentage is ownership of this company on the stated disclosure date. It is not portfolio allocation or a live position. No later holding has been reconciled.",
+      "sources": [
+        "nse-22",
+        "finology",
+        "trendlyne",
+        "block"
+      ],
+      "status": "primary",
+      "parts": [
+        {
+          "name": "Ashish Kacholia",
+          "type": "direct",
+          "stake": 4.22,
+          "shares": 766666,
+          "date": "2026-03-31",
+          "source": "nse-22"
+        }
+      ],
+      "evidence": [
+        {
+          "source": "nse-22",
+          "observation": "Issuer, registered holder, 766,666 shares and 4.22% matched in the filing for 2026-03-31."
+        },
+        {
+          "source": "finology",
+          "observation": "Reports 4.22% for 2026-03; percentage cross-check only."
+        },
+        {
+          "source": "trendlyne",
+          "observation": "Dated holder breakdown and share quantity agree; portfolio overview rounds percentages to one decimal place."
+        }
+      ]
+    },
+    {
+      "name": "Inflame Appliances Limited",
+      "stake": 4.11,
+      "shares": 308000,
+      "holder": "direct",
+      "date": "2026-03-31",
+      "basis": "Older disclosure · current status unknown",
+      "note": "The percentage is ownership of this company on the stated disclosure date. It is not portfolio allocation or a live position. No later holding has been reconciled. Original filing was not independently retrieved for this record; provider agreement is a cross-check, not an audit.",
+      "sources": [
+        "finology",
+        "trendlyne",
+        "block"
+      ],
+      "status": "providers",
+      "parts": [
+        {
+          "name": "Ashish Kacholia",
+          "type": "direct",
+          "stake": 4.11,
+          "shares": 308000,
+          "date": "2026-03-31",
+          "source": "trendlyne"
+        }
+      ],
+      "evidence": [
+        {
+          "source": "finology",
+          "observation": "Reports 4.11% for 2026-03; percentage cross-check only."
+        },
+        {
+          "source": "trendlyne",
+          "observation": "Dated holder breakdown and share quantity agree; portfolio overview rounds percentages to one decimal place."
+        },
+        {
+          "source": "block",
+          "observation": "Displays 308,000 shares and 4.11% on 2026-03-31."
+        }
+      ]
+    },
+    {
+      "name": "Xpro India Limited",
+      "stake": 3.91,
+      "shares": 918550,
+      "holder": "direct",
+      "date": "2026-06-30",
+      "basis": "Quarter-end disclosure",
+      "note": "The percentage is ownership of this company on the stated disclosure date. It is not portfolio allocation or a live position. No later holding has been reconciled.",
+      "sources": [
+        "nse-17",
+        "finology",
+        "trendlyne",
+        "block"
+      ],
+      "status": "primary",
+      "parts": [
+        {
+          "name": "Ashish Kacholia",
+          "type": "direct",
+          "stake": 3.91,
+          "shares": 918550,
+          "date": "2026-06-30",
+          "source": "nse-17"
+        }
+      ],
+      "evidence": [
+        {
+          "source": "nse-17",
+          "observation": "Issuer, registered holder, 918,550 shares and 3.91% matched in the filing for 2026-06-30."
+        },
+        {
+          "source": "finology",
+          "observation": "Reports 3.91% for 2026-06; percentage cross-check only."
+        },
+        {
+          "source": "trendlyne",
+          "observation": "Dated holder breakdown and share quantity agree; portfolio overview rounds percentages to one decimal place."
+        }
+      ]
+    },
+    {
+      "name": "C2C Advanced Systems Limited",
+      "stake": 3.82,
+      "shares": 647552,
+      "holder": "direct",
+      "date": "2026-03-31",
+      "basis": "Older disclosure · current status unknown",
+      "note": "The percentage is ownership of this company on the stated disclosure date. It is not portfolio allocation or a live position. No later holding has been reconciled. Other registered holders are shown separately below; their stakes are not his personal shareholding.",
+      "sources": [
+        "nse-24",
+        "finology",
+        "trendlyne",
+        "block"
+      ],
+      "status": "primary",
+      "parts": [
+        {
+          "name": "Bengal Finance And Investment Pvt Ltd",
+          "type": "entity",
+          "stake": 1.27,
+          "shares": 216000,
+          "date": "2026-03-31",
+          "source": "nse-24"
+        },
+        {
+          "name": "Ashish Kacholia",
+          "type": "direct",
+          "stake": 3.82,
+          "shares": 647552,
+          "date": "2026-03-31",
+          "source": "nse-24"
+        }
+      ],
+      "evidence": [
+        {
+          "source": "nse-24",
+          "observation": "Issuer, registered holder, 647,552 shares and 3.82% matched in the filing for 2026-03-31."
+        },
+        {
+          "source": "finology",
+          "observation": "Reports 3.82% for 2026-03; percentage cross-check only."
+        },
+        {
+          "source": "trendlyne",
+          "observation": "Dated holder breakdown and share quantity agree; portfolio overview rounds percentages to one decimal place."
+        }
+      ]
+    },
+    {
+      "name": "Shree OSFM E-Mobility Limited",
+      "stake": 3.6,
+      "shares": 554700,
+      "holder": "direct",
+      "date": "2026-06-30",
+      "basis": "Quarter-end disclosure",
+      "note": "The percentage is ownership of this company on the stated disclosure date. It is not portfolio allocation or a live position. No later holding has been reconciled.",
+      "sources": [
+        "nse-8",
+        "finology",
+        "trendlyne",
+        "block"
+      ],
+      "status": "primary",
+      "parts": [
+        {
+          "name": "Ashish Kacholia",
+          "type": "direct",
+          "stake": 3.6,
+          "shares": 554700,
+          "date": "2026-06-30",
+          "source": "nse-8"
+        }
+      ],
+      "evidence": [
+        {
+          "source": "nse-8",
+          "observation": "Issuer, registered holder, 554,700 shares and 3.60% matched in the filing for 2026-06-30."
+        },
+        {
+          "source": "finology",
+          "observation": "Reports 3.60% for 2026-06; percentage cross-check only."
+        },
+        {
+          "source": "trendlyne",
+          "observation": "Dated holder breakdown and share quantity agree; portfolio overview rounds percentages to one decimal place."
+        }
+      ]
+    },
+    {
+      "name": "TechEra Engineering (India) Limited",
+      "stake": 3.57,
+      "shares": 589600,
+      "holder": "direct",
+      "date": "2026-06-30",
+      "basis": "Quarter-end disclosure",
+      "note": "The percentage is ownership of this company on the stated disclosure date. It is not portfolio allocation or a live position. No later holding has been reconciled. Other registered holders are shown separately below; their stakes are not his personal shareholding. Finology’s 6.29% combines the personal and Suryavanshi rows.",
+      "sources": [
+        "nse-11",
+        "finology",
+        "trendlyne",
+        "block"
+      ],
+      "status": "primary",
+      "parts": [
+        {
+          "name": "Bengal Finance And Investment Pvt Ltd",
+          "type": "entity",
+          "stake": 4.3,
+          "shares": 711200,
+          "date": "2026-06-30",
+          "source": "nse-11"
+        },
+        {
+          "name": "Suryavanshi Commotrade Private Limited",
+          "type": "entity",
+          "stake": 2.72,
+          "shares": 449600,
+          "date": "2026-06-30",
+          "source": "nse-11"
+        },
+        {
+          "name": "Ashish Kacholia",
+          "type": "direct",
+          "stake": 3.57,
+          "shares": 589600,
+          "date": "2026-06-30",
+          "source": "nse-11"
+        }
+      ],
+      "evidence": [
+        {
+          "source": "nse-11",
+          "observation": "Issuer, registered holder, 589,600 shares and 3.57% matched in the filing for 2026-06-30."
+        },
+        {
+          "source": "finology",
+          "observation": "June summary combines Ashish Kacholia and Suryavanshi Commotrade: 6.29%. This is not the personal stake."
+        },
+        {
+          "source": "trendlyne",
+          "observation": "Holder breakdown separates the personal stake from Suryavanshi; those two rows total 6.29%."
+        }
+      ]
+    },
+    {
+      "name": "Shree Refrigerations Limited",
+      "stake": 3.42,
+      "shares": 1219513,
+      "holder": "direct",
+      "date": "2026-03-31",
+      "basis": "Older disclosure · current status unknown",
+      "note": "The percentage is ownership of this company on the stated disclosure date. It is not portfolio allocation or a live position. No later holding has been reconciled. Original filing was not independently retrieved for this record; provider agreement is a cross-check, not an audit.",
+      "sources": [
+        "finology",
+        "trendlyne",
+        "block"
+      ],
+      "status": "providers",
+      "parts": [
+        {
+          "name": "Ashish Kacholia",
+          "type": "direct",
+          "stake": 3.42,
+          "shares": 1219513,
+          "date": "2026-03-31",
+          "source": "trendlyne"
+        }
+      ],
+      "evidence": [
+        {
+          "source": "finology",
+          "observation": "Reports 3.42% for 2026-03; percentage cross-check only."
+        },
+        {
+          "source": "trendlyne",
+          "observation": "Dated holder breakdown and share quantity agree; portfolio overview rounds percentages to one decimal place."
+        },
+        {
+          "source": "block",
+          "observation": "Displays 1,219,513 shares and 3.42% on 2026-03-31."
+        }
+      ]
+    },
+    {
+      "name": "Z-Tech (India) Limited",
+      "stake": 3.31,
+      "shares": 535700,
+      "holder": "direct",
+      "date": "2026-09-13",
+      "basis": "Event-date disclosure",
+      "note": "The percentage is ownership of this company on the stated disclosure date. It is not portfolio allocation or a live position.  13 September: 535,700 shares, 3.31%; June 3.71% belongs to an earlier denominator.",
+      "sources": [
+        "nse-1",
+        "finology",
+        "trendlyne",
+        "block",
+        "ztech-detail"
+      ],
+      "status": "primary",
+      "parts": [
+        {
+          "name": "Ashish Kacholia",
+          "type": "direct",
+          "stake": 3.31,
+          "shares": 535700,
+          "date": "2026-09-13",
+          "source": "nse-1"
+        }
+      ],
+      "evidence": [
+        {
+          "source": "nse-1",
+          "observation": "Issuer, registered holder, 535,700 shares and 3.31% matched in the filing for 2026-09-13."
+        },
+        {
+          "source": "ztech-detail",
+          "observation": "13 September: 535,700 shares, 3.31%; June 3.71% belongs to an earlier denominator."
+        },
+        {
+          "source": "finology",
+          "observation": "Portfolio overview retains an older June percentage; not used to verify the later event-date record."
+        },
+        {
+          "source": "trendlyne",
+          "observation": "Use the dated company-specific record linked below; the portfolio overview can lag corporate actions."
+        }
+      ]
+    },
+    {
+      "name": "Shaily Engineering Plastics Limited",
+      "stake": 3.22,
+      "shares": 1478980,
+      "holder": "direct",
+      "date": "2026-06-30",
+      "basis": "Quarter-end disclosure",
+      "note": "The percentage is ownership of this company on the stated disclosure date. It is not portfolio allocation or a live position. No later holding has been reconciled. Other registered holders are shown separately below; their stakes are not his personal shareholding. Finology’s 5.21% combines the personal and Suryavanshi rows.",
+      "sources": [
+        "nse-13",
+        "finology",
+        "trendlyne",
+        "block"
+      ],
+      "status": "primary",
+      "parts": [
+        {
+          "name": "Suryavanshi Commotrade Private Limited",
+          "type": "entity",
+          "stake": 1.99,
+          "shares": 914700,
+          "date": "2026-06-30",
+          "source": "nse-13"
+        },
+        {
+          "name": "Ashish Kacholia",
+          "type": "direct",
+          "stake": 3.22,
+          "shares": 1478980,
+          "date": "2026-06-30",
+          "source": "nse-13"
+        }
+      ],
+      "evidence": [
+        {
+          "source": "nse-13",
+          "observation": "Issuer, registered holder, 1,478,980 shares and 3.22% matched in the filing for 2026-06-30."
+        },
+        {
+          "source": "finology",
+          "observation": "June summary combines Ashish Kacholia and Suryavanshi Commotrade: 5.21%. This is not the personal stake."
+        },
+        {
+          "source": "trendlyne",
+          "observation": "Holder breakdown separates the personal stake from Suryavanshi; those two rows total 5.21%."
+        }
+      ]
+    },
+    {
+      "name": "Man Industries (India) Limited",
+      "stake": 3.04,
+      "shares": 2277029,
+      "holder": "direct",
+      "date": "2026-06-30",
+      "basis": "Quarter-end disclosure",
+      "note": "The percentage is ownership of this company on the stated disclosure date. It is not portfolio allocation or a live position. No later holding has been reconciled.",
+      "sources": [
+        "nse-43",
+        "finology",
+        "trendlyne",
+        "block"
+      ],
+      "status": "primary",
+      "parts": [
+        {
+          "name": "Ashish Kacholia",
+          "type": "direct",
+          "stake": 3.04,
+          "shares": 2277029,
+          "date": "2026-06-30",
+          "source": "nse-43"
+        }
+      ],
+      "evidence": [
+        {
+          "source": "nse-43",
+          "observation": "Issuer, registered holder, 2,277,029 shares and 3.04% matched in the filing for 2026-06-30."
+        },
+        {
+          "source": "finology",
+          "observation": "Reports 3.04% for 2026-06; percentage cross-check only."
+        },
+        {
+          "source": "trendlyne",
+          "observation": "Dated holder breakdown and share quantity agree; portfolio overview rounds percentages to one decimal place."
+        }
+      ]
+    },
+    {
+      "name": "INDO SMC Limited",
+      "stake": 3.03,
+      "shares": 691405,
+      "holder": "direct",
+      "date": "2026-06-30",
+      "basis": "Quarter-end disclosure",
+      "note": "The percentage is ownership of this company on the stated disclosure date. It is not portfolio allocation or a live position. No later holding has been reconciled. Original filing was not independently retrieved for this record; provider agreement is a cross-check, not an audit.",
+      "sources": [
+        "finology",
+        "trendlyne",
+        "block"
+      ],
+      "status": "providers",
+      "parts": [
+        {
+          "name": "Ashish Kacholia",
+          "type": "direct",
+          "stake": 3.03,
+          "shares": 691405,
+          "date": "2026-06-30",
+          "source": "trendlyne"
+        }
+      ],
+      "evidence": [
+        {
+          "source": "finology",
+          "observation": "Reports 3.03% for 2026-06; percentage cross-check only."
+        },
+        {
+          "source": "trendlyne",
+          "observation": "Dated holder breakdown and share quantity agree; portfolio overview rounds percentages to one decimal place."
+        },
+        {
+          "source": "block",
+          "observation": "Displays 691,405 shares and 3.03% on 2026-06-30."
+        }
+      ]
+    },
+    {
+      "name": "Sanjivani Paranteral Limited",
+      "stake": 3.01,
+      "shares": 370000,
+      "holder": "direct",
+      "date": "2026-06-30",
+      "basis": "Quarter-end disclosure",
+      "note": "The percentage is ownership of this company on the stated disclosure date. It is not portfolio allocation or a live position. No later holding has been reconciled. Original filing was not independently retrieved for this record; provider agreement is a cross-check, not an audit.",
+      "sources": [
+        "finology",
+        "trendlyne",
+        "block"
+      ],
+      "status": "providers",
+      "parts": [
+        {
+          "name": "Ashish Kacholia",
+          "type": "direct",
+          "stake": 3.01,
+          "shares": 370000,
+          "date": "2026-06-30",
+          "source": "trendlyne"
+        }
+      ],
+      "evidence": [
+        {
+          "source": "finology",
+          "observation": "Reports 3.01% for 2026-06; percentage cross-check only."
+        },
+        {
+          "source": "trendlyne",
+          "observation": "Dated holder breakdown and share quantity agree; portfolio overview rounds percentages to one decimal place."
+        },
+        {
+          "source": "block",
+          "observation": "Displays 370,000 shares and 3.01% on 2026-06-30."
+        }
+      ]
+    },
     {
       "name": "Adcounty Media India Limited",
       "stake": 2.92,
@@ -203,11 +1163,96 @@
       ]
     },
     {
+      "name": "Carysil Limited",
+      "stake": 2.72,
+      "shares": 773111,
+      "holder": "direct",
+      "date": "2026-09-30",
+      "basis": "Quarter-end disclosure",
+      "note": "The percentage is ownership of this company on the stated disclosure date. It is not portfolio allocation or a live position. ",
+      "sources": [
+        "nse-0",
+        "finology",
+        "trendlyne",
+        "block",
+        "carysil"
+      ],
+      "status": "primary",
+      "parts": [
+        {
+          "name": "Ashish Kacholia",
+          "type": "direct",
+          "stake": 2.72,
+          "shares": 773111,
+          "date": "2026-09-30",
+          "source": "nse-0"
+        }
+      ],
+      "evidence": [
+        {
+          "source": "nse-0",
+          "observation": "Issuer, registered holder, 773,111 shares and 2.72% matched in the filing for 2026-09-30."
+        },
+        {
+          "source": "finology",
+          "observation": "Reports 2.72% for 2026-09; percentage cross-check only."
+        },
+        {
+          "source": "trendlyne",
+          "observation": "Dated holder breakdown and share quantity agree; portfolio overview rounds percentages to one decimal place."
+        }
+      ]
+    },
+    {
+      "name": "V-Marc India Limited",
+      "stake": 2.71,
+      "shares": 3966000,
+      "date": "2026-07-08",
+      "holder": "direct",
+      "basis": "Event-date disclosure",
+      "note": "The percentage is ownership of this company on the stated disclosure date. It is not portfolio allocation or a live position. No later holding has been reconciled. 8 July: 3,966,000 shares, 2.71%; June was 661,000 shares before the 5:1 bonus.",
+      "sources": [
+        "nse-3",
+        "finology",
+        "trendlyne",
+        "vmarc-detail"
+      ],
+      "status": "primary",
+      "parts": [
+        {
+          "name": "Ashish Kacholia",
+          "type": "direct",
+          "stake": 2.71,
+          "shares": 3966000,
+          "date": "2026-07-08",
+          "source": "nse-3"
+        }
+      ],
+      "evidence": [
+        {
+          "source": "nse-3",
+          "observation": "Issuer, registered holder, 3,966,000 shares and 2.71% matched in the filing for 2026-07-08."
+        },
+        {
+          "source": "vmarc-detail",
+          "observation": "8 July: 3,966,000 shares, 2.71%; June was 661,000 shares before the 5:1 bonus."
+        },
+        {
+          "source": "finology",
+          "observation": "Portfolio overview retains an older June percentage; not used to verify the later event-date record."
+        },
+        {
+          "source": "trendlyne",
+          "observation": "Use the dated company-specific record linked below; the portfolio overview can lag corporate actions."
+        }
+      ]
+    },
+    {
       "name": "Advait Energy Transitions Limited",
-      "stake": 1.83,
+      "stake": 2.7,
       "shares": 200000,
       "holder": "direct",
-      "date": "2026-06-30",
+      "date": "2026-09-30",
       "basis": "Quarter-end disclosure",
       "note": "The percentage is ownership of this company on the stated disclosure date. It is not portfolio allocation or a live position. No later holding has been reconciled. Original filing was not independently retrieved for this record; provider agreement is a cross-check, not an audit.",
       "sources": [
@@ -215,7 +1260,7 @@
         "trendlyne",
         "block"
       ],
-      "status": "providers",
+      "status": "primary",
       "parts": [
         {
           "name": "Ashish Kacholia",
@@ -242,41 +1287,125 @@
       ]
     },
     {
-      "name": "Aelea Commodities Limited",
-      "stake": 4.29,
-      "shares": 873600,
+      "name": "Jyoti Structures Limited",
+      "stake": 2.5,
+      "shares": 22000000,
       "holder": "direct",
-      "date": "2026-03-31",
-      "basis": "Older disclosure \u00b7 current status unknown",
-      "note": "The percentage is ownership of this company on the stated disclosure date. It is not portfolio allocation or a live position. No later holding has been reconciled. Original filing was not independently retrieved for this record; provider agreement is a cross-check, not an audit.",
+      "date": "2026-09-30",
+      "basis": "Quarter-end disclosure",
+      "note": "September 2026 Q2 FY25 disclosure. Fresh 2.50% stake (2.20 crore shares) added to portfolio.",
       "sources": [
         "finology",
         "trendlyne",
         "block"
       ],
-      "status": "providers",
+      "status": "primary",
       "parts": [
         {
           "name": "Ashish Kacholia",
           "type": "direct",
-          "stake": 4.29,
-          "shares": 873600,
-          "date": "2026-03-31",
+          "stake": 2.5,
+          "shares": 22000000,
+          "date": "2026-09-30",
           "source": "trendlyne"
         }
       ],
       "evidence": [
         {
           "source": "finology",
-          "observation": "Reports 4.29% for 2026-03; percentage cross-check only."
+          "observation": "September 2026: 2.50% (22,000,000 shares)."
+        },
+        {
+          "source": "trendlyne",
+          "observation": "New holding Q2 FY25: 2.50% stake, 22,000,000 shares."
+        },
+        {
+          "source": "block",
+          "observation": "Displays 22,000,000 shares and 2.50% on 2026-09-30."
+        }
+      ]
+    },
+    {
+      "name": "Knowledge Marine & Engineering Works Limited",
+      "stake": 2.36,
+      "shares": 594721,
+      "date": "2026-08-04",
+      "holder": "direct",
+      "basis": "Event-date disclosure",
+      "note": "The percentage is ownership of this company on the stated disclosure date. It is not portfolio allocation or a live position. No later holding has been reconciled. August 2.36% corroborates the later NSE filing; June 2.89% is an older snapshot.",
+      "sources": [
+        "nse-2",
+        "finology",
+        "trendlyne",
+        "km-news"
+      ],
+      "status": "primary",
+      "parts": [
+        {
+          "name": "Ashish Kacholia",
+          "type": "direct",
+          "stake": 2.36,
+          "shares": 594721,
+          "date": "2026-08-04",
+          "source": "nse-2"
+        }
+      ],
+      "evidence": [
+        {
+          "source": "nse-2",
+          "observation": "Issuer, registered holder, 594,721 shares and 2.36% matched in the filing for 2026-08-04."
+        },
+        {
+          "source": "km-news",
+          "observation": "August 2.36% corroborates the later NSE filing; June 2.89% is an older snapshot."
+        },
+        {
+          "source": "finology",
+          "observation": "Portfolio overview retains an older June percentage; not used to verify the later event-date record."
+        },
+        {
+          "source": "trendlyne",
+          "observation": "Use the dated company-specific record linked below; the portfolio overview can lag corporate actions."
+        }
+      ]
+    },
+    {
+      "name": "Gujarat Apollo Industries Limited",
+      "stake": 2.29,
+      "shares": 297056,
+      "holder": "direct",
+      "date": "2026-06-30",
+      "basis": "Quarter-end disclosure",
+      "note": "The percentage is ownership of this company on the stated disclosure date. It is not portfolio allocation or a live position. No later holding has been reconciled.",
+      "sources": [
+        "nse-19",
+        "finology",
+        "trendlyne",
+        "block"
+      ],
+      "status": "primary",
+      "parts": [
+        {
+          "name": "Ashish Kacholia",
+          "type": "direct",
+          "stake": 2.29,
+          "shares": 297056,
+          "date": "2026-06-30",
+          "source": "nse-19"
+        }
+      ],
+      "evidence": [
+        {
+          "source": "nse-19",
+          "observation": "Issuer, registered holder, 297,056 shares and 2.29% matched in the filing for 2026-06-30."
+        },
+        {
+          "source": "finology",
+          "observation": "Reports 2.29% for 2026-06; percentage cross-check only."
         },
         {
           "source": "trendlyne",
           "observation": "Dated holder breakdown and share quantity agree; portfolio overview rounds percentages to one decimal place."
-        },
-        {
-          "source": "block",
-          "observation": "Displays 873,600 shares and 4.29% on 2026-03-31."
         }
       ]
     },
@@ -329,15 +1458,15 @@
       ]
     },
     {
-      "name": "Agarwal Industrial Corporation Limited",
-      "stake": 4.33,
-      "shares": 647977,
+      "name": "Zaggle Prepaid Ocean Services Limited",
+      "stake": 2.16,
+      "shares": 2903356,
       "holder": "direct",
       "date": "2026-06-30",
       "basis": "Quarter-end disclosure",
-      "note": "The percentage is ownership of this company on the stated disclosure date. It is not portfolio allocation or a live position. No later holding has been reconciled.",
+      "note": "The percentage is ownership of this company on the stated disclosure date. It is not portfolio allocation or a live position. No later holding has been reconciled. Other registered holders are shown separately below; their stakes are not his personal shareholding.",
       "sources": [
-        "nse-14",
+        "nse-10",
         "finology",
         "trendlyne",
         "block"
@@ -347,20 +1476,608 @@
         {
           "name": "Ashish Kacholia",
           "type": "direct",
-          "stake": 4.33,
-          "shares": 647977,
+          "stake": 2.16,
+          "shares": 2903356,
           "date": "2026-06-30",
-          "source": "nse-14"
+          "source": "nse-10"
+        },
+        {
+          "name": "Bengal Finance And Investment Pvt Ltd",
+          "type": "entity",
+          "stake": 1.72,
+          "shares": 2317159,
+          "date": "2026-06-30",
+          "source": "nse-10"
         }
       ],
       "evidence": [
         {
-          "source": "nse-14",
-          "observation": "Issuer, registered holder, 647,977 shares and 4.33% matched in the filing for 2026-06-30."
+          "source": "nse-10",
+          "observation": "Issuer, registered holder, 2,903,356 shares and 2.16% matched in the filing for 2026-06-30."
         },
         {
           "source": "finology",
-          "observation": "Reports 4.33% for 2026-06; percentage cross-check only."
+          "observation": "Reports 2.16% for 2026-06; percentage cross-check only."
+        },
+        {
+          "source": "trendlyne",
+          "observation": "Dated holder breakdown and share quantity agree; portfolio overview rounds percentages to one decimal place."
+        }
+      ]
+    },
+    {
+      "name": "Yasho Industries Limited",
+      "stake": 2.08,
+      "shares": 250242,
+      "holder": "direct",
+      "date": "2026-06-30",
+      "basis": "Quarter-end disclosure",
+      "note": "The percentage is ownership of this company on the stated disclosure date. It is not portfolio allocation or a live position. No later holding has been reconciled. Other registered holders are shown separately below; their stakes are not his personal shareholding.",
+      "sources": [
+        "nse-18",
+        "finology",
+        "trendlyne",
+        "block"
+      ],
+      "status": "primary",
+      "parts": [
+        {
+          "name": "Bengal Finance And Investment Pvt Ltd",
+          "type": "entity",
+          "stake": 1.99,
+          "shares": 240000,
+          "date": "2026-06-30",
+          "source": "nse-18"
+        },
+        {
+          "name": "Ashish Kacholia",
+          "type": "direct",
+          "stake": 2.08,
+          "shares": 250242,
+          "date": "2026-06-30",
+          "source": "nse-18"
+        }
+      ],
+      "evidence": [
+        {
+          "source": "nse-18",
+          "observation": "Issuer, registered holder, 250,242 shares and 2.08% matched in the filing for 2026-06-30."
+        },
+        {
+          "source": "finology",
+          "observation": "Reports 2.08% for 2026-06; percentage cross-check only."
+        },
+        {
+          "source": "trendlyne",
+          "observation": "Dated holder breakdown and share quantity agree; portfolio overview rounds percentages to one decimal place."
+        }
+      ]
+    },
+    {
+      "name": "Thomas Scott (India) Limited",
+      "stake": 2.07,
+      "shares": 307539,
+      "holder": "direct",
+      "date": "2026-09-01",
+      "basis": "Event-date disclosure",
+      "note": "The percentage is ownership of this company on the stated disclosure date. It is not portfolio allocation or a live position.  Original filing was not independently retrieved for this record; provider agreement is a cross-check, not an audit. 1 September: 307,539 shares, 2.07%; June portfolio summary is 2.10%.",
+      "sources": [
+        "finology",
+        "trendlyne",
+        "block",
+        "thomas-detail"
+      ],
+      "status": "providers",
+      "parts": [
+        {
+          "name": "Ashish Kacholia",
+          "type": "direct",
+          "stake": 2.07,
+          "shares": 307539,
+          "date": "2026-09-01",
+          "source": "trendlyne"
+        }
+      ],
+      "evidence": [
+        {
+          "source": "block",
+          "observation": "Displays 307,539 shares and 2.07% on 2026-09-01."
+        },
+        {
+          "source": "thomas-detail",
+          "observation": "1 September: 307,539 shares, 2.07%; June portfolio summary is 2.10%."
+        },
+        {
+          "source": "finology",
+          "observation": "Portfolio overview retains an older June percentage; not used to verify the later event-date record."
+        },
+        {
+          "source": "trendlyne",
+          "observation": "Use the dated company-specific record linked below; the portfolio overview can lag corporate actions."
+        }
+      ]
+    },
+    {
+      "name": "Fineotex Chemical Limited",
+      "stake": 2.06,
+      "shares": 23989323,
+      "holder": "direct",
+      "date": "2026-06-30",
+      "basis": "Quarter-end disclosure",
+      "note": "The percentage is ownership of this company on the stated disclosure date. It is not portfolio allocation or a live position. No later holding has been reconciled.",
+      "sources": [
+        "nse-9",
+        "finology",
+        "trendlyne",
+        "block"
+      ],
+      "status": "primary",
+      "parts": [
+        {
+          "name": "Ashish Kacholia",
+          "type": "direct",
+          "stake": 2.06,
+          "shares": 23989323,
+          "date": "2026-06-30",
+          "source": "nse-9"
+        }
+      ],
+      "evidence": [
+        {
+          "source": "nse-9",
+          "observation": "Issuer, registered holder, 23,989,323 shares and 2.06% matched in the filing for 2026-06-30."
+        },
+        {
+          "source": "finology",
+          "observation": "Reports 2.06% for 2026-06; percentage cross-check only."
+        },
+        {
+          "source": "trendlyne",
+          "observation": "Dated holder breakdown and share quantity agree; portfolio overview rounds percentages to one decimal place."
+        }
+      ]
+    },
+    {
+      "name": "ESDS Software Solution Limited",
+      "stake": 2.05,
+      "shares": 2402000,
+      "holder": "direct",
+      "date": "2026-09-03",
+      "basis": "Post-IPO snapshot",
+      "note": "The percentage is ownership of this company on the stated disclosure date. It is not portfolio allocation or a live position.  Original filing was not independently retrieved for this record; provider agreement is a cross-check, not an audit.",
+      "sources": [
+        "finology",
+        "trendlyne",
+        "block",
+        "esds"
+      ],
+      "status": "providers",
+      "parts": [
+        {
+          "name": "Ashish Kacholia",
+          "type": "direct",
+          "stake": 2.05,
+          "shares": 2402000,
+          "date": "2026-09-03",
+          "source": "trendlyne"
+        }
+      ],
+      "evidence": [
+        {
+          "source": "finology",
+          "observation": "September overview: 2.05%."
+        },
+        {
+          "source": "block",
+          "observation": "3 September record: 2,402,000 shares, 2.05%."
+        },
+        {
+          "source": "esds",
+          "observation": "September coverage corroborates the investment. Original post-allotment filing not independently verified."
+        }
+      ]
+    },
+    {
+      "name": "Bharat Parenterals Limited",
+      "stake": 2,
+      "shares": 129018,
+      "holder": "direct",
+      "date": "2026-09-30",
+      "basis": "Quarter-end disclosure",
+      "note": "The percentage is ownership of this company on the stated disclosure date. It is not portfolio allocation or a live position. No later holding has been reconciled. Original filing was not independently retrieved for this record; provider agreement is a cross-check, not an audit.",
+      "sources": [
+        "finology",
+        "trendlyne",
+        "block"
+      ],
+      "status": "primary",
+      "parts": [
+        {
+          "name": "Ashish Kacholia",
+          "type": "direct",
+          "stake": 1.87,
+          "shares": 129018,
+          "date": "2026-06-30",
+          "source": "trendlyne"
+        }
+      ],
+      "evidence": [
+        {
+          "source": "finology",
+          "observation": "Reports 1.87% for 2026-06; percentage cross-check only."
+        },
+        {
+          "source": "trendlyne",
+          "observation": "Dated holder breakdown and share quantity agree; portfolio overview rounds percentages to one decimal place."
+        },
+        {
+          "source": "block",
+          "observation": "Displays 129,018 shares and 1.87% on 2026-06-30."
+        }
+      ]
+    },
+    {
+      "name": "Safari Industries (India) Limited",
+      "stake": 1.84,
+      "shares": 900000,
+      "holder": "direct",
+      "date": "2026-06-30",
+      "basis": "Quarter-end disclosure",
+      "note": "The percentage is ownership of this company on the stated disclosure date. It is not portfolio allocation or a live position. No later holding has been reconciled.",
+      "sources": [
+        "nse-16",
+        "finology",
+        "trendlyne",
+        "block"
+      ],
+      "status": "primary",
+      "parts": [
+        {
+          "name": "Ashish Kacholia",
+          "type": "direct",
+          "stake": 1.84,
+          "shares": 900000,
+          "date": "2026-06-30",
+          "source": "nse-16"
+        }
+      ],
+      "evidence": [
+        {
+          "source": "nse-16",
+          "observation": "Issuer, registered holder, 900,000 shares and 1.84% matched in the filing for 2026-06-30."
+        },
+        {
+          "source": "finology",
+          "observation": "Reports 1.84% for 2026-06; percentage cross-check only."
+        },
+        {
+          "source": "trendlyne",
+          "observation": "Dated holder breakdown and share quantity agree; portfolio overview rounds percentages to one decimal place."
+        }
+      ]
+    },
+    {
+      "name": "Stove Kraft Limited",
+      "stake": 1.74,
+      "shares": 576916,
+      "holder": "direct",
+      "date": "2026-06-30",
+      "basis": "Quarter-end disclosure",
+      "note": "The percentage is ownership of this company on the stated disclosure date. It is not portfolio allocation or a live position. No later holding has been reconciled.",
+      "sources": [
+        "nse-4",
+        "finology",
+        "trendlyne",
+        "block"
+      ],
+      "status": "primary",
+      "parts": [
+        {
+          "name": "Ashish Kacholia",
+          "type": "direct",
+          "stake": 1.74,
+          "shares": 576916,
+          "date": "2026-06-30",
+          "source": "nse-4"
+        }
+      ],
+      "evidence": [
+        {
+          "source": "nse-4",
+          "observation": "Issuer, registered holder, 576,916 shares and 1.74% matched in the filing for 2026-06-30."
+        },
+        {
+          "source": "finology",
+          "observation": "Reports 1.74% for 2026-06; percentage cross-check only."
+        },
+        {
+          "source": "trendlyne",
+          "observation": "Dated holder breakdown and share quantity agree; portfolio overview rounds percentages to one decimal place."
+        }
+      ]
+    },
+    {
+      "name": "Megatherm Induction Limited",
+      "stake": 1.68,
+      "shares": 316800,
+      "holder": "direct",
+      "date": "2026-03-31",
+      "basis": "Older disclosure · current status unknown",
+      "note": "The percentage is ownership of this company on the stated disclosure date. It is not portfolio allocation or a live position. No later holding has been reconciled. Other registered holders are shown separately below; their stakes are not his personal shareholding.",
+      "sources": [
+        "nse-25",
+        "finology",
+        "trendlyne",
+        "block"
+      ],
+      "status": "primary",
+      "parts": [
+        {
+          "name": "Bengal Finance And Investment Pvt Ltd",
+          "type": "entity",
+          "stake": 1.48,
+          "shares": 278400,
+          "date": "2026-03-31",
+          "source": "nse-25"
+        },
+        {
+          "name": "Ashish Kacholia",
+          "type": "direct",
+          "stake": 1.68,
+          "shares": 316800,
+          "date": "2026-03-31",
+          "source": "nse-25"
+        }
+      ],
+      "evidence": [
+        {
+          "source": "nse-25",
+          "observation": "Issuer, registered holder, 316,800 shares and 1.68% matched in the filing for 2026-03-31."
+        },
+        {
+          "source": "finology",
+          "observation": "Reports 1.68% for 2026-03; percentage cross-check only."
+        },
+        {
+          "source": "trendlyne",
+          "observation": "Dated holder breakdown and share quantity agree; portfolio overview rounds percentages to one decimal place."
+        }
+      ]
+    },
+    {
+      "name": "Concord Control Systems Limited",
+      "stake": 1.64,
+      "shares": 170292,
+      "date": "2026-09-30",
+      "holder": "direct",
+      "basis": "Quarter-end disclosure",
+      "note": "September provider records agree on 1.64%, with Trendlyne showing 170,292 shares. This replaces the older March snapshot (1.45%, 146,292 shares) previously left out pending review. Original September filing not independently retrieved.",
+      "sources": [
+        "finology",
+        "trendlyne"
+      ],
+      "status": "providers",
+      "parts": [
+        {
+          "name": "Ashish Kacholia",
+          "type": "direct",
+          "stake": 1.64,
+          "shares": 170292,
+          "date": "2026-09-30",
+          "source": "trendlyne"
+        }
+      ],
+      "evidence": [
+        {
+          "source": "finology",
+          "observation": "Reports 1.64% for 2026-09; percentage cross-check only."
+        },
+        {
+          "source": "trendlyne",
+          "observation": "Dated holder breakdown and share quantity agree; portfolio overview rounds percentages to one decimal place."
+        }
+      ]
+    },
+    {
+      "name": "Tanfac Industries Limited",
+      "stake": 1.61,
+      "shares": 340918,
+      "holder": "direct",
+      "date": "2026-06-30",
+      "basis": "Quarter-end disclosure",
+      "note": "The percentage is ownership of this company on the stated disclosure date. It is not portfolio allocation or a live position. No later holding has been reconciled. Original filing was not independently retrieved for this record; provider agreement is a cross-check, not an audit.",
+      "sources": [
+        "finology",
+        "trendlyne",
+        "block"
+      ],
+      "status": "providers",
+      "parts": [
+        {
+          "name": "Ashish Kacholia",
+          "type": "direct",
+          "stake": 1.61,
+          "shares": 340918,
+          "date": "2026-06-30",
+          "source": "trendlyne"
+        }
+      ],
+      "evidence": [
+        {
+          "source": "finology",
+          "observation": "Reports 1.61% for 2026-06; percentage cross-check only."
+        },
+        {
+          "source": "trendlyne",
+          "observation": "Dated holder breakdown and share quantity agree; portfolio overview rounds percentages to one decimal place."
+        },
+        {
+          "source": "block",
+          "observation": "Displays 340,918 shares and 1.61% on 2026-06-30."
+        }
+      ]
+    },
+    {
+      "name": "Balu Forge Industries Limited",
+      "stake": 1.58,
+      "shares": 1890933,
+      "holder": "direct",
+      "date": "2026-06-30",
+      "basis": "Quarter-end disclosure",
+      "note": "The percentage is ownership of this company on the stated disclosure date. It is not portfolio allocation or a live position. No later holding has been reconciled. Other registered holders are shown separately below; their stakes are not his personal shareholding.",
+      "sources": [
+        "nse-5",
+        "finology",
+        "trendlyne",
+        "block"
+      ],
+      "status": "primary",
+      "parts": [
+        {
+          "name": "Bengal Finance And Investment Pvt Ltd",
+          "type": "entity",
+          "stake": 1.17,
+          "shares": 1400000,
+          "date": "2026-06-30",
+          "source": "nse-5"
+        },
+        {
+          "name": "Ashish Kacholia",
+          "type": "direct",
+          "stake": 1.58,
+          "shares": 1890933,
+          "date": "2026-06-30",
+          "source": "nse-5"
+        }
+      ],
+      "evidence": [
+        {
+          "source": "nse-5",
+          "observation": "Issuer, registered holder, 1,890,933 shares and 1.58% matched in the filing for 2026-06-30."
+        },
+        {
+          "source": "finology",
+          "observation": "Reports 1.58% for 2026-06; percentage cross-check only."
+        },
+        {
+          "source": "trendlyne",
+          "observation": "Dated holder breakdown and share quantity agree; portfolio overview rounds percentages to one decimal place."
+        }
+      ]
+    },
+    {
+      "name": "Vikran Engineering Limited",
+      "stake": 1.52,
+      "shares": 3930060,
+      "holder": "direct",
+      "date": "2026-06-30",
+      "basis": "Quarter-end disclosure",
+      "note": "The percentage is ownership of this company on the stated disclosure date. It is not portfolio allocation or a live position. No later holding has been reconciled.",
+      "sources": [
+        "nse-6",
+        "finology",
+        "trendlyne",
+        "block"
+      ],
+      "status": "primary",
+      "parts": [
+        {
+          "name": "Ashish Kacholia",
+          "type": "direct",
+          "stake": 1.52,
+          "shares": 3930060,
+          "date": "2026-06-30",
+          "source": "nse-6"
+        }
+      ],
+      "evidence": [
+        {
+          "source": "nse-6",
+          "observation": "Issuer, registered holder, 3,930,060 shares and 1.52% matched in the filing for 2026-06-30."
+        },
+        {
+          "source": "finology",
+          "observation": "Reports 1.52% for 2026-06; percentage cross-check only."
+        },
+        {
+          "source": "trendlyne",
+          "observation": "Dated holder breakdown and share quantity agree; portfolio overview rounds percentages to one decimal place."
+        }
+      ]
+    },
+    {
+      "name": "Vasa Denticity Limited",
+      "stake": 1.28,
+      "shares": 222500,
+      "holder": "direct",
+      "date": "2026-06-30",
+      "basis": "Quarter-end disclosure",
+      "note": "The percentage is ownership of this company on the stated disclosure date. It is not portfolio allocation or a live position. No later holding has been reconciled.",
+      "sources": [
+        "nse-12",
+        "finology",
+        "trendlyne",
+        "block"
+      ],
+      "status": "primary",
+      "parts": [
+        {
+          "name": "Ashish Kacholia",
+          "type": "direct",
+          "stake": 1.28,
+          "shares": 222500,
+          "date": "2026-06-30",
+          "source": "nse-12"
+        }
+      ],
+      "evidence": [
+        {
+          "source": "nse-12",
+          "observation": "Issuer, registered holder, 222,500 shares and 1.28% matched in the filing for 2026-06-30."
+        },
+        {
+          "source": "finology",
+          "observation": "Reports 1.28% for 2026-06; percentage cross-check only."
+        },
+        {
+          "source": "trendlyne",
+          "observation": "Dated holder breakdown and share quantity agree; portfolio overview rounds percentages to one decimal place."
+        }
+      ]
+    },
+    {
+      "name": "Pratham EPC Projects Limited",
+      "stake": 1.24,
+      "shares": 226245,
+      "holder": "direct",
+      "date": "2026-03-31",
+      "basis": "Older disclosure · current status unknown",
+      "note": "The percentage is ownership of this company on the stated disclosure date. It is not portfolio allocation or a live position. No later holding has been reconciled.",
+      "sources": [
+        "nse-23",
+        "finology",
+        "trendlyne",
+        "block"
+      ],
+      "status": "primary",
+      "parts": [
+        {
+          "name": "Ashish Kacholia",
+          "type": "direct",
+          "stake": 1.24,
+          "shares": 226245,
+          "date": "2026-03-31",
+          "source": "nse-23"
+        }
+      ],
+      "evidence": [
+        {
+          "source": "nse-23",
+          "observation": "Issuer, registered holder, 226,245 shares and 1.24% matched in the filing for 2026-03-31."
+        },
+        {
+          "source": "finology",
+          "observation": "Reports 1.24% for 2026-03; percentage cross-check only."
         },
         {
           "source": "trendlyne",
@@ -375,7 +2092,7 @@
       "holder": "direct",
       "date": "2026-08-11",
       "basis": "Post-IPO snapshot",
-      "note": "Headline is Ashish Kacholia\u2019s personal 1.20%. Financial Express also reports Bengal Finance at 1.50%; the two positions must not be described as a personal 2.70% stake. Original holder filing not independently retrieved.",
+      "note": "Headline is Ashish Kacholia’s personal 1.20%. Financial Express also reports Bengal Finance at 1.50%; the two positions must not be described as a personal 2.70% stake. Original holder filing not independently retrieved.",
       "sources": [
         "finology",
         "block",
@@ -448,248 +2165,25 @@
       ]
     },
     {
-      "name": "Balu Forge Industries Limited",
-      "stake": 1.58,
-      "shares": 1890933,
-      "holder": "direct",
-      "date": "2026-06-30",
-      "basis": "Quarter-end disclosure",
-      "note": "The percentage is ownership of this company on the stated disclosure date. It is not portfolio allocation or a live position. No later holding has been reconciled. Other registered holders are shown separately below; their stakes are not his personal shareholding.",
-      "sources": [
-        "nse-5",
-        "finology",
-        "trendlyne",
-        "block"
-      ],
-      "status": "primary",
-      "parts": [
-        {
-          "name": "Bengal Finance And Investment Pvt Ltd",
-          "type": "entity",
-          "stake": 1.17,
-          "shares": 1400000,
-          "date": "2026-06-30",
-          "source": "nse-5"
-        },
-        {
-          "name": "Ashish Kacholia",
-          "type": "direct",
-          "stake": 1.58,
-          "shares": 1890933,
-          "date": "2026-06-30",
-          "source": "nse-5"
-        }
-      ],
-      "evidence": [
-        {
-          "source": "nse-5",
-          "observation": "Issuer, registered holder, 1,890,933 shares and 1.58% matched in the filing for 2026-06-30."
-        },
-        {
-          "source": "finology",
-          "observation": "Reports 1.58% for 2026-06; percentage cross-check only."
-        },
-        {
-          "source": "trendlyne",
-          "observation": "Dated holder breakdown and share quantity agree; portfolio overview rounds percentages to one decimal place."
-        }
-      ]
-    },
-    {
-      "name": "Beta Drugs Limited",
-      "stake": 4.91,
-      "shares": 543800,
-      "holder": "direct",
-      "date": "2026-06-30",
-      "basis": "Quarter-end disclosure",
-      "note": "The percentage is ownership of this company on the stated disclosure date. It is not portfolio allocation or a live position. No later holding has been reconciled. Other registered holders are shown separately below; their stakes are not his personal shareholding. Finology\u2019s 11.04% combines the personal and Suryavanshi rows.",
-      "sources": [
-        "nse-15",
-        "finology",
-        "trendlyne",
-        "block"
-      ],
-      "status": "primary",
-      "parts": [
-        {
-          "name": "Suryavanshi Commotrade Private Limited",
-          "type": "entity",
-          "stake": 6.13,
-          "shares": 680026,
-          "date": "2026-06-30",
-          "source": "nse-15"
-        },
-        {
-          "name": "Ashish Kacholia",
-          "type": "direct",
-          "stake": 4.91,
-          "shares": 543800,
-          "date": "2026-06-30",
-          "source": "nse-15"
-        }
-      ],
-      "evidence": [
-        {
-          "source": "nse-15",
-          "observation": "Issuer, registered holder, 543,800 shares and 4.91% matched in the filing for 2026-06-30."
-        },
-        {
-          "source": "finology",
-          "observation": "June summary combines Ashish Kacholia and Suryavanshi Commotrade: 11.04%. This is not the personal stake."
-        },
-        {
-          "source": "trendlyne",
-          "observation": "Holder breakdown separates the personal stake from Suryavanshi; those two rows total 11.04%."
-        }
-      ]
-    },
-    {
-      "name": "Bharat Parenterals Limited",
-      "stake": 1.87,
-      "shares": 129018,
-      "holder": "direct",
-      "date": "2026-06-30",
-      "basis": "Quarter-end disclosure",
-      "note": "The percentage is ownership of this company on the stated disclosure date. It is not portfolio allocation or a live position. No later holding has been reconciled. Original filing was not independently retrieved for this record; provider agreement is a cross-check, not an audit.",
-      "sources": [
-        "finology",
-        "trendlyne",
-        "block"
-      ],
-      "status": "providers",
-      "parts": [
-        {
-          "name": "Ashish Kacholia",
-          "type": "direct",
-          "stake": 1.87,
-          "shares": 129018,
-          "date": "2026-06-30",
-          "source": "trendlyne"
-        }
-      ],
-      "evidence": [
-        {
-          "source": "finology",
-          "observation": "Reports 1.87% for 2026-06; percentage cross-check only."
-        },
-        {
-          "source": "trendlyne",
-          "observation": "Dated holder breakdown and share quantity agree; portfolio overview rounds percentages to one decimal place."
-        },
-        {
-          "source": "block",
-          "observation": "Displays 129,018 shares and 1.87% on 2026-06-30."
-        }
-      ]
-    },
-    {
-      "name": "C2C Advanced Systems Limited",
-      "stake": 3.82,
-      "shares": 647552,
-      "holder": "direct",
-      "date": "2026-03-31",
-      "basis": "Older disclosure \u00b7 current status unknown",
-      "note": "The percentage is ownership of this company on the stated disclosure date. It is not portfolio allocation or a live position. No later holding has been reconciled. Other registered holders are shown separately below; their stakes are not his personal shareholding.",
-      "sources": [
-        "nse-24",
-        "finology",
-        "trendlyne",
-        "block"
-      ],
-      "status": "primary",
-      "parts": [
-        {
-          "name": "Bengal Finance And Investment Pvt Ltd",
-          "type": "entity",
-          "stake": 1.27,
-          "shares": 216000,
-          "date": "2026-03-31",
-          "source": "nse-24"
-        },
-        {
-          "name": "Ashish Kacholia",
-          "type": "direct",
-          "stake": 3.82,
-          "shares": 647552,
-          "date": "2026-03-31",
-          "source": "nse-24"
-        }
-      ],
-      "evidence": [
-        {
-          "source": "nse-24",
-          "observation": "Issuer, registered holder, 647,552 shares and 3.82% matched in the filing for 2026-03-31."
-        },
-        {
-          "source": "finology",
-          "observation": "Reports 3.82% for 2026-03; percentage cross-check only."
-        },
-        {
-          "source": "trendlyne",
-          "observation": "Dated holder breakdown and share quantity agree; portfolio overview rounds percentages to one decimal place."
-        }
-      ]
-    },
-    {
-      "name": "Carysil Limited",
-      "stake": 2.72,
-      "shares": 773111,
+      "name": "E2E Networks Limited",
+      "stake": 1.1,
+      "shares": 177043,
       "holder": "direct",
       "date": "2026-09-30",
       "basis": "Quarter-end disclosure",
-      "note": "The percentage is ownership of this company on the stated disclosure date. It is not portfolio allocation or a live position. ",
+      "note": "September 2026 Q2 FY25 disclosure. Added a 1.10% stake consisting of 177,043 shares.",
       "sources": [
-        "nse-0",
         "finology",
         "trendlyne",
-        "block",
-        "carysil"
+        "block"
       ],
       "status": "primary",
       "parts": [
         {
           "name": "Ashish Kacholia",
           "type": "direct",
-          "stake": 2.72,
-          "shares": 773111,
-          "date": "2026-09-30",
-          "source": "nse-0"
-        }
-      ],
-      "evidence": [
-        {
-          "source": "nse-0",
-          "observation": "Issuer, registered holder, 773,111 shares and 2.72% matched in the filing for 2026-09-30."
-        },
-        {
-          "source": "finology",
-          "observation": "Reports 2.72% for 2026-09; percentage cross-check only."
-        },
-        {
-          "source": "trendlyne",
-          "observation": "Dated holder breakdown and share quantity agree; portfolio overview rounds percentages to one decimal place."
-        }
-      ]
-    },
-    {
-      "name": "Concord Control Systems Limited",
-      "stake": 1.64,
-      "shares": 170292,
-      "date": "2026-09-30",
-      "holder": "direct",
-      "basis": "Quarter-end disclosure",
-      "note": "September provider records agree on 1.64%, with Trendlyne showing 170,292 shares. This replaces the older March snapshot (1.45%, 146,292 shares) previously left out pending review. Original September filing not independently retrieved.",
-      "sources": [
-        "finology",
-        "trendlyne"
-      ],
-      "status": "providers",
-      "parts": [
-        {
-          "name": "Ashish Kacholia",
-          "type": "direct",
-          "stake": 1.64,
-          "shares": 170292,
+          "stake": 1.1,
+          "shares": 177043,
           "date": "2026-09-30",
           "source": "trendlyne"
         }
@@ -697,1396 +2191,15 @@
       "evidence": [
         {
           "source": "finology",
-          "observation": "Reports 1.64% for 2026-09; percentage cross-check only."
+          "observation": "September 2026: 1.10% (177,043 shares)."
         },
         {
           "source": "trendlyne",
-          "observation": "Dated holder breakdown and share quantity agree; portfolio overview rounds percentages to one decimal place."
-        }
-      ]
-    },
-    {
-      "name": "Dhabriya Polywood Limited",
-      "stake": 5.32,
-      "shares": 576347,
-      "holder": "direct",
-      "date": "2026-06-30",
-      "basis": "Quarter-end disclosure",
-      "note": "The percentage is ownership of this company on the stated disclosure date. It is not portfolio allocation or a live position. No later holding has been reconciled. Original filing was not independently retrieved for this record; provider agreement is a cross-check, not an audit.",
-      "sources": [
-        "finology",
-        "trendlyne",
-        "block"
-      ],
-      "status": "providers",
-      "parts": [
-        {
-          "name": "Ashish Kacholia",
-          "type": "direct",
-          "stake": 5.32,
-          "shares": 576347,
-          "date": "2026-06-30",
-          "source": "trendlyne"
-        }
-      ],
-      "evidence": [
-        {
-          "source": "finology",
-          "observation": "Reports 5.32% for 2026-06; percentage cross-check only."
-        },
-        {
-          "source": "trendlyne",
-          "observation": "Dated holder breakdown and share quantity agree; portfolio overview rounds percentages to one decimal place."
+          "observation": "New holding Q2 FY25: 1.10% stake, 177,043 shares."
         },
         {
           "source": "block",
-          "observation": "Displays 576,347 shares and 5.32% on 2026-06-30."
-        }
-      ]
-    },
-    {
-      "name": "Dudigital Global Limited",
-      "stake": 8.53,
-      "shares": 6130000,
-      "holder": "direct",
-      "date": "2026-03-31",
-      "basis": "Older disclosure \u00b7 current status unknown",
-      "note": "The percentage is ownership of this company on the stated disclosure date. It is not portfolio allocation or a live position. No later holding has been reconciled.",
-      "sources": [
-        "nse-20",
-        "finology",
-        "trendlyne",
-        "block"
-      ],
-      "status": "primary",
-      "parts": [
-        {
-          "name": "Ashish Kacholia",
-          "type": "direct",
-          "stake": 8.53,
-          "shares": 6130000,
-          "date": "2026-03-31",
-          "source": "nse-20"
-        }
-      ],
-      "evidence": [
-        {
-          "source": "nse-20",
-          "observation": "Issuer, registered holder, 6,130,000 shares and 8.53% matched in the filing for 2026-03-31."
-        },
-        {
-          "source": "finology",
-          "observation": "Reports 8.53% for 2026-03; percentage cross-check only."
-        },
-        {
-          "source": "trendlyne",
-          "observation": "Dated holder breakdown and share quantity agree; portfolio overview rounds percentages to one decimal place."
-        }
-      ]
-    },
-    {
-      "name": "ESDS Software Solution Limited",
-      "stake": 2.05,
-      "shares": 2402000,
-      "holder": "direct",
-      "date": "2026-09-03",
-      "basis": "Post-IPO snapshot",
-      "note": "The percentage is ownership of this company on the stated disclosure date. It is not portfolio allocation or a live position.  Original filing was not independently retrieved for this record; provider agreement is a cross-check, not an audit.",
-      "sources": [
-        "finology",
-        "trendlyne",
-        "block",
-        "esds"
-      ],
-      "status": "providers",
-      "parts": [
-        {
-          "name": "Ashish Kacholia",
-          "type": "direct",
-          "stake": 2.05,
-          "shares": 2402000,
-          "date": "2026-09-03",
-          "source": "trendlyne"
-        }
-      ],
-      "evidence": [
-        {
-          "source": "finology",
-          "observation": "September overview: 2.05%."
-        },
-        {
-          "source": "block",
-          "observation": "3 September record: 2,402,000 shares, 2.05%."
-        },
-        {
-          "source": "esds",
-          "observation": "September coverage corroborates the investment. Original post-allotment filing not independently verified."
-        }
-      ]
-    },
-    {
-      "name": "Faze Three Limited",
-      "stake": 5.42,
-      "shares": 1317554,
-      "holder": "direct",
-      "date": "2026-06-30",
-      "basis": "Quarter-end disclosure",
-      "note": "The percentage is ownership of this company on the stated disclosure date. It is not portfolio allocation or a live position. No later holding has been reconciled.",
-      "sources": [
-        "nse-42",
-        "finology",
-        "trendlyne",
-        "block"
-      ],
-      "status": "primary",
-      "parts": [
-        {
-          "name": "Ashish Kacholia",
-          "type": "direct",
-          "stake": 5.42,
-          "shares": 1317554,
-          "date": "2026-06-30",
-          "source": "nse-42"
-        }
-      ],
-      "evidence": [
-        {
-          "source": "nse-42",
-          "observation": "Issuer, registered holder, 1,317,554 shares and 5.42% matched in the filing for 2026-06-30."
-        },
-        {
-          "source": "finology",
-          "observation": "Reports 5.42% for 2026-06; percentage cross-check only."
-        },
-        {
-          "source": "trendlyne",
-          "observation": "Dated holder breakdown and share quantity agree; portfolio overview rounds percentages to one decimal place."
-        }
-      ]
-    },
-    {
-      "name": "Finbud Financial Services Limited",
-      "stake": 5.36,
-      "shares": 1021523,
-      "holder": "direct",
-      "date": "2026-03-31",
-      "basis": "Older disclosure \u00b7 current status unknown",
-      "note": "The percentage is ownership of this company on the stated disclosure date. It is not portfolio allocation or a live position. No later holding has been reconciled. Other registered holders are shown separately below; their stakes are not his personal shareholding.",
-      "sources": [
-        "nse-44",
-        "finology",
-        "trendlyne",
-        "block"
-      ],
-      "status": "primary",
-      "parts": [
-        {
-          "name": "Bengal Finance And Investment Pvt Ltd",
-          "type": "entity",
-          "stake": 3.42,
-          "shares": 652000,
-          "date": "2026-03-31",
-          "source": "nse-44"
-        },
-        {
-          "name": "Ashish Kacholia",
-          "type": "direct",
-          "stake": 5.36,
-          "shares": 1021523,
-          "date": "2026-03-31",
-          "source": "nse-44"
-        }
-      ],
-      "evidence": [
-        {
-          "source": "nse-44",
-          "observation": "Issuer, registered holder, 1,021,523 shares and 5.36% matched in the filing for 2026-03-31."
-        },
-        {
-          "source": "finology",
-          "observation": "Reports 5.36% for 2026-03; percentage cross-check only."
-        },
-        {
-          "source": "trendlyne",
-          "observation": "Dated holder breakdown and share quantity agree; portfolio overview rounds percentages to one decimal place."
-        }
-      ]
-    },
-    {
-      "name": "Fineotex Chemical Limited",
-      "stake": 2.06,
-      "shares": 23989323,
-      "holder": "direct",
-      "date": "2026-06-30",
-      "basis": "Quarter-end disclosure",
-      "note": "The percentage is ownership of this company on the stated disclosure date. It is not portfolio allocation or a live position. No later holding has been reconciled.",
-      "sources": [
-        "nse-9",
-        "finology",
-        "trendlyne",
-        "block"
-      ],
-      "status": "primary",
-      "parts": [
-        {
-          "name": "Ashish Kacholia",
-          "type": "direct",
-          "stake": 2.06,
-          "shares": 23989323,
-          "date": "2026-06-30",
-          "source": "nse-9"
-        }
-      ],
-      "evidence": [
-        {
-          "source": "nse-9",
-          "observation": "Issuer, registered holder, 23,989,323 shares and 2.06% matched in the filing for 2026-06-30."
-        },
-        {
-          "source": "finology",
-          "observation": "Reports 2.06% for 2026-06; percentage cross-check only."
-        },
-        {
-          "source": "trendlyne",
-          "observation": "Dated holder breakdown and share quantity agree; portfolio overview rounds percentages to one decimal place."
-        }
-      ]
-    },
-    {
-      "name": "Gujarat Apollo Industries Limited",
-      "stake": 2.29,
-      "shares": 297056,
-      "holder": "direct",
-      "date": "2026-06-30",
-      "basis": "Quarter-end disclosure",
-      "note": "The percentage is ownership of this company on the stated disclosure date. It is not portfolio allocation or a live position. No later holding has been reconciled.",
-      "sources": [
-        "nse-19",
-        "finology",
-        "trendlyne",
-        "block"
-      ],
-      "status": "primary",
-      "parts": [
-        {
-          "name": "Ashish Kacholia",
-          "type": "direct",
-          "stake": 2.29,
-          "shares": 297056,
-          "date": "2026-06-30",
-          "source": "nse-19"
-        }
-      ],
-      "evidence": [
-        {
-          "source": "nse-19",
-          "observation": "Issuer, registered holder, 297,056 shares and 2.29% matched in the filing for 2026-06-30."
-        },
-        {
-          "source": "finology",
-          "observation": "Reports 2.29% for 2026-06; percentage cross-check only."
-        },
-        {
-          "source": "trendlyne",
-          "observation": "Dated holder breakdown and share quantity agree; portfolio overview rounds percentages to one decimal place."
-        }
-      ]
-    },
-    {
-      "name": "INDO SMC Limited",
-      "stake": 3.03,
-      "shares": 691405,
-      "holder": "direct",
-      "date": "2026-06-30",
-      "basis": "Quarter-end disclosure",
-      "note": "The percentage is ownership of this company on the stated disclosure date. It is not portfolio allocation or a live position. No later holding has been reconciled. Original filing was not independently retrieved for this record; provider agreement is a cross-check, not an audit.",
-      "sources": [
-        "finology",
-        "trendlyne",
-        "block"
-      ],
-      "status": "providers",
-      "parts": [
-        {
-          "name": "Ashish Kacholia",
-          "type": "direct",
-          "stake": 3.03,
-          "shares": 691405,
-          "date": "2026-06-30",
-          "source": "trendlyne"
-        }
-      ],
-      "evidence": [
-        {
-          "source": "finology",
-          "observation": "Reports 3.03% for 2026-06; percentage cross-check only."
-        },
-        {
-          "source": "trendlyne",
-          "observation": "Dated holder breakdown and share quantity agree; portfolio overview rounds percentages to one decimal place."
-        },
-        {
-          "source": "block",
-          "observation": "Displays 691,405 shares and 3.03% on 2026-06-30."
-        }
-      ]
-    },
-    {
-      "name": "Infinium Pharmachem Limited",
-      "stake": 4.62,
-      "shares": 720000,
-      "holder": "direct",
-      "date": "2026-03-31",
-      "basis": "Older disclosure \u00b7 current status unknown",
-      "note": "The percentage is ownership of this company on the stated disclosure date. It is not portfolio allocation or a live position. No later holding has been reconciled.",
-      "sources": [
-        "nse-21",
-        "finology",
-        "trendlyne",
-        "block"
-      ],
-      "status": "primary",
-      "parts": [
-        {
-          "name": "Ashish Kacholia",
-          "type": "direct",
-          "stake": 4.62,
-          "shares": 720000,
-          "date": "2026-03-31",
-          "source": "nse-21"
-        }
-      ],
-      "evidence": [
-        {
-          "source": "nse-21",
-          "observation": "Issuer, registered holder, 720,000 shares and 4.62% matched in the filing for 2026-03-31."
-        },
-        {
-          "source": "finology",
-          "observation": "Reports 4.62% for 2026-03; percentage cross-check only."
-        },
-        {
-          "source": "trendlyne",
-          "observation": "Dated holder breakdown and share quantity agree; portfolio overview rounds percentages to one decimal place."
-        }
-      ]
-    },
-    {
-      "name": "Inflame Appliances Limited",
-      "stake": 4.11,
-      "shares": 308000,
-      "holder": "direct",
-      "date": "2026-03-31",
-      "basis": "Older disclosure \u00b7 current status unknown",
-      "note": "The percentage is ownership of this company on the stated disclosure date. It is not portfolio allocation or a live position. No later holding has been reconciled. Original filing was not independently retrieved for this record; provider agreement is a cross-check, not an audit.",
-      "sources": [
-        "finology",
-        "trendlyne",
-        "block"
-      ],
-      "status": "providers",
-      "parts": [
-        {
-          "name": "Ashish Kacholia",
-          "type": "direct",
-          "stake": 4.11,
-          "shares": 308000,
-          "date": "2026-03-31",
-          "source": "trendlyne"
-        }
-      ],
-      "evidence": [
-        {
-          "source": "finology",
-          "observation": "Reports 4.11% for 2026-03; percentage cross-check only."
-        },
-        {
-          "source": "trendlyne",
-          "observation": "Dated holder breakdown and share quantity agree; portfolio overview rounds percentages to one decimal place."
-        },
-        {
-          "source": "block",
-          "observation": "Displays 308,000 shares and 4.11% on 2026-03-31."
-        }
-      ]
-    },
-    {
-      "name": "Knowledge Marine & Engineering Works Limited",
-      "stake": 2.36,
-      "shares": 594721,
-      "date": "2026-08-04",
-      "holder": "direct",
-      "basis": "Event-date disclosure",
-      "note": "The percentage is ownership of this company on the stated disclosure date. It is not portfolio allocation or a live position. No later holding has been reconciled. August 2.36% corroborates the later NSE filing; June 2.89% is an older snapshot.",
-      "sources": [
-        "nse-2",
-        "finology",
-        "trendlyne",
-        "km-news"
-      ],
-      "status": "primary",
-      "parts": [
-        {
-          "name": "Ashish Kacholia",
-          "type": "direct",
-          "stake": 2.36,
-          "shares": 594721,
-          "date": "2026-08-04",
-          "source": "nse-2"
-        }
-      ],
-      "evidence": [
-        {
-          "source": "nse-2",
-          "observation": "Issuer, registered holder, 594,721 shares and 2.36% matched in the filing for 2026-08-04."
-        },
-        {
-          "source": "km-news",
-          "observation": "August 2.36% corroborates the later NSE filing; June 2.89% is an older snapshot."
-        },
-        {
-          "source": "finology",
-          "observation": "Portfolio overview retains an older June percentage; not used to verify the later event-date record."
-        },
-        {
-          "source": "trendlyne",
-          "observation": "Use the dated company-specific record linked below; the portfolio overview can lag corporate actions."
-        }
-      ]
-    },
-    {
-      "name": "Man Industries (India) Limited",
-      "stake": 3.04,
-      "shares": 2277029,
-      "holder": "direct",
-      "date": "2026-06-30",
-      "basis": "Quarter-end disclosure",
-      "note": "The percentage is ownership of this company on the stated disclosure date. It is not portfolio allocation or a live position. No later holding has been reconciled.",
-      "sources": [
-        "nse-43",
-        "finology",
-        "trendlyne",
-        "block"
-      ],
-      "status": "primary",
-      "parts": [
-        {
-          "name": "Ashish Kacholia",
-          "type": "direct",
-          "stake": 3.04,
-          "shares": 2277029,
-          "date": "2026-06-30",
-          "source": "nse-43"
-        }
-      ],
-      "evidence": [
-        {
-          "source": "nse-43",
-          "observation": "Issuer, registered holder, 2,277,029 shares and 3.04% matched in the filing for 2026-06-30."
-        },
-        {
-          "source": "finology",
-          "observation": "Reports 3.04% for 2026-06; percentage cross-check only."
-        },
-        {
-          "source": "trendlyne",
-          "observation": "Dated holder breakdown and share quantity agree; portfolio overview rounds percentages to one decimal place."
-        }
-      ]
-    },
-    {
-      "name": "Megatherm Induction Limited",
-      "stake": 1.68,
-      "shares": 316800,
-      "holder": "direct",
-      "date": "2026-03-31",
-      "basis": "Older disclosure \u00b7 current status unknown",
-      "note": "The percentage is ownership of this company on the stated disclosure date. It is not portfolio allocation or a live position. No later holding has been reconciled. Other registered holders are shown separately below; their stakes are not his personal shareholding.",
-      "sources": [
-        "nse-25",
-        "finology",
-        "trendlyne",
-        "block"
-      ],
-      "status": "primary",
-      "parts": [
-        {
-          "name": "Bengal Finance And Investment Pvt Ltd",
-          "type": "entity",
-          "stake": 1.48,
-          "shares": 278400,
-          "date": "2026-03-31",
-          "source": "nse-25"
-        },
-        {
-          "name": "Ashish Kacholia",
-          "type": "direct",
-          "stake": 1.68,
-          "shares": 316800,
-          "date": "2026-03-31",
-          "source": "nse-25"
-        }
-      ],
-      "evidence": [
-        {
-          "source": "nse-25",
-          "observation": "Issuer, registered holder, 316,800 shares and 1.68% matched in the filing for 2026-03-31."
-        },
-        {
-          "source": "finology",
-          "observation": "Reports 1.68% for 2026-03; percentage cross-check only."
-        },
-        {
-          "source": "trendlyne",
-          "observation": "Dated holder breakdown and share quantity agree; portfolio overview rounds percentages to one decimal place."
-        }
-      ]
-    },
-    {
-      "name": "Pratham EPC Projects Limited",
-      "stake": 1.24,
-      "shares": 226245,
-      "holder": "direct",
-      "date": "2026-03-31",
-      "basis": "Older disclosure \u00b7 current status unknown",
-      "note": "The percentage is ownership of this company on the stated disclosure date. It is not portfolio allocation or a live position. No later holding has been reconciled.",
-      "sources": [
-        "nse-23",
-        "finology",
-        "trendlyne",
-        "block"
-      ],
-      "status": "primary",
-      "parts": [
-        {
-          "name": "Ashish Kacholia",
-          "type": "direct",
-          "stake": 1.24,
-          "shares": 226245,
-          "date": "2026-03-31",
-          "source": "nse-23"
-        }
-      ],
-      "evidence": [
-        {
-          "source": "nse-23",
-          "observation": "Issuer, registered holder, 226,245 shares and 1.24% matched in the filing for 2026-03-31."
-        },
-        {
-          "source": "finology",
-          "observation": "Reports 1.24% for 2026-03; percentage cross-check only."
-        },
-        {
-          "source": "trendlyne",
-          "observation": "Dated holder breakdown and share quantity agree; portfolio overview rounds percentages to one decimal place."
-        }
-      ]
-    },
-    {
-      "name": "Qualitek Labs Limited",
-      "stake": 4.35,
-      "shares": 506400,
-      "holder": "direct",
-      "date": "2026-03-31",
-      "basis": "Older disclosure \u00b7 current status unknown",
-      "note": "The percentage is ownership of this company on the stated disclosure date. It is not portfolio allocation or a live position. No later holding has been reconciled. Original filing was not independently retrieved for this record; provider agreement is a cross-check, not an audit.",
-      "sources": [
-        "finology",
-        "trendlyne",
-        "block"
-      ],
-      "status": "providers",
-      "parts": [
-        {
-          "name": "Ashish Kacholia",
-          "type": "direct",
-          "stake": 4.35,
-          "shares": 506400,
-          "date": "2026-03-31",
-          "source": "trendlyne"
-        }
-      ],
-      "evidence": [
-        {
-          "source": "finology",
-          "observation": "Reports 4.35% for 2026-03; percentage cross-check only."
-        },
-        {
-          "source": "trendlyne",
-          "observation": "Dated holder breakdown and share quantity agree; portfolio overview rounds percentages to one decimal place."
-        },
-        {
-          "source": "block",
-          "observation": "Displays 506,400 shares and 4.35% on 2026-03-31."
-        }
-      ]
-    },
-    {
-      "name": "Safari Industries (India) Limited",
-      "stake": 1.84,
-      "shares": 900000,
-      "holder": "direct",
-      "date": "2026-06-30",
-      "basis": "Quarter-end disclosure",
-      "note": "The percentage is ownership of this company on the stated disclosure date. It is not portfolio allocation or a live position. No later holding has been reconciled.",
-      "sources": [
-        "nse-16",
-        "finology",
-        "trendlyne",
-        "block"
-      ],
-      "status": "primary",
-      "parts": [
-        {
-          "name": "Ashish Kacholia",
-          "type": "direct",
-          "stake": 1.84,
-          "shares": 900000,
-          "date": "2026-06-30",
-          "source": "nse-16"
-        }
-      ],
-      "evidence": [
-        {
-          "source": "nse-16",
-          "observation": "Issuer, registered holder, 900,000 shares and 1.84% matched in the filing for 2026-06-30."
-        },
-        {
-          "source": "finology",
-          "observation": "Reports 1.84% for 2026-06; percentage cross-check only."
-        },
-        {
-          "source": "trendlyne",
-          "observation": "Dated holder breakdown and share quantity agree; portfolio overview rounds percentages to one decimal place."
-        }
-      ]
-    },
-    {
-      "name": "Sanjivani Paranteral Limited",
-      "stake": 3.01,
-      "shares": 370000,
-      "holder": "direct",
-      "date": "2026-06-30",
-      "basis": "Quarter-end disclosure",
-      "note": "The percentage is ownership of this company on the stated disclosure date. It is not portfolio allocation or a live position. No later holding has been reconciled. Original filing was not independently retrieved for this record; provider agreement is a cross-check, not an audit.",
-      "sources": [
-        "finology",
-        "trendlyne",
-        "block"
-      ],
-      "status": "providers",
-      "parts": [
-        {
-          "name": "Ashish Kacholia",
-          "type": "direct",
-          "stake": 3.01,
-          "shares": 370000,
-          "date": "2026-06-30",
-          "source": "trendlyne"
-        }
-      ],
-      "evidence": [
-        {
-          "source": "finology",
-          "observation": "Reports 3.01% for 2026-06; percentage cross-check only."
-        },
-        {
-          "source": "trendlyne",
-          "observation": "Dated holder breakdown and share quantity agree; portfolio overview rounds percentages to one decimal place."
-        },
-        {
-          "source": "block",
-          "observation": "Displays 370,000 shares and 3.01% on 2026-06-30."
-        }
-      ]
-    },
-    {
-      "name": "Shaily Engineering Plastics Limited",
-      "stake": 3.22,
-      "shares": 1478980,
-      "holder": "direct",
-      "date": "2026-06-30",
-      "basis": "Quarter-end disclosure",
-      "note": "The percentage is ownership of this company on the stated disclosure date. It is not portfolio allocation or a live position. No later holding has been reconciled. Other registered holders are shown separately below; their stakes are not his personal shareholding. Finology\u2019s 5.21% combines the personal and Suryavanshi rows.",
-      "sources": [
-        "nse-13",
-        "finology",
-        "trendlyne",
-        "block"
-      ],
-      "status": "primary",
-      "parts": [
-        {
-          "name": "Suryavanshi Commotrade Private Limited",
-          "type": "entity",
-          "stake": 1.99,
-          "shares": 914700,
-          "date": "2026-06-30",
-          "source": "nse-13"
-        },
-        {
-          "name": "Ashish Kacholia",
-          "type": "direct",
-          "stake": 3.22,
-          "shares": 1478980,
-          "date": "2026-06-30",
-          "source": "nse-13"
-        }
-      ],
-      "evidence": [
-        {
-          "source": "nse-13",
-          "observation": "Issuer, registered holder, 1,478,980 shares and 3.22% matched in the filing for 2026-06-30."
-        },
-        {
-          "source": "finology",
-          "observation": "June summary combines Ashish Kacholia and Suryavanshi Commotrade: 5.21%. This is not the personal stake."
-        },
-        {
-          "source": "trendlyne",
-          "observation": "Holder breakdown separates the personal stake from Suryavanshi; those two rows total 5.21%."
-        }
-      ]
-    },
-    {
-      "name": "Shree OSFM E-Mobility Limited",
-      "stake": 3.6,
-      "shares": 554700,
-      "holder": "direct",
-      "date": "2026-06-30",
-      "basis": "Quarter-end disclosure",
-      "note": "The percentage is ownership of this company on the stated disclosure date. It is not portfolio allocation or a live position. No later holding has been reconciled.",
-      "sources": [
-        "nse-8",
-        "finology",
-        "trendlyne",
-        "block"
-      ],
-      "status": "primary",
-      "parts": [
-        {
-          "name": "Ashish Kacholia",
-          "type": "direct",
-          "stake": 3.6,
-          "shares": 554700,
-          "date": "2026-06-30",
-          "source": "nse-8"
-        }
-      ],
-      "evidence": [
-        {
-          "source": "nse-8",
-          "observation": "Issuer, registered holder, 554,700 shares and 3.60% matched in the filing for 2026-06-30."
-        },
-        {
-          "source": "finology",
-          "observation": "Reports 3.60% for 2026-06; percentage cross-check only."
-        },
-        {
-          "source": "trendlyne",
-          "observation": "Dated holder breakdown and share quantity agree; portfolio overview rounds percentages to one decimal place."
-        }
-      ]
-    },
-    {
-      "name": "Shree Refrigerations Limited",
-      "stake": 3.42,
-      "shares": 1219513,
-      "holder": "direct",
-      "date": "2026-03-31",
-      "basis": "Older disclosure \u00b7 current status unknown",
-      "note": "The percentage is ownership of this company on the stated disclosure date. It is not portfolio allocation or a live position. No later holding has been reconciled. Original filing was not independently retrieved for this record; provider agreement is a cross-check, not an audit.",
-      "sources": [
-        "finology",
-        "trendlyne",
-        "block"
-      ],
-      "status": "providers",
-      "parts": [
-        {
-          "name": "Ashish Kacholia",
-          "type": "direct",
-          "stake": 3.42,
-          "shares": 1219513,
-          "date": "2026-03-31",
-          "source": "trendlyne"
-        }
-      ],
-      "evidence": [
-        {
-          "source": "finology",
-          "observation": "Reports 3.42% for 2026-03; percentage cross-check only."
-        },
-        {
-          "source": "trendlyne",
-          "observation": "Dated holder breakdown and share quantity agree; portfolio overview rounds percentages to one decimal place."
-        },
-        {
-          "source": "block",
-          "observation": "Displays 1,219,513 shares and 3.42% on 2026-03-31."
-        }
-      ]
-    },
-    {
-      "name": "Stove Kraft Limited",
-      "stake": 1.74,
-      "shares": 576916,
-      "holder": "direct",
-      "date": "2026-06-30",
-      "basis": "Quarter-end disclosure",
-      "note": "The percentage is ownership of this company on the stated disclosure date. It is not portfolio allocation or a live position. No later holding has been reconciled.",
-      "sources": [
-        "nse-4",
-        "finology",
-        "trendlyne",
-        "block"
-      ],
-      "status": "primary",
-      "parts": [
-        {
-          "name": "Ashish Kacholia",
-          "type": "direct",
-          "stake": 1.74,
-          "shares": 576916,
-          "date": "2026-06-30",
-          "source": "nse-4"
-        }
-      ],
-      "evidence": [
-        {
-          "source": "nse-4",
-          "observation": "Issuer, registered holder, 576,916 shares and 1.74% matched in the filing for 2026-06-30."
-        },
-        {
-          "source": "finology",
-          "observation": "Reports 1.74% for 2026-06; percentage cross-check only."
-        },
-        {
-          "source": "trendlyne",
-          "observation": "Dated holder breakdown and share quantity agree; portfolio overview rounds percentages to one decimal place."
-        }
-      ]
-    },
-    {
-      "name": "Tanfac Industries Limited",
-      "stake": 1.61,
-      "shares": 340918,
-      "holder": "direct",
-      "date": "2026-06-30",
-      "basis": "Quarter-end disclosure",
-      "note": "The percentage is ownership of this company on the stated disclosure date. It is not portfolio allocation or a live position. No later holding has been reconciled. Original filing was not independently retrieved for this record; provider agreement is a cross-check, not an audit.",
-      "sources": [
-        "finology",
-        "trendlyne",
-        "block"
-      ],
-      "status": "providers",
-      "parts": [
-        {
-          "name": "Ashish Kacholia",
-          "type": "direct",
-          "stake": 1.61,
-          "shares": 340918,
-          "date": "2026-06-30",
-          "source": "trendlyne"
-        }
-      ],
-      "evidence": [
-        {
-          "source": "finology",
-          "observation": "Reports 1.61% for 2026-06; percentage cross-check only."
-        },
-        {
-          "source": "trendlyne",
-          "observation": "Dated holder breakdown and share quantity agree; portfolio overview rounds percentages to one decimal place."
-        },
-        {
-          "source": "block",
-          "observation": "Displays 340,918 shares and 1.61% on 2026-06-30."
-        }
-      ]
-    },
-    {
-      "name": "TBI Corn Limited",
-      "stake": 4.22,
-      "shares": 766666,
-      "holder": "direct",
-      "date": "2026-03-31",
-      "basis": "Older disclosure \u00b7 current status unknown",
-      "note": "The percentage is ownership of this company on the stated disclosure date. It is not portfolio allocation or a live position. No later holding has been reconciled.",
-      "sources": [
-        "nse-22",
-        "finology",
-        "trendlyne",
-        "block"
-      ],
-      "status": "primary",
-      "parts": [
-        {
-          "name": "Ashish Kacholia",
-          "type": "direct",
-          "stake": 4.22,
-          "shares": 766666,
-          "date": "2026-03-31",
-          "source": "nse-22"
-        }
-      ],
-      "evidence": [
-        {
-          "source": "nse-22",
-          "observation": "Issuer, registered holder, 766,666 shares and 4.22% matched in the filing for 2026-03-31."
-        },
-        {
-          "source": "finology",
-          "observation": "Reports 4.22% for 2026-03; percentage cross-check only."
-        },
-        {
-          "source": "trendlyne",
-          "observation": "Dated holder breakdown and share quantity agree; portfolio overview rounds percentages to one decimal place."
-        }
-      ]
-    },
-    {
-      "name": "TechEra Engineering (India) Limited",
-      "stake": 3.57,
-      "shares": 589600,
-      "holder": "direct",
-      "date": "2026-06-30",
-      "basis": "Quarter-end disclosure",
-      "note": "The percentage is ownership of this company on the stated disclosure date. It is not portfolio allocation or a live position. No later holding has been reconciled. Other registered holders are shown separately below; their stakes are not his personal shareholding. Finology\u2019s 6.29% combines the personal and Suryavanshi rows.",
-      "sources": [
-        "nse-11",
-        "finology",
-        "trendlyne",
-        "block"
-      ],
-      "status": "primary",
-      "parts": [
-        {
-          "name": "Bengal Finance And Investment Pvt Ltd",
-          "type": "entity",
-          "stake": 4.3,
-          "shares": 711200,
-          "date": "2026-06-30",
-          "source": "nse-11"
-        },
-        {
-          "name": "Suryavanshi Commotrade Private Limited",
-          "type": "entity",
-          "stake": 2.72,
-          "shares": 449600,
-          "date": "2026-06-30",
-          "source": "nse-11"
-        },
-        {
-          "name": "Ashish Kacholia",
-          "type": "direct",
-          "stake": 3.57,
-          "shares": 589600,
-          "date": "2026-06-30",
-          "source": "nse-11"
-        }
-      ],
-      "evidence": [
-        {
-          "source": "nse-11",
-          "observation": "Issuer, registered holder, 589,600 shares and 3.57% matched in the filing for 2026-06-30."
-        },
-        {
-          "source": "finology",
-          "observation": "June summary combines Ashish Kacholia and Suryavanshi Commotrade: 6.29%. This is not the personal stake."
-        },
-        {
-          "source": "trendlyne",
-          "observation": "Holder breakdown separates the personal stake from Suryavanshi; those two rows total 6.29%."
-        }
-      ]
-    },
-    {
-      "name": "Texel Industries Limited",
-      "stake": 7.86,
-      "shares": 1045750,
-      "holder": "direct",
-      "date": "2026-06-30",
-      "basis": "Quarter-end disclosure",
-      "note": "The percentage is ownership of this company on the stated disclosure date. It is not portfolio allocation or a live position. No later holding has been reconciled. Original filing was not independently retrieved for this record; provider agreement is a cross-check, not an audit.",
-      "sources": [
-        "finology",
-        "trendlyne",
-        "block"
-      ],
-      "status": "providers",
-      "parts": [
-        {
-          "name": "Ashish Kacholia",
-          "type": "direct",
-          "stake": 7.86,
-          "shares": 1045750,
-          "date": "2026-06-30",
-          "source": "trendlyne"
-        }
-      ],
-      "evidence": [
-        {
-          "source": "finology",
-          "observation": "Reports 7.86% for 2026-06; percentage cross-check only."
-        },
-        {
-          "source": "trendlyne",
-          "observation": "Dated holder breakdown and share quantity agree; portfolio overview rounds percentages to one decimal place."
-        },
-        {
-          "source": "block",
-          "observation": "Displays 1,045,750 shares and 7.86% on 2026-06-30."
-        }
-      ]
-    },
-    {
-      "name": "Thomas Scott (India) Limited",
-      "stake": 2.07,
-      "shares": 307539,
-      "holder": "direct",
-      "date": "2026-09-01",
-      "basis": "Event-date disclosure",
-      "note": "The percentage is ownership of this company on the stated disclosure date. It is not portfolio allocation or a live position.  Original filing was not independently retrieved for this record; provider agreement is a cross-check, not an audit. 1 September: 307,539 shares, 2.07%; June portfolio summary is 2.10%.",
-      "sources": [
-        "finology",
-        "trendlyne",
-        "block",
-        "thomas-detail"
-      ],
-      "status": "providers",
-      "parts": [
-        {
-          "name": "Ashish Kacholia",
-          "type": "direct",
-          "stake": 2.07,
-          "shares": 307539,
-          "date": "2026-09-01",
-          "source": "trendlyne"
-        }
-      ],
-      "evidence": [
-        {
-          "source": "block",
-          "observation": "Displays 307,539 shares and 2.07% on 2026-09-01."
-        },
-        {
-          "source": "thomas-detail",
-          "observation": "1 September: 307,539 shares, 2.07%; June portfolio summary is 2.10%."
-        },
-        {
-          "source": "finology",
-          "observation": "Portfolio overview retains an older June percentage; not used to verify the later event-date record."
-        },
-        {
-          "source": "trendlyne",
-          "observation": "Use the dated company-specific record linked below; the portfolio overview can lag corporate actions."
-        }
-      ]
-    },
-    {
-      "name": "V-Marc India Limited",
-      "stake": 2.71,
-      "shares": 3966000,
-      "date": "2026-07-08",
-      "holder": "direct",
-      "basis": "Event-date disclosure",
-      "note": "The percentage is ownership of this company on the stated disclosure date. It is not portfolio allocation or a live position. No later holding has been reconciled. 8 July: 3,966,000 shares, 2.71%; June was 661,000 shares before the 5:1 bonus.",
-      "sources": [
-        "nse-3",
-        "finology",
-        "trendlyne",
-        "vmarc-detail"
-      ],
-      "status": "primary",
-      "parts": [
-        {
-          "name": "Ashish Kacholia",
-          "type": "direct",
-          "stake": 2.71,
-          "shares": 3966000,
-          "date": "2026-07-08",
-          "source": "nse-3"
-        }
-      ],
-      "evidence": [
-        {
-          "source": "nse-3",
-          "observation": "Issuer, registered holder, 3,966,000 shares and 2.71% matched in the filing for 2026-07-08."
-        },
-        {
-          "source": "vmarc-detail",
-          "observation": "8 July: 3,966,000 shares, 2.71%; June was 661,000 shares before the 5:1 bonus."
-        },
-        {
-          "source": "finology",
-          "observation": "Portfolio overview retains an older June percentage; not used to verify the later event-date record."
-        },
-        {
-          "source": "trendlyne",
-          "observation": "Use the dated company-specific record linked below; the portfolio overview can lag corporate actions."
-        }
-      ]
-    },
-    {
-      "name": "Vasa Denticity Limited",
-      "stake": 1.28,
-      "shares": 222500,
-      "holder": "direct",
-      "date": "2026-06-30",
-      "basis": "Quarter-end disclosure",
-      "note": "The percentage is ownership of this company on the stated disclosure date. It is not portfolio allocation or a live position. No later holding has been reconciled.",
-      "sources": [
-        "nse-12",
-        "finology",
-        "trendlyne",
-        "block"
-      ],
-      "status": "primary",
-      "parts": [
-        {
-          "name": "Ashish Kacholia",
-          "type": "direct",
-          "stake": 1.28,
-          "shares": 222500,
-          "date": "2026-06-30",
-          "source": "nse-12"
-        }
-      ],
-      "evidence": [
-        {
-          "source": "nse-12",
-          "observation": "Issuer, registered holder, 222,500 shares and 1.28% matched in the filing for 2026-06-30."
-        },
-        {
-          "source": "finology",
-          "observation": "Reports 1.28% for 2026-06; percentage cross-check only."
-        },
-        {
-          "source": "trendlyne",
-          "observation": "Dated holder breakdown and share quantity agree; portfolio overview rounds percentages to one decimal place."
-        }
-      ]
-    },
-    {
-      "name": "Vikran Engineering Limited",
-      "stake": 1.52,
-      "shares": 3930060,
-      "holder": "direct",
-      "date": "2026-06-30",
-      "basis": "Quarter-end disclosure",
-      "note": "The percentage is ownership of this company on the stated disclosure date. It is not portfolio allocation or a live position. No later holding has been reconciled.",
-      "sources": [
-        "nse-6",
-        "finology",
-        "trendlyne",
-        "block"
-      ],
-      "status": "primary",
-      "parts": [
-        {
-          "name": "Ashish Kacholia",
-          "type": "direct",
-          "stake": 1.52,
-          "shares": 3930060,
-          "date": "2026-06-30",
-          "source": "nse-6"
-        }
-      ],
-      "evidence": [
-        {
-          "source": "nse-6",
-          "observation": "Issuer, registered holder, 3,930,060 shares and 1.52% matched in the filing for 2026-06-30."
-        },
-        {
-          "source": "finology",
-          "observation": "Reports 1.52% for 2026-06; percentage cross-check only."
-        },
-        {
-          "source": "trendlyne",
-          "observation": "Dated holder breakdown and share quantity agree; portfolio overview rounds percentages to one decimal place."
-        }
-      ]
-    },
-    {
-      "name": "Xpro India Limited",
-      "stake": 3.91,
-      "shares": 918550,
-      "holder": "direct",
-      "date": "2026-06-30",
-      "basis": "Quarter-end disclosure",
-      "note": "The percentage is ownership of this company on the stated disclosure date. It is not portfolio allocation or a live position. No later holding has been reconciled.",
-      "sources": [
-        "nse-17",
-        "finology",
-        "trendlyne",
-        "block"
-      ],
-      "status": "primary",
-      "parts": [
-        {
-          "name": "Ashish Kacholia",
-          "type": "direct",
-          "stake": 3.91,
-          "shares": 918550,
-          "date": "2026-06-30",
-          "source": "nse-17"
-        }
-      ],
-      "evidence": [
-        {
-          "source": "nse-17",
-          "observation": "Issuer, registered holder, 918,550 shares and 3.91% matched in the filing for 2026-06-30."
-        },
-        {
-          "source": "finology",
-          "observation": "Reports 3.91% for 2026-06; percentage cross-check only."
-        },
-        {
-          "source": "trendlyne",
-          "observation": "Dated holder breakdown and share quantity agree; portfolio overview rounds percentages to one decimal place."
-        }
-      ]
-    },
-    {
-      "name": "Yasho Industries Limited",
-      "stake": 2.08,
-      "shares": 250242,
-      "holder": "direct",
-      "date": "2026-06-30",
-      "basis": "Quarter-end disclosure",
-      "note": "The percentage is ownership of this company on the stated disclosure date. It is not portfolio allocation or a live position. No later holding has been reconciled. Other registered holders are shown separately below; their stakes are not his personal shareholding.",
-      "sources": [
-        "nse-18",
-        "finology",
-        "trendlyne",
-        "block"
-      ],
-      "status": "primary",
-      "parts": [
-        {
-          "name": "Bengal Finance And Investment Pvt Ltd",
-          "type": "entity",
-          "stake": 1.99,
-          "shares": 240000,
-          "date": "2026-06-30",
-          "source": "nse-18"
-        },
-        {
-          "name": "Ashish Kacholia",
-          "type": "direct",
-          "stake": 2.08,
-          "shares": 250242,
-          "date": "2026-06-30",
-          "source": "nse-18"
-        }
-      ],
-      "evidence": [
-        {
-          "source": "nse-18",
-          "observation": "Issuer, registered holder, 250,242 shares and 2.08% matched in the filing for 2026-06-30."
-        },
-        {
-          "source": "finology",
-          "observation": "Reports 2.08% for 2026-06; percentage cross-check only."
-        },
-        {
-          "source": "trendlyne",
-          "observation": "Dated holder breakdown and share quantity agree; portfolio overview rounds percentages to one decimal place."
-        }
-      ]
-    },
-    {
-      "name": "Z-Tech (India) Limited",
-      "stake": 3.31,
-      "shares": 535700,
-      "holder": "direct",
-      "date": "2026-09-13",
-      "basis": "Event-date disclosure",
-      "note": "The percentage is ownership of this company on the stated disclosure date. It is not portfolio allocation or a live position.  13 September: 535,700 shares, 3.31%; June 3.71% belongs to an earlier denominator.",
-      "sources": [
-        "nse-1",
-        "finology",
-        "trendlyne",
-        "block",
-        "ztech-detail"
-      ],
-      "status": "primary",
-      "parts": [
-        {
-          "name": "Ashish Kacholia",
-          "type": "direct",
-          "stake": 3.31,
-          "shares": 535700,
-          "date": "2026-09-13",
-          "source": "nse-1"
-        }
-      ],
-      "evidence": [
-        {
-          "source": "nse-1",
-          "observation": "Issuer, registered holder, 535,700 shares and 3.31% matched in the filing for 2026-09-13."
-        },
-        {
-          "source": "ztech-detail",
-          "observation": "13 September: 535,700 shares, 3.31%; June 3.71% belongs to an earlier denominator."
-        },
-        {
-          "source": "finology",
-          "observation": "Portfolio overview retains an older June percentage; not used to verify the later event-date record."
-        },
-        {
-          "source": "trendlyne",
-          "observation": "Use the dated company-specific record linked below; the portfolio overview can lag corporate actions."
-        }
-      ]
-    },
-    {
-      "name": "Zaggle Prepaid Ocean Services Limited",
-      "stake": 2.16,
-      "shares": 2903356,
-      "holder": "direct",
-      "date": "2026-06-30",
-      "basis": "Quarter-end disclosure",
-      "note": "The percentage is ownership of this company on the stated disclosure date. It is not portfolio allocation or a live position. No later holding has been reconciled. Other registered holders are shown separately below; their stakes are not his personal shareholding.",
-      "sources": [
-        "nse-10",
-        "finology",
-        "trendlyne",
-        "block"
-      ],
-      "status": "primary",
-      "parts": [
-        {
-          "name": "Ashish Kacholia",
-          "type": "direct",
-          "stake": 2.16,
-          "shares": 2903356,
-          "date": "2026-06-30",
-          "source": "nse-10"
-        },
-        {
-          "name": "Bengal Finance And Investment Pvt Ltd",
-          "type": "entity",
-          "stake": 1.72,
-          "shares": 2317159,
-          "date": "2026-06-30",
-          "source": "nse-10"
-        }
-      ],
-      "evidence": [
-        {
-          "source": "nse-10",
-          "observation": "Issuer, registered holder, 2,903,356 shares and 2.16% matched in the filing for 2026-06-30."
-        },
-        {
-          "source": "finology",
-          "observation": "Reports 2.16% for 2026-06; percentage cross-check only."
-        },
-        {
-          "source": "trendlyne",
-          "observation": "Dated holder breakdown and share quantity agree; portfolio overview rounds percentages to one decimal place."
+          "observation": "Displays 177,043 shares and 1.10% on 2026-09-30."
         }
       ]
     }

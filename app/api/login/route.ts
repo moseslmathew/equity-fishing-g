@@ -15,10 +15,11 @@ export async function POST(request:Request) {
     const key="access/attempts/"+id,now=Date.now();
     const previous=await config.BUCKET.get(key);
     const attempts=previous?await previous.json<{count:number;until:number}>():{count:0,until:0};
-    if(attempts.until>now&&attempts.count>=10)return Response.json({error:"Too many attempts. Please try again in a few minutes."},{status:429,headers:{"Retry-After":"300","Cache-Control":"no-store"}});
-    if(!await equalSecret(password,config.LOGIN_PASSWORD)){
-      await config.BUCKET.put(key,JSON.stringify({count:attempts.until>now?attempts.count+1:1,until:attempts.until>now?attempts.until:now+300000}));
-      return Response.json({error:"Incorrect password. Please try again."},{status:401,headers:{"Cache-Control":"no-store"}});
+    const matches = await equalSecret(password, config.LOGIN_PASSWORD);
+    if (!matches) {
+      if (attempts.until > now && attempts.count >= 10) return Response.json({ error: "Too many attempts. Please try again in a few minutes." }, { status: 429, headers: { "Retry-After": "300", "Cache-Control": "no-store" } });
+      await config.BUCKET.put(key, JSON.stringify({ count: attempts.until > now ? attempts.count + 1 : 1, until: attempts.until > now ? attempts.until : now + 300000 }));
+      return Response.json({ error: "Incorrect password. Please try again." }, { status: 401, headers: { "Cache-Control": "no-store" } });
     }
     await config.BUCKET.delete(key);
     const cookie=await createSession();

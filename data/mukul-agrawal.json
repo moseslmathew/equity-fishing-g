@@ -1,73 +1,73 @@
 {
-  "checkedOn": "2026-10-11",
+  "checkedOn": "2026-10-14",
   "coverageNote": "68 publicly disclosed direct positions reconstructed from June quarter holdings plus subsequent IPO/interim and available September records. This is not the complete private portfolio or a live ownership register. September reporting is incomplete; older holdings keep their actual period. Percentages are company ownership, not investment allocation. KDDL and Sirca holdings attributed to Asha are excluded; Zota family aggregation corrected. Provider cross-checks do not equal original-filing verification; common upstream feeds may exist. Shares are withheld unless independently reconciled.",
   "sources": {
     "solomo": {
-      "name": "Solomo \u2014 dated public portfolio",
+      "name": "Solomo — dated public portfolio",
       "url": "https://solomo.ai/investor/mukulmahaviragrawal/"
     },
     "finology": {
-      "name": "Finology Ticker \u2014 period-specific holdings",
+      "name": "Finology Ticker — period-specific holdings",
       "url": "https://ticker.finology.in/investor/mukul-agrawal"
     },
     "sharpely": {
-      "name": "Sharpely \u2014 filing/awaited distinction",
+      "name": "Sharpely — filing/awaited distinction",
       "url": "https://sharpely.in/titan-tracker/mukul-agrawal-4"
     },
     "trendlyne": {
-      "name": "Trendlyne \u2014 named shareholder breakdown",
+      "name": "Trendlyne — named shareholder breakdown",
       "url": "https://trendlyne.com/portfolio/superstar-shareholders/53774/latest/mukul-agrawal-portfolio/"
     },
     "wpil": {
-      "name": "Trendlyne \u2014 WPIL June filing table",
+      "name": "Trendlyne — WPIL June filing table",
       "url": "https://trendlyne.com/equity/share-holding/2254/WPIL/Q2-2026/wpil-ltd/"
     },
     "prakash": {
-      "name": "Bigul \u2014 Prakash Industries holder table",
+      "name": "Bigul — Prakash Industries holder table",
       "url": "https://bigul.co/profile-stock/prakash-industries-ltd/PRAKASH/NSE"
     },
     "zota": {
-      "name": "Trendlyne \u2014 Mukul direct Zota history",
+      "name": "Trendlyne — Mukul direct Zota history",
       "url": "https://trendlyne.com/equity/holding-lookup/87758/53775/zota-healthcare-ltd/mukul-mahavir-prasad-agrawal/"
     },
     "zota-solomo": {
-      "name": "Solomo \u2014 Zota named holders",
+      "name": "Solomo — Zota named holders",
       "url": "https://solomo.ai/company/ZOTA/"
     },
     "hirect": {
-      "name": "Trendlyne \u2014 Hirect June holder table",
+      "name": "Trendlyne — Hirect June holder table",
       "url": "https://trendlyne.com/equity/share-holding/562/HIRECT/30-06-2026/hirect-ltd/"
     },
     "tijori": {
-      "name": "Tijori \u2014 dated emerging-company disclosures",
+      "name": "Tijori — dated emerging-company disclosures",
       "url": "https://www.tijorifinance.com/ideas-dashboard/whales-buying/?mcap=Micro"
     },
     "safety": {
-      "name": "Trendlyne \u2014 Safety Controls April 10 holder table",
+      "name": "Trendlyne — Safety Controls April 10 holder table",
       "url": "https://trendlyne.com/equity/share-holding/3471765/13150302/latest/safety-controls-devices-ltd/"
     },
     "esds": {
-      "name": "Trendlyne \u2014 ESDS individual holders",
+      "name": "Trendlyne — ESDS individual holders",
       "url": "https://trendlyne.com/equity/share-holding/758705/ESDS/latest/esds-software-solution-ltd/"
     },
     "esds-date": {
-      "name": "Amrapali \u2014 ESDS September 3 pattern",
+      "name": "Amrapali — ESDS September 3 pattern",
       "url": "https://www.amrapali.com/fundamental/shareholding-patternnew/esds-software-solution-ltd"
     },
     "manipal": {
-      "name": "INFORMED \u2014 Manipal September 16 disclosure",
+      "name": "INFORMED — Manipal September 16 disclosure",
       "url": "https://informed.sh/company/manipal-payment-and-identity-solutions"
     },
     "poojaa": {
-      "name": "Capmint \u2014 Poojaa July disclosure",
+      "name": "Capmint — Poojaa July disclosure",
       "url": "https://www.capmint.com/stocks/poojaa-precision-engg-ltd"
     },
     "anawil": {
-      "name": "Finology \u2014 Anawil August disclosure",
+      "name": "Finology — Anawil August disclosure",
       "url": "https://ticker.finology.in/company/SCRIP-322589"
     },
     "zota-finology": {
-      "name": "Finology \u2014 Zota named holder table",
+      "name": "Finology — Zota named holder table",
       "url": "https://ticker.finology.in/company/ZOTA"
     }
   },
@@ -97,174 +97,6 @@
       ]
     },
     {
-      "name": "AYM Syntex Limited",
-      "stake": 3.92,
-      "shares": null,
-      "holder": "direct",
-      "date": "2026-06-30",
-      "basis": "Company equity ownership; dated public disclosure",
-      "status": "providers",
-      "note": "June disclosure retained where September filing is awaited. These are shares in the company, not portfolio allocation.",
-      "sources": [
-        "solomo",
-        "finology"
-      ],
-      "evidence": [
-        {
-          "source": "solomo",
-          "observation": "June 30, 2026: AYM Syntex Ltd 3.92% in the Mukul investor tracker; no September claim."
-        },
-        {
-          "source": "finology",
-          "observation": "June 2026 column: AYM Syntex Ltd. 3.92%; September marked Filing Due."
-        }
-      ]
-    },
-    {
-      "name": "Ajmera Realty & Infra India Limited",
-      "stake": 1.93,
-      "shares": null,
-      "holder": "direct",
-      "date": "2026-06-30",
-      "basis": "Company equity ownership; dated public disclosure",
-      "status": "providers",
-      "note": "June disclosure retained where September filing is awaited. These are shares in the company, not portfolio allocation.",
-      "sources": [
-        "solomo",
-        "finology"
-      ],
-      "evidence": [
-        {
-          "source": "solomo",
-          "observation": "June 30, 2026: Ajmera Realty & Infra India Ltd 1.93% in the Mukul investor tracker; no September claim."
-        },
-        {
-          "source": "finology",
-          "observation": "June 2026 column: Ajmera Realty & Infra India Ltd. 1.93%; September marked Filing Due."
-        }
-      ]
-    },
-    {
-      "name": "Allcargo Logistics Limited",
-      "stake": 2.94,
-      "shares": null,
-      "holder": "direct",
-      "date": "2026-06-30",
-      "basis": "Company equity ownership; dated public disclosure",
-      "status": "providers",
-      "note": "June disclosure retained where September filing is awaited. These are shares in the company, not portfolio allocation.",
-      "sources": [
-        "solomo",
-        "finology"
-      ],
-      "evidence": [
-        {
-          "source": "solomo",
-          "observation": "June 30, 2026: Allcargo Logistics Ltd 2.94% in the Mukul investor tracker; no September claim."
-        },
-        {
-          "source": "finology",
-          "observation": "June 2026 column: Allcargo Logistics Ltd. 2.94%; September marked Filing Due."
-        }
-      ]
-    },
-    {
-      "name": "Anawil Wire and Engineering Limited",
-      "stake": 2.72,
-      "shares": null,
-      "holder": "direct",
-      "date": "2026-08",
-      "basis": "Company equity ownership; interim/IPO disclosure",
-      "status": "providers",
-      "note": "Effective day unconfirmed; 2026-08 (interim disclosure; day not confirmed). Two or more provider domains cross-checked. IPO/interim date is kept separate from quarter-end. Original exchange filing not independently inspected.",
-      "sources": [
-        "anawil",
-        "tijori"
-      ],
-      "evidence": [
-        {
-          "source": "anawil",
-          "observation": "August 2026 named holder Mukul Mahavir Agrawal 2.72%."
-        },
-        {
-          "source": "tijori",
-          "observation": "September 7 tracker carries 2.72%; day is publication, not effective ownership date."
-        }
-      ]
-    },
-    {
-      "name": "Apollo Pipes Limited",
-      "stake": 3.41,
-      "shares": null,
-      "holder": "direct",
-      "date": "2026-06-30",
-      "basis": "Company equity ownership; dated public disclosure",
-      "status": "providers",
-      "note": "June disclosure retained where September filing is awaited. These are shares in the company, not portfolio allocation.",
-      "sources": [
-        "solomo",
-        "finology"
-      ],
-      "evidence": [
-        {
-          "source": "solomo",
-          "observation": "June 30, 2026: Apollo Pipes Ltd 3.41% in the Mukul investor tracker; no September claim."
-        },
-        {
-          "source": "finology",
-          "observation": "June 2026 column: Apollo Pipes Ltd. 3.41%; September marked Filing Due."
-        }
-      ]
-    },
-    {
-      "name": "Arisinfra Solutions Limited",
-      "stake": 1.59,
-      "shares": null,
-      "holder": "direct",
-      "date": "2026-06-30",
-      "basis": "Company equity ownership; dated public disclosure",
-      "status": "providers",
-      "note": "June disclosure retained where September filing is awaited. These are shares in the company, not portfolio allocation.",
-      "sources": [
-        "solomo",
-        "finology"
-      ],
-      "evidence": [
-        {
-          "source": "solomo",
-          "observation": "June 30, 2026: Arisinfra Solutions Ltd 1.59% in the Mukul investor tracker; no September claim."
-        },
-        {
-          "source": "finology",
-          "observation": "June 2026 column: Arisinfra Solutions Ltd. 1.59%; September marked Filing Due."
-        }
-      ]
-    },
-    {
-      "name": "Arman Financial Services Limited",
-      "stake": 3.8,
-      "shares": null,
-      "holder": "direct",
-      "date": "2026-06-30",
-      "basis": "Company equity ownership; dated public disclosure",
-      "status": "providers",
-      "note": "June disclosure retained where September filing is awaited. These are shares in the company, not portfolio allocation.",
-      "sources": [
-        "solomo",
-        "finology"
-      ],
-      "evidence": [
-        {
-          "source": "solomo",
-          "observation": "June 30, 2026: Arman Financial Services Ltd 3.80% in the Mukul investor tracker; no September claim."
-        },
-        {
-          "source": "finology",
-          "observation": "June 2026 column: Arman Financial Services Ltd. 3.80%; September marked Filing Due."
-        }
-      ]
-    },
-    {
       "name": "Autoriders International Limited",
       "stake": 9.48,
       "shares": null,
@@ -285,6 +117,54 @@
         {
           "source": "finology",
           "observation": "June 2026 column: Autoriders International Ltd. 9.48%; September marked Filing Due."
+        }
+      ]
+    },
+    {
+      "name": "TAAL Tech Limited",
+      "stake": 8.92,
+      "shares": null,
+      "holder": "direct",
+      "date": "2026-06-30",
+      "basis": "Company equity ownership; dated public disclosure",
+      "status": "providers",
+      "note": "June disclosure retained where September filing is awaited. These are shares in the company, not portfolio allocation.",
+      "sources": [
+        "solomo",
+        "finology"
+      ],
+      "evidence": [
+        {
+          "source": "solomo",
+          "observation": "June 30, 2026: TAAL Tech Ltd 8.92% in the Mukul investor tracker; no September claim."
+        },
+        {
+          "source": "finology",
+          "observation": "June 2026 column: TAAL Tech Ltd. 8.92%; September marked Filing Due."
+        }
+      ]
+    },
+    {
+      "name": "OSEL Devices Limited",
+      "stake": 7.52,
+      "shares": null,
+      "holder": "direct",
+      "date": "2026-06-30",
+      "basis": "Company equity ownership; dated public disclosure",
+      "status": "providers",
+      "note": "June disclosure retained where September filing is awaited. These are shares in the company, not portfolio allocation.",
+      "sources": [
+        "solomo",
+        "finology"
+      ],
+      "evidence": [
+        {
+          "source": "solomo",
+          "observation": "June 30, 2026: OSEL Devices Ltd 7.52% in the Mukul investor tracker; no September claim."
+        },
+        {
+          "source": "finology",
+          "observation": "June 2026 column: Osel Devices Ltd. 7.52%; September marked Filing Due."
         }
       ]
     },
@@ -313,30 +193,6 @@
       ]
     },
     {
-      "name": "Brandman Retail Limited",
-      "stake": 4.04,
-      "shares": null,
-      "holder": "direct",
-      "date": "2026-06-30",
-      "basis": "Company equity ownership; dated public disclosure",
-      "status": "providers",
-      "note": "June disclosure retained where September filing is awaited. These are shares in the company, not portfolio allocation.",
-      "sources": [
-        "solomo",
-        "finology"
-      ],
-      "evidence": [
-        {
-          "source": "solomo",
-          "observation": "June 30, 2026: Brandman Retail Ltd 4.04% in the Mukul investor tracker; no September claim."
-        },
-        {
-          "source": "finology",
-          "observation": "June 2026 column: Brandman Retail Ltd. 4.04%; September marked Filing Due."
-        }
-      ]
-    },
-    {
       "name": "Capacite Infraprojects Limited",
       "stake": 6.62,
       "shares": null,
@@ -357,78 +213,6 @@
         {
           "source": "sharpely",
           "observation": "Capacite Infraprojects Ltd. 6.62%, status awaited_filing; awaited values are carried disclosures, not September observations."
-        }
-      ]
-    },
-    {
-      "name": "Concord Control Systems Limited",
-      "stake": 5.56,
-      "shares": null,
-      "holder": "direct",
-      "date": "2026-09",
-      "basis": "Company equity ownership; interim/IPO disclosure",
-      "status": "providers",
-      "note": "Effective day unconfirmed; 2026-09 (provider period; day not confirmed). Two or more provider domains cross-checked. IPO/interim date is kept separate from quarter-end. Original exchange filing not independently inspected.",
-      "sources": [
-        "finology",
-        "sharpely"
-      ],
-      "evidence": [
-        {
-          "source": "finology",
-          "observation": "September column 5.56%."
-        },
-        {
-          "source": "sharpely",
-          "observation": "Filed September tracker row 5.56%, 577,667 shares; quantity not independently reconciled."
-        }
-      ]
-    },
-    {
-      "name": "Deepak Fertilisers & Petrochemicals Corp Limited",
-      "stake": 1.19,
-      "shares": null,
-      "holder": "direct",
-      "date": "2026-06-30",
-      "basis": "Company equity ownership; dated public disclosure",
-      "status": "providers",
-      "note": "June disclosure retained where September filing is awaited. These are shares in the company, not portfolio allocation.",
-      "sources": [
-        "solomo",
-        "finology"
-      ],
-      "evidence": [
-        {
-          "source": "solomo",
-          "observation": "June 30, 2026: Deepak Fertilisers & Petrochemicals Corp Ltd 1.19% in the Mukul investor tracker; no September claim."
-        },
-        {
-          "source": "finology",
-          "observation": "June 2026 column: Deepak Fertilisers And Petrochemicals Corporation Ltd. 1.19%; September marked Filing Due."
-        }
-      ]
-    },
-    {
-      "name": "Dishman Carbogen Amcis Limited",
-      "stake": 5.5,
-      "shares": null,
-      "holder": "direct",
-      "date": "2026-06-30",
-      "basis": "Company equity ownership; dated public disclosure",
-      "status": "providers",
-      "note": "June disclosure retained where September filing is awaited. These are shares in the company, not portfolio allocation.",
-      "sources": [
-        "solomo",
-        "finology"
-      ],
-      "evidence": [
-        {
-          "source": "solomo",
-          "observation": "June 30, 2026: Dishman Carbogen Amcis Ltd 5.50% in the Mukul investor tracker; no September claim."
-        },
-        {
-          "source": "finology",
-          "observation": "June 2026 column: Dishman Carbogen Amcis Ltd. 5.50%; September marked Filing Due."
         }
       ]
     },
@@ -462,480 +246,14 @@
       ]
     },
     {
-      "name": "Gaudium IVF and Women Health Limited",
-      "stake": 3.43,
-      "shares": null,
-      "holder": "direct",
-      "date": "2026-06-30",
-      "basis": "Company equity ownership; dated public disclosure",
-      "status": "providers",
-      "note": "June disclosure retained where September filing is awaited. These are shares in the company, not portfolio allocation.",
-      "sources": [
-        "solomo",
-        "finology"
-      ],
-      "evidence": [
-        {
-          "source": "solomo",
-          "observation": "June 30, 2026: Gaudium IVF and Women Health Ltd 3.43% in the Mukul investor tracker; no September claim."
-        },
-        {
-          "source": "finology",
-          "observation": "June 2026 column: Gaudium IVF and Women Health Ltd. 3.43%; September marked Filing Due."
-        }
-      ]
-    },
-    {
-      "name": "Hind Rectifiers Limited",
-      "stake": 1.45,
-      "shares": 500000,
-      "holder": "direct",
-      "date": "2026-06-30",
-      "basis": "Company equity ownership; dated public disclosure",
-      "status": "providers",
-      "note": "June disclosure retained where September filing is awaited. These are shares in the company, not portfolio allocation. Sharpely 2.90% differs; direct 1.45% agreed by Solomo, Finology and the named-holder Trendlyne table is used.",
-      "sources": [
-        "solomo",
-        "finology",
-        "hirect"
-      ],
-      "evidence": [
-        {
-          "source": "solomo",
-          "observation": "June 30, 2026: Hind Rectifiers Ltd 1.45% in the Mukul investor tracker; no September claim."
-        },
-        {
-          "source": "finology",
-          "observation": "June 2026 column: Hirect Ltd. 1.45%; September marked Filing Due."
-        },
-        {
-          "source": "hirect",
-          "observation": "June 2026 Mukul mahavir agrawal 500,000 shares, 1.45%."
-        }
-      ]
-    },
-    {
-      "name": "Hindustan Construction Company Limited",
-      "stake": 1.91,
-      "shares": null,
-      "holder": "direct",
-      "date": "2026-06-30",
-      "basis": "Company equity ownership; dated public disclosure",
-      "status": "providers",
-      "note": "June disclosure retained where September filing is awaited. These are shares in the company, not portfolio allocation.",
-      "sources": [
-        "solomo",
-        "finology"
-      ],
-      "evidence": [
-        {
-          "source": "solomo",
-          "observation": "June 30, 2026: Hindustan Construction Company Ltd 1.91% in the Mukul investor tracker; no September claim."
-        },
-        {
-          "source": "finology",
-          "observation": "June 2026 column: Hindustan Construction Company Ltd. 1.91%; September marked Filing Due."
-        }
-      ]
-    },
-    {
-      "name": "IFB Industries Limited",
-      "stake": 1.23,
-      "shares": null,
-      "holder": "direct",
-      "date": "2026-06-30",
-      "basis": "Company equity ownership; dated public disclosure",
-      "status": "providers",
-      "note": "June disclosure retained where September filing is awaited. These are shares in the company, not portfolio allocation.",
-      "sources": [
-        "solomo",
-        "finology"
-      ],
-      "evidence": [
-        {
-          "source": "solomo",
-          "observation": "June 30, 2026: IFB Industries Ltd 1.23% in the Mukul investor tracker; no September claim."
-        },
-        {
-          "source": "finology",
-          "observation": "June 2026 column: IFB Industries Ltd. 1.23%; September marked Filing Due."
-        }
-      ]
-    },
-    {
-      "name": "Indian Metals & Ferro Alloys Limited",
-      "stake": 1.07,
+      "name": "Concord Control Systems Limited",
+      "stake": 5.56,
       "shares": null,
       "holder": "direct",
       "date": "2026-09",
-      "basis": "Company equity ownership; dated public disclosure",
-      "status": "providers",
-      "note": "Effective day unconfirmed; 2026-09 (provider disclosure period; exact day not confirmed). September provider period corroborated; original exchange report and exact effective day not independently inspected. No assumption that an unchanged stake means no trading.",
-      "sources": [
-        "finology",
-        "sharpely"
-      ],
-      "evidence": [
-        {
-          "source": "finology",
-          "observation": "September 2026 column: Indian Metals & Ferro Alloys Ltd 1.07%."
-        },
-        {
-          "source": "sharpely",
-          "observation": "September 2026 marked filed, 1.07%, 574,679 shares. Quantity not independently reconciled."
-        }
-      ]
-    },
-    {
-      "name": "Indo Count Industries Limited",
-      "stake": 1.51,
-      "shares": null,
-      "holder": "direct",
-      "date": "2026-06-30",
-      "basis": "Company equity ownership; dated public disclosure",
-      "status": "providers",
-      "note": "June disclosure retained where September filing is awaited. These are shares in the company, not portfolio allocation.",
-      "sources": [
-        "solomo",
-        "finology"
-      ],
-      "evidence": [
-        {
-          "source": "solomo",
-          "observation": "June 30, 2026: Indo Count Industries Ltd 1.51% in the Mukul investor tracker; no September claim."
-        },
-        {
-          "source": "finology",
-          "observation": "June 2026 column: Indo Count Industries Ltd. 1.51%; September marked Filing Due."
-        }
-      ]
-    },
-    {
-      "name": "InfoBeans Technologies Limited",
-      "stake": 3.09,
-      "shares": null,
-      "holder": "direct",
-      "date": "2026-06-30",
-      "basis": "Company equity ownership; dated public disclosure",
-      "status": "providers",
-      "note": "June disclosure retained where September filing is awaited. These are shares in the company, not portfolio allocation.",
-      "sources": [
-        "solomo",
-        "finology"
-      ],
-      "evidence": [
-        {
-          "source": "solomo",
-          "observation": "June 30, 2026: InfoBeans Technologies Ltd 3.09% in the Mukul investor tracker; no September claim."
-        },
-        {
-          "source": "finology",
-          "observation": "June 2026 column: Infobeans Technologies Ltd. 3.09%; September marked Filing Due."
-        }
-      ]
-    },
-    {
-      "name": "Intellect Design Arena Limited",
-      "stake": 1.28,
-      "shares": null,
-      "holder": "direct",
-      "date": "2026-06-30",
-      "basis": "Company equity ownership; dated public disclosure",
-      "status": "providers",
-      "note": "June disclosure retained where September filing is awaited. These are shares in the company, not portfolio allocation.",
-      "sources": [
-        "solomo",
-        "finology"
-      ],
-      "evidence": [
-        {
-          "source": "solomo",
-          "observation": "June 30, 2026: Intellect Design Arena Ltd 1.28% in the Mukul investor tracker; no September claim."
-        },
-        {
-          "source": "finology",
-          "observation": "June 2026 column: Intellect Design Arena Ltd. 1.28%; September marked Filing Due."
-        }
-      ]
-    },
-    {
-      "name": "J Kumar Infraprojects Limited",
-      "stake": 2.55,
-      "shares": null,
-      "holder": "direct",
-      "date": "2026-09",
-      "basis": "Company equity ownership; dated public disclosure",
-      "status": "providers",
-      "note": "Effective day unconfirmed; 2026-09 (provider disclosure period; exact day not confirmed). September provider period corroborated; original exchange report and exact effective day not independently inspected. No assumption that an unchanged stake means no trading.",
-      "sources": [
-        "finology",
-        "sharpely"
-      ],
-      "evidence": [
-        {
-          "source": "finology",
-          "observation": "September 2026 column: J Kumar Infraprojects Ltd 2.55%."
-        },
-        {
-          "source": "sharpely",
-          "observation": "September 2026 marked filed, 2.55%, 1,930,920 shares. Quantity not independently reconciled."
-        }
-      ]
-    },
-    {
-      "name": "Jammu and Kashmir Bank Limited",
-      "stake": 1.5,
-      "shares": null,
-      "holder": "direct",
-      "date": "2026-06-30",
-      "basis": "Company equity ownership; dated public disclosure",
-      "status": "providers",
-      "note": "June disclosure retained where September filing is awaited. These are shares in the company, not portfolio allocation.",
-      "sources": [
-        "solomo",
-        "finology"
-      ],
-      "evidence": [
-        {
-          "source": "solomo",
-          "observation": "June 30, 2026: Jammu and Kashmir Bank Ltd 1.50% in the Mukul investor tracker; no September claim."
-        },
-        {
-          "source": "finology",
-          "observation": "June 2026 column: The Jammu & Kashmir Bank Ltd. 1.50%; September marked Filing Due."
-        }
-      ]
-    },
-    {
-      "name": "KRN Heat Exchanger and Refrigeration Limited",
-      "stake": 1.37,
-      "shares": null,
-      "holder": "direct",
-      "date": "2026-09",
-      "basis": "Company equity ownership; dated public disclosure",
-      "status": "providers",
-      "note": "Effective day unconfirmed; 2026-09 (provider disclosure period; exact day not confirmed). September provider period corroborated; original exchange report and exact effective day not independently inspected. No assumption that an unchanged stake means no trading.",
-      "sources": [
-        "finology",
-        "sharpely"
-      ],
-      "evidence": [
-        {
-          "source": "finology",
-          "observation": "September 2026 column: KRN Heat Exchanger and Refrigeration Ltd 1.37%."
-        },
-        {
-          "source": "sharpely",
-          "observation": "September 2026 marked filed, 1.37%, 900,000 shares. Quantity not independently reconciled."
-        }
-      ]
-    },
-    {
-      "name": "Kilitch Drugs (India) Limited",
-      "stake": 1.34,
-      "shares": null,
-      "holder": "direct",
-      "date": "2026-06-30",
-      "basis": "Company equity ownership; dated public disclosure",
-      "status": "providers",
-      "note": "June disclosure retained where September filing is awaited. These are shares in the company, not portfolio allocation.",
-      "sources": [
-        "solomo",
-        "finology"
-      ],
-      "evidence": [
-        {
-          "source": "solomo",
-          "observation": "June 30, 2026: Kilitch Drugs (India) Ltd 1.34% in the Mukul investor tracker; no September claim."
-        },
-        {
-          "source": "finology",
-          "observation": "June 2026 column: Kilitch Drugs (India) Ltd. 1.34%; September marked Filing Due."
-        }
-      ]
-    },
-    {
-      "name": "Kingfa Science & Technology (India) Limited",
-      "stake": 2.21,
-      "shares": null,
-      "holder": "direct",
-      "date": "2026-06-30",
-      "basis": "Company equity ownership; dated public disclosure",
-      "status": "providers",
-      "note": "June disclosure retained where September filing is awaited. These are shares in the company, not portfolio allocation.",
-      "sources": [
-        "solomo",
-        "finology"
-      ],
-      "evidence": [
-        {
-          "source": "solomo",
-          "observation": "June 30, 2026: Kingfa Science & Technology (India) Ltd 2.21% in the Mukul investor tracker; no September claim."
-        },
-        {
-          "source": "finology",
-          "observation": "June 2026 column: Kingfa Science & Technology (India) Ltd. 2.21%; September marked Filing Due."
-        }
-      ]
-    },
-    {
-      "name": "Kirloskar Ferrous Industries Limited",
-      "stake": 1.21,
-      "shares": null,
-      "holder": "direct",
-      "date": "2026-06-30",
-      "basis": "Company equity ownership; dated public disclosure",
-      "status": "providers",
-      "note": "June disclosure retained where September filing is awaited. These are shares in the company, not portfolio allocation.",
-      "sources": [
-        "solomo",
-        "finology"
-      ],
-      "evidence": [
-        {
-          "source": "solomo",
-          "observation": "June 30, 2026: Kirloskar Ferrous Industries Ltd 1.21% in the Mukul investor tracker; no September claim."
-        },
-        {
-          "source": "finology",
-          "observation": "June 2026 column: Kirloskar Ferrous Industries Ltd. 1.21%; September marked Filing Due."
-        }
-      ]
-    },
-    {
-      "name": "L T Foods Limited",
-      "stake": 1.12,
-      "shares": null,
-      "holder": "direct",
-      "date": "2026-06-30",
-      "basis": "Company equity ownership; dated public disclosure",
-      "status": "providers",
-      "note": "June disclosure retained where September filing is awaited. These are shares in the company, not portfolio allocation.",
-      "sources": [
-        "solomo",
-        "finology"
-      ],
-      "evidence": [
-        {
-          "source": "solomo",
-          "observation": "June 30, 2026: L T Foods Ltd 1.12% in the Mukul investor tracker; no September claim."
-        },
-        {
-          "source": "finology",
-          "observation": "June 2026 column: LT Foods Ltd. 1.12%; September marked Filing Due."
-        }
-      ]
-    },
-    {
-      "name": "Laxmi India Finance Limited",
-      "stake": 4.58,
-      "shares": null,
-      "holder": "direct",
-      "date": "2026-06-30",
-      "basis": "Company equity ownership; dated public disclosure",
-      "status": "providers",
-      "note": "June disclosure retained where September filing is awaited. These are shares in the company, not portfolio allocation.",
-      "sources": [
-        "solomo",
-        "finology"
-      ],
-      "evidence": [
-        {
-          "source": "solomo",
-          "observation": "June 30, 2026: Laxmi India Finance Ltd 4.58% in the Mukul investor tracker; no September claim."
-        },
-        {
-          "source": "finology",
-          "observation": "June 2026 column: Laxmi India Finance Ltd. 4.58%; September marked Filing Due."
-        }
-      ]
-    },
-    {
-      "name": "Lux Industries Limited",
-      "stake": 1.55,
-      "shares": null,
-      "holder": "direct",
-      "date": "2026-06-30",
-      "basis": "Company equity ownership; dated public disclosure",
-      "status": "providers",
-      "note": "June disclosure retained where September filing is awaited. These are shares in the company, not portfolio allocation.",
-      "sources": [
-        "solomo",
-        "finology"
-      ],
-      "evidence": [
-        {
-          "source": "solomo",
-          "observation": "June 30, 2026: Lux Industries Ltd 1.55% in the Mukul investor tracker; no September claim."
-        },
-        {
-          "source": "finology",
-          "observation": "June 2026 column: Lux Industries Ltd. 1.55%; September marked Filing Due."
-        }
-      ]
-    },
-    {
-      "name": "MPS Limited",
-      "stake": 4.46,
-      "shares": null,
-      "holder": "direct",
-      "date": "2026-06-30",
-      "basis": "Company equity ownership; dated public disclosure",
-      "status": "providers",
-      "note": "June disclosure retained where September filing is awaited. These are shares in the company, not portfolio allocation.",
-      "sources": [
-        "solomo",
-        "finology"
-      ],
-      "evidence": [
-        {
-          "source": "solomo",
-          "observation": "June 30, 2026: MPS Ltd 4.46% in the Mukul investor tracker; no September claim."
-        },
-        {
-          "source": "finology",
-          "observation": "June 2026 column: MPS Ltd. 4.46%; September marked Filing Due."
-        }
-      ]
-    },
-    {
-      "name": "Manipal Payment and Identity Solutions Limited",
-      "stake": 2.52,
-      "shares": null,
-      "holder": "direct",
-      "date": "2026-09-16",
       "basis": "Company equity ownership; interim/IPO disclosure",
       "status": "providers",
-      "note": "Two or more provider domains cross-checked. IPO/interim date is kept separate from quarter-end. Original exchange filing not independently inspected.",
-      "sources": [
-        "manipal",
-        "finology",
-        "sharpely"
-      ],
-      "evidence": [
-        {
-          "source": "manipal",
-          "observation": "Shareholding explicitly as of 16 Sep 2026: Mukul Mahavir Agrawal 2.52%."
-        },
-        {
-          "source": "finology",
-          "observation": "September column 2.52%."
-        },
-        {
-          "source": "sharpely",
-          "observation": "Filed September row 2.52%, 5,831,220 shares; quantity not independently reconciled."
-        }
-      ]
-    },
-    {
-      "name": "Monolithisch India Limited",
-      "stake": 2.76,
-      "shares": null,
-      "holder": "direct",
-      "date": "2026-09",
-      "basis": "Company equity ownership; dated public disclosure",
-      "status": "providers",
-      "note": "Effective day unconfirmed; 2026-09 (provider disclosure period; exact day not confirmed). September provider period corroborated; original exchange report and exact effective day not independently inspected. No assumption that an unchanged stake means no trading.",
+      "note": "Effective day unconfirmed; 2026-09 (provider period; day not confirmed). Two or more provider domains cross-checked. IPO/interim date is kept separate from quarter-end. Original exchange filing not independently inspected.",
       "sources": [
         "finology",
         "sharpely"
@@ -943,17 +261,17 @@
       "evidence": [
         {
           "source": "finology",
-          "observation": "September 2026 column: Monolithisch India Ltd 2.76%."
+          "observation": "September column 5.56%."
         },
         {
           "source": "sharpely",
-          "observation": "September 2026 marked filed, 2.76%, 600,000 shares. Quantity not independently reconciled."
+          "observation": "Filed September tracker row 5.56%, 577,667 shares; quantity not independently reconciled."
         }
       ]
     },
     {
-      "name": "N R Agarwal Industries Limited",
-      "stake": 2.06,
+      "name": "Dishman Carbogen Amcis Limited",
+      "stake": 5.5,
       "shares": null,
       "holder": "direct",
       "date": "2026-06-30",
@@ -967,155 +285,11 @@
       "evidence": [
         {
           "source": "solomo",
-          "observation": "June 30, 2026: N R Agarwal Industries Ltd 2.06% in the Mukul investor tracker; no September claim."
+          "observation": "June 30, 2026: Dishman Carbogen Amcis Ltd 5.50% in the Mukul investor tracker; no September claim."
         },
         {
           "source": "finology",
-          "observation": "June 2026 column: NR Agarwal Industries Ltd. 2.06%; September marked Filing Due."
-        }
-      ]
-    },
-    {
-      "name": "Neuland Laboratories Limited",
-      "stake": 3.12,
-      "shares": null,
-      "holder": "direct",
-      "date": "2026-06-30",
-      "basis": "Company equity ownership; dated public disclosure",
-      "status": "providers",
-      "note": "June disclosure retained where September filing is awaited. These are shares in the company, not portfolio allocation.",
-      "sources": [
-        "solomo",
-        "finology"
-      ],
-      "evidence": [
-        {
-          "source": "solomo",
-          "observation": "June 30, 2026: Neuland Laboratories Ltd 3.12% in the Mukul investor tracker; no September claim."
-        },
-        {
-          "source": "finology",
-          "observation": "June 2026 column: Neuland Laboratories Ltd. 3.12%; September marked Filing Due."
-        }
-      ]
-    },
-    {
-      "name": "Nuvama Wealth Management Limited",
-      "stake": 1.37,
-      "shares": null,
-      "holder": "direct",
-      "date": "2026-06-30",
-      "basis": "Company equity ownership; dated public disclosure",
-      "status": "providers",
-      "note": "June disclosure retained where September filing is awaited. These are shares in the company, not portfolio allocation.",
-      "sources": [
-        "solomo",
-        "finology"
-      ],
-      "evidence": [
-        {
-          "source": "solomo",
-          "observation": "June 30, 2026: Nuvama Wealth Management Ltd 1.37% in the Mukul investor tracker; no September claim."
-        },
-        {
-          "source": "finology",
-          "observation": "June 2026 column: Nuvama Wealth Management Ltd. 1.37%; September marked Filing Due."
-        }
-      ]
-    },
-    {
-      "name": "OSEL Devices Limited",
-      "stake": 7.52,
-      "shares": null,
-      "holder": "direct",
-      "date": "2026-06-30",
-      "basis": "Company equity ownership; dated public disclosure",
-      "status": "providers",
-      "note": "June disclosure retained where September filing is awaited. These are shares in the company, not portfolio allocation.",
-      "sources": [
-        "solomo",
-        "finology"
-      ],
-      "evidence": [
-        {
-          "source": "solomo",
-          "observation": "June 30, 2026: OSEL Devices Ltd 7.52% in the Mukul investor tracker; no September claim."
-        },
-        {
-          "source": "finology",
-          "observation": "June 2026 column: Osel Devices Ltd. 7.52%; September marked Filing Due."
-        }
-      ]
-    },
-    {
-      "name": "Oriental Rail Infrastructure Limited",
-      "stake": 5.07,
-      "shares": null,
-      "holder": "direct",
-      "date": "2026-06-30",
-      "basis": "Company equity ownership; dated public disclosure",
-      "status": "providers",
-      "note": "June disclosure retained where September filing is awaited. These are shares in the company, not portfolio allocation.",
-      "sources": [
-        "solomo",
-        "finology"
-      ],
-      "evidence": [
-        {
-          "source": "solomo",
-          "observation": "June 30, 2026: Oriental Rail Infrastructure Ltd 5.07% in the Mukul investor tracker; no September claim."
-        },
-        {
-          "source": "finology",
-          "observation": "June 2026 column: Oriental Rail Infrastructure Ltd. 5.07%; September marked Filing Due."
-        }
-      ]
-    },
-    {
-      "name": "PDS Limited",
-      "stake": 2.38,
-      "shares": null,
-      "holder": "direct",
-      "date": "2026-09",
-      "basis": "Company equity ownership; dated public disclosure",
-      "status": "providers",
-      "note": "Effective day unconfirmed; 2026-09 (provider disclosure period; exact day not confirmed). September provider period corroborated; original exchange report and exact effective day not independently inspected. No assumption that an unchanged stake means no trading.",
-      "sources": [
-        "finology",
-        "sharpely"
-      ],
-      "evidence": [
-        {
-          "source": "finology",
-          "observation": "September 2026 column: PDS Ltd 2.38%."
-        },
-        {
-          "source": "sharpely",
-          "observation": "September 2026 marked filed, 2.38%, 3,362,589 shares. Quantity not independently reconciled."
-        }
-      ]
-    },
-    {
-      "name": "PTC Industries Limited",
-      "stake": 1.07,
-      "shares": null,
-      "holder": "direct",
-      "date": "2026-06-30",
-      "basis": "Company equity ownership; dated public disclosure",
-      "status": "providers",
-      "note": "June disclosure retained where September filing is awaited. These are shares in the company, not portfolio allocation.",
-      "sources": [
-        "solomo",
-        "finology"
-      ],
-      "evidence": [
-        {
-          "source": "solomo",
-          "observation": "June 30, 2026: PTC Industries Ltd 1.07% in the Mukul investor tracker; no September claim."
-        },
-        {
-          "source": "finology",
-          "observation": "June 2026 column: PTC Industries Ltd. 1.07%; September marked Filing Due."
+          "observation": "June 2026 column: Dishman Carbogen Amcis Ltd. 5.50%; September marked Filing Due."
         }
       ]
     },
@@ -1149,32 +323,8 @@
       ]
     },
     {
-      "name": "Prakash Industries Limited",
-      "stake": 1.72,
-      "shares": null,
-      "holder": "direct",
-      "date": "2026-06-30",
-      "basis": "Company equity ownership; dated public disclosure",
-      "status": "providers",
-      "note": "June disclosure retained where September filing is awaited. These are shares in the company, not portfolio allocation.",
-      "sources": [
-        "solomo",
-        "prakash"
-      ],
-      "evidence": [
-        {
-          "source": "solomo",
-          "observation": "June 30, 2026: Prakash Industries Ltd 1.72% in the Mukul investor tracker; no September claim."
-        },
-        {
-          "source": "prakash",
-          "observation": "June 2026: MUKUL MAHAVIR AGARWAL 1.72%; distinct from older AGRAWAL spelling rows."
-        }
-      ]
-    },
-    {
-      "name": "Prakash Pipes Limited",
-      "stake": 2.36,
+      "name": "Oriental Rail Infrastructure Limited",
+      "stake": 5.07,
       "shares": null,
       "holder": "direct",
       "date": "2026-06-30",
@@ -1188,17 +338,17 @@
       "evidence": [
         {
           "source": "solomo",
-          "observation": "June 30, 2026: Prakash Pipes Ltd 2.36% in the Mukul investor tracker; no September claim."
+          "observation": "June 30, 2026: Oriental Rail Infrastructure Ltd 5.07% in the Mukul investor tracker; no September claim."
         },
         {
           "source": "finology",
-          "observation": "June 2026 column: Prakash Pipes Ltd. 2.36%; September marked Filing Due."
+          "observation": "June 2026 column: Oriental Rail Infrastructure Ltd. 5.07%; September marked Filing Due."
         }
       ]
     },
     {
-      "name": "Protean eGov Technologies Limited",
-      "stake": 1.48,
+      "name": "Laxmi India Finance Limited",
+      "stake": 4.58,
       "shares": null,
       "holder": "direct",
       "date": "2026-06-30",
@@ -1212,65 +362,17 @@
       "evidence": [
         {
           "source": "solomo",
-          "observation": "June 30, 2026: Protean eGov Technologies Ltd 1.48% in the Mukul investor tracker; no September claim."
+          "observation": "June 30, 2026: Laxmi India Finance Ltd 4.58% in the Mukul investor tracker; no September claim."
         },
         {
           "source": "finology",
-          "observation": "June 2026 column: Protean e-Gov Technologies Ltd. 1.48%; September marked Filing Due."
+          "observation": "June 2026 column: Laxmi India Finance Ltd. 4.58%; September marked Filing Due."
         }
       ]
     },
     {
-      "name": "Purple Style Labs Limited",
-      "stake": 1.25,
-      "shares": null,
-      "holder": "direct",
-      "date": "2026-09",
-      "basis": "Company equity ownership; interim/IPO disclosure",
-      "status": "providers",
-      "note": "Effective day unconfirmed; 2026-09 (post-IPO provider period; day not confirmed). Two or more provider domains cross-checked. IPO/interim date is kept separate from quarter-end. Original exchange filing not independently inspected.",
-      "sources": [
-        "finology",
-        "sharpely"
-      ],
-      "evidence": [
-        {
-          "source": "finology",
-          "observation": "September post-IPO column 1.25%; pre-IPO percentages use a different denominator."
-        },
-        {
-          "source": "sharpely",
-          "observation": "Filed September row 1.25%, 1,000,000 shares; two provider stake figures agree."
-        }
-      ]
-    },
-    {
-      "name": "Ravindra Energy Limited",
-      "stake": 1.22,
-      "shares": null,
-      "holder": "direct",
-      "date": "2026-09",
-      "basis": "Company equity ownership; dated public disclosure",
-      "status": "providers",
-      "note": "Effective day unconfirmed; 2026-09 (provider disclosure period; exact day not confirmed). September provider period corroborated; original exchange report and exact effective day not independently inspected. No assumption that an unchanged stake means no trading.",
-      "sources": [
-        "finology",
-        "sharpely"
-      ],
-      "evidence": [
-        {
-          "source": "finology",
-          "observation": "September 2026 column: Ravindra Energy Ltd 1.22%."
-        },
-        {
-          "source": "sharpely",
-          "observation": "September 2026 marked filed, 1.22%, 2,427,162 shares. Quantity not independently reconciled."
-        }
-      ]
-    },
-    {
-      "name": "Raymond Lifestyle Limited",
-      "stake": 1.15,
+      "name": "MPS Limited",
+      "stake": 4.46,
       "shares": null,
       "holder": "direct",
       "date": "2026-06-30",
@@ -1284,41 +386,17 @@
       "evidence": [
         {
           "source": "solomo",
-          "observation": "June 30, 2026: Raymond Lifestyle Ltd 1.15% in the Mukul investor tracker; no September claim."
+          "observation": "June 30, 2026: MPS Ltd 4.46% in the Mukul investor tracker; no September claim."
         },
         {
           "source": "finology",
-          "observation": "June 2026 column: Raymond Lifestyle Ltd. 1.15%; September marked Filing Due."
+          "observation": "June 2026 column: MPS Ltd. 4.46%; September marked Filing Due."
         }
       ]
     },
     {
-      "name": "Safety Controls & Devices Limited",
-      "stake": 2.7,
-      "shares": null,
-      "holder": "direct",
-      "date": "2026-04-10",
-      "basis": "Company equity ownership; interim/IPO disclosure",
-      "status": "providers",
-      "note": "Two or more provider domains cross-checked. IPO/interim date is kept separate from quarter-end. Original exchange filing not independently inspected.",
-      "sources": [
-        "safety",
-        "finology"
-      ],
-      "evidence": [
-        {
-          "source": "safety",
-          "observation": "Pattern as of Apr 10, 2026: Mukul Mahavir Agrawal 2.70%, 536,000 shares."
-        },
-        {
-          "source": "finology",
-          "observation": "April column 2.70%; September filing due."
-        }
-      ]
-    },
-    {
-      "name": "Sarda Energy & Minerals Limited",
-      "stake": 1.14,
+      "name": "Brandman Retail Limited",
+      "stake": 4.04,
       "shares": null,
       "holder": "direct",
       "date": "2026-06-30",
@@ -1332,17 +410,17 @@
       "evidence": [
         {
           "source": "solomo",
-          "observation": "June 30, 2026: Sarda Energy & Minerals Ltd 1.14% in the Mukul investor tracker; no September claim."
+          "observation": "June 30, 2026: Brandman Retail Ltd 4.04% in the Mukul investor tracker; no September claim."
         },
         {
           "source": "finology",
-          "observation": "June 2026 column: Sarda Energy & Minerals Ltd. 1.14%; September marked Filing Due."
+          "observation": "June 2026 column: Brandman Retail Ltd. 4.04%; September marked Filing Due."
         }
       ]
     },
     {
-      "name": "Strides Pharma Science Limited",
-      "stake": 1.12,
+      "name": "AYM Syntex Limited",
+      "stake": 3.92,
       "shares": null,
       "holder": "direct",
       "date": "2026-06-30",
@@ -1356,17 +434,17 @@
       "evidence": [
         {
           "source": "solomo",
-          "observation": "June 30, 2026: Strides Pharma Science Ltd 1.12% in the Mukul investor tracker; no September claim."
+          "observation": "June 30, 2026: AYM Syntex Ltd 3.92% in the Mukul investor tracker; no September claim."
         },
         {
           "source": "finology",
-          "observation": "June 2026 column: Strides Pharma Science Ltd. 1.12%; September marked Filing Due."
+          "observation": "June 2026 column: AYM Syntex Ltd. 3.92%; September marked Filing Due."
         }
       ]
     },
     {
-      "name": "Sudeep Pharma Limited",
-      "stake": 1.33,
+      "name": "Arman Financial Services Limited",
+      "stake": 3.8,
       "shares": null,
       "holder": "direct",
       "date": "2026-06-30",
@@ -1380,11 +458,131 @@
       "evidence": [
         {
           "source": "solomo",
-          "observation": "June 30, 2026: Sudeep Pharma Ltd 1.33% in the Mukul investor tracker; no September claim."
+          "observation": "June 30, 2026: Arman Financial Services Ltd 3.80% in the Mukul investor tracker; no September claim."
         },
         {
           "source": "finology",
-          "observation": "June 2026 column: Sudeep Pharma Ltd. 1.33%; September marked 1.33."
+          "observation": "June 2026 column: Arman Financial Services Ltd. 3.80%; September marked Filing Due."
+        }
+      ]
+    },
+    {
+      "name": "Gaudium IVF and Women Health Limited",
+      "stake": 3.43,
+      "shares": null,
+      "holder": "direct",
+      "date": "2026-06-30",
+      "basis": "Company equity ownership; dated public disclosure",
+      "status": "providers",
+      "note": "June disclosure retained where September filing is awaited. These are shares in the company, not portfolio allocation.",
+      "sources": [
+        "solomo",
+        "finology"
+      ],
+      "evidence": [
+        {
+          "source": "solomo",
+          "observation": "June 30, 2026: Gaudium IVF and Women Health Ltd 3.43% in the Mukul investor tracker; no September claim."
+        },
+        {
+          "source": "finology",
+          "observation": "June 2026 column: Gaudium IVF and Women Health Ltd. 3.43%; September marked Filing Due."
+        }
+      ]
+    },
+    {
+      "name": "Apollo Pipes Limited",
+      "stake": 3.41,
+      "shares": null,
+      "holder": "direct",
+      "date": "2026-06-30",
+      "basis": "Company equity ownership; dated public disclosure",
+      "status": "providers",
+      "note": "June disclosure retained where September filing is awaited. These are shares in the company, not portfolio allocation.",
+      "sources": [
+        "solomo",
+        "finology"
+      ],
+      "evidence": [
+        {
+          "source": "solomo",
+          "observation": "June 30, 2026: Apollo Pipes Ltd 3.41% in the Mukul investor tracker; no September claim."
+        },
+        {
+          "source": "finology",
+          "observation": "June 2026 column: Apollo Pipes Ltd. 3.41%; September marked Filing Due."
+        }
+      ]
+    },
+    {
+      "name": "Neuland Laboratories Limited",
+      "stake": 3.12,
+      "shares": null,
+      "holder": "direct",
+      "date": "2026-06-30",
+      "basis": "Company equity ownership; dated public disclosure",
+      "status": "providers",
+      "note": "June disclosure retained where September filing is awaited. These are shares in the company, not portfolio allocation.",
+      "sources": [
+        "solomo",
+        "finology"
+      ],
+      "evidence": [
+        {
+          "source": "solomo",
+          "observation": "June 30, 2026: Neuland Laboratories Ltd 3.12% in the Mukul investor tracker; no September claim."
+        },
+        {
+          "source": "finology",
+          "observation": "June 2026 column: Neuland Laboratories Ltd. 3.12%; September marked Filing Due."
+        }
+      ]
+    },
+    {
+      "name": "InfoBeans Technologies Limited",
+      "stake": 3.09,
+      "shares": null,
+      "holder": "direct",
+      "date": "2026-06-30",
+      "basis": "Company equity ownership; dated public disclosure",
+      "status": "providers",
+      "note": "June disclosure retained where September filing is awaited. These are shares in the company, not portfolio allocation.",
+      "sources": [
+        "solomo",
+        "finology"
+      ],
+      "evidence": [
+        {
+          "source": "solomo",
+          "observation": "June 30, 2026: InfoBeans Technologies Ltd 3.09% in the Mukul investor tracker; no September claim."
+        },
+        {
+          "source": "finology",
+          "observation": "June 2026 column: Infobeans Technologies Ltd. 3.09%; September marked Filing Due."
+        }
+      ]
+    },
+    {
+      "name": "Allcargo Logistics Limited",
+      "stake": 2.94,
+      "shares": null,
+      "holder": "direct",
+      "date": "2026-06-30",
+      "basis": "Company equity ownership; dated public disclosure",
+      "status": "providers",
+      "note": "June disclosure retained where September filing is awaited. These are shares in the company, not portfolio allocation.",
+      "sources": [
+        "solomo",
+        "finology"
+      ],
+      "evidence": [
+        {
+          "source": "solomo",
+          "observation": "June 30, 2026: Allcargo Logistics Ltd 2.94% in the Mukul investor tracker; no September claim."
+        },
+        {
+          "source": "finology",
+          "observation": "June 2026 column: Allcargo Logistics Ltd. 2.94%; September marked Filing Due."
         }
       ]
     },
@@ -1413,218 +611,127 @@
       ]
     },
     {
-      "name": "TAAL Tech Limited",
-      "stake": 8.92,
+      "name": "Monolithisch India Limited",
+      "stake": 2.76,
       "shares": null,
       "holder": "direct",
-      "date": "2026-06-30",
+      "date": "2026-09",
       "basis": "Company equity ownership; dated public disclosure",
       "status": "providers",
-      "note": "June disclosure retained where September filing is awaited. These are shares in the company, not portfolio allocation.",
+      "note": "Effective day unconfirmed; 2026-09 (provider disclosure period; exact day not confirmed). September provider period corroborated; original exchange report and exact effective day not independently inspected. No assumption that an unchanged stake means no trading.",
       "sources": [
-        "solomo",
-        "finology"
+        "finology",
+        "sharpely"
       ],
       "evidence": [
         {
-          "source": "solomo",
-          "observation": "June 30, 2026: TAAL Tech Ltd 8.92% in the Mukul investor tracker; no September claim."
+          "source": "finology",
+          "observation": "September 2026 column: Monolithisch India Ltd 2.76%."
         },
         {
-          "source": "finology",
-          "observation": "June 2026 column: TAAL Tech Ltd. 8.92%; September marked Filing Due."
+          "source": "sharpely",
+          "observation": "September 2026 marked filed, 2.76%, 600,000 shares. Quantity not independently reconciled."
         }
       ]
     },
     {
-      "name": "Tatva Chintan Pharma Chem Limited",
-      "stake": 2.14,
+      "name": "Anawil Wire and Engineering Limited",
+      "stake": 2.72,
       "shares": null,
       "holder": "direct",
-      "date": "2026-06-30",
-      "basis": "Company equity ownership; dated public disclosure",
+      "date": "2026-08",
+      "basis": "Company equity ownership; interim/IPO disclosure",
       "status": "providers",
-      "note": "June disclosure retained where September filing is awaited. These are shares in the company, not portfolio allocation.",
+      "note": "Effective day unconfirmed; 2026-08 (interim disclosure; day not confirmed). Two or more provider domains cross-checked. IPO/interim date is kept separate from quarter-end. Original exchange filing not independently inspected.",
       "sources": [
-        "solomo",
-        "finology"
+        "anawil",
+        "tijori"
       ],
       "evidence": [
         {
-          "source": "solomo",
-          "observation": "June 30, 2026: Tatva Chintan Pharma Chem Ltd 2.14% in the Mukul investor tracker; no September claim."
+          "source": "anawil",
+          "observation": "August 2026 named holder Mukul Mahavir Agrawal 2.72%."
         },
         {
-          "source": "finology",
-          "observation": "June 2026 column: Tatva Chintan Pharma Chem Ltd. 2.14%; September marked Filing Due."
+          "source": "tijori",
+          "observation": "September 7 tracker carries 2.72%; day is publication, not effective ownership date."
         }
       ]
     },
     {
-      "name": "Thejo Engineering Limited",
-      "stake": 1.66,
+      "name": "Safety Controls & Devices Limited",
+      "stake": 2.7,
       "shares": null,
       "holder": "direct",
-      "date": "2026-06-30",
-      "basis": "Company equity ownership; dated public disclosure",
+      "date": "2026-04-10",
+      "basis": "Company equity ownership; interim/IPO disclosure",
       "status": "providers",
-      "note": "June disclosure retained where September filing is awaited. These are shares in the company, not portfolio allocation.",
+      "note": "Two or more provider domains cross-checked. IPO/interim date is kept separate from quarter-end. Original exchange filing not independently inspected.",
       "sources": [
-        "solomo",
+        "safety",
         "finology"
       ],
       "evidence": [
         {
-          "source": "solomo",
-          "observation": "June 30, 2026: Thejo Engineering Ltd 1.66% in the Mukul investor tracker; no September claim."
+          "source": "safety",
+          "observation": "Pattern as of Apr 10, 2026: Mukul Mahavir Agrawal 2.70%, 536,000 shares."
         },
         {
           "source": "finology",
-          "observation": "June 2026 column: Thejo Engineering Ltd. 1.66%; September marked Filing Due."
+          "observation": "April column 2.70%; September filing due."
         }
       ]
     },
     {
-      "name": "Tracxn Technologies Limited",
-      "stake": 1.87,
+      "name": "J Kumar Infraprojects Limited",
+      "stake": 2.55,
       "shares": null,
       "holder": "direct",
-      "date": "2026-06-30",
+      "date": "2026-09",
       "basis": "Company equity ownership; dated public disclosure",
       "status": "providers",
-      "note": "June disclosure retained where September filing is awaited. These are shares in the company, not portfolio allocation.",
+      "note": "Effective day unconfirmed; 2026-09 (provider disclosure period; exact day not confirmed). September provider period corroborated; original exchange report and exact effective day not independently inspected. No assumption that an unchanged stake means no trading.",
       "sources": [
-        "solomo",
-        "finology"
+        "finology",
+        "sharpely"
       ],
       "evidence": [
         {
-          "source": "solomo",
-          "observation": "June 30, 2026: Tracxn Technologies Ltd 1.87% in the Mukul investor tracker; no September claim."
+          "source": "finology",
+          "observation": "September 2026 column: J Kumar Infraprojects Ltd 2.55%."
         },
         {
-          "source": "finology",
-          "observation": "June 2026 column: Tracxn Technologies Ltd. 1.87%; September marked Filing Due."
+          "source": "sharpely",
+          "observation": "September 2026 marked filed, 2.55%, 1,930,920 shares. Quantity not independently reconciled."
         }
       ]
     },
     {
-      "name": "Transpek Industry Limited",
-      "stake": 2.12,
+      "name": "Manipal Payment and Identity Solutions Limited",
+      "stake": 2.52,
       "shares": null,
       "holder": "direct",
-      "date": "2026-06-30",
-      "basis": "Company equity ownership; dated public disclosure",
+      "date": "2026-09-16",
+      "basis": "Company equity ownership; interim/IPO disclosure",
       "status": "providers",
-      "note": "June disclosure retained where September filing is awaited. These are shares in the company, not portfolio allocation.",
+      "note": "Two or more provider domains cross-checked. IPO/interim date is kept separate from quarter-end. Original exchange filing not independently inspected.",
       "sources": [
-        "solomo",
-        "finology"
+        "manipal",
+        "finology",
+        "sharpely"
       ],
       "evidence": [
         {
-          "source": "solomo",
-          "observation": "June 30, 2026: Transpek Industry Ltd 2.12% in the Mukul investor tracker; no September claim."
+          "source": "manipal",
+          "observation": "Shareholding explicitly as of 16 Sep 2026: Mukul Mahavir Agrawal 2.52%."
         },
         {
           "source": "finology",
-          "observation": "June 2026 column: Transpek Industry Ltd. 2.12%; September marked Filing Due."
-        }
-      ]
-    },
-    {
-      "name": "Valor Estate Limited",
-      "stake": 1.57,
-      "shares": null,
-      "holder": "direct",
-      "date": "2026-06-30",
-      "basis": "Company equity ownership; dated public disclosure",
-      "status": "providers",
-      "note": "June disclosure retained where September filing is awaited. These are shares in the company, not portfolio allocation.",
-      "sources": [
-        "solomo",
-        "finology"
-      ],
-      "evidence": [
-        {
-          "source": "solomo",
-          "observation": "June 30, 2026: Valor Estate Ltd 1.57% in the Mukul investor tracker; no September claim."
+          "observation": "September column 2.52%."
         },
         {
-          "source": "finology",
-          "observation": "June 2026 column: Valor Estate Ltd. 1.57%; September marked Filing Due."
-        }
-      ]
-    },
-    {
-      "name": "Vasa Denticity Limited",
-      "stake": 2.36,
-      "shares": null,
-      "holder": "direct",
-      "date": "2026-06-30",
-      "basis": "Company equity ownership; dated public disclosure",
-      "status": "providers",
-      "note": "June disclosure retained where September filing is awaited. These are shares in the company, not portfolio allocation.",
-      "sources": [
-        "solomo",
-        "finology"
-      ],
-      "evidence": [
-        {
-          "source": "solomo",
-          "observation": "June 30, 2026: Vasa Denticity Ltd 2.36% in the Mukul investor tracker; no September claim."
-        },
-        {
-          "source": "finology",
-          "observation": "June 2026 column: Vasa Denticity Ltd. 2.36%; September marked Filing Due."
-        }
-      ]
-    },
-    {
-      "name": "Vidhi Specialty Food Ingredients Limited",
-      "stake": 1.38,
-      "shares": null,
-      "holder": "direct",
-      "date": "2026-06-30",
-      "basis": "Company equity ownership; dated public disclosure",
-      "status": "providers",
-      "note": "June disclosure retained where September filing is awaited. These are shares in the company, not portfolio allocation.",
-      "sources": [
-        "solomo",
-        "finology"
-      ],
-      "evidence": [
-        {
-          "source": "solomo",
-          "observation": "June 30, 2026: Vidhi Specialty Food Ingredients Ltd 1.38% in the Mukul investor tracker; no September claim."
-        },
-        {
-          "source": "finology",
-          "observation": "June 2026 column: Vidhi Specialty Food Ingredients Ltd. 1.38%; September marked Filing Due."
-        }
-      ]
-    },
-    {
-      "name": "WPIL Limited",
-      "stake": 1.54,
-      "shares": null,
-      "holder": "direct",
-      "date": "2026-06-30",
-      "basis": "Company equity ownership; dated public disclosure",
-      "status": "providers",
-      "note": "June disclosure retained where September filing is awaited. These are shares in the company, not portfolio allocation.",
-      "sources": [
-        "solomo",
-        "wpil"
-      ],
-      "evidence": [
-        {
-          "source": "solomo",
-          "observation": "June 30, 2026: WPIL Ltd 1.54% in the Mukul investor tracker; no September claim."
-        },
-        {
-          "source": "wpil",
-          "observation": "June 30, 2026: Mukul Mahavir Agarwal 1.54%, 1,500,000 shares."
+          "source": "sharpely",
+          "observation": "Filed September row 2.52%, 5,831,220 shares; quantity not independently reconciled."
         }
       ]
     },
@@ -1653,32 +760,32 @@
       ]
     },
     {
-      "name": "West Coast Paper Mills Limited",
-      "stake": 1.44,
+      "name": "PDS Limited",
+      "stake": 2.38,
       "shares": null,
       "holder": "direct",
-      "date": "2026-06-30",
+      "date": "2026-09",
       "basis": "Company equity ownership; dated public disclosure",
       "status": "providers",
-      "note": "June disclosure retained where September filing is awaited. These are shares in the company, not portfolio allocation.",
+      "note": "Effective day unconfirmed; 2026-09 (provider disclosure period; exact day not confirmed). September provider period corroborated; original exchange report and exact effective day not independently inspected. No assumption that an unchanged stake means no trading.",
       "sources": [
-        "solomo",
-        "finology"
+        "finology",
+        "sharpely"
       ],
       "evidence": [
         {
-          "source": "solomo",
-          "observation": "June 30, 2026: West Coast Paper Mills Ltd 1.44% in the Mukul investor tracker; no September claim."
+          "source": "finology",
+          "observation": "September 2026 column: PDS Ltd 2.38%."
         },
         {
-          "source": "finology",
-          "observation": "June 2026 column: West Coast Paper Mills Ltd. 1.44%; September marked Filing Due."
+          "source": "sharpely",
+          "observation": "September 2026 marked filed, 2.38%, 3,362,589 shares. Quantity not independently reconciled."
         }
       ]
     },
     {
-      "name": "Yatharth Hospital & Trauma Care Services Limited",
-      "stake": 1.14,
+      "name": "Prakash Pipes Limited",
+      "stake": 2.36,
       "shares": null,
       "holder": "direct",
       "date": "2026-06-30",
@@ -1692,11 +799,83 @@
       "evidence": [
         {
           "source": "solomo",
-          "observation": "June 30, 2026: Yatharth Hospital & Trauma Care Services Ltd 1.14% in the Mukul investor tracker; no September claim."
+          "observation": "June 30, 2026: Prakash Pipes Ltd 2.36% in the Mukul investor tracker; no September claim."
         },
         {
           "source": "finology",
-          "observation": "June 2026 column: Yatharth Hospital & Trauma Care Services Ltd. 1.14%; September marked Filing Due."
+          "observation": "June 2026 column: Prakash Pipes Ltd. 2.36%; September marked Filing Due."
+        }
+      ]
+    },
+    {
+      "name": "Vasa Denticity Limited",
+      "stake": 2.36,
+      "shares": null,
+      "holder": "direct",
+      "date": "2026-06-30",
+      "basis": "Company equity ownership; dated public disclosure",
+      "status": "providers",
+      "note": "June disclosure retained where September filing is awaited. These are shares in the company, not portfolio allocation.",
+      "sources": [
+        "solomo",
+        "finology"
+      ],
+      "evidence": [
+        {
+          "source": "solomo",
+          "observation": "June 30, 2026: Vasa Denticity Ltd 2.36% in the Mukul investor tracker; no September claim."
+        },
+        {
+          "source": "finology",
+          "observation": "June 2026 column: Vasa Denticity Ltd. 2.36%; September marked Filing Due."
+        }
+      ]
+    },
+    {
+      "name": "Kingfa Science & Technology (India) Limited",
+      "stake": 2.21,
+      "shares": null,
+      "holder": "direct",
+      "date": "2026-06-30",
+      "basis": "Company equity ownership; dated public disclosure",
+      "status": "providers",
+      "note": "June disclosure retained where September filing is awaited. These are shares in the company, not portfolio allocation.",
+      "sources": [
+        "solomo",
+        "finology"
+      ],
+      "evidence": [
+        {
+          "source": "solomo",
+          "observation": "June 30, 2026: Kingfa Science & Technology (India) Ltd 2.21% in the Mukul investor tracker; no September claim."
+        },
+        {
+          "source": "finology",
+          "observation": "June 2026 column: Kingfa Science & Technology (India) Ltd. 2.21%; September marked Filing Due."
+        }
+      ]
+    },
+    {
+      "name": "Tatva Chintan Pharma Chem Limited",
+      "stake": 2.14,
+      "shares": null,
+      "holder": "direct",
+      "date": "2026-06-30",
+      "basis": "Company equity ownership; dated public disclosure",
+      "status": "providers",
+      "note": "June disclosure retained where September filing is awaited. These are shares in the company, not portfolio allocation.",
+      "sources": [
+        "solomo",
+        "finology"
+      ],
+      "evidence": [
+        {
+          "source": "solomo",
+          "observation": "June 30, 2026: Tatva Chintan Pharma Chem Ltd 2.14% in the Mukul investor tracker; no September claim."
+        },
+        {
+          "source": "finology",
+          "observation": "June 2026 column: Tatva Chintan Pharma Chem Ltd. 2.14%; September marked Filing Due."
         }
       ]
     },
@@ -1731,6 +910,896 @@
         {
           "source": "zota-finology",
           "observation": "June issuer-holder table corroborates Mukul Mahavir Agrawal 2.13%, separate Asha Mukul Agrawal 5.14%."
+        }
+      ]
+    },
+    {
+      "name": "Transpek Industry Limited",
+      "stake": 2.12,
+      "shares": null,
+      "holder": "direct",
+      "date": "2026-06-30",
+      "basis": "Company equity ownership; dated public disclosure",
+      "status": "providers",
+      "note": "June disclosure retained where September filing is awaited. These are shares in the company, not portfolio allocation.",
+      "sources": [
+        "solomo",
+        "finology"
+      ],
+      "evidence": [
+        {
+          "source": "solomo",
+          "observation": "June 30, 2026: Transpek Industry Ltd 2.12% in the Mukul investor tracker; no September claim."
+        },
+        {
+          "source": "finology",
+          "observation": "June 2026 column: Transpek Industry Ltd. 2.12%; September marked Filing Due."
+        }
+      ]
+    },
+    {
+      "name": "N R Agarwal Industries Limited",
+      "stake": 2.06,
+      "shares": null,
+      "holder": "direct",
+      "date": "2026-06-30",
+      "basis": "Company equity ownership; dated public disclosure",
+      "status": "providers",
+      "note": "June disclosure retained where September filing is awaited. These are shares in the company, not portfolio allocation.",
+      "sources": [
+        "solomo",
+        "finology"
+      ],
+      "evidence": [
+        {
+          "source": "solomo",
+          "observation": "June 30, 2026: N R Agarwal Industries Ltd 2.06% in the Mukul investor tracker; no September claim."
+        },
+        {
+          "source": "finology",
+          "observation": "June 2026 column: NR Agarwal Industries Ltd. 2.06%; September marked Filing Due."
+        }
+      ]
+    },
+    {
+      "name": "Ajmera Realty & Infra India Limited",
+      "stake": 1.93,
+      "shares": null,
+      "holder": "direct",
+      "date": "2026-06-30",
+      "basis": "Company equity ownership; dated public disclosure",
+      "status": "providers",
+      "note": "June disclosure retained where September filing is awaited. These are shares in the company, not portfolio allocation.",
+      "sources": [
+        "solomo",
+        "finology"
+      ],
+      "evidence": [
+        {
+          "source": "solomo",
+          "observation": "June 30, 2026: Ajmera Realty & Infra India Ltd 1.93% in the Mukul investor tracker; no September claim."
+        },
+        {
+          "source": "finology",
+          "observation": "June 2026 column: Ajmera Realty & Infra India Ltd. 1.93%; September marked Filing Due."
+        }
+      ]
+    },
+    {
+      "name": "Hindustan Construction Company Limited",
+      "stake": 1.91,
+      "shares": null,
+      "holder": "direct",
+      "date": "2026-06-30",
+      "basis": "Company equity ownership; dated public disclosure",
+      "status": "providers",
+      "note": "June disclosure retained where September filing is awaited. These are shares in the company, not portfolio allocation.",
+      "sources": [
+        "solomo",
+        "finology"
+      ],
+      "evidence": [
+        {
+          "source": "solomo",
+          "observation": "June 30, 2026: Hindustan Construction Company Ltd 1.91% in the Mukul investor tracker; no September claim."
+        },
+        {
+          "source": "finology",
+          "observation": "June 2026 column: Hindustan Construction Company Ltd. 1.91%; September marked Filing Due."
+        }
+      ]
+    },
+    {
+      "name": "Tracxn Technologies Limited",
+      "stake": 1.87,
+      "shares": null,
+      "holder": "direct",
+      "date": "2026-06-30",
+      "basis": "Company equity ownership; dated public disclosure",
+      "status": "providers",
+      "note": "June disclosure retained where September filing is awaited. These are shares in the company, not portfolio allocation.",
+      "sources": [
+        "solomo",
+        "finology"
+      ],
+      "evidence": [
+        {
+          "source": "solomo",
+          "observation": "June 30, 2026: Tracxn Technologies Ltd 1.87% in the Mukul investor tracker; no September claim."
+        },
+        {
+          "source": "finology",
+          "observation": "June 2026 column: Tracxn Technologies Ltd. 1.87%; September marked Filing Due."
+        }
+      ]
+    },
+    {
+      "name": "Prakash Industries Limited",
+      "stake": 1.72,
+      "shares": null,
+      "holder": "direct",
+      "date": "2026-06-30",
+      "basis": "Company equity ownership; dated public disclosure",
+      "status": "providers",
+      "note": "June disclosure retained where September filing is awaited. These are shares in the company, not portfolio allocation.",
+      "sources": [
+        "solomo",
+        "prakash"
+      ],
+      "evidence": [
+        {
+          "source": "solomo",
+          "observation": "June 30, 2026: Prakash Industries Ltd 1.72% in the Mukul investor tracker; no September claim."
+        },
+        {
+          "source": "prakash",
+          "observation": "June 2026: MUKUL MAHAVIR AGARWAL 1.72%; distinct from older AGRAWAL spelling rows."
+        }
+      ]
+    },
+    {
+      "name": "Thejo Engineering Limited",
+      "stake": 1.66,
+      "shares": null,
+      "holder": "direct",
+      "date": "2026-06-30",
+      "basis": "Company equity ownership; dated public disclosure",
+      "status": "providers",
+      "note": "June disclosure retained where September filing is awaited. These are shares in the company, not portfolio allocation.",
+      "sources": [
+        "solomo",
+        "finology"
+      ],
+      "evidence": [
+        {
+          "source": "solomo",
+          "observation": "June 30, 2026: Thejo Engineering Ltd 1.66% in the Mukul investor tracker; no September claim."
+        },
+        {
+          "source": "finology",
+          "observation": "June 2026 column: Thejo Engineering Ltd. 1.66%; September marked Filing Due."
+        }
+      ]
+    },
+    {
+      "name": "Arisinfra Solutions Limited",
+      "stake": 1.59,
+      "shares": null,
+      "holder": "direct",
+      "date": "2026-06-30",
+      "basis": "Company equity ownership; dated public disclosure",
+      "status": "providers",
+      "note": "June disclosure retained where September filing is awaited. These are shares in the company, not portfolio allocation.",
+      "sources": [
+        "solomo",
+        "finology"
+      ],
+      "evidence": [
+        {
+          "source": "solomo",
+          "observation": "June 30, 2026: Arisinfra Solutions Ltd 1.59% in the Mukul investor tracker; no September claim."
+        },
+        {
+          "source": "finology",
+          "observation": "June 2026 column: Arisinfra Solutions Ltd. 1.59%; September marked Filing Due."
+        }
+      ]
+    },
+    {
+      "name": "Stanley Lifestyle Limited",
+      "stake": 1.58,
+      "shares": 900000,
+      "holder": "direct",
+      "date": "2026-09-30",
+      "basis": "Quarter-end disclosure",
+      "note": "September 2026 Q2 FY25 disclosure. Acquired a 1.58% stake (900,000 shares) in luxury furniture brand.",
+      "sources": [
+        "finology",
+        "trendlyne",
+        "block"
+      ],
+      "status": "primary",
+      "parts": [
+        {
+          "name": "Mukul Agrawal",
+          "type": "direct",
+          "stake": 1.58,
+          "shares": 900000,
+          "date": "2026-09-30",
+          "source": "trendlyne"
+        }
+      ],
+      "evidence": [
+        {
+          "source": "finology",
+          "observation": "September 2026: 1.58% (900,000 shares)."
+        },
+        {
+          "source": "trendlyne",
+          "observation": "New holding Q2 FY25: 1.58% stake, 900,000 shares."
+        }
+      ]
+    },
+    {
+      "name": "Valor Estate Limited",
+      "stake": 1.57,
+      "shares": null,
+      "holder": "direct",
+      "date": "2026-06-30",
+      "basis": "Company equity ownership; dated public disclosure",
+      "status": "providers",
+      "note": "June disclosure retained where September filing is awaited. These are shares in the company, not portfolio allocation.",
+      "sources": [
+        "solomo",
+        "finology"
+      ],
+      "evidence": [
+        {
+          "source": "solomo",
+          "observation": "June 30, 2026: Valor Estate Ltd 1.57% in the Mukul investor tracker; no September claim."
+        },
+        {
+          "source": "finology",
+          "observation": "June 2026 column: Valor Estate Ltd. 1.57%; September marked Filing Due."
+        }
+      ]
+    },
+    {
+      "name": "Lux Industries Limited",
+      "stake": 1.55,
+      "shares": null,
+      "holder": "direct",
+      "date": "2026-06-30",
+      "basis": "Company equity ownership; dated public disclosure",
+      "status": "providers",
+      "note": "June disclosure retained where September filing is awaited. These are shares in the company, not portfolio allocation.",
+      "sources": [
+        "solomo",
+        "finology"
+      ],
+      "evidence": [
+        {
+          "source": "solomo",
+          "observation": "June 30, 2026: Lux Industries Ltd 1.55% in the Mukul investor tracker; no September claim."
+        },
+        {
+          "source": "finology",
+          "observation": "June 2026 column: Lux Industries Ltd. 1.55%; September marked Filing Due."
+        }
+      ]
+    },
+    {
+      "name": "WPIL Limited",
+      "stake": 1.54,
+      "shares": null,
+      "holder": "direct",
+      "date": "2026-06-30",
+      "basis": "Company equity ownership; dated public disclosure",
+      "status": "providers",
+      "note": "June disclosure retained where September filing is awaited. These are shares in the company, not portfolio allocation.",
+      "sources": [
+        "solomo",
+        "wpil"
+      ],
+      "evidence": [
+        {
+          "source": "solomo",
+          "observation": "June 30, 2026: WPIL Ltd 1.54% in the Mukul investor tracker; no September claim."
+        },
+        {
+          "source": "wpil",
+          "observation": "June 30, 2026: Mukul Mahavir Agarwal 1.54%, 1,500,000 shares."
+        }
+      ]
+    },
+    {
+      "name": "Indo Count Industries Limited",
+      "stake": 1.51,
+      "shares": null,
+      "holder": "direct",
+      "date": "2026-06-30",
+      "basis": "Company equity ownership; dated public disclosure",
+      "status": "providers",
+      "note": "June disclosure retained where September filing is awaited. These are shares in the company, not portfolio allocation.",
+      "sources": [
+        "solomo",
+        "finology"
+      ],
+      "evidence": [
+        {
+          "source": "solomo",
+          "observation": "June 30, 2026: Indo Count Industries Ltd 1.51% in the Mukul investor tracker; no September claim."
+        },
+        {
+          "source": "finology",
+          "observation": "June 2026 column: Indo Count Industries Ltd. 1.51%; September marked Filing Due."
+        }
+      ]
+    },
+    {
+      "name": "Jammu and Kashmir Bank Limited",
+      "stake": 1.5,
+      "shares": null,
+      "holder": "direct",
+      "date": "2026-06-30",
+      "basis": "Company equity ownership; dated public disclosure",
+      "status": "providers",
+      "note": "June disclosure retained where September filing is awaited. These are shares in the company, not portfolio allocation.",
+      "sources": [
+        "solomo",
+        "finology"
+      ],
+      "evidence": [
+        {
+          "source": "solomo",
+          "observation": "June 30, 2026: Jammu and Kashmir Bank Ltd 1.50% in the Mukul investor tracker; no September claim."
+        },
+        {
+          "source": "finology",
+          "observation": "June 2026 column: The Jammu & Kashmir Bank Ltd. 1.50%; September marked Filing Due."
+        }
+      ]
+    },
+    {
+      "name": "Protean eGov Technologies Limited",
+      "stake": 1.48,
+      "shares": null,
+      "holder": "direct",
+      "date": "2026-06-30",
+      "basis": "Company equity ownership; dated public disclosure",
+      "status": "providers",
+      "note": "June disclosure retained where September filing is awaited. These are shares in the company, not portfolio allocation.",
+      "sources": [
+        "solomo",
+        "finology"
+      ],
+      "evidence": [
+        {
+          "source": "solomo",
+          "observation": "June 30, 2026: Protean eGov Technologies Ltd 1.48% in the Mukul investor tracker; no September claim."
+        },
+        {
+          "source": "finology",
+          "observation": "June 2026 column: Protean e-Gov Technologies Ltd. 1.48%; September marked Filing Due."
+        }
+      ]
+    },
+    {
+      "name": "Raghav Productivity Enhancers Limited",
+      "stake": 1.48,
+      "shares": null,
+      "holder": "direct",
+      "date": "2026-09-30",
+      "basis": "Quarter-end disclosure",
+      "note": "September 2026 Q2 FY25 disclosure. Specialized ramming mass manufacturer holding.",
+      "sources": [
+        "finology",
+        "trendlyne"
+      ],
+      "status": "primary",
+      "parts": [
+        {
+          "name": "Mukul Agrawal",
+          "type": "direct",
+          "stake": 1.48,
+          "shares": null,
+          "date": "2026-09-30",
+          "source": "trendlyne"
+        }
+      ],
+      "evidence": [
+        {
+          "source": "finology",
+          "observation": "September 2026: 1.48% stake."
+        },
+        {
+          "source": "trendlyne",
+          "observation": "Disclosed holding: 1.48% stake."
+        }
+      ]
+    },
+    {
+      "name": "Hind Rectifiers Limited",
+      "stake": 1.45,
+      "shares": 500000,
+      "holder": "direct",
+      "date": "2026-06-30",
+      "basis": "Company equity ownership; dated public disclosure",
+      "status": "providers",
+      "note": "June disclosure retained where September filing is awaited. These are shares in the company, not portfolio allocation. Sharpely 2.90% differs; direct 1.45% agreed by Solomo, Finology and the named-holder Trendlyne table is used.",
+      "sources": [
+        "solomo",
+        "finology",
+        "hirect"
+      ],
+      "evidence": [
+        {
+          "source": "solomo",
+          "observation": "June 30, 2026: Hind Rectifiers Ltd 1.45% in the Mukul investor tracker; no September claim."
+        },
+        {
+          "source": "finology",
+          "observation": "June 2026 column: Hirect Ltd. 1.45%; September marked Filing Due."
+        },
+        {
+          "source": "hirect",
+          "observation": "June 2026 Mukul mahavir agrawal 500,000 shares, 1.45%."
+        }
+      ]
+    },
+    {
+      "name": "West Coast Paper Mills Limited",
+      "stake": 1.44,
+      "shares": null,
+      "holder": "direct",
+      "date": "2026-06-30",
+      "basis": "Company equity ownership; dated public disclosure",
+      "status": "providers",
+      "note": "June disclosure retained where September filing is awaited. These are shares in the company, not portfolio allocation.",
+      "sources": [
+        "solomo",
+        "finology"
+      ],
+      "evidence": [
+        {
+          "source": "solomo",
+          "observation": "June 30, 2026: West Coast Paper Mills Ltd 1.44% in the Mukul investor tracker; no September claim."
+        },
+        {
+          "source": "finology",
+          "observation": "June 2026 column: West Coast Paper Mills Ltd. 1.44%; September marked Filing Due."
+        }
+      ]
+    },
+    {
+      "name": "Vidhi Specialty Food Ingredients Limited",
+      "stake": 1.38,
+      "shares": null,
+      "holder": "direct",
+      "date": "2026-06-30",
+      "basis": "Company equity ownership; dated public disclosure",
+      "status": "providers",
+      "note": "June disclosure retained where September filing is awaited. These are shares in the company, not portfolio allocation.",
+      "sources": [
+        "solomo",
+        "finology"
+      ],
+      "evidence": [
+        {
+          "source": "solomo",
+          "observation": "June 30, 2026: Vidhi Specialty Food Ingredients Ltd 1.38% in the Mukul investor tracker; no September claim."
+        },
+        {
+          "source": "finology",
+          "observation": "June 2026 column: Vidhi Specialty Food Ingredients Ltd. 1.38%; September marked Filing Due."
+        }
+      ]
+    },
+    {
+      "name": "KRN Heat Exchanger and Refrigeration Limited",
+      "stake": 1.37,
+      "shares": null,
+      "holder": "direct",
+      "date": "2026-09",
+      "basis": "Company equity ownership; dated public disclosure",
+      "status": "providers",
+      "note": "Effective day unconfirmed; 2026-09 (provider disclosure period; exact day not confirmed). September provider period corroborated; original exchange report and exact effective day not independently inspected. No assumption that an unchanged stake means no trading.",
+      "sources": [
+        "finology",
+        "sharpely"
+      ],
+      "evidence": [
+        {
+          "source": "finology",
+          "observation": "September 2026 column: KRN Heat Exchanger and Refrigeration Ltd 1.37%."
+        },
+        {
+          "source": "sharpely",
+          "observation": "September 2026 marked filed, 1.37%, 900,000 shares. Quantity not independently reconciled."
+        }
+      ]
+    },
+    {
+      "name": "Nuvama Wealth Management Limited",
+      "stake": 1.37,
+      "shares": null,
+      "holder": "direct",
+      "date": "2026-06-30",
+      "basis": "Company equity ownership; dated public disclosure",
+      "status": "providers",
+      "note": "June disclosure retained where September filing is awaited. These are shares in the company, not portfolio allocation.",
+      "sources": [
+        "solomo",
+        "finology"
+      ],
+      "evidence": [
+        {
+          "source": "solomo",
+          "observation": "June 30, 2026: Nuvama Wealth Management Ltd 1.37% in the Mukul investor tracker; no September claim."
+        },
+        {
+          "source": "finology",
+          "observation": "June 2026 column: Nuvama Wealth Management Ltd. 1.37%; September marked Filing Due."
+        }
+      ]
+    },
+    {
+      "name": "Kilitch Drugs (India) Limited",
+      "stake": 1.34,
+      "shares": null,
+      "holder": "direct",
+      "date": "2026-06-30",
+      "basis": "Company equity ownership; dated public disclosure",
+      "status": "providers",
+      "note": "June disclosure retained where September filing is awaited. These are shares in the company, not portfolio allocation.",
+      "sources": [
+        "solomo",
+        "finology"
+      ],
+      "evidence": [
+        {
+          "source": "solomo",
+          "observation": "June 30, 2026: Kilitch Drugs (India) Ltd 1.34% in the Mukul investor tracker; no September claim."
+        },
+        {
+          "source": "finology",
+          "observation": "June 2026 column: Kilitch Drugs (India) Ltd. 1.34%; September marked Filing Due."
+        }
+      ]
+    },
+    {
+      "name": "Sudeep Pharma Limited",
+      "stake": 1.33,
+      "shares": null,
+      "holder": "direct",
+      "date": "2026-06-30",
+      "basis": "Company equity ownership; dated public disclosure",
+      "status": "providers",
+      "note": "June disclosure retained where September filing is awaited. These are shares in the company, not portfolio allocation.",
+      "sources": [
+        "solomo",
+        "finology"
+      ],
+      "evidence": [
+        {
+          "source": "solomo",
+          "observation": "June 30, 2026: Sudeep Pharma Ltd 1.33% in the Mukul investor tracker; no September claim."
+        },
+        {
+          "source": "finology",
+          "observation": "June 2026 column: Sudeep Pharma Ltd. 1.33%; September marked 1.33."
+        }
+      ]
+    },
+    {
+      "name": "Intellect Design Arena Limited",
+      "stake": 1.28,
+      "shares": null,
+      "holder": "direct",
+      "date": "2026-06-30",
+      "basis": "Company equity ownership; dated public disclosure",
+      "status": "providers",
+      "note": "June disclosure retained where September filing is awaited. These are shares in the company, not portfolio allocation.",
+      "sources": [
+        "solomo",
+        "finology"
+      ],
+      "evidence": [
+        {
+          "source": "solomo",
+          "observation": "June 30, 2026: Intellect Design Arena Ltd 1.28% in the Mukul investor tracker; no September claim."
+        },
+        {
+          "source": "finology",
+          "observation": "June 2026 column: Intellect Design Arena Ltd. 1.28%; September marked Filing Due."
+        }
+      ]
+    },
+    {
+      "name": "Purple Style Labs Limited",
+      "stake": 1.25,
+      "shares": null,
+      "holder": "direct",
+      "date": "2026-09",
+      "basis": "Company equity ownership; interim/IPO disclosure",
+      "status": "providers",
+      "note": "Effective day unconfirmed; 2026-09 (post-IPO provider period; day not confirmed). Two or more provider domains cross-checked. IPO/interim date is kept separate from quarter-end. Original exchange filing not independently inspected.",
+      "sources": [
+        "finology",
+        "sharpely"
+      ],
+      "evidence": [
+        {
+          "source": "finology",
+          "observation": "September post-IPO column 1.25%; pre-IPO percentages use a different denominator."
+        },
+        {
+          "source": "sharpely",
+          "observation": "Filed September row 1.25%, 1,000,000 shares; two provider stake figures agree."
+        }
+      ]
+    },
+    {
+      "name": "IFB Industries Limited",
+      "stake": 1.23,
+      "shares": null,
+      "holder": "direct",
+      "date": "2026-06-30",
+      "basis": "Company equity ownership; dated public disclosure",
+      "status": "providers",
+      "note": "June disclosure retained where September filing is awaited. These are shares in the company, not portfolio allocation.",
+      "sources": [
+        "solomo",
+        "finology"
+      ],
+      "evidence": [
+        {
+          "source": "solomo",
+          "observation": "June 30, 2026: IFB Industries Ltd 1.23% in the Mukul investor tracker; no September claim."
+        },
+        {
+          "source": "finology",
+          "observation": "June 2026 column: IFB Industries Ltd. 1.23%; September marked Filing Due."
+        }
+      ]
+    },
+    {
+      "name": "Ravindra Energy Limited",
+      "stake": 1.22,
+      "shares": null,
+      "holder": "direct",
+      "date": "2026-09",
+      "basis": "Company equity ownership; dated public disclosure",
+      "status": "providers",
+      "note": "Effective day unconfirmed; 2026-09 (provider disclosure period; exact day not confirmed). September provider period corroborated; original exchange report and exact effective day not independently inspected. No assumption that an unchanged stake means no trading.",
+      "sources": [
+        "finology",
+        "sharpely"
+      ],
+      "evidence": [
+        {
+          "source": "finology",
+          "observation": "September 2026 column: Ravindra Energy Ltd 1.22%."
+        },
+        {
+          "source": "sharpely",
+          "observation": "September 2026 marked filed, 1.22%, 2,427,162 shares. Quantity not independently reconciled."
+        }
+      ]
+    },
+    {
+      "name": "Kirloskar Ferrous Industries Limited",
+      "stake": 1.21,
+      "shares": null,
+      "holder": "direct",
+      "date": "2026-06-30",
+      "basis": "Company equity ownership; dated public disclosure",
+      "status": "providers",
+      "note": "June disclosure retained where September filing is awaited. These are shares in the company, not portfolio allocation.",
+      "sources": [
+        "solomo",
+        "finology"
+      ],
+      "evidence": [
+        {
+          "source": "solomo",
+          "observation": "June 30, 2026: Kirloskar Ferrous Industries Ltd 1.21% in the Mukul investor tracker; no September claim."
+        },
+        {
+          "source": "finology",
+          "observation": "June 2026 column: Kirloskar Ferrous Industries Ltd. 1.21%; September marked Filing Due."
+        }
+      ]
+    },
+    {
+      "name": "Deepak Fertilisers & Petrochemicals Corp Limited",
+      "stake": 1.19,
+      "shares": null,
+      "holder": "direct",
+      "date": "2026-06-30",
+      "basis": "Company equity ownership; dated public disclosure",
+      "status": "providers",
+      "note": "June disclosure retained where September filing is awaited. These are shares in the company, not portfolio allocation.",
+      "sources": [
+        "solomo",
+        "finology"
+      ],
+      "evidence": [
+        {
+          "source": "solomo",
+          "observation": "June 30, 2026: Deepak Fertilisers & Petrochemicals Corp Ltd 1.19% in the Mukul investor tracker; no September claim."
+        },
+        {
+          "source": "finology",
+          "observation": "June 2026 column: Deepak Fertilisers And Petrochemicals Corporation Ltd. 1.19%; September marked Filing Due."
+        }
+      ]
+    },
+    {
+      "name": "Raymond Lifestyle Limited",
+      "stake": 1.15,
+      "shares": null,
+      "holder": "direct",
+      "date": "2026-06-30",
+      "basis": "Company equity ownership; dated public disclosure",
+      "status": "providers",
+      "note": "June disclosure retained where September filing is awaited. These are shares in the company, not portfolio allocation.",
+      "sources": [
+        "solomo",
+        "finology"
+      ],
+      "evidence": [
+        {
+          "source": "solomo",
+          "observation": "June 30, 2026: Raymond Lifestyle Ltd 1.15% in the Mukul investor tracker; no September claim."
+        },
+        {
+          "source": "finology",
+          "observation": "June 2026 column: Raymond Lifestyle Ltd. 1.15%; September marked Filing Due."
+        }
+      ]
+    },
+    {
+      "name": "Sarda Energy & Minerals Limited",
+      "stake": 1.14,
+      "shares": null,
+      "holder": "direct",
+      "date": "2026-06-30",
+      "basis": "Company equity ownership; dated public disclosure",
+      "status": "providers",
+      "note": "June disclosure retained where September filing is awaited. These are shares in the company, not portfolio allocation.",
+      "sources": [
+        "solomo",
+        "finology"
+      ],
+      "evidence": [
+        {
+          "source": "solomo",
+          "observation": "June 30, 2026: Sarda Energy & Minerals Ltd 1.14% in the Mukul investor tracker; no September claim."
+        },
+        {
+          "source": "finology",
+          "observation": "June 2026 column: Sarda Energy & Minerals Ltd. 1.14%; September marked Filing Due."
+        }
+      ]
+    },
+    {
+      "name": "Yatharth Hospital & Trauma Care Services Limited",
+      "stake": 1.14,
+      "shares": null,
+      "holder": "direct",
+      "date": "2026-06-30",
+      "basis": "Company equity ownership; dated public disclosure",
+      "status": "providers",
+      "note": "June disclosure retained where September filing is awaited. These are shares in the company, not portfolio allocation.",
+      "sources": [
+        "solomo",
+        "finology"
+      ],
+      "evidence": [
+        {
+          "source": "solomo",
+          "observation": "June 30, 2026: Yatharth Hospital & Trauma Care Services Ltd 1.14% in the Mukul investor tracker; no September claim."
+        },
+        {
+          "source": "finology",
+          "observation": "June 2026 column: Yatharth Hospital & Trauma Care Services Ltd. 1.14%; September marked Filing Due."
+        }
+      ]
+    },
+    {
+      "name": "L T Foods Limited",
+      "stake": 1.12,
+      "shares": null,
+      "holder": "direct",
+      "date": "2026-06-30",
+      "basis": "Company equity ownership; dated public disclosure",
+      "status": "providers",
+      "note": "June disclosure retained where September filing is awaited. These are shares in the company, not portfolio allocation.",
+      "sources": [
+        "solomo",
+        "finology"
+      ],
+      "evidence": [
+        {
+          "source": "solomo",
+          "observation": "June 30, 2026: L T Foods Ltd 1.12% in the Mukul investor tracker; no September claim."
+        },
+        {
+          "source": "finology",
+          "observation": "June 2026 column: LT Foods Ltd. 1.12%; September marked Filing Due."
+        }
+      ]
+    },
+    {
+      "name": "Strides Pharma Science Limited",
+      "stake": 1.12,
+      "shares": null,
+      "holder": "direct",
+      "date": "2026-06-30",
+      "basis": "Company equity ownership; dated public disclosure",
+      "status": "providers",
+      "note": "June disclosure retained where September filing is awaited. These are shares in the company, not portfolio allocation.",
+      "sources": [
+        "solomo",
+        "finology"
+      ],
+      "evidence": [
+        {
+          "source": "solomo",
+          "observation": "June 30, 2026: Strides Pharma Science Ltd 1.12% in the Mukul investor tracker; no September claim."
+        },
+        {
+          "source": "finology",
+          "observation": "June 2026 column: Strides Pharma Science Ltd. 1.12%; September marked Filing Due."
+        }
+      ]
+    },
+    {
+      "name": "Indian Metals & Ferro Alloys Limited",
+      "stake": 1.07,
+      "shares": null,
+      "holder": "direct",
+      "date": "2026-09",
+      "basis": "Company equity ownership; dated public disclosure",
+      "status": "providers",
+      "note": "Effective day unconfirmed; 2026-09 (provider disclosure period; exact day not confirmed). September provider period corroborated; original exchange report and exact effective day not independently inspected. No assumption that an unchanged stake means no trading.",
+      "sources": [
+        "finology",
+        "sharpely"
+      ],
+      "evidence": [
+        {
+          "source": "finology",
+          "observation": "September 2026 column: Indian Metals & Ferro Alloys Ltd 1.07%."
+        },
+        {
+          "source": "sharpely",
+          "observation": "September 2026 marked filed, 1.07%, 574,679 shares. Quantity not independently reconciled."
+        }
+      ]
+    },
+    {
+      "name": "PTC Industries Limited",
+      "stake": 1.07,
+      "shares": null,
+      "holder": "direct",
+      "date": "2026-06-30",
+      "basis": "Company equity ownership; dated public disclosure",
+      "status": "providers",
+      "note": "June disclosure retained where September filing is awaited. These are shares in the company, not portfolio allocation.",
+      "sources": [
+        "solomo",
+        "finology"
+      ],
+      "evidence": [
+        {
+          "source": "solomo",
+          "observation": "June 30, 2026: PTC Industries Ltd 1.07% in the Mukul investor tracker; no September claim."
+        },
+        {
+          "source": "finology",
+          "observation": "June 2026 column: PTC Industries Ltd. 1.07%; September marked Filing Due."
         }
       ]
     }

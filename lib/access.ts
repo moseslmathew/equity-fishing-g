@@ -40,7 +40,23 @@ export async function readerAllowed(headers:Pick<Headers,"get">) {
   return await sessionValid(headers)||await writerAllowed(headers);
 }
 export function sameOrigin(request:Request) {
-  const expected=authEnv().SITE_ORIGIN||new URL(request.url).origin;
-  return request.headers.get("origin")===expected;
+  const origin = request.headers.get("origin");
+  if (!origin) return false;
+  const configured = authEnv().SITE_ORIGIN;
+  if (configured && origin === configured) return true;
+  try {
+    const requestOrigin = new URL(request.url).origin;
+    if (origin === requestOrigin) return true;
+    const originUrl = new URL(origin);
+    const reqUrl = new URL(request.url);
+    if (
+      (originUrl.hostname === "localhost" || originUrl.hostname === "127.0.0.1") &&
+      (reqUrl.hostname === "localhost" || reqUrl.hostname === "127.0.0.1") &&
+      originUrl.port === reqUrl.port
+    ) {
+      return true;
+    }
+  } catch {}
+  return false;
 }
 export function deny() { return Response.json({error:"Please sign in."},{status:401,headers:{"Cache-Control":"no-store"}}); }

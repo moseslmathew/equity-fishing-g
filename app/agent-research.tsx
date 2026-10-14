@@ -5,7 +5,7 @@ import {Dialog,DialogTrigger,DialogContent,DialogTitle,DialogDescription,DialogC
 import ResearchOverview,{monthLabel} from "./research-overview";
 import type {ResearchReport} from "../lib/agent-research";
 type Stock=ResearchReport["stocks"][number];
-function Citations({stock,refs}:{stock:Stock;refs:number[]}){return <>{[...new Set(refs)].map(i=><a key={i} className="research-citation" href={stock.sources[i].url} title={stock.sources[i].label} target="_blank" rel="noopener noreferrer" aria-label={stock.sources[i].label}>[{i+1}]</a>)}</>;}
+function Citations({stock,refs}:{stock:Stock;refs:number[]}){return <>{[...new Set(refs)].map(i=>stock.sources[i]?<a key={i} className="research-citation" href={stock.sources[i].url} title={stock.sources[i].label} target="_blank" rel="noopener noreferrer" aria-label={stock.sources[i].label}>[{i+1}]</a>:null)}</>;}
 function FundReading({stock}:{stock:Stock}){
  const evidence=stock.fundEvidence;
  if(!evidence)return <p className="research-fund-reading">Company identity could not be reconciled with the portfolio archive; fund conclusions are withheld.</p>;

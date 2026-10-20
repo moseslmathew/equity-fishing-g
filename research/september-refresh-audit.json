@@ -1,0 +1,1316 @@
+{
+  "checkedAt": "2026-10-14T02:53:14.172205+00:00",
+  "fundIds": [
+    "abakkus",
+    "absl",
+    "bajaj",
+    "dsp",
+    "groww",
+    "helios",
+    "invesco",
+    "iti",
+    "jm",
+    "lic",
+    "mahindra",
+    "mirae",
+    "motilal",
+    "nippon",
+    "pgim",
+    "quantum",
+    "sundaram",
+    "trustmf",
+    "uti",
+    "edelweiss"
+  ],
+  "comparisonIds": [
+    "abakkus",
+    "absl",
+    "bajaj",
+    "dsp",
+    "groww",
+    "helios",
+    "invesco",
+    "iti",
+    "jm",
+    "lic",
+    "mahindra",
+    "mirae",
+    "motilal",
+    "nippon",
+    "pgim",
+    "sundaram",
+    "trustmf",
+    "uti",
+    "edelweiss"
+  ],
+  "groups": [
+    {
+      "group": "sept-group-a.json",
+      "details": [
+        {
+          "fundId": "motilal",
+          "currentEquities": 58,
+          "previousEquities": 61,
+          "currentWeightSum": 91.91,
+          "top15Matched": 15,
+          "files": [
+            {
+              "filename": "research/sept-a-files/motilal-September.xlsx",
+              "url": "https://www.motilaloswalmf.com/content/dam/motilal-mf/sheets/fund-csvs/Month_End_Portfolio_September_2026/YO46.xlsx",
+              "sha256": "7c4fe2a74dd70fd0b40ee3c98fface936438f0115e56bf789d8a3f863c7a572d"
+            },
+            {
+              "filename": "research/sept-a-files/motilal-August.xlsx",
+              "url": "https://www.motilaloswalmf.com/content/dam/motilal-mf/sheets/fund-csvs/Month_End_Portfolio_August_2026/YO46.xlsx",
+              "sha256": "f916b0527ca41a38a340fadff30bc4ac162f9ac22f9d64b3d8e25aef2d1f43ab"
+            }
+          ]
+        },
+        {
+          "fundId": "mirae",
+          "currentEquities": 85,
+          "previousEquities": 84,
+          "currentWeightSum": 98.83,
+          "files": [
+            {
+              "filename": "research/sept-a-files/mirae-September.xlsx",
+              "url": "https://www.miraeassetmf.co.in/docs/default-source/portfolios/mascf_sept2026.xlsx",
+              "sha256": "a0d869c625e6e9f9b2737853161295f23fdd8f43e910cdd1bba24831f80d227b"
+            },
+            {
+              "filename": "research/sept-a-files/mirae-August.xlsx",
+              "url": "https://www.miraeassetmf.co.in/docs/default-source/portfolios/mascf_aug2026.xlsx",
+              "sha256": "c6a1f2917a861f8ff65979e43e1673590a6703954c73fa6e3486bbb59033876c"
+            }
+          ]
+        },
+        {
+          "fundId": "invesco",
+          "currentEquities": 75,
+          "currentWeightSum": 98.92,
+          "top15Matched": 15,
+          "originalAMCAccess": "AMC HTML accessible, dynamic portfolio files not retrieved; original-file verification pending.",
+          "files": [
+            {
+              "filename": "research/sept-a-files/invesco-provider.html",
+              "sha256": "10a925eb4c9efd5ac53972e7f1f467326a5e7b63f672b731c819603e1598f6f0"
+            },
+            {
+              "filename": "research/sept-a-files/invesco-gmp.txt",
+              "sha256": "70c147614f07e1661b98a26df8d284f4b266b189e60e71d537a45fe37f5d83b6"
+            }
+          ]
+        },
+        {
+          "fundId": "absl",
+          "currentEquities": 84,
+          "currentWeightSum": 95.43,
+          "top15Matched": 15,
+          "originalAMCAccess": "AMC monthly disclosure listing dynamic endpoint returned HTTP500; original files not retrieved.",
+          "files": [
+            {
+              "filename": "research/sept-a-files/absl-provider.txt",
+              "sha256": "fdd69a11fcde5e2ed01c5b5a303a432f61f4d8381437ffe54d9c10c6ab3c9414"
+            },
+            {
+              "filename": "research/sept-a-files/absl-gmp.txt",
+              "sha256": "2e0d12e9e4764eb4ed3d085ca3152ebe2a90a9ebb7dc487bde06cdfd00755871"
+            }
+          ]
+        },
+        {
+          "fundId": "mahindra",
+          "currentEquities": 85,
+          "currentWeightSum": 99.24,
+          "top15Matched": 15,
+          "originalAMCAccess": "AMC public download endpoint returned encrypted payload; original files not retrieved.",
+          "files": [
+            {
+              "filename": "research/sept-a-files/mahindra-provider.txt",
+              "sha256": "0bec9f835600dc2d8e1f0cb37591d27146b7028850aaf23178b695a06bd27c30"
+            },
+            {
+              "filename": "research/sept-a-files/mahindra-gmp.txt",
+              "sha256": "4470a36999b6758272d980ea713490329adf42bf2afcd7b0ddfbff54039925a2"
+            }
+          ]
+        },
+        {
+          "fundId": "edelweiss",
+          "currentEquities": 94,
+          "currentWeightSum": 98.05,
+          "top15Matched": 15,
+          "originalAMCAccess": "AMC dynamic statutory endpoint returned HTTP500; original files not retrieved.",
+          "files": [
+            {
+              "filename": "research/sept-a-files/edelweiss-provider.txt",
+              "sha256": "f62ec2e8a5088f57e74b04bd32bf0eb0d7477c0b74836290f06ad5d30cddb077"
+            },
+            {
+              "filename": "research/sept-a-files/edelweiss-gmp.txt",
+              "sha256": "2ccfd98fa932e70e2e0d999919bbd8bff0a8d3d28a5214c2bc6c6320ffda6813"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "group": "sept-group-b.json",
+      "details": [
+        {
+          "fundId": "abakkus",
+          "currentEquities": 65,
+          "previousEquities": 63,
+          "top15CrossCheck": "15/15 exact quantities and weights",
+          "files": [
+            {
+              "path": "/tmp/sept-b/abakkus-sept.xlsx",
+              "sha256": "254e589129e0e0cace86d52ea58a47d2d11a4e1d62df3154ce8125d583bb87d3",
+              "url": "https://www.abakkusmf.com/uploads/Final_Monthly_Portolio_Sep30_2026_fd59e57829.xlsx"
+            },
+            {
+              "path": "/tmp/sept-b/abakkus-aug.xls",
+              "sha256": "f3c9f1a8be72056e012626827f3b7d8e5834ec5f23012307b7e0669cc25fc061",
+              "url": "https://www.abakkusmf.com/uploads/Portfolio_Aug31_Monthly_a00d994a66.xls"
+            }
+          ]
+        },
+        {
+          "fundId": "bajaj",
+          "currentEquities": 87,
+          "previousEquities": 95,
+          "top15CrossCheck": "15/15 exact quantities and weights",
+          "files": [
+            {
+              "path": "/tmp/sept-b/bajaj-sept.xls",
+              "sha256": "1cf8a7908c40222782a38d8b4f380c37f3df7bd2d4e0390e5cd48938c40f9660",
+              "url": "https://media.bajajamc.com/wp-content/uploads/2026/10/Bajaj-Finserv-Mutual-Fund_Monthly-Portfolio-as-on-30-Sep2026-1.xls"
+            },
+            {
+              "path": "/tmp/sept-b/bajaj-aug.xls",
+              "sha256": "94bfbdc79e5eb3dfc0031bcd418d3f6515bdc07cc51983f4b956ad23b2405a17",
+              "url": "https://media.bajajamc.com/wp-content/uploads/2026/09/Bajaj-Finserv-Mutual-Fund_Monthly-Portfolio-as-on-31-Aug-2026.xls"
+            }
+          ]
+        },
+        {
+          "fundId": "uti",
+          "currentEquities": 107,
+          "top15CrossCheck": [
+            {
+              "isin": "INE00FF01025",
+              "decryptName": "ACUTAAS CHEMICALS  LIMITED",
+              "gmpName": "Acutaas Chemicals",
+              "weight": 2.52
+            },
+            {
+              "isin": "INE048G01026",
+              "decryptName": "NAVIN FLUORINE INTERNATIONAL L",
+              "gmpName": "Navin Fluorine International",
+              "weight": 2.5
+            },
+            {
+              "isin": "INE036D01028",
+              "decryptName": "KARUR VYSYA BANK LTD.",
+              "gmpName": "Karur Vysya Bank",
+              "weight": 2.41
+            },
+            {
+              "isin": "INE491A01021",
+              "decryptName": "CITY UNION BANK",
+              "gmpName": "City Union Bank",
+              "weight": 1.89
+            },
+            {
+              "isin": "INE475E01026",
+              "decryptName": "CAPLIN POINT LABORATORIES LTD",
+              "gmpName": "Caplin Point Laboratories",
+              "weight": 1.87
+            },
+            {
+              "isin": "INE551W01018",
+              "decryptName": "UJJIVAN SMALL FINANCE BANK LTD",
+              "gmpName": "Ujjivan Small Finance Bank",
+              "weight": 1.86
+            },
+            {
+              "isin": "INE750C01026",
+              "decryptName": "MARKSANS PHARMA LTD.",
+              "gmpName": "Marksans Pharma",
+              "weight": 1.83
+            },
+            {
+              "isin": "INE017A01032",
+              "decryptName": "GREAT EASTERN SHIPPING CO. LTD",
+              "gmpName": "Great Eastern Shipping Company",
+              "weight": 1.81
+            },
+            {
+              "isin": "INE00WC01027",
+              "decryptName": "AFFLE 3I LIMITED",
+              "gmpName": "Affle 3i",
+              "weight": 1.71
+            },
+            {
+              "isin": "INE914M01019",
+              "decryptName": "ASTER DM QUALITY CARE LIMITED",
+              "gmpName": "Aster DM Quality Care",
+              "weight": 1.71
+            },
+            {
+              "isin": "INE572E01012",
+              "decryptName": "PNB HOUSING FINANCE LTD.",
+              "gmpName": "PNB Housing Finance",
+              "weight": 1.61
+            },
+            {
+              "isin": "INE540H01012",
+              "decryptName": "VOLTAMP TRANSFORMERS LTD.",
+              "gmpName": "Voltamp Transformers",
+              "weight": 1.5
+            },
+            {
+              "isin": "INE0BY001018",
+              "decryptName": "JUBILANT INGREVIA LTD.",
+              "gmpName": "Jubilant Ingrevia",
+              "weight": 1.46
+            },
+            {
+              "isin": "INE138Y01010",
+              "decryptName": "KFIN TECHNOLOGIES LTD",
+              "gmpName": "KFin Technologies",
+              "weight": 1.45
+            },
+            {
+              "isin": "INE674K01013",
+              "decryptName": "ADITYA BIRLA CAPITAL LTD",
+              "gmpName": "Aditya Birla Capital",
+              "weight": 1.45
+            }
+          ],
+          "files": [
+            {
+              "path": "/tmp/sept-b/uti-provider",
+              "sha256": "cac19737532638d31ad21260a03bb348b5363ea433d2ea41cf8cd3de2d68a7b8",
+              "url": "https://decryptmutualfunds.com/fund-houses/uti/small-cap-fund"
+            },
+            {
+              "path": "/tmp/sept-b/uti-gmp",
+              "sha256": "c11f78a3b9d8952448cbdee0c761533b19daf99adbefc3f372bd25202bedf084",
+              "url": "https://www.gmpipowatch.com/mutual-funds/scheme/uti-small-cap-fund-direct-plan-idcw-148619"
+            }
+          ]
+        },
+        {
+          "fundId": "sundaram",
+          "currentEquities": 75,
+          "top15CrossCheck": [
+            {
+              "isin": "INE864I01014",
+              "decryptName": "MTAR Technologies Ltd",
+              "gmpName": "MTAR Technologies",
+              "weight": 5.03
+            },
+            {
+              "isin": "INE0CLI01024",
+              "decryptName": "Rate Gain Travel Technologies Ltd",
+              "gmpName": "RateGain Travel",
+              "weight": 3.18
+            },
+            {
+              "isin": "INE284S01014",
+              "decryptName": "S.J.S. Enterprises Ltd",
+              "gmpName": "SJS Enterprises",
+              "weight": 3.17
+            },
+            {
+              "isin": "INE758T01015",
+              "decryptName": "Eternal Ltd (Previously Zomato Ltd)",
+              "gmpName": "Eternal",
+              "weight": 3.16
+            },
+            {
+              "isin": "INE914M01019",
+              "decryptName": "Aster DM Healthcare Ltd",
+              "gmpName": "Aster DM Quality Care",
+              "weight": 2.83
+            },
+            {
+              "isin": "INE00WC01027",
+              "decryptName": "Affle (India) Ltd",
+              "gmpName": "Affle 3i",
+              "weight": 2.62
+            },
+            {
+              "isin": "INE572E01012",
+              "decryptName": "PNB Housing Finance Ltd",
+              "gmpName": "PNB Housing Finance",
+              "weight": 2.61
+            },
+            {
+              "isin": "INE429E01023",
+              "decryptName": "Safari Industries (India) Ltd",
+              "gmpName": "Safari Industries",
+              "weight": 2.24
+            },
+            {
+              "isin": "INE503A01015",
+              "decryptName": "DCB Bank Ltd",
+              "gmpName": "DCB Bank",
+              "weight": 2.09
+            },
+            {
+              "isin": "INE646L01027",
+              "decryptName": "Interglobe Aviation Ltd",
+              "gmpName": "Interglobe Aviation",
+              "weight": 2.08
+            },
+            {
+              "isin": "INE126A01031",
+              "decryptName": "EID Parry India Ltd",
+              "gmpName": "EID Parry",
+              "weight": 2.02
+            },
+            {
+              "isin": "INE00LO01017",
+              "decryptName": "Craftsman Automation Ltd",
+              "gmpName": "Craftsman Automation",
+              "weight": 1.96
+            },
+            {
+              "isin": "INE149A01033",
+              "decryptName": "Cholamandalam Financial Holdings Ltd",
+              "gmpName": "Cholamandalam Financial Holdings",
+              "weight": 1.92
+            },
+            {
+              "isin": "INE238A01034",
+              "decryptName": "Axis Bank Ltd",
+              "gmpName": "Axis Bank",
+              "weight": 1.86
+            },
+            {
+              "isin": "INE742F01042",
+              "decryptName": "Adani Ports and Special Economic Zone Ltd",
+              "gmpName": "Adani Ports & SEZ",
+              "weight": 1.71
+            }
+          ],
+          "files": [
+            {
+              "path": "/tmp/sept-b/sundaram-provider",
+              "sha256": "4bae1bc7481418016a5f27ff6152873d78bd2b95a438309ecef049c723267e06",
+              "url": "https://decryptmutualfunds.com/fund-houses/sundaram/small-cap-fund"
+            },
+            {
+              "path": "/tmp/sept-b/sundaram-gmp",
+              "sha256": "ef4afe1b7c7964ca8d769339de746845079f3d4c522dba104bb455a56eb05b59",
+              "url": "https://www.gmpipowatch.com/mutual-funds/scheme/sundaram-small-cap-fund-direct-plan-growth-119589"
+            }
+          ]
+        },
+        {
+          "fundId": "iti",
+          "currentEquities": 84,
+          "top15CrossCheck": [
+            {
+              "isin": "INE00FF01025",
+              "decryptName": "Acutaas Chemicals Limited",
+              "gmpName": "Acutaas Chemicals",
+              "weight": 3.55
+            },
+            {
+              "isin": "INE191B01025",
+              "decryptName": "Welspun Corp Limited",
+              "gmpName": "Welspun Corp",
+              "weight": 2.89
+            },
+            {
+              "isin": "INE947Q01028",
+              "decryptName": "Laurus Labs Limited",
+              "gmpName": "Laurus Labs",
+              "weight": 2.36
+            },
+            {
+              "isin": "INE956G01038",
+              "decryptName": "VA Tech Wabag Limited",
+              "gmpName": "VA Tech Wabag",
+              "weight": 1.98
+            },
+            {
+              "isin": "INE036D01028",
+              "decryptName": "Karur Vysya Bank Limited",
+              "gmpName": "Karur Vysya Bank",
+              "weight": 1.93
+            },
+            {
+              "isin": "INE049B01025",
+              "decryptName": "Wockhardt Limited",
+              "gmpName": "Wockhardt",
+              "weight": 1.9
+            },
+            {
+              "isin": "INE745G01043",
+              "decryptName": "Multi Commodity Exchange of India Limited",
+              "gmpName": "MCX",
+              "weight": 1.88
+            },
+            {
+              "isin": "INE290S01011",
+              "decryptName": "Cartrade Tech Limited",
+              "gmpName": "CarTrade Tech",
+              "weight": 1.79
+            },
+            {
+              "isin": "INE18JU01028",
+              "decryptName": "GNG Electronics Ltd",
+              "gmpName": "GNG Electronics",
+              "weight": 1.77
+            },
+            {
+              "isin": "INE944F01028",
+              "decryptName": "Radico Khaitan Limited",
+              "gmpName": "Radico Khaitan",
+              "weight": 1.73
+            },
+            {
+              "isin": "INE372A01015",
+              "decryptName": "Apar Industries Limited",
+              "gmpName": "Apar Industries",
+              "weight": 1.68
+            },
+            {
+              "isin": "INE570L01029",
+              "decryptName": "Sai Life Sciences Limited",
+              "gmpName": "Sai Life Sciences",
+              "weight": 1.6
+            },
+            {
+              "isin": "INE794A01010",
+              "decryptName": "Neuland Laboratories Limited",
+              "gmpName": "Neuland Laboratories",
+              "weight": 1.57
+            },
+            {
+              "isin": "INE146L01010",
+              "decryptName": "Kirloskar Oil Engines Limited",
+              "gmpName": "Kirloskar Oil Engines",
+              "weight": 1.56
+            },
+            {
+              "isin": "INE048G01026",
+              "decryptName": "Navin Fluorine International Limited",
+              "gmpName": "Navin Fluorine International",
+              "weight": 1.53
+            }
+          ],
+          "files": [
+            {
+              "path": "/tmp/sept-b/iti-provider",
+              "sha256": "af6e4510ceac66aa936da9e9a31e656c9f41307a37295f73430d894c40d54a14",
+              "url": "https://decryptmutualfunds.com/fund-houses/iti/small-cap-fund"
+            },
+            {
+              "path": "/tmp/sept-b/iti-gmp",
+              "sha256": "2a6db7bdcacc88bcbae5b52129bdc843fa20ea726d33a7c40b36d40541d07018",
+              "url": "https://www.gmpipowatch.com/mutual-funds/scheme/iti-small-cap-fund-direct-plan-growth-option-147919"
+            }
+          ]
+        },
+        {
+          "fundId": "trustmf",
+          "currentEquities": 72,
+          "top15CrossCheck": [
+            {
+              "isin": "INE956O01016",
+              "decryptName": "Lenskart Solutions Limited",
+              "gmpName": "Lenskart Solutions",
+              "weight": 2.4
+            },
+            {
+              "isin": "INE976G01028",
+              "decryptName": "RBL Bank Limited",
+              "gmpName": "RBL Bank",
+              "weight": 2.24
+            },
+            {
+              "isin": "INE953O01021",
+              "decryptName": "Sansera Engineering Limited",
+              "gmpName": "Sansera Engineering",
+              "weight": 2.16
+            },
+            {
+              "isin": "INE12UN01015",
+              "decryptName": "Shadowfax Technologies Limited",
+              "gmpName": "Shadowfax Technologies",
+              "weight": 2.13
+            },
+            {
+              "isin": "INE036D01028",
+              "decryptName": "Karur Vysya Bank Limited",
+              "gmpName": "Karur Vysya Bank",
+              "weight": 2.12
+            },
+            {
+              "isin": "INE745G01043",
+              "decryptName": "Multi Commodity Exchange of India Limited",
+              "gmpName": "MCX",
+              "weight": 2.12
+            },
+            {
+              "isin": "INE980O01024",
+              "decryptName": "Jyoti CNC Automation Ltd",
+              "gmpName": "Jyoti CNC Automation",
+              "weight": 2.05
+            },
+            {
+              "isin": "INE956G01038",
+              "decryptName": "VA Tech Wabag Limited",
+              "gmpName": "VA Tech Wabag",
+              "weight": 1.95
+            },
+            {
+              "isin": "INE191B01025",
+              "decryptName": "Welspun Corp Limited",
+              "gmpName": "Welspun Corp",
+              "weight": 1.93
+            },
+            {
+              "isin": "INE947Q01028",
+              "decryptName": "Laurus Labs Limited",
+              "gmpName": "Laurus Labs",
+              "weight": 1.81
+            },
+            {
+              "isin": "INE048G01026",
+              "decryptName": "Navin Fluorine International Limited",
+              "gmpName": "Navin Fluorine International",
+              "weight": 1.79
+            },
+            {
+              "isin": "INE935N01020",
+              "decryptName": "Dixon Technologies (India) Limited",
+              "gmpName": "Dixon Technologies",
+              "weight": 1.75
+            },
+            {
+              "isin": "INE01IU01018",
+              "decryptName": "Sky Gold And Diamonds Limited",
+              "gmpName": "Sky Gold And Diamonds",
+              "weight": 1.74
+            },
+            {
+              "isin": "INE891D01026",
+              "decryptName": "Redington Limited",
+              "gmpName": "Redington",
+              "weight": 1.7
+            },
+            {
+              "isin": "INE068V01023",
+              "decryptName": "Gland Pharma Limited",
+              "gmpName": "Gland Pharma",
+              "weight": 1.68
+            }
+          ],
+          "files": [
+            {
+              "path": "/tmp/sept-b/trustmf-provider",
+              "sha256": "b47025c8086472e94a598858fbe5811589366017c8b7a228b57e2da379fa5a41",
+              "url": "https://decryptmutualfunds.com/fund-houses/trust/small-cap-fund"
+            },
+            {
+              "path": "/tmp/sept-b/trustmf-gmp",
+              "sha256": "2edcc78ce9c052e7b55e462c4fe7a61513cdc175072e2598badabdd97c9cda4f",
+              "url": "https://www.gmpipowatch.com/mutual-funds/scheme/trustmf-small-cap-fund-direct-plan-idcw-152937"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "group": "sept-group-c.json",
+      "details": [
+        {
+          "fundId": "pgim",
+          "top15Checks": [
+            {
+              "primary": "Sansera Engineering Ltd.",
+              "secondary": "Sansera Engineering",
+              "primaryWeight": 3.42,
+              "secondaryWeight": 3.42,
+              "matched": true
+            },
+            {
+              "primary": "TBO Tek Ltd.",
+              "secondary": "TBO Tek",
+              "primaryWeight": 3.12,
+              "secondaryWeight": 3.12,
+              "matched": true
+            },
+            {
+              "primary": "Sedemac Mechatronics Ltd.",
+              "secondary": "SEDEMAC Mechatronics",
+              "primaryWeight": 3.02,
+              "secondaryWeight": 3.02,
+              "matched": true
+            },
+            {
+              "primary": "Krishna Inst of Medical Sciences Ltd.",
+              "secondary": "Krishna Institute of Medical Sciences",
+              "primaryWeight": 2.91,
+              "secondaryWeight": 2.91,
+              "matched": true
+            },
+            {
+              "primary": "Affle 3i Ltd.",
+              "secondary": "Affle 3i",
+              "primaryWeight": 2.76,
+              "secondaryWeight": 2.76,
+              "matched": true
+            },
+            {
+              "primary": "Navin Fluorine International Ltd.",
+              "secondary": "Navin Fluorine International",
+              "primaryWeight": 2.75,
+              "secondaryWeight": 2.75,
+              "matched": true
+            },
+            {
+              "primary": "City Union Bank Ltd.",
+              "secondary": "City Union Bank",
+              "primaryWeight": 2.42,
+              "secondaryWeight": 2.42,
+              "matched": true
+            },
+            {
+              "primary": "Karur Vysya Bank Ltd.",
+              "secondary": "Karur Vysya Bank",
+              "primaryWeight": 2.2,
+              "secondaryWeight": 2.2,
+              "matched": true
+            },
+            {
+              "primary": "Amagi Media Labs Ltd.",
+              "secondary": "Amagi Media Labs",
+              "primaryWeight": 2.08,
+              "secondaryWeight": 2.08,
+              "matched": true
+            },
+            {
+              "primary": "Torrent Pharmaceuticals Ltd.",
+              "secondary": "Torrent Pharmaceuticals",
+              "primaryWeight": 2.0,
+              "secondaryWeight": 2.0,
+              "matched": true
+            },
+            {
+              "primary": "Ethos Ltd.",
+              "secondary": "Ethos",
+              "primaryWeight": 1.88,
+              "secondaryWeight": 1.88,
+              "matched": true
+            },
+            {
+              "primary": "Sai Life Sciences Ltd",
+              "secondary": "Sai Life Sciences",
+              "primaryWeight": 1.87,
+              "secondaryWeight": 1.87,
+              "matched": true
+            },
+            {
+              "primary": "Multi Commodity Exchange Of India Ltd.",
+              "secondary": "MCX",
+              "primaryWeight": 1.83,
+              "secondaryWeight": 1.83,
+              "matched": true
+            },
+            {
+              "primary": "Welspun Corp Ltd.",
+              "secondary": "Welspun Corp",
+              "primaryWeight": 1.75,
+              "secondaryWeight": 1.75,
+              "matched": true
+            },
+            {
+              "primary": "Sudeep Pharma Ltd.",
+              "secondary": "Sudeep Pharma",
+              "primaryWeight": 1.66,
+              "secondaryWeight": 1.66,
+              "matched": true
+            }
+          ],
+          "quantityDiscrepancies": [],
+          "currentCompanies": 71,
+          "comparisonRows": 74
+        },
+        {
+          "fundId": "helios",
+          "top15Checks": [
+            {
+              "primary": "Shadowfax Technologies Ltd.",
+              "secondary": "Shadowfax Technologies",
+              "primaryWeight": 2.22,
+              "secondaryWeight": 2.22,
+              "matched": true
+            },
+            {
+              "primary": "Multi Commodity Exchange of India Ltd.",
+              "secondary": "MCX",
+              "primaryWeight": 1.91,
+              "secondaryWeight": 1.91,
+              "matched": true
+            },
+            {
+              "primary": "Ather Energy Ltd.",
+              "secondary": "Ather Energy",
+              "primaryWeight": 1.77,
+              "secondaryWeight": 1.77,
+              "matched": true
+            },
+            {
+              "primary": "CarTrade Tech Ltd.",
+              "secondary": "CarTrade Tech",
+              "primaryWeight": 1.72,
+              "secondaryWeight": 1.72,
+              "matched": true
+            },
+            {
+              "primary": "Swiggy Ltd.",
+              "secondary": "Swiggy",
+              "primaryWeight": 1.65,
+              "secondaryWeight": 1.65,
+              "matched": true
+            },
+            {
+              "primary": "Redington Ltd.",
+              "secondary": "Redington",
+              "primaryWeight": 1.64,
+              "secondaryWeight": 1.64,
+              "matched": true
+            },
+            {
+              "primary": "Edelweiss Financial Services Ltd.",
+              "secondary": "Edelweiss Financial Services",
+              "primaryWeight": 1.59,
+              "secondaryWeight": 1.59,
+              "matched": true
+            },
+            {
+              "primary": "Tips Music Ltd.",
+              "secondary": "Tips Music",
+              "primaryWeight": 1.57,
+              "secondaryWeight": 1.57,
+              "matched": true
+            },
+            {
+              "primary": "Carborundum Universal Ltd.",
+              "secondary": "Carborundum Universal",
+              "primaryWeight": 1.55,
+              "secondaryWeight": 1.55,
+              "matched": true
+            },
+            {
+              "primary": "Data Patterns (India) Ltd.",
+              "secondary": "Data Patterns",
+              "primaryWeight": 1.54,
+              "secondaryWeight": 1.54,
+              "matched": true
+            },
+            {
+              "primary": "Lalithaa Jewellery Mart Ltd.",
+              "secondary": "Lalithaa Jewellery Mart",
+              "primaryWeight": 1.54,
+              "secondaryWeight": 1.54,
+              "matched": true
+            },
+            {
+              "primary": "Syrma SGS Technology Ltd.",
+              "secondary": "Syrma SGS",
+              "primaryWeight": 1.51,
+              "secondaryWeight": 1.51,
+              "matched": true
+            },
+            {
+              "primary": "SAREGAMA India Ltd.",
+              "secondary": "Saregama India",
+              "primaryWeight": 1.49,
+              "secondaryWeight": 1.49,
+              "matched": true
+            },
+            {
+              "primary": "Dr. Lal Path labs Ltd.",
+              "secondary": "Dr. Lal Path Labs",
+              "primaryWeight": 1.49,
+              "secondaryWeight": 1.49,
+              "matched": true
+            },
+            {
+              "primary": "ASK Automotive Ltd.",
+              "secondary": "ASK Automotive",
+              "primaryWeight": 1.48,
+              "secondaryWeight": 1.48,
+              "matched": true
+            }
+          ],
+          "quantityDiscrepancies": [],
+          "currentCompanies": 96,
+          "comparisonRows": 98
+        },
+        {
+          "fundId": "jm",
+          "top15Checks": [
+            {
+              "primary": "Garware Hi-Tech Films Ltd",
+              "secondary": "Garware Hi-Tech Films",
+              "primaryWeight": 4.5,
+              "secondaryWeight": 4.5,
+              "matched": true
+            },
+            {
+              "primary": "Navin Fluorine International Limited",
+              "secondary": "Navin Fluorine International",
+              "primaryWeight": 2.99,
+              "secondaryWeight": 2.99,
+              "matched": true
+            },
+            {
+              "primary": "Acutaas Chemicals Limited",
+              "secondary": "Acutaas Chemicals",
+              "primaryWeight": 2.91,
+              "secondaryWeight": 2.91,
+              "matched": true
+            },
+            {
+              "primary": "FIVE-STAR BUSINESS FINANCE LIMITED",
+              "secondary": "Five Star Business Finance",
+              "primaryWeight": 2.69,
+              "secondaryWeight": 2.69,
+              "matched": true
+            },
+            {
+              "primary": "Shaily Engineering Plastics Limited",
+              "secondary": "Shaily Engineering Plastics",
+              "primaryWeight": 2.45,
+              "secondaryWeight": 2.45,
+              "matched": true
+            },
+            {
+              "primary": "Fusion Finance Limited",
+              "secondary": "Fusion Finance",
+              "primaryWeight": 2.3,
+              "secondaryWeight": 2.3,
+              "matched": true
+            },
+            {
+              "primary": "TD Power Systems Limited",
+              "secondary": "TD Power Systems",
+              "primaryWeight": 2.13,
+              "secondaryWeight": 2.13,
+              "matched": true
+            },
+            {
+              "primary": "AVALON TECHNOLOGIES LIMITED",
+              "secondary": "Avalon Technologies",
+              "primaryWeight": 2.07,
+              "secondaryWeight": 2.07,
+              "matched": true
+            },
+            {
+              "primary": "Jana Small Finance Bank Ltd",
+              "secondary": "Jana Small Finance Bank",
+              "primaryWeight": 2.0,
+              "secondaryWeight": 2.0,
+              "matched": true
+            },
+            {
+              "primary": "Pine Labs Limited",
+              "secondary": "Pine Labs",
+              "primaryWeight": 1.98,
+              "secondaryWeight": 1.98,
+              "matched": true
+            },
+            {
+              "primary": "Thangamayil Jewellery Limited",
+              "secondary": "Thangamayil Jewellery",
+              "primaryWeight": 1.97,
+              "secondaryWeight": 1.97,
+              "matched": true
+            },
+            {
+              "primary": "One Source Specialty Pharma Ltd",
+              "secondary": "Onesource Specialty Pharma",
+              "primaryWeight": 1.95,
+              "secondaryWeight": 1.95,
+              "matched": true
+            },
+            {
+              "primary": "FINEOTEX CHEMICAL LTD",
+              "secondary": "Fineotex Chemical",
+              "primaryWeight": 1.93,
+              "secondaryWeight": 1.93,
+              "matched": true
+            },
+            {
+              "primary": "Gokaldas Exports Limited",
+              "secondary": "Gokaldas Exports",
+              "primaryWeight": 1.87,
+              "secondaryWeight": 1.87,
+              "matched": true
+            },
+            {
+              "primary": "City Union Bank Limited",
+              "secondary": "City Union Bank",
+              "primaryWeight": 1.85,
+              "secondaryWeight": 1.85,
+              "matched": true
+            }
+          ],
+          "quantityDiscrepancies": [],
+          "currentCompanies": 88,
+          "comparisonRows": 92
+        },
+        {
+          "fundId": "lic",
+          "top15Checks": [
+            {
+              "primary": "Garware Hi-Tech Films Ltd.",
+              "secondary": "Garware Hi-Tech Films",
+              "primaryWeight": 4.72,
+              "secondaryWeight": 4.72,
+              "matched": true
+            },
+            {
+              "primary": "Manorama Industries Ltd.",
+              "secondary": "Manorama Industries",
+              "primaryWeight": 3.14,
+              "secondaryWeight": 3.14,
+              "matched": true
+            },
+            {
+              "primary": "Avalon Technologies Ltd.",
+              "secondary": "Avalon Technologies",
+              "primaryWeight": 3.06,
+              "secondaryWeight": 3.06,
+              "matched": true
+            },
+            {
+              "primary": "INDO-MIM Ltd.",
+              "secondary": "Indo-MIM",
+              "primaryWeight": 3.04,
+              "secondaryWeight": 3.04,
+              "matched": true
+            },
+            {
+              "primary": "Allied Blenders And Distillers Ltd.",
+              "secondary": "Allied Blenders & Distillers",
+              "primaryWeight": 2.9,
+              "secondaryWeight": 2.9,
+              "matched": true
+            },
+            {
+              "primary": "Navin Fluorine International Ltd.",
+              "secondary": "Navin Fluorine International",
+              "primaryWeight": 2.87,
+              "secondaryWeight": 2.87,
+              "matched": true
+            },
+            {
+              "primary": "Neuland Laboratories Ltd.",
+              "secondary": "Neuland Laboratories",
+              "primaryWeight": 2.35,
+              "secondaryWeight": 2.35,
+              "matched": true
+            },
+            {
+              "primary": "SML Mahindra Ltd.",
+              "secondary": "SML Mahindra",
+              "primaryWeight": 2.32,
+              "secondaryWeight": 2.32,
+              "matched": true
+            },
+            {
+              "primary": "Kirloskar Oil Engines Ltd.",
+              "secondary": "Kirloskar Oil Engines",
+              "primaryWeight": 2.16,
+              "secondaryWeight": 2.16,
+              "matched": true
+            },
+            {
+              "primary": "Brigade Enterprises Ltd.",
+              "secondary": "Brigade Enterprises",
+              "primaryWeight": 2.13,
+              "secondaryWeight": 2.13,
+              "matched": true
+            },
+            {
+              "primary": "Lumax Auto Technologies Ltd.",
+              "secondary": "Lumax Auto Technologies",
+              "primaryWeight": 2.11,
+              "secondaryWeight": 2.11,
+              "matched": true
+            },
+            {
+              "primary": "Pricol Ltd.",
+              "secondary": "Pricol",
+              "primaryWeight": 2.11,
+              "secondaryWeight": 2.11,
+              "matched": true
+            },
+            {
+              "primary": "Leela Palaces Hotels & Resorts Ltd.",
+              "secondary": "Leela Palaces Hotels & Resorts",
+              "primaryWeight": 2.05,
+              "secondaryWeight": 2.05,
+              "matched": true
+            },
+            {
+              "primary": "Kennametal India Ltd.",
+              "secondary": "Kennametal",
+              "primaryWeight": 2.03,
+              "secondaryWeight": 2.03,
+              "matched": true
+            },
+            {
+              "primary": "Arvind Ltd.",
+              "secondary": "Arvind",
+              "primaryWeight": 2.03,
+              "secondaryWeight": 2.03,
+              "matched": true
+            }
+          ],
+          "quantityDiscrepancies": [],
+          "currentCompanies": 55,
+          "comparisonRows": 57
+        },
+        {
+          "fundId": "groww",
+          "top15Checks": [
+            {
+              "primary": "TD Power Systems Limited",
+              "secondary": "TD Power Systems",
+              "primaryWeight": 3.55,
+              "secondaryWeight": 3.55,
+              "matched": true
+            },
+            {
+              "primary": "Manipal Payment Identity Solutions Ltd#",
+              "secondary": "Manipal Payment",
+              "primaryWeight": 3.5,
+              "secondaryWeight": 3.5,
+              "matched": true
+            },
+            {
+              "primary": "Ujjivan Small Finance Bank Limited",
+              "secondary": "Ujjivan Small",
+              "primaryWeight": 2.89,
+              "secondaryWeight": 2.89,
+              "matched": true
+            },
+            {
+              "primary": "TENNECO CLEAN AIR INDIA LIMITED",
+              "secondary": "Tenneco Clean",
+              "primaryWeight": 2.83,
+              "secondaryWeight": 2.83,
+              "matched": true
+            },
+            {
+              "primary": "OnEMI Technology Solutions Limited",
+              "secondary": "Onemi Technology",
+              "primaryWeight": 2.75,
+              "secondaryWeight": 2.75,
+              "matched": true
+            },
+            {
+              "primary": "Kanohar Electricals Limited",
+              "secondary": "Kanohar Elect.",
+              "primaryWeight": 2.35,
+              "secondaryWeight": 2.35,
+              "matched": true
+            },
+            {
+              "primary": "Ather Energy Limited",
+              "secondary": "Ather Energy",
+              "primaryWeight": 2.3,
+              "secondaryWeight": 2.3,
+              "matched": true
+            },
+            {
+              "primary": "Escorts Kubota Limited",
+              "secondary": "Escorts Kubota",
+              "primaryWeight": 2.29,
+              "secondaryWeight": 2.29,
+              "matched": true
+            },
+            {
+              "primary": "Indegene Limited",
+              "secondary": "Indegene",
+              "primaryWeight": 2.17,
+              "secondaryWeight": 2.17,
+              "matched": true
+            },
+            {
+              "primary": "APAR INDUSTRIES LTD",
+              "secondary": "Apar Inds.",
+              "primaryWeight": 2.04,
+              "secondaryWeight": 2.04,
+              "matched": true
+            },
+            {
+              "primary": "Schaeffler India Ltd",
+              "secondary": "Schaeffler India",
+              "primaryWeight": 1.93,
+              "secondaryWeight": 1.93,
+              "matched": true
+            },
+            {
+              "primary": "FINE ORGANIC INDUSTRIES LIMITED",
+              "secondary": "Fine Organic",
+              "primaryWeight": 1.92,
+              "secondaryWeight": 1.92,
+              "matched": true
+            },
+            {
+              "primary": "Yatharth Hospital & Trauma Care Serv Ltd",
+              "secondary": "Yatharth Hospit.",
+              "primaryWeight": 1.88,
+              "secondaryWeight": 1.88,
+              "matched": true
+            },
+            {
+              "primary": "Tamilnad Mercantile Bank Ltd.",
+              "secondary": "T N Merc. Bank",
+              "primaryWeight": 1.88,
+              "secondaryWeight": 1.88,
+              "matched": true
+            },
+            {
+              "primary": "SS Retail Limited",
+              "secondary": "SS Retail",
+              "primaryWeight": 1.8,
+              "secondaryWeight": 1.8,
+              "matched": true
+            }
+          ],
+          "quantityDiscrepancies": [],
+          "currentCompanies": 67,
+          "comparisonRows": 71
+        },
+        {
+          "fundId": "quantum",
+          "top15Checks": [
+            {
+              "primary": "Supriya Lifescience Ltd",
+              "secondary": "Supriya Lifescience",
+              "primaryWeight": 3.97,
+              "secondaryWeight": 3.97,
+              "matched": true
+            },
+            {
+              "primary": "Engineers India Ltd",
+              "secondary": "Engineers India",
+              "primaryWeight": 3.2,
+              "secondaryWeight": 3.2,
+              "matched": true
+            },
+            {
+              "primary": "Uniparts India Ltd",
+              "secondary": "Uniparts",
+              "primaryWeight": 2.75,
+              "secondaryWeight": 2.75,
+              "matched": true
+            },
+            {
+              "primary": "Karur Vysya Bank Ltd",
+              "secondary": "Karur Vysya Bank",
+              "primaryWeight": 2.71,
+              "secondaryWeight": 2.71,
+              "matched": true
+            },
+            {
+              "primary": "GNA Axles Ltd",
+              "secondary": "GNA Axles",
+              "primaryWeight": 2.7,
+              "secondaryWeight": 2.7,
+              "matched": true
+            },
+            {
+              "primary": "Alivus Life Sciences Ltd",
+              "secondary": "Alivus Life Sciences",
+              "primaryWeight": 2.61,
+              "secondaryWeight": 2.61,
+              "matched": true
+            },
+            {
+              "primary": "Lumax Auto Technologies Ltd",
+              "secondary": "Lumax Auto Technologies",
+              "primaryWeight": 2.56,
+              "secondaryWeight": 2.56,
+              "matched": true
+            },
+            {
+              "primary": "Star Health And Allied Insurance Company Ltd",
+              "secondary": "Star Health Insurance",
+              "primaryWeight": 2.5,
+              "secondaryWeight": 2.5,
+              "matched": true
+            },
+            {
+              "primary": "CCL Products (India) Ltd",
+              "secondary": "CCL Products",
+              "primaryWeight": 2.4,
+              "secondaryWeight": 2.4,
+              "matched": true
+            },
+            {
+              "primary": "Carysil Ltd",
+              "secondary": "CARYSIL",
+              "primaryWeight": 2.3,
+              "secondaryWeight": 2.3,
+              "matched": true
+            },
+            {
+              "primary": "Afcom Holdings Ltd",
+              "secondary": "Afcom Holdings",
+              "primaryWeight": 2.27,
+              "secondaryWeight": 2.27,
+              "matched": true
+            },
+            {
+              "primary": "Electronics Mart India Ltd",
+              "secondary": "Electronics Mart",
+              "primaryWeight": 2.27,
+              "secondaryWeight": 2.27,
+              "matched": true
+            },
+            {
+              "primary": "Lumax Industries Ltd",
+              "secondary": "Lumax Industries",
+              "primaryWeight": 2.23,
+              "secondaryWeight": 2.23,
+              "matched": true
+            },
+            {
+              "primary": "Mold-Tek Packaging Ltd",
+              "secondary": "Mold-Tek Packaging",
+              "primaryWeight": 2.2,
+              "secondaryWeight": 2.2,
+              "matched": true
+            },
+            {
+              "primary": "Mayur Uniquoters Ltd",
+              "secondary": "Mayur Uniquoters",
+              "primaryWeight": 2.18,
+              "secondaryWeight": 2.18,
+              "matched": true
+            }
+          ],
+          "quantityDiscrepancies": [],
+          "currentCompanies": 58,
+          "comparisonRows": null
+        }
+      ]
+    }
+  ],
+  "reviewRows": [],
+  "nipponFullCrosscheck": "256 September security quantities and displayed allocations match Decrypt against saved AMC original; DSP original retained, independent ETMoney mismatches excluded."
+}

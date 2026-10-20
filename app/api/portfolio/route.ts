@@ -13,7 +13,7 @@ const headers = { "Cache-Control": "no-store" };
 function expandedSnapshot(current:Portfolio):Portfolio {
   const baseline=seed as Portfolio,added=baseline.funds.some(base=>!current.funds.some(f=>f.id===base.id));
   return {...current,
-    checkedAt:added&&baseline.checkedAt>current.checkedAt?baseline.checkedAt:current.checkedAt,
+    checkedAt:added?[current.checkedAt,...baseline.funds.filter(base=>!current.funds.some(f=>f.id===base.id)).map(f=>f.lastCheckedAt)].sort().at(-1)!:current.checkedAt,
     summary:added?baseline.summary:current.summary,
     runs:added?[baseline.runs[0],...current.runs].filter((run,i,all)=>all.findIndex(other=>other.at===run.at)===i).slice(0,60):current.runs,
     funds:baseline.funds.map(base=>current.funds.find(f=>f.id===base.id)??base)};

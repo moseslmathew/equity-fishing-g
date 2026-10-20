@@ -1,0 +1,357 @@
+{
+  "id": "blackrock",
+  "name": "BlackRock",
+  "asOf": "2026-10-19",
+  "checkedAt": "2026-10-19T16:11:13.630Z",
+  "windowStart": "2025-10-19",
+  "windowEnd": "2026-10-19",
+  "coverage": "Selected India equity exposure through BlackRock-managed client funds: the BGF India Fund's disclosed top ten positions at 30 September 2026, plus the reported Ather Energy bulk purchase. This is not a complete BlackRock-wide holdings register.",
+  "limitations": [
+    "BlackRock is a separate firm from Blackstone. Fund investments belong to fund investors and are not automatically BlackRock Inc. corporate holdings.",
+    "Percentages shown for the ten India Fund positions are fund allocations, not company ownership percentages. They are excluded from company-stake sorting.",
+    "Ather's trade quantity and transaction value are cross-checked through two publishers using exchange data; direct retrieval of the original exchange trade record was not completed.",
+    "The two BlackRock regional pages share one publisher. They cross-check presentation, not independent sourcing.",
+    "No increase or decrease is inferred from a single portfolio snapshot. The Ather purchase is historical; current aggregate exposure remains unverified.",
+    "Business watchpoints are analytical questions, not statements of BlackRock's private rationale. Coverage excludes other funds, ETFs, private assets and undisclosed positions."
+  ],
+  "sources": {
+    "fund": {
+      "title": "BGF India Fund — September 2026 top holdings",
+      "url": "https://www.blackrock.com/sg/en/products/229783/blackrock-india-fund",
+      "publisher": "BlackRock Singapore",
+      "published": "Holdings as at 30 September 2026; reviewed 19 October 2026",
+      "kind": "primary",
+      "note": "Portfolio weights are percentages of this fund, not percentages of the companies. This is a selected fund, not all BlackRock-managed assets."
+    },
+    "fundCross": {
+      "title": "BGF India Fund — Hong Kong disclosure",
+      "url": "https://www.blackrock.com/hk/en/products/229783/blackrock-india-fund",
+      "publisher": "BlackRock Hong Kong",
+      "published": "Holdings as at 30 September 2026",
+      "kind": "primary",
+      "note": "Matches the Singapore page, but both pages originate from BlackRock and are not independent confirmations."
+    },
+    "atherDeal": {
+      "title": "Ather Energy — bulk and block deal register",
+      "url": "https://trendlyne.com/equity/bulk-block-deals/ATHERENERG/3080909/ather-energy-ltd/",
+      "publisher": "Trendlyne",
+      "published": "Trade on 31 August 2026; reviewed 19 October 2026",
+      "kind": "reporting",
+      "note": "Reports an NSE bulk purchase by BLACKROCK GLOBAL FUNDS. The underlying exchange trade record was not retrieved directly."
+    },
+    "atherCross": {
+      "title": "Ather Energy — corporate action and deal register",
+      "url": "https://www.etmoney.com/stocks/ather-energy-ltd/corporate-actions/5043",
+      "publisher": "ET Money",
+      "published": "Trade on 31 August 2026; reviewed 19 October 2026",
+      "kind": "reporting",
+      "note": "Cross-checks buyer, date, quantity and approximate transaction value. Both deal trackers may use the same exchange feed."
+    },
+    "atherPrimary": {
+      "title": "BlackRock Strategic Funds — interim report",
+      "url": "https://www.blackrock.com/lu/intermediaries/literature/interim-report/blackrock-strategic-funds-interim-2025.pdf",
+      "publisher": "BlackRock",
+      "published": "30 November 2025",
+      "kind": "primary",
+      "note": "Historical fund disclosure lists Ather Energy in a separate systematic strategy. It does not verify the August 2026 transaction or current aggregate ownership."
+    }
+  },
+  "companies": [
+    {
+      "id": "ather-energy",
+      "name": "Ather Energy",
+      "ticker": "NSE: ATHERENERG",
+      "listing": "Listed / India",
+      "sector": "Electric vehicles",
+      "relationship": "Reported open-market purchase by BLACKROCK GLOBAL FUNDS; exact sub-fund allocation not established.",
+      "ownership": "25,99,574 shares purchased",
+      "ownershipDate": "31 August 2026 trade · current total stake unverified",
+      "stakePercent": null,
+      "stance": "added",
+      "summary": "Two deal registers report a purchase at ₹1,713.02 per share, approximately ₹445.31 crore. This records a dated purchase, not the current aggregate holding.",
+      "thesis": "Research watchpoints: demand, manufacturing execution, unit economics and the path to sustained cash generation. The purchase alone does not establish BlackRock's detailed investment thesis.",
+      "risks": "EV competition, valuation, execution and potential subsequent trading. A historical purchase is not proof that the same shares remain held.",
+      "sourceIds": [
+        "atherDeal",
+        "atherCross",
+        "atherPrimary"
+      ]
+    },
+    {
+      "id": "icici-bank",
+      "name": "ICICI Bank",
+      "ticker": "NSE: ICICIBANK",
+      "listing": "Listed / India",
+      "sector": "Banking",
+      "relationship": "Held through BGF India Fund, managed by BlackRock; client fund assets.",
+      "ownership": "8.28% of BGF India Fund",
+      "ownershipDate": "30 September 2026 · fund allocation, not company stake",
+      "stakePercent": null,
+      "stance": "held",
+      "summary": "A disclosed top-ten position in the selected fund. Aggregate BlackRock company ownership is not established by this portfolio weight.",
+      "thesis": "Research watchpoints: Credit growth and deposit strength.",
+      "risks": "Credit losses, funding costs and valuation.",
+      "sourceIds": [
+        "fund",
+        "fundCross"
+      ]
+    },
+    {
+      "id": "hdfc-bank",
+      "name": "HDFC Bank",
+      "ticker": "NSE: HDFCBANK",
+      "listing": "Listed / India",
+      "sector": "Banking",
+      "relationship": "Held through BGF India Fund, managed by BlackRock; client fund assets.",
+      "ownership": "3.87% of BGF India Fund",
+      "ownershipDate": "30 September 2026 · fund allocation, not company stake",
+      "stakePercent": null,
+      "stance": "held",
+      "summary": "A disclosed top-ten position in the selected fund. Aggregate BlackRock company ownership is not established by this portfolio weight.",
+      "thesis": "Research watchpoints: Balance-sheet execution and profitable lending.",
+      "risks": "Deposit competition and returns on capital.",
+      "sourceIds": [
+        "fund",
+        "fundCross"
+      ]
+    },
+    {
+      "id": "mahindra",
+      "name": "Mahindra & Mahindra",
+      "ticker": "NSE: M&M",
+      "listing": "Listed / India",
+      "sector": "Automobiles",
+      "relationship": "Held through BGF India Fund, managed by BlackRock; client fund assets.",
+      "ownership": "3.79% of BGF India Fund",
+      "ownershipDate": "30 September 2026 · fund allocation, not company stake",
+      "stakePercent": null,
+      "stance": "held",
+      "summary": "A disclosed top-ten position in the selected fund. Aggregate BlackRock company ownership is not established by this portfolio weight.",
+      "thesis": "Research watchpoints: Product demand, operating margins and capital allocation.",
+      "risks": "Automotive cycles, input costs and execution.",
+      "sourceIds": [
+        "fund",
+        "fundCross"
+      ]
+    },
+    {
+      "id": "belrise",
+      "name": "Belrise Industries",
+      "ticker": "NSE: BELRISE",
+      "listing": "Listed / India",
+      "sector": "Auto components",
+      "relationship": "Held through BGF India Fund, managed by BlackRock; client fund assets.",
+      "ownership": "3.50% of BGF India Fund",
+      "ownershipDate": "30 September 2026 · fund allocation, not company stake",
+      "stakePercent": null,
+      "stance": "held",
+      "summary": "A disclosed top-ten position in the selected fund. Aggregate BlackRock company ownership is not established by this portfolio weight.",
+      "thesis": "Research watchpoints: Customer diversification and earnings conversion.",
+      "risks": "Customer concentration, working capital and leverage.",
+      "sourceIds": [
+        "fund",
+        "fundCross"
+      ]
+    },
+    {
+      "id": "varun",
+      "name": "Varun Beverages",
+      "ticker": "NSE: VBL",
+      "listing": "Listed / India",
+      "sector": "Consumer beverages",
+      "relationship": "Held through BGF India Fund, managed by BlackRock; client fund assets.",
+      "ownership": "3.43% of BGF India Fund",
+      "ownershipDate": "30 September 2026 · fund allocation, not company stake",
+      "stakePercent": null,
+      "stance": "held",
+      "summary": "A disclosed top-ten position in the selected fund. Aggregate BlackRock company ownership is not established by this portfolio weight.",
+      "thesis": "Research watchpoints: Distribution productivity and profitable capacity growth.",
+      "risks": "Seasonality, competition and execution.",
+      "sourceIds": [
+        "fund",
+        "fundCross"
+      ]
+    },
+    {
+      "id": "aditya-birla-capital",
+      "name": "Aditya Birla Capital",
+      "ticker": "NSE: ABCAPITAL",
+      "listing": "Listed / India",
+      "sector": "Financial services",
+      "relationship": "Held through BGF India Fund, managed by BlackRock; client fund assets.",
+      "ownership": "3.23% of BGF India Fund",
+      "ownershipDate": "30 September 2026 · fund allocation, not company stake",
+      "stakePercent": null,
+      "stance": "held",
+      "summary": "A disclosed top-ten position in the selected fund. Aggregate BlackRock company ownership is not established by this portfolio weight.",
+      "thesis": "Research watchpoints: Credit quality and profitable financial-services expansion.",
+      "risks": "Credit-cycle exposure and funding costs.",
+      "sourceIds": [
+        "fund",
+        "fundCross"
+      ]
+    },
+    {
+      "id": "kotak-bank",
+      "name": "Kotak Mahindra Bank",
+      "ticker": "NSE: KOTAKBANK",
+      "listing": "Listed / India",
+      "sector": "Banking",
+      "relationship": "Held through BGF India Fund, managed by BlackRock; client fund assets.",
+      "ownership": "3.15% of BGF India Fund",
+      "ownershipDate": "30 September 2026 · fund allocation, not company stake",
+      "stakePercent": null,
+      "stance": "held",
+      "summary": "A disclosed top-ten position in the selected fund. Aggregate BlackRock company ownership is not established by this portfolio weight.",
+      "thesis": "Research watchpoints: Deposit growth and sustainable lending returns.",
+      "risks": "Credit quality, technology execution and valuation.",
+      "sourceIds": [
+        "fund",
+        "fundCross"
+      ]
+    },
+    {
+      "id": "aditya-infotech",
+      "name": "Aditya Infotech",
+      "ticker": "NSE: CPPLUS",
+      "listing": "Listed / India",
+      "sector": "Technology hardware",
+      "relationship": "Held through BGF India Fund, managed by BlackRock; client fund assets.",
+      "ownership": "3.12% of BGF India Fund",
+      "ownershipDate": "30 September 2026 · fund allocation, not company stake",
+      "stakePercent": null,
+      "stance": "held",
+      "summary": "A disclosed top-ten position in the selected fund. Aggregate BlackRock company ownership is not established by this portfolio weight.",
+      "thesis": "Research watchpoints: Product competitiveness and cash conversion.",
+      "risks": "Competition, supply chains and working capital.",
+      "sourceIds": [
+        "fund",
+        "fundCross"
+      ]
+    },
+    {
+      "id": "axis-bank",
+      "name": "Axis Bank",
+      "ticker": "NSE: AXISBANK",
+      "listing": "Listed / India",
+      "sector": "Banking",
+      "relationship": "Held through BGF India Fund, managed by BlackRock; client fund assets.",
+      "ownership": "2.97% of BGF India Fund",
+      "ownershipDate": "30 September 2026 · fund allocation, not company stake",
+      "stakePercent": null,
+      "stance": "held",
+      "summary": "A disclosed top-ten position in the selected fund. Aggregate BlackRock company ownership is not established by this portfolio weight.",
+      "thesis": "Research watchpoints: Deposit franchise and loan profitability.",
+      "risks": "Credit costs and funding competition.",
+      "sourceIds": [
+        "fund",
+        "fundCross"
+      ]
+    },
+    {
+      "id": "bajaj-finserv",
+      "name": "Bajaj Finserv",
+      "ticker": "NSE: BAJAJFINSV",
+      "listing": "Listed / India",
+      "sector": "Financial services",
+      "relationship": "Held through BGF India Fund, managed by BlackRock; client fund assets.",
+      "ownership": "2.88% of BGF India Fund",
+      "ownershipDate": "30 September 2026 · fund allocation, not company stake",
+      "stakePercent": null,
+      "stance": "held",
+      "summary": "A disclosed top-ten position in the selected fund. Aggregate BlackRock company ownership is not established by this portfolio weight.",
+      "thesis": "Research watchpoints: Returns across lending and insurance businesses.",
+      "risks": "Financial regulation, credit cycles and valuation.",
+      "sourceIds": [
+        "fund",
+        "fundCross"
+      ]
+    }
+  ],
+  "events": [
+    {
+      "id": "ather-bulk-buy",
+      "companyId": "ather-energy",
+      "date": "2026-08-31",
+      "dateLabel": "31 Aug 2026",
+      "title": "BlackRock Global Funds reported buying Ather shares",
+      "kind": "equity",
+      "direction": "added",
+      "status": "Reported",
+      "detail": "Deal trackers record 25,99,574 shares bought at an average ₹1,713.02, approximately ₹445.31 crore.",
+      "qualification": "Two publisher cross-check; original exchange trade record not retrieved directly. This is not a current total-holding disclosure or proof of a first-ever investment.",
+      "sourceIds": [
+        "atherDeal",
+        "atherCross"
+      ]
+    }
+  ],
+  "report": {
+    "title": "BlackRock in India — fund holdings and disclosed activity",
+    "summary": "BlackRock provides India exposure through multiple investment mandates. This profile covers a selected active India fund and a reported Ather purchase. The evidence shows investment exposure, but does not establish a single BlackRock-wide conviction portfolio or company ownership percentage.",
+    "sections": [
+      {
+        "title": "How to interpret the investor",
+        "text": "BlackRock manages client money across different mandates. Read the fund name and disclosure date with each position. An active fund allocation, an index-tracking holding and a corporate investment can imply different investment decisions; this profile does not combine them into one ownership figure.",
+        "sourceIds": [
+          "fund"
+        ]
+      },
+      {
+        "title": "What the September portfolio reveals",
+        "text": "The selected fund's largest disclosed positions include banks, vehicles, components, consumer beverages and financial services. These holdings offer a starting point for researching credit demand and domestic business growth. A single month-end weight does not identify a purchase, sale or management's future trading plans.",
+        "sourceIds": [
+          "fund",
+          "fundCross"
+        ]
+      },
+      {
+        "title": "Ather: a purchase with clear limits",
+        "text": "The reported August trade establishes a dated addition by a named BlackRock fund entity. It does not identify the entire current position or validate a forecast for Ather. Historical primary fund reporting also contains Ather in another strategy, so the August trade should not be called BlackRock's first investment in the company.",
+        "sourceIds": [
+          "atherDeal",
+          "atherCross",
+          "atherPrimary"
+        ]
+      },
+      {
+        "title": "What to research next",
+        "text": "For company selection, test cash conversion, balance-sheet strength, returns on incremental capital and execution against guidance. Treat these as research criteria rather than an inferred endorsement by BlackRock. Comparable fund share counts across consecutive disclosures would be required to establish broader buying or selling trends.",
+        "sourceIds": [
+          "fund",
+          "atherDeal"
+        ]
+      }
+    ],
+    "themes": [
+      {
+        "name": "Financial services",
+        "conviction": "Observed portfolio exposure",
+        "case": "Several banks and diversified financial-services companies appear in the selected fund's top holdings.",
+        "watch": "Credit losses, deposits, funding costs and returns on capital.",
+        "sourceIds": [
+          "fund"
+        ]
+      },
+      {
+        "name": "Mobility and components",
+        "conviction": "Observed positions and a reported trade",
+        "case": "The disclosed fund holds vehicle and component names; the separate Ather trade adds a dated EV-related observation.",
+        "watch": "Demand, margins, capital expenditure and valuation.",
+        "sourceIds": [
+          "fund",
+          "atherDeal"
+        ]
+      },
+      {
+        "name": "Consumer and technology hardware",
+        "conviction": "Observed portfolio exposure",
+        "case": "Consumer beverages and technology hardware appear among the fund's disclosed top positions.",
+        "watch": "Product competitiveness, distribution and working-capital conversion.",
+        "sourceIds": [
+          "fund"
+        ]
+      }
+    ]
+  }
+}

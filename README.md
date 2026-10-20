@@ -1,6 +1,8 @@
 # Equity Fishing — project source copy
 
-Copied from Smallcap Observatory source commit `a8604f0e3093da15a059082c592cde95987d0020` (published version 50), on 13 October 2026.
+Synchronized with Smallcap Observatory source commit `d500b7987249314ddd5901ecd0c8e7d1057073ea` (published version 72), on 20 October 2026.
+
+Latest changes include Foreign Investors coverage (Blackstone, Temasek, GIC and BlackRock), the fund sidebar, company search across funds, full-portfolio shared holdings, and month-to-month company allocation comparisons.
 
 This copy contains the React/TypeScript application, backend APIs, database code, bundled portfolio snapshots, AI research reports, source links and verification scripts. Generated builds, dependencies, credentials and local runtime state are excluded.
 

@@ -1,0 +1,457 @@
+{
+  "asOf": "2026-10-15",
+  "periodStart": "2025-10-15",
+  "periodEnd": "2026-10-15",
+  "scope": "Publicly disclosed Indian listed-company and REIT exposure; major portfolio-company acquisitions included as indirect activity. Not an exhaustive beneficial-ownership register. Undisclosed private transactions and below-disclosure-threshold trades cannot be comprehensively recovered.",
+  "findings": [
+    {
+      "company": "The Federal Bank Limited",
+      "listed": true,
+      "sector": "Banking",
+      "direction": "New equity-linked commitment",
+      "status": "Warrants allotted; full conversion not verified",
+      "eventDate": "2026-02-16",
+      "announcementDate": "2025-10-24",
+      "stake": "Up to 9.99% on full conversion, announced basis; not confirmed current equity ownership",
+      "vehicle": "Asia II Topco XIII Pte. Ltd.",
+      "detail": "272,974,043 warrants allotted at INR227; INR6,196.51 crore total committed consideration and INR1,549.13 crore received upfront (25%). Strategic financial-services investment through primary capital, not exchange-market share purchases.",
+      "sources": [
+        {
+          "type": "primary",
+          "title": "Federal Bank warrant allotment filing, 16 February 2026",
+          "url": "https://www.federal.bank.in/documents/10180/1143981881/FBL_Reg%2B30_%2BAllotment%2Bof%2Bwarrants_1600226_final%2Bfiled.pdf/12937abb-4529-1e85-e9f6-e7e31283102f?t=1771235386744"
+        },
+        {
+          "type": "primary",
+          "title": "Federal Bank strategic investment release, October 2025",
+          "url": "https://www.federal.bank.in/documents/d/guest/federal-bank-announces-landmark-strategic-investment-1"
+        },
+        {
+          "type": "secondary",
+          "title": "Business Standard RBI approval report",
+          "url": "https://www.business-standard.com/amp/industry/banking/blackstone-rbi-approval-federal-bank-stake-foreign-investment-share-126020501905_1.html"
+        }
+      ],
+      "uncertainty": "An accessible CCI news report is dated May2026 even though the bank confirmed allotment in February; do not use that article to construct a regulatory chronology. Do not display 9.99% as current issued-equity stake without conversion disclosure."
+    },
+    {
+      "company": "Aadhar Housing Finance Limited",
+      "listed": true,
+      "sector": "Affordable housing finance",
+      "direction": "Fund-to-fund transfer with public tender purchase and separate external sell-down",
+      "status": "Completed",
+      "eventDate": "2026-02-26",
+      "stake": "282,788,827 shares held by incoming Blackstone vehicle at completion; percentage not recomputed against later capital",
+      "vehicle": "BCP Asia II Holdco VII Pte. Ltd. bought from BCP Topco VII Pte. Ltd.",
+      "detail": "Incoming vehicle acquired 736,706 shares in the open offer and 282,052,121 shares from the outgoing Blackstone vehicle at INR425 on February25. On February26 AXDI LDII SPV1 acquired a separate44,139,236 shares from the seller. Control was transferred to the new Blackstone promoter. Internal transfer is not fresh group-wide accumulation; the external sale offsets the small tender acquisition.",
+      "sources": [
+        {
+          "type": "primary",
+          "title": "Aadhar completion filing, 26 February2026",
+          "url": "https://nsearchives.nseindia.com/corporate/AHFL2021_26022026181610_Reg_30-_Completion_of_transactions.pdf"
+        },
+        {
+          "type": "regulator",
+          "title": "CCI approval7November2025",
+          "url": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2187554&lang=2&reg=48"
+        },
+        {
+          "type": "secondary",
+          "title": "Informist completion report",
+          "url": "https://informistmedia.com/EquityWire/45807/aadhar-housing-promoters-conclude-share-purchase-agreements-control-changes"
+        }
+      ],
+      "uncertainty": "Do not label the new65% vehicle position as a65percentage-point increase for Blackstone as a group. Exact current percentage requires latest capital/shareholding filing."
+    },
+    {
+      "company": "Aster DM Quality Care Limited",
+      "listed": true,
+      "sector": "Hospitals",
+      "direction": "Listed exposure expanded through merger",
+      "status": "Completed",
+      "eventDate": "2026-07-01",
+      "stake": "30.7% post-merger Blackstone ownership; basis July2026 CRISIL rationale",
+      "vehicle": "Blackstone Quality Care India investment merged into Aster",
+      "detail": "Quality Care India merged with Aster DM Healthcare; this is a share-swap business combination, not an open-market accumulation signal. Combined exposure includes CARE,KIMSHEALTH and Evercare assets.",
+      "sources": [
+        {
+          "type": "primary",
+          "title": "Aster merger press-release register confirms successful completion1July2026",
+          "url": "https://www.asterqualitycare.com/investors/aster-qcil-merger/press-release"
+        },
+        {
+          "type": "rating-agency",
+          "title": "CRISIL29July2026",
+          "url": "https://www.crisilratings.com/mnt/winshare/Ratings/RatingList/RatingDocs/AsterDMQualityCareLimited_July%2029_%202026_RR_400641.html"
+        },
+        {
+          "type": "secondary",
+          "title": "ET merger operations2July2026",
+          "url": "https://m.economictimes.com/industry/healthcare/biotech/healthcare/aster-dm-quality-care-launches-merger-of-aster-dm-healthcare-and-blackstones-quality-care-india-ushers-in-a-new-era-in-healthcare/articleshow/132139006.cms"
+        }
+      ],
+      "uncertainty": "Prior April2025 first-leg share-swap is outside the requestedyear; do not count the same merger twice."
+    },
+    {
+      "company": "Mphasis Limited",
+      "listed": true,
+      "sector": "IT services",
+      "direction": "Reduced stake; subsequent percentage drift from dilution",
+      "status": "Completed reduction verified by share-count comparison",
+      "eventDate": "2025-11-18",
+      "stake": "30.53% and58,299,642 shares as of30September2026;40.10% and76,299,642 shares30September2025;30.59% and58,299,642 shares31December2025",
+      "vehicle": "BCP Topco IX Pte. Ltd.",
+      "detail": "Shareholding filings confirm18million-share sell-down in Q3FY26. Later lower percentage with the same absolute holding is dilution, not another sale. May2026 refinancing pledged the whole remaining listed holding; a pledge is not a sale.",
+      "sources": [
+        {
+          "type": "primary",
+          "title": "September2026 shareholding",
+          "url": "https://www.mphasis.com/content/dam/mphasis-com/global/en/investors/governance/shareholding-pattern-30-sep-2026.pdf"
+        },
+        {
+          "type": "primary",
+          "title": "September2025 shareholding",
+          "url": "https://www.mphasis.com/content/dam/mphasis-com/global/en/investors/governance/submission-of-shareholding-pattern-for-the-quarter-ended.pdf"
+        },
+        {
+          "type": "primary",
+          "title": "December2025 shareholding",
+          "url": "https://www.mphasis.com/content/dam/mphasis-com/global/en/investors/governance/shareholding-pattern-31-dec-2025.pdf"
+        },
+        {
+          "type": "secondary",
+          "title": "November2025 sale report",
+          "url": "https://upstox.com/news/market-news/stocks/mphasis-block-deal-blackstone-to-sell-1-8-crore-shares-via-open-market-co-clarifies/article-184819/"
+        }
+      ],
+      "uncertainty": "Transactiondate from reporting; filings establish quarter-level reduction. Company investor landingpage30.55% is older than Sept2026 filing. A misleading AInewsreport dates the same9.5% sale May2026; reject it."
+    },
+    {
+      "company": "EPL Limited",
+      "listed": true,
+      "sector": "Packaging",
+      "direction": "Exited",
+      "status": "Completed sale reported from NSE bulk-deal data",
+      "eventDate": "2026-09-01",
+      "stake": "26.38% sold; remaining stake reported nil",
+      "vehicle": "Epsilon Bidco Pte. Ltd.",
+      "detail": "Sold84,479,781 shares for aboutINR2,032crore through open-market transactions. Exitedposition must not be presented as a current Blackstone portfolio holding.",
+      "sources": [
+        {
+          "type": "secondary",
+          "title": "Moneycontrol transaction report",
+          "url": "https://www.moneycontrol.com/news/business/markets/blackstone-backed-epsilon-bidco-exits-epl-for-rs-2-032-crore-hdfc-life-buys-rs-74-crore-worth-shares-in-sbfc-finance-14020243.html"
+        },
+        {
+          "type": "secondary-PTI",
+          "title": "PTI published by Mid-day",
+          "url": "https://www.mid-day.com/business/business-news/article/blackstone-group-exits-epl-offloads-2638-per-cent-stake-for-rs-2032-crore-23647931"
+        }
+      ],
+      "uncertainty": "Direct NSE bulkdeal row not retrieved; secondary completed-transaction crosscheck. Do not cite old acquisitionpressrelease as evidenceofnewexit."
+    },
+    {
+      "company": "Knowledge Realty Trust",
+      "listed": true,
+      "instrument": "REIT units",
+      "sector": "Office real estate",
+      "direction": "Reduced sponsor stake",
+      "status": "OFS completion reported and exchange-filing indexed",
+      "eventDate": "2026-09-02",
+      "stake": "25.03percentage points of total units sold; Blackstone interest approximately46.51% to21.48%; combinedsponsors remain53.52%",
+      "vehicle": "Multiple Blackstone BREP sponsor entities",
+      "detail": "1.11billionunits sold via OFS held31August\u20131September2026; reportedproceeds aboutINR11,988crore. Publicunitholding increasedto46.48%. Secondary sale proceeds go to sellingsponsors ratherthan expansioncapitalforREIT.",
+      "sources": [
+        {
+          "type": "primary-indexed",
+          "title": "NSE2September2026OFScompletion filing; full open failed",
+          "url": "https://nsearchives.nseindia.com/corporate/KRT_02092026191317_KRT-_SE_Announcement.pdf"
+        },
+        {
+          "type": "secondary-Reuters",
+          "title": "Reutersannouncedsale28August2026",
+          "url": "https://www.reuters.com/world/india/blackstone-offers-sell-up-25-indias-knowledge-reit-over-1-billion-2026-08-28/"
+        },
+        {
+          "type": "secondary",
+          "title": "FinancialExpressOFSsubscription1September2026",
+          "url": "https://www.financialexpress.com/business/industry-blackstones-rs-12000-cr-ofs-in-knowledge-realty-trust-fully-subscribed-4329850/"
+        },
+        {
+          "type": "transaction-adviser",
+          "title": "CAMselleradvisermandate",
+          "url": "https://www.lexology.com/library/detail.aspx?g=b8035654-eff1-4a3c-85ca-8addf78611b3"
+        }
+      ],
+      "uncertainty": "Do not confuse Blackstone46.51% with combinedBlackstone+Sattvasponsor78.56%. Retained21.48% is arithmeticfromreportedpreholdingandsale; labelapproximate untillatestunitfiling."
+    },
+    {
+      "company": "Nexus Select Trust",
+      "listed": true,
+      "instrument": "REIT units",
+      "sector": "Retail real estate",
+      "direction": "Existing holding; indirect platform acquisition",
+      "status": "50% targetacquisition agreed; completionnotverified",
+      "eventDate": "2026-02-23",
+      "stake": "Blackstone sponsor22.3% asof31March2026; target50% is Nexus'sstake, not Blackstone's stake",
+      "detail": "Nexus agreed to acquire50% of Garden City Malls Private Limited/upcoming Runwal Gardens Mall in Dombivli forINR434crore. Retailplatform expansionis distinctfrom Blackstone buyingmoreNexusunits.",
+      "sources": [
+        {
+          "type": "primary",
+          "title": "Nexusboardoutcome23February2026",
+          "url": "https://www.nexusselecttrust.com/resources/assets/pdf/Outcome-of-BM-23.02.2026.pdf"
+        },
+        {
+          "type": "primary",
+          "title": "NexusFY26presentationandunitholding",
+          "url": "https://www.nexusselecttrust.com/resources/assets/pdf/NXST-Press-Release-and-Earnings-Presentation-Q4-FY26.pdf"
+        },
+        {
+          "type": "secondary-PTI",
+          "title": "PTI23February2026",
+          "url": "https://www.theweek.in/wire-updates/business/2026/02/23/nexus-select-trust-to-pick-50-pc-stake-in-runwal-enterprises-upcoming-mall-in-mumbai-for-rs-434-cr.html"
+        }
+      ],
+      "uncertainty": "Historic20.83%BlackstonesaleoccurredAugust2024,outsideyear. Lock-inexpiryMay2026doesnotproveanewsale."
+    },
+    {
+      "company": "Ventive Hospitality Limited",
+      "listed": true,
+      "sector": "Hospitality",
+      "direction": "Existing holding; portfolio company expanded through acquisitions",
+      "status": "Indirecteventscompleted",
+      "eventDate": "2026-02-17",
+      "stake": "Blackstoneapproximately32.4% asof31March2026; norecentdirectincreaseverified",
+      "detail": "Via materialsubsidiaryPanchshilCorporatePark, Ventive completed100%Finest-VN BusinessParkacquisition17February2026 forINR59.83crore. Finest-VN'ssubsidiariesoperateSohoHouseMumbaiandholdexclusiveIndiaexpansionrights. ThisisindirectBlackstoneexposure, not100%Blackstoneownership.",
+      "sources": [
+        {
+          "type": "primary",
+          "title": "Finest-VNcompletion17February2026",
+          "url": "https://www.ventivehospitality.com/wp-content/uploads/2024/07/VHL_Finest-VN-Acquistion_17.02.2026.pdf"
+        },
+        {
+          "type": "primary",
+          "title": "SohoHouseproposal16October2025",
+          "url": "https://www.ventivehospitality.com/wp-content/uploads/2024/07/VHL_Intimation-Acquisition-Soho-House-Press-Release.pdf"
+        },
+        {
+          "type": "secondary",
+          "title": "VCircleBlackstone32.4%ownershipJuly2026",
+          "url": "https://www.vccircle.com/blackstonebacked-ventive-hospitality-to-acquire-western-india-resort"
+        }
+      ],
+      "uncertainty": "JuneprimaryshareholdingPDFavailablebuttextencodinggarbled;32.4%MarchbasisfromVCircle,notclaimedlatestSeptember. Soho/Finest-VNsameacquisitionmustnotbedoublecounted."
+    },
+    {
+      "company": "Soham Leisure Ventures Private Limited (Hilton Goa Resort)",
+      "listed": false,
+      "sector": "Hospitality",
+      "direction": "Newindirectacquisitionandconvertiblefunding",
+      "status": "Completed",
+      "eventDate": "2025-10-16",
+      "stake": "Ventive acquired76%; not Blackstone'sdirectownershippercentage",
+      "parent": "VentiveHospitalityLimited",
+      "detail": "Primary18Novemberfilingconfirms76%equityacquisitioneffective16October2025andINR110.5croreOCDallotment18November2025. Optionallyconvertibledebenturesaredistinctfromequity. FurtherINR50croreOCDinvestmentreported3June2026, directfilingnotyetretrieved.",
+      "sources": [
+        {
+          "type": "primary",
+          "title": "VentiveOCDand76%stakefiling18November2025",
+          "url": "https://www.ventivehospitality.com/wp-content/uploads/2024/07/VHL_OCD_ISSUE_SLVPL.pdf"
+        },
+        {
+          "type": "secondary",
+          "title": "June2026furtherfundingreport",
+          "url": "https://www.sahi.com/news/ventive-hospitality-invests-50-crore-in-hilton-goa-operator-via-convertible-debentures-1418405-PE1_"
+        }
+      ],
+      "uncertainty": "Do notlabelOCDfacevalueasadditionalpaid-up-equitystake; no Blackstone look-throughpercentagecomputed."
+    },
+    {
+      "company": "International Gemological Institute Limited",
+      "listed": true,
+      "sector": "Diamondandgemstonecertification",
+      "direction": "Stableexistingholding; indirectacquisition",
+      "status": "AGLacquisitionannouncedandcompletionreported",
+      "eventDate": "2026-02-10",
+      "stake": "76.55% throughBCPAsiaIITopco; primaryJune2026filing, September2026secondarycrosscheckunchanged",
+      "detail": "IGI acquiredAmericanGemologicalLaboratories/AGLHoldco, strengtheningcoloured-gemstonecapabilitiesandUSpresence. NotBlackstonebuyingmoreIGIshares.",
+      "sources": [
+        {
+          "type": "primary",
+          "title": "June2026shareholding",
+          "url": "https://investor.igi.org/wp-content/uploads/2026/07/SHP-Website.pdf"
+        },
+        {
+          "type": "primary",
+          "title": "AGLannouncement31January2026",
+          "url": "https://investor.igi.org/wp-content/uploads/2026/01/Upload_WOS.pdf"
+        },
+        {
+          "type": "primary",
+          "title": "IGIAGLpressrelease",
+          "url": "https://www.igi.org/igi-acquires-agl-expanding-its-global-footprint-in-colored-gemstone-certification/"
+        },
+        {
+          "type": "secondary",
+          "title": "Sept2026holdingcrosscheck",
+          "url": "https://www.screener.in/company/IGIL/consolidated/"
+        }
+      ],
+      "uncertainty": "AGL100% targetownershipisnotBlackstone100%IGIownership. PrimaryJunePDFshows86,432,000promotershareslocked26.13%,notpledged;avoidmisreadingcolumns."
+    },
+    {
+      "company": "R Systems International Limited",
+      "listed": true,
+      "sector": "Digitalproductengineering",
+      "direction": "Existingholding; indirectacquisition",
+      "status": "Novigocompleted",
+      "eventDate": "2025-11-13",
+      "stake": "Blackstone51.85% asof31May2026; BCPAsiaIITopcoIIPteLtd",
+      "detail": "RSystemscompleted100%NovigoSolutionspurchaseforINR400croreon13November2025 followingAugust2025agreement. AddsAI,low-code,intelligentautomationcapabilities. Blackstone'sownpercentageincreasewasnotestablished.",
+      "sources": [
+        {
+          "type": "primary",
+          "title": "NSEearningsreleaseconfirmsNovigocompletion",
+          "url": "https://nsearchives.nseindia.com/corporate/RSYSTEMS_10022026230905_RSYSTEMS.pdf"
+        },
+        {
+          "type": "primary",
+          "title": "RSystemsannualreport2025",
+          "url": "https://media.rsystems.com/wp-content/uploads/2026/05/RSI-Annual-Report-2025.pdf"
+        },
+        {
+          "type": "rating-agency",
+          "title": "CRISILJuly2026ownership",
+          "url": "https://www.crisilratings.com/mnt/winshare/Ratings/RatingList/RatingDocs/RSystemsInternationalLimited_July%2007_%202026_RR_399089.html"
+        },
+        {
+          "type": "company-syndicated",
+          "title": "BusinessWirereleaseviaYahoo",
+          "url": "https://finance.yahoo.com/news/r-systems-completes-acquisition-novigo-102600375.html"
+        }
+      ],
+      "uncertainty": "VelotioandScaleworxmergedintoRSystems1May2026;existingassetsrestructuring,notfreshBlackstoneinvestment."
+    },
+    {
+      "company": "Kolte-Patil Developers Limited",
+      "listed": true,
+      "sector": "Residentialrealestate",
+      "direction": "Existingholding; noverifiednewownershipmovementwithinwindow",
+      "status": "40%acquisitioncompletedBEFORErequestedyear",
+      "eventDate": "2025-10-08",
+      "inResearchYear": false,
+      "stake": "40%;confirmedMarch2026CRISIL",
+      "detail": "CARErationaledated8October2025alreadyconfirms40%acquisitionthroughprimaryissuanceandpromotersharepurchase. Thereforeexcludeasanew15October2025\u201315October2026entry,butretainincurrentportfolio. Originalproposedopenoffershouldnotbeconfusedwithconfirmed66%holding.",
+      "sources": [
+        {
+          "type": "rating-agency",
+          "title": "CARE8October2025alreadycompleted40%",
+          "url": "https://www.careratings.com/upload/CompanyFiles/PR/202510141009_Kolte-Patil_Developers_Limited.pdf"
+        },
+        {
+          "type": "rating-agency",
+          "title": "CRISIL25March2026",
+          "url": "https://www.crisil.com/mnt/winshare/Ratings/RatingList/RatingDocs/Kolte_PatilDevelopersLimited_March%2025_%202026_RR_391883.html"
+        },
+        {
+          "type": "primary-exchange-mirror",
+          "title": "CompanyQ3FY26presentation",
+          "url": "https://bsmedia.business-standard.com/_media/bs/data/announcements/bse/05022026/c325c3bd-d272-4ec0-aea1-219258888683.pdf"
+        }
+      ],
+      "uncertainty": "Nofreshin-yearpurchaseidentified. FY26spansApril2025\u2013March2026soFY26newinvestmentdoesnotautomaticallyfallinthetrailingyear."
+    }
+  ],
+  "pipelineNotHoldings": [
+    {
+      "company": "Yatharth Hospitals and Trauma Care Services Limited",
+      "status": "Reportedinterest; companydeniedsale discussions",
+      "date": "2026-08-28",
+      "url": "https://m.economictimes.com/industry/healthcare/biotech/healthcare/yatharth-hospitals-draws-interest-from-aster-advent-as-healthcare-consolidation-heats-up/articleshow/133577494.cms"
+    },
+    {
+      "company": "RedTape Limited",
+      "status": "FounderssolicitedBlackstone/KKRinterest; nocompletedinvestmentverified",
+      "date": "2026-01-13",
+      "url": "https://www.reuters.com/world/india/founders-indias-redtape-eye-stake-sale-tap-blackstone-kkr-sources-say-2026-01-13/"
+    }
+  ],
+  "strategyInference": "NewprimarybankcapitalandlistedhospitalconsolidationcoexistwithprofitrealisationinIT,packagingandofficeREITs. Portfolio-companyadd-onacquisitionsshowhospitality,retailrealestate,AIengineeringandgem-certificationexpansion. Theseareinferencesfromobservedtransactions,notevidenceofundisclosedfuturebuyorders.",
+  "verificationNotes": [
+    "Separateagreement,approval,allotmentandcompletiondates.",
+    "Neveraddparentand100%subsidiarytransactionvaluesasindependentBlackstonecapitaldeployed.",
+    "REITunitsarenotcompanyequityshares.",
+    "Noexhaustiveopen-marketpurchaseclaimcanbemadefromthisreview.",
+    "ParentagentmustindependentlyopenURLsifusingthesewebrefsinfinalcitations."
+  ],
+  "indirectEvents": [
+    {
+      "company": "Novigo Solutions Private Limited",
+      "date": "2025-11-13",
+      "status": "Completed",
+      "parentChain": [
+        "Blackstone funds",
+        "BCP Asia II Topco II Pte. Ltd.",
+        "R Systems International Limited",
+        "Novigo Solutions Private Limited"
+      ],
+      "targetStake": "R Systems acquired 100% for INR 400 crore. Blackstone held 51.85% of R Systems on 31 May 2026; target acquisition is not 100% Blackstone economic ownership.",
+      "source": "https://nsearchives.nseindia.com/corporate/RSYSTEMS_10022026230905_RSYSTEMS.pdf"
+    },
+    {
+      "company": "AGL Holdco Inc. / American Gemological Laboratories LLC",
+      "date": "2026-01-31",
+      "completionReported": "2026-02-10",
+      "status": "Announced in primary source; completion reported by secondary source",
+      "parentChain": [
+        "Blackstone funds",
+        "BCP Asia II Topco Pte. Ltd.",
+        "International Gemological Institute Limited",
+        "AGL Holdco Inc.",
+        "American Gemological Laboratories LLC"
+      ],
+      "targetStake": "IGI acquired 100% of AGL Holdco; IGI itself is 76.55% Blackstone owned on cited basis.",
+      "source": "https://investor.igi.org/wp-content/uploads/2026/01/Upload_WOS.pdf",
+      "crosscheck": "https://www.vccircle.com/blackstonecontrolled-igi-to-buy-us-gemstone-testing-firm"
+    },
+    {
+      "company": "Finest-VN Business Park Private Limited / Soho House India platform",
+      "date": "2026-02-17",
+      "status": "Completed",
+      "parentChain": [
+        "Blackstone real estate funds",
+        "Ventive Hospitality Limited",
+        "Panchshil Corporate Park Private Limited",
+        "Finest-VN Business Park Private Limited",
+        "Subsidiaries holding Soho House India rights and Mumbai operations"
+      ],
+      "targetStake": "100% acquired for INR 59.83 crore by Ventive subsidiary. Not 100% Blackstone ownership.",
+      "source": "https://www.ventivehospitality.com/wp-content/uploads/2024/07/VHL_Finest-VN-Acquistion_17.02.2026.pdf",
+      "note": "Soboho/Sohobo spellings vary across sources. Use Finest-VN as transaction entity; do not create a second acquisition for the same platform."
+    },
+    {
+      "company": "Garden City Malls Private Limited / Nexus Runwal Gardens Mall, Dombivli",
+      "date": "2026-02-23",
+      "status": "Agreement; closing not independently verified",
+      "parentChain": [
+        "Blackstone sponsor entities",
+        "Nexus Select Trust",
+        "Garden City Malls Private Limited / Runwal Gardens project"
+      ],
+      "targetStake": "Nexus agreed 50% for INR 434 crore; Blackstone sponsor holding in Nexus 22.3% on cited basis. Not a 50% direct Blackstone purchase.",
+      "source": "https://www.nexusselecttrust.com/resources/assets/pdf/Outcome-of-BM-23.02.2026.pdf"
+    },
+    {
+      "company": "Soham Leisure Ventures Private Limited / Hilton Goa Resort",
+      "date": "2025-10-16",
+      "status": "Completed acquisition, subsequent OCD funding",
+      "parentChain": [
+        "Blackstone real estate funds",
+        "Ventive Hospitality Limited",
+        "Soham Leisure Ventures Private Limited"
+      ],
+      "targetStake": "Ventive acquired 76%; subscribed INR 110.5 crore optionally convertible debentures on 18 November 2025. OCD subscription does not establish extra issued equity percentage.",
+      "source": "https://www.ventivehospitality.com/wp-content/uploads/2024/07/VHL_OCD_ISSUE_SLVPL.pdf"
+    }
+  ]
+}

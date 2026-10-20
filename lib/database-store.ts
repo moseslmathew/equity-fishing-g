@@ -104,9 +104,16 @@ function accepted(f:Fund){return f.verification!=="conflict"&&f.checkStatus!=="f
 let initializing:Promise<void>|undefined;
 // Data backfill is deliberately outside schema migrations. Retry-safe upserts never replace newer records.
 export async function ensureDatabase(){
- const db=database();if(await db.prepare("SELECT key FROM app_documents WHERE key=?").bind("migration:legacy-v1").first())return;
+ const db=database();if(await db.prepare("SELECT key FROM app_documents WHERE key=?").bind("migration:legacy-v1").first()){await importSeptember(db);return;}
  if(!initializing)initializing=importLegacy(db).catch(e=>{initializing=undefined;throw e;});
  await initializing;
+ await importSeptember(db);
+}
+async function importSeptember(db:DatabaseClient){
+ const marker="import:september-2026:"+september.checkedAt;
+ if(await db.prepare("SELECT key FROM app_documents WHERE key=?").bind(marker).first())return;
+ await batches(db,[...(seed.funds as Fund[]).filter(accepted).map(f=>fundStatement(db,f)),...(september.funds as Fund[]).filter(accepted).map(f=>fundStatement(db,f)),...september.comparisons.map(c=>{validateFullComparison(c);return comparisonStatement(db,c as FullComparison);})]);
+ await db.batch([documentStatement(db,marker,{funds:september.funds.length,comparisons:september.comparisons.length},september.checkedAt)]);
 }
 async function importLegacy(db:DatabaseClient){
  const statements:any[]=[];

@@ -7,7 +7,7 @@
     "time": "08:00",
     "timezone": "Asia/Kolkata"
   },
-  "summary": "Top 15 company holdings for all twenty small-cap funds, ranked from their saved 31 August 2026 full equity disclosures; original top-five checks and additional source coverage are retained separately.",
+  "summary": "Twenty small-cap schemes plus four requested Helios equity schemes. Full scheme names, categories and dated source status are shown per fund.",
   "funds": [
     {
       "id": "dsp",
@@ -2503,6 +2503,502 @@
             "label": "MFScanner",
             "url": "https://mfscanner.com/fund/bajaj-finserv-small-cap-fund",
             "scope": "Available holdings, top-five allocations and movement summaries cross-checked; not every prior quantity independently confirmed."
+          }
+        ]
+      }
+    },
+    {
+      "id": "helios-financial",
+      "name": "Helios Financial Services Fund",
+      "monogram": "HE",
+      "color": "#3568e8",
+      "verification": "provider_only",
+      "checkStatus": "checked",
+      "portfolioDate": "2026-08-31",
+      "lastCheckedAt": "2026-10-15T15:09:56.368877+00:00",
+      "holdings": [
+        {
+          "key": "INE090A01021",
+          "name": "ICICI Bank Ltd.",
+          "weight": 13.4
+        },
+        {
+          "key": "INE040A01034",
+          "name": "HDFC Bank Ltd.",
+          "weight": 11.07
+        },
+        {
+          "key": "INE982J01020",
+          "name": "One 97 Communications Ltd.",
+          "weight": 8.38
+        },
+        {
+          "key": "INE296A01032",
+          "name": "Bajaj Finance Ltd.",
+          "weight": 7.35
+        },
+        {
+          "key": "INE062A01020",
+          "name": "State Bank of India",
+          "weight": 6.34
+        },
+        {
+          "key": "INE721A01047",
+          "name": "Shriram Finance Ltd.",
+          "weight": 4.88
+        },
+        {
+          "key": "INE640G01020",
+          "name": "SBI funds Management ltd.",
+          "weight": 4.77
+        },
+        {
+          "key": "INE338I01027",
+          "name": "Motilal Oswal Financial Services Ltd.",
+          "weight": 4.2
+        },
+        {
+          "key": "INE238A01034",
+          "name": "Axis Bank Ltd.",
+          "weight": 4.05
+        },
+        {
+          "key": "INE121A01024",
+          "name": "Cholamandalam Investment & Finance Co. Ltd.",
+          "weight": 3.46
+        },
+        {
+          "key": "INE745G01043",
+          "name": "Multi Commodity Exchange of India Ltd.",
+          "weight": 3.43
+        },
+        {
+          "key": "INE572E01012",
+          "name": "PNB Housing Finance Ltd.",
+          "weight": 3.24
+        },
+        {
+          "key": "INE00F201020",
+          "name": "Prudent Corporate Advisory Services Ltd.",
+          "weight": 2.71
+        },
+        {
+          "key": "INE202B01038",
+          "name": "Piramal Finance Ltd.",
+          "weight": 2.19
+        },
+        {
+          "key": "INE491A01021",
+          "name": "City Union Bank Ltd.",
+          "weight": 2.09
+        }
+      ],
+      "sources": [
+        {
+          "label": "DecryptMutualFunds",
+          "url": "https://decryptmutualfunds.com/fund-houses/helios/financial-services-fund",
+          "type": "third_party",
+          "portfolioDate": "2026-08-31",
+          "matched": true
+        },
+        {
+          "label": "GMP IPO Watch / FinAPI",
+          "url": "https://www.gmpipowatch.com/mutual-funds/scheme/helios-financial-services-fund-direct-plan-growth-152679",
+          "type": "third_party",
+          "portfolioDate": "2026-09-30",
+          "matched": false
+        }
+      ],
+      "notes": [
+        "Full August holdings are provider-reported dated August 31, 2026. Original AMC workbook not verified.",
+        "14 of August's top 15 weights corroborated using September GMP/FinAPI allocations minus displayed one-month percentage-point changes. Missing exited holdings or ambiguous delta fields are not marked matched.",
+        "August quantities and allocations come from a separately dated DecryptMutualFunds August record. The second publisher reports September; its prior-month allocation fields offer an arithmetic cross-check, not a second independently dated August disclosure. Full August cross-confirmation remains pending."
+      ],
+      "holdingsEvidence": {
+        "basis": "saved_full_portfolio",
+        "checkedAt": "2026-10-15T15:09:56.368877+00:00",
+        "sources": [
+          {
+            "label": "DecryptMutualFunds",
+            "url": "https://decryptmutualfunds.com/fund-houses/helios/financial-services-fund",
+            "scope": "Full provider-reported August equity ISIN quantities and %NAV."
+          },
+          {
+            "label": "GMP IPO Watch / FinAPI",
+            "url": "https://www.gmpipowatch.com/mutual-funds/scheme/helios-financial-services-fund-direct-plan-growth-152679",
+            "scope": "14 of August's top 15 weights corroborated using September GMP/FinAPI allocations minus displayed one-month percentage-point changes. Missing exited holdings or ambiguous delta fields are not marked matched."
+          }
+        ]
+      }
+    },
+    {
+      "id": "helios-flexi",
+      "name": "Helios Flexi Cap Fund",
+      "monogram": "HE",
+      "color": "#3568e8",
+      "verification": "provider_only",
+      "checkStatus": "checked",
+      "portfolioDate": "2026-08-31",
+      "lastCheckedAt": "2026-10-15T15:09:56.368877+00:00",
+      "holdings": [
+        {
+          "key": "INE758T01015",
+          "name": "Eternal Ltd.",
+          "weight": 4.4
+        },
+        {
+          "key": "INE090A01021",
+          "name": "ICICI Bank Ltd.",
+          "weight": 3.9
+        },
+        {
+          "key": "INE982J01020",
+          "name": "One 97 Communications Ltd.",
+          "weight": 3.79
+        },
+        {
+          "key": "INE742F01042",
+          "name": "Adani Ports and Special Economic Zone Ltd.",
+          "weight": 3.31
+        },
+        {
+          "key": "INE062A01020",
+          "name": "State Bank of India",
+          "weight": 2.83
+        },
+        {
+          "key": "INE296A01032",
+          "name": "Bajaj Finance Ltd.",
+          "weight": 2.74
+        },
+        {
+          "key": "INE0LEZ01016",
+          "name": "Ather Energy Ltd.",
+          "weight": 2.66
+        },
+        {
+          "key": "INE423A01024",
+          "name": "Adani Enterprises Ltd.",
+          "weight": 2.62
+        },
+        {
+          "key": "INE040A01034",
+          "name": "HDFC Bank Ltd.",
+          "weight": 2.59
+        },
+        {
+          "key": "INE280A01028",
+          "name": "Titan Company Ltd.",
+          "weight": 2.57
+        },
+        {
+          "key": "INE263A01024",
+          "name": "Bharat Electronics Ltd.",
+          "weight": 2.52
+        },
+        {
+          "key": "INE591G01025",
+          "name": "Coforge Ltd.",
+          "weight": 2.37
+        },
+        {
+          "key": "INE018A01030",
+          "name": "Larsen & Toubro Ltd.",
+          "weight": 2.13
+        },
+        {
+          "key": "INE002A01018",
+          "name": "Reliance Industries Ltd.",
+          "weight": 2.11
+        },
+        {
+          "key": "INE0DYJ01015",
+          "name": "Syrma SGS Technology Ltd.",
+          "weight": 2.0
+        }
+      ],
+      "sources": [
+        {
+          "label": "DecryptMutualFunds",
+          "url": "https://decryptmutualfunds.com/fund-houses/helios/flexi-cap-fund",
+          "type": "third_party",
+          "portfolioDate": "2026-08-31",
+          "matched": true
+        },
+        {
+          "label": "GMP IPO Watch / FinAPI",
+          "url": "https://www.gmpipowatch.com/mutual-funds/scheme/helios-flexi-cap-fund-direct-plan-growth-152135",
+          "type": "third_party",
+          "portfolioDate": "2026-09-30",
+          "matched": false
+        }
+      ],
+      "notes": [
+        "Full August holdings are provider-reported dated August 31, 2026. Original AMC workbook not verified.",
+        "15 of August's top 15 weights corroborated using September GMP/FinAPI allocations minus displayed one-month percentage-point changes. Missing exited holdings or ambiguous delta fields are not marked matched.",
+        "August quantities and allocations come from a separately dated DecryptMutualFunds August record. The second publisher reports September; its prior-month allocation fields offer an arithmetic cross-check, not a second independently dated August disclosure. Full August cross-confirmation remains pending."
+      ],
+      "holdingsEvidence": {
+        "basis": "saved_full_portfolio",
+        "checkedAt": "2026-10-15T15:09:56.368877+00:00",
+        "sources": [
+          {
+            "label": "DecryptMutualFunds",
+            "url": "https://decryptmutualfunds.com/fund-houses/helios/flexi-cap-fund",
+            "scope": "Full provider-reported August equity ISIN quantities and %NAV."
+          },
+          {
+            "label": "GMP IPO Watch / FinAPI",
+            "url": "https://www.gmpipowatch.com/mutual-funds/scheme/helios-flexi-cap-fund-direct-plan-growth-152135",
+            "scope": "15 of August's top 15 weights corroborated using September GMP/FinAPI allocations minus displayed one-month percentage-point changes. Missing exited holdings or ambiguous delta fields are not marked matched."
+          }
+        ]
+      }
+    },
+    {
+      "id": "helios-large-mid",
+      "name": "Helios Large & Mid Cap Fund",
+      "monogram": "HE",
+      "color": "#3568e8",
+      "verification": "provider_only",
+      "checkStatus": "checked",
+      "portfolioDate": "2026-08-31",
+      "lastCheckedAt": "2026-10-15T15:09:56.368877+00:00",
+      "holdings": [
+        {
+          "key": "INE982J01020",
+          "name": "One 97 Communications Ltd.",
+          "weight": 4.98
+        },
+        {
+          "key": "INE758T01015",
+          "name": "Eternal Ltd.",
+          "weight": 4.03
+        },
+        {
+          "key": "INE742F01042",
+          "name": "Adani Ports and Special Economic Zone Ltd.",
+          "weight": 3.81
+        },
+        {
+          "key": "INE090A01021",
+          "name": "ICICI Bank Ltd.",
+          "weight": 3.68
+        },
+        {
+          "key": "INE280A01028",
+          "name": "Titan Company Ltd.",
+          "weight": 3.23
+        },
+        {
+          "key": "INE296A01032",
+          "name": "Bajaj Finance Ltd.",
+          "weight": 2.85
+        },
+        {
+          "key": "INE423A01024",
+          "name": "Adani Enterprises Ltd.",
+          "weight": 2.8
+        },
+        {
+          "key": "INE211B01039",
+          "name": "The Phoenix Mills Ltd.",
+          "weight": 2.65
+        },
+        {
+          "key": "INE040A01034",
+          "name": "HDFC Bank Ltd.",
+          "weight": 2.63
+        },
+        {
+          "key": "INE018A01030",
+          "name": "Larsen & Toubro Ltd.",
+          "weight": 2.53
+        },
+        {
+          "key": "INE263A01024",
+          "name": "Bharat Electronics Ltd.",
+          "weight": 2.52
+        },
+        {
+          "key": "INE591G01025",
+          "name": "Coforge Ltd.",
+          "weight": 2.42
+        },
+        {
+          "key": "INE646L01027",
+          "name": "Interglobe Aviation Ltd.",
+          "weight": 2.4
+        },
+        {
+          "key": "INE062A01020",
+          "name": "State Bank of India",
+          "weight": 2.22
+        },
+        {
+          "key": "INE685A01028",
+          "name": "Torrent Pharmaceuticals Ltd.",
+          "weight": 2.22
+        }
+      ],
+      "sources": [
+        {
+          "label": "DecryptMutualFunds",
+          "url": "https://decryptmutualfunds.com/fund-houses/helios/large-mid-cap-fund",
+          "type": "third_party",
+          "portfolioDate": "2026-08-31",
+          "matched": true
+        },
+        {
+          "label": "GMP IPO Watch / FinAPI",
+          "url": "https://www.gmpipowatch.com/mutual-funds/scheme/helios-large-mid-cap-fund-direct-plan-growth-152941",
+          "type": "third_party",
+          "portfolioDate": "2026-09-30",
+          "matched": false
+        }
+      ],
+      "notes": [
+        "Full August holdings are provider-reported dated August 31, 2026. Original AMC workbook not verified.",
+        "15 of August's top 15 weights corroborated using September GMP/FinAPI allocations minus displayed one-month percentage-point changes. Missing exited holdings or ambiguous delta fields are not marked matched.",
+        "August quantities and allocations come from a separately dated DecryptMutualFunds August record. The second publisher reports September; its prior-month allocation fields offer an arithmetic cross-check, not a second independently dated August disclosure. Full August cross-confirmation remains pending."
+      ],
+      "holdingsEvidence": {
+        "basis": "saved_full_portfolio",
+        "checkedAt": "2026-10-15T15:09:56.368877+00:00",
+        "sources": [
+          {
+            "label": "DecryptMutualFunds",
+            "url": "https://decryptmutualfunds.com/fund-houses/helios/large-mid-cap-fund",
+            "scope": "Full provider-reported August equity ISIN quantities and %NAV."
+          },
+          {
+            "label": "GMP IPO Watch / FinAPI",
+            "url": "https://www.gmpipowatch.com/mutual-funds/scheme/helios-large-mid-cap-fund-direct-plan-growth-152941",
+            "scope": "15 of August's top 15 weights corroborated using September GMP/FinAPI allocations minus displayed one-month percentage-point changes. Missing exited holdings or ambiguous delta fields are not marked matched."
+          }
+        ]
+      }
+    },
+    {
+      "id": "helios-mid",
+      "name": "Helios Mid Cap Fund",
+      "monogram": "HE",
+      "color": "#3568e8",
+      "verification": "provider_only",
+      "checkStatus": "checked",
+      "portfolioDate": "2026-08-31",
+      "lastCheckedAt": "2026-10-15T15:09:56.368877+00:00",
+      "holdings": [
+        {
+          "key": "INE982J01020",
+          "name": "One 97 Communications Ltd.",
+          "weight": 3.43
+        },
+        {
+          "key": "INE372A01015",
+          "name": "Apar Industries Ltd.",
+          "weight": 2.95
+        },
+        {
+          "key": "INE202B01038",
+          "name": "Piramal Finance Ltd.",
+          "weight": 2.6
+        },
+        {
+          "key": "INE298J01013",
+          "name": "Nippon Life India Asset Management Ltd.",
+          "weight": 2.46
+        },
+        {
+          "key": "INE061F01013",
+          "name": "Fortis Healthcare Ltd.",
+          "weight": 2.44
+        },
+        {
+          "key": "INE338I01027",
+          "name": "Motilal Oswal Financial Services Ltd.",
+          "weight": 2.43
+        },
+        {
+          "key": "INE674K01013",
+          "name": "Aditya Birla Capital Ltd.",
+          "weight": 2.42
+        },
+        {
+          "key": "INE591G01025",
+          "name": "Coforge Ltd.",
+          "weight": 2.39
+        },
+        {
+          "key": "INE466L01038",
+          "name": "360 ONE WAM Ltd.",
+          "weight": 2.37
+        },
+        {
+          "key": "INE211B01039",
+          "name": "The Phoenix Mills Ltd.",
+          "weight": 2.36
+        },
+        {
+          "key": "INE159A01016",
+          "name": "Glaxosmithkline Pharmaceuticals Ltd.",
+          "weight": 2.3
+        },
+        {
+          "key": "INE405E01023",
+          "name": "UNO Minda Ltd.",
+          "weight": 2.3
+        },
+        {
+          "key": "INE073K01018",
+          "name": "Sona Blw Precision Forgings Ltd.",
+          "weight": 2.24
+        },
+        {
+          "key": "INE0LEZ01016",
+          "name": "Ather Energy Ltd.",
+          "weight": 2.09
+        },
+        {
+          "key": "INE513A01022",
+          "name": "Schaeffler India Ltd.",
+          "weight": 2.07
+        }
+      ],
+      "sources": [
+        {
+          "label": "DecryptMutualFunds",
+          "url": "https://decryptmutualfunds.com/fund-houses/helios/mid-cap-fund",
+          "type": "third_party",
+          "portfolioDate": "2026-08-31",
+          "matched": true
+        },
+        {
+          "label": "GMP IPO Watch / FinAPI",
+          "url": "https://www.gmpipowatch.com/mutual-funds/scheme/helios-mid-cap-fund-direct-plan-growth-153326",
+          "type": "third_party",
+          "portfolioDate": "2026-09-30",
+          "matched": false
+        }
+      ],
+      "notes": [
+        "Full August holdings are provider-reported dated August 31, 2026. Original AMC workbook not verified.",
+        "15 of August's top 15 weights corroborated using September GMP/FinAPI allocations minus displayed one-month percentage-point changes. Missing exited holdings or ambiguous delta fields are not marked matched.",
+        "August quantities and allocations come from a separately dated DecryptMutualFunds August record. The second publisher reports September; its prior-month allocation fields offer an arithmetic cross-check, not a second independently dated August disclosure. Full August cross-confirmation remains pending."
+      ],
+      "holdingsEvidence": {
+        "basis": "saved_full_portfolio",
+        "checkedAt": "2026-10-15T15:09:56.368877+00:00",
+        "sources": [
+          {
+            "label": "DecryptMutualFunds",
+            "url": "https://decryptmutualfunds.com/fund-houses/helios/mid-cap-fund",
+            "scope": "Full provider-reported August equity ISIN quantities and %NAV."
+          },
+          {
+            "label": "GMP IPO Watch / FinAPI",
+            "url": "https://www.gmpipowatch.com/mutual-funds/scheme/helios-mid-cap-fund-direct-plan-growth-153326",
+            "scope": "15 of August's top 15 weights corroborated using September GMP/FinAPI allocations minus displayed one-month percentage-point changes. Missing exited holdings or ambiguous delta fields are not marked matched."
           }
         ]
       }

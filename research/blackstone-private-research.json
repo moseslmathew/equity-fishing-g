@@ -1,0 +1,141 @@
+{
+  "asOf": "2026-10-15",
+  "window": {"from":"2025-10-15","to":"2026-10-15"},
+  "scope": "Publicly disclosed Indian private-company/platform equity investments and indirect portfolio-company transactions. Existing older holdings retained separately. Not a complete register of undisclosed fund/SPV activity.",
+  "entries": [
+    {
+      "id":"neysa","company":"Neysa Networks Private Limited","sector":"AI cloud and GPU infrastructure","listing":"Private","direction":"New control investment and subsequent funding tranche","status":"Definitive agreement; CCI approved 20 May 2026; October funding tranche reported in progress","eventDate":"2026-02-16","latestDate":"2026-10-05","inWindow":true,"stakePercent":null,
+      "summary":"Blackstone-affiliated funds and co-investors backed up to $600 million of equity, supporting a proposed additional $600 million debt package. CCI approved Blackstone control acquisition. October reporting describes a $200 million tranche, approximately $150 million from Blackstone, within the same larger round.",
+      "strategy":"Build domestic AI compute capacity and deploy over 20,000 GPUs; infrastructure supporting enterprise and sovereign AI demand.",
+      "caveats":["Do not count $1.2 billion as Blackstone equity alone.","Do not add October tranche to February headline commitment; Mint identifies it as part of the same round.","No exact Blackstone ownership percentage disclosed in accessible primary sources."],
+      "confidence":"High for agreement and approval; medium for October tranche",
+      "sources":[
+        {"publisher":"Blackstone","date":"2026-02-16","url":"https://www.blackstone.com/news/press/blackstone-leads-funding-of-over-1-billion-to-neysa-to-work-towards-building-indias-leading-ai-infrastructure-platform/","type":"Primary announcement","detail":"Up to $600 million equity across investors; further $600 million debt intended."},
+        {"publisher":"CCI / PIB","date":"2026-05-20","url":"https://www.pib.gov.in/PressReleasePage.aspx?PRID=2263411&lang=1&reg=3","type":"Regulator","detail":"Control acquisition through BCP Asia II Topco V and Asia II Topco XIV approved."},
+        {"publisher":"Mint","date":"2026-10-05","url":"https://www.livemint.com/companies/news/neysa-200-million-funding-blackstone-ai-cloud-gpu-india-11791176005110.html","type":"Independent reporting","detail":"Reported $200 million milestone tranche within larger round; companies declined comment."}
+      ]
+    },
+    {
+      "id":"airtrunk-lumina","company":"AirTrunk / Lumina CloudInfra","sector":"Data centres","listing":"Private","direction":"Indirect acquisition and platform consolidation","status":"Acquisition announced as completed; development programme proposed","eventDate":"2026-04-20","latestDate":"2026-06-05","inWindow":true,"stakePercent":null,
+      "summary":"Blackstone- and CPPIB-backed AirTrunk acquired Lumina, an existing Blackstone-founded Indian platform. Lumina brings a roughly 600 MW planned portfolio. AirTrunk subsequently proposed $30 billion of Indian development by 2030.",
+      "strategy":"Combine local execution with global hyperscaler relationships to expand AI-ready infrastructure.",
+      "caveats":["Related-platform consolidation is not ordinary stock-market buying.","$30 billion is a prospective multi-year platform development programme, not completed Blackstone equity spending.","Do not count Lumina and AirTrunk as wholly separate independent Indian exposures."],"confidence":"High",
+      "sources":[
+        {"publisher":"AirTrunk","date":"2026-04-20","url":"https://airtrunk.com/zh-hans/airtrunk-acquires-lumina-cloudinfra/","type":"Primary announcement","detail":"Acquisition, 600 MW planned pipeline and continued Blackstone/CPPIB support."},
+        {"publisher":"AirTrunk","date":"2026-06-05","url":"https://airtrunk.com/zh-hans/blackstone-backed-airtrunk-invest-us30bn-5gw-india/","type":"Primary announcement","detail":"Proposed $30 billion / 5 GW development by 2030."},
+        {"publisher":"Reuters","date":"2026-06-05","url":"https://www.reuters.com/world/india/australias-airtrunk-invest-30-billion-india-by-2030-2026-06-05/","type":"Independent reporting","detail":"Confirms programme and April entry through Lumina purchase."}
+      ]
+    },
+    {
+      "id":"globetrotters-vera","company":"Globetrotters Educational Innoventions / Vera Education","sector":"Education services","listing":"Private","direction":"New controlling investment","status":"Acquired; confirmed by September credit report","eventDate":"2026-09-07","eventDateMeaning":"Latest primary confirmation; exact closing date unavailable","inWindow":true,"stakePercent":60,
+      "summary":"Vera Education Services Holdings, a Blackstone entity, acquired 60% from the Periwal family. GEIPL provides contracted services associated with Jayshree Periwal International School; the family remains in management.",
+      "strategy":"Build an education-services platform, including two Gurugram schools with planned Rs 600 crore capex.",
+      "caveats":["This is investment in a services company, not a simple equity purchase in a charitable school trust.","Rs 600 crore is capex, not disclosed acquisition consideration.","School expansion timing, regulation and concentration are material risks."],"confidence":"High for 60%; exact close date not established",
+      "sources":[
+        {"publisher":"CRISIL Ratings","date":"2026-09-07","url":"https://www.crisilratings.com/mnt/winshare/Ratings/RatingList/RatingDocs/GlobetrottersEducationalInnoventionsPrivateLimited_September%2007_%202026_RR_403235.html","type":"Credit report","detail":"Names acquiring Blackstone vehicle, 60% ownership, service contract and Gurugram expansion."},
+        {"publisher":"JM Financial","date":"2026-03-06","url":"https://jmfl.com/Publications","type":"Independent industry deal review","detail":"February 2026 private-equity review lists Blackstone investment in Globetrotters; supports transaction occurrence, not exact closing date."}
+      ]
+    },
+    {
+      "id":"ask-sageone","company":"ASK Investment Managers / SageOne Investment Managers","sector":"Asset management","listing":"Private","direction":"Indirect platform acquisition","status":"Signed; regulatory approvals and customary closing conditions remain","eventDate":"2026-09-30","latestDate":"2026-10-12","inWindow":true,"stakePercent":null,"acquiredTargetPercent":100,
+      "summary":"Blackstone-backed ASK signed to acquire all SageOne partnership interests. Samit Vartak is to lead equities for the combined platform. Blackstone remains majority owner of ASK; its exact percentage in the combined platform was not disclosed.",
+      "strategy":"Consolidate research-led equity management, broaden PMS/AIF products and distribution.",
+      "caveats":["SageOne 100% target interest is not Blackstone's direct ownership percentage.","An October 12 headline says completed, but the body and October 7 legal-adviser primary statement retain approval conditions; display Signed / pending approvals.","Underlying client portfolios are not automatically Blackstone-owned equities."],"confidence":"High for signed agreement; completion unconfirmed",
+      "sources":[
+        {"publisher":"Shardul Amarchand Mangaldas","date":"2026-10-07","url":"https://www.amsshardul.com/shardul-amarchand-mangaldas-co-advises-sageone-investment-managers-and-its-founder-samit-vartak-on-acquisition-by-ask-asset-management/","type":"Primary legal adviser","detail":"Executed September 30; 100% partnership interest; regulatory conditions explicit."},
+        {"publisher":"Company announcement via ANI / Business Standard","date":"2026-10-05","url":"https://www.business-standard.com/amp/content/press-releases-ani/ask-investment-managers-to-acquire-sageone-samit-vartak-to-be-cio-equities-of-the-combined-platform-126100600015_1.html?isa=yes","type":"Company release","detail":"Definitive agreements and Blackstone majority ownership of ASK."},
+        {"publisher":"Moneycontrol","date":"2026-10-12","url":"https://www.moneycontrol.com/news/business/markets/blackstone-backed-ask-completes-acquisition-of-sageone-samit-vartak-becomes-cio-14049983.html","type":"Independent reporting with contradictory headline","detail":"Body says agreement subject to regulatory approval; do not infer completed."}
+      ]
+    },
+    {
+      "id":"ace-insurance","company":"Ace Insurance Brokers Private Limited","sector":"Insurance distribution","listing":"Private","direction":"Recent majority acquisition","status":"Company confirms 2025 investment; exact completion date and percentage unresolved","eventDate":"2025","latestDate":"2025-11-24","inWindow":null,"stakePercent":null,
+      "summary":"Ace's own website confirms a significant Blackstone stake in 2025. Multiple October and November reports describe majority ownership and leadership expansion.",
+      "strategy":"Expand corporate insurance and reinsurance services domestically and internationally; capital-light distribution platform.",
+      "caveats":["Sources conflict between 65% and 70%, and between September and October acquisition reports; display Majority, exact stake undisclosed / conflicting reports.","May precede October 15 window; include as existing holding with in-window reporting, not a confidently new last-year acquisition.","Reported consideration and valuation differ; omit numeric amount from verified headline."],"confidence":"High for investment existence; medium for majority; low for exact percentage/date",
+      "sources":[
+        {"publisher":"Ace Insurance","date":null,"url":"https://aceinsurance.com/about/","type":"Company primary","detail":"Confirms significant Blackstone investment in 2025 and expansion strategy."},
+        {"publisher":"Times of India","date":"2025-10-25","url":"https://timesofindia.indiatimes.com/business/india-business/us-fund-buys-400mn-stake-in-insurance-broker-ace/articleshow/124797443.cms","type":"Independent reporting","detail":"Majority stake reported; approximately $400 million investment."},
+        {"publisher":"VCCircle","date":"2025-11-24","url":"https://www.vccircle.com/aceinsurance-names-former-mercer-exec-as-president-after-blackstone-takeover","type":"Independent reporting","detail":"Reports 65%, founders 35%; management appointments."},
+        {"publisher":"Asia Insurance Post","date":"2025-09-10","url":"https://asiainsurancepost.com/archives/70832","type":"Trade reporting","detail":"Earlier report places 70% acquisition before review window; date/stake conflict retained."}
+      ]
+    },
+    {
+      "id":"rcb","company":"Royal Challengers Sports Private Limited / Royal Challengers Bengaluru","sector":"Sports and consumer media","listing":"Private","direction":"Consortium acquisition","status":"Definitive agreement announced; latest closing not established","eventDate":"2026-03-24","inWindow":true,"stakePercent":null,"consortiumAcquiredPercent":100,
+      "summary":"BXPE joined Aditya Birla Group, Times Group and Bolt Ventures to sign acquisition of the IPL/WPL franchise from United Spirits, at a total enterprise transaction value of Rs 166.6 billion ($1.78 billion).",
+      "strategy":"Monetise a globally recognised sports brand, fan engagement, media and growing Indian sports economics.",
+      "caveats":["100% belongs to the consortium target acquisition, not Blackstone's individual share.","Do not attribute entire $1.78 billion to Blackstone.","Blackstone release explicitly requires BCCI, CCI and other approvals; latest closing must be independently confirmed."],"confidence":"High for signed deal",
+      "sources":[
+        {"publisher":"Blackstone","date":"2026-03-24","url":"https://www.blackstone.com/news/press/aditya-birla-group-the-times-of-india-group-bolt-ventures-and-blackstone-acquire-cricket-franchise-royal-challengers-bengaluru/","type":"Primary announcement","detail":"BXPE partner, total consortium terms and closing conditions."},
+        {"publisher":"Reuters","date":"2026-03-24","url":"https://www.reuters.com/sports/cricket/ipl-cricket-team-royal-challengers-bengaluru-sold-consortium-178-billion-2026-03-24/","type":"Independent reporting","detail":"Confirms buyer consortium and transaction valuation."}
+      ]
+    },
+    {
+      "id":"taj-aravali","company":"Taj Aravali Resort & Spa / Ishaan Clubs & Hotels","sector":"Luxury hospitality","listing":"Private property-owning entity","direction":"New stake acquisition","status":"Reported completed end December 2025","eventDate":"2025-12","latestDate":"2026-02-01","inWindow":true,"stakePercent":50,
+      "summary":"Blackstone reportedly acquired 50% in the Udaipur hotel asset from Ishaan Group for $100–110 million, with plans for additional suites and an upgrade to Taj Exotica.",
+      "strategy":"Luxury leisure and destination weddings; rebuild hospitality portfolio alongside existing Ventive exposure.",
+      "caveats":["Property/entity investment is not a stake purchase in listed hotel operator Indian Hotels Company.","No accessible primary ownership filing found; retain reported transaction label."],"confidence":"Medium-high; multiple reporting sources, no primary filing",
+      "sources":[
+        {"publisher":"Mint","date":"2026-01-09","url":"https://www.livemint.com/companies/blackstone-taj-aravali-udaipur-50-stake-for-100-mn-hotels-tourism-hospitality-11767897674327.html","type":"Independent reporting","detail":"50%, end-December completion and management-contract distinction."},
+        {"publisher":"Economic Times","date":"2026-02-01","url":"https://economictimes.indiatimes.com/industry/services/hotels-/-restaurants/investors-see-room-for-boom-quietly-check-into-hospitality/articleshow/127826847.cms?from=mdr","type":"Independent reporting","detail":"Confirms 50% late December 2025 transaction."},
+        {"publisher":"S&P Capital IQ via MarketScreener","date":"2026-01-09","url":"https://in.marketscreener.com/news/blackstone-inc-nyse-bx-acquired-50-stake-in-taj-aravali-resort-spa-udaipur-from-ishaan-clubs-ce7e59d3d081f725","type":"Deal database reporting","detail":"Names seller Ishaan Clubs & Hotels and completion."}
+      ]
+    },
+    {
+      "id":"ags-health","company":"AGS Health Limited","sector":"Healthcare revenue-cycle services","listing":"Private / IPO filing","direction":"Proposed partial exit, not fresh buying","status":"Updated draft IPO papers filed August 7 2026; sale not proven completed","eventDate":"2026-08-07","inWindow":true,"stakePercent":null,
+      "summary":"Proposed Rs 4,800 crore IPO combines Rs 1,800 crore fresh issue with Rs 3,000 crore Blackstone-vehicle OFS. Original Blackstone purchase was in 2025 and should not be counted as a new October-2025 onward buy without exact date evidence.",
+      "strategy":"Technology-enabled outsourced US healthcare administration; proposed listing would provide capital and a liquidity route.",
+      "caveats":["IPO filing is a planned sale/dilution, not a completed exit.","Fresh issue proceeds accrue to company; OFS proceeds to seller."],"confidence":"High for filing; acquisition close date not established",
+      "sources":[
+        {"publisher":"SEBI","date":"2026-04-30","url":"https://www.sebi.gov.in/sebi_data/attachdocs/apr-2026/1777548100843.pdf","type":"Regulator processing status","detail":"Lists AGS Health IPO fresh plus OFS draft submitted March 31, 2026."},
+        {"publisher":"Moneycontrol","date":"2026-08-08","url":"https://www.moneycontrol.com/news/business/ipo/blackstone-owned-ags-health-files-updated-drhp-for-rs-4-800-crore-india-ipo-13998441.html","type":"Independent reporting","detail":"Updated draft filing date, fresh/OFS split and BCP Asia II Topco VIII seller."},
+        {"publisher":"Reuters via Economic Times","date":"2026-08-08","url":"https://economictimes.indiatimes.com/markets/ipos/fpos/blackstones-ags-health-files-updated-draft-papers-for-500-million-india-ipo/articleshow/133050913.cms","type":"Independent reporting","detail":"IPO draft filing crosscheck."}
+      ]
+    },
+    {
+      "id":"pgp-glass","company":"PGP Glass","sector":"Specialty glass packaging","listing":"Private","direction":"Reported prospective exit","status":"Sale discussions reported; no signed sale established","eventDate":"2026-09-14","inWindow":true,"stakePercent":null,
+      "summary":"Brookfield reportedly in advanced talks to buy PGP Glass from Blackstone at $1.3–1.5 billion. Earlier February reports described IPO preparations.",
+      "strategy":"Monetise a mature control investment; specialty packaging exposure continues until disposal is confirmed.",
+      "caveats":["Do not mark exited or decreased until completion is disclosed.","Investing.com and VCCircle echo Economic Times; they are not independent transaction confirmations."],"confidence":"Medium for talks; completion unverified",
+      "sources":[
+        {"publisher":"PGP Glass","date":null,"url":"https://www.pgpfirst.com/about/pgp-overview-trusted-partner-glass-packaging/","type":"Company primary","detail":"Company history confirms Blackstone acquisition / PGP name."},
+        {"publisher":"Economic Times","date":"2026-09-14","url":"https://economictimes.indiatimes.com/industry/indl-goods/svs/paper-/-wood-/-glass/-plastic/-marbles/brookfield-looks-to-buy-pgp-glass-for-up-to-1-5-bn-from-blackstone/articleshow/134219911.cms","type":"Independent reporting","detail":"Advanced discussions; potential sale rather than completed transaction."}
+      ]
+    },
+    {
+      "id":"accord","company":"Accord Software & Systems","sector":"Defence and navigation technology","listing":"Private","direction":"Reported potential new minority investment","status":"Talks only; no binding agreement or completed investment established","eventDate":"2026-10-14","inWindow":true,"stakePercent":null,"proposedStakeRange":"17–20% reported",
+      "summary":"Mint reports discussions to invest $400–500 million for a minority stake in the defence technology company.",
+      "strategy":"Potential participation in Indian defence electronics and indigenous navigation technology.",
+      "caveats":["Single-source report; exclude from confirmed invested-company count.","Reported terms may change or never result in a transaction."],"confidence":"Low / watchlist only",
+      "sources":[{"publisher":"Mint","date":"2026-10-14","url":"https://www.livemint.com/companies/news/blackstone-accord-software-investment-deal-11791801353150.html","type":"Independent reporting","detail":"Talks for 17–20% and $400–500 million; no confirmation."}]
+    },
+    {
+      "id":"blupine","company":"BluPine Energy","sector":"Renewable energy","listing":"Private","direction":"Reported bidding interest","status":"Suitor / bidding process; investment unconfirmed","eventDate":"2026-09-03","inWindow":true,"stakePercent":null,
+      "summary":"Economic Times reports Blackstone among bidders for Actis-backed BluPine Energy.","strategy":"Potential infrastructure and renewable-energy expansion.","caveats":["Do not list as an owned company or add to committed capital; only reported interest."],"confidence":"Low / watchlist only",
+      "sources":[{"publisher":"Economic Times","date":"2026-09-03","url":"https://economictimes.indiatimes.com/industry/renewables/jsw-neo-blackstone-macquarie-among-suitors-for-blupine-energy/articleshow/133719186.cms","type":"Independent reporting","detail":"Blackstone reported in bidding process."}]
+    },
+    {
+      "id":"vfs-global","company":"VFS Global","sector":"Visa and government technology services","listing":"Private; Swiss/UAE headquartered with Indian operations","direction":"Existing majority holding; no verified in-window increase","status":"Current majority ownership confirmed; 2024 dilution predates window","eventDate":null,"inWindow":false,"stakePercent":null,
+      "summary":"Company identifies Blackstone as majority owner alongside minority holders Temasek, Kuoni and Hugentobler Foundation and Dubai Holding. Earlier reported Temasek stake sale belongs to 2024, not this review year.","strategy":"Outsourced government mobility and citizen-services processing.","caveats":["Historical 75% purchase percentage is not necessarily current after minority investments.","No verified last-year Blackstone stake increase found."],"confidence":"High for current majority ownership",
+      "sources":[{"publisher":"VFS Global","date":null,"url":"https://www.vfsglobal.com/en/individuals/about.html","type":"Company primary","detail":"Current ownership description."},{"publisher":"Economic Times","date":"2026-08-17","url":"https://economictimes.indiatimes.com/nri/migrate/mobility-will-stay-resilient-despite-geopolitical-shocks-vfs-global-ceo/articleshow/133281735.cms?from=mdr","type":"CEO interview","detail":"Current Blackstone majority ownership crosscheck."}]
+    },
+    {
+      "id":"simplilearn","company":"Simplilearn","sector":"Digital-skills education","listing":"Private","direction":"Existing majority holding; no verified in-window increase","status":"Historical investment","eventDate":"2021-07-19","inWindow":false,"stakePercent":null,
+      "summary":"Blackstone acquired a majority stake in 2021; reviewed sources do not establish fresh buying during the review year.","strategy":"Professional reskilling and digital education.","caveats":["Historical entry is not last-year deployment."],"confidence":"High for historical acquisition; current exact percentage unavailable",
+      "sources":[{"publisher":"Blackstone","date":"2021-07-19","url":"https://www.blackstone.com/news/press/blackstone-to-acquire-majority-stake-in-simplilearn-a-leading-online-learning-platform/","type":"Primary announcement","detail":"Majority acquisition announcement."},{"publisher":"Avendus","date":null,"url":"https://www.avendus.com/transactions/investment-banking/digital-technology-and-consumer/mergers-%26-acquisitions/avendus-capital-advises-simplilearn-on-its-majority-stake-sale-to-blackstone","type":"Transaction adviser","detail":"Advised Simplilearn majority stake sale."}]
+    },
+    {
+      "id":"xpressbees","company":"Xpressbees","sector":"Express logistics","listing":"Private","direction":"Existing growth investment; no verified in-window increase","status":"Historical funding","eventDate":"2022-02-09","inWindow":false,"stakePercent":null,
+      "summary":"Blackstone Growth led a $300 million multi-investor round in 2022. No fresh last-year Blackstone equity event was established in this review.","strategy":"Third-party logistics and digital-commerce infrastructure.","caveats":["$300 million was the combined investment round, not Blackstone-only capital.","No current exact stake confirmed."],"confidence":"High for historical round; recent change not established",
+      "sources":[{"publisher":"Blackstone","date":"2022-02-09","url":"https://www.blackstone.com/news/press/blackstone-to-invest-in-xpressbees-indias-fastest-growing-express-logistics-company/","type":"Primary announcement","detail":"BXG-led $300 million round with TPG, ChrysCapital and existing investors."}]
+    }
+  ],
+  "strategy": [
+    {"theme":"AI picks and shovels","assessment":"Directly stated high-conviction theme; Neysa and AirTrunk/Lumina provide stronger evidence than speculative ownership of AI-themed public stocks.","sourceUrl":"https://www.blackstone.com/news/press/blackstone-leads-funding-of-over-1-billion-to-neysa-to-work-towards-building-indias-leading-ai-infrastructure-platform/","date":"2026-02-16"},
+    {"theme":"Indian infrastructure platform expansion","assessment":"July 2026 dedicated India infrastructure leadership establishes increased capability. Energy, transportation, digital and water/waste are platform mandates, not proof of investment in every sector or company.","sourceUrl":"https://www.blackstone.com/news/press/blackstone-launches-apac-infrastructure-platform-hires-ami-momaya-to-lead-india/","date":"2026-07-16"},
+    {"theme":"Control-oriented business building","assessment":"BCP Asia III closed at $13.1 billion; Blackstone explicitly describes a hands-on control strategy. The fund is Asia-wide, not an India-only allocation.","sourceUrl":"https://www.blackstone.com/news/press/blackstone-raises-its-largest-asia-private-equity-fund-at-13-1-billion/","date":"2026-06-02"},
+    {"theme":"Scale in India alongside exits","assessment":"October 14 leadership interview targets doubling Indian investments from roughly $50 billion to $100 billion over about five years. This is an ambition, not capital already invested or an irrevocable commitment.","sourceUrl":"https://m.economictimes.com/news/company/corporate-trends/blackstone-has-100-billion-plans-for-india-in-5-years-says-coo-jonathan-gray/articleshow/134925980.cms","date":"2026-10-14"}
+  ],
+  "excludedOrPending": [
+    {"company":"Nitesh Residency Hotels / Ritz-Carlton Bengaluru","reason":"November 2025 report of up to 55% acquisition and April 2026 industry confirmation found; primary closing evidence not retrieved. Could be added as reported acquisition with caveat after property-research crosscheck.","sources":["https://economictimes.indiatimes.com/industry/services/property-/-cstruction/us-based-investment-firm-blackstone-to-acquire-majority-in-ritz-carlton-bengaluru-from-nitesh-land/articleshow/125231872.cms?from=mdr","https://news.griinstitute.org/en/real-estate/nitesh-shetty-nitesh-land-multi-city-institutional-platform-2028"]}
+  ]
+}

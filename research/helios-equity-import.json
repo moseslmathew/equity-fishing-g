@@ -1,0 +1,4303 @@
+{
+  "checkedAt": "2026-10-15T15:09:56.368877+00:00",
+  "funds": [
+    {
+      "id": "helios-financial",
+      "name": "Helios Financial Services Fund",
+      "monogram": "HE",
+      "color": "#3568e8",
+      "verification": "provider_match",
+      "checkStatus": "checked",
+      "portfolioDate": "2026-09-30",
+      "lastCheckedAt": "2026-10-15T15:09:56.368877+00:00",
+      "holdings": [
+        {
+          "key": "INE090A01021",
+          "name": "ICICI Bank Ltd.",
+          "weight": 13.11
+        },
+        {
+          "key": "INE040A01034",
+          "name": "HDFC Bank Ltd.",
+          "weight": 11.5
+        },
+        {
+          "key": "INE982J01020",
+          "name": "One 97 Communications Ltd.",
+          "weight": 8.4
+        },
+        {
+          "key": "INE296A01032",
+          "name": "Bajaj Finance Ltd.",
+          "weight": 7.18
+        },
+        {
+          "key": "INE062A01020",
+          "name": "State Bank of India",
+          "weight": 6.17
+        },
+        {
+          "key": "INE640G01020",
+          "name": "SBI funds Management ltd.",
+          "weight": 4.58
+        },
+        {
+          "key": "INE338I01027",
+          "name": "Motilal Oswal Financial Services Ltd.",
+          "weight": 4.3
+        },
+        {
+          "key": "INE721A01047",
+          "name": "Shriram Finance Ltd.",
+          "weight": 3.98
+        },
+        {
+          "key": "INE745G01043",
+          "name": "Multi Commodity Exchange of India Ltd.",
+          "weight": 3.58
+        },
+        {
+          "key": "INE572E01012",
+          "name": "PNB Housing Finance Ltd.",
+          "weight": 3.4
+        },
+        {
+          "key": "INE121A01024",
+          "name": "Cholamandalam Investment & Finance Co. Ltd.",
+          "weight": 3.25
+        },
+        {
+          "key": "INE00F201020",
+          "name": "Prudent Corporate Advisory Services Ltd.",
+          "weight": 2.48
+        },
+        {
+          "key": "INE491A01021",
+          "name": "City Union Bank Ltd.",
+          "weight": 2.21
+        },
+        {
+          "key": "INE237A01036",
+          "name": "Kotak Mahindra Bank Ltd.",
+          "weight": 2.1
+        },
+        {
+          "key": "INE202B01038",
+          "name": "Piramal Finance Ltd.",
+          "weight": 2.09
+        }
+      ],
+      "sources": [
+        {
+          "label": "DecryptMutualFunds",
+          "url": "https://decryptmutualfunds.com/fund-houses/helios/financial-services-fund",
+          "type": "third_party",
+          "portfolioDate": "2026-09-30",
+          "matched": true
+        },
+        {
+          "label": "GMP IPO Watch / FinAPI",
+          "url": "https://www.gmpipowatch.com/mutual-funds/scheme/helios-financial-services-fund-direct-plan-growth-152679",
+          "type": "third_party",
+          "portfolioDate": "2026-09-30",
+          "matched": true
+        }
+      ],
+      "notes": [
+        "September top 15 equity allocations match two dated provider datasets. Providers may share upstream feeds; this is not independent original-AMC verification.",
+        "Full September and August equity quantities are from DecryptMutualFunds monthly records. Net changes can include corporate actions and corrections and do not establish individual trades.",
+        "Helios original portfolio page and September factsheet were located, but returned 403 on direct access and 520 in web retrieval; original workbooks were not verified."
+      ],
+      "holdingsEvidence": {
+        "basis": "saved_full_portfolio",
+        "checkedAt": "2026-10-15T15:09:56.368877+00:00",
+        "sources": [
+          {
+            "label": "DecryptMutualFunds",
+            "url": "https://decryptmutualfunds.com/fund-houses/helios/financial-services-fund",
+            "scope": "Full September and August equity ISIN quantities and %NAV; quantity comparison singly sourced."
+          },
+          {
+            "label": "GMP IPO Watch / FinAPI",
+            "url": "https://www.gmpipowatch.com/mutual-funds/scheme/helios-financial-services-fund-direct-plan-growth-152679",
+            "scope": "All top 15 September equity allocations cross-checked. August allocations corroborated where recoverable from displayed month-on-month percentage-point changes."
+          }
+        ]
+      }
+    },
+    {
+      "id": "helios-flexi",
+      "name": "Helios Flexi Cap Fund",
+      "monogram": "HE",
+      "color": "#3568e8",
+      "verification": "provider_match",
+      "checkStatus": "checked",
+      "portfolioDate": "2026-09-30",
+      "lastCheckedAt": "2026-10-15T15:09:56.368877+00:00",
+      "holdings": [
+        {
+          "key": "INE758T01015",
+          "name": "Eternal Ltd.",
+          "weight": 4.34
+        },
+        {
+          "key": "INE040A01034",
+          "name": "HDFC Bank Ltd.",
+          "weight": 4.31
+        },
+        {
+          "key": "INE090A01021",
+          "name": "ICICI Bank Ltd.",
+          "weight": 4.12
+        },
+        {
+          "key": "INE742F01042",
+          "name": "Adani Ports and Special Economic Zone Ltd.",
+          "weight": 3.92
+        },
+        {
+          "key": "INE982J01020",
+          "name": "One 97 Communications Ltd.",
+          "weight": 3.68
+        },
+        {
+          "key": "INE237A01036",
+          "name": "Kotak Mahindra Bank Ltd.",
+          "weight": 3.02
+        },
+        {
+          "key": "INE296A01032",
+          "name": "Bajaj Finance Ltd.",
+          "weight": 2.8
+        },
+        {
+          "key": "INE062A01020",
+          "name": "State Bank of India",
+          "weight": 2.78
+        },
+        {
+          "key": "INE591G01025",
+          "name": "Coforge Ltd.",
+          "weight": 2.72
+        },
+        {
+          "key": "INE423A01024",
+          "name": "Adani Enterprises Ltd.",
+          "weight": 2.65
+        },
+        {
+          "key": "INE280A01028",
+          "name": "Titan Company Ltd.",
+          "weight": 2.51
+        },
+        {
+          "key": "INE0DYJ01015",
+          "name": "Syrma SGS Technology Ltd.",
+          "weight": 2.47
+        },
+        {
+          "key": "INE263A01024",
+          "name": "Bharat Electronics Ltd.",
+          "weight": 2.35
+        },
+        {
+          "key": "INE0LEZ01016",
+          "name": "Ather Energy Ltd.",
+          "weight": 2.19
+        },
+        {
+          "key": "INE018A01030",
+          "name": "Larsen & Toubro Ltd.",
+          "weight": 1.97
+        }
+      ],
+      "sources": [
+        {
+          "label": "DecryptMutualFunds",
+          "url": "https://decryptmutualfunds.com/fund-houses/helios/flexi-cap-fund",
+          "type": "third_party",
+          "portfolioDate": "2026-09-30",
+          "matched": true
+        },
+        {
+          "label": "GMP IPO Watch / FinAPI",
+          "url": "https://www.gmpipowatch.com/mutual-funds/scheme/helios-flexi-cap-fund-direct-plan-growth-152135",
+          "type": "third_party",
+          "portfolioDate": "2026-09-30",
+          "matched": true
+        }
+      ],
+      "notes": [
+        "September top 15 equity allocations match two dated provider datasets. Providers may share upstream feeds; this is not independent original-AMC verification.",
+        "Full September and August equity quantities are from DecryptMutualFunds monthly records. Net changes can include corporate actions and corrections and do not establish individual trades.",
+        "Helios original portfolio page and September factsheet were located, but returned 403 on direct access and 520 in web retrieval; original workbooks were not verified."
+      ],
+      "holdingsEvidence": {
+        "basis": "saved_full_portfolio",
+        "checkedAt": "2026-10-15T15:09:56.368877+00:00",
+        "sources": [
+          {
+            "label": "DecryptMutualFunds",
+            "url": "https://decryptmutualfunds.com/fund-houses/helios/flexi-cap-fund",
+            "scope": "Full September and August equity ISIN quantities and %NAV; quantity comparison singly sourced."
+          },
+          {
+            "label": "GMP IPO Watch / FinAPI",
+            "url": "https://www.gmpipowatch.com/mutual-funds/scheme/helios-flexi-cap-fund-direct-plan-growth-152135",
+            "scope": "All top 15 September equity allocations cross-checked. August allocations corroborated where recoverable from displayed month-on-month percentage-point changes."
+          }
+        ]
+      }
+    },
+    {
+      "id": "helios-large-mid",
+      "name": "Helios Large & Mid Cap Fund",
+      "monogram": "HE",
+      "color": "#3568e8",
+      "verification": "provider_match",
+      "checkStatus": "checked",
+      "portfolioDate": "2026-09-30",
+      "lastCheckedAt": "2026-10-15T15:09:56.368877+00:00",
+      "holdings": [
+        {
+          "key": "INE982J01020",
+          "name": "One 97 Communications Ltd.",
+          "weight": 4.9
+        },
+        {
+          "key": "INE040A01034",
+          "name": "HDFC Bank Ltd.",
+          "weight": 4.38
+        },
+        {
+          "key": "INE742F01042",
+          "name": "Adani Ports and Special Economic Zone Ltd.",
+          "weight": 4.33
+        },
+        {
+          "key": "INE758T01015",
+          "name": "Eternal Ltd.",
+          "weight": 3.96
+        },
+        {
+          "key": "INE090A01021",
+          "name": "ICICI Bank Ltd.",
+          "weight": 3.86
+        },
+        {
+          "key": "INE237A01036",
+          "name": "Kotak Mahindra Bank Ltd.",
+          "weight": 3.03
+        },
+        {
+          "key": "INE280A01028",
+          "name": "Titan Company Ltd.",
+          "weight": 2.93
+        },
+        {
+          "key": "INE423A01024",
+          "name": "Adani Enterprises Ltd.",
+          "weight": 2.86
+        },
+        {
+          "key": "INE211B01039",
+          "name": "The Phoenix Mills Ltd.",
+          "weight": 2.72
+        },
+        {
+          "key": "INE296A01032",
+          "name": "Bajaj Finance Ltd.",
+          "weight": 2.61
+        },
+        {
+          "key": "INE062A01020",
+          "name": "State Bank of India",
+          "weight": 2.51
+        },
+        {
+          "key": "INE591G01025",
+          "name": "Coforge Ltd.",
+          "weight": 2.46
+        },
+        {
+          "key": "INE263A01024",
+          "name": "Bharat Electronics Ltd.",
+          "weight": 2.38
+        },
+        {
+          "key": "INE018A01030",
+          "name": "Larsen & Toubro Ltd.",
+          "weight": 2.37
+        },
+        {
+          "key": "INE646L01027",
+          "name": "Interglobe Aviation Ltd.",
+          "weight": 2.3
+        }
+      ],
+      "sources": [
+        {
+          "label": "DecryptMutualFunds",
+          "url": "https://decryptmutualfunds.com/fund-houses/helios/large-mid-cap-fund",
+          "type": "third_party",
+          "portfolioDate": "2026-09-30",
+          "matched": true
+        },
+        {
+          "label": "GMP IPO Watch / FinAPI",
+          "url": "https://www.gmpipowatch.com/mutual-funds/scheme/helios-large-mid-cap-fund-direct-plan-growth-152941",
+          "type": "third_party",
+          "portfolioDate": "2026-09-30",
+          "matched": true
+        }
+      ],
+      "notes": [
+        "September top 15 equity allocations match two dated provider datasets. Providers may share upstream feeds; this is not independent original-AMC verification.",
+        "Full September and August equity quantities are from DecryptMutualFunds monthly records. Net changes can include corporate actions and corrections and do not establish individual trades.",
+        "Helios original portfolio page and September factsheet were located, but returned 403 on direct access and 520 in web retrieval; original workbooks were not verified."
+      ],
+      "holdingsEvidence": {
+        "basis": "saved_full_portfolio",
+        "checkedAt": "2026-10-15T15:09:56.368877+00:00",
+        "sources": [
+          {
+            "label": "DecryptMutualFunds",
+            "url": "https://decryptmutualfunds.com/fund-houses/helios/large-mid-cap-fund",
+            "scope": "Full September and August equity ISIN quantities and %NAV; quantity comparison singly sourced."
+          },
+          {
+            "label": "GMP IPO Watch / FinAPI",
+            "url": "https://www.gmpipowatch.com/mutual-funds/scheme/helios-large-mid-cap-fund-direct-plan-growth-152941",
+            "scope": "All top 15 September equity allocations cross-checked. August allocations corroborated where recoverable from displayed month-on-month percentage-point changes."
+          }
+        ]
+      }
+    },
+    {
+      "id": "helios-mid",
+      "name": "Helios Mid Cap Fund",
+      "monogram": "HE",
+      "color": "#3568e8",
+      "verification": "provider_match",
+      "checkStatus": "checked",
+      "portfolioDate": "2026-09-30",
+      "lastCheckedAt": "2026-10-15T15:09:56.368877+00:00",
+      "holdings": [
+        {
+          "key": "INE982J01020",
+          "name": "One 97 Communications Ltd.",
+          "weight": 3.45
+        },
+        {
+          "key": "INE372A01015",
+          "name": "Apar Industries Ltd.",
+          "weight": 2.75
+        },
+        {
+          "key": "INE591G01025",
+          "name": "Coforge Ltd.",
+          "weight": 2.68
+        },
+        {
+          "key": "INE211B01039",
+          "name": "The Phoenix Mills Ltd.",
+          "weight": 2.58
+        },
+        {
+          "key": "INE073K01018",
+          "name": "Sona Blw Precision Forgings Ltd.",
+          "weight": 2.38
+        },
+        {
+          "key": "INE338I01027",
+          "name": "Motilal Oswal Financial Services Ltd.",
+          "weight": 2.2
+        },
+        {
+          "key": "INE202B01038",
+          "name": "Piramal Finance Ltd.",
+          "weight": 2.19
+        },
+        {
+          "key": "INE674K01013",
+          "name": "Aditya Birla Capital Ltd.",
+          "weight": 2.13
+        },
+        {
+          "key": "INE298J01013",
+          "name": "Nippon Life India Asset Management Ltd.",
+          "weight": 2.13
+        },
+        {
+          "key": "INE405E01023",
+          "name": "UNO Minda Ltd.",
+          "weight": 2.0
+        },
+        {
+          "key": "INE159A01016",
+          "name": "Glaxosmithkline Pharmaceuticals Ltd.",
+          "weight": 1.99
+        },
+        {
+          "key": "INE466L01038",
+          "name": "360 ONE WAM Ltd.",
+          "weight": 1.97
+        },
+        {
+          "key": "INE061F01013",
+          "name": "Fortis Healthcare Ltd.",
+          "weight": 1.96
+        },
+        {
+          "key": "INE745G01043",
+          "name": "Multi Commodity Exchange of India Ltd.",
+          "weight": 1.94
+        },
+        {
+          "key": "INE513A01022",
+          "name": "Schaeffler India Ltd.",
+          "weight": 1.91
+        }
+      ],
+      "sources": [
+        {
+          "label": "DecryptMutualFunds",
+          "url": "https://decryptmutualfunds.com/fund-houses/helios/mid-cap-fund",
+          "type": "third_party",
+          "portfolioDate": "2026-09-30",
+          "matched": true
+        },
+        {
+          "label": "GMP IPO Watch / FinAPI",
+          "url": "https://www.gmpipowatch.com/mutual-funds/scheme/helios-mid-cap-fund-direct-plan-growth-153326",
+          "type": "third_party",
+          "portfolioDate": "2026-09-30",
+          "matched": true
+        }
+      ],
+      "notes": [
+        "September top 15 equity allocations match two dated provider datasets. Providers may share upstream feeds; this is not independent original-AMC verification.",
+        "Full September and August equity quantities are from DecryptMutualFunds monthly records. Net changes can include corporate actions and corrections and do not establish individual trades.",
+        "Helios original portfolio page and September factsheet were located, but returned 403 on direct access and 520 in web retrieval; original workbooks were not verified."
+      ],
+      "holdingsEvidence": {
+        "basis": "saved_full_portfolio",
+        "checkedAt": "2026-10-15T15:09:56.368877+00:00",
+        "sources": [
+          {
+            "label": "DecryptMutualFunds",
+            "url": "https://decryptmutualfunds.com/fund-houses/helios/mid-cap-fund",
+            "scope": "Full September and August equity ISIN quantities and %NAV; quantity comparison singly sourced."
+          },
+          {
+            "label": "GMP IPO Watch / FinAPI",
+            "url": "https://www.gmpipowatch.com/mutual-funds/scheme/helios-mid-cap-fund-direct-plan-growth-153326",
+            "scope": "All top 15 September equity allocations cross-checked. August allocations corroborated where recoverable from displayed month-on-month percentage-point changes."
+          }
+        ]
+      }
+    }
+  ],
+  "previousFunds": [
+    {
+      "id": "helios-financial",
+      "name": "Helios Financial Services Fund",
+      "monogram": "HE",
+      "color": "#3568e8",
+      "verification": "partial",
+      "checkStatus": "checked",
+      "portfolioDate": "2026-08-31",
+      "lastCheckedAt": "2026-10-15T15:09:56.368877+00:00",
+      "holdings": [
+        {
+          "key": "INE090A01021",
+          "name": "ICICI Bank Ltd.",
+          "weight": 13.4
+        },
+        {
+          "key": "INE040A01034",
+          "name": "HDFC Bank Ltd.",
+          "weight": 11.07
+        },
+        {
+          "key": "INE982J01020",
+          "name": "One 97 Communications Ltd.",
+          "weight": 8.38
+        },
+        {
+          "key": "INE296A01032",
+          "name": "Bajaj Finance Ltd.",
+          "weight": 7.35
+        },
+        {
+          "key": "INE062A01020",
+          "name": "State Bank of India",
+          "weight": 6.34
+        },
+        {
+          "key": "INE721A01047",
+          "name": "Shriram Finance Ltd.",
+          "weight": 4.88
+        },
+        {
+          "key": "INE640G01020",
+          "name": "SBI funds Management ltd.",
+          "weight": 4.77
+        },
+        {
+          "key": "INE338I01027",
+          "name": "Motilal Oswal Financial Services Ltd.",
+          "weight": 4.2
+        },
+        {
+          "key": "INE238A01034",
+          "name": "Axis Bank Ltd.",
+          "weight": 4.05
+        },
+        {
+          "key": "INE121A01024",
+          "name": "Cholamandalam Investment & Finance Co. Ltd.",
+          "weight": 3.46
+        },
+        {
+          "key": "INE745G01043",
+          "name": "Multi Commodity Exchange of India Ltd.",
+          "weight": 3.43
+        },
+        {
+          "key": "INE572E01012",
+          "name": "PNB Housing Finance Ltd.",
+          "weight": 3.24
+        },
+        {
+          "key": "INE00F201020",
+          "name": "Prudent Corporate Advisory Services Ltd.",
+          "weight": 2.71
+        },
+        {
+          "key": "INE202B01038",
+          "name": "Piramal Finance Ltd.",
+          "weight": 2.19
+        },
+        {
+          "key": "INE491A01021",
+          "name": "City Union Bank Ltd.",
+          "weight": 2.09
+        }
+      ],
+      "sources": [
+        {
+          "label": "DecryptMutualFunds",
+          "url": "https://decryptmutualfunds.com/fund-houses/helios/financial-services-fund",
+          "type": "third_party",
+          "portfolioDate": "2026-08-31",
+          "matched": true
+        },
+        {
+          "label": "GMP IPO Watch / FinAPI",
+          "url": "https://www.gmpipowatch.com/mutual-funds/scheme/helios-financial-services-fund-direct-plan-growth-152679",
+          "type": "third_party",
+          "portfolioDate": "2026-09-30",
+          "matched": false
+        }
+      ],
+      "notes": [
+        "Full August holdings are provider-reported dated August 31, 2026. Original AMC workbook not verified.",
+        "14 of August's top 15 weights corroborated using September GMP/FinAPI allocations minus displayed one-month percentage-point changes. Missing exited holdings or ambiguous delta fields are not marked matched."
+      ],
+      "holdingsEvidence": {
+        "basis": "saved_full_portfolio",
+        "checkedAt": "2026-10-15T15:09:56.368877+00:00",
+        "sources": [
+          {
+            "label": "DecryptMutualFunds",
+            "url": "https://decryptmutualfunds.com/fund-houses/helios/financial-services-fund",
+            "scope": "Full provider-reported August equity ISIN quantities and %NAV."
+          },
+          {
+            "label": "GMP IPO Watch / FinAPI",
+            "url": "https://www.gmpipowatch.com/mutual-funds/scheme/helios-financial-services-fund-direct-plan-growth-152679",
+            "scope": "14 of August's top 15 weights corroborated using September GMP/FinAPI allocations minus displayed one-month percentage-point changes. Missing exited holdings or ambiguous delta fields are not marked matched."
+          }
+        ]
+      }
+    },
+    {
+      "id": "helios-flexi",
+      "name": "Helios Flexi Cap Fund",
+      "monogram": "HE",
+      "color": "#3568e8",
+      "verification": "provider_match",
+      "checkStatus": "checked",
+      "portfolioDate": "2026-08-31",
+      "lastCheckedAt": "2026-10-15T15:09:56.368877+00:00",
+      "holdings": [
+        {
+          "key": "INE758T01015",
+          "name": "Eternal Ltd.",
+          "weight": 4.4
+        },
+        {
+          "key": "INE090A01021",
+          "name": "ICICI Bank Ltd.",
+          "weight": 3.9
+        },
+        {
+          "key": "INE982J01020",
+          "name": "One 97 Communications Ltd.",
+          "weight": 3.79
+        },
+        {
+          "key": "INE742F01042",
+          "name": "Adani Ports and Special Economic Zone Ltd.",
+          "weight": 3.31
+        },
+        {
+          "key": "INE062A01020",
+          "name": "State Bank of India",
+          "weight": 2.83
+        },
+        {
+          "key": "INE296A01032",
+          "name": "Bajaj Finance Ltd.",
+          "weight": 2.74
+        },
+        {
+          "key": "INE0LEZ01016",
+          "name": "Ather Energy Ltd.",
+          "weight": 2.66
+        },
+        {
+          "key": "INE423A01024",
+          "name": "Adani Enterprises Ltd.",
+          "weight": 2.62
+        },
+        {
+          "key": "INE040A01034",
+          "name": "HDFC Bank Ltd.",
+          "weight": 2.59
+        },
+        {
+          "key": "INE280A01028",
+          "name": "Titan Company Ltd.",
+          "weight": 2.57
+        },
+        {
+          "key": "INE263A01024",
+          "name": "Bharat Electronics Ltd.",
+          "weight": 2.52
+        },
+        {
+          "key": "INE591G01025",
+          "name": "Coforge Ltd.",
+          "weight": 2.37
+        },
+        {
+          "key": "INE018A01030",
+          "name": "Larsen & Toubro Ltd.",
+          "weight": 2.13
+        },
+        {
+          "key": "INE002A01018",
+          "name": "Reliance Industries Ltd.",
+          "weight": 2.11
+        },
+        {
+          "key": "INE0DYJ01015",
+          "name": "Syrma SGS Technology Ltd.",
+          "weight": 2.0
+        }
+      ],
+      "sources": [
+        {
+          "label": "DecryptMutualFunds",
+          "url": "https://decryptmutualfunds.com/fund-houses/helios/flexi-cap-fund",
+          "type": "third_party",
+          "portfolioDate": "2026-08-31",
+          "matched": true
+        },
+        {
+          "label": "GMP IPO Watch / FinAPI",
+          "url": "https://www.gmpipowatch.com/mutual-funds/scheme/helios-flexi-cap-fund-direct-plan-growth-152135",
+          "type": "third_party",
+          "portfolioDate": "2026-09-30",
+          "matched": true
+        }
+      ],
+      "notes": [
+        "Full August holdings are provider-reported dated August 31, 2026. Original AMC workbook not verified.",
+        "15 of August's top 15 weights corroborated using September GMP/FinAPI allocations minus displayed one-month percentage-point changes. Missing exited holdings or ambiguous delta fields are not marked matched."
+      ],
+      "holdingsEvidence": {
+        "basis": "saved_full_portfolio",
+        "checkedAt": "2026-10-15T15:09:56.368877+00:00",
+        "sources": [
+          {
+            "label": "DecryptMutualFunds",
+            "url": "https://decryptmutualfunds.com/fund-houses/helios/flexi-cap-fund",
+            "scope": "Full provider-reported August equity ISIN quantities and %NAV."
+          },
+          {
+            "label": "GMP IPO Watch / FinAPI",
+            "url": "https://www.gmpipowatch.com/mutual-funds/scheme/helios-flexi-cap-fund-direct-plan-growth-152135",
+            "scope": "15 of August's top 15 weights corroborated using September GMP/FinAPI allocations minus displayed one-month percentage-point changes. Missing exited holdings or ambiguous delta fields are not marked matched."
+          }
+        ]
+      }
+    },
+    {
+      "id": "helios-large-mid",
+      "name": "Helios Large & Mid Cap Fund",
+      "monogram": "HE",
+      "color": "#3568e8",
+      "verification": "provider_match",
+      "checkStatus": "checked",
+      "portfolioDate": "2026-08-31",
+      "lastCheckedAt": "2026-10-15T15:09:56.368877+00:00",
+      "holdings": [
+        {
+          "key": "INE982J01020",
+          "name": "One 97 Communications Ltd.",
+          "weight": 4.98
+        },
+        {
+          "key": "INE758T01015",
+          "name": "Eternal Ltd.",
+          "weight": 4.03
+        },
+        {
+          "key": "INE742F01042",
+          "name": "Adani Ports and Special Economic Zone Ltd.",
+          "weight": 3.81
+        },
+        {
+          "key": "INE090A01021",
+          "name": "ICICI Bank Ltd.",
+          "weight": 3.68
+        },
+        {
+          "key": "INE280A01028",
+          "name": "Titan Company Ltd.",
+          "weight": 3.23
+        },
+        {
+          "key": "INE296A01032",
+          "name": "Bajaj Finance Ltd.",
+          "weight": 2.85
+        },
+        {
+          "key": "INE423A01024",
+          "name": "Adani Enterprises Ltd.",
+          "weight": 2.8
+        },
+        {
+          "key": "INE211B01039",
+          "name": "The Phoenix Mills Ltd.",
+          "weight": 2.65
+        },
+        {
+          "key": "INE040A01034",
+          "name": "HDFC Bank Ltd.",
+          "weight": 2.63
+        },
+        {
+          "key": "INE018A01030",
+          "name": "Larsen & Toubro Ltd.",
+          "weight": 2.53
+        },
+        {
+          "key": "INE263A01024",
+          "name": "Bharat Electronics Ltd.",
+          "weight": 2.52
+        },
+        {
+          "key": "INE591G01025",
+          "name": "Coforge Ltd.",
+          "weight": 2.42
+        },
+        {
+          "key": "INE646L01027",
+          "name": "Interglobe Aviation Ltd.",
+          "weight": 2.4
+        },
+        {
+          "key": "INE062A01020",
+          "name": "State Bank of India",
+          "weight": 2.22
+        },
+        {
+          "key": "INE685A01028",
+          "name": "Torrent Pharmaceuticals Ltd.",
+          "weight": 2.22
+        }
+      ],
+      "sources": [
+        {
+          "label": "DecryptMutualFunds",
+          "url": "https://decryptmutualfunds.com/fund-houses/helios/large-mid-cap-fund",
+          "type": "third_party",
+          "portfolioDate": "2026-08-31",
+          "matched": true
+        },
+        {
+          "label": "GMP IPO Watch / FinAPI",
+          "url": "https://www.gmpipowatch.com/mutual-funds/scheme/helios-large-mid-cap-fund-direct-plan-growth-152941",
+          "type": "third_party",
+          "portfolioDate": "2026-09-30",
+          "matched": true
+        }
+      ],
+      "notes": [
+        "Full August holdings are provider-reported dated August 31, 2026. Original AMC workbook not verified.",
+        "15 of August's top 15 weights corroborated using September GMP/FinAPI allocations minus displayed one-month percentage-point changes. Missing exited holdings or ambiguous delta fields are not marked matched."
+      ],
+      "holdingsEvidence": {
+        "basis": "saved_full_portfolio",
+        "checkedAt": "2026-10-15T15:09:56.368877+00:00",
+        "sources": [
+          {
+            "label": "DecryptMutualFunds",
+            "url": "https://decryptmutualfunds.com/fund-houses/helios/large-mid-cap-fund",
+            "scope": "Full provider-reported August equity ISIN quantities and %NAV."
+          },
+          {
+            "label": "GMP IPO Watch / FinAPI",
+            "url": "https://www.gmpipowatch.com/mutual-funds/scheme/helios-large-mid-cap-fund-direct-plan-growth-152941",
+            "scope": "15 of August's top 15 weights corroborated using September GMP/FinAPI allocations minus displayed one-month percentage-point changes. Missing exited holdings or ambiguous delta fields are not marked matched."
+          }
+        ]
+      }
+    },
+    {
+      "id": "helios-mid",
+      "name": "Helios Mid Cap Fund",
+      "monogram": "HE",
+      "color": "#3568e8",
+      "verification": "provider_match",
+      "checkStatus": "checked",
+      "portfolioDate": "2026-08-31",
+      "lastCheckedAt": "2026-10-15T15:09:56.368877+00:00",
+      "holdings": [
+        {
+          "key": "INE982J01020",
+          "name": "One 97 Communications Ltd.",
+          "weight": 3.43
+        },
+        {
+          "key": "INE372A01015",
+          "name": "Apar Industries Ltd.",
+          "weight": 2.95
+        },
+        {
+          "key": "INE202B01038",
+          "name": "Piramal Finance Ltd.",
+          "weight": 2.6
+        },
+        {
+          "key": "INE298J01013",
+          "name": "Nippon Life India Asset Management Ltd.",
+          "weight": 2.46
+        },
+        {
+          "key": "INE061F01013",
+          "name": "Fortis Healthcare Ltd.",
+          "weight": 2.44
+        },
+        {
+          "key": "INE338I01027",
+          "name": "Motilal Oswal Financial Services Ltd.",
+          "weight": 2.43
+        },
+        {
+          "key": "INE674K01013",
+          "name": "Aditya Birla Capital Ltd.",
+          "weight": 2.42
+        },
+        {
+          "key": "INE591G01025",
+          "name": "Coforge Ltd.",
+          "weight": 2.39
+        },
+        {
+          "key": "INE466L01038",
+          "name": "360 ONE WAM Ltd.",
+          "weight": 2.37
+        },
+        {
+          "key": "INE211B01039",
+          "name": "The Phoenix Mills Ltd.",
+          "weight": 2.36
+        },
+        {
+          "key": "INE159A01016",
+          "name": "Glaxosmithkline Pharmaceuticals Ltd.",
+          "weight": 2.3
+        },
+        {
+          "key": "INE405E01023",
+          "name": "UNO Minda Ltd.",
+          "weight": 2.3
+        },
+        {
+          "key": "INE073K01018",
+          "name": "Sona Blw Precision Forgings Ltd.",
+          "weight": 2.24
+        },
+        {
+          "key": "INE0LEZ01016",
+          "name": "Ather Energy Ltd.",
+          "weight": 2.09
+        },
+        {
+          "key": "INE513A01022",
+          "name": "Schaeffler India Ltd.",
+          "weight": 2.07
+        }
+      ],
+      "sources": [
+        {
+          "label": "DecryptMutualFunds",
+          "url": "https://decryptmutualfunds.com/fund-houses/helios/mid-cap-fund",
+          "type": "third_party",
+          "portfolioDate": "2026-08-31",
+          "matched": true
+        },
+        {
+          "label": "GMP IPO Watch / FinAPI",
+          "url": "https://www.gmpipowatch.com/mutual-funds/scheme/helios-mid-cap-fund-direct-plan-growth-153326",
+          "type": "third_party",
+          "portfolioDate": "2026-09-30",
+          "matched": true
+        }
+      ],
+      "notes": [
+        "Full August holdings are provider-reported dated August 31, 2026. Original AMC workbook not verified.",
+        "15 of August's top 15 weights corroborated using September GMP/FinAPI allocations minus displayed one-month percentage-point changes. Missing exited holdings or ambiguous delta fields are not marked matched."
+      ],
+      "holdingsEvidence": {
+        "basis": "saved_full_portfolio",
+        "checkedAt": "2026-10-15T15:09:56.368877+00:00",
+        "sources": [
+          {
+            "label": "DecryptMutualFunds",
+            "url": "https://decryptmutualfunds.com/fund-houses/helios/mid-cap-fund",
+            "scope": "Full provider-reported August equity ISIN quantities and %NAV."
+          },
+          {
+            "label": "GMP IPO Watch / FinAPI",
+            "url": "https://www.gmpipowatch.com/mutual-funds/scheme/helios-mid-cap-fund-direct-plan-growth-153326",
+            "scope": "15 of August's top 15 weights corroborated using September GMP/FinAPI allocations minus displayed one-month percentage-point changes. Missing exited holdings or ambiguous delta fields are not marked matched."
+          }
+        ]
+      }
+    }
+  ],
+  "comparisons": [
+    {
+      "fundId": "helios-financial",
+      "currentDate": "2026-09-30",
+      "previousDate": "2026-08-31",
+      "checkedAt": "2026-10-15T15:09:56.368877+00:00",
+      "scope": "full_equity",
+      "basis": "provider_quantity_comparison",
+      "rows": [
+        {
+          "key": "INE090A01021",
+          "name": "ICICI Bank Ltd.",
+          "previousQuantity": 194447,
+          "currentQuantity": 194447,
+          "weight": 13.11,
+          "previousWeight": 13.4,
+          "note": null
+        },
+        {
+          "key": "INE040A01034",
+          "name": "HDFC Bank Ltd.",
+          "previousQuantity": 329212,
+          "currentQuantity": 318112,
+          "weight": 11.5,
+          "previousWeight": 11.07,
+          "note": null
+        },
+        {
+          "key": "INE982J01020",
+          "name": "One 97 Communications Ltd.",
+          "previousQuantity": 102907,
+          "currentQuantity": 98157,
+          "weight": 8.4,
+          "previousWeight": 8.38,
+          "note": null
+        },
+        {
+          "key": "INE296A01032",
+          "name": "Bajaj Finance Ltd.",
+          "previousQuantity": 146739,
+          "currentQuantity": 146739,
+          "weight": 7.18,
+          "previousWeight": 7.35,
+          "note": null
+        },
+        {
+          "key": "INE062A01020",
+          "name": "State Bank of India",
+          "previousQuantity": 126118,
+          "currentQuantity": 126118,
+          "weight": 6.17,
+          "previousWeight": 6.34,
+          "note": null
+        },
+        {
+          "key": "INE640G01020",
+          "name": "SBI funds Management ltd.",
+          "previousQuantity": 174226,
+          "currentQuantity": 174226,
+          "weight": 4.58,
+          "previousWeight": 4.77,
+          "note": null
+        },
+        {
+          "key": "INE338I01027",
+          "name": "Motilal Oswal Financial Services Ltd.",
+          "previousQuantity": 84851,
+          "currentQuantity": 84851,
+          "weight": 4.3,
+          "previousWeight": 4.2,
+          "note": null
+        },
+        {
+          "key": "INE721A01047",
+          "name": "Shriram Finance Ltd.",
+          "previousQuantity": 92712,
+          "currentQuantity": 79412,
+          "weight": 3.98,
+          "previousWeight": 4.88,
+          "note": null
+        },
+        {
+          "key": "INE745G01043",
+          "name": "Multi Commodity Exchange of India Ltd.",
+          "previousQuantity": 21298,
+          "currentQuantity": 21298,
+          "weight": 3.58,
+          "previousWeight": 3.43,
+          "note": null
+        },
+        {
+          "key": "INE572E01012",
+          "name": "PNB Housing Finance Ltd.",
+          "previousQuantity": 59536,
+          "currentQuantity": 59536,
+          "weight": 3.4,
+          "previousWeight": 3.24,
+          "note": null
+        },
+        {
+          "key": "INE121A01024",
+          "name": "Cholamandalam Investment & Finance Co. Ltd.",
+          "previousQuantity": 39328,
+          "currentQuantity": 39328,
+          "weight": 3.25,
+          "previousWeight": 3.46,
+          "note": null
+        },
+        {
+          "key": "INE00F201020",
+          "name": "Prudent Corporate Advisory Services Ltd.",
+          "previousQuantity": 15552,
+          "currentQuantity": 15552,
+          "weight": 2.48,
+          "previousWeight": 2.71,
+          "note": null
+        },
+        {
+          "key": "INE491A01021",
+          "name": "City Union Bank Ltd.",
+          "previousQuantity": 192133,
+          "currentQuantity": 192133,
+          "weight": 2.21,
+          "previousWeight": 2.09,
+          "note": null
+        },
+        {
+          "key": "INE237A01036",
+          "name": "Kotak Mahindra Bank Ltd.",
+          "previousQuantity": 0,
+          "currentQuantity": 98650,
+          "weight": 2.1,
+          "previousWeight": 0,
+          "note": null
+        },
+        {
+          "key": "INE202B01038",
+          "name": "Piramal Finance Ltd.",
+          "previousQuantity": 20058,
+          "currentQuantity": 20058,
+          "weight": 2.09,
+          "previousWeight": 2.19,
+          "note": null
+        },
+        {
+          "key": "INE466L01038",
+          "name": "360 ONE WAM Ltd.",
+          "previousQuantity": 35055,
+          "currentQuantity": 35055,
+          "weight": 1.84,
+          "previousWeight": 1.95,
+          "note": null
+        },
+        {
+          "key": "INE511C01022",
+          "name": "Poonawalla Fincorp Ltd.",
+          "previousQuantity": 79568,
+          "currentQuantity": 79568,
+          "weight": 1.8,
+          "previousWeight": 1.75,
+          "note": null
+        },
+        {
+          "key": "INE596I01020",
+          "name": "Computer Age Management Services Ltd.",
+          "previousQuantity": 51375,
+          "currentQuantity": 51375,
+          "weight": 1.76,
+          "previousWeight": 1.9,
+          "note": null
+        },
+        {
+          "key": "INE532F01054",
+          "name": "Edelweiss Financial Services Ltd.",
+          "previousQuantity": 174637,
+          "currentQuantity": 240637,
+          "weight": 1.75,
+          "previousWeight": 1.05,
+          "note": null
+        },
+        {
+          "key": "INE674K01013",
+          "name": "Aditya Birla Capital Ltd.",
+          "previousQuantity": 87400,
+          "currentQuantity": 87400,
+          "weight": 1.7,
+          "previousWeight": 1.7,
+          "note": null
+        },
+        {
+          "key": "INE0HOQ01053",
+          "name": "Billionbrains Garage Ventures Ltd.",
+          "previousQuantity": 177900,
+          "currentQuantity": 177900,
+          "weight": 1.67,
+          "previousWeight": 1.62,
+          "note": null
+        },
+        {
+          "key": "INE346A01027",
+          "name": "ICICI Prudential Asset Management Company Ltd.",
+          "previousQuantity": 10024,
+          "currentQuantity": 10024,
+          "weight": 1.6,
+          "previousWeight": 1.46,
+          "note": null
+        },
+        {
+          "key": "INE15B701018",
+          "name": "Pine Labs Ltd.",
+          "previousQuantity": 0,
+          "currentQuantity": 170000,
+          "weight": 1.49,
+          "previousWeight": 0,
+          "note": null
+        },
+        {
+          "key": "INE976G01028",
+          "name": "RBL Bank Ltd.",
+          "previousQuantity": 0,
+          "currentQuantity": 70300,
+          "weight": 1.45,
+          "previousWeight": 0,
+          "note": null
+        },
+        {
+          "key": "INE127D01025",
+          "name": "HDFC Asset Management Co. Ltd.",
+          "previousQuantity": 12274,
+          "currentQuantity": 12274,
+          "weight": 1.43,
+          "previousWeight": 1.53,
+          "note": null
+        },
+        {
+          "key": "INE298J01013",
+          "name": "Nippon Life India Asset Management Ltd.",
+          "previousQuantity": 20733,
+          "currentQuantity": 20733,
+          "weight": 1.13,
+          "previousWeight": 1.15,
+          "note": null
+        },
+        {
+          "key": "INE216P01012",
+          "name": "Aavas Financiers Ltd.",
+          "previousQuantity": 18124,
+          "currentQuantity": 18124,
+          "weight": 1.12,
+          "previousWeight": 1.08,
+          "note": null
+        },
+        {
+          "key": "INE417T01026",
+          "name": "PB Fintech Ltd.",
+          "previousQuantity": 10300,
+          "currentQuantity": 20300,
+          "weight": 1.1,
+          "previousWeight": 0.92,
+          "note": null
+        },
+        {
+          "key": "INE092T01019",
+          "name": "IDFC First Bank Ltd.",
+          "previousQuantity": 221700,
+          "currentQuantity": 221700,
+          "weight": 0.92,
+          "previousWeight": 0.9,
+          "note": null
+        },
+        {
+          "key": "INE18UN01038",
+          "name": "Gaja Alternative Asset Management Ltd.",
+          "previousQuantity": 104800,
+          "currentQuantity": 104800,
+          "weight": 0.75,
+          "previousWeight": 0.75,
+          "note": null
+        },
+        {
+          "key": "INE238A01034",
+          "name": "Axis Bank Ltd.",
+          "previousQuantity": 65726,
+          "currentQuantity": 0,
+          "weight": 0,
+          "previousWeight": 4.05,
+          "note": null
+        }
+      ],
+      "sources": [
+        {
+          "label": "DecryptMutualFunds monthly records",
+          "url": "https://decryptmutualfunds.com/fund-houses/helios/financial-services-fund",
+          "scope": "Full September and August equity quantities and allocations. Singly sourced quantity comparison; original AMC workbooks not retrieved."
+        },
+        {
+          "label": "GMP IPO Watch / FinAPI",
+          "url": "https://www.gmpipowatch.com/mutual-funds/scheme/helios-financial-services-fund-direct-plan-growth-152679",
+          "scope": "Top 15 September allocations matched; August weight corroboration is limited to explicit displayed one-month pp deltas."
+        }
+      ],
+      "notes": [
+        "September top 15 equity allocations match two dated provider datasets. Providers may share upstream feeds; this is not independent original-AMC verification.",
+        "Full September and August equity quantities are from DecryptMutualFunds monthly records. Net changes can include corporate actions and corrections and do not establish individual trades.",
+        "Helios original portfolio page and September factsheet were located, but returned 403 on direct access and 520 in web retrieval; original workbooks were not verified."
+      ]
+    },
+    {
+      "fundId": "helios-flexi",
+      "currentDate": "2026-09-30",
+      "previousDate": "2026-08-31",
+      "checkedAt": "2026-10-15T15:09:56.368877+00:00",
+      "scope": "full_equity",
+      "basis": "provider_quantity_comparison",
+      "rows": [
+        {
+          "key": "INE758T01015",
+          "name": "Eternal Ltd.",
+          "previousQuantity": 11735365,
+          "currentQuantity": 11925865,
+          "weight": 4.34,
+          "previousWeight": 4.4,
+          "note": null
+        },
+        {
+          "key": "INE040A01034",
+          "name": "HDFC Bank Ltd.",
+          "previousQuantity": 3198760,
+          "currentQuantity": 5342360,
+          "weight": 4.31,
+          "previousWeight": 2.59,
+          "note": null
+        },
+        {
+          "key": "INE090A01021",
+          "name": "ICICI Bank Ltd.",
+          "previousQuantity": 2344977,
+          "currentQuantity": 2739477,
+          "weight": 4.12,
+          "previousWeight": 3.9,
+          "note": null
+        },
+        {
+          "key": "INE742F01042",
+          "name": "Adani Ports and Special Economic Zone Ltd.",
+          "previousQuantity": 1819202,
+          "currentQuantity": 1914602,
+          "weight": 3.92,
+          "previousWeight": 3.31,
+          "note": null
+        },
+        {
+          "key": "INE982J01020",
+          "name": "One 97 Communications Ltd.",
+          "previousQuantity": 1928860,
+          "currentQuantity": 1928860,
+          "weight": 3.68,
+          "previousWeight": 3.79,
+          "note": null
+        },
+        {
+          "key": "INE237A01036",
+          "name": "Kotak Mahindra Bank Ltd.",
+          "previousQuantity": 0,
+          "currentQuantity": 6360100,
+          "weight": 3.02,
+          "previousWeight": 0,
+          "note": null
+        },
+        {
+          "key": "INE296A01032",
+          "name": "Bajaj Finance Ltd.",
+          "previousQuantity": 2269295,
+          "currentQuantity": 2559275,
+          "weight": 2.8,
+          "previousWeight": 2.74,
+          "note": null
+        },
+        {
+          "key": "INE062A01020",
+          "name": "State Bank of India",
+          "previousQuantity": 2333740,
+          "currentQuantity": 2546340,
+          "weight": 2.78,
+          "previousWeight": 2.83,
+          "note": null
+        },
+        {
+          "key": "INE591G01025",
+          "name": "Coforge Ltd.",
+          "previousQuantity": 1044866,
+          "currentQuantity": 1364488,
+          "weight": 2.72,
+          "previousWeight": 2.37,
+          "note": null
+        },
+        {
+          "key": "INE423A01024",
+          "name": "Adani Enterprises Ltd.",
+          "previousQuantity": 802489,
+          "currentQuantity": 802489,
+          "weight": 2.65,
+          "previousWeight": 2.62,
+          "note": null
+        },
+        {
+          "key": "INE280A01028",
+          "name": "Titan Company Ltd.",
+          "previousQuantity": 441294,
+          "currentQuantity": 480794,
+          "weight": 2.51,
+          "previousWeight": 2.57,
+          "note": null
+        },
+        {
+          "key": "INE0DYJ01015",
+          "name": "Syrma SGS Technology Ltd.",
+          "previousQuantity": 1216391,
+          "currentQuantity": 1216391,
+          "weight": 2.47,
+          "previousWeight": 2.0,
+          "note": null
+        },
+        {
+          "key": "INE263A01024",
+          "name": "Bharat Electronics Ltd.",
+          "previousQuantity": 5325021,
+          "currentQuantity": 5325021,
+          "weight": 2.35,
+          "previousWeight": 2.52,
+          "note": null
+        },
+        {
+          "key": "INE0LEZ01016",
+          "name": "Ather Energy Ltd.",
+          "previousQuantity": 1352485,
+          "currentQuantity": 1352485,
+          "weight": 2.19,
+          "previousWeight": 2.66,
+          "note": null
+        },
+        {
+          "key": "INE018A01030",
+          "name": "Larsen & Toubro Ltd.",
+          "previousQuantity": 459870,
+          "currentQuantity": 459870,
+          "weight": 1.97,
+          "previousWeight": 2.13,
+          "note": null
+        },
+        {
+          "key": "INE002A01018",
+          "name": "Reliance Industries Ltd.",
+          "previousQuantity": 1442818,
+          "currentQuantity": 1442818,
+          "weight": 1.95,
+          "previousWeight": 2.11,
+          "note": null
+        },
+        {
+          "key": "INE721A01047",
+          "name": "Shriram Finance Ltd.",
+          "previousQuantity": 1542197,
+          "currentQuantity": 1542197,
+          "weight": 1.73,
+          "previousWeight": 1.96,
+          "note": null
+        },
+        {
+          "key": "INE685A01028",
+          "name": "Torrent Pharmaceuticals Ltd.",
+          "previousQuantity": 300329,
+          "currentQuantity": 300329,
+          "weight": 1.64,
+          "previousWeight": 1.74,
+          "note": null
+        },
+        {
+          "key": "INE298A01020",
+          "name": "Cummins India Ltd.",
+          "previousQuantity": 294317,
+          "currentQuantity": 294317,
+          "weight": 1.59,
+          "previousWeight": 1.72,
+          "note": null
+        },
+        {
+          "key": "INE211B01039",
+          "name": "The Phoenix Mills Ltd.",
+          "previousQuantity": 706531,
+          "currentQuantity": 706531,
+          "weight": 1.56,
+          "previousWeight": 1.53,
+          "note": null
+        },
+        {
+          "key": "INE148O01028",
+          "name": "Delhivery Ltd.",
+          "previousQuantity": 2840179,
+          "currentQuantity": 3329279,
+          "weight": 1.55,
+          "previousWeight": 1.48,
+          "note": null
+        },
+        {
+          "key": "INE745G01043",
+          "name": "Multi Commodity Exchange of India Ltd.",
+          "previousQuantity": 401685,
+          "currentQuantity": 401685,
+          "weight": 1.51,
+          "previousWeight": 1.56,
+          "note": null
+        },
+        {
+          "key": "INE346A01027",
+          "name": "ICICI Prudential Asset Management Company Ltd.",
+          "previousQuantity": 413307,
+          "currentQuantity": 413307,
+          "weight": 1.48,
+          "previousWeight": 1.45,
+          "note": null
+        },
+        {
+          "key": "INE437A01024",
+          "name": "Apollo Hospitals Enterprise Ltd.",
+          "previousQuantity": 158230,
+          "currentQuantity": 158230,
+          "weight": 1.47,
+          "previousWeight": 1.61,
+          "note": null
+        },
+        {
+          "key": "INE397D01024",
+          "name": "Bharti Airtel Ltd.",
+          "previousQuantity": 690625,
+          "currentQuantity": 690625,
+          "weight": 1.38,
+          "previousWeight": 1.43,
+          "note": null
+        },
+        {
+          "key": "INE466L01038",
+          "name": "360 ONE WAM Ltd.",
+          "previousQuantity": 1166234,
+          "currentQuantity": 1166234,
+          "weight": 1.37,
+          "previousWeight": 1.57,
+          "note": null
+        },
+        {
+          "key": "INE338I01027",
+          "name": "Motilal Oswal Financial Services Ltd.",
+          "previousQuantity": 1159078,
+          "currentQuantity": 1159078,
+          "weight": 1.31,
+          "previousWeight": 1.38,
+          "note": null
+        },
+        {
+          "key": "INE572E01012",
+          "name": "PNB Housing Finance Ltd.",
+          "previousQuantity": 1016917,
+          "currentQuantity": 1016917,
+          "weight": 1.3,
+          "previousWeight": 1.34,
+          "note": null
+        },
+        {
+          "key": "INE290S01011",
+          "name": "CarTrade Tech Ltd.",
+          "previousQuantity": 390612,
+          "currentQuantity": 390612,
+          "weight": 1.29,
+          "previousWeight": 1.34,
+          "note": null
+        },
+        {
+          "key": "INE121A01024",
+          "name": "Cholamandalam Investment & Finance Co. Ltd.",
+          "previousQuantity": 663496,
+          "currentQuantity": 663496,
+          "weight": 1.22,
+          "previousWeight": 1.41,
+          "note": null
+        },
+        {
+          "key": "INE0J5401028",
+          "name": "Honasa Consumer Ltd.",
+          "previousQuantity": 2367927,
+          "currentQuantity": 2367927,
+          "weight": 1.16,
+          "previousWeight": 1.3,
+          "note": null
+        },
+        {
+          "key": "INE776C01039",
+          "name": "GMR Airports Ltd.",
+          "previousQuantity": 9740668,
+          "currentQuantity": 9740668,
+          "weight": 1.06,
+          "previousWeight": 1.04,
+          "note": null
+        },
+        {
+          "key": "INE154A01025",
+          "name": "ITC Ltd.",
+          "previousQuantity": 0,
+          "currentQuantity": 3368000,
+          "weight": 1.01,
+          "previousWeight": 0,
+          "note": null
+        },
+        {
+          "key": "INE0HOQ01053",
+          "name": "Billionbrains Garage Ventures Ltd.",
+          "previousQuantity": 4761500,
+          "currentQuantity": 4761500,
+          "weight": 1.0,
+          "previousWeight": 1.05,
+          "note": null
+        },
+        {
+          "key": "INE979A01025",
+          "name": "SAREGAMA India Ltd.",
+          "previousQuantity": 1734157,
+          "currentQuantity": 1734157,
+          "weight": 1.0,
+          "previousWeight": 0.95,
+          "note": null
+        },
+        {
+          "key": "INE053A01029",
+          "name": "The Indian Hotels Company Ltd.",
+          "previousQuantity": 756876,
+          "currentQuantity": 1205326,
+          "weight": 1.0,
+          "previousWeight": 0.64,
+          "note": null
+        },
+        {
+          "key": "INE0LP301011",
+          "name": "Physicswallah Ltd.",
+          "previousQuantity": 6907289,
+          "currentQuantity": 6907289,
+          "weight": 0.97,
+          "previousWeight": 0.92,
+          "note": null
+        },
+        {
+          "key": "INE257A01026",
+          "name": "Bharat Heavy Electricals Ltd.",
+          "previousQuantity": 2012500,
+          "currentQuantity": 2012500,
+          "weight": 0.95,
+          "previousWeight": 1.02,
+          "note": null
+        },
+        {
+          "key": "INE511C01022",
+          "name": "Poonawalla Fincorp Ltd.",
+          "previousQuantity": 1670925,
+          "currentQuantity": 1878468,
+          "weight": 0.95,
+          "previousWeight": 0.89,
+          "note": null
+        },
+        {
+          "key": "INE930H01031",
+          "name": "K.P.R. Mill Ltd.",
+          "previousQuantity": 748456,
+          "currentQuantity": 748456,
+          "weight": 0.94,
+          "previousWeight": 1.01,
+          "note": null
+        },
+        {
+          "key": "INE117A01022",
+          "name": "ABB India Ltd.",
+          "previousQuantity": 116763,
+          "currentQuantity": 116763,
+          "weight": 0.9,
+          "previousWeight": 1.02,
+          "note": null
+        },
+        {
+          "key": "INE646L01027",
+          "name": "Interglobe Aviation Ltd.",
+          "previousQuantity": 159000,
+          "currentQuantity": 159000,
+          "weight": 0.9,
+          "previousWeight": 0.95,
+          "note": null
+        },
+        {
+          "key": "INE095N01031",
+          "name": "NBCC (India) Ltd.",
+          "previousQuantity": 10109782,
+          "currentQuantity": 10109782,
+          "weight": 0.9,
+          "previousWeight": 1.0,
+          "note": null
+        },
+        {
+          "key": "INE752E01010",
+          "name": "Power Grid Corporation of India Ltd.",
+          "previousQuantity": 3049717,
+          "currentQuantity": 3049717,
+          "weight": 0.9,
+          "previousWeight": 0.92,
+          "note": null
+        },
+        {
+          "key": "INE640G01020",
+          "name": "SBI funds Management ltd.",
+          "previousQuantity": 1522890,
+          "currentQuantity": 1522890,
+          "weight": 0.89,
+          "previousWeight": 1.01,
+          "note": null
+        },
+        {
+          "key": "INE931S01010",
+          "name": "Adani Energy Solutions Ltd.",
+          "previousQuantity": 587720,
+          "currentQuantity": 587720,
+          "weight": 0.88,
+          "previousWeight": 0.95,
+          "note": null
+        },
+        {
+          "key": "INE196A01026",
+          "name": "Marico Ltd.",
+          "previousQuantity": 986819,
+          "currentQuantity": 986819,
+          "weight": 0.88,
+          "previousWeight": 0.93,
+          "note": null
+        },
+        {
+          "key": "INE061F01013",
+          "name": "Fortis Healthcare Ltd.",
+          "previousQuantity": 966743,
+          "currentQuantity": 966743,
+          "weight": 0.85,
+          "previousWeight": 1.0,
+          "note": null
+        },
+        {
+          "key": "INE07Y701011",
+          "name": "Hitachi Energy India Ltd.",
+          "previousQuantity": 23967,
+          "currentQuantity": 23967,
+          "weight": 0.84,
+          "previousWeight": 0.92,
+          "note": null
+        },
+        {
+          "key": "INE887G01027",
+          "name": "Gokaldas Exports Ltd.",
+          "previousQuantity": 1046915,
+          "currentQuantity": 1046915,
+          "weight": 0.82,
+          "previousWeight": 0.93,
+          "note": null
+        },
+        {
+          "key": "INE00H001014",
+          "name": "Swiggy Ltd.",
+          "previousQuantity": 2796800,
+          "currentQuantity": 2796800,
+          "weight": 0.8,
+          "previousWeight": 0.9,
+          "note": null
+        },
+        {
+          "key": "INE271C01023",
+          "name": "DLF Ltd.",
+          "previousQuantity": 953859,
+          "currentQuantity": 953859,
+          "weight": 0.73,
+          "previousWeight": 0.75,
+          "note": null
+        },
+        {
+          "key": "INE202B01038",
+          "name": "Piramal Finance Ltd.",
+          "previousQuantity": 286700,
+          "currentQuantity": 286700,
+          "weight": 0.67,
+          "previousWeight": 0.75,
+          "note": null
+        },
+        {
+          "key": "INE417T01026",
+          "name": "PB Fintech Ltd.",
+          "previousQuantity": 361500,
+          "currentQuantity": 546700,
+          "weight": 0.66,
+          "previousWeight": 0.77,
+          "note": null
+        },
+        {
+          "key": "INE1NPP01017",
+          "name": "Siemens Energy India Ltd.",
+          "previousQuantity": 181691,
+          "currentQuantity": 181691,
+          "weight": 0.66,
+          "previousWeight": 0.67,
+          "note": null
+        },
+        {
+          "key": "INE0NT901020",
+          "name": "Netweb Technologies India Ltd.",
+          "previousQuantity": 0,
+          "currentQuantity": 124430,
+          "weight": 0.64,
+          "previousWeight": 0,
+          "note": null
+        },
+        {
+          "key": "INE103V01028",
+          "name": "Travel Food Services Ltd.",
+          "previousQuantity": 471690,
+          "currentQuantity": 471690,
+          "weight": 0.64,
+          "previousWeight": 0.7,
+          "note": null
+        },
+        {
+          "key": "INE065X01017",
+          "name": "Indegene Ltd.",
+          "previousQuantity": 905712,
+          "currentQuantity": 905712,
+          "weight": 0.61,
+          "previousWeight": 0.63,
+          "note": null
+        },
+        {
+          "key": "INE761H01022",
+          "name": "Page Industries Ltd.",
+          "previousQuantity": 14754,
+          "currentQuantity": 14754,
+          "weight": 0.61,
+          "previousWeight": 0.6,
+          "note": null
+        },
+        {
+          "key": "INE00XB01019",
+          "name": "Sedemac Mechatronics Ltd.",
+          "previousQuantity": 267599,
+          "currentQuantity": 147098,
+          "weight": 0.59,
+          "previousWeight": 0.95,
+          "note": null
+        },
+        {
+          "key": "INE0DK501011",
+          "name": "Piramal Pharma Ltd.",
+          "previousQuantity": 0,
+          "currentQuantity": 2456765,
+          "weight": 0.58,
+          "previousWeight": 0,
+          "note": null
+        },
+        {
+          "key": "INE0K9O01026",
+          "name": "Lalithaa Jewellery Mart Ltd.",
+          "previousQuantity": 0,
+          "currentQuantity": 1299494,
+          "weight": 0.56,
+          "previousWeight": 0,
+          "note": null
+        },
+        {
+          "key": "INE08T701025",
+          "name": "Rentomojo Ltd.",
+          "previousQuantity": 0,
+          "currentQuantity": 896922,
+          "weight": 0.52,
+          "previousWeight": 0,
+          "note": null
+        },
+        {
+          "key": "INE00FF01025",
+          "name": "Acutaas Chemicals Ltd.",
+          "previousQuantity": 81530,
+          "currentQuantity": 136630,
+          "weight": 0.51,
+          "previousWeight": 0.29,
+          "note": null
+        },
+        {
+          "key": "INE127D01025",
+          "name": "HDFC Asset Management Co. Ltd.",
+          "previousQuantity": 190984,
+          "currentQuantity": 190984,
+          "weight": 0.5,
+          "previousWeight": 0.57,
+          "note": null
+        },
+        {
+          "key": "INE01EA01019",
+          "name": "Vishal Mega Mart Ltd.",
+          "previousQuantity": 4276011,
+          "currentQuantity": 4276011,
+          "weight": 0.49,
+          "previousWeight": 0.54,
+          "note": null
+        },
+        {
+          "key": "INE15B701018",
+          "name": "Pine Labs Ltd.",
+          "previousQuantity": 0,
+          "currentQuantity": 2342850,
+          "weight": 0.46,
+          "previousWeight": 0,
+          "note": null
+        },
+        {
+          "key": "INE945H01021",
+          "name": "V2 Retail Ltd.",
+          "previousQuantity": 1707565,
+          "currentQuantity": 1707565,
+          "weight": 0.41,
+          "previousWeight": 0.43,
+          "note": null
+        },
+        {
+          "key": "INE596I01020",
+          "name": "Computer Age Management Services Ltd.",
+          "previousQuantity": 473309,
+          "currentQuantity": 473309,
+          "weight": 0.36,
+          "previousWeight": 0.42,
+          "note": null
+        },
+        {
+          "key": "INE379A01028",
+          "name": "ITC Hotels Ltd.",
+          "previousQuantity": 1506826,
+          "currentQuantity": 1506826,
+          "weight": 0.28,
+          "previousWeight": 0.28,
+          "note": null
+        },
+        {
+          "key": "INE522F01014",
+          "name": "Coal India Ltd.",
+          "previousQuantity": 1891611,
+          "currentQuantity": 386897,
+          "weight": 0.19,
+          "previousWeight": 0.87,
+          "note": null
+        },
+        {
+          "key": "INE238A01034",
+          "name": "Axis Bank Ltd.",
+          "previousQuantity": 492300,
+          "currentQuantity": 0,
+          "weight": 0,
+          "previousWeight": 0.73,
+          "note": null
+        },
+        {
+          "key": "INE733E01010",
+          "name": "NTPC Ltd.",
+          "previousQuantity": 2558194,
+          "currentQuantity": 0,
+          "weight": 0,
+          "previousWeight": 0.96,
+          "note": null
+        },
+        {
+          "key": "INE343H01029",
+          "name": "Solar Industries India Ltd.",
+          "previousQuantity": 74744,
+          "currentQuantity": 0,
+          "weight": 0,
+          "previousWeight": 1.72,
+          "note": null
+        },
+        {
+          "key": "INE191B01025",
+          "name": "Welspun Corp Ltd.",
+          "previousQuantity": 327503,
+          "currentQuantity": 0,
+          "weight": 0,
+          "previousWeight": 0.9,
+          "note": null
+        }
+      ],
+      "sources": [
+        {
+          "label": "DecryptMutualFunds monthly records",
+          "url": "https://decryptmutualfunds.com/fund-houses/helios/flexi-cap-fund",
+          "scope": "Full September and August equity quantities and allocations. Singly sourced quantity comparison; original AMC workbooks not retrieved."
+        },
+        {
+          "label": "GMP IPO Watch / FinAPI",
+          "url": "https://www.gmpipowatch.com/mutual-funds/scheme/helios-flexi-cap-fund-direct-plan-growth-152135",
+          "scope": "Top 15 September allocations matched; August weight corroboration is limited to explicit displayed one-month pp deltas."
+        }
+      ],
+      "notes": [
+        "September top 15 equity allocations match two dated provider datasets. Providers may share upstream feeds; this is not independent original-AMC verification.",
+        "Full September and August equity quantities are from DecryptMutualFunds monthly records. Net changes can include corporate actions and corrections and do not establish individual trades.",
+        "Helios original portfolio page and September factsheet were located, but returned 403 on direct access and 520 in web retrieval; original workbooks were not verified."
+      ]
+    },
+    {
+      "fundId": "helios-large-mid",
+      "currentDate": "2026-09-30",
+      "previousDate": "2026-08-31",
+      "checkedAt": "2026-10-15T15:09:56.368877+00:00",
+      "scope": "full_equity",
+      "basis": "provider_quantity_comparison",
+      "rows": [
+        {
+          "key": "INE982J01020",
+          "name": "One 97 Communications Ltd.",
+          "previousQuantity": 427441,
+          "currentQuantity": 427441,
+          "weight": 4.9,
+          "previousWeight": 4.98,
+          "note": null
+        },
+        {
+          "key": "INE040A01034",
+          "name": "HDFC Bank Ltd.",
+          "previousQuantity": 545524,
+          "currentQuantity": 904324,
+          "weight": 4.38,
+          "previousWeight": 2.63,
+          "note": null
+        },
+        {
+          "key": "INE742F01042",
+          "name": "Adani Ports and Special Economic Zone Ltd.",
+          "previousQuantity": 352417,
+          "currentQuantity": 352417,
+          "weight": 4.33,
+          "previousWeight": 3.81,
+          "note": null
+        },
+        {
+          "key": "INE758T01015",
+          "name": "Eternal Ltd.",
+          "previousQuantity": 1810959,
+          "currentQuantity": 1810959,
+          "weight": 3.96,
+          "previousWeight": 4.03,
+          "note": null
+        },
+        {
+          "key": "INE090A01021",
+          "name": "ICICI Bank Ltd.",
+          "previousQuantity": 372882,
+          "currentQuantity": 426682,
+          "weight": 3.86,
+          "previousWeight": 3.68,
+          "note": null
+        },
+        {
+          "key": "INE237A01036",
+          "name": "Kotak Mahindra Bank Ltd.",
+          "previousQuantity": 0,
+          "currentQuantity": 1064450,
+          "weight": 3.03,
+          "previousWeight": 0,
+          "note": null
+        },
+        {
+          "key": "INE280A01028",
+          "name": "Titan Company Ltd.",
+          "previousQuantity": 93334,
+          "currentQuantity": 93334,
+          "weight": 2.93,
+          "previousWeight": 3.23,
+          "note": null
+        },
+        {
+          "key": "INE423A01024",
+          "name": "Adani Enterprises Ltd.",
+          "previousQuantity": 144285,
+          "currentQuantity": 144285,
+          "weight": 2.86,
+          "previousWeight": 2.8,
+          "note": null
+        },
+        {
+          "key": "INE211B01039",
+          "name": "The Phoenix Mills Ltd.",
+          "previousQuantity": 205515,
+          "currentQuantity": 205515,
+          "weight": 2.72,
+          "previousWeight": 2.65,
+          "note": null
+        },
+        {
+          "key": "INE296A01032",
+          "name": "Bajaj Finance Ltd.",
+          "previousQuantity": 397380,
+          "currentQuantity": 397380,
+          "weight": 2.61,
+          "previousWeight": 2.85,
+          "note": null
+        },
+        {
+          "key": "INE062A01020",
+          "name": "State Bank of India",
+          "previousQuantity": 308453,
+          "currentQuantity": 382353,
+          "weight": 2.51,
+          "previousWeight": 2.22,
+          "note": null
+        },
+        {
+          "key": "INE591G01025",
+          "name": "Coforge Ltd.",
+          "previousQuantity": 179601,
+          "currentQuantity": 205601,
+          "weight": 2.46,
+          "previousWeight": 2.42,
+          "note": null
+        },
+        {
+          "key": "INE263A01024",
+          "name": "Bharat Electronics Ltd.",
+          "previousQuantity": 896062,
+          "currentQuantity": 896062,
+          "weight": 2.38,
+          "previousWeight": 2.52,
+          "note": null
+        },
+        {
+          "key": "INE018A01030",
+          "name": "Larsen & Toubro Ltd.",
+          "previousQuantity": 92047,
+          "currentQuantity": 92047,
+          "weight": 2.37,
+          "previousWeight": 2.53,
+          "note": null
+        },
+        {
+          "key": "INE646L01027",
+          "name": "Interglobe Aviation Ltd.",
+          "previousQuantity": 67530,
+          "currentQuantity": 67530,
+          "weight": 2.3,
+          "previousWeight": 2.4,
+          "note": null
+        },
+        {
+          "key": "INE685A01028",
+          "name": "Torrent Pharmaceuticals Ltd.",
+          "previousQuantity": 64513,
+          "currentQuantity": 64513,
+          "weight": 2.12,
+          "previousWeight": 2.22,
+          "note": null
+        },
+        {
+          "key": "INE745G01043",
+          "name": "Multi Commodity Exchange of India Ltd.",
+          "previousQuantity": 85925,
+          "currentQuantity": 85925,
+          "weight": 1.94,
+          "previousWeight": 1.98,
+          "note": null
+        },
+        {
+          "key": "INE372A01015",
+          "name": "Apar Industries Ltd.",
+          "previousQuantity": 15942,
+          "currentQuantity": 15942,
+          "weight": 1.89,
+          "previousWeight": 1.92,
+          "note": null
+        },
+        {
+          "key": "INE298A01020",
+          "name": "Cummins India Ltd.",
+          "previousQuantity": 56168,
+          "currentQuantity": 56168,
+          "weight": 1.83,
+          "previousWeight": 1.95,
+          "note": null
+        },
+        {
+          "key": "INE437A01024",
+          "name": "Apollo Hospitals Enterprise Ltd.",
+          "previousQuantity": 32556,
+          "currentQuantity": 32556,
+          "weight": 1.82,
+          "previousWeight": 1.97,
+          "note": null
+        },
+        {
+          "key": "INE121A01024",
+          "name": "Cholamandalam Investment & Finance Co. Ltd.",
+          "previousQuantity": 143896,
+          "currentQuantity": 143896,
+          "weight": 1.59,
+          "previousWeight": 1.81,
+          "note": null
+        },
+        {
+          "key": "INE061F01013",
+          "name": "Fortis Healthcare Ltd.",
+          "previousQuantity": 286706,
+          "currentQuantity": 286706,
+          "weight": 1.51,
+          "previousWeight": 1.76,
+          "note": null
+        },
+        {
+          "key": "INE002A01018",
+          "name": "Reliance Industries Ltd.",
+          "previousQuantity": 184997,
+          "currentQuantity": 184997,
+          "weight": 1.5,
+          "previousWeight": 1.6,
+          "note": null
+        },
+        {
+          "key": "INE466L01038",
+          "name": "360 ONE WAM Ltd.",
+          "previousQuantity": 211731,
+          "currentQuantity": 211731,
+          "weight": 1.49,
+          "previousWeight": 1.69,
+          "note": null
+        },
+        {
+          "key": "INE0HOQ01053",
+          "name": "Billionbrains Garage Ventures Ltd.",
+          "previousQuantity": 1146200,
+          "currentQuantity": 1146200,
+          "weight": 1.44,
+          "previousWeight": 1.49,
+          "note": null
+        },
+        {
+          "key": "INE930H01031",
+          "name": "K.P.R. Mill Ltd.",
+          "previousQuantity": 191486,
+          "currentQuantity": 191486,
+          "weight": 1.44,
+          "previousWeight": 1.53,
+          "note": null
+        },
+        {
+          "key": "INE159A01016",
+          "name": "Glaxosmithkline Pharmaceuticals Ltd.",
+          "previousQuantity": 72221,
+          "currentQuantity": 72221,
+          "weight": 1.37,
+          "previousWeight": 1.5,
+          "note": null
+        },
+        {
+          "key": "INE405E01023",
+          "name": "UNO Minda Ltd.",
+          "previousQuantity": 171532,
+          "currentQuantity": 171532,
+          "weight": 1.37,
+          "previousWeight": 1.49,
+          "note": null
+        },
+        {
+          "key": "INE053A01029",
+          "name": "The Indian Hotels Company Ltd.",
+          "previousQuantity": 95611,
+          "currentQuantity": 273261,
+          "weight": 1.36,
+          "previousWeight": 0.48,
+          "note": null
+        },
+        {
+          "key": "INE674K01013",
+          "name": "Aditya Birla Capital Ltd.",
+          "previousQuantity": 511083,
+          "currentQuantity": 511083,
+          "weight": 1.33,
+          "previousWeight": 1.42,
+          "note": null
+        },
+        {
+          "key": "INE338I01027",
+          "name": "Motilal Oswal Financial Services Ltd.",
+          "previousQuantity": 196062,
+          "currentQuantity": 196062,
+          "weight": 1.33,
+          "previousWeight": 1.39,
+          "note": null
+        },
+        {
+          "key": "INE513A01022",
+          "name": "Schaeffler India Ltd.",
+          "previousQuantity": 49401,
+          "currentQuantity": 49401,
+          "weight": 1.32,
+          "previousWeight": 1.35,
+          "note": null
+        },
+        {
+          "key": "INE298J01013",
+          "name": "Nippon Life India Asset Management Ltd.",
+          "previousQuantity": 177212,
+          "currentQuantity": 177212,
+          "weight": 1.3,
+          "previousWeight": 1.41,
+          "note": null
+        },
+        {
+          "key": "INE196A01026",
+          "name": "Marico Ltd.",
+          "previousQuantity": 237499,
+          "currentQuantity": 237499,
+          "weight": 1.28,
+          "previousWeight": 1.32,
+          "note": null
+        },
+        {
+          "key": "INE761H01022",
+          "name": "Page Industries Ltd.",
+          "previousQuantity": 5160,
+          "currentQuantity": 5160,
+          "weight": 1.28,
+          "previousWeight": 1.25,
+          "note": null
+        },
+        {
+          "key": "INE202B01038",
+          "name": "Piramal Finance Ltd.",
+          "previousQuantity": 90981,
+          "currentQuantity": 90981,
+          "weight": 1.27,
+          "previousWeight": 1.42,
+          "note": null
+        },
+        {
+          "key": "INE042A01014",
+          "name": "Escorts Kubota Ltd.",
+          "previousQuantity": 67921,
+          "currentQuantity": 67921,
+          "weight": 1.26,
+          "previousWeight": 1.38,
+          "note": null
+        },
+        {
+          "key": "INE0LP301011",
+          "name": "Physicswallah Ltd.",
+          "previousQuantity": 1474852,
+          "currentQuantity": 1474852,
+          "weight": 1.25,
+          "previousWeight": 1.16,
+          "note": null
+        },
+        {
+          "key": "INE776C01039",
+          "name": "GMR Airports Ltd.",
+          "previousQuantity": 1890651,
+          "currentQuantity": 1890651,
+          "weight": 1.23,
+          "previousWeight": 1.2,
+          "note": null
+        },
+        {
+          "key": "INE397D01024",
+          "name": "Bharti Airtel Ltd.",
+          "previousQuantity": 95433,
+          "currentQuantity": 95433,
+          "weight": 1.15,
+          "previousWeight": 1.17,
+          "note": null
+        },
+        {
+          "key": "INE346A01027",
+          "name": "ICICI Prudential Asset Management Company Ltd.",
+          "previousQuantity": 53283,
+          "currentQuantity": 53283,
+          "weight": 1.14,
+          "previousWeight": 1.11,
+          "note": null
+        },
+        {
+          "key": "INE07Y701011",
+          "name": "Hitachi Energy India Ltd.",
+          "previousQuantity": 5302,
+          "currentQuantity": 5302,
+          "weight": 1.11,
+          "previousWeight": 1.22,
+          "note": null
+        },
+        {
+          "key": "INE200A01026",
+          "name": "GE Vernova T&D India Ltd.",
+          "previousQuantity": 31927,
+          "currentQuantity": 36927,
+          "weight": 1.06,
+          "previousWeight": 0.96,
+          "note": null
+        },
+        {
+          "key": "INE00H001014",
+          "name": "Swiggy Ltd.",
+          "previousQuantity": 599560,
+          "currentQuantity": 599560,
+          "weight": 1.03,
+          "previousWeight": 1.15,
+          "note": null
+        },
+        {
+          "key": "INE323A01026",
+          "name": "Bosch Ltd.",
+          "previousQuantity": 2280,
+          "currentQuantity": 3062,
+          "weight": 0.99,
+          "previousWeight": 0.77,
+          "note": null
+        },
+        {
+          "key": "INE721A01047",
+          "name": "Shriram Finance Ltd.",
+          "previousQuantity": 144369,
+          "currentQuantity": 144369,
+          "weight": 0.97,
+          "previousWeight": 1.09,
+          "note": null
+        },
+        {
+          "key": "INE158A01026",
+          "name": "Hero MotoCorp Ltd.",
+          "previousQuantity": 25700,
+          "currentQuantity": 25700,
+          "weight": 0.92,
+          "previousWeight": 0.95,
+          "note": null
+        },
+        {
+          "key": "INE1NPP01017",
+          "name": "Siemens Energy India Ltd.",
+          "previousQuantity": 41886,
+          "currentQuantity": 41886,
+          "weight": 0.92,
+          "previousWeight": 0.92,
+          "note": null
+        },
+        {
+          "key": "INE271C01023",
+          "name": "DLF Ltd.",
+          "previousQuantity": 191371,
+          "currentQuantity": 191371,
+          "weight": 0.88,
+          "previousWeight": 0.9,
+          "note": null
+        },
+        {
+          "key": "INE702C01027",
+          "name": "APL Apollo Tubes Ltd.",
+          "previousQuantity": 57079,
+          "currentQuantity": 57079,
+          "weight": 0.85,
+          "previousWeight": 0.86,
+          "note": null
+        },
+        {
+          "key": "INE640G01020",
+          "name": "SBI funds Management ltd.",
+          "previousQuantity": 193200,
+          "currentQuantity": 193200,
+          "weight": 0.68,
+          "previousWeight": 0.76,
+          "note": null
+        },
+        {
+          "key": "INE752E01010",
+          "name": "Power Grid Corporation of India Ltd.",
+          "previousQuantity": 375620,
+          "currentQuantity": 375620,
+          "weight": 0.67,
+          "previousWeight": 0.67,
+          "note": null
+        },
+        {
+          "key": "INE127D01025",
+          "name": "HDFC Asset Management Co. Ltd.",
+          "previousQuantity": 41834,
+          "currentQuantity": 41834,
+          "weight": 0.65,
+          "previousWeight": 0.74,
+          "note": null
+        },
+        {
+          "key": "INE913H01037",
+          "name": "Endurance Technologies Ltd.",
+          "previousQuantity": 35014,
+          "currentQuantity": 35014,
+          "weight": 0.64,
+          "previousWeight": 0.68,
+          "note": null
+        },
+        {
+          "key": "INE01EA01019",
+          "name": "Vishal Mega Mart Ltd.",
+          "previousQuantity": 873238,
+          "currentQuantity": 873238,
+          "weight": 0.6,
+          "previousWeight": 0.66,
+          "note": null
+        },
+        {
+          "key": "INE154A01025",
+          "name": "ITC Ltd.",
+          "previousQuantity": 0,
+          "currentQuantity": 282200,
+          "weight": 0.51,
+          "previousWeight": 0,
+          "note": null
+        },
+        {
+          "key": "INE931S01010",
+          "name": "Adani Energy Solutions Ltd.",
+          "previousQuantity": 46730,
+          "currentQuantity": 46730,
+          "weight": 0.42,
+          "previousWeight": 0.45,
+          "note": null
+        },
+        {
+          "key": "INE117A01022",
+          "name": "ABB India Ltd.",
+          "previousQuantity": 7419,
+          "currentQuantity": 7419,
+          "weight": 0.34,
+          "previousWeight": 0.38,
+          "note": null
+        },
+        {
+          "key": "INE522F01014",
+          "name": "Coal India Ltd.",
+          "previousQuantity": 258105,
+          "currentQuantity": 52791,
+          "weight": 0.15,
+          "previousWeight": 0.7,
+          "note": null
+        },
+        {
+          "key": "INE238A01034",
+          "name": "Axis Bank Ltd.",
+          "previousQuantity": 139441,
+          "currentQuantity": 0,
+          "weight": 0,
+          "previousWeight": 1.23,
+          "note": null
+        },
+        {
+          "key": "INE733E01010",
+          "name": "NTPC Ltd.",
+          "previousQuantity": 327245,
+          "currentQuantity": 0,
+          "weight": 0,
+          "previousWeight": 0.73,
+          "note": null
+        },
+        {
+          "key": "INE343H01029",
+          "name": "Solar Industries India Ltd.",
+          "previousQuantity": 12700,
+          "currentQuantity": 0,
+          "weight": 0,
+          "previousWeight": 1.73,
+          "note": null
+        }
+      ],
+      "sources": [
+        {
+          "label": "DecryptMutualFunds monthly records",
+          "url": "https://decryptmutualfunds.com/fund-houses/helios/large-mid-cap-fund",
+          "scope": "Full September and August equity quantities and allocations. Singly sourced quantity comparison; original AMC workbooks not retrieved."
+        },
+        {
+          "label": "GMP IPO Watch / FinAPI",
+          "url": "https://www.gmpipowatch.com/mutual-funds/scheme/helios-large-mid-cap-fund-direct-plan-growth-152941",
+          "scope": "Top 15 September allocations matched; August weight corroboration is limited to explicit displayed one-month pp deltas."
+        }
+      ],
+      "notes": [
+        "September top 15 equity allocations match two dated provider datasets. Providers may share upstream feeds; this is not independent original-AMC verification.",
+        "Full September and August equity quantities are from DecryptMutualFunds monthly records. Net changes can include corporate actions and corrections and do not establish individual trades.",
+        "Helios original portfolio page and September factsheet were located, but returned 403 on direct access and 520 in web retrieval; original workbooks were not verified."
+      ]
+    },
+    {
+      "fundId": "helios-mid",
+      "currentDate": "2026-09-30",
+      "previousDate": "2026-08-31",
+      "checkedAt": "2026-10-15T15:09:56.368877+00:00",
+      "scope": "full_equity",
+      "basis": "provider_quantity_comparison",
+      "rows": [
+        {
+          "key": "INE982J01020",
+          "name": "One 97 Communications Ltd.",
+          "previousQuantity": 445203,
+          "currentQuantity": 483113,
+          "weight": 3.45,
+          "previousWeight": 3.43,
+          "note": null
+        },
+        {
+          "key": "INE372A01015",
+          "name": "Apar Industries Ltd.",
+          "previousQuantity": 37156,
+          "currentQuantity": 37156,
+          "weight": 2.75,
+          "previousWeight": 2.95,
+          "note": null
+        },
+        {
+          "key": "INE591G01025",
+          "name": "Coforge Ltd.",
+          "previousQuantity": 268692,
+          "currentQuantity": 359911,
+          "weight": 2.68,
+          "previousWeight": 2.39,
+          "note": null
+        },
+        {
+          "key": "INE211B01039",
+          "name": "The Phoenix Mills Ltd.",
+          "previousQuantity": 277146,
+          "currentQuantity": 313546,
+          "weight": 2.58,
+          "previousWeight": 2.36,
+          "note": null
+        },
+        {
+          "key": "INE073K01018",
+          "name": "Sona Blw Precision Forgings Ltd.",
+          "previousQuantity": 615221,
+          "currentQuantity": 672271,
+          "weight": 2.38,
+          "previousWeight": 2.24,
+          "note": null
+        },
+        {
+          "key": "INE338I01027",
+          "name": "Motilal Oswal Financial Services Ltd.",
+          "previousQuantity": 519137,
+          "currentQuantity": 519137,
+          "weight": 2.2,
+          "previousWeight": 2.43,
+          "note": null
+        },
+        {
+          "key": "INE202B01038",
+          "name": "Piramal Finance Ltd.",
+          "previousQuantity": 251574,
+          "currentQuantity": 251574,
+          "weight": 2.19,
+          "previousWeight": 2.6,
+          "note": null
+        },
+        {
+          "key": "INE674K01013",
+          "name": "Aditya Birla Capital Ltd.",
+          "previousQuantity": 1316733,
+          "currentQuantity": 1316733,
+          "weight": 2.13,
+          "previousWeight": 2.42,
+          "note": null
+        },
+        {
+          "key": "INE298J01013",
+          "name": "Nippon Life India Asset Management Ltd.",
+          "previousQuantity": 466958,
+          "currentQuantity": 466958,
+          "weight": 2.13,
+          "previousWeight": 2.46,
+          "note": null
+        },
+        {
+          "key": "INE405E01023",
+          "name": "UNO Minda Ltd.",
+          "previousQuantity": 401380,
+          "currentQuantity": 401380,
+          "weight": 2.0,
+          "previousWeight": 2.3,
+          "note": null
+        },
+        {
+          "key": "INE159A01016",
+          "name": "Glaxosmithkline Pharmaceuticals Ltd.",
+          "previousQuantity": 168366,
+          "currentQuantity": 168366,
+          "weight": 1.99,
+          "previousWeight": 2.3,
+          "note": null
+        },
+        {
+          "key": "INE466L01038",
+          "name": "360 ONE WAM Ltd.",
+          "previousQuantity": 449887,
+          "currentQuantity": 449887,
+          "weight": 1.97,
+          "previousWeight": 2.37,
+          "note": null
+        },
+        {
+          "key": "INE061F01013",
+          "name": "Fortis Healthcare Ltd.",
+          "previousQuantity": 599062,
+          "currentQuantity": 599062,
+          "weight": 1.96,
+          "previousWeight": 2.44,
+          "note": null
+        },
+        {
+          "key": "INE745G01043",
+          "name": "Multi Commodity Exchange of India Ltd.",
+          "previousQuantity": 109970,
+          "currentQuantity": 137990,
+          "weight": 1.94,
+          "previousWeight": 1.68,
+          "note": null
+        },
+        {
+          "key": "INE513A01022",
+          "name": "Schaeffler India Ltd.",
+          "previousQuantity": 115138,
+          "currentQuantity": 115138,
+          "weight": 1.91,
+          "previousWeight": 2.07,
+          "note": null
+        },
+        {
+          "key": "INE196A01026",
+          "name": "Marico Ltd.",
+          "previousQuantity": 551920,
+          "currentQuantity": 551920,
+          "weight": 1.85,
+          "previousWeight": 2.03,
+          "note": null
+        },
+        {
+          "key": "INE761H01022",
+          "name": "Page Industries Ltd.",
+          "previousQuantity": 11648,
+          "currentQuantity": 11648,
+          "weight": 1.8,
+          "previousWeight": 1.87,
+          "note": null
+        },
+        {
+          "key": "INE1NPP01017",
+          "name": "Siemens Energy India Ltd.",
+          "previousQuantity": 96098,
+          "currentQuantity": 132298,
+          "weight": 1.8,
+          "previousWeight": 1.39,
+          "note": null
+        },
+        {
+          "key": "INE776C01039",
+          "name": "GMR Airports Ltd.",
+          "previousQuantity": 4390576,
+          "currentQuantity": 4390576,
+          "weight": 1.78,
+          "previousWeight": 1.84,
+          "note": null
+        },
+        {
+          "key": "INE053A01029",
+          "name": "The Indian Hotels Company Ltd.",
+          "previousQuantity": 260000,
+          "currentQuantity": 558100,
+          "weight": 1.73,
+          "previousWeight": 0.86,
+          "note": null
+        },
+        {
+          "key": "INE00H001014",
+          "name": "Swiggy Ltd.",
+          "previousQuantity": 1168300,
+          "currentQuantity": 1566000,
+          "weight": 1.67,
+          "previousWeight": 1.48,
+          "note": null
+        },
+        {
+          "key": "INE702C01027",
+          "name": "APL Apollo Tubes Ltd.",
+          "previousQuantity": 178519,
+          "currentQuantity": 178519,
+          "weight": 1.66,
+          "previousWeight": 1.78,
+          "note": null
+        },
+        {
+          "key": "INE0LEZ01016",
+          "name": "Ather Energy Ltd.",
+          "previousQuantity": 271607,
+          "currentQuantity": 271607,
+          "weight": 1.65,
+          "previousWeight": 2.09,
+          "note": null
+        },
+        {
+          "key": "INE290S01011",
+          "name": "CarTrade Tech Ltd.",
+          "previousQuantity": 131996,
+          "currentQuantity": 131996,
+          "weight": 1.63,
+          "previousWeight": 1.77,
+          "note": null
+        },
+        {
+          "key": "INE323A01026",
+          "name": "Bosch Ltd.",
+          "previousQuantity": 3450,
+          "currentQuantity": 7924,
+          "weight": 1.59,
+          "previousWeight": 0.77,
+          "note": null
+        },
+        {
+          "key": "INE930H01031",
+          "name": "K.P.R. Mill Ltd.",
+          "previousQuantity": 333103,
+          "currentQuantity": 333103,
+          "weight": 1.57,
+          "previousWeight": 1.76,
+          "note": null
+        },
+        {
+          "key": "INE944F01028",
+          "name": "Radico Khaitan Ltd.",
+          "previousQuantity": 84192,
+          "currentQuantity": 84192,
+          "weight": 1.57,
+          "previousWeight": 1.69,
+          "note": null
+        },
+        {
+          "key": "INE660A01013",
+          "name": "Sundaram Finance Ltd.",
+          "previousQuantity": 82841,
+          "currentQuantity": 82841,
+          "weight": 1.54,
+          "previousWeight": 1.69,
+          "note": null
+        },
+        {
+          "key": "INE092T01019",
+          "name": "IDFC First Bank Ltd.",
+          "previousQuantity": 4371665,
+          "currentQuantity": 4371665,
+          "weight": 1.52,
+          "previousWeight": 1.69,
+          "note": null
+        },
+        {
+          "key": "INE0DYJ01015",
+          "name": "Syrma SGS Technology Ltd.",
+          "previousQuantity": 192682,
+          "currentQuantity": 192682,
+          "weight": 1.46,
+          "previousWeight": 1.24,
+          "note": null
+        },
+        {
+          "key": "INE200A01026",
+          "name": "GE Vernova T&D India Ltd.",
+          "previousQuantity": 74325,
+          "currentQuantity": 79395,
+          "weight": 1.42,
+          "previousWeight": 1.48,
+          "note": null
+        },
+        {
+          "key": "INE00FF01025",
+          "name": "Acutaas Chemicals Ltd.",
+          "previousQuantity": 97352,
+          "currentQuantity": 97352,
+          "weight": 1.36,
+          "previousWeight": 1.38,
+          "note": null
+        },
+        {
+          "key": "INE0LP301011",
+          "name": "Physicswallah Ltd.",
+          "previousQuantity": 2490875,
+          "currentQuantity": 2490875,
+          "weight": 1.31,
+          "previousWeight": 1.3,
+          "note": null
+        },
+        {
+          "key": "INE343G01021",
+          "name": "Bharti Hexacom Ltd.",
+          "previousQuantity": 211713,
+          "currentQuantity": 211713,
+          "weight": 1.28,
+          "previousWeight": 1.47,
+          "note": null
+        },
+        {
+          "key": "INE913H01037",
+          "name": "Endurance Technologies Ltd.",
+          "previousQuantity": 112186,
+          "currentQuantity": 112186,
+          "weight": 1.27,
+          "previousWeight": 1.45,
+          "note": null
+        },
+        {
+          "key": "INE0K9O01026",
+          "name": "Lalithaa Jewellery Mart Ltd.",
+          "previousQuantity": 627000,
+          "currentQuantity": 771127,
+          "weight": 1.25,
+          "previousWeight": 0.73,
+          "note": null
+        },
+        {
+          "key": "INE093I01010",
+          "name": "Oberoi Realty Ltd.",
+          "previousQuantity": 0,
+          "currentQuantity": 160760,
+          "weight": 1.21,
+          "previousWeight": 0,
+          "note": null
+        },
+        {
+          "key": "INE511C01022",
+          "name": "Poonawalla Fincorp Ltd.",
+          "previousQuantity": 642404,
+          "currentQuantity": 642404,
+          "weight": 1.21,
+          "previousWeight": 1.34,
+          "note": null
+        },
+        {
+          "key": "INE685A01028",
+          "name": "Torrent Pharmaceuticals Ltd.",
+          "previousQuantity": 64504,
+          "currentQuantity": 57204,
+          "weight": 1.17,
+          "previousWeight": 1.47,
+          "note": null
+        },
+        {
+          "key": "INE0HOQ01053",
+          "name": "Billionbrains Garage Ventures Ltd.",
+          "previousQuantity": 1810200,
+          "currentQuantity": 1454200,
+          "weight": 1.14,
+          "previousWeight": 1.56,
+          "note": null
+        },
+        {
+          "key": "INE0DK501011",
+          "name": "Piramal Pharma Ltd.",
+          "previousQuantity": 976439,
+          "currentQuantity": 1300939,
+          "weight": 1.14,
+          "previousWeight": 0.94,
+          "note": null
+        },
+        {
+          "key": "INE15B701018",
+          "name": "Pine Labs Ltd.",
+          "previousQuantity": 0,
+          "currentQuantity": 1539300,
+          "weight": 1.13,
+          "previousWeight": 0,
+          "note": null
+        },
+        {
+          "key": "INE042A01014",
+          "name": "Escorts Kubota Ltd.",
+          "previousQuantity": 95113,
+          "currentQuantity": 95113,
+          "weight": 1.1,
+          "previousWeight": 1.28,
+          "note": null
+        },
+        {
+          "key": "INE0IX101010",
+          "name": "Data Patterns (India) Ltd.",
+          "previousQuantity": 58126,
+          "currentQuantity": 58126,
+          "weight": 1.06,
+          "previousWeight": 1.18,
+          "note": null
+        },
+        {
+          "key": "INE887G01027",
+          "name": "Gokaldas Exports Ltd.",
+          "previousQuantity": 361992,
+          "currentQuantity": 361992,
+          "weight": 1.06,
+          "previousWeight": 1.27,
+          "note": null
+        },
+        {
+          "key": "INE417T01026",
+          "name": "PB Fintech Ltd.",
+          "previousQuantity": 122900,
+          "currentQuantity": 233600,
+          "weight": 1.06,
+          "previousWeight": 1.03,
+          "note": null
+        },
+        {
+          "key": "INE01EA01019",
+          "name": "Vishal Mega Mart Ltd.",
+          "previousQuantity": 2466760,
+          "currentQuantity": 2466760,
+          "weight": 1.06,
+          "previousWeight": 1.22,
+          "note": null
+        },
+        {
+          "key": "INE532F01054",
+          "name": "Edelweiss Financial Services Ltd.",
+          "previousQuantity": 1623719,
+          "currentQuantity": 1733519,
+          "weight": 1.05,
+          "previousWeight": 0.93,
+          "note": null
+        },
+        {
+          "key": "INE949L01017",
+          "name": "AU Small Finance Bank Ltd.",
+          "previousQuantity": 237300,
+          "currentQuantity": 237300,
+          "weight": 1.02,
+          "previousWeight": 1.16,
+          "note": null
+        },
+        {
+          "key": "INE08T701025",
+          "name": "Rentomojo Ltd.",
+          "previousQuantity": 0,
+          "currentQuantity": 451318,
+          "weight": 0.98,
+          "previousWeight": 0,
+          "note": null
+        },
+        {
+          "key": "INE148O01028",
+          "name": "Delhivery Ltd.",
+          "previousQuantity": 520938,
+          "currentQuantity": 520938,
+          "weight": 0.91,
+          "previousWeight": 1.07,
+          "note": null
+        },
+        {
+          "key": "INE491J01022",
+          "name": "ASK Automotive Ltd.",
+          "previousQuantity": 307250,
+          "currentQuantity": 307250,
+          "weight": 0.84,
+          "previousWeight": 0.91,
+          "note": null
+        },
+        {
+          "key": "INE979A01025",
+          "name": "SAREGAMA India Ltd.",
+          "previousQuantity": 390300,
+          "currentQuantity": 390300,
+          "weight": 0.84,
+          "previousWeight": 0.84,
+          "note": null
+        },
+        {
+          "key": "INE298A01020",
+          "name": "Cummins India Ltd.",
+          "previousQuantity": 40380,
+          "currentQuantity": 40380,
+          "weight": 0.82,
+          "previousWeight": 0.92,
+          "note": null
+        },
+        {
+          "key": "INE095N01031",
+          "name": "NBCC (India) Ltd.",
+          "previousQuantity": 2462723,
+          "currentQuantity": 2462723,
+          "weight": 0.82,
+          "previousWeight": 0.95,
+          "note": null
+        },
+        {
+          "key": "INE338H01029",
+          "name": "Concord Biotech Ltd.",
+          "previousQuantity": 135043,
+          "currentQuantity": 135043,
+          "weight": 0.79,
+          "previousWeight": 0.88,
+          "note": null
+        },
+        {
+          "key": "INE491A01021",
+          "name": "City Union Bank Ltd.",
+          "previousQuantity": 797953,
+          "currentQuantity": 797953,
+          "weight": 0.77,
+          "previousWeight": 0.82,
+          "note": null
+        },
+        {
+          "key": "INE572E01012",
+          "name": "PNB Housing Finance Ltd.",
+          "previousQuantity": 150627,
+          "currentQuantity": 150627,
+          "weight": 0.72,
+          "previousWeight": 0.78,
+          "note": null
+        },
+        {
+          "key": "INE0J5401028",
+          "name": "Honasa Consumer Ltd.",
+          "previousQuantity": 382101,
+          "currentQuantity": 382101,
+          "weight": 0.7,
+          "previousWeight": 0.82,
+          "note": null
+        },
+        {
+          "key": "INE0NT901020",
+          "name": "Netweb Technologies India Ltd.",
+          "previousQuantity": 35074,
+          "currentQuantity": 35074,
+          "weight": 0.68,
+          "previousWeight": 0.82,
+          "note": null
+        },
+        {
+          "key": "INE945H01021",
+          "name": "V2 Retail Ltd.",
+          "previousQuantity": 765110,
+          "currentQuantity": 765110,
+          "weight": 0.68,
+          "previousWeight": 0.76,
+          "note": null
+        },
+        {
+          "key": "INE961O01016",
+          "name": "Rainbow Children's Medicare Ltd.",
+          "previousQuantity": 111974,
+          "currentQuantity": 111974,
+          "weight": 0.63,
+          "previousWeight": 0.71,
+          "note": null
+        },
+        {
+          "key": "INE600L01024",
+          "name": "Dr. Lal Path labs Ltd.",
+          "previousQuantity": 72215,
+          "currentQuantity": 72215,
+          "weight": 0.61,
+          "previousWeight": 0.63,
+          "note": null
+        },
+        {
+          "key": "INE065X01017",
+          "name": "Indegene Ltd.",
+          "previousQuantity": 238041,
+          "currentQuantity": 238041,
+          "weight": 0.6,
+          "previousWeight": 0.65,
+          "note": null
+        },
+        {
+          "key": "INE00XB01019",
+          "name": "Sedemac Mechatronics Ltd.",
+          "previousQuantity": 62546,
+          "currentQuantity": 38926,
+          "weight": 0.58,
+          "previousWeight": 0.87,
+          "note": null
+        },
+        {
+          "key": "INE119201023",
+          "name": "Park Medi World Ltd.",
+          "previousQuantity": 489332,
+          "currentQuantity": 489332,
+          "weight": 0.57,
+          "previousWeight": 0.63,
+          "note": null
+        },
+        {
+          "key": "INE379A01028",
+          "name": "ITC Hotels Ltd.",
+          "previousQuantity": 804494,
+          "currentQuantity": 804494,
+          "weight": 0.56,
+          "previousWeight": 0.58,
+          "note": null
+        },
+        {
+          "key": "INE596I01020",
+          "name": "Computer Age Management Services Ltd.",
+          "previousQuantity": 192520,
+          "currentQuantity": 192520,
+          "weight": 0.55,
+          "previousWeight": 0.68,
+          "note": null
+        },
+        {
+          "key": "INE0AQ201015",
+          "name": "Leela Palaces Hotels & Resorts Ltd.",
+          "previousQuantity": 201076,
+          "currentQuantity": 201076,
+          "weight": 0.49,
+          "previousWeight": 0.51,
+          "note": null
+        },
+        {
+          "key": "INE580P01029",
+          "name": "AceVector Ltd.",
+          "previousQuantity": 0,
+          "currentQuantity": 3499704,
+          "weight": 0.48,
+          "previousWeight": 0,
+          "note": null
+        },
+        {
+          "key": "INE679V01027",
+          "name": "Aditya Vision Ltd.",
+          "previousQuantity": 189000,
+          "currentQuantity": 189000,
+          "weight": 0.48,
+          "previousWeight": 0.51,
+          "note": null
+        },
+        {
+          "key": "INE716B01029",
+          "name": "Tips Music Ltd.",
+          "previousQuantity": 157158,
+          "currentQuantity": 157158,
+          "weight": 0.44,
+          "previousWeight": 0.45,
+          "note": null
+        },
+        {
+          "key": "INE342J01019",
+          "name": "ZF Commercial Vehicle Control Systems India Ltd.",
+          "previousQuantity": 43932,
+          "currentQuantity": 43932,
+          "weight": 0.44,
+          "previousWeight": 0.5,
+          "note": null
+        },
+        {
+          "key": "INE04TZ01018",
+          "name": "Ethos Ltd.",
+          "previousQuantity": 27846,
+          "currentQuantity": 27846,
+          "weight": 0.3,
+          "previousWeight": 0.36,
+          "note": null
+        },
+        {
+          "key": "INE103V01028",
+          "name": "Travel Food Services Ltd.",
+          "previousQuantity": 39848,
+          "currentQuantity": 39848,
+          "weight": 0.2,
+          "previousWeight": 0.23,
+          "note": null
+        },
+        {
+          "key": "INE180A01020",
+          "name": "Max Financial Services Ltd.",
+          "previousQuantity": 150678,
+          "currentQuantity": 0,
+          "weight": 0,
+          "previousWeight": 1.06,
+          "note": null
+        }
+      ],
+      "sources": [
+        {
+          "label": "DecryptMutualFunds monthly records",
+          "url": "https://decryptmutualfunds.com/fund-houses/helios/mid-cap-fund",
+          "scope": "Full September and August equity quantities and allocations. Singly sourced quantity comparison; original AMC workbooks not retrieved."
+        },
+        {
+          "label": "GMP IPO Watch / FinAPI",
+          "url": "https://www.gmpipowatch.com/mutual-funds/scheme/helios-mid-cap-fund-direct-plan-growth-153326",
+          "scope": "Top 15 September allocations matched; August weight corroboration is limited to explicit displayed one-month pp deltas."
+        }
+      ],
+      "notes": [
+        "September top 15 equity allocations match two dated provider datasets. Providers may share upstream feeds; this is not independent original-AMC verification.",
+        "Full September and August equity quantities are from DecryptMutualFunds monthly records. Net changes can include corporate actions and corrections and do not establish individual trades.",
+        "Helios original portfolio page and September factsheet were located, but returned 403 on direct access and 520 in web retrieval; original workbooks were not verified."
+      ]
+    }
+  ],
+  "audit": [
+    {
+      "fundId": "helios-financial",
+      "currentEquities": 30,
+      "previousEquities": 28,
+      "currentWeightSum": 99.84,
+      "previousWeightSum": 99.32,
+      "top15Checks": [
+        {
+          "primary": "ICICI Bank Ltd.",
+          "secondary": "ICICI Bank",
+          "primaryWeight": 13.11,
+          "secondaryWeight": 13.11,
+          "matched": true
+        },
+        {
+          "primary": "HDFC Bank Ltd.",
+          "secondary": "HDFC Bank",
+          "primaryWeight": 11.5,
+          "secondaryWeight": 11.5,
+          "matched": true
+        },
+        {
+          "primary": "One 97 Communications Ltd.",
+          "secondary": "One 97 Communications",
+          "primaryWeight": 8.4,
+          "secondaryWeight": 8.4,
+          "matched": true
+        },
+        {
+          "primary": "Bajaj Finance Ltd.",
+          "secondary": "Bajaj Finance",
+          "primaryWeight": 7.18,
+          "secondaryWeight": 7.18,
+          "matched": true
+        },
+        {
+          "primary": "State Bank of India",
+          "secondary": "State Bank of India",
+          "primaryWeight": 6.17,
+          "secondaryWeight": 6.17,
+          "matched": true
+        },
+        {
+          "primary": "SBI funds Management ltd.",
+          "secondary": "SBI Funds Management",
+          "primaryWeight": 4.58,
+          "secondaryWeight": 4.58,
+          "matched": true
+        },
+        {
+          "primary": "Motilal Oswal Financial Services Ltd.",
+          "secondary": "Motilal Oswal Financial Services",
+          "primaryWeight": 4.3,
+          "secondaryWeight": 4.3,
+          "matched": true
+        },
+        {
+          "primary": "Shriram Finance Ltd.",
+          "secondary": "Shriram Finance",
+          "primaryWeight": 3.98,
+          "secondaryWeight": 3.98,
+          "matched": true
+        },
+        {
+          "primary": "Multi Commodity Exchange of India Ltd.",
+          "secondary": "MCX",
+          "primaryWeight": 3.58,
+          "secondaryWeight": 3.58,
+          "matched": true
+        },
+        {
+          "primary": "PNB Housing Finance Ltd.",
+          "secondary": "PNB Housing Finance",
+          "primaryWeight": 3.4,
+          "secondaryWeight": 3.4,
+          "matched": true
+        },
+        {
+          "primary": "Cholamandalam Investment & Finance Co. Ltd.",
+          "secondary": "Cholamandalam Investment",
+          "primaryWeight": 3.25,
+          "secondaryWeight": 3.25,
+          "matched": true
+        },
+        {
+          "primary": "Prudent Corporate Advisory Services Ltd.",
+          "secondary": "Prudent Corporate Advisory Services",
+          "primaryWeight": 2.48,
+          "secondaryWeight": 2.48,
+          "matched": true
+        },
+        {
+          "primary": "City Union Bank Ltd.",
+          "secondary": "City Union Bank",
+          "primaryWeight": 2.21,
+          "secondaryWeight": 2.21,
+          "matched": true
+        },
+        {
+          "primary": "Kotak Mahindra Bank Ltd.",
+          "secondary": "Kotak Bank",
+          "primaryWeight": 2.1,
+          "secondaryWeight": 2.1,
+          "matched": true
+        },
+        {
+          "primary": "Piramal Finance Ltd.",
+          "secondary": "Piramal Finance",
+          "primaryWeight": 2.09,
+          "secondaryWeight": 2.09,
+          "matched": true
+        }
+      ],
+      "previousTop15Checks": [
+        {
+          "primary": "ICICI Bank Ltd.",
+          "secondary": "ICICI Bank",
+          "primaryWeight": 13.4,
+          "derivedSecondaryPreviousWeight": 13.4,
+          "matched": true
+        },
+        {
+          "primary": "HDFC Bank Ltd.",
+          "secondary": "HDFC Bank",
+          "primaryWeight": 11.07,
+          "derivedSecondaryPreviousWeight": 11.07,
+          "matched": true
+        },
+        {
+          "primary": "One 97 Communications Ltd.",
+          "secondary": "One 97 Communications",
+          "primaryWeight": 8.38,
+          "derivedSecondaryPreviousWeight": 8.38,
+          "matched": true
+        },
+        {
+          "primary": "Bajaj Finance Ltd.",
+          "secondary": "Bajaj Finance",
+          "primaryWeight": 7.35,
+          "derivedSecondaryPreviousWeight": 7.35,
+          "matched": true
+        },
+        {
+          "primary": "State Bank of India",
+          "secondary": "State Bank of India",
+          "primaryWeight": 6.34,
+          "derivedSecondaryPreviousWeight": 6.34,
+          "matched": true
+        },
+        {
+          "primary": "Shriram Finance Ltd.",
+          "secondary": "Shriram Finance",
+          "primaryWeight": 4.88,
+          "derivedSecondaryPreviousWeight": 4.88,
+          "matched": true
+        },
+        {
+          "primary": "SBI funds Management ltd.",
+          "secondary": "SBI Funds Management",
+          "primaryWeight": 4.77,
+          "derivedSecondaryPreviousWeight": 4.77,
+          "matched": true
+        },
+        {
+          "primary": "Motilal Oswal Financial Services Ltd.",
+          "secondary": "Motilal Oswal Financial Services",
+          "primaryWeight": 4.2,
+          "derivedSecondaryPreviousWeight": 4.2,
+          "matched": true
+        },
+        {
+          "primary": "Axis Bank Ltd.",
+          "secondary": null,
+          "primaryWeight": 4.05,
+          "derivedSecondaryPreviousWeight": null,
+          "matched": false
+        },
+        {
+          "primary": "Cholamandalam Investment & Finance Co. Ltd.",
+          "secondary": "Cholamandalam Investment",
+          "primaryWeight": 3.46,
+          "derivedSecondaryPreviousWeight": 3.46,
+          "matched": true
+        },
+        {
+          "primary": "Multi Commodity Exchange of India Ltd.",
+          "secondary": "MCX",
+          "primaryWeight": 3.43,
+          "derivedSecondaryPreviousWeight": 3.43,
+          "matched": true
+        },
+        {
+          "primary": "PNB Housing Finance Ltd.",
+          "secondary": "PNB Housing Finance",
+          "primaryWeight": 3.24,
+          "derivedSecondaryPreviousWeight": 3.24,
+          "matched": true
+        },
+        {
+          "primary": "Prudent Corporate Advisory Services Ltd.",
+          "secondary": "Prudent Corporate Advisory Services",
+          "primaryWeight": 2.71,
+          "derivedSecondaryPreviousWeight": 2.71,
+          "matched": true
+        },
+        {
+          "primary": "Piramal Finance Ltd.",
+          "secondary": "Piramal Finance",
+          "primaryWeight": 2.19,
+          "derivedSecondaryPreviousWeight": 2.19,
+          "matched": true
+        },
+        {
+          "primary": "City Union Bank Ltd.",
+          "secondary": "City Union Bank",
+          "primaryWeight": 2.09,
+          "derivedSecondaryPreviousWeight": 2.09,
+          "matched": true
+        }
+      ],
+      "files": [
+        {
+          "filename": "financial-d.html",
+          "sha256": "7a8d529419078b0da605fe3c9ac7978a1cf5f6bf4a9085cfe5faa0644bb5fd6a"
+        },
+        {
+          "filename": "financial-g.html",
+          "sha256": "ed1d40928f8ce827880ff3d6b100ed5d93b5302562058f71cf8628b1df7d42a0"
+        },
+        {
+          "filename": "financial-full.json",
+          "sha256": "39704f898c362971322f8c0ceb44a73e4cec5edc20b535e07eec5795a1749860"
+        }
+      ],
+      "urls": [
+        "https://decryptmutualfunds.com/fund-houses/helios/financial-services-fund",
+        "https://decryptmutualfunds.com/scheme-data/helios/financial-services-fund",
+        "https://www.gmpipowatch.com/mutual-funds/scheme/helios-financial-services-fund-direct-plan-growth-152679"
+      ],
+      "originalRetrievalFailures": [
+        {
+          "url": "https://www.heliosmf.in/portfolio-disclosure",
+          "status": "direct HTTP403; web520"
+        },
+        {
+          "url": "https://www.heliosmf.in/wp-content/uploads/2026/10/helios-mutual-fund-factsheet-september-2026.pdf",
+          "status": "web520"
+        }
+      ]
+    },
+    {
+      "fundId": "helios-flexi",
+      "currentEquities": 71,
+      "previousEquities": 68,
+      "currentWeightSum": 98.45,
+      "previousWeightSum": 96.94,
+      "top15Checks": [
+        {
+          "primary": "Eternal Ltd.",
+          "secondary": "Eternal",
+          "primaryWeight": 4.34,
+          "secondaryWeight": 4.34,
+          "matched": true
+        },
+        {
+          "primary": "HDFC Bank Ltd.",
+          "secondary": "HDFC Bank",
+          "primaryWeight": 4.31,
+          "secondaryWeight": 4.31,
+          "matched": true
+        },
+        {
+          "primary": "ICICI Bank Ltd.",
+          "secondary": "ICICI Bank",
+          "primaryWeight": 4.12,
+          "secondaryWeight": 4.12,
+          "matched": true
+        },
+        {
+          "primary": "Adani Ports and Special Economic Zone Ltd.",
+          "secondary": "Adani Ports & SEZ",
+          "primaryWeight": 3.92,
+          "secondaryWeight": 3.92,
+          "matched": true
+        },
+        {
+          "primary": "One 97 Communications Ltd.",
+          "secondary": "One 97 Communications",
+          "primaryWeight": 3.68,
+          "secondaryWeight": 3.68,
+          "matched": true
+        },
+        {
+          "primary": "Kotak Mahindra Bank Ltd.",
+          "secondary": "Kotak Bank",
+          "primaryWeight": 3.02,
+          "secondaryWeight": 3.02,
+          "matched": true
+        },
+        {
+          "primary": "Bajaj Finance Ltd.",
+          "secondary": "Bajaj Finance",
+          "primaryWeight": 2.8,
+          "secondaryWeight": 2.8,
+          "matched": true
+        },
+        {
+          "primary": "State Bank of India",
+          "secondary": "State Bank of India",
+          "primaryWeight": 2.78,
+          "secondaryWeight": 2.78,
+          "matched": true
+        },
+        {
+          "primary": "Coforge Ltd.",
+          "secondary": "Coforge",
+          "primaryWeight": 2.72,
+          "secondaryWeight": 2.72,
+          "matched": true
+        },
+        {
+          "primary": "Adani Enterprises Ltd.",
+          "secondary": "Adani Enterprises",
+          "primaryWeight": 2.65,
+          "secondaryWeight": 2.65,
+          "matched": true
+        },
+        {
+          "primary": "Titan Company Ltd.",
+          "secondary": "Titan",
+          "primaryWeight": 2.51,
+          "secondaryWeight": 2.51,
+          "matched": true
+        },
+        {
+          "primary": "Syrma SGS Technology Ltd.",
+          "secondary": "Syrma SGS",
+          "primaryWeight": 2.47,
+          "secondaryWeight": 2.47,
+          "matched": true
+        },
+        {
+          "primary": "Bharat Electronics Ltd.",
+          "secondary": "Bharat Electronics",
+          "primaryWeight": 2.35,
+          "secondaryWeight": 2.35,
+          "matched": true
+        },
+        {
+          "primary": "Ather Energy Ltd.",
+          "secondary": "Ather Energy",
+          "primaryWeight": 2.19,
+          "secondaryWeight": 2.19,
+          "matched": true
+        },
+        {
+          "primary": "Larsen & Toubro Ltd.",
+          "secondary": "Larsen & Toubro",
+          "primaryWeight": 1.97,
+          "secondaryWeight": 1.97,
+          "matched": true
+        }
+      ],
+      "previousTop15Checks": [
+        {
+          "primary": "Eternal Ltd.",
+          "secondary": "Eternal",
+          "primaryWeight": 4.4,
+          "derivedSecondaryPreviousWeight": 4.4,
+          "matched": true
+        },
+        {
+          "primary": "ICICI Bank Ltd.",
+          "secondary": "ICICI Bank",
+          "primaryWeight": 3.9,
+          "derivedSecondaryPreviousWeight": 3.9,
+          "matched": true
+        },
+        {
+          "primary": "One 97 Communications Ltd.",
+          "secondary": "One 97 Communications",
+          "primaryWeight": 3.79,
+          "derivedSecondaryPreviousWeight": 3.79,
+          "matched": true
+        },
+        {
+          "primary": "Adani Ports and Special Economic Zone Ltd.",
+          "secondary": "Adani Ports & SEZ",
+          "primaryWeight": 3.31,
+          "derivedSecondaryPreviousWeight": 3.31,
+          "matched": true
+        },
+        {
+          "primary": "State Bank of India",
+          "secondary": "State Bank of India",
+          "primaryWeight": 2.83,
+          "derivedSecondaryPreviousWeight": 2.83,
+          "matched": true
+        },
+        {
+          "primary": "Bajaj Finance Ltd.",
+          "secondary": "Bajaj Finance",
+          "primaryWeight": 2.74,
+          "derivedSecondaryPreviousWeight": 2.74,
+          "matched": true
+        },
+        {
+          "primary": "Ather Energy Ltd.",
+          "secondary": "Ather Energy",
+          "primaryWeight": 2.66,
+          "derivedSecondaryPreviousWeight": 2.66,
+          "matched": true
+        },
+        {
+          "primary": "Adani Enterprises Ltd.",
+          "secondary": "Adani Enterprises",
+          "primaryWeight": 2.62,
+          "derivedSecondaryPreviousWeight": 2.62,
+          "matched": true
+        },
+        {
+          "primary": "HDFC Bank Ltd.",
+          "secondary": "HDFC Bank",
+          "primaryWeight": 2.59,
+          "derivedSecondaryPreviousWeight": 2.59,
+          "matched": true
+        },
+        {
+          "primary": "Titan Company Ltd.",
+          "secondary": "Titan",
+          "primaryWeight": 2.57,
+          "derivedSecondaryPreviousWeight": 2.57,
+          "matched": true
+        },
+        {
+          "primary": "Bharat Electronics Ltd.",
+          "secondary": "Bharat Electronics",
+          "primaryWeight": 2.52,
+          "derivedSecondaryPreviousWeight": 2.52,
+          "matched": true
+        },
+        {
+          "primary": "Coforge Ltd.",
+          "secondary": "Coforge",
+          "primaryWeight": 2.37,
+          "derivedSecondaryPreviousWeight": 2.37,
+          "matched": true
+        },
+        {
+          "primary": "Larsen & Toubro Ltd.",
+          "secondary": "Larsen & Toubro",
+          "primaryWeight": 2.13,
+          "derivedSecondaryPreviousWeight": 2.13,
+          "matched": true
+        },
+        {
+          "primary": "Reliance Industries Ltd.",
+          "secondary": "Reliance Industries",
+          "primaryWeight": 2.11,
+          "derivedSecondaryPreviousWeight": 2.11,
+          "matched": true
+        },
+        {
+          "primary": "Syrma SGS Technology Ltd.",
+          "secondary": "Syrma SGS",
+          "primaryWeight": 2.0,
+          "derivedSecondaryPreviousWeight": 2.0,
+          "matched": true
+        }
+      ],
+      "files": [
+        {
+          "filename": "flexi-d.html",
+          "sha256": "07c865226bfffff71def07273ecf2578489f25d0bded3ecfae22d38fd5bf6b39"
+        },
+        {
+          "filename": "flexi-g.html",
+          "sha256": "9352366ba4d3f776df55668e3d4b78ad2213675e830efb7c9ca7bcc7673a0e0e"
+        },
+        {
+          "filename": "flexi-full.json",
+          "sha256": "11a6d83daaf0b8e893e17f9445c37a9bc6f24e2fe5d214da3ecbc9e54d5af300"
+        }
+      ],
+      "urls": [
+        "https://decryptmutualfunds.com/fund-houses/helios/flexi-cap-fund",
+        "https://decryptmutualfunds.com/scheme-data/helios/flexi-cap-fund",
+        "https://www.gmpipowatch.com/mutual-funds/scheme/helios-flexi-cap-fund-direct-plan-growth-152135"
+      ],
+      "originalRetrievalFailures": [
+        {
+          "url": "https://www.heliosmf.in/portfolio-disclosure",
+          "status": "direct HTTP403; web520"
+        },
+        {
+          "url": "https://www.heliosmf.in/wp-content/uploads/2026/10/helios-mutual-fund-factsheet-september-2026.pdf",
+          "status": "web520"
+        }
+      ]
+    },
+    {
+      "fundId": "helios-large-mid",
+      "currentEquities": 59,
+      "previousEquities": 60,
+      "currentWeightSum": 98.8,
+      "previousWeightSum": 99.27,
+      "top15Checks": [
+        {
+          "primary": "One 97 Communications Ltd.",
+          "secondary": "One 97 Communications",
+          "primaryWeight": 4.9,
+          "secondaryWeight": 4.9,
+          "matched": true
+        },
+        {
+          "primary": "HDFC Bank Ltd.",
+          "secondary": "HDFC Bank",
+          "primaryWeight": 4.38,
+          "secondaryWeight": 4.38,
+          "matched": true
+        },
+        {
+          "primary": "Adani Ports and Special Economic Zone Ltd.",
+          "secondary": "Adani Ports & SEZ",
+          "primaryWeight": 4.33,
+          "secondaryWeight": 4.33,
+          "matched": true
+        },
+        {
+          "primary": "Eternal Ltd.",
+          "secondary": "Eternal",
+          "primaryWeight": 3.96,
+          "secondaryWeight": 3.96,
+          "matched": true
+        },
+        {
+          "primary": "ICICI Bank Ltd.",
+          "secondary": "ICICI Bank",
+          "primaryWeight": 3.86,
+          "secondaryWeight": 3.86,
+          "matched": true
+        },
+        {
+          "primary": "Kotak Mahindra Bank Ltd.",
+          "secondary": "Kotak Bank",
+          "primaryWeight": 3.03,
+          "secondaryWeight": 3.03,
+          "matched": true
+        },
+        {
+          "primary": "Titan Company Ltd.",
+          "secondary": "Titan",
+          "primaryWeight": 2.93,
+          "secondaryWeight": 2.93,
+          "matched": true
+        },
+        {
+          "primary": "Adani Enterprises Ltd.",
+          "secondary": "Adani Enterprises",
+          "primaryWeight": 2.86,
+          "secondaryWeight": 2.86,
+          "matched": true
+        },
+        {
+          "primary": "The Phoenix Mills Ltd.",
+          "secondary": "Phoenix Mills",
+          "primaryWeight": 2.72,
+          "secondaryWeight": 2.72,
+          "matched": true
+        },
+        {
+          "primary": "Bajaj Finance Ltd.",
+          "secondary": "Bajaj Finance",
+          "primaryWeight": 2.61,
+          "secondaryWeight": 2.61,
+          "matched": true
+        },
+        {
+          "primary": "State Bank of India",
+          "secondary": "State Bank of India",
+          "primaryWeight": 2.51,
+          "secondaryWeight": 2.51,
+          "matched": true
+        },
+        {
+          "primary": "Coforge Ltd.",
+          "secondary": "Coforge",
+          "primaryWeight": 2.46,
+          "secondaryWeight": 2.46,
+          "matched": true
+        },
+        {
+          "primary": "Bharat Electronics Ltd.",
+          "secondary": "Bharat Electronics",
+          "primaryWeight": 2.38,
+          "secondaryWeight": 2.38,
+          "matched": true
+        },
+        {
+          "primary": "Larsen & Toubro Ltd.",
+          "secondary": "Larsen & Toubro",
+          "primaryWeight": 2.37,
+          "secondaryWeight": 2.37,
+          "matched": true
+        },
+        {
+          "primary": "Interglobe Aviation Ltd.",
+          "secondary": "Interglobe Aviation",
+          "primaryWeight": 2.3,
+          "secondaryWeight": 2.3,
+          "matched": true
+        }
+      ],
+      "previousTop15Checks": [
+        {
+          "primary": "One 97 Communications Ltd.",
+          "secondary": "One 97 Communications",
+          "primaryWeight": 4.98,
+          "derivedSecondaryPreviousWeight": 4.98,
+          "matched": true
+        },
+        {
+          "primary": "Eternal Ltd.",
+          "secondary": "Eternal",
+          "primaryWeight": 4.03,
+          "derivedSecondaryPreviousWeight": 4.03,
+          "matched": true
+        },
+        {
+          "primary": "Adani Ports and Special Economic Zone Ltd.",
+          "secondary": "Adani Ports & SEZ",
+          "primaryWeight": 3.81,
+          "derivedSecondaryPreviousWeight": 3.81,
+          "matched": true
+        },
+        {
+          "primary": "ICICI Bank Ltd.",
+          "secondary": "ICICI Bank",
+          "primaryWeight": 3.68,
+          "derivedSecondaryPreviousWeight": 3.68,
+          "matched": true
+        },
+        {
+          "primary": "Titan Company Ltd.",
+          "secondary": "Titan",
+          "primaryWeight": 3.23,
+          "derivedSecondaryPreviousWeight": 3.23,
+          "matched": true
+        },
+        {
+          "primary": "Bajaj Finance Ltd.",
+          "secondary": "Bajaj Finance",
+          "primaryWeight": 2.85,
+          "derivedSecondaryPreviousWeight": 2.85,
+          "matched": true
+        },
+        {
+          "primary": "Adani Enterprises Ltd.",
+          "secondary": "Adani Enterprises",
+          "primaryWeight": 2.8,
+          "derivedSecondaryPreviousWeight": 2.8,
+          "matched": true
+        },
+        {
+          "primary": "The Phoenix Mills Ltd.",
+          "secondary": "Phoenix Mills",
+          "primaryWeight": 2.65,
+          "derivedSecondaryPreviousWeight": 2.65,
+          "matched": true
+        },
+        {
+          "primary": "HDFC Bank Ltd.",
+          "secondary": "HDFC Bank",
+          "primaryWeight": 2.63,
+          "derivedSecondaryPreviousWeight": 2.63,
+          "matched": true
+        },
+        {
+          "primary": "Larsen & Toubro Ltd.",
+          "secondary": "Larsen & Toubro",
+          "primaryWeight": 2.53,
+          "derivedSecondaryPreviousWeight": 2.53,
+          "matched": true
+        },
+        {
+          "primary": "Bharat Electronics Ltd.",
+          "secondary": "Bharat Electronics",
+          "primaryWeight": 2.52,
+          "derivedSecondaryPreviousWeight": 2.52,
+          "matched": true
+        },
+        {
+          "primary": "Coforge Ltd.",
+          "secondary": "Coforge",
+          "primaryWeight": 2.42,
+          "derivedSecondaryPreviousWeight": 2.42,
+          "matched": true
+        },
+        {
+          "primary": "Interglobe Aviation Ltd.",
+          "secondary": "Interglobe Aviation",
+          "primaryWeight": 2.4,
+          "derivedSecondaryPreviousWeight": 2.4,
+          "matched": true
+        },
+        {
+          "primary": "State Bank of India",
+          "secondary": "State Bank of India",
+          "primaryWeight": 2.22,
+          "derivedSecondaryPreviousWeight": 2.22,
+          "matched": true
+        },
+        {
+          "primary": "Torrent Pharmaceuticals Ltd.",
+          "secondary": "Torrent Pharmaceuticals",
+          "primaryWeight": 2.22,
+          "derivedSecondaryPreviousWeight": 2.22,
+          "matched": true
+        }
+      ],
+      "files": [
+        {
+          "filename": "large-mid-d.html",
+          "sha256": "a0075f7ea4b7d1112d5d5f06c1343a653b6e5cf5785ff04f077d136909a11748"
+        },
+        {
+          "filename": "large-mid-g.html",
+          "sha256": "fe4893089180a6c5cf63b821ecceaa89653ee8f92fff5fbe0e0ccddd03028cc6"
+        },
+        {
+          "filename": "large-mid-full.json",
+          "sha256": "19bb813f65136838490bc6a4e2d012cf3c22c0c84c0e0cf350f4fa2c4df8bfb3"
+        }
+      ],
+      "urls": [
+        "https://decryptmutualfunds.com/fund-houses/helios/large-mid-cap-fund",
+        "https://decryptmutualfunds.com/scheme-data/helios/large-mid-cap-fund",
+        "https://www.gmpipowatch.com/mutual-funds/scheme/helios-large-mid-cap-fund-direct-plan-growth-152941"
+      ],
+      "originalRetrievalFailures": [
+        {
+          "url": "https://www.heliosmf.in/portfolio-disclosure",
+          "status": "direct HTTP403; web520"
+        },
+        {
+          "url": "https://www.heliosmf.in/wp-content/uploads/2026/10/helios-mutual-fund-factsheet-september-2026.pdf",
+          "status": "web520"
+        }
+      ]
+    },
+    {
+      "fundId": "helios-mid",
+      "currentEquities": 75,
+      "previousEquities": 72,
+      "currentWeightSum": 97.86,
+      "previousWeightSum": 99.52,
+      "top15Checks": [
+        {
+          "primary": "One 97 Communications Ltd.",
+          "secondary": "One 97 Communications",
+          "primaryWeight": 3.45,
+          "secondaryWeight": 3.45,
+          "matched": true
+        },
+        {
+          "primary": "Apar Industries Ltd.",
+          "secondary": "Apar Industries",
+          "primaryWeight": 2.75,
+          "secondaryWeight": 2.75,
+          "matched": true
+        },
+        {
+          "primary": "Coforge Ltd.",
+          "secondary": "Coforge",
+          "primaryWeight": 2.68,
+          "secondaryWeight": 2.68,
+          "matched": true
+        },
+        {
+          "primary": "The Phoenix Mills Ltd.",
+          "secondary": "Phoenix Mills",
+          "primaryWeight": 2.58,
+          "secondaryWeight": 2.58,
+          "matched": true
+        },
+        {
+          "primary": "Sona Blw Precision Forgings Ltd.",
+          "secondary": "Sona BLW Precision Forgings",
+          "primaryWeight": 2.38,
+          "secondaryWeight": 2.38,
+          "matched": true
+        },
+        {
+          "primary": "Motilal Oswal Financial Services Ltd.",
+          "secondary": "Motilal Oswal Financial Services",
+          "primaryWeight": 2.2,
+          "secondaryWeight": 2.2,
+          "matched": true
+        },
+        {
+          "primary": "Piramal Finance Ltd.",
+          "secondary": "Piramal Finance",
+          "primaryWeight": 2.19,
+          "secondaryWeight": 2.19,
+          "matched": true
+        },
+        {
+          "primary": "Aditya Birla Capital Ltd.",
+          "secondary": "Aditya Birla Capital",
+          "primaryWeight": 2.13,
+          "secondaryWeight": 2.13,
+          "matched": true
+        },
+        {
+          "primary": "Nippon Life India Asset Management Ltd.",
+          "secondary": "Nippon Life India AMC",
+          "primaryWeight": 2.13,
+          "secondaryWeight": 2.13,
+          "matched": true
+        },
+        {
+          "primary": "UNO Minda Ltd.",
+          "secondary": "UNO Minda",
+          "primaryWeight": 2.0,
+          "secondaryWeight": 2.0,
+          "matched": true
+        },
+        {
+          "primary": "Glaxosmithkline Pharmaceuticals Ltd.",
+          "secondary": "GlaxoSmithKline Pharmaceuticals",
+          "primaryWeight": 1.99,
+          "secondaryWeight": 1.99,
+          "matched": true
+        },
+        {
+          "primary": "360 ONE WAM Ltd.",
+          "secondary": "360 One WAM",
+          "primaryWeight": 1.97,
+          "secondaryWeight": 1.97,
+          "matched": true
+        },
+        {
+          "primary": "Fortis Healthcare Ltd.",
+          "secondary": "Fortis Healthcare",
+          "primaryWeight": 1.96,
+          "secondaryWeight": 1.96,
+          "matched": true
+        },
+        {
+          "primary": "Multi Commodity Exchange of India Ltd.",
+          "secondary": "MCX",
+          "primaryWeight": 1.94,
+          "secondaryWeight": 1.94,
+          "matched": true
+        },
+        {
+          "primary": "Schaeffler India Ltd.",
+          "secondary": "Schaeffler India",
+          "primaryWeight": 1.91,
+          "secondaryWeight": 1.91,
+          "matched": true
+        }
+      ],
+      "previousTop15Checks": [
+        {
+          "primary": "One 97 Communications Ltd.",
+          "secondary": "One 97 Communications",
+          "primaryWeight": 3.43,
+          "derivedSecondaryPreviousWeight": 3.43,
+          "matched": true
+        },
+        {
+          "primary": "Apar Industries Ltd.",
+          "secondary": "Apar Industries",
+          "primaryWeight": 2.95,
+          "derivedSecondaryPreviousWeight": 2.95,
+          "matched": true
+        },
+        {
+          "primary": "Piramal Finance Ltd.",
+          "secondary": "Piramal Finance",
+          "primaryWeight": 2.6,
+          "derivedSecondaryPreviousWeight": 2.6,
+          "matched": true
+        },
+        {
+          "primary": "Nippon Life India Asset Management Ltd.",
+          "secondary": "Nippon Life India AMC",
+          "primaryWeight": 2.46,
+          "derivedSecondaryPreviousWeight": 2.46,
+          "matched": true
+        },
+        {
+          "primary": "Fortis Healthcare Ltd.",
+          "secondary": "Fortis Healthcare",
+          "primaryWeight": 2.44,
+          "derivedSecondaryPreviousWeight": 2.44,
+          "matched": true
+        },
+        {
+          "primary": "Motilal Oswal Financial Services Ltd.",
+          "secondary": "Motilal Oswal Financial Services",
+          "primaryWeight": 2.43,
+          "derivedSecondaryPreviousWeight": 2.43,
+          "matched": true
+        },
+        {
+          "primary": "Aditya Birla Capital Ltd.",
+          "secondary": "Aditya Birla Capital",
+          "primaryWeight": 2.42,
+          "derivedSecondaryPreviousWeight": 2.42,
+          "matched": true
+        },
+        {
+          "primary": "Coforge Ltd.",
+          "secondary": "Coforge",
+          "primaryWeight": 2.39,
+          "derivedSecondaryPreviousWeight": 2.39,
+          "matched": true
+        },
+        {
+          "primary": "360 ONE WAM Ltd.",
+          "secondary": "360 One WAM",
+          "primaryWeight": 2.37,
+          "derivedSecondaryPreviousWeight": 2.37,
+          "matched": true
+        },
+        {
+          "primary": "The Phoenix Mills Ltd.",
+          "secondary": "Phoenix Mills",
+          "primaryWeight": 2.36,
+          "derivedSecondaryPreviousWeight": 2.36,
+          "matched": true
+        },
+        {
+          "primary": "Glaxosmithkline Pharmaceuticals Ltd.",
+          "secondary": "GlaxoSmithKline Pharmaceuticals",
+          "primaryWeight": 2.3,
+          "derivedSecondaryPreviousWeight": 2.3,
+          "matched": true
+        },
+        {
+          "primary": "UNO Minda Ltd.",
+          "secondary": "UNO Minda",
+          "primaryWeight": 2.3,
+          "derivedSecondaryPreviousWeight": 2.3,
+          "matched": true
+        },
+        {
+          "primary": "Sona Blw Precision Forgings Ltd.",
+          "secondary": "Sona BLW Precision Forgings",
+          "primaryWeight": 2.24,
+          "derivedSecondaryPreviousWeight": 2.24,
+          "matched": true
+        },
+        {
+          "primary": "Ather Energy Ltd.",
+          "secondary": "Ather Energy",
+          "primaryWeight": 2.09,
+          "derivedSecondaryPreviousWeight": 2.09,
+          "matched": true
+        },
+        {
+          "primary": "Schaeffler India Ltd.",
+          "secondary": "Schaeffler India",
+          "primaryWeight": 2.07,
+          "derivedSecondaryPreviousWeight": 2.07,
+          "matched": true
+        }
+      ],
+      "files": [
+        {
+          "filename": "mid-d.html",
+          "sha256": "f76041c65b45839aa4cde3abba0fc2def3a337a138c0c9caaec1f7c14dcf2f16"
+        },
+        {
+          "filename": "mid-g.html",
+          "sha256": "4aa15ae9c2266255fe3119948f6624375da048ff82646bcfe3c5bbfbcf6c2c15"
+        },
+        {
+          "filename": "mid-full.json",
+          "sha256": "e46462b878d3ba7d31839615efdb8de74499f1efde45e75e72b641d111652bbd"
+        }
+      ],
+      "urls": [
+        "https://decryptmutualfunds.com/fund-houses/helios/mid-cap-fund",
+        "https://decryptmutualfunds.com/scheme-data/helios/mid-cap-fund",
+        "https://www.gmpipowatch.com/mutual-funds/scheme/helios-mid-cap-fund-direct-plan-growth-153326"
+      ],
+      "originalRetrievalFailures": [
+        {
+          "url": "https://www.heliosmf.in/portfolio-disclosure",
+          "status": "direct HTTP403; web520"
+        },
+        {
+          "url": "https://www.heliosmf.in/wp-content/uploads/2026/10/helios-mutual-fund-factsheet-september-2026.pdf",
+          "status": "web520"
+        }
+      ]
+    }
+  ]
+}

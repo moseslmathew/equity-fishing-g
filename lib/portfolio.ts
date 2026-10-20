@@ -1,7 +1,7 @@
 import {fundCatalog} from "./fund-catalog";
 export type Holding = { key: string; name: string; weight: number };
 export type Source = { label: string; url: string; type: "official" | "third_party"; portfolioDate: string; matched: boolean };
-export type Fund = { id: string; name: string; monogram: string; color: string; verification: "official_match" | "official_only" | "provider_match" | "conflict"; checkStatus: "checked" | "no_new" | "failed" | "conflict"; portfolioDate: string; lastCheckedAt: string; holdings: Holding[]; sources: Source[]; notes: string[]; holdingsEvidence?:{basis:"saved_full_portfolio";checkedAt:string;sources:{label:string;url:string;scope:string}[]} };
+export type Fund = { id: string; name: string; monogram: string; color: string; verification: "official_match" | "official_only" | "provider_match" | "provider_only" | "conflict"; checkStatus: "checked" | "no_new" | "failed" | "conflict"; portfolioDate: string; lastCheckedAt: string; holdings: Holding[]; sources: Source[]; notes: string[]; holdingsEvidence?:{basis:"saved_full_portfolio";checkedAt:string;sources:{label:string;url:string;scope:string}[]} };
 export type Run = { at: string; summary: string; changes: string[]; status: string };
 export type Portfolio = { version: number; checkedAt: string; updatedAt: string; schedule: {enabled: boolean; time: string; timezone: string; note?: string}; summary: string; funds: Fund[]; runs: Run[] };
 export const ids = fundCatalog.map(f=>f.id);
@@ -11,9 +11,9 @@ export function validatePortfolio(value: unknown): asserts value is Portfolio {
   if (!p.schedule || typeof p.schedule.enabled !== "boolean" || p.schedule.time !== "08:00" || p.schedule.timezone !== "Asia/Kolkata") throw new Error("Invalid schedule.");
   const seen = new Set<string>();
   for (const f of p.funds) {
-    if (!ids.includes(f.id) || seen.has(f.id)) throw new Error("Fund shortlist must contain the same twenty funds.");
+    if (!ids.includes(f.id) || seen.has(f.id)) throw new Error("Fund snapshot must contain every scheme in the current catalog.");
     seen.add(f.id);
-    if (typeof f.name !== "string" || !/^#[a-f0-9]{6}$/i.test(f.color) || typeof f.monogram !== "string" || !["official_match","official_only","provider_match","conflict"].includes(f.verification) || !["checked","no_new","failed","conflict"].includes(f.checkStatus) || !/^\d{4}-\d{2}-\d{2}$/.test(f.portfolioDate) || !Number.isFinite(Date.parse(f.lastCheckedAt))) throw new Error("Invalid fund metadata.");
+    if (typeof f.name !== "string" || !/^#[a-f0-9]{6}$/i.test(f.color) || typeof f.monogram !== "string" || !["official_match","official_only","provider_match","provider_only","conflict"].includes(f.verification) || !["checked","no_new","failed","conflict"].includes(f.checkStatus) || !/^\d{4}-\d{2}-\d{2}$/.test(f.portfolioDate) || !Number.isFinite(Date.parse(f.lastCheckedAt))) throw new Error("Invalid fund metadata.");
     if (!Array.isArray(f.holdings) || f.holdings.length !== 15 || !Array.isArray(f.sources) || f.sources.length < 2 || !Array.isArray(f.notes) || f.notes.some(n => typeof n !== "string")) throw new Error("Fifteen holdings and at least two evidence sources are required.");
     if(f.holdingsEvidence&&(f.holdingsEvidence.basis!=="saved_full_portfolio"||!Number.isFinite(Date.parse(f.holdingsEvidence.checkedAt))||!Array.isArray(f.holdingsEvidence.sources)||f.holdingsEvidence.sources.length<2||f.holdingsEvidence.sources.some(s=>typeof s.label!=="string"||typeof s.scope!=="string"||new URL(s.url).protocol!=="https:")))throw new Error("Invalid extended holdings evidence.");
     const keys = new Set<string>();
@@ -26,7 +26,7 @@ export function validatePortfolio(value: unknown): asserts value is Portfolio {
       if (typeof s.label !== "string" || !["official","third_party"].includes(s.type) || typeof s.matched !== "boolean" || !/^\d{4}-\d{2}-\d{2}$/.test(s.portfolioDate) || new URL(s.url).protocol !== "https:") throw new Error("Invalid source.");
     }
     const matched = f.sources.filter(s=>s.matched && s.portfolioDate===f.portfolioDate);
-    if (f.verification !== "conflict" && f.verification !== "official_only" && matched.length<2) throw new Error("Matching sources must use the same reporting date.");
+    if (f.verification !== "conflict" && f.verification !== "official_only" && f.verification !== "provider_only" && matched.length<2) throw new Error("Matching sources must use the same reporting date.");
     if ((f.verification==="official_match"||f.verification==="official_only") && !matched.some(s=>s.type==="official")) throw new Error("Official confirmation needs an official source.");
   }
 }

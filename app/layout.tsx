@@ -3,10 +3,7 @@ import "./globals.css";
 
 export const metadata: Metadata = {
   title: "Smallcap Observatory | Mutual fund holdings",
-  description: "Compare twenty small-cap mutual funds, their top 15 holdings, full portfolio changes and dated sources.",
-  other: {
-    "codex-preview": "development",
-  },
+  description: "Compare small-cap and selected Helios equity funds, their top 15 holdings, full portfolio changes and dated sources.",
   icons: {
     icon: "/favicon.svg",
     shortcut: "/favicon.svg",

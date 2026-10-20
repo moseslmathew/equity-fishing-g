@@ -1,0 +1,367 @@
+{
+  "asOf": "2026-10-15",
+  "window": {
+    "from": "2025-10-15",
+    "to": "2026-10-15"
+  },
+  "entries": [
+    {
+      "id": "nitesh-residency",
+      "company": "Nitesh Residency Hotels Private Limited / Ritz-Carlton Bengaluru",
+      "sector": "Luxury hospitality",
+      "listing": "Private",
+      "eventDate": "2025-11-11",
+      "direction": "Reported new controlling investment",
+      "status": "Signed acquisition reported; completion not independently verified",
+      "stakePercent": null,
+      "reportedStakeRange": "51–55%",
+      "inWindow": true,
+      "summary": "Economic Times reported a signed Blackstone purchase of up to 55% in the property-owning company, with closing expected during the quarter. The estimated Rs 600–700 crore payment implies a Rs 1,200–1,400 crore property valuation. April 2026 industry reporting describes the acquisition as validation of Nitesh's strategy but is not primary closing proof.",
+      "caveats": [
+        "Do not claim completed or present 55% as final verified ownership.",
+        "This is equity in Nitesh Residency Hotels, not equity in Marriott International, the hotel operator.",
+        "Original report says Blackstone declined comment."
+      ],
+      "confidence": "Medium / reported signed",
+      "sources": [
+        {
+          "publisher": "Economic Times",
+          "date": "2025-11-11",
+          "url": "https://economictimes.indiatimes.com/industry/services/property-/-cstruction/us-based-investment-firm-blackstone-to-acquire-majority-in-ritz-carlton-bengaluru-from-nitesh-land/articleshow/125231872.cms?from=mdr",
+          "type": "Original reporting",
+          "detail": "Names Nitesh Residency Hotel entity and signed deal expected to close."
+        },
+        {
+          "publisher": "GRI Institute",
+          "date": "2026-04-05",
+          "url": "https://news.griinstitute.org/en/real-estate/nitesh-shetty-nitesh-land-multi-city-institutional-platform-2028",
+          "type": "Industry reporting",
+          "detail": "Refers to acquisition up to 55%; not independent primary completion evidence."
+        }
+      ]
+    },
+    {
+      "id": "galaxy-infra",
+      "company": "Galaxy Infra Creations Private Limited",
+      "sector": "Retail mall and hotel property",
+      "listing": "Private subsidiary target",
+      "eventDate": "2026-09-09",
+      "direction": "Indirect acquisition through Nexus Select Trust",
+      "status": "Proposed / signed acquisition; closing not established",
+      "stakePercent": null,
+      "targetAcquiredPercent": 100,
+      "inWindow": true,
+      "summary": "Blackstone-sponsored Nexus Select Trust agreed to acquire all shares in Galaxy Infra Creations, owner/developer of a 0.5 million sq ft mall and 164-key Hyatt Regency under construction in Guwahati. Purchase consideration is approximately Rs 1,600 crore.",
+      "caveats": [
+        "100% is Nexus' target-company acquisition, not Blackstone's direct economic ownership.",
+        "Operational responsibility follows construction completion and necessary approvals.",
+        "Do not add this consideration to Blackstone direct equity spending."
+      ],
+      "confidence": "High for proposed acquisition",
+      "sources": [
+        {
+          "publisher": "Khaitan & Co",
+          "date": "2026-09-10",
+          "url": "https://www.khaitanco.com/firm-matter/nexus-select-trust-acquisition-of-galaxy-infra-creations-private-limited",
+          "type": "Primary transaction adviser",
+          "detail": "Explicit proposed acquisition of 100% share capital, sellers Deepak Kayal, Manoj Kayal and others."
+        },
+        {
+          "publisher": "PTI / Economic Times",
+          "date": "2026-09-09",
+          "url": "https://economictimes.indiatimes.com/markets/digital-real-estate/realty-news/nexus-select-trust-to-acquire-galaxy-infra-creations-for-rs-1600-crore/articleshow/133968569.cms",
+          "type": "Independent reporting",
+          "detail": "Confirms exact equity target and consideration."
+        }
+      ]
+    },
+    {
+      "id": "diamond-plaza",
+      "company": "Diamond Plaza Mall property-owning entity",
+      "sector": "Retail real estate",
+      "listing": "Private subsidiary target",
+      "eventDate": "2026-04-07",
+      "direction": "Indirect equity acquisition through Nexus Select Trust SPV",
+      "status": "Proposed share purchase approved; latest closing not verified",
+      "stakePercent": null,
+      "targetAcquiredPercent": 100,
+      "inWindow": true,
+      "summary": "Nexusmalls Whitefield Private Limited, an SPV of Blackstone-sponsored Nexus Select Trust, agreed to acquire the entire shareholding of the Kolkata Diamond Plaza property-owning entity for approximately Rs 347.5 crore following restructuring.",
+      "caveats": [
+        "Exact post-restructuring target legal name not retrieved; do not fabricate it.",
+        "July 28 CRISIL still described a potential acquisition expected by Q3 FY27; headlines saying 'acquires' do not establish earlier completion.",
+        "Indirect portfolio expansion, not increased Blackstone unit ownership in Nexus."
+      ],
+      "confidence": "High for approved proposal",
+      "sources": [
+        {
+          "publisher": "Nexus Select Trust / NSE",
+          "date": "2026-05-12",
+          "url": "https://nsearchives.nseindia.com/corporate/NXST_12052026170146_Outcome.pdf",
+          "type": "Issuer filing",
+          "detail": "April 7 board approved SPA and transaction documents at Rs347.5 crore."
+        },
+        {
+          "publisher": "SCC Times / SAM adviser statement",
+          "date": "2026-04-11",
+          "url": "https://www.scconline.com/blog/post/2026/04/11/diamond-plaza-mall-sale-nexus-select-trust-sam/",
+          "type": "Legal adviser announcement republished",
+          "detail": "Proposed 100% shareholding sale by Super Diamond Enterprises and partners to Nexusmalls Whitefield."
+        },
+        {
+          "publisher": "CRISIL Ratings",
+          "date": "2026-07-28",
+          "url": "https://www.crisilratings.com/mnt/winshare/Ratings/RatingList/RatingDocs/NexusSelectTrust_July%2028_%202026_RR_400549.html",
+          "type": "Credit report",
+          "detail": "Still potential acquisition, expected Q3 FY27."
+        }
+      ]
+    },
+    {
+      "id": "horizon-industrial",
+      "company": "Horizon Industrial Parks Limited",
+      "sector": "Industrial and logistics real estate",
+      "listing": "Listed NSE: HORIZONIND",
+      "eventDate": "2026-08-24",
+      "direction": "IPO dilution, no promoter OFS",
+      "status": "Listed; primary issuer confirms exchange listing",
+      "stakePercent": null,
+      "inWindow": true,
+      "summary": "Blackstone-backed Horizon completed a Rs 2,600 crore entirely fresh-issue IPO in August 2026. This finances debt repayment and business purposes; it dilutes promoter percentage without a promoter offer for sale. Economic Times reported promoter-group holding moving from 88.7% to 75.4%.",
+      "caveats": [
+        "75.4% is reported promoter-group percentage, not independently confirmed current Blackstone aggregate; display as reported post-IPO if using.",
+        "Dilution is different from Blackstone selling existing shares.",
+        "The issuer homepage contains an apparently truncated BSE code; use NSE HORIZONIND rather than copy that code."
+      ],
+      "confidence": "High for listing and fresh-only IPO; medium for exact post-IPO percentage",
+      "sources": [
+        {
+          "publisher": "Horizon Industrial Parks",
+          "date": null,
+          "url": "https://www.hiparks.com/",
+          "type": "Issuer primary",
+          "detail": "Homepage explicitly says officially listed NSE HORIZONIND."
+        },
+        {
+          "publisher": "Horizon Industrial Parks",
+          "date": "2026-08-12",
+          "url": "https://www.hiparks.com/press-release/horizon-industrial-parks-limiteds-initial-public-offer-to-open-on-monday-august-17-2026",
+          "type": "Primary IPO release",
+          "detail": "Offer dates, RHP August11, operating network and issue terms."
+        },
+        {
+          "publisher": "Mint",
+          "date": "2026-08-12",
+          "url": "https://www.livemint.com/market/ipo/horizon-industrial-parks-ipo-price-band-set-at-rs-57-60-per-share-check-key-dates-issue-details-11786503124476.html",
+          "type": "Independent reporting",
+          "detail": "Rs2600 crore entirely fresh issue, no OFS."
+        },
+        {
+          "publisher": "Economic Times",
+          "date": "2026-08-17",
+          "url": "https://m.economictimes.com/markets/ipos/fpos/can-horizon-parks-ipo-deliver-long-term-growth-for-high-risk-investors/articleshow/133284185.cms",
+          "type": "Independent reporting",
+          "detail": "Promoter dilution 88.7% to75.4%."
+        }
+      ]
+    },
+    {
+      "id": "vision-softech",
+      "company": "Vision Softech Facilities Private Limited",
+      "sector": "Industrial park development",
+      "listing": "Private investee of listed Horizon",
+      "eventDate": "2026",
+      "eventDateMeaning": "Acquired after June30; included in August11 RHP network",
+      "direction": "Indirect minority acquisition through Horizon Industrial Parks",
+      "status": "Acquired according to IPO coverage and September issuer-result summaries",
+      "stakePercent": null,
+      "targetAcquiredPercent": 49,
+      "inWindow": true,
+      "summary": "Horizon acquired 49% in Vision Softech, which holds a 100-acre Narsapura Bengaluru land parcel with 2.55 million sq ft development potential.",
+      "caveats": [
+        "49% is Horizon's interest, not Blackstone's direct percentage.",
+        "Exact closing date/consideration not retrieved.",
+        "Accessible crosschecks repeat IPO information; primary full RHP should be retained for future audit."
+      ],
+      "confidence": "Medium-high for 49%; exact date unavailable",
+      "sources": [
+        {
+          "publisher": "Mint",
+          "date": "2026-08-12",
+          "url": "https://www.livemint.com/market/ipo/horizon-industrial-parks-ipo-price-band-set-at-rs-57-60-per-share-check-key-dates-issue-details-11786503124476.html",
+          "type": "Independent reporting",
+          "detail": "49% stake and network expansion."
+        },
+        {
+          "publisher": "Business Today",
+          "date": "2026-08-12",
+          "url": "https://www.businesstoday.in/amp/markets/ipo-corner/story/horizon-industrial-parks-ipo-opens-on-august-17-check-price-band-issue-size-key-details-548674-2026-08-12",
+          "type": "Independent reporting",
+          "detail": "49% Vision Softech at Narsapura corroborated."
+        },
+        {
+          "publisher": "Capital Market",
+          "date": "2026-08-16",
+          "url": "https://www.capitalmarket.com/pub/nim/nimshow.asp?code=96371",
+          "type": "IPO analysis",
+          "detail": "Acquired49%,100-acreparcel,2.55msf."
+        }
+      ]
+    },
+    {
+      "id": "bagmane-prime",
+      "company": "Bagmane Prime Office REIT",
+      "sector": "Office real estate",
+      "listing": "Listed REIT",
+      "eventDate": "2026-05-14",
+      "direction": "IPO partial monetisation through Blackstone OFS",
+      "status": "Listed; Blackstone offer for sale completed with IPO",
+      "stakePercent": null,
+      "inWindow": true,
+      "summary": "The May 2026 IPO included approximately Rs 1,015 crore offer for sale by Blackstone-backed BREP Asia III India Holding Co VIII, alongside fresh fundraising. Blackstone originally entered Bagmane in December 2024, before this review window.",
+      "caveats": [
+        "OFS is a stake sale, not increased investment.",
+        "Blackstone’s pre-IPO 7% interests in Bagmane Developers and Bagmane Rio are different from its percentage of the listed REIT.",
+        "Current REIT ownership was not verified; pre-IPO reporting expected above 3% after listing."
+      ],
+      "confidence": "High for IPO/OFS; current percentage unverified",
+      "sources": [
+        {
+          "publisher": "Bagmane Prime Office REIT",
+          "date": "2026",
+          "url": "https://www.bagmanereit.com/media/investor_reports/Offer_Document.pdf",
+          "type": "Issuer offer document",
+          "detail": "Primary ownership/transactiondocument;searchindexconfirmsBlackstoneequityinHoldCoandSPV;fullPDFtoo largeforwebopen."
+        },
+        {
+          "publisher": "Mingtiandi",
+          "date": "2026-05-17",
+          "url": "https://www.mingtiandi.com/real-estate/finance/blackstone-backed-bagmane-reit-gains-3-7-in-india-ipo-debut/",
+          "type": "Independent reporting",
+          "detail": "Listing and Rs10.2billion Blackstone OFS."
+        },
+        {
+          "publisher": "Reuters",
+          "date": "2026-07-23",
+          "url": "https://www.reuters.com/legal/transactional/blackstones-quarterly-profit-gets-boost-asset-pile-ai-investment-gains-2026-07-23/",
+          "type": "Independent reporting",
+          "detail": "Blackstone completed Bagmane listing in secondquarter."
+        },
+        {
+          "publisher": "NDTV Profit",
+          "date": "2026-04-28",
+          "url": "https://www.ndtvprofit.com/markets/blackstone-backed-bagmane-prime-office-reit-to-launch-rs-3-405-crore-ipo-on-may-5-11419301",
+          "type": "Independent reporting",
+          "detail": "ProposedfreshproceedsacquisitionsLuxorand93%BagmaneRio."
+        }
+      ]
+    },
+    {
+      "id": "kelzai-eco",
+      "company": "Kelzai Eco Reserves Private Limited",
+      "sector": "Resort and branded villa development",
+      "listing": "Private subsidiary target of listed Ventive",
+      "eventDate": "2026-07-09",
+      "direction": "Indirect equity acquisition through Ventive Hospitality",
+      "status": "SPA signed / boardapproved; latest exact closing notverified",
+      "stakePercent": null,
+      "targetAcquiredPercent": 100,
+      "inWindow": true,
+      "summary": "Blackstone/Panchshil-backed Ventive signed to acquire all equity and preference capital of Kelzai for Rs 281.88 crore, obtaining roughly 420 acres of resort property in the Mumbai Metropolitan Region.",
+      "caveats": [
+        "Ventive buying a subsidiary does not mean Blackstone increased its percentage in Ventive.",
+        "No primary completion filing retrieved; retain signed/approved status."
+      ],
+      "confidence": "Medium-high for transaction; primaryclosingpending",
+      "sources": [
+        {
+          "publisher": "VCCircle",
+          "date": "2026-07-09",
+          "url": "https://www.vccircle.com/blackstonebacked-ventive-hospitality-to-acquire-western-india-resort",
+          "type": "Independent reporting",
+          "detail": "Ventive resort acquisition agreement."
+        },
+        {
+          "publisher": "ICICI Direct",
+          "date": "2026-08",
+          "url": "https://www.icicidirect.com/research/equity/rapid-results/ventive-hospitality-ltd",
+          "type": "Broker analysis ofissuerresults",
+          "detail": "July9SPA,100%Kelzai,Rs2818.80million,420acres."
+        },
+        {
+          "publisher": "Trade Brains",
+          "date": "2026-07-09",
+          "url": "https://tradebrains.in/hospitality-stock-jumps-after-company-to-acquire-100-stake-in-kelzai-eco-reserves-for-282-cr/",
+          "type": "Secondaryfinancialreporting",
+          "detail": "All equityandpreferencecapitalcashpurchase."
+        }
+      ]
+    }
+  ],
+  "excludedOrHistorical": [
+    {
+      "company": "TaskUs Inc.",
+      "status": "2025 take-private failed; retain only as existing global Blackstone exposure with Indian operations",
+      "eventDate": "2025-10-08",
+      "inWindow": false,
+      "detail": "Shareholders rejected the proposed Blackstone/co-founder take-private on October 8, before the review window. The March 2026 annual report confirms termination in October 2025. Do not claim a completed last-year acquisition.",
+      "sources": [
+        {
+          "publisher": "TaskUs",
+          "url": "https://ir.taskus.com/news-releases/news-release-details/taskus-inc-announces-results-special-meeting-stockholders-and",
+          "date": "2025-10-08"
+        },
+        {
+          "publisher": "SEC / TaskUs10K",
+          "url": "https://www.sec.gov/Archives/edgar/data/1829864/000182986426000012/task-20251231.htm",
+          "date": "2026-03-05"
+        }
+      ]
+    },
+    {
+      "company": "Blackstone–Panchshil NaviMumbai hyperscale datacentre",
+      "status": "Prewindow development plan; not new targetcompanyequity event",
+      "eventDate": "2025-02-25",
+      "inWindow": false,
+      "detail": "The Rs 20,000 crore development plan was reported in February 2025, before this window. Development spending is different from buying target-company equity.",
+      "sources": [
+        {
+          "publisher": "IndianWeb2",
+          "url": "https://www.indianweb2.com/2025/02/blackstone-panchshil-to-set-up-indias.html",
+          "date": "2025-02-25"
+        }
+      ]
+    },
+    {
+      "company": "ESR India eightwarehouseparkportfolio",
+      "status": "Blackstone reportedbidder; Brookfieldwon",
+      "eventDate": "2026-10-07",
+      "inWindow": true,
+      "detail": "Brookfield won and announced Rs 4,300 crore for acquisition and future development. Blackstone was reported as another bidder, not the buyer.",
+      "sources": [
+        {
+          "publisher": "FinancialExpress",
+          "url": "https://www.financialexpress.com/business/news-brookfield-inks-rs-4-3k-cr-deal-for-esr-warehouse-portfolio-4355932/",
+          "date": "2026-10-07"
+        }
+      ]
+    },
+    {
+      "company": "Horizon industrial subsidiary consolidations",
+      "status": "Olderandrelatedpartyrestructuringsnotfullydated",
+      "detail": "IPO records list subsidiary acquisitions in FY25/FY26 and amalgamations. These broad fiscal periods do not prove last-12-month timing. Do not count 35 related-party transfers as 35 fresh Blackstone investments. The full January 2026 DRHP exceeded the web tool PDF limit.",
+      "sources": [
+        {
+          "publisher": "SEBI",
+          "url": "https://www.sebi.gov.in/sebi_data/attachdocs/jan-2026/1767598214527_1051.pdf",
+          "date": "2026-01"
+        },
+        {
+          "publisher": "Groww",
+          "url": "https://groww.in/ipo/horizon-industrial-parks-ipo",
+          "date": null
+        }
+      ]
+    }
+  ]
+}

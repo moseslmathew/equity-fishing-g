@@ -1,0 +1,2230 @@
+{
+  "id": "blackstone",
+  "name": "Blackstone",
+  "asOf": "2026-10-15",
+  "checkedAt": "2026-10-15T16:45:47.063036+00:00",
+  "windowStart": "2025-10-15",
+  "windowEnd": "2026-10-15",
+  "coverage": "Publicly disclosed Indian equity and REIT exposure, meaningful portfolio-company acquisitions, relevant global targets linked to Indian portfolio platforms, and separately labelled reported interest. Older holdings remain in the company view; the timeline covers disclosures within the one-year window. This is a researched coverage set, not a complete beneficial-ownership register.",
+  "limitations": [
+    "Private-company disclosures, below-threshold trades and layered fund structures prevent a guarantee of every major or minor transaction. No unverified position is presented as confirmed ownership.",
+    "Transaction status follows the strongest evidence available: announced, approved, completed, reported or timing uncertain. A report date or confirmation date may differ from closing; approximate dates are explicitly labelled.",
+    "Primary company, exchange and regulator documents are preferred and cross-checked with rating reports or financial journalism where available. Some items rely on reporting or a single originating report; source independence and retrieval gaps are noted.",
+    "Percentages are dated and refer to the named legal holder. Acquired subsidiary percentages, consortium ownership and planned warrant conversion are not Blackstone’s direct current equity stakes. Numeric sorting excludes prospective or uncalculated look-through percentages.",
+    "Client holdings managed by ASK or SageOne are not automatically Blackstone-owned corporate investments. Asset purchases, debt instruments and future capex are separated from equity transactions.",
+    "No automatic daily refresh is enabled for this research. The checked date shows the actual research snapshot; newer news requires a new review.",
+    "The company count includes current holdings, indirect targets, exited positions and a clearly labelled watchlist. It is not a count of current Blackstone-owned companies. Timeline records can include proposal, approval and completion stages of the same deal and must not be summed as separate capital deployments."
+  ],
+  "sources": {
+    "s1": {
+      "title": "Federal Bank — warrant allotment filing",
+      "url": "https://www.federal.bank.in/documents/10180/1143981881/FBL_Reg%2B30_%2BAllotment%2Bof%2Bwarrants_1600226_final%2Bfiled.pdf/12937abb-4529-1e85-e9f6-e7e31283102f?t=1771235386744",
+      "publisher": "Federal Bank",
+      "published": "16 Feb 2026",
+      "kind": "primary"
+    },
+    "s2": {
+      "title": "Federal Bank — strategic investment announcement",
+      "url": "https://www.federal.bank.in/documents/d/guest/federal-bank-announces-landmark-strategic-investment-1",
+      "publisher": "Federal Bank",
+      "published": "25 Oct 2025",
+      "kind": "primary"
+    },
+    "s3": {
+      "title": "RBI approval for Federal Bank investment",
+      "url": "https://www.business-standard.com/amp/industry/banking/blackstone-rbi-approval-federal-bank-stake-foreign-investment-share-126020501905_1.html",
+      "publisher": "Business Standard",
+      "published": "5 Feb 2026",
+      "kind": "reporting"
+    },
+    "s4": {
+      "title": "Aadhar — completion of promoter transactions",
+      "url": "https://nsearchives.nseindia.com/corporate/AHFL2021_26022026181610_Reg_30-_Completion_of_transactions.pdf",
+      "publisher": "Aadhar / NSE",
+      "published": "26 Feb 2026",
+      "kind": "primary"
+    },
+    "s5": {
+      "title": "CCI approval of Aadhar acquisition",
+      "url": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2187554&lang=2&reg=48",
+      "publisher": "CCI / PIB",
+      "published": "7 Nov 2025",
+      "kind": "primary"
+    },
+    "s6": {
+      "title": "Aadhar promoter transfer completion report",
+      "url": "https://informistmedia.com/EquityWire/45807/aadhar-housing-promoters-conclude-share-purchase-agreements-control-changes",
+      "publisher": "Informist",
+      "published": "Feb 2026",
+      "kind": "reporting"
+    },
+    "s7": {
+      "title": "Aster — merger completion press releases",
+      "url": "https://www.asterqualitycare.com/investors/aster-qcil-merger/press-release",
+      "publisher": "Aster DM Quality Care",
+      "published": "Jul 2026",
+      "kind": "primary"
+    },
+    "s8": {
+      "title": "Aster DM Quality Care — ownership and credit rationale",
+      "url": "https://www.crisilratings.com/mnt/winshare/Ratings/RatingList/RatingDocs/AsterDMQualityCareLimited_July%2029_%202026_RR_400641.html",
+      "publisher": "CRISIL Ratings",
+      "published": "29 Jul 2026",
+      "kind": "primary"
+    },
+    "s9": {
+      "title": "Aster–Quality Care merger begins operations",
+      "url": "https://m.economictimes.com/industry/healthcare/biotech/healthcare/aster-dm-quality-care-launches-merger-of-aster-dm-healthcare-and-blackstones-quality-care-india-ushers-in-a-new-era-in-healthcare/articleshow/132139006.cms",
+      "publisher": "Economic Times",
+      "published": "2 Jul 2026",
+      "kind": "reporting"
+    },
+    "s10": {
+      "title": "Mphasis — September 2026 shareholding",
+      "url": "https://www.mphasis.com/content/dam/mphasis-com/global/en/investors/governance/shareholding-pattern-30-sep-2026.pdf",
+      "publisher": "Mphasis",
+      "published": "30 Sep 2026",
+      "kind": "primary"
+    },
+    "s11": {
+      "title": "Mphasis — September 2025 shareholding",
+      "url": "https://www.mphasis.com/content/dam/mphasis-com/global/en/investors/governance/submission-of-shareholding-pattern-for-the-quarter-ended.pdf",
+      "publisher": "Mphasis",
+      "published": "30 Sep 2025",
+      "kind": "primary"
+    },
+    "s12": {
+      "title": "Mphasis — December 2025 shareholding",
+      "url": "https://www.mphasis.com/content/dam/mphasis-com/global/en/investors/governance/shareholding-pattern-31-dec-2025.pdf",
+      "publisher": "Mphasis",
+      "published": "31 Dec 2025",
+      "kind": "primary"
+    },
+    "s13": {
+      "title": "Mphasis — November block-sale reporting",
+      "url": "https://upstox.com/news/market-news/stocks/mphasis-block-deal-blackstone-to-sell-1-8-crore-shares-via-open-market-co-clarifies/article-184819/",
+      "publisher": "Upstox News",
+      "published": "18 Nov 2025",
+      "kind": "reporting"
+    },
+    "s14": {
+      "title": "EPL — Blackstone exit report",
+      "url": "https://www.moneycontrol.com/news/business/markets/blackstone-backed-epsilon-bidco-exits-epl-for-rs-2-032-crore-hdfc-life-buys-rs-74-crore-worth-shares-in-sbfc-finance-14020243.html",
+      "publisher": "Moneycontrol",
+      "published": "Sep 2026",
+      "kind": "reporting"
+    },
+    "s15": {
+      "title": "EPL — completed stake sale report",
+      "url": "https://www.mid-day.com/business/business-news/article/blackstone-group-exits-epl-offloads-2638-per-cent-stake-for-rs-2032-crore-23647931",
+      "publisher": "PTI / Mid-day",
+      "published": "2 Sep 2026",
+      "kind": "reporting"
+    },
+    "s16": {
+      "title": "Knowledge Realty — OFS completion filing",
+      "url": "https://nsearchives.nseindia.com/corporate/KRT_02092026191317_KRT-_SE_Announcement.pdf",
+      "publisher": "Knowledge Realty / NSE",
+      "published": "2 Sep 2026",
+      "kind": "primary",
+      "note": "Indexed primary filing; full document retrieval was unavailable. Check the cross-referenced reports."
+    },
+    "s17": {
+      "title": "Knowledge Realty — proposed Blackstone unit sale",
+      "url": "https://www.reuters.com/world/india/blackstone-offers-sell-up-25-indias-knowledge-reit-over-1-billion-2026-08-28/",
+      "publisher": "Reuters",
+      "published": "28 Aug 2026",
+      "kind": "reporting"
+    },
+    "s18": {
+      "title": "Knowledge Realty — OFS subscription and retained stake",
+      "url": "https://www.financialexpress.com/business/industry-blackstones-rs-12000-cr-ofs-in-knowledge-realty-trust-fully-subscribed-4329850/",
+      "publisher": "Financial Express",
+      "published": "1 Sep 2026",
+      "kind": "reporting"
+    },
+    "s19": {
+      "title": "Knowledge Realty — seller’s legal adviser statement",
+      "url": "https://www.lexology.com/library/detail.aspx?g=b8035654-eff1-4a3c-85ca-8addf78611b3",
+      "publisher": "Cyril Amarchand Mangaldas / Lexology",
+      "published": "Sep 2026",
+      "kind": "primary"
+    },
+    "s20": {
+      "title": "Nexus — board outcome and Runwal Gardens transaction",
+      "url": "https://www.nexusselecttrust.com/resources/assets/pdf/Outcome-of-BM-23.02.2026.pdf",
+      "publisher": "Nexus Select Trust",
+      "published": "23 Feb 2026",
+      "kind": "primary"
+    },
+    "s21": {
+      "title": "Nexus — FY26 earnings presentation and sponsor holding",
+      "url": "https://www.nexusselecttrust.com/resources/assets/pdf/NXST-Press-Release-and-Earnings-Presentation-Q4-FY26.pdf",
+      "publisher": "Nexus Select Trust",
+      "published": "FY2025–26; ownership as of 31 Mar 2026",
+      "kind": "primary"
+    },
+    "s22": {
+      "title": "Runwal Gardens mall transaction cross-check",
+      "url": "https://www.theweek.in/wire-updates/business/2026/02/23/nexus-select-trust-to-pick-50-pc-stake-in-runwal-enterprises-upcoming-mall-in-mumbai-for-rs-434-cr.html",
+      "publisher": "PTI / The Week",
+      "published": "23 Feb 2026",
+      "kind": "reporting"
+    },
+    "s23": {
+      "title": "Ventive — Finest-VN acquisition completion",
+      "url": "https://www.ventivehospitality.com/wp-content/uploads/2024/07/VHL_Finest-VN-Acquistion_17.02.2026.pdf",
+      "publisher": "Ventive Hospitality",
+      "published": "17 Feb 2026",
+      "kind": "primary"
+    },
+    "s24": {
+      "title": "Ventive — Soho House India acquisition proposal",
+      "url": "https://www.ventivehospitality.com/wp-content/uploads/2024/07/VHL_Intimation-Acquisition-Soho-House-Press-Release.pdf",
+      "publisher": "Ventive Hospitality",
+      "published": "16 Oct 2025",
+      "kind": "primary"
+    },
+    "s25": {
+      "title": "Ventive — resort deal and Blackstone ownership context",
+      "url": "https://www.vccircle.com/blackstonebacked-ventive-hospitality-to-acquire-western-india-resort",
+      "publisher": "VCCircle",
+      "published": "9 Jul 2026",
+      "kind": "reporting"
+    },
+    "s26": {
+      "title": "Ventive — Soham equity acquisition and convertible funding",
+      "url": "https://www.ventivehospitality.com/wp-content/uploads/2024/07/VHL_OCD_ISSUE_SLVPL.pdf",
+      "publisher": "Ventive Hospitality",
+      "published": "18 Nov 2025",
+      "kind": "primary"
+    },
+    "s27": {
+      "title": "Ventive — further Hilton Goa funding report",
+      "url": "https://www.sahi.com/news/ventive-hospitality-invests-50-crore-in-hilton-goa-operator-via-convertible-debentures-1418405-PE1_",
+      "publisher": "Sahi News",
+      "published": "3 Jun 2026",
+      "kind": "reporting"
+    },
+    "s28": {
+      "title": "IGI — June 2026 shareholding pattern",
+      "url": "https://investor.igi.org/wp-content/uploads/2026/07/SHP-Website.pdf",
+      "publisher": "International Gemological Institute",
+      "published": "30 Jun 2026",
+      "kind": "primary"
+    },
+    "s29": {
+      "title": "IGI — AGL acquisition announcement",
+      "url": "https://investor.igi.org/wp-content/uploads/2026/01/Upload_WOS.pdf",
+      "publisher": "International Gemological Institute",
+      "published": "31 Jan 2026",
+      "kind": "primary"
+    },
+    "s30": {
+      "title": "IGI — acquisition of American Gemological Laboratories",
+      "url": "https://www.igi.org/igi-acquires-agl-expanding-its-global-footprint-in-colored-gemstone-certification/",
+      "publisher": "International Gemological Institute",
+      "published": "2026 company announcement",
+      "kind": "primary"
+    },
+    "s31": {
+      "title": "IGI — shareholding cross-check",
+      "url": "https://www.screener.in/company/IGIL/consolidated/",
+      "publisher": "Screener",
+      "published": "Reviewed 15 Oct 2026",
+      "kind": "reporting"
+    },
+    "s32": {
+      "title": "R Systems — earnings release confirming Novigo completion",
+      "url": "https://nsearchives.nseindia.com/corporate/RSYSTEMS_10022026230905_RSYSTEMS.pdf",
+      "publisher": "R Systems / NSE",
+      "published": "10 Feb 2026",
+      "kind": "primary"
+    },
+    "s33": {
+      "title": "R Systems — 2025 annual report",
+      "url": "https://media.rsystems.com/wp-content/uploads/2026/05/RSI-Annual-Report-2025.pdf",
+      "publisher": "R Systems",
+      "published": "2026 publication",
+      "kind": "primary"
+    },
+    "s34": {
+      "title": "R Systems — ownership and business credit rationale",
+      "url": "https://www.crisilratings.com/mnt/winshare/Ratings/RatingList/RatingDocs/RSystemsInternationalLimited_July%2007_%202026_RR_399089.html",
+      "publisher": "CRISIL Ratings",
+      "published": "7 Jul 2026",
+      "kind": "primary"
+    },
+    "s35": {
+      "title": "R Systems — company announcement of Novigo completion",
+      "url": "https://finance.yahoo.com/news/r-systems-completes-acquisition-novigo-102600375.html",
+      "publisher": "Business Wire / Yahoo Finance",
+      "published": "Nov 2025",
+      "kind": "primary",
+      "note": "Company-originated release via Business Wire; not a separate independent confirmation."
+    },
+    "s36": {
+      "title": "Kolte-Patil — ownership already established before review window",
+      "url": "https://www.careratings.com/upload/CompanyFiles/PR/202510141009_Kolte-Patil_Developers_Limited.pdf",
+      "publisher": "CARE Ratings",
+      "published": "8 Oct 2025 rationale",
+      "kind": "primary"
+    },
+    "s37": {
+      "title": "Kolte-Patil — 40% ownership and business outlook",
+      "url": "https://www.crisil.com/mnt/winshare/Ratings/RatingList/RatingDocs/Kolte_PatilDevelopersLimited_March%2025_%202026_RR_391883.html",
+      "publisher": "CRISIL Ratings",
+      "published": "25 Mar 2026",
+      "kind": "primary"
+    },
+    "s38": {
+      "title": "Kolte-Patil — quarterly issuer presentation",
+      "url": "https://bsmedia.business-standard.com/_media/bs/data/announcements/bse/05022026/c325c3bd-d272-4ec0-aea1-219258888683.pdf",
+      "publisher": "Kolte-Patil / BSE mirror",
+      "published": "5 Feb 2026",
+      "kind": "primary"
+    },
+    "s39": {
+      "title": "Up to $600 million equity across investors; further $600 million debt intended.",
+      "url": "https://www.blackstone.com/news/press/blackstone-leads-funding-of-over-1-billion-to-neysa-to-work-towards-building-indias-leading-ai-infrastructure-platform/",
+      "publisher": "Blackstone",
+      "published": "2026-02-16",
+      "kind": "primary"
+    },
+    "s40": {
+      "title": "Control acquisition through BCP Asia II Topco V and Asia II Topco XIV approved.",
+      "url": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2263411&lang=1&reg=3",
+      "publisher": "CCI / PIB",
+      "published": "2026-05-20",
+      "kind": "primary"
+    },
+    "s41": {
+      "title": "Reported $200 million milestone tranche within larger round; companies declined comment.",
+      "url": "https://www.livemint.com/companies/news/neysa-200-million-funding-blackstone-ai-cloud-gpu-india-11791176005110.html",
+      "publisher": "Mint",
+      "published": "2026-10-05",
+      "kind": "reporting"
+    },
+    "s42": {
+      "title": "Acquisition, 600 MW planned pipeline and continued Blackstone/CPPIB support.",
+      "url": "https://airtrunk.com/zh-hans/airtrunk-acquires-lumina-cloudinfra/",
+      "publisher": "AirTrunk",
+      "published": "2026-04-20",
+      "kind": "primary"
+    },
+    "s43": {
+      "title": "Proposed $30 billion / 5 GW development by 2030.",
+      "url": "https://airtrunk.com/zh-hans/blackstone-backed-airtrunk-invest-us30bn-5gw-india/",
+      "publisher": "AirTrunk",
+      "published": "2026-06-05",
+      "kind": "primary"
+    },
+    "s44": {
+      "title": "Confirms programme and April entry through Lumina purchase.",
+      "url": "https://www.reuters.com/world/india/australias-airtrunk-invest-30-billion-india-by-2030-2026-06-05/",
+      "publisher": "Reuters",
+      "published": "2026-06-05",
+      "kind": "reporting"
+    },
+    "s45": {
+      "title": "Names acquiring Blackstone vehicle, 60% ownership, service contract and Gurugram expansion.",
+      "url": "https://www.crisilratings.com/mnt/winshare/Ratings/RatingList/RatingDocs/GlobetrottersEducationalInnoventionsPrivateLimited_September%2007_%202026_RR_403235.html",
+      "publisher": "CRISIL Ratings",
+      "published": "2026-09-07",
+      "kind": "primary"
+    },
+    "s46": {
+      "title": "February 2026 private-equity review lists Blackstone investment in Globetrotters; supports transaction occurrence, not exact closing date.",
+      "url": "https://jmfl.com/Publications",
+      "publisher": "JM Financial",
+      "published": "2026-03-06",
+      "kind": "reporting"
+    },
+    "s47": {
+      "title": "Executed September 30; 100% partnership interest; regulatory conditions explicit.",
+      "url": "https://www.amsshardul.com/shardul-amarchand-mangaldas-co-advises-sageone-investment-managers-and-its-founder-samit-vartak-on-acquisition-by-ask-asset-management/",
+      "publisher": "Shardul Amarchand Mangaldas",
+      "published": "2026-10-07",
+      "kind": "primary"
+    },
+    "s48": {
+      "title": "Definitive agreements and Blackstone majority ownership of ASK.",
+      "url": "https://www.business-standard.com/amp/content/press-releases-ani/ask-investment-managers-to-acquire-sageone-samit-vartak-to-be-cio-equities-of-the-combined-platform-126100600015_1.html?isa=yes",
+      "publisher": "Company announcement via ANI / Business Standard",
+      "published": "2026-10-05",
+      "kind": "primary"
+    },
+    "s49": {
+      "title": "Body says agreement subject to regulatory approval; do not infer completed.",
+      "url": "https://www.moneycontrol.com/news/business/markets/blackstone-backed-ask-completes-acquisition-of-sageone-samit-vartak-becomes-cio-14049983.html",
+      "publisher": "Moneycontrol",
+      "published": "2026-10-12",
+      "kind": "reporting"
+    },
+    "s50": {
+      "title": "Confirms significant Blackstone investment in 2025 and expansion strategy.",
+      "url": "https://aceinsurance.com/about/",
+      "publisher": "Ace Insurance",
+      "published": "Publication date not specified; reviewed 15 Oct 2026",
+      "kind": "primary"
+    },
+    "s51": {
+      "title": "Majority stake reported; approximately $400 million investment.",
+      "url": "https://timesofindia.indiatimes.com/business/india-business/us-fund-buys-400mn-stake-in-insurance-broker-ace/articleshow/124797443.cms",
+      "publisher": "Times of India",
+      "published": "2025-10-25",
+      "kind": "reporting"
+    },
+    "s52": {
+      "title": "Reports 65%, founders 35%; management appointments.",
+      "url": "https://www.vccircle.com/aceinsurance-names-former-mercer-exec-as-president-after-blackstone-takeover",
+      "publisher": "VCCircle",
+      "published": "2025-11-24",
+      "kind": "reporting"
+    },
+    "s53": {
+      "title": "Earlier report places 70% acquisition before review window; date/stake conflict retained.",
+      "url": "https://asiainsurancepost.com/archives/70832",
+      "publisher": "Asia Insurance Post",
+      "published": "2025-09-10",
+      "kind": "reporting"
+    },
+    "s54": {
+      "title": "BXPE partner, total consortium terms and closing conditions.",
+      "url": "https://www.blackstone.com/news/press/aditya-birla-group-the-times-of-india-group-bolt-ventures-and-blackstone-acquire-cricket-franchise-royal-challengers-bengaluru/",
+      "publisher": "Blackstone",
+      "published": "2026-03-24",
+      "kind": "primary"
+    },
+    "s55": {
+      "title": "Confirms buyer consortium and transaction valuation.",
+      "url": "https://www.reuters.com/sports/cricket/ipl-cricket-team-royal-challengers-bengaluru-sold-consortium-178-billion-2026-03-24/",
+      "publisher": "Reuters",
+      "published": "2026-03-24",
+      "kind": "reporting"
+    },
+    "s56": {
+      "title": "50%, end-December completion and management-contract distinction.",
+      "url": "https://www.livemint.com/companies/blackstone-taj-aravali-udaipur-50-stake-for-100-mn-hotels-tourism-hospitality-11767897674327.html",
+      "publisher": "Mint",
+      "published": "2026-01-09",
+      "kind": "reporting"
+    },
+    "s57": {
+      "title": "Confirms 50% late December 2025 transaction.",
+      "url": "https://economictimes.indiatimes.com/industry/services/hotels-/-restaurants/investors-see-room-for-boom-quietly-check-into-hospitality/articleshow/127826847.cms?from=mdr",
+      "publisher": "Economic Times",
+      "published": "2026-02-01",
+      "kind": "reporting"
+    },
+    "s58": {
+      "title": "Names seller Ishaan Clubs & Hotels and completion.",
+      "url": "https://in.marketscreener.com/news/blackstone-inc-nyse-bx-acquired-50-stake-in-taj-aravali-resort-spa-udaipur-from-ishaan-clubs-ce7e59d3d081f725",
+      "publisher": "S&P Capital IQ via MarketScreener",
+      "published": "2026-01-09",
+      "kind": "reporting"
+    },
+    "s59": {
+      "title": "Lists AGS Health IPO fresh plus OFS draft submitted March 31, 2026.",
+      "url": "https://www.sebi.gov.in/sebi_data/attachdocs/apr-2026/1777548100843.pdf",
+      "publisher": "SEBI",
+      "published": "2026-04-30",
+      "kind": "primary"
+    },
+    "s60": {
+      "title": "Updated draft filing date, fresh/OFS split and BCP Asia II Topco VIII seller.",
+      "url": "https://www.moneycontrol.com/news/business/ipo/blackstone-owned-ags-health-files-updated-drhp-for-rs-4-800-crore-india-ipo-13998441.html",
+      "publisher": "Moneycontrol",
+      "published": "2026-08-08",
+      "kind": "reporting"
+    },
+    "s61": {
+      "title": "IPO draft filing crosscheck.",
+      "url": "https://economictimes.indiatimes.com/markets/ipos/fpos/blackstones-ags-health-files-updated-draft-papers-for-500-million-india-ipo/articleshow/133050913.cms",
+      "publisher": "Reuters via Economic Times",
+      "published": "2026-08-08",
+      "kind": "reporting"
+    },
+    "s62": {
+      "title": "Company history confirms Blackstone acquisition / PGP name.",
+      "url": "https://www.pgpfirst.com/about/pgp-overview-trusted-partner-glass-packaging/",
+      "publisher": "PGP Glass",
+      "published": "Publication date not specified; reviewed 15 Oct 2026",
+      "kind": "primary"
+    },
+    "s63": {
+      "title": "Advanced discussions; potential sale rather than completed transaction.",
+      "url": "https://economictimes.indiatimes.com/industry/indl-goods/svs/paper-/-wood-/-glass/-plastic/-marbles/brookfield-looks-to-buy-pgp-glass-for-up-to-1-5-bn-from-blackstone/articleshow/134219911.cms",
+      "publisher": "Economic Times",
+      "published": "2026-09-14",
+      "kind": "reporting"
+    },
+    "s64": {
+      "title": "Talks for 17–20% and $400–500 million; no confirmation.",
+      "url": "https://www.livemint.com/companies/news/blackstone-accord-software-investment-deal-11791801353150.html",
+      "publisher": "Mint",
+      "published": "2026-10-14",
+      "kind": "reporting"
+    },
+    "s65": {
+      "title": "Blackstone reported in bidding process.",
+      "url": "https://economictimes.indiatimes.com/industry/renewables/jsw-neo-blackstone-macquarie-among-suitors-for-blupine-energy/articleshow/133719186.cms",
+      "publisher": "Economic Times",
+      "published": "2026-09-03",
+      "kind": "reporting"
+    },
+    "s66": {
+      "title": "Current ownership description.",
+      "url": "https://www.vfsglobal.com/en/individuals/about.html",
+      "publisher": "VFS Global",
+      "published": "Publication date not specified; reviewed 15 Oct 2026",
+      "kind": "primary"
+    },
+    "s67": {
+      "title": "Current Blackstone majority ownership crosscheck.",
+      "url": "https://economictimes.indiatimes.com/nri/migrate/mobility-will-stay-resilient-despite-geopolitical-shocks-vfs-global-ceo/articleshow/133281735.cms?from=mdr",
+      "publisher": "Economic Times",
+      "published": "2026-08-17",
+      "kind": "reporting"
+    },
+    "s68": {
+      "title": "Majority acquisition announcement.",
+      "url": "https://www.blackstone.com/news/press/blackstone-to-acquire-majority-stake-in-simplilearn-a-leading-online-learning-platform/",
+      "publisher": "Blackstone",
+      "published": "2021-07-19",
+      "kind": "primary"
+    },
+    "s69": {
+      "title": "Advised Simplilearn majority stake sale.",
+      "url": "https://www.avendus.com/transactions/investment-banking/digital-technology-and-consumer/mergers-%26-acquisitions/avendus-capital-advises-simplilearn-on-its-majority-stake-sale-to-blackstone",
+      "publisher": "Avendus",
+      "published": "Publication date not specified; reviewed 15 Oct 2026",
+      "kind": "primary"
+    },
+    "s70": {
+      "title": "BXG-led $300 million round with TPG, ChrysCapital and existing investors.",
+      "url": "https://www.blackstone.com/news/press/blackstone-to-invest-in-xpressbees-indias-fastest-growing-express-logistics-company/",
+      "publisher": "Blackstone",
+      "published": "2022-02-09",
+      "kind": "primary"
+    },
+    "s71": {
+      "title": "Indian infrastructure platform expansion — strategy disclosure",
+      "url": "https://www.blackstone.com/news/press/blackstone-launches-apac-infrastructure-platform-hires-ami-momaya-to-lead-india/",
+      "publisher": "Blackstone",
+      "published": "2026-07-16",
+      "kind": "primary"
+    },
+    "s72": {
+      "title": "Control-oriented business building — strategy disclosure",
+      "url": "https://www.blackstone.com/news/press/blackstone-raises-its-largest-asia-private-equity-fund-at-13-1-billion/",
+      "publisher": "Blackstone",
+      "published": "2026-06-02",
+      "kind": "primary"
+    },
+    "s73": {
+      "title": "Scale in India alongside exits — strategy disclosure",
+      "url": "https://m.economictimes.com/news/company/corporate-trends/blackstone-has-100-billion-plans-for-india-in-5-years-says-coo-jonathan-gray/articleshow/134925980.cms",
+      "publisher": "Economic Times",
+      "published": "2026-10-14",
+      "kind": "reporting"
+    },
+    "s74": {
+      "title": "Jonathan Gray interview on India’s growth and investment priorities",
+      "url": "https://economictimes.indiatimes.com/markets/expert-view/blackstones-coo-highlights-indias-growth-potential-and-investment-opportunities-in-new-interview/articleshow/134929544.cms",
+      "publisher": "Economic Times",
+      "published": "14 Oct 2026",
+      "kind": "reporting"
+    },
+    "s75": {
+      "title": "Names Nitesh Residency Hotel entity and signed deal expected to close.",
+      "url": "https://economictimes.indiatimes.com/industry/services/property-/-cstruction/us-based-investment-firm-blackstone-to-acquire-majority-in-ritz-carlton-bengaluru-from-nitesh-land/articleshow/125231872.cms?from=mdr",
+      "publisher": "Economic Times",
+      "published": "2025-11-11",
+      "kind": "reporting"
+    },
+    "s76": {
+      "title": "Refers to acquisition up to 55%; not independent primary completion evidence.",
+      "url": "https://news.griinstitute.org/en/real-estate/nitesh-shetty-nitesh-land-multi-city-institutional-platform-2028",
+      "publisher": "GRI Institute",
+      "published": "2026-04-05",
+      "kind": "reporting"
+    },
+    "s77": {
+      "title": "Explicit proposed acquisition of 100% share capital, sellers Deepak Kayal, Manoj Kayal and others.",
+      "url": "https://www.khaitanco.com/firm-matter/nexus-select-trust-acquisition-of-galaxy-infra-creations-private-limited",
+      "publisher": "Khaitan & Co",
+      "published": "2026-09-10",
+      "kind": "primary"
+    },
+    "s78": {
+      "title": "Confirms exact equity target and consideration.",
+      "url": "https://economictimes.indiatimes.com/markets/digital-real-estate/realty-news/nexus-select-trust-to-acquire-galaxy-infra-creations-for-rs-1600-crore/articleshow/133968569.cms",
+      "publisher": "PTI / Economic Times",
+      "published": "2026-09-09",
+      "kind": "reporting"
+    },
+    "s79": {
+      "title": "April 7 board approved SPA and transaction documents at Rs 347.5 crore.",
+      "url": "https://nsearchives.nseindia.com/corporate/NXST_12052026170146_Outcome.pdf",
+      "publisher": "Nexus Select Trust / NSE",
+      "published": "2026-05-12",
+      "kind": "reporting"
+    },
+    "s80": {
+      "title": "Proposed 100% shareholding sale by Super Diamond Enterprises and partners to Nexusmalls Whitefield.",
+      "url": "https://www.scconline.com/blog/post/2026/04/11/diamond-plaza-mall-sale-nexus-select-trust-sam/",
+      "publisher": "SCC Times / SAM adviser statement",
+      "published": "2026-04-11",
+      "kind": "primary"
+    },
+    "s81": {
+      "title": "Still potential acquisition, expected Q 3 FY 27.",
+      "url": "https://www.crisilratings.com/mnt/winshare/Ratings/RatingList/RatingDocs/NexusSelectTrust_July%2028_%202026_RR_400549.html",
+      "publisher": "CRISIL Ratings",
+      "published": "2026-07-28",
+      "kind": "primary"
+    },
+    "s82": {
+      "title": "Homepage explicitly says officially listed NSE HORIZONIND.",
+      "url": "https://www.hiparks.com/",
+      "publisher": "Horizon Industrial Parks",
+      "published": "Publication date not specified; reviewed 15 Oct 2026",
+      "kind": "primary"
+    },
+    "s83": {
+      "title": "Offer dates, RHP August 11, operating network and issue terms.",
+      "url": "https://www.hiparks.com/press-release/horizon-industrial-parks-limiteds-initial-public-offer-to-open-on-monday-august-17-2026",
+      "publisher": "Horizon Industrial Parks",
+      "published": "2026-08-12",
+      "kind": "primary"
+    },
+    "s84": {
+      "title": "Rs 2600 crore entirely fresh issue, no OFS.",
+      "url": "https://www.livemint.com/market/ipo/horizon-industrial-parks-ipo-price-band-set-at-rs-57-60-per-share-check-key-dates-issue-details-11786503124476.html",
+      "publisher": "Mint",
+      "published": "2026-08-12",
+      "kind": "reporting"
+    },
+    "s85": {
+      "title": "Promoter dilution 88.7% to 75.4%.",
+      "url": "https://m.economictimes.com/markets/ipos/fpos/can-horizon-parks-ipo-deliver-long-term-growth-for-high-risk-investors/articleshow/133284185.cms",
+      "publisher": "Economic Times",
+      "published": "2026-08-17",
+      "kind": "reporting"
+    },
+    "s86": {
+      "title": "49% Vision Softech at Narsapura corroborated.",
+      "url": "https://www.businesstoday.in/amp/markets/ipo-corner/story/horizon-industrial-parks-ipo-opens-on-august-17-check-price-band-issue-size-key-details-548674-2026-08-12",
+      "publisher": "Business Today",
+      "published": "2026-08-12",
+      "kind": "reporting"
+    },
+    "s87": {
+      "title": "Acquired 49%,100-acreparcel,2.55 msf.",
+      "url": "https://www.capitalmarket.com/pub/nim/nimshow.asp?code=96371",
+      "publisher": "Capital Market",
+      "published": "2026-08-16",
+      "kind": "reporting"
+    },
+    "s88": {
+      "title": "Primary ownership/transactiondocument;searchindexconfirmsBlackstoneequityinHoldCoandSPV;fullPDFtoo largeforwebopen.",
+      "url": "https://www.bagmanereit.com/media/investor_reports/Offer_Document.pdf",
+      "publisher": "Bagmane Prime Office REIT",
+      "published": "2026",
+      "kind": "reporting"
+    },
+    "s89": {
+      "title": "Listing and Rs 10.2 billion Blackstone OFS.",
+      "url": "https://www.mingtiandi.com/real-estate/finance/blackstone-backed-bagmane-reit-gains-3-7-in-india-ipo-debut/",
+      "publisher": "Mingtiandi",
+      "published": "2026-05-17",
+      "kind": "reporting"
+    },
+    "s90": {
+      "title": "Blackstone completed Bagmane listing in secondquarter.",
+      "url": "https://www.reuters.com/legal/transactional/blackstones-quarterly-profit-gets-boost-asset-pile-ai-investment-gains-2026-07-23/",
+      "publisher": "Reuters",
+      "published": "2026-07-23",
+      "kind": "reporting"
+    },
+    "s91": {
+      "title": "ProposedfreshproceedsacquisitionsLuxorand 93%BagmaneRio.",
+      "url": "https://www.ndtvprofit.com/markets/blackstone-backed-bagmane-prime-office-reit-to-launch-rs-3-405-crore-ipo-on-may-5-11419301",
+      "publisher": "NDTV Profit",
+      "published": "2026-04-28",
+      "kind": "reporting"
+    },
+    "s92": {
+      "title": "July 9 SPA,100%Kelzai,Rs 2818.80 million,420 acres.",
+      "url": "https://www.icicidirect.com/research/equity/rapid-results/ventive-hospitality-ltd",
+      "publisher": "ICICI Direct",
+      "published": "2026-08",
+      "kind": "reporting"
+    },
+    "s93": {
+      "title": "All equityandpreferencecapitalcashpurchase.",
+      "url": "https://tradebrains.in/hospitality-stock-jumps-after-company-to-acquire-100-stake-in-kelzai-eco-reserves-for-282-cr/",
+      "publisher": "Trade Brains",
+      "published": "2026-07-09",
+      "kind": "reporting"
+    },
+    "s94": {
+      "title": "TaskUs — failed 2025 take-private / annual report",
+      "url": "https://ir.taskus.com/news-releases/news-release-details/taskus-inc-announces-results-special-meeting-stockholders-and",
+      "publisher": "TaskUs",
+      "published": "2025-10-08",
+      "kind": "primary"
+    },
+    "s95": {
+      "title": "TaskUs — failed 2025 take-private / annual report",
+      "url": "https://www.sec.gov/Archives/edgar/data/1829864/000182986426000012/task-20251231.htm",
+      "publisher": "SEC / TaskUs10K",
+      "published": "2026-03-05",
+      "kind": "primary"
+    }
+  },
+  "companies": [
+    {
+      "id": "federal",
+      "name": "The Federal Bank Limited",
+      "listing": "Listed equity",
+      "sector": "Banking",
+      "relationship": "Blackstone funds → Asia II Topco XIII Pte. Ltd. → convertible warrants",
+      "ownership": "Up to 9.99% after full warrant conversion",
+      "ownershipDate": "Warrants allotted 16 Feb 2026; full conversion not verified",
+      "stakePercent": null,
+      "stance": "added",
+      "summary": "A primary-capital commitment of ₹6,196.51 crore, through 272,974,043 warrants priced at ₹227. The bank received ₹1,549.13 crore upfront, representing 25% of the issue consideration.",
+      "thesis": "Scale the bank’s national franchise, improve its funding mix and support credit growth with phased capital.",
+      "risks": "Conversion timing, asset quality, deposit competition and return on the new capital. Warrants are not current issued equity.",
+      "sourceIds": [
+        "s1",
+        "s2",
+        "s3"
+      ],
+      "ticker": "FEDERALBNK"
+    },
+    {
+      "id": "aadhar",
+      "name": "Aadhar Housing Finance Limited",
+      "listing": "Listed equity",
+      "sector": "Affordable housing finance",
+      "relationship": "BCP Topco VII → BCP Asia II Holdco VII; separate sale to AXDI LDII SPV 1",
+      "ownership": "282,788,827 shares in incoming Blackstone vehicle",
+      "ownershipDate": "Completion filing: 26 Feb 2026; not a current percentage",
+      "stakePercent": null,
+      "stance": "reduced",
+      "summary": "The restructuring moved a controlling block between Blackstone funds, alongside a smaller open-offer purchase and a substantial external sale. It does not support a claim of fresh group-wide accumulation.",
+      "thesis": "Affordable mortgage penetration and a scalable distribution network remain the operating case.",
+      "risks": "Distinguish fund-level transfers from group ownership. Credit performance, funding costs and borrower affordability matter more than the new holder’s name.",
+      "sourceIds": [
+        "s4",
+        "s5",
+        "s6"
+      ],
+      "ticker": "AADHARHFC"
+    },
+    {
+      "id": "aster",
+      "name": "Aster DM Quality Care Limited",
+      "listing": "Listed equity",
+      "sector": "Hospitals",
+      "relationship": "Blackstone funds → Quality Care India → merger with Aster DM Healthcare",
+      "ownership": "30.7% post-merger",
+      "ownershipDate": "CRISIL ownership basis: Jul 2026",
+      "stakePercent": 30.7,
+      "stance": "added",
+      "summary": "The completed merger consolidated Aster, CARE Hospitals, KIMSHEALTH and Evercare into a broader hospital platform. Blackstone’s listed exposure comes through the business combination.",
+      "thesis": "Combine regional brands and clinical networks, expand beds and improve procurement and operating efficiency.",
+      "risks": "Integration, clinician retention, affordability, regulation and the returns on new hospital capacity. This is not open-market accumulation.",
+      "sourceIds": [
+        "s7",
+        "s8",
+        "s9"
+      ],
+      "ticker": "ASTERDM"
+    },
+    {
+      "id": "mphasis",
+      "name": "Mphasis Limited",
+      "listing": "Listed equity",
+      "sector": "IT services",
+      "relationship": "Blackstone funds → BCP Topco IX Pte. Ltd.",
+      "ownership": "30.53% · 58,299,642 shares",
+      "ownershipDate": "Primary shareholding: 30 Sep 2026",
+      "stakePercent": 30.53,
+      "stance": "reduced",
+      "summary": "Quarterly filings show a reduction from 76,299,642 shares in September 2025 to 58,299,642 by December 2025. The remaining share count was unchanged in September 2026.",
+      "thesis": "Cloud, banking technology and AI-enabled delivery can support the business, while Blackstone realises part of an established investment.",
+      "risks": "Later percentage drift with an unchanged share count is dilution, not another sale. Pledging the remaining block is also not a disposal.",
+      "sourceIds": [
+        "s10",
+        "s11",
+        "s12",
+        "s13"
+      ],
+      "ticker": "MPHASIS"
+    },
+    {
+      "id": "epl",
+      "name": "EPL Limited",
+      "listing": "Listed equity",
+      "sector": "Packaging",
+      "relationship": "Blackstone funds → Epsilon Bidco Pte. Ltd.",
+      "ownership": "Remaining 26.38% reportedly sold",
+      "ownershipDate": "Exit reported 1–2 Sep 2026",
+      "stakePercent": 0,
+      "stance": "exited",
+      "summary": "Blackstone’s vehicle reportedly sold its remaining 84,479,781 shares for about ₹2,032 crore through market transactions.",
+      "thesis": "This is an example of monetising a mature packaging investment, rather than adding exposure.",
+      "risks": "Retained for transaction history; not presented as a current holding. Completed-sale evidence is financial reporting citing exchange data.",
+      "sourceIds": [
+        "s14",
+        "s15"
+      ],
+      "ticker": "EPL"
+    },
+    {
+      "id": "knowledge",
+      "name": "Knowledge Realty Trust",
+      "listing": "Listed REIT",
+      "sector": "Office real estate",
+      "relationship": "Blackstone real-estate funds → BREP sponsor entities → REIT units",
+      "ownership": "Approximately 21.48% after OFS",
+      "ownershipDate": "Derived from reported pre-holding and Sep 2026 sale",
+      "stakePercent": 21.48,
+      "stance": "reduced",
+      "summary": "The sponsor group sold around 25.03 percentage points through the August–September offer for sale. The approximate remaining Blackstone interest differs from combined Blackstone–Sattva sponsor ownership.",
+      "thesis": "Grade-A office demand and global capability centres can support rental growth even while sponsors recycle capital.",
+      "risks": "Leasing, tenant concentration, financing costs and sponsor sales. OFS proceeds go to selling holders, not to the trust.",
+      "sourceIds": [
+        "s16",
+        "s17",
+        "s18",
+        "s19"
+      ],
+      "ticker": "KRT"
+    },
+    {
+      "id": "nexus",
+      "name": "Nexus Select Trust",
+      "listing": "Listed REIT",
+      "sector": "Retail real estate",
+      "relationship": "Blackstone sponsor entities → Nexus Select Trust → mall-owning companies",
+      "ownership": "22.3% sponsor interest",
+      "ownershipDate": "Issuer presentation basis: 31 Mar 2026",
+      "stakePercent": 22.3,
+      "stance": "held",
+      "summary": "Nexus is growing its mall platform through target-company acquisitions. This review did not establish Blackstone buying additional Nexus units.",
+      "thesis": "Organised retail, tenant sales and mall operating improvements can grow rental income and distributions.",
+      "risks": "Acquisition valuations, tenant demand and financing. The trust’s target stake is different from Blackstone’s unit ownership.",
+      "sourceIds": [
+        "s20",
+        "s21",
+        "s22"
+      ],
+      "ticker": "NXST"
+    },
+    {
+      "id": "ventive",
+      "name": "Ventive Hospitality Limited",
+      "listing": "Listed equity",
+      "sector": "Hospitality",
+      "relationship": "Blackstone real-estate funds → BREP entities → Ventive and subsidiaries",
+      "ownership": "Approximately 32.4%",
+      "ownershipDate": "Reported ownership basis: 31 Mar 2026",
+      "stakePercent": 32.4,
+      "stance": "held",
+      "summary": "Ventive’s acquisitions broaden hotel and membership-club exposure. Those purchases add indirect business exposure without proving that Blackstone increased its Ventive shareholding.",
+      "thesis": "Premium travel, luxury leisure and business hospitality can support room rates, occupancy and property development.",
+      "risks": "Hotel cyclicality, overseas properties, leverage and execution on acquisitions. Ownership date is retained rather than labelled latest.",
+      "sourceIds": [
+        "s23",
+        "s24",
+        "s25"
+      ],
+      "ticker": "VENTIVE"
+    },
+    {
+      "id": "soham",
+      "name": "Soham Leisure Ventures Private Limited — Hilton Goa Resort",
+      "listing": "Private · indirect",
+      "sector": "Hospitality",
+      "relationship": "Blackstone → Ventive Hospitality → Soham Leisure Ventures",
+      "ownership": "Ventive acquired 76%; Blackstone look-through not calculated",
+      "ownershipDate": "Acquisition effective 16 Oct 2025",
+      "stakePercent": null,
+      "stance": "added",
+      "summary": "The target owns the Hilton Goa Resort business. A later filing confirms the acquisition and optionally convertible debenture funding.",
+      "thesis": "Expand premium leisure exposure through a hotel asset and operating improvements.",
+      "risks": "76% is Ventive’s target stake, not Blackstone’s direct ownership. Debentures should not be treated as issued equity.",
+      "sourceIds": [
+        "s26",
+        "s27"
+      ]
+    },
+    {
+      "id": "igi",
+      "name": "International Gemological Institute Limited",
+      "listing": "Listed equity",
+      "sector": "Gemstone certification",
+      "relationship": "Blackstone funds → BCP Asia II Topco Pte. Ltd. → IGI",
+      "ownership": "76.55%",
+      "ownershipDate": "Primary shareholding basis: 30 Jun 2026",
+      "stakePercent": 76.55,
+      "stance": "held",
+      "summary": "The controlling holding was stable on the cited filing. IGI’s acquisition of AGL expands coloured-gemstone capabilities and its US footprint.",
+      "thesis": "Independent certification, trusted laboratory relationships and lab-grown diamond demand support the platform’s service proposition.",
+      "risks": "Diamond-market pricing, certification volumes, competition and integration. The AGL acquisition is not additional Blackstone buying of IGI.",
+      "sourceIds": [
+        "s28",
+        "s29",
+        "s30",
+        "s31"
+      ],
+      "ticker": "IGIL"
+    },
+    {
+      "id": "rsystems",
+      "name": "R Systems International Limited",
+      "listing": "Listed equity",
+      "sector": "Digital product engineering",
+      "relationship": "Blackstone funds → BCP Asia II Topco II → R Systems",
+      "ownership": "51.85%",
+      "ownershipDate": "CRISIL ownership basis: 31 May 2026",
+      "stakePercent": 51.85,
+      "stance": "held",
+      "summary": "R Systems completed the Novigo acquisition during the review year. CRISIL also describes customer introductions from Blackstone’s portfolio.",
+      "thesis": "Build AI, automation and digital engineering capabilities through products, talent and selective acquisitions.",
+      "risks": "Core organic growth, client concentration and AI-driven pricing disruption. New subsidiaries do not prove a higher Blackstone stake.",
+      "sourceIds": [
+        "s32",
+        "s33",
+        "s34",
+        "s35"
+      ],
+      "ticker": "RSYSTEMS"
+    },
+    {
+      "id": "kolte",
+      "name": "Kolte-Patil Developers Limited",
+      "listing": "Listed equity",
+      "sector": "Residential real estate",
+      "relationship": "Blackstone real-estate funds → BREP Asia III India Holding Co VII",
+      "ownership": "40%",
+      "ownershipDate": "Already confirmed by CARE on 8 Oct 2025",
+      "stakePercent": 40,
+      "stance": "held",
+      "summary": "Blackstone’s primary and secondary investment was completed before the trailing-year cutoff. It remains relevant as an existing controlled or influential platform.",
+      "thesis": "Scale residential development across Pune, Mumbai and Bengaluru with institutional capital and governance.",
+      "risks": "Approvals, launch timing, collections and property cyclicality. The earlier possible 66% outcome is not the verified holding.",
+      "sourceIds": [
+        "s36",
+        "s37",
+        "s38"
+      ],
+      "ticker": "KOLTEPATIL"
+    },
+    {
+      "id": "novigo",
+      "name": "Novigo Solutions Private Limited",
+      "listing": "Private · indirect",
+      "sector": "Automation and AI services",
+      "relationship": "Blackstone → R Systems → Novigo Solutions",
+      "ownership": "100% acquired by R Systems; not 100% Blackstone",
+      "ownershipDate": "Completion: 13 Nov 2025",
+      "stakePercent": null,
+      "stance": "added",
+      "summary": "R Systems acquired Novigo for ₹400 crore after an agreement announced before the review window. Completion falls within the year.",
+      "thesis": "Adds intelligent automation, low-code and AI expertise to the parent’s engineering services.",
+      "risks": "Acquisition integration, retention and revenue synergies; no direct Blackstone percentage is calculated.",
+      "sourceIds": [
+        "s32",
+        "s33",
+        "s34",
+        "s35"
+      ]
+    },
+    {
+      "id": "agl",
+      "name": "AGL Holdco / American Gemological Laboratories",
+      "listing": "Global private platform · indirect",
+      "sector": "Coloured-gemstone certification",
+      "relationship": "Blackstone → IGI → AGL Holdco → American Gemological Laboratories",
+      "ownership": "100% target acquisition by IGI; not Blackstone’s direct stake",
+      "ownershipDate": "Agreement: 31 Jan 2026; completion subsequently reported",
+      "stakePercent": null,
+      "stance": "added",
+      "summary": "The US acquisition extends the Indian-listed group’s capabilities in coloured gemstones. It is included for its link to IGI, not as an Indian domestic target.",
+      "thesis": "Broaden certification expertise, customer reach and the global laboratory network.",
+      "risks": "Cross-border integration and preservation of scientific credibility. Completion evidence is weaker than the primary agreement evidence.",
+      "sourceIds": [
+        "s28",
+        "s29",
+        "s30",
+        "s31"
+      ]
+    },
+    {
+      "id": "finest-vn",
+      "name": "Finest-VN Business Park — Soho House India platform",
+      "listing": "Private · indirect",
+      "sector": "Hospitality and membership clubs",
+      "relationship": "Blackstone → Ventive → Panchshil Corporate Park → Finest-VN and subsidiaries",
+      "ownership": "100% target acquisition by Ventive subsidiary",
+      "ownershipDate": "Completion: 17 Feb 2026",
+      "stakePercent": null,
+      "stance": "added",
+      "summary": "Ventive’s subsidiary acquired Finest-VN for ₹59.83 crore. Its subsidiaries operate Soho House Mumbai and hold India expansion rights.",
+      "thesis": "Grow a branded membership and hospitality platform beyond conventional hotels.",
+      "risks": "Membership retention, expansion costs and rights structure. The Soho platform and Finest-VN transaction are one acquisition, not two.",
+      "sourceIds": [
+        "s23",
+        "s24",
+        "s25"
+      ]
+    },
+    {
+      "id": "garden-city",
+      "name": "Garden City Malls — Runwal Gardens Mall, Dombivli",
+      "listing": "Private · indirect",
+      "sector": "Retail real estate",
+      "relationship": "Blackstone sponsor entities → Nexus Select Trust → Garden City Malls",
+      "ownership": "Proposed 50% target purchase by Nexus",
+      "ownershipDate": "Agreement: 23 Feb 2026; close not verified",
+      "stakePercent": null,
+      "stance": "proposed",
+      "summary": "Nexus agreed a ₹434 crore investment in the upcoming Runwal Gardens mall through the target company.",
+      "thesis": "Expand the mall platform into a growing urban catchment and improve recurring rental income.",
+      "risks": "Completion conditions, project delivery and tenant uptake. Blackstone’s REIT interest is separate from the target’s 50%.",
+      "sourceIds": [
+        "s20",
+        "s21",
+        "s22"
+      ]
+    },
+    {
+      "id": "neysa",
+      "name": "Neysa Networks Private Limited",
+      "listing": "Private",
+      "sector": "AI cloud and GPU infrastructure",
+      "relationship": "Blackstone funds and co-investors → BCP Asia II Topco V / Asia II Topco XIV → Neysa",
+      "ownership": "Control acquisition approved; exact percentage undisclosed",
+      "ownershipDate": "Agreement Feb 2026; CCI approval May 2026",
+      "stakePercent": null,
+      "stance": "added",
+      "summary": "Blackstone-affiliated funds and co-investors backed up to $600 million of equity, supporting a proposed additional $600 million debt package. CCI approved Blackstone control acquisition. October reporting describes a $200 million tranche, approximately $150 million from Blackstone, within the same larger round.",
+      "thesis": "Build domestic AI compute capacity and deploy over 20,000 GPUs; infrastructure supporting enterprise and sovereign AI demand.",
+      "risks": "GPU economics, power availability, utilisation and debt-funded scale-up. Do not count $1.2 billion as Blackstone equity alone. Do not add October tranche to February headline commitment; Mint identifies it as part of the same round. No exact Blackstone ownership percentage disclosed in accessible primary sources.",
+      "sourceIds": [
+        "s39",
+        "s40",
+        "s41"
+      ]
+    },
+    {
+      "id": "airtrunk-lumina",
+      "name": "AirTrunk / Lumina CloudInfra",
+      "listing": "Global private platform · India operations",
+      "sector": "Data centres",
+      "relationship": "Blackstone and CPPIB → AirTrunk → Lumina CloudInfra",
+      "ownership": "Blackstone-backed platform; exact India look-through undisclosed",
+      "ownershipDate": "Lumina acquisition: 20 Apr 2026",
+      "stakePercent": null,
+      "stance": "added",
+      "summary": "Blackstone- and CPPIB-backed AirTrunk acquired Lumina, an existing Blackstone-founded Indian platform. Lumina brings a roughly 600 MW planned portfolio. AirTrunk subsequently proposed $30 billion of Indian development by 2030.",
+      "thesis": "Combine local execution with global hyperscaler relationships to expand AI-ready infrastructure.",
+      "risks": "Power, permitting, hyperscaler concentration, development execution and financing. Related-platform consolidation is not ordinary stock-market buying. $30 billion is a prospective multi-year platform development programme, not completed Blackstone equity spending. Do not count Lumina and AirTrunk as wholly separate independent Indian exposures.",
+      "sourceIds": [
+        "s42",
+        "s43",
+        "s44"
+      ]
+    },
+    {
+      "id": "globetrotters-vera",
+      "name": "Globetrotters Educational Innoventions / Vera Education",
+      "listing": "Private",
+      "sector": "Education services",
+      "relationship": "Blackstone → Vera Education Services Holdings → Globetrotters",
+      "ownership": "60% acquired by Blackstone vehicle",
+      "ownershipDate": "CRISIL confirmation: 7 Sep 2026; exact close date undisclosed",
+      "stakePercent": 60,
+      "stance": "added",
+      "summary": "Vera Education Services Holdings, a Blackstone entity, acquired 60% from the Periwal family. GEIPL provides contracted services associated with Jayshree Periwal International School; the family remains in management.",
+      "thesis": "Build an education-services platform, including two Gurugram schools with planned Rs 600 crore capex.",
+      "risks": "Regulation, school concentration, contract execution and delivery of planned schools. This is investment in a services company, not a simple equity purchase in a charitable school trust. Rs 600 crore is capex, not disclosed acquisition consideration. School expansion timing, regulation and concentration are material risks.",
+      "sourceIds": [
+        "s45",
+        "s46"
+      ]
+    },
+    {
+      "id": "ask-sageone",
+      "name": "ASK Investment Managers / SageOne Investment Managers",
+      "listing": "Private",
+      "sector": "Asset management",
+      "relationship": "Blackstone majority-owned ASK → proposed acquisition of SageOne partnership interests",
+      "ownership": "Blackstone majority in ASK; 100% SageOne target deal",
+      "ownershipDate": "Signed 30 Sep 2026; approvals / closing unresolved",
+      "stakePercent": null,
+      "stance": "held",
+      "summary": "Blackstone-backed ASK signed to acquire all SageOne partnership interests. Samit Vartak is to lead equities for the combined platform. Blackstone remains majority owner of ASK; its exact percentage in the combined platform was not disclosed.",
+      "thesis": "Consolidate research-led equity management, broaden PMS/AIF products and distribution.",
+      "risks": "Integration of teams and investment processes, client retention and regulatory approvals. SageOne 100% target interest is not Blackstone's direct ownership percentage. An October 12 headline says completed, but the body and October 7 legal-adviser primary statement retain approval conditions; display Signed / pending approvals. Underlying client portfolios are not automatically Blackstone-owned equities.",
+      "sourceIds": [
+        "s47",
+        "s48",
+        "s49"
+      ]
+    },
+    {
+      "id": "ace-insurance",
+      "name": "Ace Insurance Brokers Private Limited",
+      "listing": "Private",
+      "sector": "Insurance distribution",
+      "relationship": "Blackstone funds → Ace Insurance Brokers",
+      "ownership": "Majority investment reported; exact percentage unresolved",
+      "ownershipDate": "Investment confirmed for 2025; date conflicts across reports",
+      "stakePercent": null,
+      "stance": "held",
+      "summary": "Ace's own website confirms a significant Blackstone stake in 2025. Multiple October and November reports describe majority ownership and leadership expansion.",
+      "thesis": "Expand corporate insurance and reinsurance services domestically and internationally; capital-light distribution platform.",
+      "risks": "Founder dependence, regulatory requirements and integration. Sources conflict between 65% and 70%, and between September and October acquisition reports; display Majority, exact stake undisclosed / conflicting reports. May precede October 15 window; include as existing holding with in-window reporting, not a confidently new last-year acquisition. Reported consideration and valuation differ; omit numeric amount from verified headline.",
+      "sourceIds": [
+        "s50",
+        "s51",
+        "s52",
+        "s53"
+      ]
+    },
+    {
+      "id": "rcb",
+      "name": "Royal Challengers Sports Private Limited / Royal Challengers Bengaluru",
+      "listing": "Private",
+      "sector": "Sports and consumer media",
+      "relationship": "Blackstone BXPE + Aditya Birla Group + Times Group + Bolt Ventures → buyer consortium",
+      "ownership": "Individual Blackstone stake undisclosed",
+      "ownershipDate": "Definitive agreement: 24 Mar 2026; closing not verified",
+      "stakePercent": null,
+      "stance": "proposed",
+      "summary": "BXPE joined Aditya Birla Group, Times Group and Bolt Ventures to sign acquisition of the IPL/WPL franchise from United Spirits, at a total enterprise transaction value of Rs 166.6 billion ($1.78 billion).",
+      "thesis": "Monetise a globally recognised sports brand, fan engagement, media and growing Indian sports economics.",
+      "risks": "Rights economics, governance, competitive performance and approval conditions. 100% belongs to the consortium target acquisition, not Blackstone's individual share. Do not attribute entire $1.78 billion to Blackstone. Blackstone release explicitly requires BCCI, CCI and other approvals; latest closing must be independently confirmed.",
+      "sourceIds": [
+        "s54",
+        "s55"
+      ]
+    },
+    {
+      "id": "taj-aravali",
+      "name": "Taj Aravali Resort & Spa — property-owning investment",
+      "listing": "Private · reported property investment",
+      "sector": "Luxury hospitality",
+      "relationship": "Blackstone real-estate investment → Taj Aravali property / Ishaan seller",
+      "ownership": "50% property stake reportedly acquired",
+      "ownershipDate": "End-Dec 2025 close reported Jan–Feb 2026",
+      "stakePercent": 50,
+      "stance": "added",
+      "summary": "Blackstone reportedly acquired 50% in the Udaipur hotel asset from Ishaan Group for $100–110 million, with plans for additional suites and an upgrade to Taj Exotica.",
+      "thesis": "Luxury leisure and destination weddings; rebuild hospitality portfolio alongside existing Ventive exposure.",
+      "risks": "Resort expansion, travel cyclicality and ownership verification. This is not a purchase of Indian Hotels Company shares.",
+      "sourceIds": [
+        "s56",
+        "s57",
+        "s58"
+      ]
+    },
+    {
+      "id": "ags-health",
+      "name": "AGS Health Limited",
+      "listing": "Private · proposed IPO",
+      "sector": "Healthcare revenue-cycle services",
+      "relationship": "Blackstone funds → BCP Asia II Topco VIII → AGS Health",
+      "ownership": "Blackstone-backed holding; proposed partial OFS",
+      "ownershipDate": "Updated draft IPO papers: 7 Aug 2026",
+      "stakePercent": null,
+      "stance": "held",
+      "summary": "Proposed Rs 4,800 crore IPO combines Rs 1,800 crore fresh issue with Rs 3,000 crore Blackstone-vehicle OFS. Original Blackstone purchase was in 2025 and should not be counted as a new October-2025 onward buy without exact date evidence.",
+      "thesis": "Technology-enabled outsourced US healthcare administration; proposed listing would provide capital and a liquidity route.",
+      "risks": "US healthcare spending, acquisition leverage and AI-driven service economics. IPO filing is a planned sale/dilution, not a completed exit. Fresh issue proceeds accrue to company; OFS proceeds to seller.",
+      "sourceIds": [
+        "s59",
+        "s60",
+        "s61"
+      ]
+    },
+    {
+      "id": "pgp-glass",
+      "name": "PGP Glass",
+      "listing": "Private",
+      "sector": "Specialty glass packaging",
+      "relationship": "Blackstone funds → PGP Glass",
+      "ownership": "Existing investment; prospective sale reported",
+      "ownershipDate": "Latest reviewed sale talks: 14 Sep 2026",
+      "stakePercent": null,
+      "stance": "held",
+      "summary": "Brookfield reportedly in advanced talks to buy PGP Glass from Blackstone at $1.3–1.5 billion. Earlier February reports described IPO preparations.",
+      "thesis": "Monetise a mature control investment; specialty packaging exposure continues until disposal is confirmed.",
+      "risks": "Energy costs, specialty-packaging demand and deal execution. Do not mark exited or decreased until completion is disclosed. Investing.com and VCCircle echo Economic Times; they are not independent transaction confirmations.",
+      "sourceIds": [
+        "s62",
+        "s63"
+      ]
+    },
+    {
+      "id": "accord",
+      "name": "Accord Software & Systems",
+      "listing": "Private · watchlist only",
+      "sector": "Defence and navigation technology",
+      "relationship": "Reported Blackstone interest; no ownership established",
+      "ownership": "No confirmed Blackstone holding",
+      "ownershipDate": "2026-10-14 reporting; unconfirmed",
+      "stakePercent": null,
+      "stance": "proposed",
+      "summary": "Mint reports discussions to invest $400–500 million for a minority stake in the defence technology company.",
+      "thesis": "Potential participation in Indian defence electronics and indigenous navigation technology.",
+      "risks": "No binding transaction established. Single-source report; exclude from confirmed invested-company count. Reported terms may change or never result in a transaction.",
+      "sourceIds": [
+        "s64"
+      ]
+    },
+    {
+      "id": "blupine",
+      "name": "BluPine Energy",
+      "listing": "Private · watchlist only",
+      "sector": "Renewable energy",
+      "relationship": "Reported Blackstone interest; no ownership established",
+      "ownership": "No confirmed Blackstone holding",
+      "ownershipDate": "2026-09-03 reporting; unconfirmed",
+      "stakePercent": null,
+      "stance": "proposed",
+      "summary": "Economic Times reports Blackstone among bidders for Actis-backed BluPine Energy.",
+      "thesis": "Potential infrastructure and renewable-energy expansion.",
+      "risks": "No binding transaction established. Do not list as an owned company or add to committed capital; only reported interest.",
+      "sourceIds": [
+        "s65"
+      ]
+    },
+    {
+      "id": "vfs-global",
+      "name": "VFS Global",
+      "listing": "Global private platform · India operations",
+      "sector": "Visa and government technology services",
+      "relationship": "Blackstone-managed investment funds → VFS Global",
+      "ownership": "Majority ownership confirmed",
+      "ownershipDate": "Historical investment; reviewed 15 Oct 2026",
+      "stakePercent": null,
+      "stance": "held",
+      "summary": "Company identifies Blackstone as majority owner alongside minority holders Temasek, Kuoni and Hugentobler Foundation and Dubai Holding. Earlier reported Temasek stake sale belongs to 2024, not this review year.",
+      "thesis": "Outsourced government mobility and citizen-services processing.",
+      "risks": "No fresh ownership change established in the review year. Historical 75% purchase percentage is not necessarily current after minority investments. No verified last-year Blackstone stake increase found.",
+      "sourceIds": [
+        "s66",
+        "s67"
+      ]
+    },
+    {
+      "id": "simplilearn",
+      "name": "Simplilearn",
+      "listing": "Private",
+      "sector": "Digital-skills education",
+      "relationship": "Blackstone-managed investment funds → Simplilearn",
+      "ownership": "Historical majority investment",
+      "ownershipDate": "Historical investment; reviewed 15 Oct 2026",
+      "stakePercent": null,
+      "stance": "held",
+      "summary": "Blackstone acquired a majority stake in 2021; reviewed sources do not establish fresh buying during the review year.",
+      "thesis": "Professional reskilling and digital education.",
+      "risks": "No fresh ownership change established in the review year. Historical entry is not last-year deployment.",
+      "sourceIds": [
+        "s68",
+        "s69"
+      ]
+    },
+    {
+      "id": "xpressbees",
+      "name": "Xpressbees",
+      "listing": "Private",
+      "sector": "Express logistics",
+      "relationship": "Blackstone-managed investment funds → Xpressbees",
+      "ownership": "Historical growth investment; exact stake undisclosed",
+      "ownershipDate": "Historical investment; reviewed 15 Oct 2026",
+      "stakePercent": null,
+      "stance": "held",
+      "summary": "Blackstone Growth led a $300 million multi-investor round in 2022. No fresh last-year Blackstone equity event was established in this review.",
+      "thesis": "Third-party logistics and digital-commerce infrastructure.",
+      "risks": "No fresh ownership change established in the review year. $300 million was the combined investment round, not Blackstone-only capital. No current exact stake confirmed.",
+      "sourceIds": [
+        "s70"
+      ]
+    },
+    {
+      "id": "nitesh-residency",
+      "name": "Nitesh Residency Hotels Private Limited / Ritz-Carlton Bengaluru",
+      "listing": "Private · reported agreement",
+      "sector": "Luxury hospitality",
+      "relationship": "Blackstone real-estate investment → proposed Nitesh Residency Hotels stake",
+      "ownership": "51–55% reported proposal; final stake / close unverified",
+      "ownershipDate": "Agreement reported 11 Nov 2025",
+      "stakePercent": null,
+      "stance": "proposed",
+      "summary": "Economic Times reported a signed Blackstone purchase of up to 55% in the property-owning company, with closing expected during the quarter. The estimated Rs 600–700 crore payment implies a Rs 1,200–1,400 crore property valuation. April 2026 industry reporting describes the acquisition as validation of Nitesh's strategy but is not primary closing proof.",
+      "thesis": "Premium business and luxury hospitality in Bengaluru.",
+      "risks": "Property economics, leverage and completion verification. Do not claim completed or present 55% as final verified ownership. This is equity in Nitesh Residency Hotels, not equity in Marriott International, the hotel operator. Original report says Blackstone declined comment.",
+      "sourceIds": [
+        "s75",
+        "s76"
+      ]
+    },
+    {
+      "id": "galaxy-infra",
+      "name": "Galaxy Infra Creations Private Limited",
+      "listing": "Private · indirect",
+      "sector": "Retail mall and hotel property",
+      "relationship": "Blackstone sponsor entities → Nexus Select Trust → Galaxy Infra Creations",
+      "ownership": "Proposed 100% target acquisition by Nexus",
+      "ownershipDate": "Agreement Sep 2026; completion pending verification",
+      "stakePercent": null,
+      "stance": "proposed",
+      "summary": "Blackstone-sponsored Nexus Select Trust agreed to acquire all shares in Galaxy Infra Creations, owner/developer of a 0.5 million sq ft mall and 164-key Hyatt Regency under construction in Guwahati. Purchase consideration is approximately Rs 1,600 crore.",
+      "thesis": "Enter Northeast India through a mall and hotel platform in Guwahati.",
+      "risks": "Construction, approvals, leasing and purchase economics. 100% is Nexus' target-company acquisition, not Blackstone's direct economic ownership. Operational responsibility follows construction completion and necessary approvals. Do not add this consideration to Blackstone direct equity spending.",
+      "sourceIds": [
+        "s77",
+        "s78"
+      ]
+    },
+    {
+      "id": "diamond-plaza",
+      "name": "Diamond Plaza Mall — property-owning company target",
+      "listing": "Private · indirect",
+      "sector": "Retail real estate",
+      "relationship": "Blackstone sponsor entities → Nexus → Nexusmalls Whitefield → target company",
+      "ownership": "Proposed 100% target share purchase through Nexus SPV",
+      "ownershipDate": "Board approval Apr 2026; closing not verified",
+      "stakePercent": null,
+      "stance": "proposed",
+      "summary": "Nexusmalls Whitefield Private Limited, an SPV of Blackstone-sponsored Nexus Select Trust, agreed to acquire the entire shareholding of the Kolkata Diamond Plaza property-owning entity for approximately Rs 347.5 crore following restructuring.",
+      "thesis": "Add an operating Kolkata consumption centre to the mall network.",
+      "risks": "Restructuring, approvals and tenant performance. Exact post-restructuring target legal name not retrieved; do not fabricate it. July 28 CRISIL still described a potential acquisition expected by Q3 FY27; headlines saying 'acquires' do not establish earlier completion. Indirect portfolio expansion, not increased Blackstone unit ownership in Nexus.",
+      "sourceIds": [
+        "s79",
+        "s80",
+        "s81"
+      ]
+    },
+    {
+      "id": "horizon-industrial",
+      "name": "Horizon Industrial Parks Limited",
+      "listing": "Listed equity",
+      "sector": "Industrial and logistics real estate",
+      "relationship": "Blackstone funds → Horizon Industrial Parks → industrial-park subsidiaries",
+      "ownership": "Promoter percentage diluted in fresh-only IPO",
+      "ownershipDate": "IPO Aug 2026; current Blackstone aggregate not independently verified",
+      "stakePercent": null,
+      "stance": "reduced",
+      "summary": "Blackstone-backed Horizon completed a Rs 2,600 crore entirely fresh-issue IPO in August 2026. This finances debt repayment and business purposes; it dilutes promoter percentage without a promoter offer for sale. Economic Times reported promoter-group holding moving from 88.7% to 75.4%.",
+      "thesis": "Build logistics and manufacturing infrastructure supported by long-term leases and development demand.",
+      "risks": "Tenant concentration, land acquisition, leverage and development execution. 75.4% is reported promoter-group percentage, not independently confirmed current Blackstone aggregate; display as reported post-IPO if using. Dilution is different from Blackstone selling existing shares. The issuer homepage contains an apparently truncated BSE code; use NSE HORIZONIND rather than copy that code.",
+      "sourceIds": [
+        "s82",
+        "s83",
+        "s84",
+        "s85"
+      ],
+      "ticker": "HORIZONIND"
+    },
+    {
+      "id": "vision-softech",
+      "name": "Vision Softech Facilities Private Limited",
+      "listing": "Private · indirect",
+      "sector": "Industrial park development",
+      "relationship": "Blackstone → Horizon Industrial Parks → Vision Softech Facilities",
+      "ownership": "49% target interest held by Horizon",
+      "ownershipDate": "Reported in Aug 2026 IPO coverage; exact closing day unavailable",
+      "stakePercent": null,
+      "stance": "added",
+      "summary": "Horizon acquired 49% in Vision Softech, which holds a 100-acre Narsapura Bengaluru land parcel with 2.55 million sq ft development potential.",
+      "thesis": "Add development capacity in the Bengaluru industrial corridor.",
+      "risks": "Land development, tenant commitments and capital deployment. 49% is Horizon's interest, not Blackstone's direct percentage. Exact closing date/consideration not retrieved. Accessible crosschecks repeat IPO information; primary full RHP should be retained for future audit.",
+      "sourceIds": [
+        "s84",
+        "s86",
+        "s87"
+      ]
+    },
+    {
+      "id": "bagmane-prime",
+      "name": "Bagmane Prime Office REIT",
+      "listing": "Listed REIT",
+      "sector": "Office real estate",
+      "relationship": "Blackstone → BREP Asia III India Holding Co VIII → Bagmane office platform / REIT",
+      "ownership": "Blackstone OFS completed; current unit stake unverified",
+      "ownershipDate": "IPO / listing: May 2026",
+      "stakePercent": null,
+      "stance": "reduced",
+      "summary": "The May 2026 IPO included approximately Rs 1,015 crore offer for sale by Blackstone-backed BREP Asia III India Holding Co VIII, alongside fresh fundraising. Blackstone originally entered Bagmane in December 2024, before this review window.",
+      "thesis": "Institutional office assets and demand from global technology and capability-centre tenants.",
+      "risks": "Tenant concentration, vacancy and the transformation of private-company stakes into REIT units. OFS is a stake sale, not increased investment. Blackstone’s pre-IPO 7% interests in Bagmane Developers and Bagmane Rio are different from its percentage of the listed REIT. Current REIT ownership was not verified; pre-IPO reporting expected above 3% after listing.",
+      "sourceIds": [
+        "s88",
+        "s89",
+        "s90",
+        "s91"
+      ]
+    },
+    {
+      "id": "kelzai-eco",
+      "name": "Kelzai Eco Reserves Private Limited",
+      "listing": "Private · indirect",
+      "sector": "Resort and branded villa development",
+      "relationship": "Blackstone → Ventive Hospitality → proposed Kelzai subsidiary",
+      "ownership": "Proposed 100% equity and preference-capital purchase",
+      "ownershipDate": "Agreement: 9 Jul 2026; closing not verified",
+      "stakePercent": null,
+      "stance": "proposed",
+      "summary": "Blackstone/Panchshil-backed Ventive signed to acquire all equity and preference capital of Kelzai for Rs 281.88 crore, obtaining roughly 420 acres of resort property in the Mumbai Metropolitan Region.",
+      "thesis": "Develop a resort and branded-villa opportunity within reach of Mumbai’s premium leisure market.",
+      "risks": "Large land-bank development, permissions, capital needs and execution. Ventive buying a subsidiary does not mean Blackstone increased its percentage in Ventive. No primary completion filing retrieved; retain signed/approved status.",
+      "sourceIds": [
+        "s25",
+        "s92",
+        "s93"
+      ]
+    },
+    {
+      "id": "taskus",
+      "name": "TaskUs Inc. — Indian operations",
+      "listing": "Global listed equity · India operations",
+      "sector": "Digital outsourcing",
+      "relationship": "Blackstone-managed funds → existing TaskUs ownership → Indian operations",
+      "ownership": "Existing investment; current aggregate stake not verified",
+      "ownershipDate": "2026 annual report reviewed; no new Indian-specific buy established",
+      "stakePercent": null,
+      "stance": "held",
+      "summary": "TaskUs is an existing global Blackstone-backed business with Indian operations. Its proposed take-private failed shareholder approval before this review window.",
+      "thesis": "Technology-enabled outsourced operations and AI-related services provide relevant global business exposure.",
+      "risks": "Do not treat a failed transaction as a new investment or count all global TaskUs operations as Indian deployment.",
+      "sourceIds": [
+        "s94",
+        "s95"
+      ],
+      "ticker": "NASDAQ: TASK"
+    }
+  ],
+  "events": [
+    {
+      "id": "federal-sign",
+      "companyId": "federal",
+      "date": "2025-10-24",
+      "dateLabel": "24 Oct 2025",
+      "title": "Board approves strategic warrant investment",
+      "kind": "equity",
+      "direction": "added",
+      "status": "Announced",
+      "detail": "Federal Bank approved the Blackstone warrant transaction, representing up to 9.99% of the post-conversion capital.",
+      "qualification": "This is a negotiated primary issuance, not evidence of buying on the stock exchange.",
+      "sourceIds": [
+        "s1",
+        "s2",
+        "s3"
+      ]
+    },
+    {
+      "id": "federal-allot",
+      "companyId": "federal",
+      "date": "2026-02-16",
+      "dateLabel": "16 Feb 2026",
+      "title": "Warrants allotted; initial subscription received",
+      "kind": "equity",
+      "direction": "added",
+      "status": "Completed",
+      "detail": "The allotment filing confirms 272,974,043 warrants and receipt of ₹1,549.13 crore upfront. The remaining consideration is payable on exercise.",
+      "qualification": "Only the warrant allotment is confirmed. Do not treat the potential 9.99% as fully converted equity.",
+      "sourceIds": [
+        "s1",
+        "s2",
+        "s3"
+      ]
+    },
+    {
+      "id": "aadhar-transfer",
+      "companyId": "aadhar",
+      "date": "2026-02-26",
+      "dateLabel": "26 Feb 2026",
+      "title": "Control transferred between Blackstone investment vehicles",
+      "kind": "transfer",
+      "direction": "held",
+      "status": "Completed",
+      "detail": "The incoming vehicle acquired 282,052,121 shares from the outgoing Blackstone vehicle and 736,706 shares through the open offer. Its completion holding was 282,788,827 shares.",
+      "qualification": "The internal block is not new capital from outside Blackstone. The completion filing records a separate external disposal.",
+      "sourceIds": [
+        "s4",
+        "s5",
+        "s6"
+      ]
+    },
+    {
+      "id": "aadhar-sale",
+      "companyId": "aadhar",
+      "date": "2026-02-26",
+      "dateLabel": "26 Feb 2026",
+      "title": "Separate 44.14 million-share external sale completed",
+      "kind": "equity",
+      "direction": "reduced",
+      "status": "Completed",
+      "detail": "AXDI LDII SPV 1 acquired 44,139,236 shares from the outgoing Blackstone holder. This external sell-down outweighs the small tender acquisition described in the same filing.",
+      "qualification": "No latest ownership percentage is inferred from an old share-count denominator.",
+      "sourceIds": [
+        "s4",
+        "s5",
+        "s6"
+      ]
+    },
+    {
+      "id": "aster-merger",
+      "companyId": "aster",
+      "date": "2026-07-01",
+      "dateLabel": "01 Jul 2026",
+      "title": "Aster–Quality Care merger becomes effective",
+      "kind": "equity",
+      "direction": "added",
+      "status": "Completed",
+      "detail": "Blackstone’s hospital investment rolled into the merged listed entity. CRISIL subsequently reported Blackstone ownership of 30.7%.",
+      "qualification": "The share swap changes the form and scale of listed exposure; it is not a cash purchase of listed shares.",
+      "sourceIds": [
+        "s7",
+        "s8",
+        "s9"
+      ]
+    },
+    {
+      "id": "mphasis-sale",
+      "companyId": "mphasis",
+      "date": "2025-11-18",
+      "dateLabel": "18 Nov 2025",
+      "title": "18 million-share sell-down in the December quarter",
+      "kind": "equity",
+      "direction": "reduced",
+      "status": "Completed",
+      "detail": "The September and December filings confirm an 18 million-share reduction. Reporting identifies the November block-sale process.",
+      "qualification": "The transaction date is reported; primary filings establish the quarter-level reduction. Later 30.59% → 30.53% drift reflects dilution at the same share count.",
+      "sourceIds": [
+        "s10",
+        "s11",
+        "s12",
+        "s13"
+      ]
+    },
+    {
+      "id": "mphasis-snapshot",
+      "companyId": "mphasis",
+      "date": "2026-09-30",
+      "dateLabel": "30 Sep 2026",
+      "title": "Remaining holding confirmed at 30.53%",
+      "kind": "snapshot",
+      "direction": "held",
+      "status": "Snapshot",
+      "detail": "The September filing shows BCP Topco IX holding 58,299,642 shares, representing 30.53%.",
+      "qualification": "An ownership snapshot is not a fresh trade. Encumbrance over the remaining holding is separate from a sale.",
+      "sourceIds": [
+        "s10",
+        "s11",
+        "s12",
+        "s13"
+      ]
+    },
+    {
+      "id": "epl-exit",
+      "companyId": "epl",
+      "date": "2026-09-01",
+      "dateLabel": "01 Sep 2026",
+      "title": "Reported full exit through market transactions",
+      "kind": "equity",
+      "direction": "exited",
+      "status": "Reported",
+      "detail": "Reports citing NSE bulk-deal data identify the sale of the remaining 26.38% by Epsilon Bidco.",
+      "qualification": "Multiple reporting sources corroborate the exit; the direct exchange trade row was not retrieved in this review.",
+      "sourceIds": [
+        "s14",
+        "s15"
+      ]
+    },
+    {
+      "id": "knowledge-ofs",
+      "companyId": "knowledge",
+      "date": "2026-09-02",
+      "dateLabel": "02 Sep 2026",
+      "title": "Large sponsor offer for sale completed",
+      "kind": "equity",
+      "direction": "reduced",
+      "status": "Completed",
+      "detail": "The OFS covered 31 August–1 September and sold approximately 1.11 billion units. Reporting puts proceeds around ₹11,988 crore.",
+      "qualification": "The primary filing was indexed but full retrieval failed; advisers and financial reports cross-check the sale. Retained 21.48% is approximate, not a freshly verified unit-register figure.",
+      "sourceIds": [
+        "s16",
+        "s17",
+        "s18",
+        "s19"
+      ]
+    },
+    {
+      "id": "soham-buy",
+      "companyId": "soham",
+      "date": "2025-10-16",
+      "dateLabel": "16 Oct 2025",
+      "title": "Ventive completes 76% target acquisition",
+      "kind": "platform",
+      "direction": "added",
+      "status": "Completed",
+      "detail": "The 18 November issuer filing confirms Ventive’s 76% equity acquisition effective 16 October 2025.",
+      "qualification": "Indirect exposure through a listed portfolio company; not a 76% direct Blackstone stake.",
+      "sourceIds": [
+        "s26",
+        "s27"
+      ]
+    },
+    {
+      "id": "soham-ocd",
+      "companyId": "soham",
+      "date": "2025-11-18",
+      "dateLabel": "18 Nov 2025",
+      "title": "₹110.5 crore convertible funding disclosed",
+      "kind": "capex",
+      "direction": "added",
+      "status": "Completed",
+      "detail": "Ventive subscribed to optionally convertible debentures in Soham Leisure Ventures.",
+      "qualification": "This is a financing instrument; no additional issued-equity percentage is inferred.",
+      "sourceIds": [
+        "s26"
+      ]
+    },
+    {
+      "id": "novigo-close",
+      "companyId": "novigo",
+      "date": "2025-11-13",
+      "dateLabel": "13 Nov 2025",
+      "title": "R Systems completes Novigo acquisition",
+      "kind": "platform",
+      "direction": "added",
+      "status": "Completed",
+      "detail": "R Systems completed the purchase of 100% of Novigo Solutions for ₹400 crore.",
+      "qualification": "This is a portfolio-company acquisition, distinct from Blackstone purchasing R Systems stock.",
+      "sourceIds": [
+        "s32",
+        "s33",
+        "s34",
+        "s35"
+      ]
+    },
+    {
+      "id": "agl-sign",
+      "companyId": "agl",
+      "date": "2026-01-31",
+      "dateLabel": "31 Jan 2026",
+      "title": "IGI agrees acquisition of AGL",
+      "kind": "platform",
+      "direction": "added",
+      "status": "Announced",
+      "detail": "The issuer announced acquisition of AGL Holdco and its American Gemological Laboratories business.",
+      "qualification": "Completion on 10 February is reported in research sources; the card retains the primary announcement basis rather than asserting independently verified closing.",
+      "sourceIds": [
+        "s28",
+        "s29",
+        "s30",
+        "s31"
+      ]
+    },
+    {
+      "id": "finest-vn-close",
+      "companyId": "finest-vn",
+      "date": "2026-02-17",
+      "dateLabel": "17 Feb 2026",
+      "title": "Ventive subsidiary completes Finest-VN purchase",
+      "kind": "platform",
+      "direction": "added",
+      "status": "Completed",
+      "detail": "The issuer disclosed the 100% target purchase for ₹59.83 crore, following the October 2025 proposal.",
+      "qualification": "The acquired company stake is not Blackstone’s effective economic stake.",
+      "sourceIds": [
+        "s23",
+        "s24",
+        "s25"
+      ]
+    },
+    {
+      "id": "garden-city-sign",
+      "companyId": "garden-city",
+      "date": "2026-02-23",
+      "dateLabel": "23 Feb 2026",
+      "title": "Nexus agrees 50% mall-company investment",
+      "kind": "platform",
+      "direction": "proposed",
+      "status": "Announced",
+      "detail": "The trust announced the target-company acquisition at a stated consideration of ₹434 crore.",
+      "qualification": "Signed acquisition; completion has not been independently established.",
+      "sourceIds": [
+        "s20",
+        "s21",
+        "s22"
+      ]
+    },
+    {
+      "id": "neysa-sign",
+      "companyId": "neysa",
+      "date": "2026-02-16",
+      "dateLabel": "16 Feb 2026",
+      "title": "AI infrastructure equity agreement announced",
+      "kind": "equity",
+      "direction": "added",
+      "status": "Announced",
+      "detail": "Blackstone and co-investors agreed up to $600 million in equity. Neysa intended to arrange a further $600 million in debt.",
+      "qualification": "The $1.2 billion package is not all Blackstone equity, and commitments are not all cash already deployed.",
+      "sourceIds": [
+        "s39"
+      ]
+    },
+    {
+      "id": "neysa-approval",
+      "companyId": "neysa",
+      "date": "2026-05-20",
+      "dateLabel": "20 May 2026",
+      "title": "CCI approves controlling investment",
+      "kind": "equity",
+      "direction": "added",
+      "status": "Approved",
+      "detail": "The regulator approved the proposed acquisition through named Blackstone vehicles and co-investors.",
+      "qualification": "Regulatory approval alone is not a closing certificate or an exact ownership percentage.",
+      "sourceIds": [
+        "s39",
+        "s40"
+      ]
+    },
+    {
+      "id": "neysa-tranche",
+      "companyId": "neysa",
+      "date": "2026-10-05",
+      "dateLabel": "05 Oct 2026",
+      "title": "Additional funding tranche reported within existing round",
+      "kind": "equity",
+      "direction": "added",
+      "status": "Reported",
+      "detail": "Mint reported a $200 million tranche, including approximately $150 million from Blackstone.",
+      "qualification": "This is described as part of the earlier round. Do not add it to the $600 million commitment as a separate new total; companies declined comment.",
+      "sourceIds": [
+        "s39",
+        "s40",
+        "s41"
+      ]
+    },
+    {
+      "id": "lumina-close",
+      "companyId": "airtrunk-lumina",
+      "date": "2026-04-20",
+      "dateLabel": "20 Apr 2026",
+      "title": "AirTrunk acquires Lumina CloudInfra",
+      "kind": "platform",
+      "direction": "added",
+      "status": "Completed",
+      "detail": "AirTrunk acquired the Blackstone-founded Indian data-centre platform, combining local development with its regional network.",
+      "qualification": "Related-platform consolidation is not an unrelated fresh purchase of all the underlying Indian assets.",
+      "sourceIds": [
+        "s42",
+        "s43",
+        "s44"
+      ]
+    },
+    {
+      "id": "airtrunk-capex",
+      "companyId": "airtrunk-lumina",
+      "date": "2026-06-05",
+      "dateLabel": "05 Jun 2026",
+      "title": "$30 billion Indian development programme announced",
+      "kind": "capex",
+      "direction": "added",
+      "status": "Announced",
+      "detail": "The platform set out a prospective 5 GW development plan through 2030.",
+      "qualification": "Multi-year planned development spending is not completed Blackstone equity investment.",
+      "sourceIds": [
+        "s42",
+        "s43",
+        "s44"
+      ]
+    },
+    {
+      "id": "globetrotters-confirm",
+      "companyId": "globetrotters-vera",
+      "date": "2026-09-07",
+      "dateLabel": "Confirmed 7 Sep 2026 · closing date undisclosed",
+      "title": "Controlling education-services investment confirmed",
+      "kind": "equity",
+      "direction": "added",
+      "status": "Completed",
+      "detail": "CRISIL identifies a completed 60% purchase by Vera Education Services Holdings from the Periwal family.",
+      "qualification": "This is the confirmation date, not the disclosed closing date. Ownership is in the services company, not automatically in a school trust.",
+      "sourceIds": [
+        "s45",
+        "s46"
+      ]
+    },
+    {
+      "id": "sageone-sign",
+      "companyId": "ask-sageone",
+      "date": "2026-09-30",
+      "dateLabel": "30 Sep 2026",
+      "title": "ASK signs SageOne acquisition",
+      "kind": "platform",
+      "direction": "proposed",
+      "status": "Announced",
+      "detail": "ASK signed for all SageOne partnership interests, with Samit Vartak expected to lead equities for the combined platform.",
+      "qualification": "The legal-adviser statement retains approval conditions. A later “completed” headline conflicts with its article body. Client portfolio shares are not Blackstone corporate holdings.",
+      "sourceIds": [
+        "s47",
+        "s48",
+        "s49"
+      ]
+    },
+    {
+      "id": "ace-report",
+      "companyId": "ace-insurance",
+      "date": "2025-10-25",
+      "dateLabel": "Reported 25 Oct 2025 · purchase date uncertain",
+      "title": "Majority investment reported; chronology unresolved",
+      "kind": "equity",
+      "direction": "held",
+      "status": "Timing uncertain",
+      "detail": "Ace confirms a Blackstone investment in 2025, and October reporting describes a majority purchase.",
+      "qualification": "Earlier September reporting conflicts with the October timing and exact percentage. This record is in-window reporting, not proof the purchase occurred within the trailing year.",
+      "sourceIds": [
+        "s50",
+        "s51",
+        "s52",
+        "s53"
+      ]
+    },
+    {
+      "id": "rcb-sign",
+      "companyId": "rcb",
+      "date": "2026-03-24",
+      "dateLabel": "24 Mar 2026",
+      "title": "Consortium signs RCB acquisition",
+      "kind": "equity",
+      "direction": "proposed",
+      "status": "Announced",
+      "detail": "The consortium signed to acquire the men’s IPL and women’s WPL franchise from United Spirits.",
+      "qualification": "100% and the $1.78 billion transaction value belong to the consortium deal, not solely Blackstone. Latest closing not established.",
+      "sourceIds": [
+        "s54",
+        "s55"
+      ]
+    },
+    {
+      "id": "taj-close",
+      "companyId": "taj-aravali",
+      "date": "2025-12-31",
+      "dateLabel": "Dec 2025 · exact closing day undisclosed",
+      "title": "50% Udaipur hotel stake reportedly acquired",
+      "kind": "equity",
+      "direction": "added",
+      "status": "Reported",
+      "detail": "Reporting describes a completed 50% investment in the Taj Aravali asset for approximately $100–110 million.",
+      "qualification": "Exact day and a primary closing filing were unavailable. 31 December is a month-end sorting date, not a claimed transaction day.",
+      "sourceIds": [
+        "s56",
+        "s57",
+        "s58"
+      ]
+    },
+    {
+      "id": "ags-drhp",
+      "companyId": "ags-health",
+      "date": "2026-08-07",
+      "dateLabel": "07 Aug 2026",
+      "title": "IPO filing proposes fresh capital and sponsor sale",
+      "kind": "equity",
+      "direction": "proposed",
+      "status": "Announced",
+      "detail": "Updated papers reportedly outline ₹1,800 crore fresh issue and ₹3,000 crore selling-shareholder OFS.",
+      "qualification": "Proposed offer structure is not a completed stake reduction. Original 2025 acquisition is not counted as a new purchase within this window.",
+      "sourceIds": [
+        "s59",
+        "s60",
+        "s61"
+      ]
+    },
+    {
+      "id": "pgp-talks",
+      "companyId": "pgp-glass",
+      "date": "2026-09-14",
+      "dateLabel": "14 Sep 2026",
+      "title": "Potential sale to Brookfield reported",
+      "kind": "interest",
+      "direction": "proposed",
+      "status": "Reported",
+      "detail": "Economic Times reported advanced discussions for a possible $1.3–1.5 billion sale.",
+      "qualification": "No signed or completed exit established. Re-publications of the same article are not independent confirmations.",
+      "sourceIds": [
+        "s62",
+        "s63"
+      ]
+    },
+    {
+      "id": "accord-interest",
+      "companyId": "accord",
+      "date": "2026-10-14",
+      "dateLabel": "14 Oct 2026",
+      "title": "Potential investment / bidding interest reported",
+      "kind": "interest",
+      "direction": "proposed",
+      "status": "Reported",
+      "detail": "Mint reports discussions to invest $400–500 million for a minority stake in the defence technology company.",
+      "qualification": "Watchlist only: do not count as an invested company, signed commitment or completed purchase.",
+      "sourceIds": [
+        "s64"
+      ]
+    },
+    {
+      "id": "blupine-interest",
+      "companyId": "blupine",
+      "date": "2026-09-03",
+      "dateLabel": "03 Sep 2026",
+      "title": "Potential investment / bidding interest reported",
+      "kind": "interest",
+      "direction": "proposed",
+      "status": "Reported",
+      "detail": "Economic Times reports Blackstone among bidders for Actis-backed BluPine Energy.",
+      "qualification": "Watchlist only: do not count as an invested company, signed commitment or completed purchase.",
+      "sourceIds": [
+        "s65"
+      ]
+    },
+    {
+      "id": "nitesh-agreement",
+      "companyId": "nitesh-residency",
+      "date": "2025-11-11",
+      "dateLabel": "11 Nov 2025",
+      "title": "Ritz-Carlton property-company agreement reported",
+      "kind": "equity",
+      "direction": "proposed",
+      "status": "Reported",
+      "detail": "Reporting described a signed majority purchase in the property-owning company; a later industry report refers to the acquisition.",
+      "qualification": "No primary closing record was retrieved. This does not mean Blackstone purchased Marriott International shares.",
+      "sourceIds": [
+        "s75",
+        "s76"
+      ]
+    },
+    {
+      "id": "galaxy-sign",
+      "companyId": "galaxy-infra",
+      "date": "2026-09-09",
+      "dateLabel": "09 Sep 2026",
+      "title": "Nexus signs Guwahati mall-and-hotel company acquisition",
+      "kind": "platform",
+      "direction": "proposed",
+      "status": "Announced",
+      "detail": "The transaction adviser confirms a proposed acquisition of all target shares for approximately ₹1,600 crore.",
+      "qualification": "100% refers to the target company acquired by Nexus, not to Blackstone’s direct effective stake. Both assets were under construction.",
+      "sourceIds": [
+        "s77",
+        "s78"
+      ]
+    },
+    {
+      "id": "diamond-sign",
+      "companyId": "diamond-plaza",
+      "date": "2026-04-07",
+      "dateLabel": "07 Apr 2026",
+      "title": "Nexus SPV approves proposed mall-company purchase",
+      "kind": "platform",
+      "direction": "proposed",
+      "status": "Announced",
+      "detail": "The issuer filing records approval of transaction documents at approximately ₹347.5 crore.",
+      "qualification": "A July rating report still called it a potential acquisition. Exact restructured legal name and closing are not asserted.",
+      "sourceIds": [
+        "s79",
+        "s80",
+        "s81"
+      ]
+    },
+    {
+      "id": "horizon-placement",
+      "companyId": "horizon-industrial",
+      "date": "2025-12-31",
+      "dateLabel": "Dec 2025 · disclosed retrospectively in Aug 2026",
+      "title": "₹1,650 crore pre-IPO private placement disclosed",
+      "kind": "equity",
+      "direction": "reduced",
+      "status": "Completed",
+      "detail": "The issuer’s August release confirms a December 2025 primary raise from investors including 360 ONE, SBI Life and Radhakishan Damani.",
+      "qualification": "New company capital is not Blackstone buying or selling existing shares. Exact percentage impact and December closing day are not established.",
+      "sourceIds": [
+        "s82",
+        "s83",
+        "s84"
+      ]
+    },
+    {
+      "id": "horizon-ipo",
+      "companyId": "horizon-industrial",
+      "date": "2026-08-24",
+      "dateLabel": "Aug 2026 · IPO / listing",
+      "title": "Fresh-only IPO; promoter dilution rather than OFS",
+      "kind": "equity",
+      "direction": "reduced",
+      "status": "Completed",
+      "detail": "The ₹2,600 crore issue comprised newly issued shares. The company confirms its exchange listing; reporting describes promoter-group dilution from 88.7% to 75.4%.",
+      "qualification": "Promoter-group percentage is not a verified current Blackstone aggregate. No sponsor OFS occurred in this IPO.",
+      "sourceIds": [
+        "s82",
+        "s83",
+        "s84",
+        "s85"
+      ]
+    },
+    {
+      "id": "vision-acquire",
+      "companyId": "vision-softech",
+      "date": "2026-08-12",
+      "dateLabel": "Reported 12 Aug 2026 · closing date undisclosed",
+      "title": "Horizon’s 49% land-platform acquisition reported",
+      "kind": "platform",
+      "direction": "added",
+      "status": "Reported",
+      "detail": "IPO coverage identifies the purchase of a 49% interest and the target’s Narsapura development land.",
+      "qualification": "The publication date is used to sort the disclosure; the actual closing date and consideration were not retrieved.",
+      "sourceIds": [
+        "s84",
+        "s86",
+        "s87"
+      ]
+    },
+    {
+      "id": "bagmane-ipo",
+      "companyId": "bagmane-prime",
+      "date": "2026-05-14",
+      "dateLabel": "May 2026 · IPO / listing",
+      "title": "IPO includes partial Blackstone monetisation",
+      "kind": "equity",
+      "direction": "reduced",
+      "status": "Completed",
+      "detail": "Listing coverage describes approximately ₹1,015 crore of offer-for-sale proceeds attributable to the Blackstone holder alongside fresh fundraising.",
+      "qualification": "Do not equate old interests in Bagmane Developers or Bagmane Rio with the post-IPO REIT percentage. Offer document is indexed; full PDF retrieval exceeded the web-tool limit.",
+      "sourceIds": [
+        "s88",
+        "s89",
+        "s90",
+        "s91"
+      ]
+    },
+    {
+      "id": "kelzai-sign",
+      "companyId": "kelzai-eco",
+      "date": "2026-07-09",
+      "dateLabel": "09 Jul 2026",
+      "title": "Ventive signs resort-company acquisition",
+      "kind": "platform",
+      "direction": "proposed",
+      "status": "Announced",
+      "detail": "Reporting and issuer-result analysis describe a ₹281.88 crore acquisition of all equity and preference capital.",
+      "qualification": "Indirect signed transaction, not a verified additional purchase of Ventive shares by Blackstone. Closing remains unconfirmed in this review.",
+      "sourceIds": [
+        "s25",
+        "s92",
+        "s93"
+      ]
+    }
+  ],
+  "report": {
+    "title": "Blackstone in India — capital, control and the next growth platforms",
+    "summary": "Blackstone is building exposure to AI infrastructure, financial services, healthcare and domestic consumption while recycling capital from mature holdings. The useful signal is what the investment buys and how it can grow—not simply whether the Blackstone name appears on a shareholder list.",
+    "sections": [
+      {
+        "title": "The year is a rotation, not a blanket buying spree",
+        "text": "The evidence shows several different actions at once: a new equity-linked bank commitment, AI infrastructure funding, a larger hospital platform, acquisitions by existing portfolio companies and sales of mature positions. Federal Bank adds primary capital in stages. Neysa targets scarce domestic computing capacity. Aster combines hospital networks. Meanwhile, Mphasis, EPL and Knowledge Realty show that India-wide optimism can coexist with company-level realisations. These transactions should not be reduced to a single bullish or bearish flow signal.",
+        "sourceIds": [
+          "s1",
+          "s2",
+          "s3",
+          "s39",
+          "s7",
+          "s8",
+          "s9",
+          "s10",
+          "s14",
+          "s16"
+        ]
+      },
+      {
+        "title": "Business building explains more than a quarterly stake change",
+        "text": "A large part of the activity happens below the listed parent. R Systems bought Novigo; IGI agreed to add AGL; Ventive expanded into hotel and club businesses; Nexus pursued additional mall companies. These transactions can deepen capabilities, enter new catchments and spread overheads without Blackstone purchasing another share of the listed parent. They can also add integration risk and debt. The research therefore names the target, follows the ownership chain and keeps the parent stake separate from the acquired subsidiary percentage.",
+        "sourceIds": [
+          "s32",
+          "s33",
+          "s29",
+          "s30",
+          "s23",
+          "s20"
+        ]
+      },
+      {
+        "title": "The most tangible future-facing exposure is infrastructure around AI",
+        "text": "Neysa and AirTrunk/Lumina form a clearer AI thesis than assigning an AI label to every software company. One supplies computing capacity and cloud services; the other develops the physical data-centre footprint. Demand must still convert into contracted usage, customer payments and returns above the cost of financing. Power connections, imported hardware, rapid equipment obsolescence and concentration among large customers are important constraints. Announced financing packages and long-term development programmes are therefore shown separately from cash deployed and completed ownership.",
+        "sourceIds": [
+          "s39",
+          "s40",
+          "s41",
+          "s42",
+          "s43",
+          "s44"
+        ]
+      },
+      {
+        "title": "Financial services and healthcare offer distribution-led growth",
+        "text": "Federal Bank, Aadhar and ASK expose Blackstone to different parts of household financial deepening: banking, affordable mortgages and professional asset management. The first test is the quality of credit or client outcomes, rather than the size of an investor’s cheque. In healthcare, the Aster–Quality Care combination can create a broader regional network and procurement scale, but bed additions are valuable only when staffing, utilisation, clinical reputation and cash generation follow. The investment case is therefore about durable operating execution, not the prestige of the sponsor.",
+        "sourceIds": [
+          "s1",
+          "s2",
+          "s3",
+          "s4",
+          "s47",
+          "s48",
+          "s7",
+          "s8",
+          "s9"
+        ]
+      },
+      {
+        "title": "Real-estate exposure spans malls, offices and industrial parks",
+        "text": "Horizon’s fresh-only IPO is a useful distinction: its company raised new money while the promoter percentage diluted, rather than Blackstone selling existing shares through an OFS. Bagmane’s listing did include Blackstone selling-holder proceeds. Nexus pursued mall-company interests in Dombivli, Kolkata and Guwahati. These are different mechanisms and risk profiles. The common opportunity is professionally operated, income-producing property; the tests are tenant demand, development cost, financing and distribution capacity. The record does not treat property tenants or hotel operators as companies Blackstone automatically owns.",
+        "sourceIds": [
+          "s82",
+          "s83",
+          "s84",
+          "s85",
+          "s88",
+          "s89",
+          "s90",
+          "s91",
+          "s77",
+          "s78"
+        ]
+      },
+      {
+        "title": "Exits, pledges and transfers tell different stories",
+        "text": "Mphasis provides an important example: the absolute share count fell in the December 2025 quarter, but subsequent small percentage declines occurred at an unchanged share count. That later movement is dilution. Aadhar’s new Blackstone promoter bought an internal block while a separate external investor purchased shares from the outgoing vehicle; calling the internal transfer fresh group accumulation would be misleading. EPL’s reported disposal is an exit. AGS’s draft IPO is a proposed liquidity route. A pledge or an open-offer announcement alone establishes neither a sale nor completion.",
+        "sourceIds": [
+          "s10",
+          "s11",
+          "s12",
+          "s13",
+          "s4",
+          "s5",
+          "s6",
+          "s14",
+          "s15",
+          "s59",
+          "s60",
+          "s61"
+        ]
+      },
+      {
+        "title": "How to use this research for stock selection",
+        "text": "Start with the operating business, then inspect the exact holder, transaction instrument and date. A control investor may use governance rights, acquisitions and leverage that a retail shareholder cannot reproduce. A good acquisition price for a private fund can also differ from today’s quoted market valuation. For listed candidates, follow cash conversion, debt, return on incremental capital, minority-shareholder treatment and execution against expansion promises. Reported interest in Accord or BluPine is a research lead, not evidence that Blackstone already owns either company. No transaction coverage can guarantee that every small or undisclosed trade has been captured.",
+        "sourceIds": [
+          "s64",
+          "s65",
+          "s72"
+        ]
+      }
+    ],
+    "themes": [
+      {
+        "name": "AI & digital infrastructure",
+        "conviction": "Direct investment evidence",
+        "case": "Neysa and AirTrunk/Lumina demonstrate investment in compute services and physical data centres supporting Indian enterprise and sovereign-AI demand.",
+        "watch": "Contracted demand, utilisation, energy access, financing and delivery milestones rather than headline programme size.",
+        "sourceIds": [
+          "s39",
+          "s40",
+          "s42",
+          "s43",
+          "s44"
+        ]
+      },
+      {
+        "name": "Financial services",
+        "conviction": "Direct investment and platform expansion",
+        "case": "Bank warrants, affordable mortgages and the ASK–SageOne agreement show several ways to participate in expanding financial participation.",
+        "watch": "Credit costs, funding mix, client retention and the eventual exercise and use of bank capital.",
+        "sourceIds": [
+          "s1",
+          "s2",
+          "s3",
+          "s4",
+          "s47",
+          "s48"
+        ]
+      },
+      {
+        "name": "Healthcare",
+        "conviction": "Completed platform combination",
+        "case": "The merged Aster platform broadens hospital brands and catchments; AGS adds a different exposure to technology-enabled healthcare administration.",
+        "watch": "Clinical quality, bed utilisation, integration, leverage and the distinction between AGS’s proposed IPO and a completed sponsor sale.",
+        "sourceIds": [
+          "s7",
+          "s8",
+          "s9",
+          "s59",
+          "s60",
+          "s61"
+        ]
+      },
+      {
+        "name": "Hospitality, retail & education",
+        "conviction": "Acquisitions and existing platforms",
+        "case": "Ventive, hotel-property investments, Nexus mall transactions and Globetrotters show exposure to premium consumption and organised services.",
+        "watch": "Acquisition economics, regulation, geographic concentration, occupancy and service quality.",
+        "sourceIds": [
+          "s23",
+          "s26",
+          "s20",
+          "s56",
+          "s57",
+          "s58",
+          "s45"
+        ]
+      },
+      {
+        "name": "Infrastructure & manufacturing",
+        "conviction": "Stated strategy; specific deals still need proof",
+        "case": "Blackstone added dedicated Indian infrastructure leadership, raised a larger Asia private-equity fund and publicly discussed manufacturing and infrastructure opportunities. The Asia fund is not an India-only allocation.",
+        "watch": "Binding company-specific agreements, approvals and equity ownership. Accord and BluPine remain reported interest rather than confirmed holdings.",
+        "sourceIds": [
+          "s71",
+          "s72",
+          "s74",
+          "s64",
+          "s65"
+        ]
+      },
+      {
+        "name": "Logistics & industrial parks",
+        "conviction": "Listed platform and indirect acquisition evidence",
+        "case": "Horizon provides exposure to logistics facilities and manufacturing infrastructure. The platform’s fundraising and Vision Softech interest indicate development expansion, not Blackstone purchasing its tenants.",
+        "watch": "Occupancy, signed leases, tenant diversity, balance-sheet strength and development returns; distinguish promoter dilution from sponsor selling.",
+        "sourceIds": [
+          "s82",
+          "s83",
+          "s84",
+          "s85",
+          "s84",
+          "s86",
+          "s87"
+        ]
+      }
+    ]
+  }
+}

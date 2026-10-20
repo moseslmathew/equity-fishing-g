@@ -12,7 +12,7 @@ const runtime=require('./database-test-runtime.cjs').setup(bucket),store=require
  await Promise.all([store.ensureDatabase(),store.ensureDatabase()]);
  const current=await store.readCurrentPortfolio();assert.deepEqual(current,legacy);
  const funds=await store.readDatabaseFunds(older.portfolioDate.slice(0,7));assert.deepEqual(funds.find(f=>f.id===older.id),legacy.funds[0]);
- const comparisons=await store.readDatabaseComparisons();assert.equal(comparisons.length,22);assert.deepEqual(comparisons.find(c=>c.fundId===fresh.fundId&&c.currentDate===fresh.currentDate),fresh);
+ const comparisons=await store.readDatabaseComparisons();assert.equal(comparisons.length,20+require('../data/september-portfolios.json').comparisons.length);assert.deepEqual(comparisons.find(c=>c.fundId===fresh.fundId&&c.currentDate===fresh.currentDate),fresh);
  const cards=await store.readInvestorCards();assert.equal(cards.length,12);
  for(const profile of require('../lib/investor-registry.ts').investorProfiles)assert.deepEqual(await store.readInvestorPortfolio(profile.id),profile.portfolio);
  assert.deepEqual(await store.readResearchSnapshot(),require('../data/agent-research.json'));

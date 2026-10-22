@@ -11,6 +11,7 @@ import {
   Building2,
   X,
   Search,
+  CheckCircle2,
 } from "lucide-react";
 import { useClerkAuth } from "./clerk-client";
 import { fundCatalog } from "../lib/fund-catalog";
@@ -43,6 +44,128 @@ export default function WatchlistView() {
   const [itemSubtitle, setItemSubtitle] = useState("");
   const [notes, setNotes] = useState("");
   const [submitting, setSubmitting] = useState(false);
+
+  // Autocomplete & live quote states for Stock
+  const [searchQuery, setSearchQuery] = useState("");
+  const [candidates, setCandidates] = useState<
+    Array<{
+      symbol: string;
+      name: string;
+      isin: string;
+      sector: string;
+      price: number | null;
+      changePercent: number | null;
+      close: number | null;
+      date: string | null;
+    }>
+  >([]);
+  const [isSearching, setIsSearching] = useState(false);
+  const [showDropdown, setShowDropdown] = useState(false);
+  const [liveQuote, setLiveQuote] = useState<{
+    price: number | null;
+    change: number | null;
+    changePercent: number | null;
+    series?: string | null;
+  } | null>(null);
+  const [loadingQuote, setLoadingQuote] = useState(false);
+  const [isManualEdit, setIsManualEdit] = useState(false);
+
+  // Debounced search on typing company name or symbol
+  useEffect(() => {
+    if (itemType !== "stock") {
+      setCandidates([]);
+      setShowDropdown(false);
+      return;
+    }
+    const q = searchQuery.trim();
+    if (q.length < 1) {
+      setCandidates([]);
+      setShowDropdown(false);
+      setIsSearching(false);
+      return;
+    }
+
+    let active = true;
+    setIsSearching(true);
+    const timeout = setTimeout(async () => {
+      try {
+        const res = await fetch(`/api/nse?query=${encodeURIComponent(q)}`);
+        if (!res.ok) throw new Error("Search failed");
+        const data = (await res.json()) as { candidates?: typeof candidates };
+        if (active) {
+          setCandidates(data.candidates || []);
+          setShowDropdown(true);
+        }
+      } catch {
+        if (active) setCandidates([]);
+      } finally {
+        if (active) setIsSearching(false);
+      }
+    }, 180);
+
+    return () => {
+      active = false;
+      clearTimeout(timeout);
+    };
+  }, [searchQuery, itemType]);
+
+  const handleSelectStock = async (c: (typeof candidates)[number]) => {
+    setItemKey(c.symbol);
+    setItemTitle(c.name);
+    setItemSubtitle(c.sector || "Equity");
+    setSearchQuery("");
+    setShowDropdown(false);
+    setCandidates([]);
+    setIsManualEdit(false);
+
+    if (c.price !== null) {
+      setLiveQuote({
+        price: c.price,
+        change: null,
+        changePercent: c.changePercent,
+      });
+    }
+
+    setLoadingQuote(true);
+    try {
+      const res = await fetch(`/api/nse?symbol=${encodeURIComponent(c.symbol)}`);
+      if (res.ok) {
+        const snap = (await res.json()) as {
+          live?: {
+            price: number | null;
+            change: number | null;
+            changePercent: number | null;
+            series?: string | null;
+          } | null;
+        };
+        if (snap.live) {
+          setLiveQuote({
+            price: snap.live.price,
+            change: snap.live.change,
+            changePercent: snap.live.changePercent,
+            series: snap.live.series,
+          });
+        }
+      }
+    } catch {
+      // Retain cached quote if live fetch had an issue
+    } finally {
+      setLoadingQuote(false);
+    }
+  };
+
+  const handleCloseModal = () => {
+    setShowAddModal(false);
+    setItemKey("");
+    setItemTitle("");
+    setItemSubtitle("");
+    setNotes("");
+    setSearchQuery("");
+    setCandidates([]);
+    setShowDropdown(false);
+    setLiveQuote(null);
+    setIsManualEdit(false);
+  };
 
   // Quick picker helpers for funds
   const handleSelectPredefinedFund = (fundId: string) => {
@@ -106,11 +229,7 @@ export default function WatchlistView() {
         throw new Error(errorData.error || "Failed to add item");
       }
 
-      setItemKey("");
-      setItemTitle("");
-      setItemSubtitle("");
-      setNotes("");
-      setShowAddModal(false);
+      handleCloseModal();
       await loadWatchlist();
     } catch (err) {
       alert(err instanceof Error ? err.message : "Error adding to watchlist");
@@ -322,7 +441,7 @@ export default function WatchlistView() {
               <h2>Add to Watchlist</h2>
               <button
                 className="watchlist-modal-close"
-                onClick={() => setShowAddModal(false)}
+                onClick={handleCloseModal}
                 aria-label="Close modal"
               >
                 <X size={18} />
@@ -335,7 +454,14 @@ export default function WatchlistView() {
                 <div className="watchlist-type-selector">
                   <button
                     type="button"
-                    onClick={() => setItemType("stock")}
+                    onClick={() => {
+                      setItemType("stock");
+                      setItemKey("");
+                      setItemTitle("");
+                      setItemSubtitle("");
+                      setSearchQuery("");
+                      setLiveQuote(null);
+                    }}
                     className={`watchlist-type-option ${itemType === "stock" ? "is-selected" : ""}`}
                   >
                     <TrendingUp size={14} />
@@ -343,7 +469,14 @@ export default function WatchlistView() {
                   </button>
                   <button
                     type="button"
-                    onClick={() => setItemType("fund")}
+                    onClick={() => {
+                      setItemType("fund");
+                      setItemKey("");
+                      setItemTitle("");
+                      setItemSubtitle("");
+                      setSearchQuery("");
+                      setLiveQuote(null);
+                    }}
                     className={`watchlist-type-option ${itemType === "fund" ? "is-selected" : ""}`}
                   >
                     <Building2 size={14} />
@@ -351,6 +484,174 @@ export default function WatchlistView() {
                   </button>
                 </div>
               </div>
+
+              {itemType === "stock" && !itemKey && (
+                <div className="watchlist-form-group">
+                  <label className="watchlist-form-label">
+                    Search Security by Company Name or Ticker
+                  </label>
+                  <div className="watchlist-search-wrapper">
+                    <div className="watchlist-search-input-box">
+                      <Search size={16} className="watchlist-search-icon" />
+                      <input
+                        type="text"
+                        className="watchlist-input"
+                        placeholder="Type company name or ticker, e.g. Ather, Tata, CDSL..."
+                        value={searchQuery}
+                        onChange={(e) => {
+                          setSearchQuery(e.target.value);
+                          if (!showDropdown && e.target.value.trim().length >= 1) {
+                            setShowDropdown(true);
+                          }
+                        }}
+                        onFocus={() => {
+                          if (candidates.length > 0) setShowDropdown(true);
+                        }}
+                        autoFocus
+                      />
+                      {isSearching ? (
+                        <span className="watchlist-search-spinner" />
+                      ) : searchQuery ? (
+                        <button
+                          type="button"
+                          className="watchlist-search-clear"
+                          onClick={() => {
+                            setSearchQuery("");
+                            setShowDropdown(false);
+                          }}
+                          aria-label="Clear search"
+                        >
+                          <X size={14} />
+                        </button>
+                      ) : null}
+                    </div>
+
+                    {showDropdown && (
+                      <ul className="watchlist-suggestions-menu" role="listbox">
+                        {candidates.length > 0 ? (
+                          candidates.map((c) => (
+                            <li
+                              key={c.symbol}
+                              className="watchlist-suggestion-item"
+                              onClick={() => handleSelectStock(c)}
+                              role="option"
+                              aria-selected={itemKey === c.symbol}
+                            >
+                              <div className="watchlist-suggestion-left">
+                                <div className="watchlist-suggestion-headline">
+                                  <span className="watchlist-suggestion-symbol">{c.symbol}</span>
+                                  <span className="watchlist-suggestion-name">{c.name}</span>
+                                </div>
+                                <div className="watchlist-suggestion-meta">
+                                  <span>{c.sector}</span>
+                                  {c.isin && <span>· ISIN: {c.isin}</span>}
+                                </div>
+                              </div>
+                              {c.price !== null && c.price !== undefined && (
+                                <div className="watchlist-suggestion-right">
+                                  <span className="watchlist-suggestion-price">
+                                    ₹{c.price.toLocaleString("en-IN")}
+                                  </span>
+                                  {c.changePercent !== null && c.changePercent !== undefined && (
+                                    <span
+                                      className={`watchlist-suggestion-change ${
+                                        c.changePercent >= 0 ? "positive" : "negative"
+                                      }`}
+                                    >
+                                      {c.changePercent >= 0 ? "+" : ""}
+                                      {c.changePercent.toFixed(2)}%
+                                    </span>
+                                  )}
+                                </div>
+                              )}
+                            </li>
+                          ))
+                        ) : !isSearching && searchQuery.trim().length >= 1 ? (
+                          <li className="watchlist-suggestions-empty">
+                            No matching NSE equity found for "{searchQuery}". You can enter details manually below.
+                          </li>
+                        ) : null}
+                      </ul>
+                    )}
+                  </div>
+                  {!isManualEdit && (
+                    <button
+                      type="button"
+                      className="watchlist-manual-toggle"
+                      onClick={() => setIsManualEdit(true)}
+                    >
+                      Or enter ticker details manually
+                    </button>
+                  )}
+                </div>
+              )}
+
+              {itemType === "stock" && itemKey && itemTitle && (
+                <div className="watchlist-selected-card">
+                  <div className="watchlist-selected-header">
+                    <span className="watchlist-selected-badge">{itemKey}</span>
+                    <span className="watchlist-selected-verified">
+                      <CheckCircle2 size={12} />
+                      <span>NSE Verified</span>
+                    </span>
+                    <button
+                      type="button"
+                      className="watchlist-selected-change-btn"
+                      onClick={() => {
+                        setItemKey("");
+                        setItemTitle("");
+                        setItemSubtitle("");
+                        setLiveQuote(null);
+                        setSearchQuery("");
+                      }}
+                    >
+                      Change Security
+                    </button>
+                  </div>
+                  <h4 className="watchlist-selected-title">{itemTitle}</h4>
+                  <p className="watchlist-selected-sector">{itemSubtitle || "Equity"}</p>
+                  {(liveQuote?.price || loadingQuote) && (
+                    <div className="watchlist-selected-quote">
+                      {loadingQuote ? (
+                        <span className="watchlist-selected-quote-note">
+                          Fetching live quote from NSE MCP…
+                        </span>
+                      ) : (
+                        <>
+                          <span className="watchlist-selected-price">
+                            ₹{liveQuote?.price?.toLocaleString("en-IN")}
+                          </span>
+                          {liveQuote?.changePercent !== null &&
+                            liveQuote?.changePercent !== undefined && (
+                              <span
+                                className={`watchlist-selected-change ${
+                                  liveQuote.changePercent >= 0 ? "positive" : "negative"
+                                }`}
+                              >
+                                {liveQuote.changePercent >= 0 ? "+" : ""}
+                                {liveQuote.changePercent.toFixed(2)}%
+                              </span>
+                            )}
+                          <span className="watchlist-selected-quote-note">
+                            Live via NSE MCP
+                          </span>
+                        </>
+                      )}
+                    </div>
+                  )}
+                  {!isManualEdit && (
+                    <div style={{ marginTop: "10px" }}>
+                      <button
+                        type="button"
+                        className="watchlist-manual-toggle"
+                        onClick={() => setIsManualEdit(true)}
+                      >
+                        Customize title or sector
+                      </button>
+                    </div>
+                  )}
+                </div>
+              )}
 
               {itemType === "fund" && (
                 <div className="watchlist-form-group">
@@ -372,47 +673,57 @@ export default function WatchlistView() {
                 </div>
               )}
 
-              <div className="watchlist-form-group">
-                <label className="watchlist-form-label">
-                  {itemType === "stock" ? "NSE Ticker / Symbol" : "Fund Identifier"}
-                </label>
-                <input
-                  type="text"
-                  required
-                  placeholder={itemType === "stock" ? "e.g. CDSL, TATAELXSI" : "e.g. nippon, quant-small-cap"}
-                  value={itemKey}
-                  onChange={(e) => setItemKey(e.target.value)}
-                  className="watchlist-input"
-                  autoFocus
-                />
-              </div>
+              {/* Show editable fields only if mutual fund or manual edit is requested or no stock selected yet in manual mode */}
+              {(itemType === "fund" || isManualEdit) && (
+                <>
+                  <div className="watchlist-form-group">
+                    <label className="watchlist-form-label">
+                      {itemType === "stock" ? "NSE Ticker / Symbol" : "Fund Identifier"}
+                    </label>
+                    <input
+                      type="text"
+                      required
+                      placeholder={
+                        itemType === "stock"
+                          ? "e.g. CDSL, ATHERENERG"
+                          : "e.g. nippon, quant-small-cap"
+                      }
+                      value={itemKey}
+                      onChange={(e) => setItemKey(e.target.value.toUpperCase())}
+                      className="watchlist-input"
+                    />
+                  </div>
 
-              <div className="watchlist-form-group">
-                <label className="watchlist-form-label">Name / Display Title</label>
-                <input
-                  type="text"
-                  required
-                  placeholder={
-                    itemType === "stock"
-                      ? "e.g. Central Depository Services India"
-                      : "e.g. Nippon India Small Cap Fund"
-                  }
-                  value={itemTitle}
-                  onChange={(e) => setItemTitle(e.target.value)}
-                  className="watchlist-input"
-                />
-              </div>
+                  <div className="watchlist-form-group">
+                    <label className="watchlist-form-label">Name / Display Title</label>
+                    <input
+                      type="text"
+                      required
+                      placeholder={
+                        itemType === "stock"
+                          ? "e.g. Ather Energy Limited"
+                          : "e.g. Nippon India Small Cap Fund"
+                      }
+                      value={itemTitle}
+                      onChange={(e) => setItemTitle(e.target.value)}
+                      className="watchlist-input"
+                    />
+                  </div>
 
-              <div className="watchlist-form-group">
-                <label className="watchlist-form-label">Sector / Category (Optional)</label>
-                <input
-                  type="text"
-                  placeholder={itemType === "stock" ? "e.g. Capital Markets" : "e.g. Small Cap Fund"}
-                  value={itemSubtitle}
-                  onChange={(e) => setItemSubtitle(e.target.value)}
-                  className="watchlist-input"
-                />
-              </div>
+                  <div className="watchlist-form-group">
+                    <label className="watchlist-form-label">Sector / Category (Optional)</label>
+                    <input
+                      type="text"
+                      placeholder={
+                        itemType === "stock" ? "e.g. Electric Vehicles" : "e.g. Small Cap Fund"
+                      }
+                      value={itemSubtitle}
+                      onChange={(e) => setItemSubtitle(e.target.value)}
+                      className="watchlist-input"
+                    />
+                  </div>
+                </>
+              )}
 
               <div className="watchlist-form-group">
                 <label className="watchlist-form-label">Notes / Thesis (Optional)</label>
@@ -428,7 +739,7 @@ export default function WatchlistView() {
                 <button
                   type="button"
                   className="watchlist-button-secondary"
-                  onClick={() => setShowAddModal(false)}
+                  onClick={handleCloseModal}
                   disabled={submitting}
                 >
                   Cancel
@@ -436,7 +747,7 @@ export default function WatchlistView() {
                 <button
                   type="submit"
                   className="watchlist-button-primary"
-                  disabled={submitting}
+                  disabled={submitting || !itemKey.trim() || !itemTitle.trim()}
                 >
                   {submitting ? "Adding…" : "Add to Watchlist"}
                 </button>

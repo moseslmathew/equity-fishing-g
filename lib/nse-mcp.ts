@@ -37,19 +37,121 @@ export function unwrapNseResult(value:unknown){
   return payload;
 }
 
+import companyQuotes from "../data/company-quotes.json" with { type: "json" };
+import nseEquitySecurities from "../data/nse-equity-securities.json" with { type: "json" };
+
+const knownSectors: Record<string, string> = {
+  ATHERENERG: "Electric Vehicles",
+  CDSL: "Capital Markets",
+  RELIANCE: "Oil & Gas / Diversified",
+  TCS: "IT Services",
+  INFY: "IT Services",
+  HDFCBANK: "Banking",
+  ICICIBANK: "Banking",
+  KOTAKBANK: "Banking",
+  AXISBANK: "Banking",
+  SBIN: "Banking",
+  TATAMOTORS: "Automobiles",
+  TMCV: "Automobiles",
+  TMPV: "Automobiles",
+  "M&M": "Automobiles",
+  "BAJAJ-AUTO": "Automobiles",
+  EICHERMOT: "Automobiles",
+  MARUTI: "Automobiles",
+  BHARTIARTL: "Telecommunications",
+  ITC: "FMCG / Diversified",
+  HINDUNILVR: "FMCG",
+  NESTLEIND: "FMCG",
+  BRITANNIA: "FMCG",
+  VBL: "Consumer Beverages",
+  SUNPHARMA: "Pharmaceuticals",
+  CIPLA: "Pharmaceuticals",
+  DRREDDY: "Pharmaceuticals",
+  DIVISLAB: "Pharmaceuticals",
+  APOLLOHOSP: "Healthcare",
+  TATAPOWER: "Energy & Power",
+  NTPC: "Energy & Power",
+  POWERGRID: "Power Transmission",
+  ADANIENT: "Infrastructure / Diversified",
+  ADANIPORTS: "Ports & Logistics",
+  ADANIGREEN: "Renewable Energy",
+  TATASTEEL: "Metals & Mining",
+  JSWSTEEL: "Metals & Mining",
+  HINDALCO: "Metals & Mining",
+  COALINDIA: "Mining",
+  ULTRACEMCO: "Cement",
+  AMBUJACEM: "Cement",
+  ACC: "Cement",
+  DLF: "Real Estate",
+  GODREJPROP: "Real Estate",
+  LODHA: "Real Estate",
+  OBEROIRLTY: "Real Estate",
+  LT: "Engineering & Construction",
+  BEL: "Aerospace & Defence",
+  HAL: "Aerospace & Defence",
+  BDL: "Aerospace & Defence",
+  DATAPATTNS: "Defence Technology",
+  ZOMATO: "Internet & Consumer Tech",
+  PAYTM: "Fintech",
+  NYKAA: "E-Commerce",
+  POLICYBZR: "Insurtech",
+  BSE: "Financial Market Infrastructure",
+  MCX: "Financial Market Infrastructure",
+  CAMS: "Financial Infrastructure",
+  ANGELONE: "Broking & Wealth",
+};
+
+export function inferSector(symbol: string, name: string): string {
+  const normSym = symbol.replace(/[^A-Z0-9]/g, "");
+  if (knownSectors[normSym]) return knownSectors[normSym];
+  if (knownSectors[symbol]) return knownSectors[symbol];
+
+  const n = name.toLowerCase();
+  if (/\b(bank|banking)\b/.test(n)) return "Banking";
+  if (/\b(finance|financial|finserv|housing finance|capital)\b/.test(n)) return "Financial Services";
+  if (/\b(pharma|pharmaceutical|drugs|laboratories|lifesciences|biotech)\b/.test(n)) return "Pharmaceuticals";
+  if (/\b(hospital|healthcare|health care|medicare|clinic)\b/.test(n)) return "Healthcare";
+  if (/\b(software|technologies|infotech|tech|digital|solutions)\b/.test(n)) return "Information Technology";
+  if (/\b(motors|automotive|automobile|auto|axles|tyres|tubes)\b/.test(n)) return "Automobiles & Auto Ancillaries";
+  if (/\b(power|energy|renewables|solar|wind|hydro)\b/.test(n)) return "Energy & Power";
+  if (/\b(chemical|chemicals|petrochem|fertilisers|fertilizers)\b/.test(n)) return "Chemicals";
+  if (/\b(steel|metals|mining|iron|alloys|minerals)\b/.test(n)) return "Metals & Mining";
+  if (/\b(cement|cements|refractories|infra|construction|buildcon)\b/.test(n)) return "Infrastructure & Materials";
+  if (/\b(hotel|hotels|resorts|hospitality|leisure)\b/.test(n)) return "Hotels & Hospitality";
+  if (/\b(textile|textiles|fabrics|yarn|spinning|garments|fashions)\b/.test(n)) return "Textiles & Apparel";
+  if (/\b(food|foods|beverages|dairy|sugar|agro|edible)\b/.test(n)) return "FMCG & Agriculture";
+  if (/\b(realty|properties|estates|developers|housing)\b/.test(n)) return "Real Estate";
+  if (/\b(logistics|shipping|transport|ports|express)\b/.test(n)) return "Logistics & Shipping";
+  if (/\b(defence|defense|aerospace)\b/.test(n)) return "Aerospace & Defence";
+
+  return "Equity · NSE Main Board";
+}
+
 export async function callNse(service:Service,name:string,args:RecordValue,fetcher:typeof fetch=(input,init)=>globalThis.fetch(input,init)){
   const allowed=service==="live"?["cm_get_stock_quote"]:["search_symbols","get_bulk_quote"];
   if(!allowed.includes(name))throw new Error("Unsupported NSE data request.");
   // This budget covers initialization, notification and the quote call together.
   // NSE can take over 14 seconds for that sequence even when all steps succeed.
-  const controller=new AbortController(),timer=setTimeout(()=>controller.abort(),45_000);let session:string|undefined;
-  const headers=()=>({"Content-Type":"application/json","Accept":"application/json, text/event-stream","MCP-Protocol-Version":"2025-03-26",...(session?{"Mcp-Session-Id":session}:{})});
+  const controller=new AbortController(),timer=setTimeout(()=>controller.abort(),45_000);
+  let session:string|undefined;
+  let cookie:string|undefined;
+  const headers=()=>({
+    "Content-Type":"application/json",
+    "Accept":"application/json, text/event-stream",
+    "MCP-Protocol-Version":"2025-03-26",
+    ...(session?{"Mcp-Session-Id":session}:{}),
+    ...(cookie?{"Cookie":cookie}:{})
+  });
   const post=(body:unknown)=>fetcher(nseSources[service],{method:"POST",headers:headers(),body:JSON.stringify(body),signal:controller.signal,redirect:"manual"});
   try{
     const response=await post({jsonrpc:"2.0",id:1,method:"initialize",params:{protocolVersion:"2025-03-26",capabilities:{},clientInfo:{name:"equity-fishing-reader",version:"1.0"}}});
     session=response.headers.get("mcp-session-id")??undefined;
+    cookie=response.headers.get("set-cookie")??undefined;
     const initialized=await readNseRpc(response,1);if(initialized.error)throw new Error("NSE connection could not be initialized.");
-    const notification=await post({jsonrpc:"2.0",method:"notifications/initialized"});await notification.body?.cancel();if(!notification.ok)throw new Error("NSE connection could not be confirmed.");
+    try{
+      const notification=await post({jsonrpc:"2.0",method:"notifications/initialized"});
+      await notification.body?.cancel();
+    }catch{/* NSE MCP returns 404 for notifications/initialized */}
     const result=await readNseRpc(await post({jsonrpc:"2.0",id:2,method:"tools/call",params:{name,arguments:args}}),2);
     if(result.error)throw new Error("NSE could not complete the data request.");
     return unwrapNseResult(result.result);
@@ -60,9 +162,56 @@ export async function callNse(service:Service,name:string,args:RecordValue,fetch
 }
 
 export async function nseCandidates(query:string){
-  const data=await callNse("history","search_symbols",{query});
-  if(!Array.isArray(data.results))throw new Error("NSE symbol lookup returned an unexpected format.");
-  return data.results.map(object).filter(row=>typeof row.symbol==="string"&&validNseSymbol(row.symbol)).slice(0,20).map(row=>({symbol:row.symbol as string,close:positive(row.last_close),date:string(row.last_date)}));
+  const clean=query.trim().toLowerCase();
+  if(!clean)return [];
+  const terms=clean.split(/\s+/).filter(Boolean);
+
+  const securities=(nseEquitySecurities as unknown as {securities:[string,string,string][]})?.securities??[];
+  const quotes=(companyQuotes as any)?.quotes??{};
+
+  const scored:Array<{
+    symbol:string;
+    name:string;
+    isin:string;
+    sector:string;
+    price:number|null;
+    changePercent:number|null;
+    close:number|null;
+    date:string|null;
+    score:number;
+  }>=[];
+
+  for(const [symbol,name,isin] of securities){
+    const sLower=symbol.toLowerCase();
+    const nLower=name.toLowerCase();
+    let score=0;
+
+    if(sLower===clean)score=1000;
+    else if(nLower===clean)score=900;
+    else if(sLower.startsWith(clean))score=500;
+    else if(nLower.startsWith(clean))score=400;
+    else if(nLower.split(/\s+/).some(w=>w.startsWith(clean)))score=300;
+    else if(terms.every(t=>sLower.includes(t)||nLower.includes(t)))score=100;
+    else if(isin&&isin.toLowerCase()===clean)score=800;
+
+    if(score>0){
+      const q=quotes[symbol];
+      scored.push({
+        symbol,
+        name,
+        isin,
+        sector:inferSector(symbol,name),
+        price:positive(q?.price),
+        changePercent:number(q?.changePercent),
+        close:positive(q?.previousClose??q?.price),
+        date:string(q?.asOf??q?.asOfIso),
+        score
+      });
+    }
+  }
+
+  scored.sort((a,b)=>b.score-a.score||a.symbol.localeCompare(b.symbol));
+  return scored.slice(0,15).map(({score:_,...item})=>item);
 }
 
 export function normalizeNseQuote(symbol:string,payload:unknown){
@@ -77,8 +226,6 @@ export function normalizeNseEod(symbol:string,payload:unknown){
   const row=rows.map(object).find(row=>row.symbol===symbol);if(!row)throw new Error("NSE end-of-day data is unavailable for this security.");
   return {symbol,close:positive(row.close),volume:number(row.volume),date:string(row.date)};
 }
-
-import companyQuotes from "../data/company-quotes.json" with { type: "json" };
 
 function getCachedQuote(symbol: string) {
   try {
@@ -104,3 +251,4 @@ export function nseFailure(error:unknown){
   }
   return "NSE connection could not be established.";
 }
+

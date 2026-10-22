@@ -330,6 +330,8 @@
   padding: 28px;
   width: 100%;
   max-width: 480px;
+  max-height: 90vh;
+  overflow-y: auto;
   box-shadow: 0 20px 50px rgba(28, 17, 49, 0.25), 0 4px 12px rgba(28, 17, 49, 0.1);
   position: relative;
   opacity: 1 !important;
@@ -452,3 +454,301 @@
   padding-top: 16px;
   border-top: 1px solid var(--line);
 }
+
+/* ==========================================================================
+   NSE Autocomplete & Stock Preview Card in Modal
+   ========================================================================== */
+
+.watchlist-search-wrapper {
+  position: relative;
+  width: 100%;
+}
+
+.watchlist-search-input-box {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.watchlist-search-input-box .watchlist-input {
+  padding-left: 38px;
+  padding-right: 38px;
+}
+
+.watchlist-search-icon {
+  position: absolute;
+  left: 12px;
+  color: #7b6f8d;
+  pointer-events: none;
+}
+
+.watchlist-search-spinner {
+  position: absolute;
+  right: 12px;
+  width: 16px;
+  height: 16px;
+  border: 2px solid #e8e1f2;
+  border-top-color: var(--blue);
+  border-radius: 50%;
+  animation: spin 0.8s linear infinite;
+}
+
+.watchlist-search-clear {
+  position: absolute;
+  right: 10px;
+  background: transparent;
+  border: none;
+  color: #7b6f8d;
+  cursor: pointer;
+  padding: 4px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.watchlist-search-clear:hover {
+  background: #f1ecf9;
+  color: var(--ink);
+}
+
+.watchlist-suggestions-menu {
+  position: absolute;
+  top: calc(100% + 6px);
+  left: 0;
+  right: 0;
+  max-height: 280px;
+  overflow-y: auto;
+  background: #ffffff !important;
+  border: 1px solid #c9bddb;
+  border-radius: 12px;
+  box-shadow: 0 12px 36px rgba(28, 17, 49, 0.22), 0 2px 6px rgba(28, 17, 49, 0.08);
+  z-index: 10001;
+  padding: 6px;
+  list-style: none;
+  margin: 0;
+}
+
+.watchlist-suggestion-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 10px 12px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.12s ease;
+  border-bottom: 1px solid #f6f3fa;
+}
+
+.watchlist-suggestion-item:last-child {
+  border-bottom: none;
+}
+
+.watchlist-suggestion-item:hover,
+.watchlist-suggestion-item:focus {
+  background-color: #f3eefb;
+}
+
+.watchlist-suggestion-left {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  min-width: 0;
+}
+
+.watchlist-suggestion-headline {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.watchlist-suggestion-symbol {
+  font-family: monospace;
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--blue);
+  background: #efeaf8;
+  padding: 2px 6px;
+  border-radius: 4px;
+  letter-spacing: 0.5px;
+}
+
+.watchlist-suggestion-name {
+  font-size: 13.5px;
+  font-weight: 600;
+  color: #211d30;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.watchlist-suggestion-meta {
+  font-size: 12px;
+  color: #6d6182;
+  display: flex;
+  gap: 6px;
+}
+
+.watchlist-suggestion-right {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  flex-shrink: 0;
+}
+
+.watchlist-suggestion-price {
+  font-size: 13.5px;
+  font-weight: 700;
+  color: #211d30;
+}
+
+.watchlist-suggestion-change {
+  font-size: 11.5px;
+  font-weight: 600;
+  padding: 1px 5px;
+  border-radius: 4px;
+}
+
+.watchlist-suggestion-change.positive {
+  color: #0b7a42;
+  background: #e7f7ed;
+}
+
+.watchlist-suggestion-change.negative {
+  color: #c92a2a;
+  background: #fde8e8;
+}
+
+.watchlist-suggestions-empty {
+  padding: 14px 16px;
+  font-size: 13px;
+  color: #7b6f8d;
+  text-align: center;
+}
+
+/* Selected Stock Preview Card */
+.watchlist-selected-card {
+  background: #f9f7fd;
+  border: 1px solid #d9d0ea;
+  border-radius: 12px;
+  padding: 14px 16px;
+  margin-bottom: 16px;
+}
+
+.watchlist-selected-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.watchlist-selected-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-family: monospace;
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--blue);
+  background: #ede6f7;
+  padding: 3px 8px;
+  border-radius: 6px;
+}
+
+.watchlist-selected-verified {
+  font-size: 11.5px;
+  font-weight: 600;
+  color: #0b7a42;
+  background: #e7f7ed;
+  padding: 2px 7px;
+  border-radius: 999px;
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.watchlist-selected-title {
+  font-size: 15px;
+  font-weight: 700;
+  color: #211d30;
+  margin: 0 0 4px;
+}
+
+.watchlist-selected-sector {
+  font-size: 12.5px;
+  color: #6d6182;
+  margin: 0 0 10px;
+}
+
+.watchlist-selected-quote {
+  display: flex;
+  align-items: baseline;
+  gap: 10px;
+  padding-top: 10px;
+  border-top: 1px dashed #d8cfe5;
+}
+
+.watchlist-selected-price {
+  font-size: 17px;
+  font-weight: 800;
+  color: #211d30;
+}
+
+.watchlist-selected-change {
+  font-size: 12.5px;
+  font-weight: 600;
+}
+
+.watchlist-selected-change.positive {
+  color: #0b7a42;
+}
+
+.watchlist-selected-change.negative {
+  color: #c92a2a;
+}
+
+.watchlist-selected-quote-note {
+  font-size: 11px;
+  color: #8c7e9f;
+  margin-left: auto;
+}
+
+.watchlist-selected-change-btn {
+  background: transparent;
+  border: 1px solid #d8cfe5;
+  color: #554a67;
+  font-size: 11.5px;
+  font-weight: 600;
+  border-radius: 6px;
+  padding: 3px 8px;
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+
+.watchlist-selected-change-btn:hover {
+  background: #f1ecf9;
+  color: var(--blue);
+  border-color: #baa7d6;
+}
+
+.watchlist-manual-toggle {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  background: none;
+  border: none;
+  color: var(--blue);
+  font-size: 12px;
+  font-weight: 600;
+  cursor: pointer;
+  padding: 0;
+  margin-top: 6px;
+}
+
+.watchlist-manual-toggle:hover {
+  text-decoration: underline;
+}
+
+

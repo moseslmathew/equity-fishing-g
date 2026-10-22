@@ -1,5 +1,6 @@
 import {readCurrentPortfolio,savePortfolio} from "../../../lib/database-store";
 import { env } from "cloudflare:workers";
+import expansion from "../../../data/fund-expansion-2026-10.json";
 import seed from "../../../data/seed.json";
 import { changesBetween, validatePortfolio, type Portfolio } from "../../../lib/portfolio";
 import {readerAllowed,writerAllowed,deny} from "../../../lib/access";
@@ -11,7 +12,7 @@ const key = "portfolio/current.json";
 const headers = { "Cache-Control": "no-store" };
 // Add newly selected schemes without replacing any existing saved fund history.
 function expandedSnapshot(current:Portfolio):Portfolio {
-  const baseline=seed as Portfolio,added=baseline.funds.some(base=>!current.funds.some(f=>f.id===base.id));
+  const baseline={...seed,funds:[...seed.funds,...expansion.funds.filter(f=>f.portfolioDate==="2026-09-30")]} as Portfolio,added=baseline.funds.some(base=>!current.funds.some(f=>f.id===base.id));
   return {...current,
     checkedAt:added?[current.checkedAt,...baseline.funds.filter(base=>!current.funds.some(f=>f.id===base.id)).map(f=>f.lastCheckedAt)].sort().at(-1)!:current.checkedAt,
     summary:added?baseline.summary:current.summary,

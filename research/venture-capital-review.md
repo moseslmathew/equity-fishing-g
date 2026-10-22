@@ -1,0 +1,11 @@
+# Venture-capital equity workspace — 21 October 2026
+
+The new authenticated `/venture-capital` page is reachable from every hamburger menu through the shared navigation. The four managers are Peak XV (former Sequoia India/SEA), Accel, Lightspeed and Khosla Ventures. It covers Indian-listed companies only, as requested: 10 Peak XV, 5 Accel and 2 Lightspeed relationships. Foreign listings, private companies and acquisition-only outcomes are excluded. This is a reviewed coverage list, not a complete portfolio census. Khosla Ventures remains visible with no verified in-scope investment identified; no stake is fabricated. Vinod Khosla’s personal investments are not attributed to the firm.
+
+Research and provenance are versioned with the source in `lib/venture-capital.ts`. Each company has pre-listing evidence. Each numerical position has a named legal holder, reporting date, percentage basis, source and interpretation note. The page is a saved research snapshot with no live-refresh claim or scheduler. Source details expand per company; filtered CSV exports retain dates, status, entity, percentage basis, notes and links.
+
+Indian ownership rows labelled Filing summary are secondary observations, not claims of direct exchange verification. Terminal retrieval of some NSE documents timed out in permission review twice; web retrieval also failed for several exchange files. Work continued with explicitly labelled public summaries and visible gaps. ixigo's company-hosted September filing was retrieved and directly reconciled (26,186,752 shares, 5.94% equity; 5.72% fully diluted is separate). Groww, Awfis and Five-Star snapshots have later-sale or date-reconciliation limitations; their older numbers remain historical. Missing named-holder rows do not establish an exit or zero. No estimates are fabricated to fill undisclosed current stakes.
+
+Existing portfolios, D1/R2 data, login and investor sections are preserved. This section reads bundled research after the existing session check and does not write to production databases.
+
+Validation: `node research/verify-venture-capital.cjs`, TypeScript without incremental output, production Sites build, and local browser checks of navigation, firms, filters, search, source details, CSV and narrow layout. Test server uses only local test credentials.

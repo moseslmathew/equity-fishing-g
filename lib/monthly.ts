@@ -32,9 +32,11 @@ export async function monthlyPortfolio(bucket:R2Bucket,current:Portfolio,baselin
   const availableMonths=await (await import("./database-store")).availableDatabaseMonths();
   const requestedMonth=selection==="latest"?availableMonths[0]:selection;
   const previousMonth=monthBefore(requestedMonth);
-  const [savedFunds,savedPreviousFunds,fullComparisons,previousComparisons]=await Promise.all([readMonth(bucket,requestedMonth,current,baseline),readMonth(bucket,previousMonth,current,baseline),readFullComparisons(bucket,requestedMonth),readFullComparisons(bucket,previousMonth)]);
-  const funds=savedFunds.map(f=>withTopHoldings(f,fullComparisons.find(c=>c.fundId===f.id)));
-  const previousFunds=savedPreviousFunds.map(f=>withTopHoldings(f,previousComparisons.find(c=>c.fundId===f.id)));
+  const [y,m]=requestedMonth.split("-").map(Number);
+  const nextMonth=new Date(Date.UTC(y,m,1)).toISOString().slice(0,7);
+  const [savedFunds,savedPreviousFunds,fullComparisons,previousComparisons,nextComparisons]=await Promise.all([readMonth(bucket,requestedMonth,current,baseline),readMonth(bucket,previousMonth,current,baseline),readFullComparisons(bucket,requestedMonth),readFullComparisons(bucket,previousMonth),readFullComparisons(bucket,nextMonth)]);
+  const funds=savedFunds.map(f=>withTopHoldings(f,fullComparisons.find(c=>c.fundId===f.id)??nextComparisons.find(c=>c.fundId===f.id&&c.previousDate===f.portfolioDate)));
+  const previousFunds=savedPreviousFunds.map(f=>withTopHoldings(f,previousComparisons.find(c=>c.fundId===f.id)??fullComparisons.find(c=>c.fundId===f.id&&c.previousDate===f.portfolioDate)));
   const checkedAt=[current.checkedAt,...funds.map(f=>f.lastCheckedAt)].sort().at(-1)!;
   return {...current,checkedAt,requestedMonth,previousMonth,calendarMonth:calendarMonth(),availableMonths,funds,previousFunds,fullComparisons,missingFunds:ids.filter(id=>!funds.some(f=>f.id===id))};
 }

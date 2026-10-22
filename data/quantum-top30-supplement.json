@@ -1,0 +1,94 @@
+{
+  "fundId": "quantum",
+  "portfolioDate": "2026-09-30",
+  "checkedAt": "2026-10-22T03:21:41Z",
+  "holdings": [
+    {
+      "key": "graphiteindialimited",
+      "name": "Graphite India Limited",
+      "weight": 2.05
+    },
+    {
+      "key": "equitassmallfinancebanklimited",
+      "name": "Equitas Small Finance Bank Limited",
+      "weight": 1.91
+    },
+    {
+      "key": "cartradetechltd",
+      "name": "Cartrade Tech Ltd",
+      "weight": 1.86
+    },
+    {
+      "key": "xproindialtd",
+      "name": "Xpro India Ltd",
+      "weight": 1.86
+    },
+    {
+      "key": "gujaratambujaexportsltd",
+      "name": "Gujarat Ambuja Exports Ltd",
+      "weight": 1.82
+    },
+    {
+      "key": "pvrinoxlimited",
+      "name": "PVR INOX Limited",
+      "weight": 1.76
+    },
+    {
+      "key": "nuvocovistascorporationltd",
+      "name": "Nuvoco Vistas Corporation Ltd",
+      "weight": 1.73
+    },
+    {
+      "key": "caplinpointlaboratoriesltd",
+      "name": "Caplin Point Laboratories Ltd",
+      "weight": 1.72
+    },
+    {
+      "key": "INE508G01029",
+      "name": "Time Technoplast Limited",
+      "weight": 1.71
+    },
+    {
+      "key": "axisbanklimited",
+      "name": "Axis Bank Limited",
+      "weight": 1.7
+    },
+    {
+      "key": "sandhartechnologieslimited",
+      "name": "Sandhar Technologies Limited",
+      "weight": 1.64
+    },
+    {
+      "key": "cromptongreavesconsumerelectricalslimited",
+      "name": "Crompton Greaves Consumer Electricals Limited",
+      "weight": 1.62
+    },
+    {
+      "key": "erislifescienceslimited",
+      "name": "Eris Lifesciences Limited",
+      "weight": 1.59
+    },
+    {
+      "key": "samhihotelsltd",
+      "name": "Samhi Hotels Ltd",
+      "weight": 1.59
+    },
+    {
+      "key": "kotakmahindrabanklimited",
+      "name": "Kotak Mahindra Bank Limited",
+      "weight": 1.55
+    }
+  ],
+  "sources": [
+    {
+      "label": "GMP IPO Watch \u00b7 September allocations",
+      "url": "https://www.gmpipowatch.com/mutual-funds/scheme/quantum-small-cap-fund-direct-plan-growth-option-152107",
+      "scope": "September 2026 company weights, ranks 16\u201330; cash excluded."
+    },
+    {
+      "label": "MF Scanner \u00b7 September allocations",
+      "url": "https://mfscanner.com/fund/quantum-small-cap-fund",
+      "scope": "Independent publisher cross-check of ranks 16\u201330 allocations. Share quantities were not imported."
+    }
+  ]
+}

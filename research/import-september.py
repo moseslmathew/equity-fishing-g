@@ -34,7 +34,7 @@ for id,(cur,prev,sheet,ic,nc,qc,wc) in files.items():
  notes=['Parsed original AMC spreadsheets for both adjacent month ends; matched securities by exact ISIN. Cash, debt and TREPS are excluded.','September independent-provider corroboration is pending: comparison websites checked still displayed August. Do not interpret the official-source status as a multi-provider match.','Changes are net month-end share quantities, not confirmed trades. Corporate actions, security changes and corrections may affect quantities.']
  comparisons.append({'fundId':id,'currentDate':'2026-09-30','previousDate':'2026-08-31','checkedAt':now,'scope':'full_equity','basis':'official_disclosures','rows':rows,'sources':sources,'notes':notes})
  f=next(f for f in seed['funds'] if f['id']==id).copy()
- f.update(portfolioDate='2026-09-30',lastCheckedAt=now,verification='official_only',checkStatus='checked',holdings=[{'key':r['key'],'name':r['name'],'weight':r['weight']} for r in rows if r['currentQuantity']>0][:15],sources=[{'label':'Official September portfolio','url':urls[id][0],'type':'official','portfolioDate':'2026-09-30','matched':True},{'label':'MFScanner — August only','url':provider,'type':'third_party','portfolioDate':'2026-08-31','matched':False}],notes=notes)
+ f.update(portfolioDate='2026-09-30',lastCheckedAt=now,verification='official_only',checkStatus='checked',holdings=[{'key':r['key'],'name':r['name'],'weight':r['weight']} for r in rows if r['currentQuantity']>0][:30],sources=[{'label':'Official September portfolio','url':urls[id][0],'type':'official','portfolioDate':'2026-09-30','matched':True},{'label':'MFScanner — August only','url':provider,'type':'third_party','portfolioDate':'2026-08-31','matched':False}],notes=notes)
  f.pop('holdingsEvidence',None);funds.append(f)
  # Compare official August against existing saved provider quantities, flag discrepancies in report.
  old=next(c for c in json.loads((site/'data/full-portfolio-seed.json').read_text()) if c['fundId']==id)
@@ -43,7 +43,7 @@ for id,(cur,prev,sheet,ic,nc,qc,wc) in files.items():
   normalize=lambda n:re.sub('[^a-z0-9]','',re.sub(r'\b(limited|ltd)\b','',n.lower()))
   found=[r for r in old['rows'] if r['key']==b['key'] or normalize(r['name'])==normalize(b['name'])]
   if len(found)==1 and found[0]['currentQuantity']!=b['quantity']:mismatches.append(b['name'])
- audit.append({'fundId':id,'currentEquities':len(current),'previousEquities':len(previous),'currentWeightSum':round(sum(r['weight'] for r in current.values()),2),'previousProviderQuantityDiscrepancies':mismatches,'top15':f['holdings'],'files':[{'filename':file.name,'sha256':hashlib.sha256(file.read_bytes()).hexdigest()} for file in [cur,prev]]})
+ audit.append({'fundId':id,'currentEquities':len(current),'previousEquities':len(previous),'currentWeightSum':round(sum(r['weight'] for r in current.values()),2),'previousProviderQuantityDiscrepancies':mismatches,'top30':f['holdings'],'files':[{'filename':file.name,'sha256':hashlib.sha256(file.read_bytes()).hexdigest()} for file in [cur,prev]]})
  print(id,len(current),len(previous),'weight',audit[-1]['currentWeightSum'],'historical quantity mismatches',mismatches)
 (site/'data/september-portfolios.json').write_text(json.dumps({'checkedAt':now,'funds':funds,'comparisons':comparisons},ensure_ascii=False,indent=2)+'\n')
 (site/'research/september-import-audit.json').write_text(json.dumps(audit,ensure_ascii=False,indent=2)+'\n')

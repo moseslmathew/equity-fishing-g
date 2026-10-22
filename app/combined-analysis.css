@@ -1,0 +1,43 @@
+.compact-combined.combined-section{border-radius:12px;background:#fff;border-color:#e2ddeb;box-shadow:none}
+.compact-combined[open]>.combined-summary{min-height:50px;padding:12px 18px;border-bottom:1px solid #e7e1ef;border-radius:11px 11px 0 0;background:#faf8fd}
+.compact-combined .combined-title{color:#342a45;font-size:14px}
+.compact-combined .comparison-badge{background:#eee8f8;color:#695187;font-size:11px}
+.compact-combined[open]>.combined-content{padding:16px 18px 18px}
+.compact-combined .combined-stats{gap:10px;margin-bottom:14px}
+.compact-combined .combined-stat{display:grid;grid-template-columns:1fr auto;grid-template-rows:auto auto;gap:3px 10px;min-height:76px;padding:12px 14px;border-radius:8px;border-color:#e6e2ed;background:#fff;align-content:center}
+.compact-combined .combined-stat:before{top:12px;bottom:12px;left:0;right:auto;width:3px;height:auto;border-radius:0 2px 2px 0}
+.compact-combined .combined-stat-top{grid-column:1;grid-row:1;justify-content:flex-start;gap:6px}
+.compact-combined .combined-stat-tag{padding:0;background:none;border-radius:0;font-size:11px;text-transform:none;letter-spacing:0;color:#554860;font-weight:600}
+.compact-combined .combined-stat-top svg{width:13px;height:13px}
+.compact-combined .combined-stat strong{grid-column:2;grid-row:1 / 3;align-self:center;font-size:27px;font-weight:650;letter-spacing:-.6px;color:var(--signal)}
+.compact-combined .combined-stat .combined-stat-label{grid-column:1;grid-row:2;font-size:11px;font-weight:400;color:#766b82}
+.compact-combined .combined-stat[aria-pressed=true]{background:var(--signal-soft);border-color:var(--signal);box-shadow:none}
+.compact-combined .combined-controls{align-items:center;gap:10px;margin-bottom:0}
+.compact-combined .workspace-search{flex:1 1 210px;max-width:280px;min-width:180px;height:36px;border-radius:7px;box-shadow:none;background:#fff}
+.compact-combined .workspace-search input{font-size:12px;height:34px;min-width:0}
+.compact-combined .combined-filters{display:flex;gap:4px;padding:3px;border:1px solid #e6e1ed;border-radius:8px;background:#f7f5fa}
+.compact-combined .combined-filters button{min-height:30px;padding:5px 9px;gap:7px;border:1px solid transparent;border-radius:5px;background:transparent;font-size:11px;color:#63556f;white-space:nowrap}
+.compact-combined .combined-filters button span{color:#80728d;font-size:10px;font-variant-numeric:tabular-nums}
+.compact-combined .combined-filters button[aria-pressed=true]{background:#fff;border-color:#e0d7ed;color:#6438a5;box-shadow:0 1px 2px #24113308}
+.compact-combined .combined-filters button[aria-pressed=true] span{color:#6438a5}
+.compact-combined .combined-help{font-size:11px;min-width:80px;padding:8px 0}
+.compact-combined .combined-help>summary{padding:0;font-size:11px;line-height:20px}
+.compact-combined .combined-help[open]{flex-basis:100%;padding-top:0}
+.compact-combined .combined-help-content{padding:12px;background:#faf9fc}
+.compact-combined .combined-results{display:flex;justify-content:space-between;align-items:center;gap:10px;min-height:34px;font-size:11px;color:#756981}
+.compact-combined .combined-results p{margin:0;overflow-wrap:anywhere}
+.compact-combined .combined-results strong{font-weight:600;color:#45374f}
+.compact-combined .combined-results button{font-size:11px;color:#7143aa;white-space:nowrap;padding:6px 0}
+.compact-combined .combined-scroll{border-color:#e5dfec;border-radius:8px;max-height:570px}
+.compact-combined .combined-table>thead th{padding:9px 12px;background:#f7f5fa;color:#6a5d76;font-size:11px}
+.compact-combined .combined-sort-button{font-size:11px;min-height:25px}
+.compact-combined .combined-company-row>th,.compact-combined .combined-company-row>td{padding:8px 12px;border-bottom-color:#eeebf2}
+.compact-combined .combined-company-button{font-size:12px;gap:8px;min-height:32px}
+.compact-combined .combined-company-button small{font-size:10px;margin-top:1px}
+.compact-combined .company-fund-badge{font-size:10px;padding:0 5px;background:#f2eef7;color:#7b6099}
+.compact-combined .combined-company-row>td:nth-child(n+4){font-size:12px}
+.compact-combined .combined-company-row .movement-label{font-size:11px;padding:3px 7px;border-radius:5px}
+.compact-combined .combined-funds-heading>span{font-size:10px}
+.compact-combined button:focus-visible,.compact-combined summary:focus-visible{outline:2px solid #8051bd;outline-offset:2px}
+@media(max-width:1000px){.compact-combined .combined-controls>.workspace-search{max-width:none}.compact-combined .combined-help{margin-left:auto}.compact-combined .combined-filters{order:2;flex-basis:100%;width:max-content;justify-content:flex-start}.compact-combined .combined-help[open]{order:3}}
+@media(max-width:650px){.compact-combined .combined-stats{grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}.compact-combined[open]>.combined-content{padding:12px}.compact-combined .combined-stat{min-height:70px;padding:10px;gap:4px 6px}.compact-combined .combined-stat strong{font-size:24px}.compact-combined .combined-stat-tag,.compact-combined .combined-stat .combined-stat-label{font-size:10px}.compact-combined .combined-stat-top svg{display:none}.compact-combined .combined-filters{flex-wrap:wrap;gap:2px}.compact-combined .combined-filters button{min-height:36px;flex:1 1 auto;padding:5px 7px}.compact-combined .workspace-search{height:40px;min-width:145px;flex-basis:140px}.compact-combined .workspace-search input{height:38px}.compact-combined .combined-results span{display:none}}

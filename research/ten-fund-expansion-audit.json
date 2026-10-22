@@ -1,0 +1,265 @@
+{
+  "checkedAt": "2026-10-20T17:09:28.935588+00:00",
+  "funds": [
+    {
+      "fundId": "sbi-small",
+      "currentEquities": 63,
+      "previousEquities": 69,
+      "reviewRows": [],
+      "official": true,
+      "top15Status": "official_only"
+    },
+    {
+      "fundId": "canara-small",
+      "currentEquities": 94,
+      "previousEquities": 89,
+      "reviewRows": [],
+      "official": true,
+      "top15Status": "official_only"
+    },
+    {
+      "fundId": "franklin-small",
+      "currentEquities": 88,
+      "previousEquities": 90,
+      "reviewRows": [],
+      "official": true,
+      "top15Status": "official_only"
+    },
+    {
+      "fundId": "kotak-small",
+      "currentEquities": 79,
+      "previousEquities": 79,
+      "reviewRows": [],
+      "official": true,
+      "top15Status": "official_only"
+    },
+    {
+      "fundId": "whiteoak-mid",
+      "currentEquities": 135,
+      "previousEquities": 131,
+      "reviewRows": [
+        "Mahindra & Mahindra Financial Services Limited",
+        "Leela Palaces Hotels & Resorts Limited",
+        "GE Vernova T&D India Limited"
+      ],
+      "official": false,
+      "top15Status": "provider_match"
+    },
+    {
+      "fundId": "dsp-mid",
+      "currentEquities": 64,
+      "previousEquities": 64,
+      "reviewRows": [],
+      "official": true,
+      "top15Status": "official_match"
+    },
+    {
+      "fundId": "edelweiss-mid",
+      "currentEquities": 106,
+      "previousEquities": 98,
+      "reviewRows": [
+        "GE Vernova T&D India Limited",
+        "L&T Finance Ltd.",
+        "Cholamandalam Investment & Finance Company Ltd."
+      ],
+      "official": false,
+      "top15Status": "provider_match"
+    },
+    {
+      "fundId": "uti-mid",
+      "currentEquities": 80,
+      "previousEquities": 79,
+      "reviewRows": [
+        "CHOLAMANDALAM INVESTMENT & FIN"
+      ],
+      "official": false,
+      "top15Status": "provider_match"
+    },
+    {
+      "fundId": "kotak-mid",
+      "currentEquities": 70,
+      "previousEquities": 68,
+      "reviewRows": [],
+      "official": true,
+      "top15Status": "official_only"
+    },
+    {
+      "fundId": "franklin-mid",
+      "currentEquities": 78,
+      "previousEquities": 79,
+      "reviewRows": [],
+      "official": true,
+      "top15Status": "official_match"
+    }
+  ],
+  "officialEvidence": [
+    {
+      "fundId": "23",
+      "month": "2026-09",
+      "url": "https://www.franklintempletonindia.com/download/en-in/monthly-portfolio-dsclr/79c9638b-ce3e-48c8-8036-a571ecd54260/MF-Monthly-Portfolio-ISIN-30-Sep-2026.xlsx",
+      "sha256": "958f3e245a45a8ae34cb28ef2bf87d1f6a7d97121eec9f6a29f86ec7214e28ea"
+    },
+    {
+      "fundId": "30",
+      "month": "2026-09",
+      "url": "https://www.franklintempletonindia.com/download/en-in/monthly-portfolio-dsclr/79c9638b-ce3e-48c8-8036-a571ecd54260/MF-Monthly-Portfolio-ISIN-30-Sep-2026.xlsx",
+      "sha256": "958f3e245a45a8ae34cb28ef2bf87d1f6a7d97121eec9f6a29f86ec7214e28ea"
+    },
+    {
+      "fundId": "23",
+      "month": "2026-08",
+      "url": "https://www.franklintempletonindia.com/download/en-in/monthly-portfolio-dsclr/52e4efe4-b370-4fe7-9024-19a63fde979a/Monthly-Portfolio-ISIN-31-Aug-2026.xlsx",
+      "sha256": "5b3e3f7095944ab0a1d02780cc231a9d41c7f5d61cd8daf5599ee0e0301e3e40"
+    },
+    {
+      "fundId": "30",
+      "month": "2026-08",
+      "url": "https://www.franklintempletonindia.com/download/en-in/monthly-portfolio-dsclr/52e4efe4-b370-4fe7-9024-19a63fde979a/Monthly-Portfolio-ISIN-31-Aug-2026.xlsx",
+      "sha256": "5b3e3f7095944ab0a1d02780cc231a9d41c7f5d61cd8daf5599ee0e0301e3e40"
+    },
+    {
+      "fundId": "24",
+      "month": "2026-09",
+      "url": "https://vatseelabs-s3.kotakmf.com/FormsDownloads/Portfolios/Consolidated-Portfolio-as-on-September-30,-2026/ConsolidatedSEBIPortfolioSeptember2026.xlsx",
+      "sha256": "27601dff56908f2d50672c7d84032eeb25af79d4fb7fdc3042b94b6ea7d0a36c"
+    },
+    {
+      "fundId": "29",
+      "month": "2026-09",
+      "url": "https://vatseelabs-s3.kotakmf.com/FormsDownloads/Portfolios/Consolidated-Portfolio-as-on-September-30,-2026/ConsolidatedSEBIPortfolioSeptember2026.xlsx",
+      "sha256": "27601dff56908f2d50672c7d84032eeb25af79d4fb7fdc3042b94b6ea7d0a36c"
+    },
+    {
+      "fundId": "24",
+      "month": "2026-08",
+      "url": "https://vatseelabs-s3.kotakmf.com/FormsDownloads/Portfolios/Consolidated-SEBI-Portfolio-as-on-August-31,-2026/ConsolidatedSEBIPortfolioAugust2026.xlsx",
+      "sha256": "471c26a74bc9a35e079b717aa696cc3ca13b1cbc40c7c1b7db3b15a3f0830192"
+    },
+    {
+      "fundId": "29",
+      "month": "2026-08",
+      "url": "https://vatseelabs-s3.kotakmf.com/FormsDownloads/Portfolios/Consolidated-SEBI-Portfolio-as-on-August-31,-2026/ConsolidatedSEBIPortfolioAugust2026.xlsx",
+      "sha256": "471c26a74bc9a35e079b717aa696cc3ca13b1cbc40c7c1b7db3b15a3f0830192"
+    },
+    {
+      "fundId": "21",
+      "month": "2026-09",
+      "url": "https://www.sbimf.com/docs/default-source/scheme-portfolios/all-schemes-monthly-portfolio---as-on-30th-september-2026.xlsx?sfvrsn=2a79126c_2",
+      "sha256": "0659fedaf826fdbef4eef702b99a3ac4bcfca1ebc4da1c14bd7dd24b341a67f9"
+    },
+    {
+      "fundId": "21",
+      "month": "2026-08",
+      "url": "https://www.sbimf.com/docs/default-source/scheme-portfolios/all-schemes-monthly-portfolio---as-on-31st-august-2026.xlsx?sfvrsn=a7fdc2ec_2",
+      "sha256": "e962a9d3c1478a8f857071cc20c7afcac742d23665bfc203996adb747588ba43"
+    },
+    {
+      "fundId": "22",
+      "month": "2026-08",
+      "url": "https://www.canararobeco.com/wp-content/uploads/2026/09/SC-\u2013-Canara-Robeco-Small-Cap-Fund-\u2013-August-2026.xlsx",
+      "sha256": "a5aec157a4d3989b742477faae92fc6098a3adada1c00ca48c8d672dc22eca6c"
+    },
+    {
+      "fundId": "26",
+      "month": "2026-08",
+      "url": "https://www.dspim.com/media/pages/mandatory-disclosures/portfolio-disclosures/8a6dbe504f-1789452169/dsp-monthend-portfolio-as-on-31-aug-2026.zip",
+      "sha256": "33cf25defa3364589d8b3c1f0d81e342b9b6b556ca24218c1a6973f19f7ac3e0"
+    },
+    {
+      "fundId": "22",
+      "month": "2026-09",
+      "url": "https://www.canararobeco.com/wp-content/uploads/2026/10/SC-\u2013-Canara-Robeco-Small-Cap-Fund-\u2013-September-2026.xlsx",
+      "sha256": "444671600d9e2df6a932195b549e86709828c30b41938161be40690613497ea7"
+    },
+    {
+      "fundId": "26",
+      "month": "2026-09",
+      "url": "https://www.dspim.com/media/pages/mandatory-disclosures/portfolio-disclosures/7737577fda-1791551248/dsp-monthend-portfolio-as-on-30-september-2026.zip",
+      "sha256": "06acc4ced7c29e359e40b01ff6514b437b9a46ba7ea61d470c2c53e5bb0a3a86"
+    }
+  ],
+  "providerEvidence": [
+    {
+      "file": "kotak-small-cap-fund.html",
+      "sha256": "d4c98ae253fd100dd44d73de79ac5dd6585124c12377f24ca4bedf08d231b5e5"
+    },
+    {
+      "file": "franklin-india-mid-cap-fund.html",
+      "sha256": "b553a807ca370126b950d6dcfee3a7d6eeef900723708ad50704f21114a541cd"
+    },
+    {
+      "file": "uti-mid-cap-fund.html",
+      "sha256": "e911c21be6938e7a5dee52e8dc35fe56f51d3ef489a6fba5d0929507190fef63"
+    },
+    {
+      "file": "dsp-midcap-fund.html",
+      "sha256": "1c2ec66058a82995f6f2eaf210873dc7680faaee70ef762a289764ce08edbb14"
+    },
+    {
+      "file": "edelweiss-mid-decrypt.html",
+      "sha256": "5a98c1459b70e7df8b3073c713b1d9287d2a30d69075dd8dddd02bf14053b5f9"
+    },
+    {
+      "file": "uti-mid-decrypt-aug.html",
+      "sha256": "101f5cc6326437550471a9c5695472d3d2ee9f7b388a7516c5399eb208ba9ca2"
+    },
+    {
+      "file": "whiteoak-mid-decrypt.html",
+      "sha256": "20a14be209ab77d642202084f7f90c22d2379374b16fa4bc1a0293826b2ab8bf"
+    },
+    {
+      "file": "whiteoak-mid-decrypt-aug.html",
+      "sha256": "20a14be209ab77d642202084f7f90c22d2379374b16fa4bc1a0293826b2ab8bf"
+    },
+    {
+      "file": "canara-robeco-small-cap-fund.html",
+      "sha256": "234b06b88cfc10967203ba475b7614770224d10a4eb66f34a091d81ff7339db4"
+    },
+    {
+      "file": "edelweiss-mid-decrypt-aug.html",
+      "sha256": "5a98c1459b70e7df8b3073c713b1d9287d2a30d69075dd8dddd02bf14053b5f9"
+    },
+    {
+      "file": "edelweiss-mid-cap-fund.html",
+      "sha256": "3d7d873b2c2ecdf1fdd6c0c5f429090a919804fa129cabde6450bc5de4fb0680"
+    },
+    {
+      "file": "whiteoak-provider.html",
+      "sha256": "e3a0a0273971892e3663cbe543f5d920fd022e29cf81307d9c55965a4cacc615"
+    },
+    {
+      "file": "uti-mid-decrypt.html",
+      "sha256": "101f5cc6326437550471a9c5695472d3d2ee9f7b388a7516c5399eb208ba9ca2"
+    },
+    {
+      "file": "kotak-midcap-fund.html",
+      "sha256": "ac8389582bea32d7dd83c3e1879e5d8a784714cf257627997d520ea843883551"
+    }
+  ],
+  "providerHistoryEvidence": [
+    {
+      "url": "https://decryptmutualfunds.com/scheme-data/whiteoak-capital/mid-cap-fund",
+      "sha256": "40a090a83a66e7932f0c2c7a899996ba0742da353a07b8b1fe2fa6376c3e60b1",
+      "months": [
+        "2026-08",
+        "2026-09"
+      ]
+    },
+    {
+      "url": "https://decryptmutualfunds.com/scheme-data/edelweiss/mid-cap-fund",
+      "sha256": "23ba69b379921fbc568c2184e78ef73e98ef4c56e0af5a06afa5edb694365e9d",
+      "months": [
+        "2026-08",
+        "2026-09"
+      ]
+    },
+    {
+      "url": "https://decryptmutualfunds.com/scheme-data/uti/mid-cap-fund",
+      "sha256": "b04f37793b773b02f402673594319528984a9eeb2c003309ba9087a9a6853520",
+      "months": [
+        "2026-08",
+        "2026-09"
+      ]
+    }
+  ]
+}

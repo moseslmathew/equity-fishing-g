@@ -1,0 +1,37 @@
+const assert=require('node:assert/strict');
+const runtime=require('./database-test-runtime.cjs').setup({get:async()=>null,list:async()=>({objects:[],truncated:false})});
+(async()=>{
+ const {fundCatalog,schemeCategories,schemeAliases}=require('../lib/fund-catalog.ts');
+ const expansion=require('../data/fund-expansion-2026-10.json');
+ const {validatePortfolio}=require('../lib/portfolio.ts');
+ const {validateFullComparison}=require('../lib/full-portfolio.ts');
+ assert.equal(fundCatalog.length,34);assert.equal(new Set(fundCatalog.map(f=>f.id)).size,34);
+ assert.equal(fundCatalog.filter(f=>schemeCategories[f.id]==='Small cap').length,24);
+ assert.equal(fundCatalog.filter(f=>schemeCategories[f.id]==='Mid cap').length,7);
+ assert(schemeAliases['franklin-small'].includes('Franklin India Smaller Companies Fund'));
+ assert(schemeAliases['kotak-mid'].includes('Kotak Emerging Equity Fund'));
+ const store=require('../lib/database-store.ts');await store.ensureDatabase();
+ const all=await store.readDatabaseFunds('2026-09');assert.equal(all.length,34);
+ const old=all.filter(f=>!expansion.funds.some(x=>x.id===f.id));assert.equal(old.length,24);
+ const sep=require('../data/september-portfolios.json');
+ for(const f of sep.funds)assert.deepEqual(all.find(x=>x.id===f.id),f,'Original saved scheme preserved: '+f.id);
+ const fresh={...all.find(f=>f.id==='sbi-small'),lastCheckedAt:'2026-10-21T01:00:00Z',notes:['Newer independently saved record']};
+ await runtime.db.batch([store.fundStatement(runtime.db,fresh)]);
+ for(const id of new Set(expansion.funds.map(f=>f.id))){if(id==='sbi-small')continue;runtime.sqlite.prepare('DELETE FROM fund_snapshots WHERE fund_id=?').run(id);runtime.sqlite.prepare('DELETE FROM fund_comparisons WHERE fund_id=?').run(id);}
+ runtime.sqlite.prepare("DELETE FROM app_documents WHERE key LIKE 'import:fund-expansion-2026-10:%'").run();
+ await store.ensureDatabase();assert.equal((await store.readDatabaseFunds('2026-09')).length,34);
+ assert.deepEqual((await store.readDatabaseFunds('2026-09')).find(f=>f.id==='sbi-small'),fresh);
+ const n=runtime.sqlite.prepare('SELECT COUNT(*) n FROM fund_snapshots').get().n;await store.ensureDatabase();assert.equal(runtime.sqlite.prepare('SELECT COUNT(*) n FROM fund_snapshots').get().n,n);
+ const req=new Request('https://test/api/portfolio?month=2026-09',{headers:{'x-fund-update-key':runtime.env.UPDATE_KEY}});
+ const response=await require('../app/api/portfolio/route.ts').GET(req);assert.equal(response.status,200);const data=await response.json();assert.equal(data.funds.length,34);assert.deepEqual(data.missingFunds,[]);validatePortfolio(data);
+ const comps=data.fullComparisons;assert.equal(comps.length,33);for(const c of comps)validateFullComparison(c);
+ const {combinedAnalysis}=require('../lib/combined-analysis.ts');assert.equal(combinedAnalysis(comps,'2026-09').coverage,33);
+ const {allCompanyHoldings,sharedCompanyHoldings}=require('../lib/fund-search.ts');
+ for(const id of new Set(expansion.funds.map(f=>f.id)))assert(allCompanyHoldings(data).some(h=>h.fundId===id));
+ assert.equal(sharedCompanyHoldings(data).fullFunds,33);
+ const aug=await require('../app/api/portfolio/route.ts').GET(new Request('https://test/api/portfolio?month=2026-08',{headers:{'x-fund-update-key':runtime.env.UPDATE_KEY}}));const history=await aug.json();assert.equal(history.funds.length,34);assert.deepEqual(history.missingFunds,[]);
+ const official=expansion.comparisons.find(c=>c.basis==='official_disclosures'&&new Set(c.sources.map(s=>new URL(s.url).hostname)).size===1);validateFullComparison(official);
+ assert.throws(()=>validateFullComparison({...official,sources:[official.sources[0],official.sources[0]]}),/distinct/);
+ const provider=expansion.comparisons.find(c=>c.basis==='provider_quantity_comparison');assert.throws(()=>validateFullComparison({...provider,sources:[provider.sources[0],{...provider.sources[0],url:provider.sources[0].url+'?month=previous'}]}),/domains/);
+ console.log('Verified: 34 September funds, 10 new full comparisons (33 total; pre-existing Quantum gap preserved), preserved original 24 schemes, retry-safe database backfill, newer-record protection, 34 August snapshots, shared/company search coverage and source validation.');
+})().catch(e=>{console.error(e);process.exitCode=1});

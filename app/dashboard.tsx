@@ -2,7 +2,7 @@
 import {useEffect,useState} from "react";
 import {RotateCw,ChevronDown} from "lucide-react";
 import type {MonthlyPortfolio} from "../lib/monthly";
-import {schemeNames} from "../lib/fund-catalog";
+import {schemeNames,fundUniverseDescription} from "../lib/fund-catalog";
 import FundBrowser from "./fund-browser";
 import SharedHoldings from "./shared-holdings";
 import {sharedCompanyHoldings} from "../lib/fund-search";
@@ -26,13 +26,12 @@ export default function Dashboard(){
   const months=[...new Set([data.calendarMonth,previousMonth(data.calendarMonth),...data.availableMonths])].sort().reverse();
   const shared=sharedCompanyHoldings(data);
   return <div className="dashboard"><WorkspaceHeader section={section} onNavigate={setSection}/><main className="fund-main">{section==="investors"?<AceInvestors/>:<>
-    <div className="heading overview-heading"><div className="overview-copy"><h1>Equity funds</h1><p>20 small-cap funds and 4 additional Helios equity funds</p></div><div className="fund-actionbar"><label className="month-control"><span>Reporting month</span><span className="month-select-shell"><select aria-label="Reporting month" value={requestedMonth} disabled={loading} onChange={e=>void load(e.target.value)}>{months.map(m=><option key={m} value={m}>{monthLabel(m)}</option>)}</select><ChevronDown size={18} aria-hidden="true"/></span></label><AgentResearch/><button className="reload-button" aria-label="Refresh fund holdings" title="Refresh fund holdings" disabled={loading} onClick={()=>void load()}><RotateCw size={18} className={loading?"refresh-spinning":undefined} aria-hidden="true"/><span>Refresh</span></button></div></div>
+    <div className="heading overview-heading"><div className="overview-copy"><h1>Equity funds</h1><p>{fundUniverseDescription}</p></div><div className="fund-actionbar"><label className="month-control"><span>Reporting month</span><span className="month-select-shell"><select aria-label="Reporting month" value={requestedMonth} disabled={loading} onChange={e=>void load(e.target.value)}>{months.map(m=><option key={m} value={m}>{monthLabel(m)}</option>)}</select><ChevronDown size={18} aria-hidden="true"/></span></label><AgentResearch/><button className="reload-button" aria-label="Refresh fund holdings" title="Refresh fund holdings" disabled={loading} onClick={()=>void load()}><RotateCw size={18} className={loading?"refresh-spinning":undefined} aria-hidden="true"/><span>Refresh</span></button></div></div>
     <div className="results-region" aria-busy={loading}>{loading&&<div className="results-loader" role="status"><span className="loading-spinner" aria-hidden="true"/><span>Loading {monthLabel(requestedMonth)} holdings…</span></div>}<div className={loading?"results-content is-loading":"results-content"}>
     {error&&<p className="error-notice" role="alert">{error} Showing the last loaded comparison.</p>}
     <CombinedAnalysis key={data.requestedMonth} comparisons={data.fullComparisons??[]} month={data.requestedMonth}/>
 
-    <details className="portfolio-section" open><summary className="portfolio-summary"><span>Fund portfolios</span><span className="section-toggle" aria-hidden="true"/></summary><div className="portfolio-content"><FundBrowser key={data.requestedMonth} data={data} view="table" search={fundSearch} onSearchChange={setFundSearch}/><div className="check-line"><span>Last saved check {time(data.checkedAt)}</span><span>{data.schedule.enabled?"Daily checks at 8 AM IST":"Daily updates not enabled"}</span></div>
-    <p className="footnote">Monthly disclosure snapshots. Matching providers may share a data feed; holdings alone do not establish fund research quality.</p>
+    <details className="portfolio-section" open><summary className="portfolio-summary"><span>Fund portfolios</span><span className="section-toggle" aria-hidden="true"/></summary><div className="portfolio-content"><FundBrowser key={data.requestedMonth} data={data} view="table" search={fundSearch} onSearchChange={setFundSearch}/>
 </div></details>
     <SharedHoldings companies={shared.companies} month={monthLabel(data.requestedMonth)} pending={data.funds.length===0} fullFunds={shared.fullFunds} topOnlyFunds={shared.topOnlyFunds} totalFunds={shared.totalFunds} missingFunds={data.missingFunds.length}/>
     </div></div></>}</main></div>;

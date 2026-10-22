@@ -6,7 +6,7 @@ report is independent of the month selector and is explicitly dated.
 
 For a fresh ChatGPT research run:
 1. Read ALL archived full-equity comparisons via `readAllFullComparisons`,
-   including every fund and month, not only the dashboard month or top 15.
+   including every fund and month, not only the dashboard month or top 30.
    Establish month-end dates and coverage. July-style initial snapshots are
    baselines, not inferred changes without an earlier complete comparison. Use `combinedAnalysis` to join exact names and ISINs;
    withhold totals where corporate actions or duplicate securities need review.

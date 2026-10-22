@@ -1,0 +1,42 @@
+const assert=require('node:assert/strict');
+require('./database-test-runtime.cjs').setup({get:async()=>null,list:async()=>({objects:[],truncated:false})});
+const nse=require('../lib/nse-mcp.ts');
+const encoder=new TextEncoder();
+const rpc=(id,result)=>({jsonrpc:'2.0',id,result});
+const tool=data=>({content:[{type:'text',text:JSON.stringify(data)}],isError:false});
+const live={updatedAt:'2026-10-20T04:00:00Z',stock:{symbol:'TEST',series:'EQ',lastTradedPrice:100,preClosePrice:99,change:1,perChange:1.01,volume:1000,highPrice:101,lowPrice:98,openPrice:99.5,fiftyTwoWeekHigh:125,fiftyTwoWeekLow:70,perChange30d:-3.7,latestTimestamp:'2026-10-19 16:00:27'}};
+(async()=>{
+ assert(nse.validNseSymbol('M&M'));assert(!nse.validNseSymbol('https://example.com'));assert(!nse.validNseSymbol('TEST\n'));
+ const message=rpc(2,tool({ok:true}));let cancelled=false;
+ const stream=new ReadableStream({start(controller){controller.enqueue(encoder.encode('event: message\r'));controller.enqueue(encoder.encode('\ndata: '+JSON.stringify(message)+'\r\n\r\n'));},cancel(){cancelled=true;}});
+ assert.deepEqual(await nse.readNseRpc(new Response(stream,{headers:{'content-type':'text/event-stream'}}),2),message);assert(cancelled,'Stop finite SSE response without waiting for the connection to close');
+ assert.equal((await nse.readNseRpc(Response.json(message),2)).id,2);
+ await assert.rejects(nse.readNseRpc(Response.json(message,{status:503}),2));
+ assert.throws(()=>nse.unwrapNseResult({isError:true}));assert.throws(()=>nse.unwrapNseResult(tool({error:'unavailable'})));
+ const quote=nse.normalizeNseQuote('TEST',live);assert.equal(quote.price,100);assert.equal(quote.open,99.5);assert.equal(quote.yearHigh,125);assert.equal(quote.yearLow,70);assert.equal(quote.change30d,-3.7);assert.equal(nse.normalizeNseQuote('TEST',{stock:{...live.stock,perChange30d:undefined,fiftyTwoWeekHigh:0}}).change30d,null);assert.equal(nse.normalizeNseQuote('TEST',{stock:{...live.stock,fiftyTwoWeekHigh:0}}).yearHigh,null);assert.equal(quote.asOfIso,'2026-10-19T10:30:27.000Z','Use actual quote timestamp, not updatedAt or retrieval time');
+ assert.throws(()=>nse.normalizeNseQuote('OTHER',live));assert.throws(()=>nse.normalizeNseQuote('TEST',{stock:{...live.stock,series:'N1'}}));
+ assert.equal(nse.normalizeNseQuote('TEST',{stock:{...live.stock,lastTradedPrice:0}}).price,null);
+ assert.equal(nse.normalizeNseEod('TEST',{quotes:[{symbol:'TEST',close:100,volume:1000,date:'2026-10-19'}]}).close,100);
+ assert.throws(()=>nse.normalizeNseEod('OTHER',{quotes:[]}));
+ const originalFetch=global.fetch,calls=[];
+ global.fetch=async(url,options)=>{if(options.method==='DELETE')return new Response(null,{status:202});calls.push({url,body:JSON.parse(options.body)});const body=JSON.parse(options.body);
+   assert(Object.values(nse.nseSources).includes(url));assert.equal(options.redirect,'manual','Cloudflare supports manual redirects; never follow an NSE redirect to an unapproved host');
+   if(body.method==='initialize')return Response.json(rpc(1,{protocolVersion:'2025-03-26'}),{headers:{'mcp-session-id':'fixture-session'}});
+   assert.equal(options.headers['Mcp-Session-Id'],'fixture-session');
+   if(body.method==='notifications/initialized')return new Response(null,{status:202});
+   if(body.params.name==='search_symbols')return Response.json(rpc(2,tool({results:[{symbol:'TEST',last_close:100,last_date:'2026-10-19'},{symbol:'INVALID/URL'}]})));
+   if(body.params.name==='cm_get_stock_quote')return Response.json(rpc(2,tool(live)));
+   return new Response(null,{status:503});
+ };
+ try{
+   assert.equal((await nse.nseCandidates('test')).length,1);
+   const snapshot=await nse.nseSnapshot('TEST');assert.equal(snapshot.live.price,100);assert.equal(snapshot.eod,null);assert(snapshot.eodError,'Preserve working quote when EOD source fails');
+   await assert.rejects(nse.callNse('live','unapproved_tool',{}));
+   const api=require('../app/api/nse/route.ts');assert.equal((await api.GET(new Request('https://test/api/nse?symbol=TEST'))).status,401);
+   const runtimeEnv=require('../lib/access.ts').authEnv();const headers={'x-fund-update-key':runtimeEnv.UPDATE_KEY};
+   const before=calls.length;assert.equal((await api.GET(new Request('https://test/api/nse?symbol=https://example.com',{headers}))).status,400);assert.equal(calls.length,before);
+   const response=await api.GET(new Request('https://test/api/nse?symbol=TEST',{headers}));assert.equal(response.status,200);assert.equal(response.headers.get('cache-control'),'private, no-store');
+   global.fetch=async()=>{throw new Error('offline');};const failed=await api.GET(new Request('https://test/api/nse?symbol=TEST',{headers}));assert.equal(failed.status,503);assert.equal((await failed.json()).live,null);
+ }finally{global.fetch=originalFetch;}
+ console.log('NSE checks passed: JSON/SSE, source errors, exact symbol, equity series, true timestamps, partial outage, authentication and input boundaries.');
+})().catch(error=>{console.error(error);process.exit(1);});

@@ -1,5 +1,6 @@
 import {env} from "cloudflare:workers";
 import {neon} from "@neondatabase/serverless";
+import expansion from "../data/fund-expansion-2026-10.json";
 import seed from "../data/seed.json";
 import september from "../data/september-portfolios.json";
 import fullSeed from "../data/full-portfolio-seed.json";
@@ -104,10 +105,20 @@ function accepted(f:Fund){return f.verification!=="conflict"&&f.checkStatus!=="f
 let initializing:Promise<void>|undefined;
 // Data backfill is deliberately outside schema migrations. Retry-safe upserts never replace newer records.
 export async function ensureDatabase(){
- const db=database();if(await db.prepare("SELECT key FROM app_documents WHERE key=?").bind("migration:legacy-v1").first()){await importSeptember(db);return;}
+ const db=database();if(await db.prepare("SELECT key FROM app_documents WHERE key=?").bind("migration:legacy-v1").first()){await importSeptember(db);await importFundExpansion(db);return;}
  if(!initializing)initializing=importLegacy(db).catch(e=>{initializing=undefined;throw e;});
  await initializing;
  await importSeptember(db);
+ await importFundExpansion(db);
+}
+// Versioned, retry-safe addition: saved records checked more recently always win.
+async function importFundExpansion(db:DatabaseClient){
+ const marker="import:fund-expansion-2026-10:"+expansion.checkedAt;
+ if(await db.prepare("SELECT key FROM app_documents WHERE key=?").bind(marker).first())return;
+ const comparisons=expansion.comparisons as FullComparison[];
+ for(const c of comparisons)validateFullComparison(c);
+ await batches(db,[...(expansion.funds as Fund[]).filter(accepted).map(f=>fundStatement(db,f)),...comparisons.map(c=>comparisonStatement(db,c))]);
+ await db.batch([documentStatement(db,marker,{funds:10,snapshots:expansion.funds.length,comparisons:comparisons.length},expansion.checkedAt)]);
 }
 async function importSeptember(db:DatabaseClient){
  const marker="import:september-2026:"+september.checkedAt;

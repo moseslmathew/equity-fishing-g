@@ -30,5 +30,7 @@ export function validateFullComparison(value:unknown):asserts value is FullCompa
   if(c.rows.reduce((sum,r)=>sum+(r.weight??0),0)>100.1)throw new Error("Company allocations exceed net assets.");
   const domains=new Set<string>();
   for(const s of c.sources){if(typeof s.label!=="string"||typeof s.scope!=="string"||new URL(s.url).protocol!=="https:")throw new Error("Invalid comparison source.");domains.add(new URL(s.url).hostname);}
-  if(domains.size<2)throw new Error("Use at least two source domains.");
+  if(new Set(c.sources.map(s=>s.url)).size<2)throw new Error("Use at least two distinct source URLs.");
+  // Adjacent official AMC workbooks legitimately share a publisher domain.
+  if(c.basis==="provider_quantity_comparison"&&domains.size<2)throw new Error("Provider comparisons require at least two source domains.");
 }

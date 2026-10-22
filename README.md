@@ -1,12 +1,12 @@
 # Equity Fishing — project source copy
 
-Synchronized with Smallcap Observatory source commit `d500b7987249314ddd5901ecd0c8e7d1057073ea` (published version 72), on 20 October 2026.
+Synchronized with Smallcap Observatory source commit `64ec4ba73263a8c73ba1f6a9ba0cea33d980de0d` (published version 88), on 20 October 2026.
 
-Latest changes include Foreign Investors coverage (Blackstone, Temasek, GIC and BlackRock), the fund sidebar, company search across funds, full-portfolio shared holdings, and month-to-month company allocation comparisons.
+Latest changes expand the catalogue to 34 funds, add August and September holdings for ten requested small- and mid-cap funds, preserve fund-name aliases, and update shared holdings, company search and full-portfolio comparisons. The existing NSE/company-volume and investor research features are included.
 
 This copy contains the React/TypeScript application, backend APIs, database code, bundled portfolio snapshots, AI research reports, source links and verification scripts. Generated builds, dependencies, credentials and local runtime state are excluded.
 
-The original live Site has not been changed. Its project identifier is deliberately removed from `.openai/hosting.json` so this copy is not accidentally deployed over the existing Site.
+The live Site is published as version 88. Its project identifier remains deliberately removed from `.openai/hosting.json` so this repository copy cannot accidentally deploy over the existing Site.
 
 ## Runtime requirements
 
@@ -21,8 +21,8 @@ The original live Site has not been changed. Its project identifier is deliberat
 
 # Smallcap Observatory
 
-Password-protected dashboard for twenty small-cap mutual funds. The initial verified
-snapshot is dated 31 August 2026. It contains 15 company holdings per fund,
+Password-protected dashboard for 34 mutual funds. The initial verified snapshot
+is dated 31 August 2026. It contains up to 15 company holdings per fund,
 allocation weights, source links and confirmation levels. Fund details and top-15 overlap are available from the dashboard.
 
 ## Data and scheduled updates
@@ -33,7 +33,7 @@ return an unavailable state instead of silently falling back to a stale seed.
 
 GET /api/portfolio reads the shared saved data.
 POST /api/portfolio accepts {snapshot: Portfolio, kind: "check"}.
-The server validates the entire twenty-fund snapshot, rejects older reporting
+The server validates the complete catalogue snapshot, rejects older reporting
 dates, preserves verified holdings on failed or conflicting checks, and computes
 top-15 changes itself. It records entries into and departures from the top 15,
 not purchases or full portfolio exits.
@@ -63,7 +63,7 @@ Keep the independent updater authorization when changing Site sharing settings.
 ### Run procedure
 
 Read GET /api/update-plan and GET /api/portfolio. Check official monthly portfolios
-and corroborating providers for each of the twenty funds. Verify date, company
+and corroborating providers for every fund in the catalogue. Verify date, company
 names and percentages of total net assets. Exclude cash and TREPS. On no new
 disclosure keep holdings and update the check timestamp; on conflict or failed
 retrieval retain the last verified holdings and record the limitation. Update
@@ -93,11 +93,11 @@ Authenticated readers can GET `/api/full-portfolio?month=YYYY-MM`. The independe
 
 ## Fund coverage and layout
 
-The catalog contains twenty active small-cap schemes, retaining the original eight and adding twelve eligible schemes by reported scheme AUM. Bank-branded AMCs, Tata, Franklin and Quant are excluded, as are index funds, ETFs and FoFs. This is a coverage shortlist, not a claim that twenty AMCs have proven superior research quality. `lib/fund-catalog.ts` stores the names, ordering and dated selection evidence; holdings reporting dates remain independent.
+The catalogue contains 34 schemes: 24 small-cap funds, seven mid-cap funds and three other Helios equity funds. The first twenty-scheme shortlist was later expanded with four Helios schemes and ten requested small- and mid-cap funds. This is a coverage universe, not a claim that the included AMCs have proven superior research quality. `lib/fund-catalog.ts` stores names, aliases, categories, ordering and dated selection evidence; holdings reporting dates remain independent.
 
-The dashboard uses two fund cards per row on desktop and one on mobile. Each card shows 15 company allocations, with full portfolio analysis and sources expanded on demand. The month-change loading indicator is preserved. Existing eight-fund R2 snapshots are expanded at read time with new catalog seeds; saved holdings and monthly archives remain intact. The writer requires all twenty IDs, and rejects an old eight-fund update. All twenty August full-equity comparisons versus July are seeded; debt, derivatives and cash are excluded and ambiguous security entries/exits are consolidated into explicit review rows.
+The dashboard uses two fund cards per row on desktop and one on mobile. Each card shows up to 15 company allocations, with full portfolio analysis and sources expanded on demand. Versioned imports expand older database snapshots while preserving newer saved holdings and monthly archives. Debt, derivatives and cash are excluded, and ambiguous security entries or exits are consolidated into explicit review rows.
 
-## Top 15 holdings
+## Original top 15 seed (superseded display limit)
 
 The August seed has fifteen company holdings per fund, ranked by disclosed percentage of net assets from the existing complete equity datasets. Existing top-five figures are preserved. `holdingsEvidence` records additional source scope separately, so original top-five verification is not presented as verification of every added allocation. The reader expands legacy five-position records only using a complete, same-date comparison with matching original figures. Historical months with only five saved ranks remain explicitly partial; unmatched positions are not labeled new to the top 15. The writer requires fifteen positions per fund. No share quantities or dates are changed by this expansion.
 
@@ -110,3 +110,9 @@ The common analysis section uses complete adjacent-month equity comparisons for 
 ### Ace investors
 The header navigation opens a separate Ace investors workspace. Vijay Kedia's portfolio is a searchable modal with direct/entity attribution, company ownership percentages, share quantities, individual reporting dates and source links. `data/ace-investors.json` is a manually checked public-disclosure snapshot, not a complete investor book or a live trading feed. Refresh records only after reconciling the reporting period and pre/post-IPO basis; missing values must not be interpreted as exits.
 Ashish Kacholia uses `data/ashish-kacholia.json`: named direct holdings are shown separately from associated-company stakes, and older March records are explicitly marked as unconfirmed current ownership. Reconciliation exclusions are visible inside his portfolio modal. Opening another investor resets search and holder filters.
+
+## Compact analysis and top 30 holdings (22 October 2026)
+
+The mutual-fund workspace shows the top 30 company allocations ranked from same-date saved full equity portfolios, preserving saved figures. September has 30 rows for all 34 funds; Quantum’s additional allocations are separately sourced in `data/quantum-top30-supplement.json` and do not fabricate missing quantities. Source evidence distinguishes published allocations from complete quantity comparisons. Historical snapshots expand only when same-date allocations can be reconciled, including explicitly reported prior-month weights from the following comparison; incomplete histories remain labelled. Original stored snapshots are not overwritten. The update contract accepts both legacy 15 and new 30-position snapshots. Increasing display coverage is not recorded as a trade or a new portfolio entry.
+
+Allocation totals, cards/tables, prior allocation comparisons, company search and shared holdings use the expanded data. Combined analysis continues to use full equity portfolios, with compact summary metrics, segmented filters and a company search that initially searches all companies, then respects movement filters.

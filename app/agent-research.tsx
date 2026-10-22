@@ -1,4 +1,5 @@
 "use client";
+import {fundCatalog} from "../lib/fund-catalog";
 import {useEffect,useState} from "react";
 import {ArrowUpRight,Sparkles,Printer,X} from "lucide-react";
 import {Dialog,DialogTrigger,DialogContent,DialogTitle,DialogDescription,DialogClose} from "../components/ui/dialog";
@@ -11,7 +12,7 @@ function FundReading({stock}:{stock:Stock}){
  if(!evidence)return <p className="research-fund-reading">Company identity could not be reconciled with the portfolio archive; fund conclusions are withheld.</p>;
  return <div className="research-fund-reading"><strong>What the portfolios support</strong>{evidence.periods.map(period=>{
  const adds=period.company?.funds.filter(f=>f.status==="new"||f.status==="increased")??[],cuts=period.company?.funds.filter(f=>f.status==="decreased"||f.status==="exited")??[];
- return <p key={period.month}>{monthLabel(period.previousMonth)} → {monthLabel(period.month)}: {period.company?<>{adds.length?<>Added or initiated by {adds.map(f=>f.name).join(", ")}. </>:"No classified addition in the covered funds. "}{cuts.length?<>Reduced or exited by {cuts.map(f=>f.name).join(", ")}. </>:"No classified reduction in the covered funds. "}</>:"No position appears in the covered portfolios. "}{period.coverage<20&&"This window covers only "+period.coverage+" funds; the other funds’ positions are unknown."}</p>;
+ return <p key={period.month}>{monthLabel(period.previousMonth)} → {monthLabel(period.month)}: {period.company?<>{adds.length?<>Added or initiated by {adds.map(f=>f.name).join(", ")}. </>:"No classified addition in the covered funds. "}{cuts.length?<>Reduced or exited by {cuts.map(f=>f.name).join(", ")}. </>:"No classified reduction in the covered funds. "}</>:"No position appears in the covered portfolios. "}{period.coverage<fundCatalog.length&&"This window covers only "+period.coverage+" funds; the other funds’ positions are unknown."}</p>;
  })}<p>{evidence.repeatFunds.length?"Consecutive additions by "+evidence.repeatFunds.join(", ")+" give the signal persistence.":"No consecutive addition by the same manager is observed."} Month-end changes do not reveal transaction timing or manager intent.</p>
  <details className="research-source-list"><summary>Portfolio disclosure links</summary><ul>{[...new Map(evidence.periods.flatMap(p=>p.company?.funds.flatMap(f=>f.sources)??[]).map(s=>[s.url,s])).values()].map(s=><li key={s.url}><a href={s.url} target="_blank" rel="noopener noreferrer">{s.label}</a></li>)}</ul></details></div>;
 }

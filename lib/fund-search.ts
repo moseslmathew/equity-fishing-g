@@ -7,11 +7,11 @@ export function allCompanyHoldings(data:MonthlyPortfolio){
     const comparison=data.fullComparisons.find(item=>item.fundId===fund.id&&item.currentDate===fund.portfolioDate);
     const before=data.previousFunds.find(item=>item.id===fund.id&&item.portfolioDate.slice(0,7)===data.previousMonth);
     const previousRows=new Map(comparison?.previousDate.slice(0,7)===data.previousMonth?comparison.rows.map(row=>[companyKey(row.name),row] as const):[]);
-    const holdings=new Map<string,{name:string;weight:number|null}>();
+    const holdings=new Map<string,{name:string;isin?:string;weight:number|null}>();
     for(const row of comparison?.rows??[]){
-      if(row.currentQuantity>0)holdings.set(companyKey(row.name),{name:row.name,weight:row.weight});
+      if(row.currentQuantity>0)holdings.set(companyKey(row.name),{name:row.name,isin:row.key,weight:row.weight});
     }
-    for(const row of fund.holdings)holdings.set(companyKey(row.name),{name:row.name,weight:row.weight});
+    for(const row of fund.holdings)holdings.set(companyKey(row.name),{name:row.name,isin:row.key,weight:row.weight});
     return [...holdings.entries()].map(([key,holding])=>{
       const priorHolding=before?.holdings.find(row=>companyKey(row.name)===key);
       const priorRow=previousRows.get(key);
@@ -27,10 +27,10 @@ export function searchCompanyHoldings(data:MonthlyPortfolio,query:string){
 }
 
 export function sharedCompanyHoldings(data:MonthlyPortfolio){
-  const grouped=new Map<string,{name:string;funds:{id:string;name:string;weight:number|null}[]}>();
+  const grouped=new Map<string,{name:string;isin?:string;funds:{id:string;name:string;weight:number|null}[]}>();
   for(const holding of allCompanyHoldings(data)){
     const key=companyKey(holding.name);
-    const company=grouped.get(key)??{name:holding.name,funds:[]};
+    const company=grouped.get(key)??{name:holding.name,isin:holding.isin,funds:[]};
     company.funds.push({id:holding.fundId,name:holding.fundName,weight:holding.weight});
     grouped.set(key,company);
   }

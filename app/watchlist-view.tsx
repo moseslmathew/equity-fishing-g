@@ -1,8 +1,20 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import { Bookmark, Trash2, ExternalLink, Plus, RefreshCw, TrendingUp, Building2, User } from "lucide-react";
+import {
+  Bookmark,
+  Trash2,
+  ExternalLink,
+  Plus,
+  RefreshCw,
+  TrendingUp,
+  Building2,
+  X,
+  Search,
+} from "lucide-react";
 import { useClerkAuth } from "./clerk-client";
+import { fundCatalog } from "../lib/fund-catalog";
+import "./watchlist.css";
 
 type WatchlistItem = {
   id: string;
@@ -23,7 +35,7 @@ export default function WatchlistView() {
   const [error, setError] = useState("");
   const [activeTab, setActiveTab] = useState<"all" | "stock" | "fund">("all");
 
-  // Form modal/states
+  // Form modal states
   const [showAddModal, setShowAddModal] = useState(false);
   const [itemType, setItemType] = useState<"stock" | "fund">("stock");
   const [itemKey, setItemKey] = useState("");
@@ -31,6 +43,16 @@ export default function WatchlistView() {
   const [itemSubtitle, setItemSubtitle] = useState("");
   const [notes, setNotes] = useState("");
   const [submitting, setSubmitting] = useState(false);
+
+  // Quick picker helpers for funds
+  const handleSelectPredefinedFund = (fundId: string) => {
+    const found = fundCatalog.find((f) => f.id === fundId);
+    if (found) {
+      setItemKey(found.id);
+      setItemTitle(found.name);
+      setItemSubtitle("Indian Mutual Fund Scheme");
+    }
+  };
 
   const loadWatchlist = async () => {
     setLoading(true);
@@ -114,7 +136,7 @@ export default function WatchlistView() {
 
   if (!isLoaded) {
     return (
-      <div className="results-loader" role="status">
+      <div className="results-loader" role="status" style={{ padding: "40px" }}>
         <span className="loading-spinner" aria-hidden="true" />
         <span>Loading your profile…</span>
       </div>
@@ -123,13 +145,15 @@ export default function WatchlistView() {
 
   if (!isSignedIn) {
     return (
-      <div className="state" style={{ maxWidth: "600px", margin: "40px auto", textAlign: "center", padding: "32px 24px" }}>
-        <Bookmark size={40} style={{ margin: "0 auto 16px", color: "var(--accent)" }} />
-        <h2 style={{ fontSize: "1.5rem", fontWeight: 700, marginBottom: "8px" }}>Sign in to manage your watchlist</h2>
-        <p style={{ color: "var(--muted-foreground)", marginBottom: "24px", lineHeight: 1.5 }}>
+      <div className="watchlist-empty">
+        <div className="watchlist-empty-icon">
+          <Bookmark size={28} />
+        </div>
+        <h3>Sign in to manage your watchlist</h3>
+        <p>
           Create a personalized watchlist of Indian equities, small-cap schemes, and tracked funds. Your watchlist is synced to your account.
         </p>
-        <button className="button" style={{ padding: "10px 24px", fontSize: "0.95rem" }} onClick={openSignIn}>
+        <button className="watchlist-button-primary" onClick={openSignIn}>
           Sign in with Clerk
         </button>
       </div>
@@ -139,43 +163,33 @@ export default function WatchlistView() {
   const filteredItems = items.filter((item) => activeTab === "all" || item.itemType === activeTab);
 
   return (
-    <div className="watchlist-container" style={{ padding: "8px 0" }}>
+    <div className="watchlist-page">
       {/* Header Bar */}
-      <div
-        style={{
-          display: "flex",
-          justifyContent: "space-between",
-          alignItems: "center",
-          flexWrap: "wrap",
-          gap: "16px",
-          marginBottom: "24px",
-          borderBottom: "1px solid var(--border)",
-          paddingBottom: "16px",
-        }}
-      >
-        <div>
-          <h1 style={{ fontSize: "1.75rem", fontWeight: 700, margin: 0, display: "flex", alignItems: "center", gap: "10px" }}>
-            <Bookmark size={24} style={{ color: "var(--accent)" }} />
+      <div className="watchlist-header">
+        <div className="watchlist-header-copy">
+          <h1>
+            <span className="watchlist-badge-icon">
+              <Bookmark size={20} />
+            </span>
             Personal Watchlist
           </h1>
-          <p style={{ margin: "4px 0 0", color: "var(--muted-foreground)", fontSize: "0.9rem" }}>
-            Track your target stocks and funds · Signed in as {user?.fullName || user?.primaryEmailAddress?.emailAddress || "User"}
+          <p>
+            Track your target stocks and mutual funds · {user?.fullName || user?.primaryEmailAddress?.emailAddress || "Account"}
           </p>
         </div>
 
-        <div style={{ display: "flex", gap: "10px", alignItems: "center" }}>
+        <div className="watchlist-actions">
           <button
-            className="quiet-button"
-            style={{ display: "flex", alignItems: "center", gap: "6px" }}
+            className="watchlist-button-secondary"
             onClick={() => void loadWatchlist()}
             disabled={loading}
+            title="Refresh watchlist"
           >
-            <RefreshCw size={16} className={loading ? "refresh-spinning" : undefined} />
+            <RefreshCw size={15} className={loading ? "refresh-spinning" : undefined} />
             <span>Sync</span>
           </button>
           <button
-            className="button"
-            style={{ display: "flex", alignItems: "center", gap: "6px" }}
+            className="watchlist-button-primary"
             onClick={() => setShowAddModal(true)}
           >
             <Plus size={16} />
@@ -185,7 +199,7 @@ export default function WatchlistView() {
       </div>
 
       {/* Tabs */}
-      <div style={{ display: "flex", gap: "8px", marginBottom: "20px" }}>
+      <div className="watchlist-tabs">
         {(
           [
             { id: "all", label: `All (${items.length})` },
@@ -196,17 +210,7 @@ export default function WatchlistView() {
           <button
             key={tab.id}
             onClick={() => setActiveTab(tab.id)}
-            style={{
-              padding: "6px 14px",
-              borderRadius: "6px",
-              fontSize: "0.85rem",
-              fontWeight: activeTab === tab.id ? 600 : 400,
-              backgroundColor: activeTab === tab.id ? "var(--accent)" : "transparent",
-              color: activeTab === tab.id ? "white" : "var(--foreground)",
-              border: "1px solid",
-              borderColor: activeTab === tab.id ? "var(--accent)" : "var(--border)",
-              cursor: "pointer",
-            }}
+            className={`watchlist-tab-button ${activeTab === tab.id ? "is-active" : ""}`}
           >
             {tab.label}
           </button>
@@ -220,140 +224,83 @@ export default function WatchlistView() {
           <span>Refreshing watchlist…</span>
         </div>
       ) : filteredItems.length === 0 ? (
-        <div
-          style={{
-            textAlign: "center",
-            padding: "48px 24px",
-            border: "1px dashed var(--border)",
-            borderRadius: "8px",
-            backgroundColor: "var(--card)",
-          }}
-        >
-          <Bookmark size={32} style={{ margin: "0 auto 12px", opacity: 0.4 }} />
-          <h3 style={{ fontSize: "1.1rem", fontWeight: 600, marginBottom: "6px" }}>Your watchlist is empty</h3>
-          <p style={{ color: "var(--muted-foreground)", fontSize: "0.875rem", marginBottom: "16px" }}>
-            Add Indian small-cap equities or mutual fund schemes to monitor them here.
+        <div className="watchlist-empty">
+          <div className="watchlist-empty-icon">
+            <Bookmark size={28} />
+          </div>
+          <h3>Your watchlist is empty</h3>
+          <p>
+            Add Indian equities or mutual fund schemes to track key allocations and notes in one place.
           </p>
-          <button className="button" onClick={() => setShowAddModal(true)}>
-            Add your first item
+          <button className="watchlist-button-primary" onClick={() => setShowAddModal(true)}>
+            <Plus size={15} />
+            <span>Add your first item</span>
           </button>
         </div>
       ) : (
         /* Grid of Watchlisted Items */
-        <div
-          style={{
-            display: "grid",
-            gridTemplateColumns: "repeat(auto-fill, minmax(320px, 1fr))",
-            gap: "16px",
-          }}
-        >
+        <div className="watchlist-grid">
           {filteredItems.map((item) => (
-            <div
-              key={item.id}
-              style={{
-                backgroundColor: "var(--card)",
-                border: "1px solid var(--border)",
-                borderRadius: "8px",
-                padding: "16px",
-                display: "flex",
-                flexDirection: "column",
-                justifyContent: "space-between",
-                position: "relative",
-              }}
-            >
+            <div key={item.id} className="watchlist-card">
               <div>
-                <div style={{ display: "flex", justifyContent: "space-between", alignItems: "flex-start", marginBottom: "8px" }}>
-                  <div style={{ display: "flex", alignItems: "center", gap: "8px" }}>
-                    <span
-                      style={{
-                        display: "inline-flex",
-                        alignItems: "center",
-                        padding: "2px 8px",
-                        borderRadius: "4px",
-                        fontSize: "0.75rem",
-                        fontWeight: 600,
-                        backgroundColor: item.itemType === "stock" ? "rgba(37, 99, 235, 0.1)" : "rgba(16, 185, 129, 0.1)",
-                        color: item.itemType === "stock" ? "rgb(37, 99, 235)" : "rgb(16, 185, 129)",
-                      }}
-                    >
-                      {item.itemType === "stock" ? <TrendingUp size={12} style={{ marginRight: "4px" }} /> : <Building2 size={12} style={{ marginRight: "4px" }} />}
-                      {item.itemType.toUpperCase()}
+                <div className="watchlist-card-top">
+                  <div className="watchlist-card-tags">
+                    <span className={`watchlist-tag ${item.itemType}`}>
+                      {item.itemType === "stock" ? (
+                        <TrendingUp size={12} />
+                      ) : (
+                        <Building2 size={12} />
+                      )}
+                      <span>{item.itemType}</span>
                     </span>
-                    <span style={{ fontSize: "0.8rem", color: "var(--muted-foreground)" }}>
-                      {item.itemKey}
-                    </span>
+                    <span className="watchlist-ticker">{item.itemKey}</span>
                   </div>
 
                   <button
                     onClick={() => handleRemove(item.itemType, item.itemKey)}
+                    className="watchlist-remove-btn"
                     aria-label={`Remove ${item.itemTitle}`}
-                    style={{
-                      background: "transparent",
-                      border: "none",
-                      color: "var(--muted-foreground)",
-                      cursor: "pointer",
-                      padding: "4px",
-                    }}
                     title="Remove from watchlist"
                   >
                     <Trash2 size={15} />
                   </button>
                 </div>
 
-                <h3 style={{ fontSize: "1.05rem", fontWeight: 600, margin: "0 0 4px" }}>
-                  {item.itemTitle}
-                </h3>
+                <h3 className="watchlist-card-title">{item.itemTitle}</h3>
                 {item.itemSubtitle && (
-                  <p style={{ fontSize: "0.85rem", color: "var(--muted-foreground)", margin: "0 0 10px" }}>
-                    {item.itemSubtitle}
-                  </p>
+                  <p className="watchlist-card-subtitle">{item.itemSubtitle}</p>
                 )}
 
                 {item.notes && (
-                  <div
-                    style={{
-                      backgroundColor: "var(--background)",
-                      padding: "8px 12px",
-                      borderRadius: "6px",
-                      fontSize: "0.85rem",
-                      borderLeft: "3px solid var(--accent)",
-                      marginTop: "8px",
-                      marginBottom: "8px",
-                    }}
-                  >
-                    {item.notes}
-                  </div>
+                  <div className="watchlist-card-notes">{item.notes}</div>
                 )}
               </div>
 
-              <div
-                style={{
-                  display: "flex",
-                  justifyContent: "space-between",
-                  alignItems: "center",
-                  marginTop: "16px",
-                  paddingTop: "12px",
-                  borderTop: "1px solid var(--border)",
-                  fontSize: "0.8rem",
-                }}
-              >
-                <span style={{ color: "var(--muted-foreground)" }}>
-                  Added {new Date(item.createdAt).toLocaleDateString("en-IN", { month: "short", day: "numeric", year: "numeric" })}
+              <div className="watchlist-card-footer">
+                <span className="watchlist-card-date">
+                  Added{" "}
+                  {new Date(item.createdAt).toLocaleDateString("en-IN", {
+                    month: "short",
+                    day: "numeric",
+                    year: "numeric",
+                  })}
                 </span>
 
                 {item.itemType === "stock" ? (
                   <a
                     href={`/companies/${encodeURIComponent(item.itemKey)}`}
-                    style={{ display: "inline-flex", alignItems: "center", gap: "4px", color: "var(--accent)", textDecoration: "none", fontWeight: 500 }}
+                    className="watchlist-card-link"
                   >
-                    Deep dive <ExternalLink size={13} />
+                    <span>Deep dive</span>
+                    <ExternalLink size={13} />
                   </a>
                 ) : (
                   <a
                     href={`/#${encodeURIComponent(item.itemKey)}`}
-                    style={{ display: "inline-flex", alignItems: "center", gap: "4px", color: "var(--accent)", textDecoration: "none", fontWeight: 500 }}
+                    className="watchlist-card-link"
                   >
-                    View Fund <ExternalLink size={13} />
+                    <span>View Fund</span>
+                    <ExternalLink size={13} />
                   </a>
                 )}
               </div>
@@ -362,150 +309,135 @@ export default function WatchlistView() {
         </div>
       )}
 
-      {/* Add Modal */}
+      {/* Solid, Opaque Add Modal */}
       {showAddModal && (
         <div
-          style={{
-            position: "fixed",
-            inset: 0,
-            backgroundColor: "rgba(0,0,0,0.5)",
-            display: "flex",
-            alignItems: "center",
-            justifyContent: "center",
-            zIndex: 1000,
-            padding: "16px",
+          className="watchlist-modal-overlay"
+          onClick={(e) => {
+            if (e.target === e.currentTarget) setShowAddModal(false);
           }}
         >
-          <div
-            style={{
-              backgroundColor: "var(--card)",
-              borderRadius: "8px",
-              padding: "24px",
-              maxWidth: "460px",
-              width: "100%",
-              border: "1px solid var(--border)",
-              boxShadow: "0 10px 25px rgba(0,0,0,0.2)",
-            }}
-          >
-            <h2 style={{ fontSize: "1.25rem", fontWeight: 700, margin: "0 0 16px" }}>Add to Watchlist</h2>
-            <form onSubmit={handleAdd} style={{ display: "flex", flexDirection: "column", gap: "14px" }}>
-              <div>
-                <label style={{ display: "block", fontSize: "0.85rem", fontWeight: 600, marginBottom: "6px" }}>Type</label>
-                <div style={{ display: "flex", gap: "10px" }}>
-                  <label style={{ display: "flex", alignItems: "center", gap: "6px", fontSize: "0.9rem", cursor: "pointer" }}>
-                    <input
-                      type="radio"
-                      name="itemType"
-                      checked={itemType === "stock"}
-                      onChange={() => setItemType("stock")}
-                    />
-                    Stock / Company
-                  </label>
-                  <label style={{ display: "flex", alignItems: "center", gap: "6px", fontSize: "0.9rem", cursor: "pointer" }}>
-                    <input
-                      type="radio"
-                      name="itemType"
-                      checked={itemType === "fund"}
-                      onChange={() => setItemType("fund")}
-                    />
-                    Mutual Fund
-                  </label>
+          <div className="watchlist-modal-card" role="dialog" aria-modal="true">
+            <div className="watchlist-modal-header">
+              <h2>Add to Watchlist</h2>
+              <button
+                className="watchlist-modal-close"
+                onClick={() => setShowAddModal(false)}
+                aria-label="Close modal"
+              >
+                <X size={18} />
+              </button>
+            </div>
+
+            <form onSubmit={handleAdd}>
+              <div className="watchlist-form-group">
+                <label className="watchlist-form-label">Asset Type</label>
+                <div className="watchlist-type-selector">
+                  <button
+                    type="button"
+                    onClick={() => setItemType("stock")}
+                    className={`watchlist-type-option ${itemType === "stock" ? "is-selected" : ""}`}
+                  >
+                    <TrendingUp size={14} />
+                    <span>Stock / Equity</span>
+                  </button>
+                  <button
+                    type="button"
+                    onClick={() => setItemType("fund")}
+                    className={`watchlist-type-option ${itemType === "fund" ? "is-selected" : ""}`}
+                  >
+                    <Building2 size={14} />
+                    <span>Mutual Fund</span>
+                  </button>
                 </div>
               </div>
 
-              <div>
-                <label style={{ display: "block", fontSize: "0.85rem", fontWeight: 600, marginBottom: "4px" }}>
-                  {itemType === "stock" ? "NSE Symbol / Ticker" : "Fund Code / Identifier"}
+              {itemType === "fund" && (
+                <div className="watchlist-form-group">
+                  <label className="watchlist-form-label">Quick Select Tracked Scheme</label>
+                  <select
+                    className="watchlist-input"
+                    onChange={(e) => handleSelectPredefinedFund(e.target.value)}
+                    defaultValue=""
+                  >
+                    <option value="" disabled>
+                      Choose a fund or enter manually below...
+                    </option>
+                    {fundCatalog.map((f) => (
+                      <option key={f.id} value={f.id}>
+                        {f.name}
+                      </option>
+                    ))}
+                  </select>
+                </div>
+              )}
+
+              <div className="watchlist-form-group">
+                <label className="watchlist-form-label">
+                  {itemType === "stock" ? "NSE Ticker / Symbol" : "Fund Identifier"}
                 </label>
                 <input
                   type="text"
                   required
-                  placeholder={itemType === "stock" ? "e.g. CDSL, TATAELXSI" : "e.g. quant-small-cap"}
+                  placeholder={itemType === "stock" ? "e.g. CDSL, TATAELXSI" : "e.g. nippon, quant-small-cap"}
                   value={itemKey}
                   onChange={(e) => setItemKey(e.target.value)}
-                  style={{
-                    width: "100%",
-                    padding: "8px 12px",
-                    borderRadius: "6px",
-                    border: "1px solid var(--border)",
-                    backgroundColor: "var(--background)",
-                    color: "var(--foreground)",
-                  }}
+                  className="watchlist-input"
+                  autoFocus
                 />
               </div>
 
-              <div>
-                <label style={{ display: "block", fontSize: "0.85rem", fontWeight: 600, marginBottom: "4px" }}>
-                  Name / Title
-                </label>
+              <div className="watchlist-form-group">
+                <label className="watchlist-form-label">Name / Display Title</label>
                 <input
                   type="text"
                   required
-                  placeholder={itemType === "stock" ? "e.g. Central Depository Services" : "e.g. Quant Small Cap Fund"}
+                  placeholder={
+                    itemType === "stock"
+                      ? "e.g. Central Depository Services India"
+                      : "e.g. Nippon India Small Cap Fund"
+                  }
                   value={itemTitle}
                   onChange={(e) => setItemTitle(e.target.value)}
-                  style={{
-                    width: "100%",
-                    padding: "8px 12px",
-                    borderRadius: "6px",
-                    border: "1px solid var(--border)",
-                    backgroundColor: "var(--background)",
-                    color: "var(--foreground)",
-                  }}
+                  className="watchlist-input"
                 />
               </div>
 
-              <div>
-                <label style={{ display: "block", fontSize: "0.85rem", fontWeight: 600, marginBottom: "4px" }}>
-                  Sector / Category (Optional)
-                </label>
+              <div className="watchlist-form-group">
+                <label className="watchlist-form-label">Sector / Category (Optional)</label>
                 <input
                   type="text"
-                  placeholder="e.g. Capital Markets, Technology"
+                  placeholder={itemType === "stock" ? "e.g. Capital Markets" : "e.g. Small Cap Fund"}
                   value={itemSubtitle}
                   onChange={(e) => setItemSubtitle(e.target.value)}
-                  style={{
-                    width: "100%",
-                    padding: "8px 12px",
-                    borderRadius: "6px",
-                    border: "1px solid var(--border)",
-                    backgroundColor: "var(--background)",
-                    color: "var(--foreground)",
-                  }}
+                  className="watchlist-input"
                 />
               </div>
 
-              <div>
-                <label style={{ display: "block", fontSize: "0.85rem", fontWeight: 600, marginBottom: "4px" }}>
-                  Personal Notes / Thesis (Optional)
-                </label>
+              <div className="watchlist-form-group">
+                <label className="watchlist-form-label">Notes / Thesis (Optional)</label>
                 <textarea
-                  placeholder="Add your target price, key thesis, or monitoring note..."
+                  placeholder="Target price, allocation strategy, or why you are monitoring this..."
                   value={notes}
                   onChange={(e) => setNotes(e.target.value)}
-                  rows={3}
-                  style={{
-                    width: "100%",
-                    padding: "8px 12px",
-                    borderRadius: "6px",
-                    border: "1px solid var(--border)",
-                    backgroundColor: "var(--background)",
-                    color: "var(--foreground)",
-                    resize: "vertical",
-                  }}
+                  className="watchlist-textarea"
                 />
               </div>
 
-              <div style={{ display: "flex", justifyContent: "flex-end", gap: "10px", marginTop: "12px" }}>
+              <div className="watchlist-modal-footer">
                 <button
                   type="button"
-                  className="quiet-button"
+                  className="watchlist-button-secondary"
                   onClick={() => setShowAddModal(false)}
                   disabled={submitting}
                 >
                   Cancel
                 </button>
-                <button type="submit" className="button" disabled={submitting}>
+                <button
+                  type="submit"
+                  className="watchlist-button-primary"
+                  disabled={submitting}
+                >
                   {submitting ? "Adding…" : "Add to Watchlist"}
                 </button>
               </div>

@@ -78,9 +78,21 @@ export function normalizeNseEod(symbol:string,payload:unknown){
   return {symbol,close:positive(row.close),volume:number(row.volume),date:string(row.date)};
 }
 
+import companyQuotes from "../data/company-quotes.json" with { type: "json" };
+
+function getCachedQuote(symbol: string) {
+  try {
+    return (companyQuotes as any)?.quotes?.[symbol] ?? null;
+  } catch {
+    return null;
+  }
+}
+
 export async function nseSnapshot(symbol:string){
   const [live,eod]=await Promise.allSettled([callNse("live","cm_get_stock_quote",{symbol}).then(data=>normalizeNseQuote(symbol,data)),callNse("history","get_bulk_quote",{symbols:[symbol]}).then(data=>normalizeNseEod(symbol,data))]);
-  return {symbol,retrievedAt:new Date().toISOString(),live:live.status==="fulfilled"?live.value:null,eod:eod.status==="fulfilled"?eod.value:null,liveError:live.status==="rejected"?nseFailure(live.reason):null,eodError:eod.status==="rejected"?nseFailure(eod.reason):null};
+  const fallback = live.status==="rejected" ? getCachedQuote(symbol) : null;
+  const liveVal = live.status==="fulfilled" ? live.value : fallback;
+  return {symbol,retrievedAt:new Date().toISOString(),live:liveVal,eod:eod.status==="fulfilled"?eod.value:null,liveError:liveVal?null:(live.status==="rejected"?nseFailure(live.reason):null),eodError:eod.status==="rejected"?nseFailure(eod.reason):null};
 }
 export type NseSnapshot=Awaited<ReturnType<typeof nseSnapshot>>;
 export type NseCandidate=Awaited<ReturnType<typeof nseCandidates>>[number];

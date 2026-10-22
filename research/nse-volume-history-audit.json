@@ -1,6 +1,6 @@
 {
-  "checkedAt": "2026-10-20T13:14:05.159Z",
-  "through": "2026-10-20",
+  "checkedAt": "2026-10-22T03:59:19.755Z",
+  "through": "2026-10-21",
   "source": "https://nsearchives.nseindia.com/products/content/sec_bhavdata_full_DDMMYYYY.csv",
   "requestedDates": [
     "2026-06-01",
@@ -144,7 +144,8 @@
     "2026-10-17",
     "2026-10-18",
     "2026-10-19",
-    "2026-10-20"
+    "2026-10-20",
+    "2026-10-21"
   ],
   "failed": [],
   "months": [

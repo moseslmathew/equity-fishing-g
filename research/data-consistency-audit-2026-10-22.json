@@ -1,0 +1,22 @@
+{
+  "scope": "Bundled database integration and cross-view consistency, not a fresh verification of every original filing.",
+  "summaries": [
+    {
+      "month": "2026-08",
+      "funds": 34,
+      "fullComparisons": 20,
+      "currentPositions": 2135,
+      "comparisonCompanies": 682,
+      "reviewPositions": 14
+    },
+    {
+      "month": "2026-09",
+      "funds": 34,
+      "fullComparisons": 33,
+      "currentPositions": 2810,
+      "comparisonCompanies": 765,
+      "reviewPositions": 7
+    }
+  ],
+  "linkedRows": 1083
+}

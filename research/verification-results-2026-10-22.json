@@ -1,0 +1,87 @@
+[
+  {
+    "file": "research/verify-venture-capital.cjs",
+    "passed": true,
+    "output": "Venture capital checks passed: sources and dates, entity separation, unknown versus zero, Indian-only scope and empty-firm coverage, search aliases, all four rendered firms and authenticated page access.\n(node:40041) ExperimentalWarning: SQLite is an experimental feature and might change at any time\n(Use `node --trace-warnings ...` to show where the warning was created)\n"
+  },
+  {
+    "file": "research/verify-ace-investors.cjs",
+    "passed": true,
+    "output": "Ace-investor verification passed: exact issuer/holder/date/quantity matching, independent domains, personal vs entity filters, corporate-action quantities and unresolved withholding.\n"
+  },
+  {
+    "file": "research/verify-fund-search.cjs",
+    "passed": true,
+    "output": "Fund search checks passed: cross-fund matches, full portfolio coverage, deduplication, dates, exits and unknown allocation.\n"
+  },
+  {
+    "file": "research/verify-nse-mcp.cjs",
+    "passed": true,
+    "output": "NSE checks passed: JSON/SSE, source errors, exact symbol, equity series, true timestamps, partial outage, authentication and input boundaries.\n(node:40044) ExperimentalWarning: SQLite is an experimental feature and might change at any time\n(Use `node --trace-warnings ...` to show where the warning was created)\n"
+  },
+  {
+    "file": "research/verify-ten-fund-expansion.cjs",
+    "passed": true,
+    "output": "Verified: 34 September funds, 10 new full comparisons (33 total; pre-existing Quantum gap preserved), preserved original 24 schemes, retry-safe database backfill, newer-record protection, 34 August snapshots, shared/company search coverage and source validation.\n(node:40045) ExperimentalWarning: SQLite is an experimental feature and might change at any time\n(Use `node --trace-warnings ...` to show where the warning was created)\n"
+  },
+  {
+    "file": "research/verify-helios.cjs",
+    "passed": true,
+    "output": "Helios verified: five consecutive named equity schemes, correct categories, dated top15, existing-database backfill and preservation of original Small Cap history.\n(node:40046) ExperimentalWarning: SQLite is an experimental feature and might change at any time\n(Use `node --trace-warnings ...` to show where the warning was created)\n"
+  },
+  {
+    "file": "research/verify-database.cjs",
+    "passed": true,
+    "output": "Database verification passed: schema, retry/concurrent migration, complete provenance, all 12 investors, report preservation, newer-data protection, history and API authorization.\n(node:40047) ExperimentalWarning: SQLite is an experimental feature and might change at any time\n(Use `node --trace-warnings ...` to show where the warning was created)\n"
+  },
+  {
+    "file": "research/verify-expanded-investors.cjs",
+    "passed": true,
+    "output": "mukul-agrawal: 68 dated records checked\nmalabar-investments: 22 dated records checked\nnalanda-capital: 25 dated records checked\nabakkus: 30 dated records checked\nanil-kumar-goel: 36 dated records checked\ndolly-khanna: 4 dated records checked\nporinju-veliyath: 4 dated records checked\nashish-dhawan: 12 dated records checked\nnemish-shah: 5 dated records checked\nmohnish-pabrai: 2 dated records checked\n208 new records: evidence links, source domains, dates, displayed ownership and sorting validated.\nOriginal-filing badges matched to exact dated legal-holder facts and retained content hashes.\nNew portraits, profile attribution and original-filing facts validated.\n(node:40048) ExperimentalWarning: Type Stripping is an experimental feature and might change at any time\n(Use `node --trace-warnings ...` to show where the warning was created)\n"
+  },
+  {
+    "file": "research/verify-data-consistency.cjs",
+    "passed": true,
+    "output": "{\"scope\":\"Bundled database integration and cross-view consistency, not a fresh verification of every original filing.\",\"summaries\":[{\"month\":\"2026-08\",\"funds\":34,\"fullComparisons\":20,\"currentPositions\":2135,\"comparisonCompanies\":682,\"reviewPositions\":14},{\"month\":\"2026-09\",\"funds\":34,\"fullComparisons\":33,\"currentPositions\":2810,\"comparisonCompanies\":765,\"reviewPositions\":7}],\"linkedRows\":1083}\n(node:40049) ExperimentalWarning: SQLite is an experimental feature and might change at any time\n(Use `node --trace-warnings ...` to show where the warning was created)\n"
+  },
+  {
+    "file": "research/verify-intelligence.cjs",
+    "passed": true,
+    "output": "Strategic reports passed: citation integrity, twenty company cases, migration of existing reports, idempotency and preservation of later research.\n(node:40051) ExperimentalWarning: SQLite is an experimental feature and might change at any time\n(Use `node --trace-warnings ...` to show where the warning was created)\n"
+  },
+  {
+    "file": "research/verify-september-refresh.cjs",
+    "passed": true,
+    "output": "September refresh passed: validated top15 and full comparisons, existing-database backfill, August preservation, idempotency, later-data protection, alphabetical card/table order.\n(node:40052) ExperimentalWarning: SQLite is an experimental feature and might change at any time\n(Use `node --trace-warnings ...` to show where the warning was created)\n"
+  },
+  {
+    "file": "research/verify-foreign-investors.cjs",
+    "passed": true,
+    "output": "Foreign investors verified: 38 companies, 37 dated disclosures, evidence references, filters, ownership safeguards, authenticated API, D1 persistence/newer-record protection and collapsed-card SSR.\n(node:40053) ExperimentalWarning: SQLite is an experimental feature and might change at any time\n(Use `node --trace-warnings ...` to show where the warning was created)\n"
+  },
+  {
+    "file": "research/verify-nse-volume.cjs",
+    "passed": true,
+    "output": "Volume checks passed: exact date/security/series, weighted delivery, missing data, separate comparison windows, incomplete history and access checks.\n(node:40054) ExperimentalWarning: SQLite is an experimental feature and might change at any time\n(Use `node --trace-warnings ...` to show where the warning was created)\n"
+  },
+  {
+    "file": "research/verify-ace-research.cjs",
+    "passed": true,
+    "output": "Ace research passed: ten matched cases, dated multi-source evidence, change detection, authenticated D1 persistence, idempotency and mutual-fund report isolation.\n(node:40055) ExperimentalWarning: SQLite is an experimental feature and might change at any time\n(Use `node --trace-warnings ...` to show where the warning was created)\n"
+  },
+  {
+    "file": "research/verify-ace-combined.cjs",
+    "passed": true,
+    "output": "{\"investors\":12,\"records\":276,\"companies\":255,\"shared\":16,\"review\":10}\nCombined investor analysis passed: exact identity, duplicate prevention, unresolved withholding, holder scopes, dates, evidence and authenticated database endpoint.\n(node:40056) ExperimentalWarning: SQLite is an experimental feature and might change at any time\n(Use `node --trace-warnings ...` to show where the warning was created)\n"
+  },
+  {
+    "file": "research/verify-top-thirty.cjs",
+    "passed": true,
+    "output": "Verified top 30 for all 34 September funds; preserved allocations, search, shared holdings, safe ranking, 33 August funds, legacy validation and no false entry/exit events.\n(node:40057) ExperimentalWarning: SQLite is an experimental feature and might change at any time\n(Use `node --trace-warnings ...` to show where the warning was created)\n"
+  },
+  {
+    "file": "research/verify-all-research.cjs",
+    "passed": true,
+    "output": "All-archive research verification passed: coverage, identity, database persistence, review withholding, sources and paginated legacy imports.\n(node:40058) ExperimentalWarning: SQLite is an experimental feature and might change at any time\n(Use `node --trace-warnings ...` to show where the warning was created)\n"
+  }
+]

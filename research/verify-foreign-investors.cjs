@@ -27,6 +27,13 @@ require.extensions['.tsx']=(m,f)=>m._compile(ts.transpile(fs.readFileSync(f,'utf
   assert(runtime.sqlite.prepare('SELECT payload FROM app_documents WHERE key=?').get('foreign-investor:'+id));
   const rendered=renderToStaticMarkup(React.createElement(Foreign,{datasets:[snapshot]}));assert(rendered.includes(snapshot.name));assert(rendered.includes(snapshot.companies.length+' companies / platforms'));
  }
+ const aggregate=logic.aggregateForeignResearch(datasets);logic.validateForeignResearch(aggregate);
+ assert.equal(aggregate.companies.length,datasets.reduce((sum,d)=>sum+d.companies.length,0));
+ assert.equal(new Set(aggregate.companies.map(c=>c.id)).size,aggregate.companies.length,'Investor-specific company records cannot collide');
+ assert.equal(new Set(aggregate.events.map(e=>e.id)).size,aggregate.events.length);
+ for(const d of datasets)for(const c of d.companies){const a=aggregate.companies.find(a=>a.id===d.id+':'+c.id);assert.equal(a.investorName,d.name);assert.equal(a.ownership,c.ownership);assert.equal(a.ownershipDate,c.ownershipDate);assert.equal(a.stakePercent,c.stakePercent);assert.deepEqual(a.sourceIds.map(id=>aggregate.sources[id]),c.sourceIds.map(id=>d.sources[id]));}
+ for(const query of ['Ather','Federal','bank','health','no-such-company-xyz']){const expected=datasets.flatMap(d=>logic.selectForeignCompanies(d,{...base,query}));assert.equal(logic.selectForeignCompanies(aggregate,{...base,query}).length,expected.length);}
+ assert(logic.selectForeignCompanies(aggregate,{...base,listing:'listed'}).every(c=>c.listing.startsWith('Listed')));
  const html=renderToStaticMarkup(React.createElement(Foreign,{datasets}));assert(html.includes('Research brief'));assert(html.includes('Past-year activity'));assert(html.includes('Blackstone'));assert(html.includes('38 companies / platforms'));
  const originalLoad=Module._load;
  const cookie=auth.sessionCookie+'='+await auth.createSession();

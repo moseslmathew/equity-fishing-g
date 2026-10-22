@@ -1,0 +1,15 @@
+{
+  "sharedCompanies": 537,
+  "withHistory": 535,
+  "allFourQuarters": 466,
+  "missing": [
+    {
+      "name": "National Stock Exchange Of India Ltd",
+      "isin": "INE721I01024"
+    },
+    {
+      "name": "AceVector Ltd.",
+      "isin": "INE580P01029"
+    }
+  ]
+}

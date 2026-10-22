@@ -1,0 +1,189 @@
+{
+  "checkedAt": "2026-10-22T11:23:32Z",
+  "files": [
+    {
+      "url": "https://media.bajajamc.com/wp-content/uploads/2026/09/Bajaj-Finserv-Mutual-Fund_Monthly-Portfolio-as-on-31-Aug-2026.xls",
+      "bytes": 2074158,
+      "kind": "xlsx/zip",
+      "sha256": "94bfbdc79e5eb3dfc0031bcd418d3f6515bdc07cc51983f4b956ad23b2405a17",
+      "matchesSavedHash": true,
+      "file": "/tmp/observatory-source-audit/726539e8228e.xls"
+    },
+    {
+      "url": "https://media.bajajamc.com/wp-content/uploads/2026/10/Bajaj-Finserv-Mutual-Fund_Monthly-Portfolio-as-on-30-Sep2026-1.xls",
+      "bytes": 2122463,
+      "kind": "xlsx/zip",
+      "sha256": "1cf8a7908c40222782a38d8b4f380c37f3df7bd2d4e0390e5cd48938c40f9660",
+      "matchesSavedHash": true,
+      "file": "/tmp/observatory-source-audit/dddb69deff4b.xls"
+    },
+    {
+      "url": "https://mf.nipponindiaim.com/InvestorServices/FactsheetsDocuments/NIMF-MONTHLY-PORTFOLIO-30-Sep-26.xls",
+      "bytes": 1352141,
+      "kind": "xlsx/zip",
+      "sha256": "f8b25cedeecdd9912e0b4b19f74714fc849bae4dae0cb494c4863fde42a178d1",
+      "matchesSavedHash": null,
+      "file": "/tmp/observatory-source-audit/5c8b5ea740d4.xls"
+    },
+    {
+      "url": "https://mf.nipponindiaim.com/InvestorServices/FactsheetsDocuments/NIMF-MONTHLY-PORTFOLIO-31-Aug-26.xls",
+      "bytes": 1391011,
+      "kind": "xlsx/zip",
+      "sha256": "46f1f9e9d6ba7b63006f3b59feb9a487c5beb02e198d5df946d381c3754adf45",
+      "matchesSavedHash": null,
+      "file": "/tmp/observatory-source-audit/439bf5ac8fab.xls"
+    },
+    {
+      "url": "https://vatseelabs-s3.kotakmf.com/FormsDownloads/Portfolios/Consolidated-Portfolio-as-on-September-30,-2026/ConsolidatedSEBIPortfolioSeptember2026.xlsx",
+      "bytes": 3716121,
+      "kind": "xlsx/zip",
+      "sha256": "27601dff56908f2d50672c7d84032eeb25af79d4fb7fdc3042b94b6ea7d0a36c",
+      "matchesSavedHash": true,
+      "file": "/tmp/observatory-source-audit/38a5e8869b2d.xlsx"
+    },
+    {
+      "url": "https://vatseelabs-s3.kotakmf.com/FormsDownloads/Portfolios/Consolidated-SEBI-Portfolio-as-on-August-31,-2026/ConsolidatedSEBIPortfolioAugust2026.xlsx",
+      "bytes": 3706593,
+      "kind": "xlsx/zip",
+      "sha256": "471c26a74bc9a35e079b717aa696cc3ca13b1cbc40c7c1b7db3b15a3f0830192",
+      "matchesSavedHash": true,
+      "file": "/tmp/observatory-source-audit/1a3e2d3f874d.xlsx"
+    },
+    {
+      "url": "https://www.abakkusmf.com/uploads/Final_Monthly_Portolio_Sep30_2026_fd59e57829.xlsx",
+      "bytes": 262012,
+      "kind": "xlsx/zip",
+      "sha256": "254e589129e0e0cace86d52ea58a47d2d11a4e1d62df3154ce8125d583bb87d3",
+      "matchesSavedHash": true,
+      "file": "/tmp/observatory-source-audit/f420987056c0.xlsx"
+    },
+    {
+      "url": "https://www.abakkusmf.com/uploads/Portfolio_Aug31_Monthly_a00d994a66.xls",
+      "bytes": 255907,
+      "kind": "xlsx/zip",
+      "sha256": "f3c9f1a8be72056e012626827f3b7d8e5834ec5f23012307b7e0669cc25fc061",
+      "matchesSavedHash": true,
+      "file": "/tmp/observatory-source-audit/cedb21981d5a.xls"
+    },
+    {
+      "url": "https://www.canararobeco.com/wp-content/uploads/2026/09/SC-\u2013-Canara-Robeco-Small-Cap-Fund-\u2013-August-2026.xlsx",
+      "bytes": 105844,
+      "kind": "xlsx/zip",
+      "sha256": "a5aec157a4d3989b742477faae92fc6098a3adada1c00ca48c8d672dc22eca6c",
+      "matchesSavedHash": true,
+      "file": "/tmp/observatory-source-audit/78b46785495d.xlsx"
+    },
+    {
+      "url": "https://www.canararobeco.com/wp-content/uploads/2026/10/SC-\u2013-Canara-Robeco-Small-Cap-Fund-\u2013-September-2026.xlsx",
+      "bytes": 106033,
+      "kind": "xlsx/zip",
+      "sha256": "444671600d9e2df6a932195b549e86709828c30b41938161be40690613497ea7",
+      "matchesSavedHash": true,
+      "file": "/tmp/observatory-source-audit/a7c6668307ec.xlsx"
+    },
+    {
+      "url": "https://www.dspim.com/media/pages/mandatory-disclosures/portfolio-disclosures/7737577fda-1791551248/dsp-monthend-portfolio-as-on-30-september-2026.zip",
+      "bytes": 1147927,
+      "kind": "xlsx/zip",
+      "sha256": "06acc4ced7c29e359e40b01ff6514b437b9a46ba7ea61d470c2c53e5bb0a3a86",
+      "matchesSavedHash": true,
+      "file": "/tmp/observatory-source-audit/14b41aea50e3.zip"
+    },
+    {
+      "url": "https://www.dspim.com/media/pages/mandatory-disclosures/portfolio-disclosures/8a6dbe504f-1789452169/dsp-monthend-portfolio-as-on-31-aug-2026.zip",
+      "bytes": 1190566,
+      "kind": "xlsx/zip",
+      "sha256": "33cf25defa3364589d8b3c1f0d81e342b9b6b556ca24218c1a6973f19f7ac3e0",
+      "matchesSavedHash": true,
+      "file": "/tmp/observatory-source-audit/b6a8b4918574.zip"
+    },
+    {
+      "url": "https://www.dspim.com/media/pages/mandatory-disclosures/portfolio-disclosures/8a6dbe504f-1791453357/dsp-monthend-portfolio-as-on-31-aug-2026.zip",
+      "bytes": 1190566,
+      "kind": "xlsx/zip",
+      "sha256": "33cf25defa3364589d8b3c1f0d81e342b9b6b556ca24218c1a6973f19f7ac3e0",
+      "matchesSavedHash": null,
+      "file": "/tmp/observatory-source-audit/7a0c4ea44a24.zip"
+    },
+    {
+      "url": "https://www.franklintempletonindia.com/download/en-in/monthly-portfolio-dsclr/52e4efe4-b370-4fe7-9024-19a63fde979a/Monthly-Portfolio-ISIN-31-Aug-2026.xlsx",
+      "bytes": 1150416,
+      "kind": "xlsx/zip",
+      "sha256": "5b3e3f7095944ab0a1d02780cc231a9d41c7f5d61cd8daf5599ee0e0301e3e40",
+      "matchesSavedHash": true,
+      "file": "/tmp/observatory-source-audit/788131d34e37.xlsx"
+    },
+    {
+      "url": "https://www.franklintempletonindia.com/download/en-in/monthly-portfolio-dsclr/79c9638b-ce3e-48c8-8036-a571ecd54260/MF-Monthly-Portfolio-ISIN-30-Sep-2026.xlsx",
+      "bytes": 1140682,
+      "kind": "xlsx/zip",
+      "sha256": "958f3e245a45a8ae34cb28ef2bf87d1f6a7d97121eec9f6a29f86ec7214e28ea",
+      "matchesSavedHash": true,
+      "file": "/tmp/observatory-source-audit/057507bc2c0a.xlsx"
+    },
+    {
+      "url": "https://www.licmf.com/assets/downloads/portfolio/monthly/2026/8/LEESCF09-09-2026-09:58:30.xlsx",
+      "bytes": 122025,
+      "kind": "xlsx/zip",
+      "sha256": "51e912b4a8f31d8c34805e5d44caa43f2d576c74a7d6f2b3ea362999ba1ead6e",
+      "matchesSavedHash": null,
+      "file": "/tmp/observatory-source-audit/08478f207bc1.xlsx"
+    },
+    {
+      "url": "https://www.licmf.com/assets/downloads/portfolio/monthly/2026/9/LEESCF09-10-2026-15:47:01.xlsx",
+      "bytes": 121937,
+      "kind": "xlsx/zip",
+      "sha256": "d1b53b062970c5bd62310cd5f696f7d1c4dac1362591aea0946d1c38a3cc16da",
+      "matchesSavedHash": null,
+      "file": "/tmp/observatory-source-audit/cd862291444f.xlsx"
+    },
+    {
+      "url": "https://www.miraeassetmf.co.in/docs/default-source/portfolios/mascf_aug2026.xlsx",
+      "bytes": 356034,
+      "kind": "xlsx/zip",
+      "sha256": "c6a1f2917a861f8ff65979e43e1673590a6703954c73fa6e3486bbb59033876c",
+      "matchesSavedHash": true,
+      "file": "/tmp/observatory-source-audit/471cf05de8b8.xlsx"
+    },
+    {
+      "url": "https://www.miraeassetmf.co.in/docs/default-source/portfolios/mascf_sept2026.xlsx",
+      "bytes": 356010,
+      "kind": "xlsx/zip",
+      "sha256": "a0d869c625e6e9f9b2737853161295f23fdd8f43e910cdd1bba24831f80d227b",
+      "matchesSavedHash": true,
+      "file": "/tmp/observatory-source-audit/2ef5829a061d.xlsx"
+    },
+    {
+      "url": "https://www.motilaloswalmf.com/content/dam/motilal-mf/sheets/fund-csvs/Month_End_Portfolio_August_2026/YO46.xlsx",
+      "bytes": 184907,
+      "kind": "xlsx/zip",
+      "sha256": "f916b0527ca41a38a340fadff30bc4ac162f9ac22f9d64b3d8e25aef2d1f43ab",
+      "matchesSavedHash": true,
+      "file": "/tmp/observatory-source-audit/19ff6bbc2c11.xlsx"
+    },
+    {
+      "url": "https://www.motilaloswalmf.com/content/dam/motilal-mf/sheets/fund-csvs/Month_End_Portfolio_September_2026/YO46.xlsx",
+      "bytes": 183983,
+      "kind": "xlsx/zip",
+      "sha256": "7c4fe2a74dd70fd0b40ee3c98fface936438f0115e56bf789d8a3f863c7a572d",
+      "matchesSavedHash": true,
+      "file": "/tmp/observatory-source-audit/61cb40447f13.xlsx"
+    },
+    {
+      "url": "https://www.sbimf.com/docs/default-source/scheme-portfolios/all-schemes-monthly-portfolio---as-on-30th-september-2026.xlsx?sfvrsn=2a79126c_2",
+      "bytes": 2610463,
+      "kind": "xlsx/zip",
+      "sha256": "0659fedaf826fdbef4eef702b99a3ac4bcfca1ebc4da1c14bd7dd24b341a67f9",
+      "matchesSavedHash": true,
+      "file": "/tmp/observatory-source-audit/2c11ddce3ca9.xlsx?sfvrsn=2a79126c_2"
+    },
+    {
+      "url": "https://www.sbimf.com/docs/default-source/scheme-portfolios/all-schemes-monthly-portfolio---as-on-31st-august-2026.xlsx?sfvrsn=a7fdc2ec_2",
+      "bytes": 2636876,
+      "kind": "xlsx/zip",
+      "sha256": "e962a9d3c1478a8f857071cc20c7afcac742d23665bfc203996adb747588ba43",
+      "matchesSavedHash": true,
+      "file": "/tmp/observatory-source-audit/741c6ed15c91.xlsx?sfvrsn=a7fdc2ec_2"
+    }
+  ]
+}

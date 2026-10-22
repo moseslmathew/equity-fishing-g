@@ -1,0 +1,16 @@
+{
+  "checkedAt": "2026-10-22T15:27:48Z",
+  "requested": 548,
+  "retrieved": 547,
+  "unavailable": {
+    "ACEVECTOR": "Quarterly FII row not retrieved"
+  },
+  "source": "Screener quarterly shareholding patterns; retrieved via web lookup after direct HTTP connections failed",
+  "method": "Exact NSE ticker routes; quarterly headers aligned before selecting calendar quarter ends. Off-cycle months excluded, unknown values preserved.",
+  "verification": "Aggregation source, not an independent audit of all exchange filings.",
+  "sourceOverrides": {
+    "HARSHA": "Screener numeric company ID 1275304; page explicitly identifies NSE HARSHA",
+    "ROLEXRINGS": "Screener search record of quarterly shareholding pattern",
+    "PGHL": "Screener consolidated shareholding pattern search record"
+  }
+}

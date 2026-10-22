@@ -1,11 +1,10 @@
 import {movement,type FullComparison,type FullHolding,type Movement} from "./full-portfolio";
-import {companyKey} from "./top-holdings";
 import {fundCatalog,schemeNames} from "./fund-catalog";
+import {companyIdentity} from "./company-identity";
 
 export type CombinedMovement="increased"|"decreased"|"new"|"exited"|"unchanged"|"mixed"|"review";
 export type FundContribution={fundId:string;name:string;previousQuantity:number|null;currentQuantity:number;delta:number|null;weight:number|null;status:Movement;note:string|null;sources:FullComparison["sources"]};
 export type CombinedCompany={key:string;name:string;previousQuantity:number|null;currentQuantity:number;delta:number|null;status:CombinedMovement;mixed:boolean;changed:boolean;adding:number;reducing:number;review:number;funds:FundContribution[]};
-const normalized=(name:string)=>companyKey(name.replace(/\bCo\.?\b/gi,"Company "));
 export function combinedAnalysis(comparisons:FullComparison[],month:string,identityComparisons:FullComparison[]=comparisons){
   const [y,m]=month.split("-").map(Number),previousMonth=new Date(Date.UTC(y,m-2,1)).toISOString().slice(0,7);
   const currentDate=new Date(Date.UTC(y,m,0)).toISOString().slice(0,10),previousDate=new Date(Date.UTC(y,m-1,0)).toISOString().slice(0,10);
@@ -13,12 +12,9 @@ export function combinedAnalysis(comparisons:FullComparison[],month:string,ident
   for(const c of comparisons){if(!schemeNames[c.fundId]||c.currentDate!==currentDate||c.previousDate!==previousDate||c.scope!=="full_equity")continue;const old=latest.get(c.fundId);if(!old||Date.parse(c.checkedAt)>Date.parse(old.checkedAt))latest.set(c.fundId,c);}
   // Exact normalized names bridge older name-based IDs. Matching ISINs bridge
   // spelling variants and renames across funds; no fuzzy company matching.
-  const parent=new Map<string,string>();
-  const root=(value:string):string=>{if(!parent.has(value))parent.set(value,value);const p=parent.get(value)!;if(p!==value)parent.set(value,root(p));return parent.get(value)!;};
-  const union=(a:string,b:string)=>parent.set(root(b),root(a));
-  for(const c of identityComparisons)for(const row of c.rows){const name="name:"+normalized(row.name);root(name);if(/^INE[A-Z0-9]{9}$/i.test(row.key))union(name,"isin:"+row.key.toUpperCase());}
+  const identity=companyIdentity(identityComparisons.flatMap(c=>c.rows));
   const grouped=new Map<string,{name:string;contributions:Map<string,{c:FullComparison;rows:FullHolding[]}>}>();
-  for(const c of latest.values())for(const row of c.rows){const key=root("name:"+normalized(row.name));let group=grouped.get(key);if(!group){group={name:row.name.replace(/\*+$/g,""),contributions:new Map()};grouped.set(key,group);}let entry=group.contributions.get(c.fundId);if(!entry){entry={c,rows:[]};group.contributions.set(c.fundId,entry);}entry.rows.push(row);}
+  for(const c of latest.values())for(const row of c.rows){const key=identity(row).id;let group=grouped.get(key);if(!group){group={name:row.name.replace(/\*+$/g,""),contributions:new Map()};grouped.set(key,group);}let entry=group.contributions.get(c.fundId);if(!entry){entry={c,rows:[]};group.contributions.set(c.fundId,entry);}entry.rows.push(row);}
   const companies:CombinedCompany[]=[];
   for(const [key,group] of grouped){
     const funds:FundContribution[]=[];

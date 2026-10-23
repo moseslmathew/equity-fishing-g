@@ -6,7 +6,7 @@ const {bundledComparisons,readAllFullComparisons,fullKey}=require('../lib/full-p
 const originalScope=bundledComparisons.filter(c=>c.currentDate==="2026-08-31"||["dsp","nippon"].includes(c.fundId));
 const report=researchReport(originalScope);
 assert.equal(researchReport().comparisonCount,bundledComparisons.length);
-assert.equal(researchReport().portfolioChanged,true);
+assert.equal(researchReport().portfolioChanged,false);
 assert.equal(report.coverage,20);assert.equal(report.snapshotCount,42);assert.equal(report.comparisonCount,22);assert.equal(report.universe,682);assert.equal(report.portfolioChanged,true);
 assert.deepEqual(report.periods.map(p=>[p.month,p.coverage]),[['2026-08',20],['2026-09',2]]);
 assert.ok(report.stocks.every(s=>s.fundEvidence));

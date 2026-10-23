@@ -1,0 +1,267 @@
+{
+  "id": "kkr",
+  "name": "KKR",
+  "asOf": "2026-10-23",
+  "checkedAt": "2026-10-23T04:01:23.391941+00:00",
+  "windowStart": "2025-10-23",
+  "windowEnd": "2026-10-23",
+  "coverage": "Reviewed KKR India investments across healthcare, consumer businesses and infrastructure. Includes announced transactions, with vehicles and closing uncertainty identified.",
+  "limitations": [
+    "Selective public-disclosure coverage, not a complete portfolio or a live ownership register. The review date does not update the date of an older holding disclosure.",
+    "Ownership belongs to the named entity, fund, subsidiary or platform. Fund commitments, acquisitions of assets and joint-venture stakes are not holdings in the listed parent.",
+    "Announced investments remain proposed unless closing evidence was reviewed. An unavailable percentage is not zero.",
+    "Investment themes and business cases are research interpretations of the cited activity, not forecasts or recommendations."
+  ],
+  "sources": {
+    "strategy": {
+      "title": "Thoughts from the Road: India, February 2026",
+      "url": "https://www.kkr.com/insights/2026-india-thoughts-from-the-road",
+      "publisher": "KKR",
+      "published": "February 2026",
+      "kind": "primary"
+    },
+    "cisternina": {
+      "title": "KKR to Invest in Cisternina to Build a Pan-India Liquid Storage and Logistics Platform",
+      "url": "https://media.kkr.com/news-details?news_id=e18dadd8-eea8-4f42-a5c6-8c7a7f98c1f6",
+      "publisher": "KKR",
+      "published": "29 Sep 2026",
+      "kind": "primary"
+    },
+    "allfleet": {
+      "title": "KKR Forms $310 Million Strategic Partnership with PMI Electro to Scale Allfleet",
+      "url": "https://markets.financialcontent.com/dowtheoryletters/article/bizwire-2026-3-18-kkr-forms-310-million-strategic-partnership-with-pmi-electro-to-scale-e-bus-platform-allfleet",
+      "publisher": "KKR via Business Wire",
+      "published": "18 Mar 2026",
+      "kind": "primary",
+      "note": "Issuer press release syndicated by FinancialContent; signing is distinct from closing."
+    },
+    "hcg-sale": {
+      "title": "CVC agrees the sale of up to 54% in Healthcare Global Enterprises",
+      "url": "https://www.cvc.com/media/news/2025/cvc-agrees-the-sale-of-up-to-54-stake-in-healthcare-global-enterprises-for-up-to-us-400m/",
+      "publisher": "CVC",
+      "published": "24 Feb 2025",
+      "kind": "primary",
+      "note": "Agreement-stage acquisition percentage; not a current shareholding percentage."
+    },
+    "hcg-filing": {
+      "title": "HCG FY2026 board outcome and financial results",
+      "url": "https://www.hcgoncology.com/uploads/ir/Outcome%20of%20BM%2019%20May%202026.pdf",
+      "publisher": "Healthcare Global Enterprises",
+      "published": "19 May 2026",
+      "kind": "primary",
+      "note": "Identifies the KKR-affiliated purchasers. Current retained percentage was not reconciled."
+    },
+    "healthium": {
+      "title": "KKR to acquire Healthium from Apax Funds",
+      "url": "https://www.apax.com/news-views/kkr-to-acquire-healthium-from-apax-funds/",
+      "publisher": "Apax Partners",
+      "published": "6 May 2024",
+      "kind": "primary"
+    },
+    "healthium-team": {
+      "title": "Mayank Mishra: investments including Healthium Medtech",
+      "url": "https://www.kkr.com/about/our-people/mayank-mishra",
+      "publisher": "KKR",
+      "published": "Reviewed 23 Oct 2026",
+      "kind": "primary"
+    },
+    "vini": {
+      "title": "Suveer Sinha: current board roles in India",
+      "url": "https://www.kkr.com/about/our-people/suveer-sinha",
+      "publisher": "KKR",
+      "published": "Reviewed 23 Oct 2026",
+      "kind": "primary"
+    }
+  },
+  "companies": [
+    {
+      "id": "allfleet-pmi",
+      "name": "Allfleet India / PMI Electro partnership",
+      "listing": "Private / India",
+      "sector": "Electric mobility",
+      "relationship": "KKR funds agreed a majority investment in Allfleet and a minority investment in PMI Electro.",
+      "ownership": "Majority in Allfleet / minority in PMI agreed; percentages not disclosed",
+      "ownershipDate": "18 Mar 2026 agreement",
+      "stakePercent": null,
+      "stance": "proposed",
+      "summary": "The announced partnership commits up to US$310 million across the e-bus platform and manufacturer. Closing was not independently established.",
+      "thesis": "Research interpretation: contracted public transport can create repeatable infrastructure investment opportunities.",
+      "risks": "Approval, deployment, manufacturing execution and counterparty payment risk.",
+      "sourceIds": [
+        "allfleet"
+      ]
+    },
+    {
+      "id": "cisternina",
+      "name": "Cisternina Logistics",
+      "listing": "Private / India",
+      "sector": "Liquid storage and logistics",
+      "relationship": "KKR-managed funds signed for a majority investment in Cisternina.",
+      "ownership": "Majority investment agreed; percentage not disclosed",
+      "ownershipDate": "29 Sep 2026 agreement",
+      "stakePercent": null,
+      "stance": "proposed",
+      "summary": "Capital supports the platform, including its proposed acquisition of GBL’s storage-terminal business. This is not a purchase of GBL’s listed shares.",
+      "thesis": "Research interpretation: storage assets can benefit from trade and industrial supply chains.",
+      "risks": "Closing conditions, integration, environmental compliance and utilisation.",
+      "sourceIds": [
+        "cisternina"
+      ]
+    },
+    {
+      "id": "hcg",
+      "name": "Healthcare Global Enterprises",
+      "listing": "Listed / India",
+      "sector": "Oncology hospitals",
+      "relationship": "Hector Asia Holdings II and KIA EBT II Scheme 1 are named purchasers in the company’s FY26 filing; the earlier agreement covered up to 54%.",
+      "ownership": "KKR-affiliated acquisition disclosed; current percentage not verified",
+      "ownershipDate": "19 May 2026 filing; 23 Feb 2025 agreement",
+      "stakePercent": null,
+      "stance": "held",
+      "summary": "The named acquisition vehicles provide exposure to HCG. Agreement size is not substituted for a reconciled current holding.",
+      "thesis": "Research interpretation: specialist hospital networks can expand through clinical capability and operating improvements.",
+      "risks": "Clinician retention, capital expenditure, clinical outcomes and valuation.",
+      "sourceIds": [
+        "hcg-sale",
+        "hcg-filing"
+      ],
+      "ticker": "NSE: HCG"
+    },
+    {
+      "id": "healthium",
+      "name": "Healthium Medtech",
+      "listing": "Private / India",
+      "sector": "Medical devices",
+      "relationship": "KKR funds announced a controlling acquisition from Apax in 2024; KKR also identifies Healthium in its investment-team material.",
+      "ownership": "Controlling investment disclosed; current percentage not verified",
+      "ownershipDate": "6 May 2024 announcement; team page reviewed 23 Oct 2026",
+      "stakePercent": null,
+      "stance": "held",
+      "summary": "Exposure is through an acquisition vehicle. The reviewed sources do not establish a current retained percentage.",
+      "thesis": "Research interpretation: surgical consumables offer healthcare-demand and manufacturing exposure.",
+      "risks": "Product quality, regulation, acquisition leverage and export execution.",
+      "sourceIds": [
+        "healthium",
+        "healthium-team"
+      ]
+    },
+    {
+      "id": "serentica",
+      "name": "Serentica Renewables",
+      "listing": "Private / India",
+      "sector": "Renewable power",
+      "relationship": "KKR names Serentica among its Indian infrastructure investments in its September 2026 release.",
+      "ownership": "Platform investment; percentage not disclosed",
+      "ownershipDate": "29 Sep 2026 KKR disclosure",
+      "stakePercent": null,
+      "stance": "held",
+      "summary": "Serentica is identified as a decarbonisation platform. No listed-parent stake or ownership percentage is inferred.",
+      "thesis": "Research interpretation: industrial customers can support long-duration clean-power contracts.",
+      "risks": "Construction, generation variability, offtaker credit and financing.",
+      "sourceIds": [
+        "cisternina"
+      ]
+    },
+    {
+      "id": "vini",
+      "name": "Vini Cosmetics",
+      "listing": "Private / India",
+      "sector": "Consumer products",
+      "relationship": "KKR’s India Capstone head identifies Vini among his current board roles.",
+      "ownership": "KKR-backed business; percentage not verified",
+      "ownershipDate": "KKR team page reviewed 23 Oct 2026",
+      "stakePercent": null,
+      "stance": "held",
+      "summary": "The official board-role disclosure supports the relationship, without identifying a refreshed ownership percentage.",
+      "thesis": "Research interpretation: consumer brands can scale through distribution and product execution.",
+      "risks": "Brand competition, advertising economics and channel execution.",
+      "sourceIds": [
+        "vini"
+      ]
+    }
+  ],
+  "events": [
+    {
+      "id": "allfleet-sign",
+      "companyId": "allfleet-pmi",
+      "date": "2026-03-18",
+      "dateLabel": "18 Mar 2026",
+      "title": "E-bus partnership signed",
+      "kind": "equity",
+      "direction": "proposed",
+      "status": "Announced",
+      "detail": "KKR funds announced a commitment of up to US$310 million across Allfleet and PMI Electro.",
+      "qualification": "A capital commitment and majority/minority description do not establish completed ownership percentages.",
+      "sourceIds": [
+        "allfleet"
+      ]
+    },
+    {
+      "id": "cisternina-sign",
+      "companyId": "cisternina",
+      "date": "2026-09-29",
+      "dateLabel": "29 Sep 2026",
+      "title": "Majority investment agreement for storage platform",
+      "kind": "equity",
+      "direction": "proposed",
+      "status": "Announced",
+      "detail": "Funds agreed a majority investment in Cisternina to support expansion and the proposed terminal-business acquisition.",
+      "qualification": "The reviewed source announces definitive agreements, not a verified closing or ownership in listed GBL.",
+      "sourceIds": [
+        "cisternina"
+      ]
+    }
+  ],
+  "report": {
+    "title": "KKR in India",
+    "summary": "KKR’s disclosed India activity spans business ownership and infrastructure platforms. These six selected relationships include two in-window agreements; percentages remain unavailable where current holdings could not be reconciled.",
+    "sections": [
+      {
+        "title": "Investment approach",
+        "text": "KKR’s India outlook spans private equity, infrastructure, climate and credit. This breadth calls for distinguishing company equity from financing and platform-level investments.",
+        "sourceIds": [
+          "strategy"
+        ]
+      },
+      {
+        "title": "Healthcare and consumer exposure",
+        "text": "HCG’s purchaser vehicles, Healthium’s acquisition disclosures and Vini’s board representation are distinct evidence types. Their percentages have not been combined or inferred.",
+        "sourceIds": [
+          "hcg-filing",
+          "healthium",
+          "vini"
+        ]
+      },
+      {
+        "title": "Recent agreements",
+        "text": "The March mobility partnership and September Cisternina agreement are carried as announced transactions. Their contractual scope is retained in the company records.",
+        "sourceIds": [
+          "allfleet",
+          "cisternina"
+        ]
+      }
+    ],
+    "themes": [
+      {
+        "name": "Contracted infrastructure",
+        "conviction": "Research interpretation",
+        "case": "Research interpretation: mobility, storage and renewable platforms suggest interest in assets tied to long-run economic demand.",
+        "watch": "Closing evidence, contracted returns and financing.",
+        "sourceIds": [
+          "allfleet",
+          "cisternina"
+        ]
+      },
+      {
+        "name": "Specialist healthcare",
+        "conviction": "Research interpretation",
+        "case": "Research interpretation: hospitals and medical devices offer separate routes to healthcare demand.",
+        "watch": "Operating outcomes, acquisition execution and valuation.",
+        "sourceIds": [
+          "hcg-filing",
+          "healthium"
+        ]
+      }
+    ]
+  }
+}

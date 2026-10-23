@@ -1,0 +1,254 @@
+{
+  "id": "adia",
+  "name": "ADIA",
+  "asOf": "2026-10-23",
+  "checkedAt": "2026-10-23T04:01:23.391941+00:00",
+  "windowStart": "2025-10-23",
+  "windowEnd": "2026-10-23",
+  "coverage": "Selected Abu Dhabi Investment Authority relationships in India, covering a listed bank and retailer, private businesses, a fund manager and housing funds. Older disclosures retain their own dates.",
+  "limitations": [
+    "Selective public-disclosure coverage, not a complete portfolio or a live ownership register. The review date does not update the date of an older holding disclosure.",
+    "Ownership belongs to the named entity, fund, subsidiary or platform. Fund commitments, acquisitions of assets and joint-venture stakes are not holdings in the listed parent.",
+    "Announced investments remain proposed unless closing evidence was reviewed. An unavailable percentage is not zero.",
+    "Investment themes and business cases are research interpretations of the cited activity, not forecasts or recommendations."
+  ],
+  "sources": {
+    "strategy": {
+      "title": "ADIA establishes a subsidiary in India’s GIFT City",
+      "url": "https://www.adia.ae/media/azure/adia/media/2023/01/press-release-adia-establishes-subsidiary-at-gift-city-english.pdf",
+      "publisher": "ADIA",
+      "published": "7 Oct 2024",
+      "kind": "primary"
+    },
+    "allocation": {
+      "title": "ADIA investment approach",
+      "url": "https://www.adia.ae/en/investments",
+      "publisher": "ADIA",
+      "published": "Reviewed 23 Oct 2026",
+      "kind": "primary"
+    },
+    "idfc": {
+      "title": "IDFC FIRST Bank capital-raising announcement",
+      "url": "https://www.idfcfirstbank.com/content/dam/idfcfirstbank/pdf/announcements/IDFCFIRST-PressRelease.pdf",
+      "publisher": "IDFC FIRST Bank",
+      "published": "17 Apr 2025",
+      "kind": "primary",
+      "note": "Proposed CCPS issue; not evidence of completed ordinary-equity ownership."
+    },
+    "lenskart": {
+      "title": "CAM advises Morgan Stanley on ADIA-affiliate Lenskart share sale",
+      "url": "https://www.scconline.com/blog/post/2026/09/30/cam-morgan-stanley-adia-lenskart-share-sale/",
+      "publisher": "SCC Times / Cyril Amarchand Mangaldas deal announcement",
+      "published": "30 Sep 2026",
+      "kind": "reporting",
+      "note": "Reports the named trust’s executed sale on 21 September; no retained percentage is established."
+    },
+    "iifl": {
+      "title": "IIFL Home Finance: company milestones",
+      "url": "https://www.iiflhomeloans.com/about-us/our-story",
+      "publisher": "IIFL Home Finance",
+      "published": "Reviewed 23 Oct 2026",
+      "kind": "primary",
+      "note": "Historical acquisition milestone; not a refreshed shareholding register."
+    },
+    "hdfc-capital": {
+      "title": "HDFC disclosure: ADIA equity in HDFC Capital Advisors",
+      "url": "https://www.hdfc.com/content/dam/housingdevelopmentfinancecorp/pdf/investors/services/disclosures/material-information/2022/nov-2022/SE_Intimation_Reg_30_15112022.pdf",
+      "publisher": "HDFC",
+      "published": "15 Nov 2022",
+      "kind": "primary"
+    },
+    "hcare": {
+      "title": "ADIA: H-CARE platform case study",
+      "url": "https://www.adia.ae/en/investments/real-estate/portfolio/case-studies/h-care-platform",
+      "publisher": "ADIA",
+      "published": "Reviewed 23 Oct 2026",
+      "kind": "primary"
+    },
+    "retail": {
+      "title": "ADIA to invest in Reliance Retail Ventures",
+      "url": "https://www.ril.com/news-media/press-releases/adia-invest-rs-496680-crore-reliance-retail-ventures-limited",
+      "publisher": "Reliance Industries",
+      "published": "6 Oct 2023",
+      "kind": "primary"
+    }
+  },
+  "companies": [
+    {
+      "id": "hcare",
+      "name": "H-CARE affordable-housing funds",
+      "listing": "Private / India",
+      "sector": "Affordable housing finance",
+      "relationship": "ADIA describes completed commitments to H-CARE 1 and 2.",
+      "ownership": "Fund investor; ownership percentage not disclosed",
+      "ownershipDate": "2016/2017 commitments; ADIA case study reviewed 23 Oct 2026",
+      "stakePercent": null,
+      "stance": "held",
+      "summary": "These are fund-level investments financing residential projects, distinct from equity in the fund manager.",
+      "thesis": "Research interpretation: housing-finance partnerships address demand for affordable and mid-market homes.",
+      "risks": "Developer credit, project delays, liquidity and real-estate cycles.",
+      "sourceIds": [
+        "hcare"
+      ]
+    },
+    {
+      "id": "hdfc-capital",
+      "name": "HDFC Capital Advisors",
+      "listing": "Private / India",
+      "sector": "Real-estate investment management",
+      "relationship": "A November 2022 HDFC filing identifies ADIA’s ownership in HCAL.",
+      "ownership": "10% of HCAL equity in historical filing",
+      "ownershipDate": "15 Nov 2022 disclosure; current percentage not refreshed",
+      "stakePercent": 10,
+      "stance": "held",
+      "summary": "This stake is in the manager, not a 10% interest in every H-CARE fund or a stake in listed HDFC Bank.",
+      "thesis": "Research interpretation: manager ownership provides a different economic exposure from fund commitments.",
+      "risks": "Manager economics, governance, dilution and source age.",
+      "sourceIds": [
+        "hdfc-capital"
+      ]
+    },
+    {
+      "id": "idfc-first",
+      "name": "IDFC FIRST Bank",
+      "listing": "Listed / India",
+      "sector": "Banking",
+      "relationship": "The bank announced a proposed CCPS issue of approximately ₹2,624 crore to Platinum Invictus B 2025 RSC Limited, an ADIA subsidiary.",
+      "ownership": "CCPS investment proposed; current equity percentage unverified",
+      "ownershipDate": "17 Apr 2025 announcement",
+      "stakePercent": null,
+      "stance": "proposed",
+      "summary": "The named ADIA vehicle is distinct from Warburg Pincus affiliate Currant Sea. No conversion or closing percentage is inferred.",
+      "thesis": "Research interpretation: bank capital can support lending expansion if asset quality and funding remain sound.",
+      "risks": "Credit costs, approvals, conversion terms and dilution.",
+      "sourceIds": [
+        "idfc"
+      ],
+      "ticker": "NSE: IDFCFIRSTB"
+    },
+    {
+      "id": "iifl-home",
+      "name": "IIFL Home Finance",
+      "listing": "Private / India",
+      "sector": "Housing finance",
+      "relationship": "The company’s milestone page records ADIA acquiring 20% following a capital infusion.",
+      "ownership": "20% at disclosed acquisition milestone; current stake not refreshed",
+      "ownershipDate": "Historical company milestone; reviewed 23 Oct 2026",
+      "stakePercent": 20,
+      "stance": "held",
+      "summary": "This is exposure to IIFL Home Finance, not ownership of the listed parent company.",
+      "thesis": "Research interpretation: affordable-housing credit can grow with formalisation and household demand.",
+      "risks": "Borrower credit, funding costs, regulation and historical-data limits.",
+      "sourceIds": [
+        "iifl"
+      ]
+    },
+    {
+      "id": "lenskart",
+      "name": "Lenskart Solutions",
+      "listing": "Listed / India",
+      "sector": "Eyewear retail",
+      "relationship": "Platinum Jasmine A 2018 Trust, acting through Platinum Owl C 2018 RSC Limited, sold 35 million shares.",
+      "ownership": "35,000,000 shares sold; retained percentage not verified",
+      "ownershipDate": "21 Sep 2026 sale; reported 30 Sep 2026",
+      "stakePercent": null,
+      "stance": "reduced",
+      "summary": "The sale is attributed to the named ADIA-affiliated trust. It is not classified as a full exit.",
+      "thesis": "Research interpretation: retail reach and manufacturing scale can support consumer growth.",
+      "risks": "Valuation, execution, margins and uncertainty over the residual holding.",
+      "sourceIds": [
+        "lenskart"
+      ],
+      "ticker": "NSE: LENSKART"
+    },
+    {
+      "id": "reliance-retail",
+      "name": "Reliance Retail Ventures",
+      "listing": "Private / India",
+      "sector": "Retail and consumer platforms",
+      "relationship": "Reliance announced a ₹4,966.80 crore investment by an ADIA subsidiary in 2023.",
+      "ownership": "Investment disclosed; total current percentage not verified",
+      "ownershipDate": "6 Oct 2023 announcement",
+      "stakePercent": null,
+      "stance": "held",
+      "summary": "The investment is in RRVL, not directly in listed Reliance Industries. Announced incremental equity is not treated as total retained ownership.",
+      "thesis": "Research interpretation: an omni-channel retail platform offers exposure to formalising consumption.",
+      "risks": "Competition, capital allocation, valuation and private-market liquidity.",
+      "sourceIds": [
+        "retail"
+      ]
+    }
+  ],
+  "events": [
+    {
+      "id": "lenskart-sale",
+      "companyId": "lenskart",
+      "date": "2026-09-21",
+      "dateLabel": "21 Sep 2026",
+      "title": "ADIA-affiliated trust sells Lenskart shares",
+      "kind": "equity",
+      "direction": "reduced",
+      "status": "Reported",
+      "detail": "The deal announcement reports a sale of 35 million shares through exchange trading platforms.",
+      "qualification": "A sale of this size establishes reduction, not a full exit; the remaining holding was not reconciled.",
+      "sourceIds": [
+        "lenskart"
+      ]
+    }
+  ],
+  "report": {
+    "title": "ADIA in India",
+    "summary": "ADIA’s disclosed Indian activity spans public and private equity, infrastructure and property. The six selected records distinguish subsidiaries, trusts, manager ownership and fund commitments, with the Lenskart sale recorded as a reduction.",
+    "sections": [
+      {
+        "title": "Long-horizon approach",
+        "text": "ADIA describes a diversified, multi-asset strategy and established a GIFT City subsidiary for Indian investments. This is portfolio context, not evidence of any particular company percentage.",
+        "sourceIds": [
+          "strategy",
+          "allocation"
+        ]
+      },
+      {
+        "title": "Financial services and housing",
+        "text": "The bank CCPS proposal, IIFL acquisition milestone, HCAL equity and H-CARE commitments are four distinct exposures. Their percentages are not interchangeable.",
+        "sourceIds": [
+          "idfc",
+          "iifl",
+          "hdfc-capital",
+          "hcare"
+        ]
+      },
+      {
+        "title": "Consumer exposure and monetisation",
+        "text": "Reliance Retail’s announcement and the Lenskart trust’s sale provide dated evidence of investment and reduction. Neither establishes a complete current portfolio.",
+        "sourceIds": [
+          "retail",
+          "lenskart"
+        ]
+      }
+    ],
+    "themes": [
+      {
+        "name": "Housing and financial services",
+        "conviction": "Research interpretation",
+        "case": "Research interpretation: the disclosed relationships point to recurring interest in financial intermediation and housing supply.",
+        "watch": "Credit quality, financing terms and legal investment level.",
+        "sourceIds": [
+          "idfc",
+          "iifl",
+          "hcare"
+        ]
+      },
+      {
+        "name": "Consumer platforms",
+        "conviction": "Research interpretation",
+        "case": "Research interpretation: retail investments provide exposure to consumer distribution, with exit execution influencing retained exposure.",
+        "watch": "Valuation, operating performance and residual holdings.",
+        "sourceIds": [
+          "retail",
+          "lenskart"
+        ]
+      }
+    ]
+  }
+}

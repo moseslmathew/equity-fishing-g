@@ -1,0 +1,247 @@
+{
+  "id": "brookfield",
+  "name": "Brookfield",
+  "asOf": "2026-10-23",
+  "checkedAt": "2026-10-23T04:01:23.391941+00:00",
+  "windowStart": "2025-10-23",
+  "windowEnd": "2026-10-23",
+  "coverage": "Selected India operating platforms, a sponsored REIT and listed portfolio companies across telecom towers, offices, hospitality, data centres and renewable power.",
+  "limitations": [
+    "Selective public-disclosure coverage, not a complete portfolio or a live ownership register. The review date does not update the date of an older holding disclosure.",
+    "Ownership belongs to the named entity, fund, subsidiary or platform. Fund commitments, acquisitions of assets and joint-venture stakes are not holdings in the listed parent.",
+    "Announced investments remain proposed unless closing evidence was reviewed. An unavailable percentage is not zero.",
+    "Investment themes and business cases are research interpretations of the cited activity, not forecasts or recommendations."
+  ],
+  "sources": {
+    "altius-2024": {
+      "title": "Brookfield-led consortium completes ATC India acquisition",
+      "url": "https://www.bci.ca/news/article/brookfield-led-consortium-completes-the-acquisition-of-the-indian-tower-business-of-american-tower-corporation/",
+      "publisher": "BCI",
+      "published": "12 Sep 2024",
+      "kind": "primary"
+    },
+    "altius-2026": {
+      "title": "Latham advises La Caisse on completed Altius investment",
+      "url": "https://www.lw.com/en/news/2026/09/latham-advises-la-caisse-on-investment-in-altius",
+      "publisher": "Latham & Watkins",
+      "published": "4 Sep 2026",
+      "kind": "primary",
+      "note": "Transaction adviser states completion and identifies Brookfield as the largest investor, without providing its retained percentage."
+    },
+    "reit": {
+      "title": "Brookfield India REIT: sponsor",
+      "url": "https://www.brookfieldindiareit.in/sponsor",
+      "publisher": "Brookfield India REIT",
+      "published": "Reviewed 23 Oct 2026",
+      "kind": "primary"
+    },
+    "digital": {
+      "title": "Digital Connexion investor relations",
+      "url": "https://digitalconnexion.com/investor",
+      "publisher": "Digital Connexion",
+      "published": "Reviewed 23 Oct 2026",
+      "kind": "primary"
+    },
+    "evren": {
+      "title": "Axis Energy: joint-venture history",
+      "url": "https://axisenergy.in/about-us/",
+      "publisher": "Axis Energy",
+      "published": "Reviewed 23 Oct 2026",
+      "kind": "primary",
+      "note": "Partner describes the 51:49 Brookfield/Axis JV split; this is not a Brookfield Corporation shareholder stake."
+    },
+    "renewable": {
+      "title": "Brookfield Renewable 2025 annual Form 20-F",
+      "url": "https://bep.brookfield.com/sites/brookfield-bep-v2/files/Brookfield-BEP-IR-V2/form-20-fs/bep-2025-annual-20-f.pdf",
+      "publisher": "Brookfield Renewable",
+      "published": "FY2025 report; includes early-2026 developments",
+      "kind": "primary"
+    },
+    "leela": {
+      "title": "Brookfield real-estate portfolio: Leela",
+      "url": "https://www.brookfield.com/about-us/capabilities/real-estate",
+      "publisher": "Brookfield",
+      "published": "Reviewed 23 Oct 2026",
+      "kind": "primary"
+    }
+  },
+  "companies": [
+    {
+      "id": "altius",
+      "name": "Altius telecom infrastructure platform",
+      "listing": "Private / India",
+      "sector": "Telecom towers",
+      "relationship": "Brookfield-sponsored Data Infrastructure Trust combined its Indian tower businesses under Altius.",
+      "ownership": "Largest investor after September transaction; percentage not disclosed",
+      "ownershipDate": "4 Sep 2026 completed-deal disclosure",
+      "stakePercent": null,
+      "stance": "held",
+      "summary": "The adviser confirms Brookfield remains the largest investor after La Caisse’s entry. The disclosed 24% transaction stake is not assigned to Brookfield.",
+      "thesis": "Research interpretation: tower networks offer infrastructure exposure to mobile-data demand.",
+      "risks": "Tenant concentration, financing and telecom-sector economics.",
+      "sourceIds": [
+        "altius-2024",
+        "altius-2026"
+      ]
+    },
+    {
+      "id": "brookfield-india-reit",
+      "name": "Brookfield India Real Estate Trust",
+      "listing": "Listed REIT / India",
+      "sector": "Office real estate",
+      "relationship": "A Brookfield Asset Management affiliate sponsors the REIT.",
+      "ownership": "Sponsor relationship; current unit holding not verified",
+      "ownershipDate": "Sponsor page reviewed 23 Oct 2026",
+      "stakePercent": null,
+      "stance": "held",
+      "summary": "The listed trust provides office-property exposure. Sponsorship is distinct from owning all trust units.",
+      "thesis": "Research interpretation: office demand and active asset management can support income growth.",
+      "risks": "Occupancy, interest rates, leverage and related-party acquisitions.",
+      "sourceIds": [
+        "reit"
+      ],
+      "ticker": "NSE: BIRET"
+    },
+    {
+      "id": "cleanmax",
+      "name": "CleanMax",
+      "listing": "Listed / India",
+      "sector": "Renewable power",
+      "relationship": "Brookfield Renewable’s annual filing identifies CleanMax in its Indian portfolio and discusses its February 2026 IPO.",
+      "ownership": "Platform relationship; post-IPO percentage not verified",
+      "ownershipDate": "FY2025 annual filing; February 2026 IPO update",
+      "stakePercent": null,
+      "stance": "held",
+      "summary": "The record identifies portfolio exposure without assuming the current retained stake after listing.",
+      "thesis": "Research interpretation: corporate clean-energy demand may support operating and development assets.",
+      "risks": "Project delivery, offtaker credit, dilution and valuation.",
+      "sourceIds": [
+        "renewable"
+      ],
+      "ticker": "NSE: CLEANMAX"
+    },
+    {
+      "id": "digital-connexion",
+      "name": "Digital Connexion",
+      "listing": "Private / India",
+      "sector": "Data centres",
+      "relationship": "Joint venture between Brookfield, Reliance Industries and Digital Realty.",
+      "ownership": "JV partner; percentage not stated on reviewed page",
+      "ownershipDate": "Company investor page reviewed 23 Oct 2026",
+      "stakePercent": null,
+      "stance": "held",
+      "summary": "The company confirms all three partners. No equal ownership split or stake in Reliance Industries is assumed.",
+      "thesis": "Research interpretation: connectivity and cloud adoption can support data-centre demand.",
+      "risks": "Power availability, lease execution, capital intensity and competition.",
+      "sourceIds": [
+        "digital"
+      ]
+    },
+    {
+      "id": "evren",
+      "name": "Evren / Axis clean-energy joint venture",
+      "listing": "Private / India",
+      "sector": "Renewable power",
+      "relationship": "Axis Energy describes the Brookfield/Axis JV ownership split as 51:49.",
+      "ownership": "51% Brookfield side of JV, per partner disclosure",
+      "ownershipDate": "JV history on partner page reviewed 23 Oct 2026",
+      "stakePercent": 51,
+      "stance": "held",
+      "summary": "The percentage belongs to the joint-venture structure, not to ownership of Axis Energy or listed Brookfield entities.",
+      "thesis": "Research interpretation: a development platform can address utility and industrial clean-power demand.",
+      "risks": "Construction, permits, offtake and development capital.",
+      "sourceIds": [
+        "evren",
+        "renewable"
+      ]
+    },
+    {
+      "id": "the-leela",
+      "name": "The Leela / Schloss Bangalore",
+      "listing": "Listed / India",
+      "sector": "Hospitality",
+      "relationship": "Brookfield acquired the hotel platform in 2019 and identifies its June 2025 IPO.",
+      "ownership": "Brookfield-backed platform; current listed stake not verified",
+      "ownershipDate": "Official portfolio page reviewed 23 Oct 2026",
+      "stakePercent": null,
+      "stance": "held",
+      "summary": "The investment history and listing are documented. A post-IPO shareholder percentage was not reconciled.",
+      "thesis": "Research interpretation: luxury hospitality offers exposure to travel demand and asset management.",
+      "risks": "Travel cyclicality, capital spending and listed valuation.",
+      "sourceIds": [
+        "leela"
+      ],
+      "ticker": "NSE: THELEELA"
+    }
+  ],
+  "events": [
+    {
+      "id": "altius-transaction",
+      "companyId": "altius",
+      "date": "2026-09-04",
+      "dateLabel": "04 Sep 2026",
+      "title": "Adviser confirms Altius transaction completion",
+      "kind": "platform",
+      "direction": "held",
+      "status": "Completed",
+      "detail": "La Caisse invested alongside Brookfield; the adviser states Brookfield remained the platform’s largest investor.",
+      "qualification": "The 24% transaction figure is not Brookfield’s retained percentage; no increase or reduction in its own stake is inferred.",
+      "sourceIds": [
+        "altius-2026"
+      ]
+    }
+  ],
+  "report": {
+    "title": "Brookfield in India",
+    "summary": "Brookfield’s Indian exposure is spread across operating platforms, institutional partnerships and listed vehicles. The six reviewed records retain their investment level rather than assigning every platform percentage to the parent company.",
+    "sections": [
+      {
+        "title": "Real-asset approach",
+        "text": "Brookfield describes acquiring quality assets and improving them through active management. This provides a framework for reviewing its office and hospitality relationships.",
+        "sourceIds": [
+          "leela",
+          "reit"
+        ]
+      },
+      {
+        "title": "Digital infrastructure",
+        "text": "Altius and Digital Connexion are separate tower and data-centre platforms. Their co-investors and legal ownership structures matter to interpreting the exposure.",
+        "sourceIds": [
+          "altius-2026",
+          "digital"
+        ]
+      },
+      {
+        "title": "Energy transition",
+        "text": "Evren and CleanMax are identified in renewable-platform disclosures. JV ownership and post-IPO ownership are different measures.",
+        "sourceIds": [
+          "evren",
+          "renewable"
+        ]
+      }
+    ],
+    "themes": [
+      {
+        "name": "Digital infrastructure",
+        "conviction": "Research interpretation",
+        "case": "Research interpretation: towers and data centres connect investment activity to communication and cloud demand.",
+        "watch": "Capital intensity, tenant quality and power availability.",
+        "sourceIds": [
+          "altius-2026",
+          "digital"
+        ]
+      },
+      {
+        "name": "Property and clean power",
+        "conviction": "Research interpretation",
+        "case": "Research interpretation: offices, hospitality and renewables provide different long-duration operating exposures.",
+        "watch": "Asset-level leverage, execution and demand cycles.",
+        "sourceIds": [
+          "reit",
+          "leela",
+          "renewable"
+        ]
+      }
+    ]
+  }
+}

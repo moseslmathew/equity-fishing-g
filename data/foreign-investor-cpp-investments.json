@@ -1,0 +1,238 @@
+{
+  "id": "cpp-investments",
+  "name": "CPP Investments",
+  "asOf": "2026-10-23",
+  "checkedAt": "2026-10-23T04:01:23.391941+00:00",
+  "windowStart": "2025-10-23",
+  "windowEnd": "2026-10-23",
+  "coverage": "Selected Canada Pension Plan Investment Board relationships in Indian logistics, toll roads, office property and data centres. Direct company equity and platform interests are separate records.",
+  "limitations": [
+    "Selective public-disclosure coverage, not a complete portfolio or a live ownership register. The review date does not update the date of an older holding disclosure.",
+    "Ownership belongs to the named entity, fund, subsidiary or platform. Fund commitments, acquisitions of assets and joint-venture stakes are not holdings in the listed parent.",
+    "Announced investments remain proposed unless closing evidence was reviewed. An unavailable percentage is not zero.",
+    "Investment themes and business cases are research interpretations of the cited activity, not forecasts or recommendations."
+  ],
+  "sources": {
+    "holdings": {
+      "title": "CPP Investments: holdings and relationships",
+      "url": "https://www.cppinvestments.com/the-fund/investment-programs/holdings-and-relationships/",
+      "publisher": "CPP Investments",
+      "published": "Reviewed 23 Oct 2026",
+      "kind": "primary"
+    },
+    "ctrls": {
+      "title": "CtrlS announces CPP Investments strategic partnership",
+      "url": "https://www.ctrls.com/press-release-ctrls-secures-7000-crore-commitment-from-cpp-investments-to-scale-dc-infra-in-india/",
+      "publisher": "CtrlS Datacenters",
+      "published": "17 Jun 2026",
+      "kind": "primary",
+      "note": "Announced investment and separate development JV; closing not independently confirmed."
+    },
+    "indospace": {
+      "title": "CPP Investments and IndoSpace expand joint venture",
+      "url": "https://www.cppinvestments.com/newsroom/cpp-investments-and-indospace-expand-joint-venture-with-us300-million-acquisition-of-six-logistics-parks/",
+      "publisher": "CPP Investments",
+      "published": "25 Nov 2025",
+      "kind": "primary"
+    },
+    "nhit": {
+      "title": "Third follow-on investment in National Highways Infra Trust",
+      "url": "https://www.cppinvestments.com/newsroom/cpp-investments-announces-third-follow-on-investment-in-indias-national-highways-infra-trust/",
+      "publisher": "CPP Investments",
+      "published": "26 Mar 2025",
+      "kind": "primary"
+    },
+    "rmz": {
+      "title": "Real-estate holdings as at March 31, 2025",
+      "url": "https://www.cppinvestments.com/wp-content/uploads/2025/05/RE_Holdings_EN_Q4F25.html",
+      "publisher": "CPP Investments",
+      "published": "31 Mar 2025",
+      "kind": "primary",
+      "note": "Property-venture ownership interest, not ownership of RMZ Corporation."
+    }
+  },
+  "companies": [
+    {
+      "id": "ctrls",
+      "name": "CtrlS Datacenters",
+      "listing": "Private / India",
+      "sector": "Data centres",
+      "relationship": "Announced direct-equity investment in CtrlS.",
+      "ownership": "8.2% direct stake announced; closing not verified",
+      "ownershipDate": "17 Jun 2026 announcement",
+      "stakePercent": 8.2,
+      "stance": "proposed",
+      "summary": "Separate from the proposed campus-development joint venture.",
+      "thesis": "Research interpretation: growth capital can help expand operating data-centre capacity.",
+      "risks": "Closing, valuation, construction, power and customer concentration.",
+      "sourceIds": [
+        "ctrls"
+      ]
+    },
+    {
+      "id": "ctrls-campus-jv",
+      "name": "CtrlS / CPP hyperscale-campus joint venture",
+      "listing": "Private / India",
+      "sector": "Data-centre development",
+      "relationship": "Separate hyperscale-campus development venture.",
+      "ownership": "48% planned JV ownership; distinct from 8.2% in CtrlS",
+      "ownershipDate": "17 Jun 2026 announcement",
+      "stakePercent": 48,
+      "stance": "proposed",
+      "summary": "Development funding rather than an additional stake in CtrlS.",
+      "thesis": "Research interpretation: development partnerships can expand capacity while sharing project execution.",
+      "risks": "Closing, capital commitments, development and power availability.",
+      "sourceIds": [
+        "ctrls"
+      ]
+    },
+    {
+      "id": "indospace-core",
+      "name": "IndoSpace Core",
+      "listing": "Private / India",
+      "sector": "Industrial and logistics real estate",
+      "relationship": "CPP Investments disclosed 93% ownership of IndoSpace Core when it expanded the JV.",
+      "ownership": "93% of IndoSpace Core JV",
+      "ownershipDate": "25 Nov 2025 disclosure",
+      "stakePercent": 93,
+      "stance": "added",
+      "summary": "The JV acquired six logistics parks. This percentage is not ownership of IndoSpace’s wider group.",
+      "thesis": "Research interpretation: logistics assets offer exposure to distribution and manufacturing infrastructure.",
+      "risks": "Leasing, financing, concentration and property valuations.",
+      "sourceIds": [
+        "indospace"
+      ]
+    },
+    {
+      "id": "nhit",
+      "name": "National Highways Infra Trust",
+      "listing": "InvIT / India",
+      "sector": "Road infrastructure",
+      "relationship": "CPP Investments disclosed continued ownership of 25% of NHIT units after a follow-on placement.",
+      "ownership": "25% of InvIT units at disclosure",
+      "ownershipDate": "26 Mar 2025 disclosure; current unit percentage not refreshed",
+      "stakePercent": 25,
+      "stance": "held",
+      "summary": "The percentage belongs to trust units, not shares in NHAI or the underlying concession companies.",
+      "thesis": "Research interpretation: established toll roads may offer long-duration infrastructure cash flows.",
+      "risks": "Traffic, regulation, concession terms and leverage.",
+      "sourceIds": [
+        "nhit"
+      ]
+    },
+    {
+      "id": "rmz-rcipl",
+      "name": "RMZ India Office Venture – RCIPL",
+      "listing": "Private / India",
+      "sector": "Office real estate",
+      "relationship": "CPP’s March 2025 holdings list reports an ownership interest in this Hyderabad office venture.",
+      "ownership": "50% interest in the named property venture",
+      "ownershipDate": "31 Mar 2025 holdings snapshot",
+      "stakePercent": 50,
+      "stance": "held",
+      "summary": "The property-specific ownership is distinct from CPP owning half of the wider RMZ group.",
+      "thesis": "Research interpretation: office ventures link returns to leasing and asset management.",
+      "risks": "Occupancy, development, financing and snapshot age.",
+      "sourceIds": [
+        "rmz"
+      ]
+    }
+  ],
+  "events": [
+    {
+      "id": "indospace-parks",
+      "companyId": "indospace-core",
+      "date": "2025-11-25",
+      "dateLabel": "25 Nov 2025",
+      "title": "IndoSpace Core acquires six logistics parks",
+      "kind": "platform",
+      "direction": "added",
+      "status": "Completed",
+      "detail": "CPP Investments announced acquisition of six parks through its JV and a ₹14 billion funding commitment.",
+      "qualification": "The 93% figure describes CPP’s IndoSpace Core ownership, not every IndoSpace fund or operating company.",
+      "sourceIds": [
+        "indospace"
+      ]
+    },
+    {
+      "id": "ctrls-equity",
+      "companyId": "ctrls",
+      "date": "2026-06-17",
+      "dateLabel": "17 Jun 2026",
+      "title": "Direct CtrlS equity investment announced",
+      "kind": "equity",
+      "direction": "proposed",
+      "status": "Announced",
+      "detail": "The company announced a direct-equity investment.",
+      "qualification": "Closing was not independently established.",
+      "sourceIds": [
+        "ctrls"
+      ]
+    },
+    {
+      "id": "ctrls-campus",
+      "companyId": "ctrls-campus-jv",
+      "date": "2026-06-17",
+      "dateLabel": "17 Jun 2026",
+      "title": "Separate hyperscale-campus JV announced",
+      "kind": "platform",
+      "direction": "proposed",
+      "status": "Announced",
+      "detail": "A separate campus-development venture was announced.",
+      "qualification": "The JV percentage is not combined with the parent-company stake.",
+      "sourceIds": [
+        "ctrls"
+      ]
+    }
+  ],
+  "report": {
+    "title": "CPP Investments in India",
+    "summary": "CPP Investments’ five reviewed company/platform records include established real-asset interests and proposed data-centre investments. Public disclosure dates and the level of ownership remain visible for each.",
+    "sections": [
+      {
+        "title": "Pension-investor approach",
+        "text": "CPP Investments discloses holdings across public equity, private equity, property and infrastructure. Reports have their own valuation dates and do not constitute a live register.",
+        "sourceIds": [
+          "holdings"
+        ]
+      },
+      {
+        "title": "Property and roads",
+        "text": "The IndoSpace, NHIT and RCIPL percentages each describe a particular JV, trust or property venture. They are not holdings in the wider sponsor groups.",
+        "sourceIds": [
+          "indospace",
+          "nhit",
+          "rmz"
+        ]
+      },
+      {
+        "title": "Digital infrastructure",
+        "text": "CtrlS announced both a direct equity transaction and a separate campus JV. The two ownership bases remain separate and closing is unverified.",
+        "sourceIds": [
+          "ctrls"
+        ]
+      }
+    ],
+    "themes": [
+      {
+        "name": "Industrial property and roads",
+        "conviction": "Research interpretation",
+        "case": "Research interpretation: logistics parks and toll-road trusts are consistent with long-duration real-asset investing.",
+        "watch": "Cash flows, concession terms, financing and concentration.",
+        "sourceIds": [
+          "indospace",
+          "nhit"
+        ]
+      },
+      {
+        "name": "Data-centre development",
+        "conviction": "Research interpretation",
+        "case": "Research interpretation: the announced partnership increases potential exposure to digital-infrastructure development.",
+        "watch": "Closing evidence, deployment and power constraints.",
+        "sourceIds": [
+          "ctrls"
+        ]
+      }
+    ]
+  }
+}

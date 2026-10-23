@@ -1,304 +1,130 @@
 {
-  "id": "research-2026-10-14-august-september-strategy-shift",
-  "asOf": "2026-10-14",
-  "marketDate": "2026-10-13",
+  "id": "research-2026-10-23-newsletter",
+  "asOf": "2026-10-23",
+  "marketDate": "2026-10-12",
   "fundMonth": "2026-09",
   "previousFundMonth": "2026-08",
-  "checkedAt": "2026-10-14T03:50:10.705Z",
+  "checkedAt": "2026-10-23T06:00:00.000Z",
   "horizon": "1–3 years",
-  "createdBy": "AI research assistant",
-  "refreshedLabel": "Research reviewed 14 October 2026 · August–September Strategy Shift",
-  "portfolioFingerprint": "fae4facb",
-  "title": "The Great Small-Cap Capital Rotation: Electrification, Precision Engineering & High-Moat Operating Leverage",
-  "method": "Recompute company identities, share-quantity changes, and portfolio weight shifts across all 20 small-cap funds between August 31 and September 30, 2026 disclosures. Identify synchronized additions, persistent accumulation, and sector-level strategic rotations. Conduct real-time fundamental data cross-checks (quarterly revenue growth, EBITDA margin progression, order backlog, debt-to-equity, cash conversion, and return ratios) to determine why fund managers are buying each emerging franchise. Forecasts and guidance are distinguished from achieved numbers; current valuations and operational gating criteria are explicitly stated.",
-  "limitations": "Research incorporates all completed and verified monthly disclosures from AMC filings, corporate exchange announcements, and audited annual/quarterly reports. Share quantities represent net month-end disclosures, not intra-month trade timing. Order backlog figures and capacity utilization data are drawn directly from company disclosures and management earnings calls. P/E multiples and entry prices must be assessed dynamically against broader equity market cycles; presence in a mutual fund portfolio does not establish valuation safety.",
+  "createdBy": "Codex",
+  "refreshedLabel": "Newsletter updated 23 October 2026",
+  "portfolioFingerprint": "8ae951ec",
+  "title": "The conviction question: what changed, and what still needs proof",
+  "method": "Prepared by Codex from the saved full-equity archive, recomputing fund coverage, company identities and share movements. Disputed corporate-action records remain unclassified. Selected official publications were checked on 23 October 2026. Company deep dives retain their original verification dates unless a dated update is explicitly stated. No live price-based ranking or market-wide flow estimate is inferred from this portfolio sample.",
+  "limitations": "Research uses all saved portfolio records and selected accessible public sources, not every disclosure or news item in existence. Issuer filings anchor operating facts; independent reporting and analyst views provide context and challenge. Exchange-filing mirrors are identified as secondary access to the same primary material. Forecasts and management guidance are not treated as achieved results. Current prices and valuation multiples were not independently reconciled, so the shortlist does not establish undervaluation or suitable entry prices. Ownership and holdings retain their reporting dates; missing observations are not treated as sales.",
   "overview": [],
   "exclusions": [],
-  "marketSources": [
-    {
-      "label": "Central Electricity Authority (CEA) — National Transmission Plan & Substation Additions",
-      "url": "https://cea.nic.in/",
-      "kind": "Statutory / regulatory disclosure",
-      "period": "September 2026; Q2 update",
-      "checkedOn": "2026-10-14"
-    },
-    {
-      "label": "IEA — Modernising Grids in the Age of Electricity",
-      "url": "https://www.iea.org/reports/modernising-grids-in-the-age-of-electricity",
-      "kind": "Independent global sector research",
-      "period": "2026 annual report",
-      "checkedOn": "2026-10-14"
-    },
-    {
-      "label": "AMFI India — Small-Cap Net Inflows & Portfolio Category Factsheets",
-      "url": "https://www.amfiindia.com/research-information/other-data/mf-scheme-performance-details",
-      "kind": "Industry regulatory disclosure",
-      "period": "August–September 2026",
-      "checkedOn": "2026-10-14"
-    },
-    {
-      "label": "ICICI Securities — Capital Goods & Transformer Supercycle Outlook",
-      "url": "https://www.icicisecurities.com/",
-      "kind": "Institutional equity research",
-      "period": "September 2026",
-      "checkedOn": "2026-10-14"
-    },
-    {
-      "label": "Axis Capital — Indian Power Equipment & Global Export Competitiveness",
-      "url": "https://www.axiscapital.co.in/",
-      "kind": "Institutional equity research",
-      "period": "September 2026",
-      "checkedOn": "2026-10-14"
-    },
-    {
-      "label": "Motilal Oswal — Small-Cap Quality Screening & Earnings Trajectory",
-      "url": "https://www.motilaloswal.com/",
-      "kind": "Institutional equity research",
-      "period": "October 2026",
-      "checkedOn": "2026-10-14"
-    },
-    {
-      "label": "Trendlyne — Mutual Fund Bulk Buying & Shareholding Movements",
-      "url": "https://trendlyne.com/",
-      "kind": "Market intelligence platform",
-      "period": "Quarter ended September 2026",
-      "checkedOn": "2026-10-14"
-    },
-    {
-      "label": "Finology Ticker — Fund Holdings Analysis & Shareholder Filings",
-      "url": "https://ticker.finology.in/",
-      "kind": "Market intelligence platform",
-      "period": "Q2 FY25 / September 2026",
-      "checkedOn": "2026-10-14"
-    },
-    {
-      "label": "Nuvama Institutional Equities — Domestic Healthcare & CDMO Revival",
-      "url": "https://www.nuvama.com/",
-      "kind": "Institutional equity research",
-      "period": "September 2026",
-      "checkedOn": "2026-10-14"
-    },
-    {
-      "label": "BSE India — Corporate XBRL Shareholding & Financial Results Repository",
-      "url": "https://www.bseindia.com/",
-      "kind": "Primary exchange disclosure",
-      "period": "Quarter ended September 2026",
-      "checkedOn": "2026-10-14"
-    },
-    {
-      "label": "NSE India — Corporate Filings & Bulk/Block Deal Logs",
-      "url": "https://www.nseindia.com/",
-      "kind": "Primary exchange disclosure",
-      "period": "Quarter ended September 2026",
-      "checkedOn": "2026-10-14"
-    },
-    {
-      "label": "Nomura — India Infrastructure Capex & Power Transmission Supercycle",
-      "url": "https://www.nomuraholdings.com/",
-      "kind": "Global macroeconomic & equity research",
-      "period": "September 2026",
-      "checkedOn": "2026-10-14"
-    },
-    {
-      "label": "Business Standard — Indian Mutual Funds Shift Strategies into Capital Goods",
-      "url": "https://www.business-standard.com/markets/mutual-funds",
-      "kind": "Financial news analysis",
-      "period": "October 2026",
-      "checkedOn": "2026-10-14"
-    }
-  ],
-  "modelName": "Advanced Financial Research Agent (Gemini Deep Research)",
-  "modelDisclosure": "Autonomous multi-source research model synthesizing primary exchange filings, monthly mutual fund portfolio comparisons, corporate balance sheets, and attributed institutional analysis. Opinions, forward estimates, and conviction scores are analytical interpretations, not verified guarantees or investment advice.",
-  "summary": "Comprehensive comparative review of 20 small-cap mutual funds across the August–September 2026 reporting cycles reveals a marked structural rotation: fund managers are systematically trimming overvalued consumer discretionary and cyclical building materials to aggressively accumulate power transmission infrastructure, electrification equipment, cryogenic engineering, and asset-light financialization platforms.",
-  "coverageNote": "Covers all 20 active small-cap mutual funds in the observatory catalog across August 31 and September 30, 2026 disclosures. Share quantity movements are reconciled through exact ISIN matching, separating genuine equity purchases from corporate actions and bonus adjustments.",
-  "intelligence": {
-    "selectionNote": "The 10 selected emerging companies are screened based on verified multi-fund buying signals across August and September, robust operating return ratios (ROCE > 20%), strong revenue growth, multi-quarter order visibility, and pristine, low-leverage balance sheets.",
-    "mediaNote": "Data corroborated via primary BSE/NSE filings, audited quarterly results, AMC factsheets, and institutional research reports.",
-    "takeaways": [
-      {
-        "title": "The Capital Goods & Electrification Supercycle Is Real and Accelerating",
-        "text": "Across August and September disclosures, managers of Nippon India, DSP, Mahindra Manulife, Bajaj Finserv, and TrustMF demonstrated intense conviction in power transmission, transformers, and industrial generators. Voltamp Transformers, TD Power Systems, Kirloskar Oil Engines, and Kalpataru Projects saw coordinated accumulation. Driven by a global shortage of power transformers, accelerating grid modernization, and exponential data center backup energy requirements, these equipment makers command record multi-year order books with zero or negligible net debt.",
-        "refs": [
-          0,
-          1
-        ]
-      },
-      {
-        "title": "Cryogenics and Precision Aerospace Outperform Commoditized Auto Ancillaries",
-        "text": "A distinct divergence has formed in engineering: funds like TrustMF, ITI, JM, and Abakkus are scaling positions in high-barrier precision manufacturers such as Inox India (cryogenic equipment for LNG, hydrogen, and space exploration), Sansera Engineering, and MTAR Technologies. Meanwhile, commoditized auto ancillary suppliers face margin compression from higher raw material volatility and OEM pricing pressure.",
-        "refs": [
-          0,
-          2
-        ]
-      },
-      {
-        "title": "Healthcare Delivery and CDMO Turnarounds Win Selective Re-Allocation",
-        "text": "Healthcare allocations are diverging between high-ROCE tertiary hospital chains with expanding bed capacities (Narayana Hrudayalaya, KIMS) and formulation turnarounds executing global regulatory recoveries (IPCA Laboratories integrating Unichem). Invesco, DSP, Groww, and Motilal Oswal expanded stakes in pharma and healthcare counters where pricing power is insulated from domestic generic price caps.",
-        "refs": [
-          1,
-          2
-        ]
-      },
-      {
-        "title": "Financialization Platforms Capture Negative-Working-Capital Annuities",
-        "text": "Persistent retail SIP inflows (averaging over ₹23,000 crore monthly across the industry) provide non-linear operating leverage to capital-light market infrastructure and distribution franchises like Prudent Corporate Advisory Services and Multi Commodity Exchange of India (MCX). With zero long-term debt and return on capital employed exceeding 35%, these platforms turn incremental AUM directly into operating free cash flow.",
-        "refs": [
-          0,
-          2
-        ]
-      }
-    ],
-    "cases": [
-      {
-        "title": "Power Transmission and Transformer Capacity Scarcity Drives Pricing Power",
-        "status": "Structural Demand Confirmed · Capacity Utilization > 90%",
-        "evidence": "The Central Electricity Authority (CEA) and IEA document that transmission grid expansion is lagging renewable generation and commercial power requirements by 18–24 months. Voltamp Transformers holds an order backlog expanding toward ₹2,342 crore, while TD Power Systems booked an 87% YoY surge in quarterly inflows (₹734 crore), with exports accounting for 93% of inflows driven by global gas turbine backup demand for AI data centers.",
-        "thesis": "Manufacturers of specialized transformers and custom AC generators hold unprecedented multi-year pricing power. Unlike previous capex cycles driven by debt-fueled power developers, current capex is funded by cash-rich utilities, industrial captives, and data center operators. Companies with zero debt and internal capex funding (Voltamp, TD Power Systems) will capture expanding EBITDA margins without dilution.",
-        "challenge": "Spikes in electrical-grade steel (CRGO) and copper prices could temporarily squeeze margins if fixed-price contracts lack escalation clauses. Accelerated capacity commissioning by regional competitors could cap pricing power over a 3-year horizon.",
-        "catalyst": "Quarterly margin delivery on expanded capacity, CRGO import pricing trends, and ongoing order intake from US/European power developers.",
-        "refs": [
-          0,
-          2
-        ]
-      },
-      {
-        "title": "Cryogenic Liquefaction & Clean Energy Infrastructure Moats",
-        "status": "High Technological Barrier · Multi-Quarter Export Expansion",
-        "evidence": "Inox India (INOXCVA) achieved an all-time record order book of ₹1,686 crore, with exports comprising over 68% (₹1,140 crore) of the backlog. Cryo-scientific revenues reached historic highs of ₹75 crore supporting prestigious global scientific and aerospace programs (CERN, space satellite launch pads).",
-        "thesis": "Handling cryogenic fluids (liquid nitrogen, oxygen, argon, LNG, and liquid hydrogen at -253°C) requires specialized metallurgical engineering, vacuum insulation technology, and rigorous safety certifications. With near-monopoly domestic market share and expanding European/Middle Eastern presence, Inox India functions as a mission-critical infrastructure supplier with >23% EBITDA margins and >30% ROCE.",
-        "challenge": "Supply chain disruptions in high-grade stainless steel plates, maritime freight spikes, or deferrals in large international LNG receiving terminals could push quarterly revenue recognition between quarters.",
-        "catalyst": "Expansion in industrial gas distribution tanks, commercial hydrogen refueling station contracts, and ISRO space mission deliveries.",
-        "refs": [
-          0,
-          1
-        ]
-      },
-      {
-        "title": "Enterprise AI Workflow Orchestration Converts Services into Retained Free Cash",
-        "status": "Cash Flow Conversion > 80% · Proven Operating Leverage",
-        "evidence": "eClerx Services delivered 15.1% constant-currency revenue growth in Q1 FY27 (₹1,152 crore) while maintaining a 23.0% operating EBITDA margin. The company deployed QA360 and agentic financial crime compliance platforms across tier-1 investment banking and enterprise technology clients.",
-        "thesis": "Generic foundation models cannot solve complex, compliance-heavy banking and digital operations without deep domain context, curated training pipelines, and workflow integration. eClerx acts as the orchestrator embedding AI agents directly into client operational workflows, capturing productivity gains and commanding higher realized billing rates while maintaining negative net debt.",
-        "challenge": "Client pressure to share AI-driven productivity gains through unit price cuts, alongside aggressive hiring of AI data engineers that could temporarily elevate operational overhead.",
-        "catalyst": "Sequential revenue per employee growth, multi-year contract renewals in digital operations, and sustained free cash conversion.",
-        "refs": [
-          0,
-          2
-        ]
-      },
-      {
-        "title": "Domestic Financialization of Savings Creates Compounding Platform Economics",
-        "status": "Annuity Growth Tracked · Asset-Light Capital Discipline",
-        "evidence": "Prudent Corporate Advisory Services crossed ₹1,38,630 crore in closing AUM (+44.4% YoY), with its monthly SIP book scaling past ₹1,203 crore (+21% YoY). Operating margin expanded 270 bps to 25.6%, while PAT surged 44.4% YoY to ₹74.8 crore with a pristine debt-free balance sheet and ~37.5% ROCE.",
-        "thesis": "Mutual fund penetration in non-metro (B-30) India remains below 5% of household financial assets. Prudent's partner network (mutual fund distributors) provides an entrenched physical-plus-digital distribution moat. Because technology platform infrastructure is largely fixed, incremental AUM flows directly into operational cash flow.",
-        "challenge": "Potential regulatory caps on total expense ratios (TER) or distributor commissions by SEBI could compress gross distribution yields.",
-        "catalyst": "Monthly SIP accretion momentum, insurance distribution cross-selling velocity, and B-30 investor additions.",
-        "refs": [
-          0,
-          1
-        ]
-      },
-      {
-        "title": "Turnaround Synergies & Export Recovery in High-Barrier Pharmaceuticals",
-        "status": "Synergy Realization Accelerating · Net Cash Positive",
-        "evidence": "IPCA Laboratories delivered a 21% YoY revenue increase to ₹2,788 crore in Q1 FY27, with consolidated EBITDA margin expanding 449 bps to 22.88% and net profit jumping over 42% to ₹402–422 crore. European exports surged 70% YoY, API revenues grew 30%, and Unichem Laboratories integration yielded centralized procurement and shipping savings.",
-        "thesis": "IPCA's complete backward integration into key starting materials (KSMs) and APIs insulates it from Chinese raw material supply shocks. With Unichem's USFDA-approved facilities being turned around under IPCA's cost discipline, the combined entity is recovering high-margin US and European generic market share.",
-        "challenge": "Regulatory inspections across formulation facilities, potential price erosion in US generic orals, and local regulatory delays.",
-        "catalyst": "Sustained >22% EBITDA margin delivery, US product launches from Unichem's pipeline, and working capital optimization.",
-        "refs": [
-          0,
-          1
-        ]
-      }
-    ],
-    "perspectives": [
-      {
-        "title": "Fund Strategy Comparison: August vs September Disclosures",
-        "text": "A fund-by-fund audit highlights a clear strategy pivot: DSP and Nippon India increased allocations in electrical equipment and heavy engineering by 140–280 bps across August and September, taking profit on consumer cyclicals. Invesco and Motilal Oswal expanded in niche CDMO pharma and water infrastructure. Edelweiss and Mahindra Manulife increased weight in exchange and financial infrastructure (MCX, City Union Bank). Conversely, cyclical real estate ancillaries and small-cap chemical commodity exporters saw net fund exits.",
-        "refs": [
-          0,
-          1
-        ]
-      },
-      {
-        "title": "Quality Over Size: Balance Sheet Health Dictates Mutual Fund Purchases",
-        "text": "Small-cap mutual fund managers are prioritizing debt-free or low-leverage companies (Net Debt/Equity < 0.2x) with superior return on capital employed (ROCE > 20%). In an environment of elevated global interest rates and small-cap index consolidation, high-leverage small caps are being discarded in favor of self-funded compounders like Voltamp, TD Power Systems, Prudent Corporate, and Data Patterns.",
-        "refs": [
-          1,
-          2
-        ]
-      },
-      {
-        "title": "Export Moats vs Domestic Dependence",
-        "text": "A significant factor driving fund accumulation is export competitiveness without tariff vulnerability. TD Power Systems (93% export orders), Inox India (68% export backlog), and IPCA Labs (European export surge) demonstrate global cost leadership. These companies insulate portfolios against potential domestic election or monsoon slowdowns.",
-        "refs": [
-          0,
-          2
-        ]
-      },
-      {
-        "title": "Valuation Discipline in a Richly-Valued Small-Cap Benchmark",
-        "text": "With the Nifty Smallcap 250 trailing P/E elevated relative to long-term averages, managers are avoiding speculative momentum stocks with uncertain earnings. Every stock accumulated by 3 or more funds features tangible revenue visibility, high cash conversion, and double-digit operating growth.",
-        "refs": [
-          1,
-          2
-        ]
-      }
-    ],
-    "scenarios": [
-      {
-        "title": "Bull Scenario: Capex Accelerates, Supply Bottlenecks Sustain Peak Margins (Probability: 35%)",
-        "text": "Power grid additions outpace expectations, global data center investments surge by 40% annually, and cryogenic LNG infrastructure orders expand. Voltamp, TD Power Systems, and Inox India deliver 25%+ earnings CAGR with sustained 20%+ operating margins. Mutual funds continue increasing small-cap weights.",
-        "refs": [
-          1,
-          2
-        ]
-      },
-      {
-        "title": "Base Scenario: Order Backlogs Convert at Steady 15–20% Operating Rates (Probability: 50%)",
-        "text": "Industrial and infrastructure execution proceeds steadily with normal seasonal variations. Companies with healthy order backlogs (Kalpataru, Data Patterns, TDPS) achieve guidance, while cash generation supports internal capacity expansions. Valuation multiples consolidate while stock returns track earnings growth.",
-        "refs": [
-          0,
-          1
-        ]
-      },
-      {
-        "title": "Bear Scenario: Global Demand Slowdown & Raw Material Inflation (Probability: 15%)",
-        "text": "Global capex pauses, commodity inputs (copper, steel) rise rapidly without price pass-through, and export dispatches encounter shipping bottlenecks. Margin compression leads funds to rotate defensively into large-cap cash compounders.",
-        "refs": [
-          0,
-          1
-        ]
-      }
-    ]
-  },
   "stocks": [
     {
-      "name": "Voltamp Transformers Limited",
-      "symbol": "VOLTAMP",
-      "match": "voltamptransformerslimited",
-      "tag": "Electrification equipment · zero-debt pure play",
-      "verdict": "Top-conviction industrial idea: A pristine zero-debt balance sheet, 23.5%–28% ROCE, and massive revenue visibility (₹2,342 Cr backlog) position Voltamp as a premier beneficiary of the domestic power grid and data center supercycle.",
+      "name": "eClerx Services Limited",
+      "symbol": "ECLERX",
+      "match": "eclerx services limited",
+      "tag": "AI-enabled operations · commercial proof",
+      "verdict": "Retain near the top of the research queue: workflow expertise is useful, but productivity must become retained profit and cash.",
       "sections": [
         {
-          "title": "Business quality & real-time operational evidence",
-          "text": "Verified financial data: Voltamp Transformers reported Q1 FY27 revenue of ₹543.78 crore (+28% YoY), bouncing back sharply from temporary seasonal site delays. Operating EBITDA margin held steady at 17.15% (₹69.4 crore operating profit) with net profit reaching ₹79.54 crore. The company entered the fiscal year with an opening order backlog of ₹1,200 crore (10,270 MVA), and fresh order inflows expanded total revenue visibility to ₹2,342 crore (18,045 MVA). Balance sheet quality is exceptional: Debt-to-Equity is 0.00, and ongoing capacity expansions (including high-voltage dry-type transformers) are financed 100% via internal cash accruals.",
+          "title": "Business quality & the evidence",
+          "text": "Verified evidence. Q1 FY27 operating revenue was ₹1,152.4 crore, with constant-currency growth of 15.1% year on year. Operating EBITDA margin was 23.0%; PAT was ₹164.3 crore. Sequential profit declined, so strong top-line growth did not eliminate near-term investment pressure. The September 2 Investor Day, summarized by the company on September 28, describes AI-enabled operations, client transformation, embedded products and employee tools. Kapil Jain's team is moving toward outcome-based delivery; QA360 and agentic finance workflows illustrate what this means commercially. These are company descriptions, not independently audited claims of superior software quality.",
+          "refs": [
+            0,
+            1,
+            2
+          ]
+        },
+        {
+          "title": "Management, technology & growth",
+          "text": "Investment interpretation. Existing workflow knowledge can help eClerx implement AI where generic models alone do not solve data-access, compliance and operational-integration problems. The strongest version of the thesis is that clients buy better outcomes and eClerx retains part of the productivity gain. The adverse case is that clients capture savings through lower prices while the vendor incurs AI and sales costs. Assess management through repeat client expansion, realized cash conversion and revenue per employee—not the frequency of the word AI. An Emkay research summary dated September 3 was constructive on the operating direction yet retained REDUCE: useful evidence that a good business narrative does not settle valuation. Its judgment is an analyst view, not consensus.",
+          "refs": [
+            3,
+            4
+          ]
+        },
+        {
+          "title": "Valuation & decision gates",
+          "text": "Decision gate. Retain as a researched candidate, conditional on durable margins and cash conversion while growing. Value normalized cash earnings after AI investment; do not award a software-product multiple to the entire services business without evidence of scalable recurring product income. Named customer retention/independent satisfaction data were not sufficiently verified to assign a universal reputation score.",
+          "refs": [
+            0,
+            3
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "label": "Company filing text, 5 Aug 2026",
+          "url": "https://bazaarwatch.com/announcement/46462/eclerx-services-limited-investor-presentation",
+          "kind": "Issuer filing reproduced by provider",
+          "period": "2026; date stated at source",
+          "checkedOn": "2026-10-12"
+        },
+        {
+          "label": "Official Investor Day with leadership presentation/video library, 2 Sep 2026",
+          "url": "https://eclerx.com/investor-relations/investor-day-2026/",
+          "kind": "Issuer / exchange document",
+          "period": "2026; date stated at source",
+          "checkedOn": "2026-10-12"
+        },
+        {
+          "label": "Official release, 28 Sep 2026",
+          "url": "https://eclerx.com/insights/eclerx-highlights-ai-led-strategy-for-its-next-phase-of-growth-at-investor-day-2026/",
+          "kind": "Issuer / exchange document",
+          "period": "2026; date stated at source",
+          "checkedOn": "2026-10-12"
+        },
+        {
+          "label": "Emkay view via DSIJ, 3 Sep 2026",
+          "url": "https://insights.dsij.in/markets/reports/report-details/eclerx-services-ltd/45416",
+          "kind": "Reporting / attributed analysis",
+          "period": "2026; date stated at source",
+          "checkedOn": "2026-10-12"
+        },
+        {
+          "label": "Company customer case study (self-reported, not independent validation)",
+          "url": "https://eclerx.com/insights/reducing-sales-turnaround-with-a-unified-agentic-ai-solution-for-a-leading-it-organization/",
+          "kind": "Reporting / attributed analysis",
+          "period": "2026; date stated at source",
+          "checkedOn": "2026-10-12"
+        }
+      ],
+      "quality": "Company statements, reported outcomes and our interpretation are distinguished. Source links form the case bibliography; multiple publishers can reproduce the same filing. Product and governance assessments are evidence-based judgements, not an independent audit or universal customer rating.",
+      "growthDrivers": [],
+      "ownership": null,
+      "priceTrend": null
+    },
+    {
+      "name": "Voltamp Transformers Ltd.",
+      "symbol": "VOLTAMP",
+      "match": "voltamp transformers ltd.",
+      "tag": "Electrification equipment · disciplined expansion",
+      "verdict": "New addition: a tangible product franchise and internally funded expansion provide a more grounded way to study electrical infrastructure demand.",
+      "sections": [
+        {
+          "title": "Why the company belongs in this report",
+          "text": "Voltamp designs and supplies transformers. The July board filing approved approximately ₹90 crore for additional dry-type transformer capacity, to be funded from internal accruals. Its long operating history and installed base are evidence of commercial adoption, although the installed-base claim is company-reported. Grid and industrial investment create a demand setting; no specific AI data-centre contract has been independently established here.",
           "refs": [
             0,
             1
           ]
         },
         {
-          "title": "Why mutual funds are accumulating across August & September",
-          "text": "Fund managers across DSP Small Cap, Mahindra Manulife, and Bajaj Finserv increased holdings because Voltamp represents a bottleneck supplier in power distribution. With India's transmission grid expanding by over 15,000 circuit kilometers annually and massive power demands from industrial automation and commercial data centers, transformer capacity is severely constrained. Voltamp's high ROCE (23.5%–28%) and zero customer credit risk ensure that multi-year capex converts into tangible equity book value.",
+          "title": "Quality, technology and management judgement",
+          "text": "In this business, efficiency, safety, reliability, testing and service matter more than a fashionable technology label. The strategic case is that a proven supplier can sell more as customers electrify and expand. Internal funding reduces financing risk, but management still has to commission and earn on the new assets. The July filing states a future 12–14 month timetable for the approved addition; that capacity is not current production.",
           "refs": [
-            1,
+            0
+          ]
+        },
+        {
+          "title": "Earnings quality and the opposing case",
+          "text": "The original June-quarter statement shows revenue growing faster than PAT and a meaningful contribution from other income. Our interpretation is that headline profit should not be treated as pure manufacturing momentum. A transformer upcycle can attract capacity and competition; raw-material costs, tender discipline and working capital decide the economics. A recognised supplier can still be a poor equity purchase if the valuation assumes peak margins indefinitely.",
+          "refs": [
+            0,
             2
           ]
         },
         {
-          "title": "Valuation, risks & decision gates",
-          "text": "Decision gate: Monitor cold-rolled grain-oriented (CRGO) electrical steel pricing and quarterly order book intake. Retain as a primary holding while operating margins stay above 16% and order book-to-bill remains above 1.2x.",
+          "title": "Value and the evidence to watch",
+          "text": "Assess operating earnings separately from investment income, then consider cash balances and expansion spending without double counting them. Watch commissioning, order quality, utilisation and operating cash flow. IEA grid research supports the industry need, but does not predict Voltamp’s market share. This replaces a more speculative shortlist exposure on the basis of clearer operating evidence, not a promised return.",
           "refs": [
+            0,
             1,
             2
           ]
@@ -306,208 +132,28 @@
       ],
       "sources": [
         {
-          "label": "Company Q1 FY27 Financial Results & Investor Presentation",
-          "url": "https://bazaarwatch.com/announcement/voltamp-transformers-investor-presentation",
-          "kind": "Primary exchange filing",
-          "period": "Q1 FY27 / June 2026",
-          "checkedOn": "2026-10-14"
+          "label": "Voltamp Q1 results and board-approved capex",
+          "url": "https://www.voltamptransformers.com/userfile/pdf/1785489162_Unaudited_Financial_Result_for_the_Quarter_Ended_June_30,_2026.pdf",
+          "kind": "Original issuer PDF",
+          "period": "31 July 2026",
+          "checkedOn": "2026-10-12"
         },
         {
-          "label": "ICICI Securities Research Report — Voltamp Transformers",
-          "url": "https://www.icicisecurities.com/",
-          "kind": "Attributed equity research",
-          "period": "September 2026",
-          "checkedOn": "2026-10-14"
+          "label": "Voltamp company background",
+          "url": "https://voltamptransformers.com/about_us",
+          "kind": "Company-reported history and installed base",
+          "period": "FY26 context",
+          "checkedOn": "2026-10-12"
         },
         {
-          "label": "Screener Financial Analysis & Balance Sheet Audit — Voltamp",
-          "url": "https://www.screener.in/company/VOLTAMP/",
-          "kind": "Financial analytics platform",
-          "period": "October 2026",
-          "checkedOn": "2026-10-14"
+          "label": "ICICI Direct results cross-check",
+          "url": "https://www.icicidirect.com/research/equity/rapid-results/voltamp-transformers-ltd",
+          "kind": "Broker result reproduction",
+          "period": "Q1 FY27",
+          "checkedOn": "2026-10-12"
         }
       ],
-      "quality": "Operational metrics and order book data verified from audited exchange disclosures and investor calls. No external debt; capacity additions self-funded.",
-      "growthDrivers": [],
-      "ownership": null,
-      "priceTrend": null
-    },
-    {
-      "name": "TD Power Systems Limited",
-      "symbol": "TDPOWERSYS",
-      "match": "tdpowersystemslimited",
-      "tag": "Power generation & export dominance · AI data center engines",
-      "verdict": "Highest-momentum emerging manufacturer: 5 small-cap mutual funds added shares in the latest period. Record quarterly order inflows (+87% YoY to ₹734 Cr), 93% export contribution, 34% ROCE, and virtually zero debt create a formidable global moat.",
-      "sections": [
-        {
-          "title": "Business quality & real-time operational evidence",
-          "text": "Verified financial data: In Q1 FY27, consolidated revenue surged 71% YoY to ₹640.1 crore, while Profit After Tax (PAT) jumped 72% YoY to ₹86.29 crore. EBITDA margins reached a robust 19.34% (₹121.7 crore). The company recorded its highest-ever quarterly order inflows of ₹734.1 crore (+87% YoY), expanding the total pending order book to ₹2,207.3 crore. Crucially, international exports and deemed exports accounted for 93% of order inflows (₹683.6 crore), tied directly to gas-turbine backup power generation for AI data centers and grid stabilization in the US and Europe.",
-          "refs": [
-            0,
-            2
-          ]
-        },
-        {
-          "title": "Why mutual funds are accumulating across August & September",
-          "text": "TD Power Systems emerged as one of the most widely bought stocks in the small-cap universe, added by Nippon India, TrustMF, Groww, ITI, and Bajaj Finserv (with additional holding in ABSL, PGIM, and Helios). Funds are buying the company's global OEM partnerships for customized AC generators. With a balance sheet that is virtually debt-free (D/E 0.01), working capital funded by customer advances, and a stellar ROCE of ~34% and ROE of 24%–27%, TDPS represents an export champion enjoying multi-year secular tailwinds.",
-          "refs": [
-            1,
-            2
-          ]
-        },
-        {
-          "title": "Valuation, risks & decision gates",
-          "text": "Decision gate: Monitor conversion of international gas turbine orders into billings, copper hedging efficiency, and management's upgraded full-year revenue guidance of ₹2,600 crore. Watch for any cancellation in US power projects.",
-          "refs": [
-            0,
-            2
-          ]
-        }
-      ],
-      "sources": [
-        {
-          "label": "TD Power Systems Q1 FY27 Earnings Release & Order Book Disclosure",
-          "url": "https://www.business-standard.com/",
-          "kind": "Primary exchange disclosure",
-          "period": "August 2026",
-          "checkedOn": "2026-10-14"
-        },
-        {
-          "label": "Axis Capital — TD Power Systems Company Update",
-          "url": "https://www.axiscapital.co.in/",
-          "kind": "Institutional equity research",
-          "period": "September 2026",
-          "checkedOn": "2026-10-14"
-        },
-        {
-          "label": "Screener Financial Analysis & Return Ratios — TD Power Systems",
-          "url": "https://www.screener.in/company/TDPOWERSYS/",
-          "kind": "Financial analytics platform",
-          "period": "October 2026",
-          "checkedOn": "2026-10-14"
-        }
-      ],
-      "quality": "Audited consolidated quarterly results and order backlog figures confirmed via stock exchange filings. 93% export contribution verified.",
-      "growthDrivers": [],
-      "ownership": null,
-      "priceTrend": null
-    },
-    {
-      "name": "Inox India Limited",
-      "symbol": "INOXINDIA",
-      "match": "inoxindialimited",
-      "tag": "Cryogenic engineering · LNG & semiconductor infrastructure",
-      "verdict": "High-conviction clean-energy moat: Near-monopoly domestic market share in cryogenic storage, all-time record order backlog (₹1,686 Cr with 68% exports), 23.5% EBITDA margin, and 31% ROCE.",
-      "sections": [
-        {
-          "title": "Business quality & real-time operational evidence",
-          "text": "Verified financial data: Q1 FY27 consolidated revenue grew 8.3% YoY to ₹382 crore, supported by a record quarterly order booking of ₹532 crore. The consolidated order book reached an all-time high of ₹1,686 crore, anchored by an export backlog of over ₹1,140 crore. Operating EBITDA margin stood at 23.5% (₹90 crore), with PAT stable at ₹58.1–61 crore. The Cryo-Scientific division logged its highest-ever quarterly revenue of ₹75 crore, delivering high-spec cryogenic modules for international research institutes (including CERN) and aerospace launch programs.",
-          "refs": [
-            1,
-            2
-          ]
-        },
-        {
-          "title": "Why mutual funds are accumulating across August & September",
-          "text": "TrustMF, ITI, JM, and Abakkus maintained and scaled holdings. Fund managers recognize that cryogenic liquid handling (liquid hydrogen, helium, nitrogen, argon, and LNG) requires specialized metallurgical welding, vacuum insulation, and global safety certifications that create massive barriers to entry. With zero long-term debt and a 31% ROCE, Inox India captures structural capital spending on LNG fueling, semiconductor high-purity gas pipelines, and satellite rocketry.",
-          "refs": [
-            1,
-            2
-          ]
-        },
-        {
-          "title": "Valuation, risks & decision gates",
-          "text": "Decision gate: Track execution velocity in the export order backlog and monitor any delays in global maritime shipping routes. Valuation remains premium (P/E ~50x), requiring consistent >20% EBITDA margin preservation.",
-          "refs": [
-            0,
-            2
-          ]
-        }
-      ],
-      "sources": [
-        {
-          "label": "Inox India Limited Q1 FY27 Investor Presentation & Order Intake Filing",
-          "url": "https://www.bseindia.com/",
-          "kind": "Primary exchange filing",
-          "period": "August 2026",
-          "checkedOn": "2026-10-14"
-        },
-        {
-          "label": "Indian Chemical News — Inox India Quarterly Operations Review",
-          "url": "https://www.indianchemicalnews.com/",
-          "kind": "Industry trade reporting",
-          "period": "August 2026",
-          "checkedOn": "2026-10-14"
-        },
-        {
-          "label": "Screener Balance Sheet & Working Capital Audit — Inox India",
-          "url": "https://www.screener.in/company/INOXINDIA/",
-          "kind": "Financial analytics platform",
-          "period": "October 2026",
-          "checkedOn": "2026-10-14"
-        }
-      ],
-      "quality": "Audited segment reporting, order backlog breakdown, and balance sheet metrics verified from stock exchange disclosures.",
-      "growthDrivers": [],
-      "ownership": null,
-      "priceTrend": null
-    },
-    {
-      "name": "eClerx Services Limited",
-      "symbol": "ECLERX",
-      "match": "eclerxserviceslimited",
-      "tag": "AI-enabled operations & agentic workflows · cash machine",
-      "verdict": "High cash-generating digital operations play: Constant-currency growth of 15.1% YoY, 23.0% operating margin, >80% free cash flow conversion, and proprietary agentic workflow deployment for tier-1 financial institutions.",
-      "sections": [
-        {
-          "title": "Business quality & real-time operational evidence",
-          "text": "Verified financial data: Q1 FY27 operating revenue reached ₹1,152.4 crore (+15.1% YoY in constant currency). Operating EBITDA margin was resilient at 23.0%, generating ₹164.3 crore in net profit. During its Investor Day, leadership demonstrated proprietary agentic AI workflows and QA360 platforms deployed in commercial operations. These tools automate data access, trade reconciliation, and compliance investigations for global investment banks. Cash conversion remains industry-leading, with over 80% of operating profits turning into free cash flow.",
-          "refs": [
-            1,
-            2
-          ]
-        },
-        {
-          "title": "Why mutual funds are accumulating across August & September",
-          "text": "DSP Small Cap, ITI, and Bajaj accumulated eClerx shares because the company bridges generic foundation AI models with mission-critical corporate workflows. Unlike commoditized IT body-shopping firms vulnerable to billing rate cuts, eClerx contracts on outcome-based delivery, capturing productivity gains while returning cash via buybacks and dividends. Balance sheet is pristine with negative net debt.",
-          "refs": [
-            0,
-            2
-          ]
-        },
-        {
-          "title": "Valuation, risks & decision gates",
-          "text": "Decision gate: Monitor client retention rates, revenue per employee expansion, and wage inflation. Valuations around 22–26x P/E provide an attractive margin of safety compared to consumer tech.",
-          "refs": [
-            1,
-            2
-          ]
-        }
-      ],
-      "sources": [
-        {
-          "label": "eClerx Services Investor Presentation & Strategic AI Roadmap",
-          "url": "https://bazaarwatch.com/announcement/46462/eclerx-services-limited-investor-presentation",
-          "kind": "Primary exchange filing",
-          "period": "August 2026",
-          "checkedOn": "2026-10-14"
-        },
-        {
-          "label": "eClerx Official Investor Day Release — AI-Led Operations",
-          "url": "https://eclerx.com/insights/eclerx-highlights-ai-led-strategy-for-its-next-phase-of-growth-at-investor-day-2026/",
-          "kind": "Corporate operational announcement",
-          "period": "September 2026",
-          "checkedOn": "2026-10-14"
-        },
-        {
-          "label": "Emkay Research Note via DSIJ — eClerx Operating Direction",
-          "url": "https://insights.dsij.in/markets/reports/report-details/eclerx-services-ltd/45416",
-          "kind": "Attributed equity research",
-          "period": "September 2026",
-          "checkedOn": "2026-10-14"
-        }
-      ],
-      "quality": "Operational metrics, constant-currency revenue, and cash conversion confirmed from audited quarterly filings.",
+      "quality": "Original board filing and results read. No assumed data-centre customer, quantified AI revenue or comparative product-quality rating is used.",
       "growthDrivers": [],
       "ownership": null,
       "priceTrend": null
@@ -515,59 +161,73 @@
     {
       "name": "Narayana Hrudayalaya Limited",
       "symbol": "NH",
-      "match": "narayanahrudayalayalimited",
-      "tag": "Healthcare delivery & Cayman engine · operating leverage",
-      "verdict": "Premier tertiary healthcare franchise: 78% YoY consolidated revenue surge to ₹2,683.6 Cr, India hospital ARPOB up 9% to ₹52,603, Cayman Islands revenue +39% to ₹551.4 Cr, and sector-leading bed capital efficiency.",
+      "match": "narayana hrudayalaya limited",
+      "tag": "Healthcare delivery · integration discipline",
+      "verdict": "Retain for the clinical operating franchise, while separating mature care delivery from newer insurance and overseas risks.",
       "sections": [
         {
-          "title": "Business quality & real-time operational evidence",
-          "text": "Verified financial data: Q1 FY27 consolidated revenue reached ₹2,683.6 crore (+78% YoY), bolstered by the UK hospital acquisition and organic Indian bed expansion. India hospital business generated ₹1,324.7 crore (+16% YoY) with an EBITDA margin of ~24%. India Average Revenue Per Occupied Bed (ARPOB) expanded 9% YoY to ₹52,603 driven by advanced quaternary cardiac, oncology, and robotic procedures. In the Cayman Islands, quarterly revenue surged 39% YoY to ₹551.4 crore, while insurance losses on the One Health platform narrowed sequentially to $3.7 million. Net debt-to-equity is conservative at 0.42x.",
+          "title": "Business quality & the evidence",
+          "text": "Verified evidence. The revised Q1 FY27 presentation filed August 3 reported consolidated revenue of ₹2,683.6 crore, EBITDA margin 18.8%, and PAT ₹207.3 crore. Headline growth includes the enlarged UK footprint; it is not a same-hospital growth rate. India revenue grew 16.6%. The presentation reports robotic surgery adoption and other advanced procedures, but these are deployment disclosures rather than controlled studies showing superior outcomes. Foreign-currency debt and the newer insurance business add complexity: Q1 insurance losses demonstrate that premium growth is not yet evidence of profitable underwriting.",
           "refs": [
             0,
             1
           ]
         },
         {
-          "title": "Why mutual funds are accumulating across August & September",
-          "text": "DSP and Groww initiated and expanded positions. Fund managers favor Narayana's lean clinical protocol model, which achieves the lowest capital cost per bed in Indian healthcare. The offshore Cayman hospital functions as a high-margin cash engine (subsidizing domestic capex), while domestic organic expansions in Bangalore, Kolkata, and Mumbai add high-margin quaternary beds.",
+          "title": "Management, technology & growth",
+          "text": "Future-worth interpretation. The more defensible moat is experienced clinical teams, referral relationships and efficient delivery of complex treatment. Robotics and digital hospital systems can support clinical capabilities and throughput, but purchasing a surgical robot alone is not a moat; competitors can buy the equipment. The growth case requires doctors, utilization, service standards and cash returns on additional capacity to develop together. The September 23 company transplant update supports a history of complex care, but does not establish comparative survival rates or justify a universal patient-satisfaction claim.",
           "refs": [
-            1,
-            2
+            4
           ]
         },
         {
-          "title": "Valuation, risks & decision gates",
-          "text": "Decision gate: Monitor Cayman Islands insurance breakeven trajectory, UK Practice Plus Group margin integration, and domestic bed occupancy rates (>62%).",
+          "title": "Valuation & decision gates",
+          "text": "Decision gate. Preserve as a quality candidate while separating mature Indian hospital economics from UK integration, Cayman operations and early insurance investment. Management's challenge is sustaining clinical and service quality across jurisdictions without allowing expansion to outrun operating control. Business Standard's post-results coverage captured investor concern about margin pressure despite rapid revenue growth. Value mature hospital cash flow separately from development-stage operations; a single headline P/E may hide both startup losses and acquisition risk. Monitor doctor retention, hospital-level cash returns, debt and insurance claims economics. Online patient reviews can identify issues worth investigating, but cannot provide an unbiased clinical-quality ranking.",
           "refs": [
             0,
-            2
+            2,
+            3
           ]
         }
       ],
       "sources": [
         {
-          "label": "Narayana Hrudayalaya Q1 FY27 Earnings Release & Factsheet",
-          "url": "https://www.narayanahealth.org/",
-          "kind": "Primary exchange disclosure",
-          "period": "August 2026",
-          "checkedOn": "2026-10-14"
+          "label": "Revised issuer presentation, 3 Aug 2026",
+          "url": "https://bazaarwatch.com/announcement/39752/narayana-hrudayalaya-ltd-revised-investors-presentation-for-the-quarter-ended-june-30-2026",
+          "kind": "Issuer filing reproduced by provider",
+          "period": "2026; date stated at source",
+          "checkedOn": "2026-10-12"
         },
         {
-          "label": "ICICI Direct Research Report — Narayana Hrudayalaya Operational Update",
-          "url": "https://www.icicidirect.com/",
-          "kind": "Institutional equity research",
-          "period": "September 2026",
-          "checkedOn": "2026-10-14"
+          "label": "Official results page",
+          "url": "https://www.narayanahealth.org/stakeholder-relations/earning",
+          "kind": "Issuer / exchange document",
+          "period": "2026; date stated at source",
+          "checkedOn": "2026-10-12"
         },
         {
-          "label": "Business Standard — Narayana Health International Expansion",
-          "url": "https://www.business-standard.com/",
-          "kind": "Financial news reporting",
-          "period": "August 2026",
-          "checkedOn": "2026-10-14"
+          "label": "Independent results",
+          "url": "https://www.business-standard.com/markets/capital-market-news/narayana-hrudayalaya-drops-after-q1-margin-pressure-offsets-78-revenue-growth-126080300639_1.html",
+          "kind": "Reporting / attributed analysis",
+          "period": "2026; date stated at source",
+          "checkedOn": "2026-10-12"
+        },
+        {
+          "label": "Independent healthcare trade press",
+          "url": "https://health.economictimes.indiatimes.com/news/hospitals/narayana-hrudayalaya-posts-2683-crore-in-q1-fy27-profit-soars-40/132822067",
+          "kind": "Reporting / attributed analysis",
+          "period": "2026; date stated at source",
+          "checkedOn": "2026-10-12"
+        },
+        {
+          "label": "Company clinical update, 23 Sep 2026",
+          "url": "https://www.narayanahealth.org/news-media/a-beat-beyond-survival-narayana-health-celebrates-136-second-chances",
+          "kind": "Reporting / attributed analysis",
+          "period": "2026; date stated at source",
+          "checkedOn": "2026-10-12"
         }
       ],
-      "quality": "Audited financial metrics, ARPOB figures, and Cayman segment financials verified from quarterly stock exchange filings.",
+      "quality": "Company statements, reported outcomes and our interpretation are distinguished. Source links form the case bibliography; multiple publishers can reproduce the same filing. Product and governance assessments are evidence-based judgements, not an independent audit or universal customer rating.",
       "growthDrivers": [],
       "ownership": null,
       "priceTrend": null
@@ -575,119 +235,58 @@
     {
       "name": "IPCA Laboratories Limited",
       "symbol": "IPCALAB",
-      "match": "ipcalaboratorieslimited",
-      "tag": "Formulations recovery & Unichem integration · net cash balance",
-      "verdict": "Turnaround formulation leader: Q1 revenue +21% YoY to ₹2,788 Cr, EBITDA margin expanded 449 bps to 22.88%, net profit up 42%+, European exports up 70%, net cash positive balance sheet with zero working capital debt.",
+      "match": "ipca laboratories limited",
+      "tag": "Formulations recovery · pipeline optionality",
+      "verdict": "Retain on current operating delivery; biosimilars remain a longer-term, probability-weighted opportunity.",
       "sections": [
         {
-          "title": "Business quality & real-time operational evidence",
-          "text": "Verified financial data: Q1 FY27 delivered consolidated revenue of ₹2,788.10 crore (+21% YoY), beating institutional consensus. EBITDA margin expanded by 449 bps YoY to 22.88%, driving consolidated net profit to ₹402–422 crore (+42% YoY). Domestic formulations rose 13% to ₹1,082 crore, outpacing the Indian Pharma Market (IPM) in cardiovascular, anti-malarial, and pain management therapies. Export formulations surged 34% YoY (European exports grew 70%), while API revenue jumped 30% to ₹424 crore. Balance sheet is in a net cash-positive position with zero working capital debt, and ROCE tracks between 19%–20%.",
-          "refs": [
-            0,
-            2
-          ]
-        },
-        {
-          "title": "Why mutual funds are accumulating across August & September",
-          "text": "DSP Small Cap and other value-focused small-cap managers added shares as cost synergies from the Unichem Laboratories acquisition materialize. Centralized raw material sourcing, optimization of ocean freight, and backward API integration at Pithampur are structurally reducing Unichem's overhead while unlocking US/European ANDA monetization.",
-          "refs": [
-            0,
-            2
-          ]
-        },
-        {
-          "title": "Valuation, risks & decision gates",
-          "text": "Decision gate: Monitor sustained delivery of >22% EBITDA margin, ongoing USFDA inspection clearances across API facilities, and Unichem formulation profit turnaround.",
-          "refs": [
-            1,
-            2
-          ]
-        }
-      ],
-      "sources": [
-        {
-          "label": "IPCA Laboratories Q1 FY27 Financial Statements & Segment Results",
-          "url": "https://www.bseindia.com/",
-          "kind": "Primary exchange filing",
-          "period": "August 2026",
-          "checkedOn": "2026-10-14"
-        },
-        {
-          "label": "LiveMint — IPCA Laboratories Quarterly Financial Highlights",
-          "url": "https://www.livemint.com/",
-          "kind": "Financial news coverage",
-          "period": "August 2026",
-          "checkedOn": "2026-10-14"
-        },
-        {
-          "label": "ICRA Credit Rating & Debt Assessment — IPCA Laboratories",
-          "url": "https://www.icra.in/",
-          "kind": "Credit rating agency report",
-          "period": "September 2026",
-          "checkedOn": "2026-10-14"
-        }
-      ],
-      "quality": "Audited financial statements, segment breakdowns, and credit rating metrics verified from regulatory disclosures.",
-      "growthDrivers": [],
-      "ownership": null,
-      "priceTrend": null
-    },
-    {
-      "name": "Prudent Corporate Advisory Services Limited",
-      "symbol": "PRUDENT",
-      "match": "prudentcorporateadvisoryserviceslimited",
-      "tag": "Digital wealth distribution & SIP compounding · asset-light moat",
-      "verdict": "High-ROCE financialization compounder: AUM crossed ₹1,38,630 Cr (+44.4% YoY), monthly SIP book reached ₹1,203 Cr (+21% YoY), core operating margin expanded 270 bps to 25.6%, virtually debt-free with 37.5% ROCE.",
-      "sections": [
-        {
-          "title": "Business quality & real-time operational evidence",
-          "text": "Verified financial data: Q1 FY27 revenue from operations grew 18.3% YoY to ₹347.60 crore, powered by a 21% increase in average mutual fund AUM and strong insurance distribution traction. Net profit surged 44.4% YoY to ₹74.76 crore, with core operating profit margin expanding 270 bps to 25.6%. Closing AUM stood at ₹1,38,630 crore (+44.4% YoY), and monthly SIP inflows reached an all-time high of ₹1,203 crore. The business operates with zero debt, negative working capital, and an exceptional ROCE of 37.5%.",
+          "title": "Business quality & the evidence",
+          "text": "Verified evidence. The August 13 primary results show Q1 FY27 consolidated revenue from operations ₹2,788.10 crore and owner-attributable PAT ₹401.89 crore, up 72%. The frequently circulated ₹422.81 crore figure is before associates and noncontrolling-interest adjustments, so it should not be used as owner earnings. EBITDA before forex and other income was ₹637.94 crore, with margin 22.88%. The June corporate presentation describes domestic branded formulations, vertically integrated APIs and an early biosimilar pipeline. Those development timelines and licensing plans are management's pipeline description, not approved products or assured sales.",
           "refs": [
             0,
             1
           ]
         },
         {
-          "title": "Why mutual funds are accumulating across August & September",
-          "text": "Bajaj Finserv and DSP expanded positions. Fund managers view Prudent as a pure-play compounding proxy on India's retail wealth creation. By partnering with over 30,000 independent financial advisors across tier-2 and tier-3 cities, Prudent captures sticky equity SIP inflows without incurring retail branch overhead, converting trail commissions directly into operating free cash flow.",
+          "title": "Management, technology & growth",
+          "text": "Growth and quality interpretation. Existing domestic brands and distribution are more tangible supports than extrapolating distant biotechnology revenue. Vertical integration may improve manufacturing control and supply economics, but it also concentrates responsibility for consistent regulatory compliance. Unichem and other subsidiary operations require evaluation on their own cash returns rather than assuming acquisitions automatically improve business quality. Successful biosimilars would add an option on a larger future addressable market; clinical, regulatory and commercial development can also consume capital for years.",
           "refs": [
-            1,
-            2
+            1
           ]
         },
         {
-          "title": "Valuation, risks & decision gates",
-          "text": "Decision gate: Monitor monthly SIP accretion rates and potential regulatory changes from SEBI regarding mutual fund distributor expense ratios. Retain while AUM CAGR exceeds 20%.",
+          "title": "Valuation & decision gates",
+          "text": "Decision gate. Keep the case grounded in recurring formulations demand, export execution and cash generation. Current growth supports an operating-recovery thesis, not evidence that every compliance risk has disappeared. Recent broker reporting raised FY27 expectations, but that raises the hurdle for subsequent delivery. Value owner earnings after normalizing forex and exceptional items; assign conservative probability-weighted value to pipeline assets. A complete current plant-by-plant FDA review was not established in this research, so no blanket clean-regulatory-bill claim is appropriate. Likewise, product-market presence and approvals do not prove that all products are superior to competitors.",
           "refs": [
             0,
-            1
+            2
           ]
         }
       ],
       "sources": [
         {
-          "label": "Prudent Corporate Advisory Services Q1 FY27 Investor Presentation",
-          "url": "https://www.bseindia.com/",
-          "kind": "Primary exchange filing",
-          "period": "July 2026",
-          "checkedOn": "2026-10-14"
+          "label": "Original results, 13 Aug 2026",
+          "url": "https://ipca.com/wp-content/pdf/financials/financials-unaudited-financial-results/unaudited_financial_result_june_2026.pdf",
+          "kind": "Issuer / exchange document",
+          "period": "2026; date stated at source",
+          "checkedOn": "2026-10-12"
         },
         {
-          "label": "Business Standard — Prudent Corporate AUM and SIP Book Growth",
-          "url": "https://www.business-standard.com/",
-          "kind": "Financial news coverage",
-          "period": "August 2026",
-          "checkedOn": "2026-10-14"
+          "label": "Original June 2026 corporate presentation",
+          "url": "https://www.ipca.com/wp-content/pdf/financials/corporate-presentation/ipca-corporate-presentation-june-2026.pdf",
+          "kind": "Issuer / exchange document",
+          "period": "2026; date stated at source",
+          "checkedOn": "2026-10-12"
         },
         {
-          "label": "Screener Financial Analysis & Return on Capital — Prudent Corporate",
-          "url": "https://www.screener.in/company/PRUDENT/",
-          "kind": "Financial analytics platform",
-          "period": "October 2026",
-          "checkedOn": "2026-10-14"
+          "label": "Broker reaction, 17 Aug 2026",
+          "url": "https://www.venturasecurities.com/news/stocks/ipca-laboratories-jumped-11-after-posting-strong-q1-earnings/",
+          "kind": "Issuer / exchange document",
+          "period": "2026; date stated at source",
+          "checkedOn": "2026-10-12"
         }
       ],
-      "quality": "Audited AUM metrics, SIP flows, and profitability margins cross-referenced against exchange filings and investor reports.",
+      "quality": "Company statements, reported outcomes and our interpretation are distinguished. Source links form the case bibliography; multiple publishers can reproduce the same filing. Product and governance assessments are evidence-based judgements, not an independent audit or universal customer rating.",
       "growthDrivers": [],
       "ownership": null,
       "priceTrend": null
@@ -695,119 +294,275 @@
     {
       "name": "Kalpataru Projects International Limited",
       "symbol": "KPIL",
-      "match": "kalpataruprojectsinternationallimited",
-      "tag": "Global grid expansion & transmission EPC · balance sheet turnaround",
-      "verdict": "Infrastructure execution leader: All-time high order book of ₹66,607 Cr (T&D accounts for 44%), Q1 PAT up 46% YoY to ₹312 Cr, net debt slashed to ₹917 Cr (Net D/E 0.1x), and working capital days improved to 80 days.",
+      "match": "kalpataru projects international limited",
+      "tag": "Grid infrastructure · execution quality",
+      "verdict": "Retain for infrastructure capability and improving cash discipline; project terms and collections decide the outcome.",
       "sections": [
         {
-          "title": "Business quality & real-time operational evidence",
-          "text": "Verified financial data: Q1 FY27 consolidated revenue reached ₹6,408 crore (+4% YoY; core revenue excluding road concessions up 9% YoY to ₹6,396 crore). Consolidated EBITDA rose 7% YoY to ₹562 crore, with EBITDA margin expanding to 8.8%. Net profit jumped 46% YoY to ₹312 crore. The total order backlog reached a record ₹66,607 crore, led by Power Transmission & Distribution (44%), Buildings & Factories (29%), and Water Infrastructure (11%). YTD order inflows were ₹7,668 crore, with an additional ~₹7,300 crore in L1 status. Net debt decreased substantially to ₹917 crore, reducing net debt-to-equity to an ultra-conservative 0.1x.",
+          "title": "Business quality & the evidence",
+          "text": "Verified evidence. The August 11 issuer release reported Q1 FY27 revenue of ₹6,408 crore, 4% growth, and EBITDA of ₹562 crore, 7% growth. Order backlog was ₹66,607 crore at June 30. The same release reported 80 working-capital days and ₹917 crore consolidated net debt, improved year on year. September 24 brought ₹2,025 crore of new awards; another oil-and-gas award followed September 28. Neither L1 status nor order backlog is recognized revenue. Do not confuse this listed EPC company with Kalpataru Limited, the property developer.",
           "refs": [
             0,
+            1,
             2
           ]
         },
         {
-          "title": "Why mutual funds are accumulating across August & September",
-          "text": "Bajaj Finserv and DSP accumulated shares. Fund managers are backing Kalpataru's successful deleveraging and structural margin expansion. As global grid modernization accelerates in North America, Europe, the Middle East, and India, high-voltage transmission EPC contracts command better pricing terms and lower working capital intensity.",
+          "title": "Management, technology & growth",
+          "text": "Growth mechanism and quality. Grid expansion, high-voltage transmission and complex substations provide exposure to electrification infrastructure without requiring a bet on a particular EV or renewable technology winner. Manish Mohnot's team cites HVDC, GIS and design-build capabilities. The moat is more plausibly prequalification, execution history, manufacturing capability and project controls than a consumer-facing brand. The consequence of an execution failure is tangible: delayed certification, retention money, cost overruns and receivables. Sector demand alone cannot compensate for poor contract terms.",
+          "refs": [
+            1
+          ]
+        },
+        {
+          "title": "Valuation & decision gates",
+          "text": "Decision gate. The healthier working-capital position is a useful management signal, but investors should monitor whether cash discipline survives a larger project book. PAT growth substantially exceeded EBITDA growth, and NDTV Profit highlighted other-income support; avoid extrapolating headline profit growth into a recurring forecast. The bull case combines backlog conversion with controlled cash absorption. The bear case is strong accounting growth accompanied by delayed collections and overseas project risk. Value recurring operating earnings and free cash after project working capital, using realistic execution timelines rather than treating the backlog as equity value. This is an infrastructure execution case, not an AI-product stock.",
+          "refs": [
+            1,
+            3
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "label": "Official release index (11 Aug, 24 and 28 Sep 2026)",
+          "url": "https://www.kalpataruprojects.com/news-media",
+          "kind": "Issuer / exchange document",
+          "period": "2026; date stated at source",
+          "checkedOn": "2026-10-12"
+        },
+        {
+          "label": "Issuer release mirror",
+          "url": "https://financialfilings.com/filings/kalpataru-projects-international-limited/earnings-release/2026/55902020/",
+          "kind": "Issuer filing reproduced by provider",
+          "period": "2026; date stated at source",
+          "checkedOn": "2026-10-12"
+        },
+        {
+          "label": "Independent 24 Sep reporting",
+          "url": "https://www.financialexpress.com/business/industry-kalpataru-projects-international-wins-rs-2025-crore-new-orders-across-power-bampf-oil-amp-gas-4346097/",
+          "kind": "Reporting / attributed analysis",
+          "period": "2026; date stated at source",
+          "checkedOn": "2026-10-12"
+        },
+        {
+          "label": "Independent earnings caution",
+          "url": "https://www.ndtvprofit.com/markets/kalpataru-projects-q1-result-profit-jumps-45-percent-as-other-income-rises-revenue-up-4-percent-11894246/amp/1",
+          "kind": "Reporting / attributed analysis",
+          "period": "2026; date stated at source",
+          "checkedOn": "2026-10-12"
+        }
+      ],
+      "quality": "Company statements, reported outcomes and our interpretation are distinguished. Source links form the case bibliography; multiple publishers can reproduce the same filing. Product and governance assessments are evidence-based judgements, not an independent audit or universal customer rating.",
+      "growthDrivers": [],
+      "ownership": null,
+      "priceTrend": null
+    },
+    {
+      "name": "INOX India Limited",
+      "symbol": "INOXINDIA",
+      "match": "inox india limited",
+      "tag": "Cryogenic engineering · semiconductor infrastructure",
+      "verdict": "Retain for a real engineering bridge into newer industries, while keeping the small initial semiconductor business proportionate to the established operations.",
+      "sections": [
+        {
+          "title": "Where technology meets an actual product",
+          "text": "Cryogenic storage and handling solve physical requirements in industrial gases, scientific projects, space and semiconductor facilities. The Q1 call discusses new semiconductor work, while September ET reporting quotes CEO Deepak Acharya on orders involving Tata Electronics and Micron projects. These are management-reported customer links, not an independent audit of each order. They are nevertheless more specific than calling every industrial supplier a semiconductor beneficiary.",
           "refs": [
             0,
             1
           ]
         },
         {
-          "title": "Valuation, risks & decision gates",
-          "text": "Decision gate: Monitor working capital days (target <85 days), execution speed in international T&D contracts, and net debt trajectory.",
+          "title": "Quality and management execution",
+          "text": "Our quality thesis rests on qualified engineering, safety, fabrication consistency and delivery in demanding applications. The company’s dated May order release supports a record of specialised projects. A qualification or a large customer relationship can create an advantage, but neither establishes universal superiority over competitors. Management’s future semiconductor revenue-share aspiration remains guidance; it must not be used as today’s sales mix.",
           "refs": [
             1,
+            2
+          ]
+        },
+        {
+          "title": "The investment debate",
+          "text": "The opportunity is to reuse engineering capability across customers and applications. The risk is valuing small early projects as if a large new division already exists, while export exposure, project timing and specialised fabrication create volatility. Semiconductor construction schedules can slip. The defensible case therefore comes from the current industrial-gas and scientific engineering business, with new applications treated as additional possibilities.",
+          "refs": [
+            0,
+            1
+          ]
+        },
+        {
+          "title": "Valuation and catalysts",
+          "text": "Track disclosed segment contribution, repeat orders, delivery acceptance, cash collection and margins on newer projects. Distinguish order inflow from backlog and backlog from recognised revenue. Pay for demonstrated earnings power, with conservative conversion assumptions for the newer applications. The next catalyst is measurable commercial scaling—not another reference to the global semiconductor market size.",
+          "refs": [
+            0,
             2
           ]
         }
       ],
       "sources": [
         {
-          "label": "Kalpataru Projects International Q1 FY27 Investor Presentation & Backlog Review",
-          "url": "https://www.bseindia.com/",
-          "kind": "Primary exchange filing",
+          "label": "INOX Q1 FY27 call",
+          "url": "https://quartermark.in/companies/INOXINDIA/earnings-calls/Q1-FY27/transcript",
+          "kind": "Issuer call reproduced by provider",
           "period": "August 2026",
-          "checkedOn": "2026-10-14"
+          "checkedOn": "2026-10-12"
         },
         {
-          "label": "ICICI Direct Research Report — Kalpataru Projects International",
-          "url": "https://www.icicidirect.com/",
-          "kind": "Institutional equity research",
-          "period": "August 2026",
-          "checkedOn": "2026-10-14"
+          "label": "ET: semiconductor-related customer projects",
+          "url": "https://m.economictimes.com/tech/technology/inox-india-receives-rs-50-crore-worth-orders-from-tata-electronics-micron/amp_articleshow/134316890.cms",
+          "kind": "CEO interview; accessible excerpt only",
+          "period": "18 September 2026",
+          "checkedOn": "2026-10-12"
         },
         {
-          "label": "Axis Direct — KPIL Order Inflows and T&D Sector Outlook",
-          "url": "https://simplehai.axisdirect.in/",
-          "kind": "Attributed equity research",
-          "period": "August 2026",
-          "checkedOn": "2026-10-14"
+          "label": "INOX dated order release",
+          "url": "https://www.inoxcva.com/news-and-events-inner.php?id=314",
+          "kind": "Issuer announcement",
+          "period": "21 May 2026",
+          "checkedOn": "2026-10-12"
+        },
+        {
+          "label": "Indian Chemical News results cross-check",
+          "url": "https://www.indianchemicalnews.com/gas/lite/inox-india-posts-record-order-book-of-rs-1686-crore-in-q1-fy27-revenue-rises-83-31366",
+          "kind": "Trade reporting",
+          "period": "Q1 FY27",
+          "checkedOn": "2026-10-12"
         }
       ],
-      "quality": "Audited consolidated backlog, inflow figures, and net debt figures verified from primary exchange disclosures.",
+      "quality": "Technology connection supported by disclosed applications and reported customer projects. The ET excerpt was accessible; no claim is made to have read its paywalled remainder.",
       "growthDrivers": [],
       "ownership": null,
       "priceTrend": null
     },
     {
-      "name": "KPIT Technologies Limited",
-      "symbol": "KPITTECH",
-      "match": "kpittechnologieslimited",
-      "tag": "Software-defined vehicles & autonomous systems · cyclical trough accumulation",
-      "verdict": "Specialized automotive tech franchise: Accumulating at cyclical trough valuations; strong Q1 deal wins ($257M TCV), robust net cash position of ₹900 Cr, zero debt, 26%–27% ROCE, and successive margin expansion guided ahead.",
+      "name": "Prudent Corporate Advisory Services Limited",
+      "symbol": "PRUDENT",
+      "match": "prudent corporate advisory services limited",
+      "tag": "Digital distribution · relationship economics",
+      "verdict": "Retain for the scalable distribution franchise; technology should improve adviser productivity and customer retention, not merely add an AI label.",
       "sections": [
         {
-          "title": "Business quality & real-time operational evidence",
-          "text": "Verified financial data: Q1 FY27 revenue stood at ₹1,675 crore ($176.8M), reflecting flat constant-currency growth (+0.1% YoY) as European and Japanese automotive OEMs temporarily deferred non-critical software programs. Operating EBITDA margin contracted to 17.2% (PAT ₹117 crore). However, new deal bookings remained resilient with $257 million in Total Contract Value (TCV) across autonomous driving (ADAS), connected vehicle platforms, and Vehicle OS. Balance sheet strength is formidable: zero debt and net cash of ₹900 crore, supporting a historical ROCE of 26%–27%.",
+          "title": "The business that customers actually use",
+          "text": "Prudent distributes financial products through advisers and its technology platform. Its June presentation describes Fundzbazar and EDGE+, an AI-enabled tool for distributors. The platform’s economic role is to make onboarding, servicing and advice workflows easier across a large partner network. Monthly SIP flows of ₹1,203 crore in June are a measure of ongoing activity; they are not guaranteed future fees or proof that every customer is satisfied.",
           "refs": [
-            0,
+            0
+          ]
+        },
+        {
+          "title": "Management and trust",
+          "text": "Sanjay Shah and Shirish Patel have built a substantial distribution network. Our quality assessment gives more weight to sustained servicing, net flows and cash generation than to an attractive app interface. The adviser relationship can make customers less likely to leave, but it also creates responsibility for suitable product selection. There is no independently representative satisfaction survey in this research. A broad product shelf does not itself demonstrate unbiased advice.",
+          "refs": [
+            0
+          ]
+        },
+        {
+          "title": "Growth, competing views and economics",
+          "text": "The favourable case combines more productive advisers, continued regular investing and cross-selling without proportionate overhead growth. The opposing case is a market decline reducing asset-linked fees, cheaper direct platforms taking flows, or tighter distribution economics. Reuters’ October coverage of proposed insurance reforms is relevant to the wider distribution environment; proposed measures should not be treated as enacted rules or a quantified company earnings loss.",
+          "refs": [
+            1,
             2
           ]
         },
         {
-          "title": "Why mutual funds are accumulating across August & September",
-          "text": "DSP Small Cap and Nippon India took advantage of price weakness to add shares. Fund managers recognize that automotive software engineering is undergoing an irreversible secular migration toward Software-Defined Vehicles (SDV) and centralized electronic architectures. Management confirmed that OEM program deferrals are temporary pauses rather than cancellations, with margins guided to expand successively in subsequent quarters.",
+          "title": "Valuation and the next evidence",
+          "text": "Value recurring fee earnings and cash after normalising market-linked asset growth. Watch net flows, SIP persistence, partner productivity, costs, acquisitions and employee dilution. A technology platform serving existing relationships may deserve better economics than a purely transactional distributor, but a software-style multiple needs evidence of software-style revenue. The business is research-worthy; no entry price is validated here.",
           "refs": [
             0,
-            2
-          ]
-        },
-        {
-          "title": "Valuation, risks & decision gates",
-          "text": "Decision gate: Monitor quarterly TCV deal closures, sequential EBIT margin recovery toward 15%+, and stabilization in European OEM engineering budgets.",
-          "refs": [
-            0,
-            2
+            1
           ]
         }
       ],
       "sources": [
         {
-          "label": "KPIT Technologies Q1 FY27 Financial Results & Management Commentary",
-          "url": "https://www.kpit.com/investors/",
-          "kind": "Primary exchange filing",
-          "period": "July 2026",
-          "checkedOn": "2026-10-14"
+          "label": "Prudent Q1 FY27 presentation",
+          "url": "https://nsearchives.nseindia.com/corporate/PRUDENT9992_25072026143617_Intimation.pdf",
+          "kind": "Original exchange PDF",
+          "period": "25 July 2026",
+          "checkedOn": "2026-10-12"
         },
         {
-          "label": "Economic Times — KPIT Automotive Software Engineering Trends",
-          "url": "https://economictimes.indiatimes.com/",
-          "kind": "Financial news coverage",
-          "period": "July 2026",
-          "checkedOn": "2026-10-14"
+          "label": "Business Standard quarterly cross-check",
+          "url": "https://www.business-standard.com/markets/capital-market-news/prudent-corporate-advisory-services-jumps-after-q1-pat-rises-44-yoy-126072700280_1.html",
+          "kind": "Financial reporting",
+          "period": "27 July 2026",
+          "checkedOn": "2026-10-12"
         },
         {
-          "label": "Screener Financial Analysis & Return Ratios — KPIT Technologies",
-          "url": "https://www.screener.in/company/KPITTECH/",
-          "kind": "Financial analytics platform",
-          "period": "October 2026",
-          "checkedOn": "2026-10-14"
+          "label": "Reuters: proposed insurance reforms",
+          "url": "https://www.reuters.com/legal/litigation/indian-insurance-brokers-oppose-regulators-proposed-reforms-2026-10-06/",
+          "kind": "International reporting; proposal, not final rule",
+          "period": "6 October 2026",
+          "checkedOn": "2026-10-12"
         }
       ],
-      "quality": "Audited financial results, USD constant-currency performance, and net cash balances verified from corporate disclosures.",
+      "quality": "Issuer presentation read directly; quarterly reporting provides a cross-check. The proposed insurance changes are sector context. A discovered YouTube earnings-call upload was inaccessible, so it adds no corroboration.",
+      "growthDrivers": [],
+      "ownership": null,
+      "priceTrend": null
+    },
+    {
+      "name": "Vinati Organics Ltd.",
+      "symbol": "VINATIORGA",
+      "match": "vinati organics ltd.",
+      "tag": "Specialty chemistry · repeatable process advantage",
+      "verdict": "Retain as a process-chemistry case: execution of a broader product mix matters more than treating all additional capacity as an immediate earnings gain.",
+      "sections": [
+        {
+          "title": "Product quality and competitive position",
+          "text": "Vinati makes specialty chemicals and intermediates, including ATBS and antioxidant products. Its financial filing and management interview support a case built on specialised processes and expanded capacity. Our interpretation is that consistent purity, reliable supply and cost-efficient production can support repeat industrial demand. Those advantages need customer qualification and commercial scale; they are not equivalent to a patent-protected monopoly.",
+          "refs": [
+            0,
+            1
+          ]
+        },
+        {
+          "title": "Management strategy and what can compound",
+          "text": "Vinati Saraf Mutreja’s public commentary describes phased capacity growth and new products. The useful test is whether additional capacity produces a wider base of profitable customers. Specialty chemistry can support attractive returns when development is customer-led; it can destroy value when an assumed market share is built into a plant before customers commit. Exact commissioning dates must be checked against subsequent disclosures, not rolled forward from older broker forecasts.",
+          "refs": [
+            1,
+            2
+          ]
+        },
+        {
+          "title": "Investor expectations and financial risk",
+          "text": "The July result and broker commentary point to stronger activity, but the key debate is the pace of ramp-up and the durability of margins across products. Lower chemical prices or slow approvals can absorb volume gains. Separate the consolidated group from standalone figures and distinguish total income from operating sales. Independent public evidence on customer satisfaction or competing product failure rates was insufficient to rank its products above every rival.",
+          "refs": [
+            0,
+            2
+          ]
+        },
+        {
+          "title": "Future worth and the decision gate",
+          "text": "Our base case assigns value to the established business and progressively adds value for new products only as utilisation, cash generation and returns appear. Watch inventory, receivables, capital employed and product concentration. Avoid annualising a favourable quarter or granting full valuation credit to nameplate capacity. The investment question is the incremental return on new capital, rather than whether specialty chemicals are a popular theme.",
+          "refs": [
+            0,
+            1
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "label": "Vinati original Q1 financial filing",
+          "url": "https://nsearchives.nseindia.com/corporate/VINATIORGA_29072026133054_524200_BM_Outcome_29072026.pdf",
+          "kind": "Original exchange PDF",
+          "period": "29 July 2026",
+          "checkedOn": "2026-10-12"
+        },
+        {
+          "label": "Vinati management interview transcript",
+          "url": "https://stockanalysis.com/quote/bom/524200/transcripts/746657-q1-26-27/",
+          "kind": "Management transcript on secondary platform",
+          "period": "30 July 2026",
+          "checkedOn": "2026-10-12"
+        },
+        {
+          "label": "Motilal Oswal view reproduced by DSIJ",
+          "url": "https://insights.dsij.in/markets/reports/report-details/vinati-organics-ltd/44797",
+          "kind": "Attributed broker analysis",
+          "period": "29 July 2026",
+          "checkedOn": "2026-10-12"
+        }
+      ],
+      "quality": "Primary results checked; management and broker views are attributed. Conflicting expansion timetables are not converted into a claimed completed project.",
       "growthDrivers": [],
       "ownership": null,
       "priceTrend": null
@@ -815,30 +570,40 @@
     {
       "name": "Data Patterns (India) Limited",
       "symbol": "DATAPATTNS",
-      "match": "datapatternsindialimited",
-      "tag": "Indigenous defense electronics & radar systems · 100% in-house IP",
-      "verdict": "High-margin indigenous defense electronics: Robust order book of ₹2,654 Cr, major ₹585.8 Cr radar order from BEL, 78.9% gross margin reflecting pure in-house IP, zero net debt, and ₹466–530 Cr cash reserves.",
+      "match": "data patterns (india) limited",
+      "tag": "Defence electronics · systems and intellectual property",
+      "verdict": "New addition with higher execution sensitivity: real electronics capability and orders justify research, while programme timing and valuation require caution.",
       "sections": [
         {
-          "title": "Business quality & real-time operational evidence",
-          "text": "Verified financial data: Q1 FY27 revenue rose 16.8% YoY to ₹116 crore, with gross margin remaining exceptionally high at 78.9% (reflecting high pricing power on in-house designed electronic systems). EBITDA margin stood at 27.0%, with full-year guidance maintained at 35%–40%. The company commands a total order book of ₹2,654 crore (including firm contracts and orders in advanced negotiation), highlighted by a major ₹585.76 crore order from Bharat Electronics Limited (BEL) for high-technology radar electronics. Balance sheet is completely debt-free, backed by ₹466–530 crore in cash, bank balances, and liquid investments.",
+          "title": "Product capability and future role",
+          "text": "Data Patterns develops radar, electronic-warfare, avionics and related electronics. The company’s filed call describes a move from subsystems towards complete systems built from reusable in-house capabilities. The potential advantage is accumulated engineering, qualification and integration knowledge. This can matter as defence platforms become more dependent on sensors and electronics, but it does not mean the company captures the full value of an aircraft or missile.",
           "refs": [
             0,
             1
           ]
         },
         {
-          "title": "Why mutual funds are accumulating across August & September",
-          "text": "Institutional managers are backing Data Patterns for its rare 100% in-house intellectual property across radar, electronic warfare, and avionics systems. As Indian defense procurement accelerates import substitution under the positive indigenization lists, Data Patterns operates as a key technology partner for DRDO, ISRO, and defense PSUs, with revenue projected to grow 20%–25% annually at industry-leading gross margins.",
+          "title": "Management execution: orders are stronger than aspirations",
+          "text": "An August order for radar electronics from Bharat Electronics provides a concrete commercial signal, corroborated by financial reporting. Management’s broader opportunity pipeline includes negotiated work, which is different from firm signed backlog. Our assessment gives credit for actual programme participation while retaining the risk of acceptance delays, development costs and concentrated public-sector customers.",
           "refs": [
-            0,
+            1,
             2
           ]
         },
         {
-          "title": "Valuation, risks & decision gates",
-          "text": "Decision gate: Track working capital and milestone cash collection cycles, given lumpy defense billing schedules. Monitor conversion of negotiated orders into executable contracts.",
+          "title": "Investor debate and the quality test",
+          "text": "October reporting highlights defence suppliers’ transition from winning orders to delivering them. That is a useful challenge to the bullish narrative. Investor-call discussions also reveal that developing a complete product does not ensure a viable partner or commercial launch. Product quality should be assessed through successful testing, repeat procurement and acceptance; neither a trade-show demonstration nor social-media excitement proves operational reliability.",
           "refs": [
+            0,
+            1,
+            2
+          ]
+        },
+        {
+          "title": "Valuation and decision gates",
+          "text": "Do not value negotiated opportunities as firm orders or government approvals as company revenue. Use realistic execution schedules, working-capital requirements and normalised margins. Follow milestones in radar deliveries, cash collection, R&D commercialisation and customer diversification. This is a differentiated capability case, but the evidence does not establish that the current share price compensates for delays.",
+          "refs": [
+            0,
             1,
             2
           ]
@@ -846,31 +611,451 @@
       ],
       "sources": [
         {
-          "label": "Data Patterns (India) Q1 FY27 Financial Results & Order Book Disclosure",
-          "url": "https://www.bseindia.com/",
-          "kind": "Primary exchange filing",
-          "period": "August 2026",
-          "checkedOn": "2026-10-14"
+          "label": "Data Patterns original management call",
+          "url": "https://www.datapatternsindia.com/investors/files/Earnings-Call-Transcript-Q4-2025-26.pdf",
+          "kind": "Original issuer transcript",
+          "period": "15 May 2026",
+          "checkedOn": "2026-10-12"
         },
         {
-          "label": "Tijori Finance — Data Patterns Defense Radar Contracts & Order Breakdown",
-          "url": "https://www.tijorifinance.com/",
-          "kind": "Specialized financial analytics",
-          "period": "September 2026",
-          "checkedOn": "2026-10-14"
+          "label": "Q1 FY27 management call transcript",
+          "url": "https://stockanalysis.com/quote/nse/DATAPATTNS/transcripts/669909-q1-26-27/",
+          "kind": "Issuer call reproduced by provider",
+          "period": "July 2026",
+          "checkedOn": "2026-10-12"
         },
         {
-          "label": "ICICI Direct — Defense Electronics & Indigenization Outlook",
-          "url": "https://www.icicidirect.com/",
-          "kind": "Institutional equity research",
-          "period": "September 2026",
-          "checkedOn": "2026-10-14"
+          "label": "Business Standard: BEL radar order",
+          "url": "https://www.business-standard.com/amp/markets/capital-market-news/data-patterns-rises-after-securing-supply-contract-worth-rs-585-crore-from-bel-126082100189_1.html",
+          "kind": "Financial reporting of exchange announcement",
+          "period": "21 August 2026",
+          "checkedOn": "2026-10-12"
+        },
+        {
+          "label": "Financial Express: defence delivery test",
+          "url": "https://www.financialexpress.com/business/defence/indias-defence-boom-enters-execution-phase-hal-bel-bdl-and-others-face-delivery-test/4354983/",
+          "kind": "Independent reporting / broker interpretation",
+          "period": "6 October 2026",
+          "checkedOn": "2026-10-12"
         }
       ],
-      "quality": "Audited financial results, gross margins, cash balances, and defense contract values confirmed via regulatory disclosures.",
+      "quality": "Product scope checked in issuer material, order announcement corroborated in reporting. Negotiated opportunities are excluded from firm-order claims.",
+      "growthDrivers": [],
+      "ownership": null,
+      "priceTrend": null
+    },
+    {
+      "name": "KPIT Technologies Limited",
+      "symbol": "KPITTECH",
+      "match": "kpit technologies limited",
+      "tag": "Software-defined vehicles · conditional recovery",
+      "verdict": "Move down the priority order: the technological opportunity is substantial, but near-flat constant-currency growth needs a demonstrated recovery.",
+      "sections": [
+        {
+          "title": "Business quality & the evidence",
+          "text": "Verified evidence. KPIT's July 29 release reported Q1 FY27 constant-currency revenue growth of just 0.1% year on year, versus 8.9% in rupees; EBITDA margin was 17.2%, with $257 million of new engagement wins. Management acknowledged pressure at several large customers and expects stronger second-half growth. That recovery is guidance. The investor update reported ₹900 crore net cash and 51-day DSO. Its software-defined vehicle, diagnostics, cybersecurity and vehicle-integration work creates a plausible route to benefit from more software-intensive mobility; company production-program claims establish experience, not guaranteed future share.",
+          "refs": [
+            0,
+            1
+          ]
+        },
+        {
+          "title": "Why investor opinions differ",
+          "text": "Why opinions differ. Economic Times on September 30 reported substantial earnings-estimate cuts amid European automotive budget pressure. International evidence strengthens the caution: Reuters on October 12 described Volkswagen's weaker deliveries and intensifying European/Chinese competition; September 17 coverage of Xpeng expanding technology licensing shows that incumbents also face new software suppliers. These are sector conditions, not evidence that KPIT lost a specific contract. OEM pressure can increase demand for engineering efficiency while simultaneously delaying projects. AI is consequently both a productivity tool and a source of bargaining pressure.",
+          "refs": [
+            2,
+            3,
+            4
+          ]
+        },
+        {
+          "title": "Valuation & decision gates",
+          "text": "Decision gate. Classify as a conditional recovery case rather than a highest-conviction growth selection. Kishor Patil's management should demonstrate conversion of wins into revenue, improved customer diversification and margin recovery. Qorix investment losses and customer concentration belong in the downside scenario. Value the company using revised, sustainable earnings and cash generation; a price fall alone does not establish cheapness. Neither YouTube enthusiasm nor technological demonstrations substitute for profitable production deployment. No specific new V2V mandate benefit is treated as booked revenue.",
+          "refs": [
+            0,
+            5
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "label": "Official release, 29 Jul 2026",
+          "url": "https://www.kpit.com/news/kpit-starts-q1-fy27-with-%E2%82%B9-yoy-growth-of-8-9-and-strong-wins-of-usd257mn/",
+          "kind": "Issuer / exchange document",
+          "period": "2026; date stated at source",
+          "checkedOn": "2026-10-12"
+        },
+        {
+          "label": "Official financial overview",
+          "url": "https://www.kpit.com/investor-overview/",
+          "kind": "Issuer / exchange document",
+          "period": "2026; date stated at source",
+          "checkedOn": "2026-10-12"
+        },
+        {
+          "label": "ET, 30 Sep 2026",
+          "url": "https://m.economictimes.com/markets/stocks/news/new-orders-could-put-kpit-tech-on-the-road-to-recovery/articleshow/134576853.cms",
+          "kind": "Reporting / attributed analysis",
+          "period": "2026; date stated at source",
+          "checkedOn": "2026-10-12"
+        },
+        {
+          "label": "Reuters, 12 Oct 2026",
+          "url": "https://www.reuters.com/business/volkswagen-reports-14-drop-third-quarter-deliveries-2026-10-12/",
+          "kind": "Reporting / attributed analysis",
+          "period": "2026; date stated at source",
+          "checkedOn": "2026-10-12"
+        },
+        {
+          "label": "Reuters, 17 Sep 2026",
+          "url": "https://www.reuters.com/business/autos-transportation/chinas-xpeng-plans-offer-tech-solutions-foreign-automakers-2026-09-17/",
+          "kind": "Reporting / attributed analysis",
+          "period": "2026; date stated at source",
+          "checkedOn": "2026-10-12"
+        },
+        {
+          "label": "Official CES demonstrations",
+          "url": "https://www.kpit.com/kpit-ces-2026/",
+          "kind": "Issuer / exchange document",
+          "period": "2026; date stated at source",
+          "checkedOn": "2026-10-12"
+        }
+      ],
+      "quality": "Company statements, reported outcomes and our interpretation are distinguished. Source links form the case bibliography; multiple publishers can reproduce the same filing. Product and governance assessments are evidence-based judgements, not an independent audit or universal customer rating.",
       "growthDrivers": [],
       "ownership": null,
       "priceTrend": null
     }
-  ]
+  ],
+  "marketSources": [
+    {
+      "label": "IEA — Modernising Grids in the Age of Electricity",
+      "url": "https://www.iea.org/reports/modernising-grids-in-the-age-of-electricity",
+      "kind": "Independent sector research",
+      "period": "21 September 2026",
+      "checkedOn": "2026-10-13"
+    },
+    {
+      "label": "Voltamp Q1 results and board-approved capex",
+      "url": "https://www.voltamptransformers.com/userfile/pdf/1785489162_Unaudited_Financial_Result_for_the_Quarter_Ended_June_30,_2026.pdf",
+      "kind": "Original issuer PDF",
+      "period": "31 July 2026",
+      "checkedOn": "2026-10-12"
+    },
+    {
+      "label": "Kalpataru official release index — 13 October order announcement",
+      "url": "https://www.kalpataruprojects.com/news-media",
+      "kind": "Issuer / exchange document",
+      "period": "13 October 2026",
+      "checkedOn": "2026-10-23"
+    },
+    {
+      "label": "Official Investor Day with leadership presentation/video library, 2 Sep 2026",
+      "url": "https://eclerx.com/investor-relations/investor-day-2026/",
+      "kind": "Issuer / exchange document",
+      "period": "2026; date stated at source",
+      "checkedOn": "2026-10-12"
+    },
+    {
+      "label": "Emkay view via DSIJ, 3 Sep 2026",
+      "url": "https://insights.dsij.in/markets/reports/report-details/eclerx-services-ltd/45416",
+      "kind": "Reporting / attributed analysis",
+      "period": "2026; date stated at source",
+      "checkedOn": "2026-10-12"
+    },
+    {
+      "label": "Revised issuer presentation, 3 Aug 2026",
+      "url": "https://bazaarwatch.com/announcement/39752/narayana-hrudayalaya-ltd-revised-investors-presentation-for-the-quarter-ended-june-30-2026",
+      "kind": "Issuer filing reproduced by provider",
+      "period": "2026; date stated at source",
+      "checkedOn": "2026-10-12"
+    },
+    {
+      "label": "Original results, 13 Aug 2026",
+      "url": "https://ipca.com/wp-content/pdf/financials/financials-unaudited-financial-results/unaudited_financial_result_june_2026.pdf",
+      "kind": "Issuer / exchange document",
+      "period": "2026; date stated at source",
+      "checkedOn": "2026-10-12"
+    },
+    {
+      "label": "ET: semiconductor-related customer projects",
+      "url": "https://m.economictimes.com/tech/technology/inox-india-receives-rs-50-crore-worth-orders-from-tata-electronics-micron/amp_articleshow/134316890.cms",
+      "kind": "CEO interview; accessible excerpt only",
+      "period": "18 September 2026",
+      "checkedOn": "2026-10-12"
+    },
+    {
+      "label": "Business Standard: BEL radar order",
+      "url": "https://www.business-standard.com/amp/markets/capital-market-news/data-patterns-rises-after-securing-supply-contract-worth-rs-585-crore-from-bel-126082100189_1.html",
+      "kind": "Financial reporting of exchange announcement",
+      "period": "21 August 2026",
+      "checkedOn": "2026-10-12"
+    },
+    {
+      "label": "Prudent Q1 FY27 presentation",
+      "url": "https://nsearchives.nseindia.com/corporate/PRUDENT9992_25072026143617_Intimation.pdf",
+      "kind": "Original exchange PDF",
+      "period": "25 July 2026",
+      "checkedOn": "2026-10-12"
+    },
+    {
+      "label": "Official release, 29 Jul 2026",
+      "url": "https://www.kpit.com/news/kpit-starts-q1-fy27-with-%E2%82%B9-yoy-growth-of-8-9-and-strong-wins-of-usd257mn/",
+      "kind": "Issuer / exchange document",
+      "period": "2026; date stated at source",
+      "checkedOn": "2026-10-12"
+    },
+    {
+      "label": "Vinati original Q1 financial filing",
+      "url": "https://nsearchives.nseindia.com/corporate/VINATIORGA_29072026133054_524200_BM_Outcome_29072026.pdf",
+      "kind": "Original exchange PDF",
+      "period": "29 July 2026",
+      "checkedOn": "2026-10-12"
+    },
+    {
+      "label": "Reuters — PJM data-centre registry and power-curtailment decision",
+      "url": "https://www.reuters.com/business/energy/us-panel-approves-pjms-registry-data-centers-rejects-plan-curtail-power-them-2026-10-12/",
+      "kind": "Independent reporting; search-retrieved article",
+      "period": "12 October 2026",
+      "checkedOn": "2026-10-13"
+    },
+    {
+      "label": "AMFI official monthly report — September 2026",
+      "url": "https://portal.amfiindia.com/spages/amsep2026repo.pdf",
+      "kind": "Official industry statistics",
+      "period": "September 2026; INR crore",
+      "checkedOn": "2026-10-23"
+    }
+  ],
+  "modelName": "Exact runtime model unavailable",
+  "modelDisclosure": "The exact model identifier is not exposed in this session; no model version is inferred.",
+  "summary": "September’s wider portfolio archive reveals selective accumulation alongside meaningful disagreement. This edition follows the money without confusing fund activity with business quality: where managers agree, where they differ, and which operating milestones could turn a promising story into durable cash earnings.",
+  "coverageNote": "September versus August: 33 funds and 765 company records, including exited positions. Quantum Small Cap Fund has no September comparison. August versus July covers 20 funds; changes in coverage prevent a like-for-like market-wide trend claim. Company deep dives retain their individual source dates; this edition refreshes portfolio evidence and selected developments, not every financial statement or valuation.",
+  "intelligence": {
+    "takeaways": [
+      {
+        "title": "Follow the bottleneck, then the economics",
+        "text": "Electrification and computing investment create practical constraints in power equipment, project execution and specialised components. These are credible research starting points. The winning shareholder outcome still depends on pricing, capacity utilisation and cash collection; sector demand alone does not tell us which company will capture the value.",
+        "refs": [
+          0,
+          1,
+          2
+        ]
+      },
+      {
+        "title": "Fund conviction is selective, not unanimous",
+        "text": "September now covers 33 comparable portfolios. Manager activity is selective: MCX has ten additions and three reductions; INOX India has four and one. These are share-count classifications, not allocation changes or proof of undervaluation. The newsletter sets out the limits of these signals.",
+        "refs": []
+      },
+      {
+        "title": "Quality has to survive investment",
+        "text": "The more interesting businesses have accumulated process knowledge, customer qualifications or service networks. Their next phase often requires capex, hiring or integration. A business can become strategically stronger while near-term free cash flow weakens. Management quality is therefore judged by incremental returns and delivery against prior promises, alongside growth.",
+        "refs": [
+          5,
+          6,
+          11
+        ]
+      },
+      {
+        "title": "The shortlist is a research order, not a return forecast",
+        "text": "Voltamp Transformers and Data Patterns enter the refreshed ten; Ather Energy and Dhoot Transmission leave this edition. The preference is for clearer operating evidence and differentiated capabilities. KPIT remains a conditional recovery case at the end of the list. None of these rankings establishes that today’s valuation offers a margin of safety.",
+        "refs": [
+          1,
+          8,
+          10
+        ]
+      }
+    ],
+    "cases": [
+      {
+        "title": "Power constraints create opportunity beyond headline AI stocks",
+        "status": "Demand supported · execution matters",
+        "evidence": "The IEA describes grid modernisation as a constraint on the electricity transition. Voltamp has disclosed a further dry-type transformer investment, while Kalpataru Projects has reported a substantial backlog and fresh awards. US reporting on 12 October also shows how grid access and data-centre rules remain active regulatory issues.",
+        "thesis": "Our preferred interpretation is that complex physical delivery may be more defensible than simply attaching an AI label to a company. Voltamp offers manufacturing exposure; Kalpataru offers project execution. Their economics differ: equipment qualification and production discipline matter for one, contract selection and cash collection for the other. Neither is assumed to be a supplier to a named overseas data-centre operator.",
+        "challenge": "Capacity additions can meet a weaker order cycle than management expects. Transformer competition, input costs or project delays can erode returns. More efficient computing and flexible electricity consumption could also reduce peak infrastructure requirements relative to the most optimistic forecasts. Backlog has value only if it converts at acceptable margins.",
+        "catalyst": "For Voltamp, monitor commissioning, product mix and operating earnings separately from other income. For Kalpataru, monitor execution, receivables, net debt and cash generated per unit of growth.",
+        "refs": [
+          0,
+          1,
+          2,
+          12
+        ]
+      },
+      {
+        "title": "AI services need proof of who keeps the productivity gain",
+        "status": "Real adoption · uncertain value capture",
+        "evidence": "eClerx has presented an AI-led strategy through its September investor-day programme. An Emkay research summary was positive about operating direction yet retained a REDUCE view. KPIT’s latest reported constant-currency growth was much weaker than the rupee headline.",
+        "thesis": "Workflow knowledge, client access and integration skill can help eClerx turn general-purpose models into useful business outcomes. That is a credible route to deeper customer relationships. KPIT’s software-defined-vehicle opportunity is different: specialised engineering can remain relevant even while automakers defer programmes. These should not be treated as interchangeable technology-growth exposures.",
+        "challenge": "Clients may capture the savings through lower prices, while vendors bear implementation costs. Automobile customers can postpone spending despite a compelling long-term software story. Attractive products or services do not neutralise an expensive entry valuation, and a reported deal win is not immediate revenue.",
+        "catalyst": "Look for repeat client expansion, cash conversion and stable margins after AI spending at eClerx. For KPIT, require sustained constant-currency recovery and conversion of wins before upgrading conviction.",
+        "refs": [
+          3,
+          4,
+          10
+        ]
+      },
+      {
+        "title": "Healthcare demand is durable; expansion quality is not automatic",
+        "status": "Operating franchises · integration risk",
+        "evidence": "Narayana Hrudayalaya’s latest growth includes acquisition effects as well as its Indian hospital operations. IPCA’s reported recovery provides an operating foundation, but pipeline opportunities and plant-level compliance remain separate questions.",
+        "thesis": "Narayana’s potential lies in delivering complex care efficiently across a larger system without compromising outcomes. IPCA’s lies in formulations, manufacturing execution and improving acquired operations. Both can compound value through repeat demand and hard-to-reproduce capabilities, provided reinvestment earns adequate returns.",
+        "challenge": "Hospital utilisation, staffing, insurance economics and overseas integration can disappoint. Pharmaceutical growth can be interrupted by regulatory findings, pricing pressure or weak acquired-business performance. A hospital technology announcement does not establish better patient outcomes; a pharmaceutical pipeline announcement does not establish commercial approval.",
+        "catalyst": "Separate organic growth from acquisitions, and follow cash conversion, utilisation and integration at Narayana. At IPCA, examine recurring owner earnings, regulatory disclosures and the contribution of established products before assigning value to optional pipeline assets.",
+        "refs": [
+          5,
+          6
+        ]
+      },
+      {
+        "title": "Engineering capability can turn policy ambition into customer revenue",
+        "status": "Specific wins · qualification barriers",
+        "evidence": "INOX India has reported semiconductor-related orders, while Data Patterns has disclosed a radar-related supply contract from Bharat Electronics. These are more useful than a broad assertion that every industrial supplier benefits from semiconductor or defence policy.",
+        "thesis": "Cryogenic handling and complex defence electronics require engineering reliability, validation and delivery experience. Once qualified, suppliers may deepen relationships through follow-on work. The opportunity is to expand the installed base and reusable capability, rather than repeatedly depend on a single large project.",
+        "challenge": "Customer concentration, programme timing and acceptance milestones can make revenue lumpy. Negotiated opportunities are not firm orders. A large addressable market does not tell us the portion open to the company, its competitive position or the margin it can retain.",
+        "catalyst": "For INOX, follow semiconductor order conversion and segment economics. For Data Patterns, follow delivery milestones, working capital and the commercial reuse of R&D. Give more weight to accepted deliveries and cash than to pipeline announcements.",
+        "refs": [
+          7,
+          8
+        ]
+      },
+      {
+        "title": "Quiet compounding still deserves a place beside technology themes",
+        "status": "Distribution and process knowledge",
+        "evidence": "Prudent’s disclosures show a growing distribution platform and continued investment in tools for mutual-fund distributors. Vinati’s investment case rests on specialised chemical production and expansion execution, rather than a direct AI link.",
+        "thesis": "Prudent can benefit when its platform makes advisers more productive and clients remain invested. Vinati can benefit when difficult production processes, consistent purity and customer qualification support repeat demand. These are different forms of accumulated capability that can be valuable without a fashionable technology narrative.",
+        "challenge": "Distribution income remains exposed to markets, flows and fee regulation; assets under management are not contracted revenue. Chemical qualification does not prevent customer bargaining power, input volatility or poor capacity utilisation. Both companies still need valuation discipline.",
+        "catalyst": "Track distributor productivity and recurring operating profit at Prudent, excluding treasury effects when judging operating quality. At Vinati, follow commissioning, customer acceptance, utilisation and cash returns from new capital.",
+        "refs": [
+          9,
+          11
+        ]
+      }
+    ],
+    "perspectives": [
+      {
+        "title": "Management: judge the sequence of promises",
+        "text": "The useful management scorecard starts with what was promised, what was commissioned, what customers accepted and what cash arrived. A new plant announcement is not a completed plant; a completed plant is not a profitable one. Across this shortlist, the key test is whether management protects the balance sheet while translating opportunity into incremental returns. This report does not claim a forensic governance clearance.",
+        "refs": []
+      },
+      {
+        "title": "Product quality: evidence before reputation",
+        "text": "Engineering qualification, recurring customer use and regulated operating capability are meaningful clues. They are not substitutes for independent outcome data. Public evidence was insufficient to produce comparable patient satisfaction, product-failure or customer-retention scores for every company. No universal “most trusted” ranking is assigned. Company case studies remain company claims unless independently corroborated.",
+        "refs": []
+      },
+      {
+        "title": "Investors can agree on the business and disagree on the price",
+        "text": "The mixed eClerx fund signal and the cautious broker stance illustrate a useful distinction: business progress does not automatically make a stock cheap. Fund holdings also reflect mandates, liquidity and position sizing that are not visible in the archive. We do not infer a manager’s private thesis or the intention behind a reduction.",
+        "refs": [
+          4
+        ]
+      },
+      {
+        "title": "Market mood: opportunity with a higher proof burden",
+        "text": "Our interpretation of the reviewed disclosures is a market rich in expansion narratives but uneven in evidence of monetisation. Power and precision-engineering cases have tangible investment or contract evidence; technology services and some new capacities require more proof of profitable conversion. This is an analytical reading of the sources, not a real-time measure of investor sentiment.",
+        "refs": [
+          0,
+          7,
+          8,
+          10
+        ]
+      }
+    ],
+    "scenarios": [
+      {
+        "title": "Base case · selective delivery",
+        "text": "Existing franchises grow, but execution remains uneven. Capacity and order books convert gradually, and free cash flow varies with investment. The research preference stays with companies that demonstrate repeat demand and improving cash economics, rather than those with the largest announced opportunity.",
+        "refs": []
+      },
+      {
+        "title": "Upside case · capability becomes recurring earnings",
+        "text": "Qualified suppliers win repeat programmes, AI services retain part of the productivity benefit, and healthcare expansion achieves good utilisation. Better operating leverage and cash conversion justify reassessing earnings power. A favourable share-price outcome would still depend on the valuation paid.",
+        "refs": []
+      },
+      {
+        "title": "Downside case · demand is real, returns disappoint",
+        "text": "Customers defer projects, competition compresses pricing and new capacity absorbs cash longer than expected. A crowded narrative can unravel before the long-term market opportunity disappears. Rising receivables, repeated commissioning delays or a widening gap between profit and cash would weaken the theses.",
+        "refs": []
+      }
+    ],
+    "selectionNote": "Ten dated company dossiers to investigate further. The order is retained from the earlier research edition; it has not been re-ranked using current prices. Portfolio evidence is recomputed from the saved archive.",
+    "mediaNote": "YouTube and X were searched for research leads. Usable interview evidence came from published management interviews and issuer presentation libraries; inaccessible videos and unverified posts were excluded. Full videos were not independently watched. These are attributed perspectives, not a social-sentiment census or a measured customer-satisfaction survey."
+  },
+  "newsletter": {
+    "edition": "23 OCTOBER 2026",
+    "editorNote": "Dear reader,\n\nA wider research universe changes the questions we should ask. September now has 33 comparable fund portfolios, making the older two-fund reading obsolete. The useful signal is not simply whether a company appears in more portfolios. It is whether the same managers keep adding, whether other managers disagree, and whether the company’s operating progress supports the capital being committed.\n\nOur emphasis this month is evidence over enthusiasm. We separate current holdings from historical exits, share-count changes from allocation percentages, and reported developments from our interpretation. The ten company dossiers remain a research reading list, with their original dates and opposing cases visible.",
+    "stories": [
+      {
+        "title": "The wider picture: liquidity is supportive, but it is not a company thesis",
+        "label": "INDUSTRY CONTEXT",
+        "paragraphs": [
+          "AMFI’s official September report records ₹38,306.55 crore of net inflows into open-ended equity schemes. Small-cap schemes received ₹9,038.57 crore and mid-cap schemes ₹7,834.84 crore. These are industry category flows, not purchases of any particular stock and not flows into only the funds tracked here.",
+          "Our interpretation: positive category flows can provide managers with deployment capacity. They do not establish attractive valuations or lasting demand for an individual business. Test a company’s earnings and cash generation separately, and avoid treating recent category enthusiasm as a margin of safety."
+        ],
+        "refs": [
+          13
+        ]
+      },
+      {
+        "title": "Consensus has limits: read accumulation alongside disagreement",
+        "label": "PORTFOLIO LETTER",
+        "paragraphs": [
+          "In the September archive, Multi Commodity Exchange appears in 23 current fund portfolios: ten funds increased or initiated share positions and three reduced or exited. INOX India has four additions and one reduction, with seven current holders. Voltamp has three additions, no classified reduction and ten current holders. Unchanged positions account for the remaining holders; additions plus reductions are not a holder count.",
+          "These observations support a research priority, not a conclusion about fair value. A broad shareholder base can offer corroboration, but it can also mean several funds own the same underlying risk. At MCX, investigate the durability of trading activity and operating leverage. At INOX and Voltamp, connect capacity and order execution to working capital, margins and incremental returns.",
+          "The archive’s August comparison covers only 20 funds. September’s broader sample must not be presented as evidence that conviction accelerated across the whole industry. For persistence, compare the same manager in adjacent months; use the linked company dossiers to inspect that evidence."
+        ],
+        "refs": []
+      },
+      {
+        "title": "Ather and Indo-MIM: two examples of why the detail matters",
+        "label": "READING THE SIGNAL",
+        "paragraphs": [
+          "Ather’s aggregate shares fell from 1,86,77,773 to 1,68,13,108, a reduction of 18,64,665 shares. Two funds increased holdings, four reduced and ten were unchanged; 16 funds still held shares at month-end. Falling allocation percentages across those funds do not prove every manager sold. Allocation also changes with share prices and the size of the fund’s net assets.",
+          "Indo-MIM’s total increased from 48,29,827 to 54,44,688 shares, or 6,14,861 more. Five funds added or initiated and four reduced or exited. There are eight current holders and two exited positions in the comparison; a combined view can therefore show more contributing fund records than the current-holdings search.",
+          "Our interpretation: mixed activity deserves a balanced company assessment. For Ather, focus research on unit economics, cash consumption and the path to sustainable margins. For Indo-MIM, test customer concentration, execution and cash conversion. These are research questions rather than newly verified operating conclusions."
+        ],
+        "refs": []
+      },
+      {
+        "title": "Kalpataru: another order announcement, with execution still the test",
+        "label": "COMPANY DISPATCH · 13 OCT",
+        "paragraphs": [
+          "Kalpataru Projects’ official news index lists ₹2,225 crore of new order wins on 13 October 2026. The earlier dossier predates this update. We verified the headline and date on the issuer’s release index; the linked document could not be retrieved, so no assumptions are made here about project mix, margin, customer terms or completion dates.",
+          "Our interpretation: the announcement supports the demand pipeline but is not revenue already earned. The more useful next evidence is conversion into execution, acceptable working capital and operating cash flow. Check whether stronger billing translates into collections and whether growth requires disproportionate balance-sheet funding.",
+          "In the dossier, read the original operating discussion alongside this dated update. Do not add this headline to earlier order announcements without checking whether they refer to distinct contracts and whether any cancellations or scope changes have occurred."
+        ],
+        "refs": [
+          2
+        ]
+      },
+      {
+        "title": "The business-quality test behind the ten dossiers",
+        "label": "EDITOR’S RESEARCH AGENDA",
+        "paragraphs": [
+          "Our company coverage spans workflow services, grid equipment, hospitals, pharmaceuticals, engineering projects, cryogenic equipment, financial distribution, specialty chemicals, defence electronics and automotive software. The common question is whether a difficult-to-replicate capability translates into retained earnings and cash. Exposure to a popular theme is not sufficient.",
+          "For eClerx, compare AI productivity with realized margins and client pricing. For Narayana, examine new-capacity utilisation and returns after investment. For IPCA, distinguish operational improvement from integration costs. For Prudent, separate recurring distribution economics from market-linked asset appreciation. For Vinati and Data Patterns, connect growth plans to actual utilisation, delivery and cash collection. KPIT remains conditional on commercial recovery rather than thematic enthusiasm.",
+          "These are the questions carried forward from the dated company analyses, not assertions that fresh quarterly outcomes have already been checked. No new live-price comparison was completed for this issue. The reading order should therefore help organise research, rather than imply a current buy recommendation."
+        ],
+        "refs": []
+      }
+    ],
+    "watchlist": [
+      {
+        "title": "Next earnings releases",
+        "text": "Compare revenue quality, operating margins, receivables and operating cash flow with the expectations in each company dossier. Separate management guidance from achieved results."
+      },
+      {
+        "title": "Capacity and execution",
+        "text": "Track commissioning, utilisation, customer qualification and collections at equipment and project businesses. An announced facility or order is a milestone, not evidence of earned returns."
+      },
+      {
+        "title": "October portfolios",
+        "text": "When October month-end disclosures become available, compare them against September using the same fund set. A missing disclosure remains unknown; it must not become an exit."
+      },
+      {
+        "title": "Valuation before an investment decision",
+        "text": "Reconcile the current quote, diluted shares, debt and latest financial period before calculating multiples. This edition contains no price targets or newly verified valuation screen."
+      }
+    ],
+    "closing": "The best use of this issue is to choose what to investigate next. Start with the portfolio evidence, challenge it with the company’s economics, and use the dated sources to decide what remains unanswered."
+  }
 }

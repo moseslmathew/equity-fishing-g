@@ -1,0 +1,920 @@
+{
+  "id": "unico-global-opportunities",
+  "name": "Unico Global Opportunities Fund Limited",
+  "asOf": "2026-10-24",
+  "checkedAt": "2026-10-24T04:52:33.009291+00:00",
+  "windowStart": "2025-10-24",
+  "windowEnd": "2026-10-24",
+  "coverage": "26 selected named Indian-listed shareholder records. Includes dated historical records where a newer disclosure was not established.",
+  "limitations": [
+    "Public named-holder coverage only, not a complete portfolio or a live register.",
+    "Holdings retain the named legal fund; Ebisu and Unico are not combined, even when they own the same company.",
+    "Secondary transcriptions are labelled reported. Original exchange filings were not retrieved or independently reconciled in this review.",
+    "Review dates do not refresh historical ownership. June and March records remain historical; absence does not establish an exit.",
+    "Company stakes, fund allocation, shares sold, warrants and transaction values are different measures and are not combined."
+  ],
+  "sources": {
+    "holdings": {
+      "title": "Unico Global Opportunities Fund Limited — named shareholder disclosure index",
+      "url": "https://block.deal/entities/unico-global-opportunities-fund-limited/",
+      "publisher": "block.deal",
+      "published": "September 2026 and earlier snapshots; reviewed 24 Oct 2026",
+      "kind": "reporting",
+      "note": "Secondary transcriptions with exchange evidence links. Original exchange documents were not retrieved in this review; reported values are not independently reconciled."
+    }
+  },
+  "companies": [
+    {
+      "id": "dharmaj",
+      "name": "Dharmaj Crop Guard Limited",
+      "listing": "Listed equity",
+      "sector": "Agrochemicals",
+      "relationship": "Named shareholder: Unico Global Opportunities Fund Limited",
+      "ownership": "1.48% reported company equity",
+      "ownershipDate": "30 Sep 2026 · secondary disclosure; original filing not retrieved",
+      "stakePercent": 1.48,
+      "stance": "held",
+      "summary": "Unico Global Opportunities Fund Limited is reported as the named shareholder of Dharmaj Crop Guard Limited at 30 Sep 2026.",
+      "thesis": "Reported exposure to agrochemicals. Public ownership data alone does not establish the fund’s investment rationale.",
+      "risks": "Dated disclosure, not a live position. Capital changes and corporate actions can alter percentages without a matching trade. Missing disclosure is not zero ownership.",
+      "sourceIds": [
+        "holdings"
+      ],
+      "ticker": "DHARMAJ"
+    },
+    {
+      "id": "raymondlsl",
+      "name": "Raymond Lifestyle Limited",
+      "listing": "Listed equity",
+      "sector": "Retail",
+      "relationship": "Named shareholder: Unico Global Opportunities Fund Limited",
+      "ownership": "1.23% reported company equity",
+      "ownershipDate": "30 Sep 2026 · secondary disclosure; original filing not retrieved",
+      "stakePercent": 1.23,
+      "stance": "held",
+      "summary": "Unico Global Opportunities Fund Limited is reported as the named shareholder of Raymond Lifestyle Limited at 30 Sep 2026.",
+      "thesis": "Reported exposure to retail. Public ownership data alone does not establish the fund’s investment rationale.",
+      "risks": "Dated disclosure, not a live position. Capital changes and corporate actions can alter percentages without a matching trade. Missing disclosure is not zero ownership.",
+      "sourceIds": [
+        "holdings"
+      ],
+      "ticker": "RAYMONDLSL"
+    },
+    {
+      "id": "wel",
+      "name": "Wonder Electricals Limited",
+      "listing": "Listed equity",
+      "sector": "Electrical equipment",
+      "relationship": "Named shareholder: Unico Global Opportunities Fund Limited",
+      "ownership": "3.19% reported company equity",
+      "ownershipDate": "30 Sep 2026 · secondary disclosure; original filing not retrieved",
+      "stakePercent": 3.19,
+      "stance": "held",
+      "summary": "Unico Global Opportunities Fund Limited is reported as the named shareholder of Wonder Electricals Limited at 30 Sep 2026.",
+      "thesis": "Reported exposure to electrical equipment. Public ownership data alone does not establish the fund’s investment rationale.",
+      "risks": "Dated disclosure, not a live position. Capital changes and corporate actions can alter percentages without a matching trade. Missing disclosure is not zero ownership.",
+      "sourceIds": [
+        "holdings"
+      ],
+      "ticker": "WEL"
+    },
+    {
+      "id": "treehouse",
+      "name": "Tree House Education & Accessories Limited",
+      "listing": "Listed equity",
+      "sector": "Education",
+      "relationship": "Named shareholder: Unico Global Opportunities Fund Limited",
+      "ownership": "2.27% reported company equity",
+      "ownershipDate": "30 Sep 2026 · secondary disclosure; original filing not retrieved",
+      "stakePercent": 2.27,
+      "stance": "held",
+      "summary": "Unico Global Opportunities Fund Limited is reported as the named shareholder of Tree House Education & Accessories Limited at 30 Sep 2026.",
+      "thesis": "Reported exposure to education. Public ownership data alone does not establish the fund’s investment rationale.",
+      "risks": "Dated disclosure, not a live position. Capital changes and corporate actions can alter percentages without a matching trade. Missing disclosure is not zero ownership.",
+      "sourceIds": [
+        "holdings"
+      ],
+      "ticker": "TREEHOUSE"
+    },
+    {
+      "id": "prabha",
+      "name": "Prabha Energy Limited",
+      "listing": "Listed equity",
+      "sector": "Energy",
+      "relationship": "Named shareholder: Unico Global Opportunities Fund Limited",
+      "ownership": "1.01% reported company equity",
+      "ownershipDate": "30 Sep 2026 · secondary disclosure; original filing not retrieved",
+      "stakePercent": 1.01,
+      "stance": "held",
+      "summary": "Unico Global Opportunities Fund Limited is reported as the named shareholder of Prabha Energy Limited at 30 Sep 2026.",
+      "thesis": "Reported exposure to energy. Public ownership data alone does not establish the fund’s investment rationale.",
+      "risks": "Dated disclosure, not a live position. Capital changes and corporate actions can alter percentages without a matching trade. Missing disclosure is not zero ownership.",
+      "sourceIds": [
+        "holdings"
+      ],
+      "ticker": "PRABHA"
+    },
+    {
+      "id": "pdsl",
+      "name": "PDS Limited",
+      "listing": "Listed equity",
+      "sector": "Textiles",
+      "relationship": "Named shareholder: Unico Global Opportunities Fund Limited",
+      "ownership": "1.20% reported company equity",
+      "ownershipDate": "30 Sep 2026 · secondary disclosure; original filing not retrieved",
+      "stakePercent": 1.2,
+      "stance": "held",
+      "summary": "Unico Global Opportunities Fund Limited is reported as the named shareholder of PDS Limited at 30 Sep 2026.",
+      "thesis": "Reported exposure to textiles. Public ownership data alone does not establish the fund’s investment rationale.",
+      "risks": "Dated disclosure, not a live position. Capital changes and corporate actions can alter percentages without a matching trade. Missing disclosure is not zero ownership.",
+      "sourceIds": [
+        "holdings"
+      ],
+      "ticker": "PDSL"
+    },
+    {
+      "id": "ibullsltd",
+      "name": "Indiabulls Limited",
+      "listing": "Listed equity",
+      "sector": "Real estate",
+      "relationship": "Named shareholder: Unico Global Opportunities Fund Limited",
+      "ownership": "1.23% reported company equity",
+      "ownershipDate": "30 Sep 2026 · secondary disclosure; original filing not retrieved",
+      "stakePercent": 1.23,
+      "stance": "held",
+      "summary": "Unico Global Opportunities Fund Limited is reported as the named shareholder of Indiabulls Limited at 30 Sep 2026.",
+      "thesis": "Reported exposure to real estate. Public ownership data alone does not establish the fund’s investment rationale.",
+      "risks": "Dated disclosure, not a live position. Capital changes and corporate actions can alter percentages without a matching trade. Missing disclosure is not zero ownership.",
+      "sourceIds": [
+        "holdings"
+      ],
+      "ticker": "IBULLSLTD"
+    },
+    {
+      "id": "hgs",
+      "name": "Hinduja Global Solutions Limited",
+      "listing": "Listed equity",
+      "sector": "Business services",
+      "relationship": "Named shareholder: Unico Global Opportunities Fund Limited",
+      "ownership": "1.25% reported company equity",
+      "ownershipDate": "30 Sep 2026 · secondary disclosure; original filing not retrieved",
+      "stakePercent": 1.25,
+      "stance": "held",
+      "summary": "Unico Global Opportunities Fund Limited is reported as the named shareholder of Hinduja Global Solutions Limited at 30 Sep 2026.",
+      "thesis": "Reported exposure to business services. Public ownership data alone does not establish the fund’s investment rationale.",
+      "risks": "Dated disclosure, not a live position. Capital changes and corporate actions can alter percentages without a matching trade. Missing disclosure is not zero ownership.",
+      "sourceIds": [
+        "holdings"
+      ],
+      "ticker": "HGS"
+    },
+    {
+      "id": "raymondrel",
+      "name": "Raymond Realty Limited",
+      "listing": "Listed equity",
+      "sector": "Real estate",
+      "relationship": "Named shareholder: Unico Global Opportunities Fund Limited",
+      "ownership": "1.09% reported company equity",
+      "ownershipDate": "30 Sep 2026 · secondary disclosure; original filing not retrieved",
+      "stakePercent": 1.09,
+      "stance": "held",
+      "summary": "Unico Global Opportunities Fund Limited is reported as the named shareholder of Raymond Realty Limited at 30 Sep 2026.",
+      "thesis": "Reported exposure to real estate. Public ownership data alone does not establish the fund’s investment rationale.",
+      "risks": "Dated disclosure, not a live position. Capital changes and corporate actions can alter percentages without a matching trade. Missing disclosure is not zero ownership.",
+      "sourceIds": [
+        "holdings"
+      ],
+      "ticker": "RAYMONDREL"
+    },
+    {
+      "id": "micel",
+      "name": "MIC Electronics Limited",
+      "listing": "Listed equity",
+      "sector": "Electronics",
+      "relationship": "Named shareholder: Unico Global Opportunities Fund Limited",
+      "ownership": "8.10% reported company equity",
+      "ownershipDate": "30 Sep 2026 · secondary disclosure; original filing not retrieved",
+      "stakePercent": 8.1,
+      "stance": "held",
+      "summary": "Unico Global Opportunities Fund Limited is reported as the named shareholder of MIC Electronics Limited at 30 Sep 2026.",
+      "thesis": "Reported exposure to electronics. Public ownership data alone does not establish the fund’s investment rationale.",
+      "risks": "Dated disclosure, not a live position. Capital changes and corporate actions can alter percentages without a matching trade. Missing disclosure is not zero ownership.",
+      "sourceIds": [
+        "holdings"
+      ],
+      "ticker": "MICEL"
+    },
+    {
+      "id": "ndlventure",
+      "name": "NDL Ventures Limited",
+      "listing": "Listed equity",
+      "sector": "Services",
+      "relationship": "Named shareholder: Unico Global Opportunities Fund Limited",
+      "ownership": "1.07% reported company equity",
+      "ownershipDate": "30 Sep 2026 · secondary disclosure; original filing not retrieved",
+      "stakePercent": 1.07,
+      "stance": "held",
+      "summary": "Unico Global Opportunities Fund Limited is reported as the named shareholder of NDL Ventures Limited at 30 Sep 2026.",
+      "thesis": "Reported exposure to services. Public ownership data alone does not establish the fund’s investment rationale.",
+      "risks": "Dated disclosure, not a live position. Capital changes and corporate actions can alter percentages without a matching trade. Missing disclosure is not zero ownership.",
+      "sourceIds": [
+        "holdings"
+      ],
+      "ticker": "NDLVENTURE"
+    },
+    {
+      "id": "company-11",
+      "name": "Ebix Limited",
+      "listing": "Listed equity",
+      "sector": "Services",
+      "relationship": "Named shareholder: Unico Global Opportunities Fund Limited",
+      "ownership": "3.90% reported company equity",
+      "ownershipDate": "30 Sep 2026 · secondary disclosure; original filing not retrieved",
+      "stakePercent": 3.9,
+      "stance": "held",
+      "summary": "Unico Global Opportunities Fund Limited is reported as the named shareholder of Ebix Limited at 30 Sep 2026.",
+      "thesis": "Reported exposure to services. Public ownership data alone does not establish the fund’s investment rationale.",
+      "risks": "Dated disclosure, not a live position. Capital changes and corporate actions can alter percentages without a matching trade. Missing disclosure is not zero ownership.",
+      "sourceIds": [
+        "holdings"
+      ]
+    },
+    {
+      "id": "hazoor",
+      "name": "Hazoor Multi Projects Limited",
+      "listing": "Listed equity",
+      "sector": "Infrastructure",
+      "relationship": "Named shareholder: Unico Global Opportunities Fund Limited",
+      "ownership": "3.12% reported company equity",
+      "ownershipDate": "30 Sep 2026 · secondary disclosure; original filing not retrieved",
+      "stakePercent": 3.12,
+      "stance": "held",
+      "summary": "Unico Global Opportunities Fund Limited is reported as the named shareholder of Hazoor Multi Projects Limited at 30 Sep 2026.",
+      "thesis": "Reported exposure to infrastructure. Public ownership data alone does not establish the fund’s investment rationale.",
+      "risks": "Dated disclosure, not a live position. Capital changes and corporate actions can alter percentages without a matching trade. Missing disclosure is not zero ownership.",
+      "sourceIds": [
+        "holdings"
+      ],
+      "ticker": "HAZOOR"
+    },
+    {
+      "id": "company-13",
+      "name": "Quint Digital Limited",
+      "listing": "Listed equity",
+      "sector": "Digital media",
+      "relationship": "Named shareholder: Unico Global Opportunities Fund Limited",
+      "ownership": "7.44% reported company equity",
+      "ownershipDate": "30 Sep 2026 · secondary disclosure; original filing not retrieved",
+      "stakePercent": 7.44,
+      "stance": "held",
+      "summary": "Unico Global Opportunities Fund Limited is reported as the named shareholder of Quint Digital Limited at 30 Sep 2026.",
+      "thesis": "Reported exposure to digital media. Public ownership data alone does not establish the fund’s investment rationale.",
+      "risks": "Dated disclosure, not a live position. Capital changes and corporate actions can alter percentages without a matching trade. Missing disclosure is not zero ownership.",
+      "sourceIds": [
+        "holdings"
+      ]
+    },
+    {
+      "id": "elitecon",
+      "name": "Elitecon International Limited",
+      "listing": "Listed equity",
+      "sector": "Consumer products",
+      "relationship": "Named shareholder: Unico Global Opportunities Fund Limited",
+      "ownership": "8.55% reported company equity",
+      "ownershipDate": "30 Sep 2026 · secondary disclosure; original filing not retrieved",
+      "stakePercent": 8.55,
+      "stance": "held",
+      "summary": "Unico Global Opportunities Fund Limited is reported as the named shareholder of Elitecon International Limited at 30 Sep 2026.",
+      "thesis": "Reported exposure to consumer products. Public ownership data alone does not establish the fund’s investment rationale.",
+      "risks": "Dated disclosure, not a live position. Capital changes and corporate actions can alter percentages without a matching trade. Missing disclosure is not zero ownership.",
+      "sourceIds": [
+        "holdings"
+      ],
+      "ticker": "ELITECON"
+    },
+    {
+      "id": "company-15",
+      "name": "Leading Leasing Finance and Investment Company Limited",
+      "listing": "Listed equity",
+      "sector": "Financial services",
+      "relationship": "Named shareholder: Unico Global Opportunities Fund Limited",
+      "ownership": "8.25% reported company equity",
+      "ownershipDate": "30 Sep 2026 · secondary disclosure; original filing not retrieved",
+      "stakePercent": 8.25,
+      "stance": "held",
+      "summary": "Unico Global Opportunities Fund Limited is reported as the named shareholder of Leading Leasing Finance and Investment Company Limited at 30 Sep 2026.",
+      "thesis": "Reported exposure to financial services. Public ownership data alone does not establish the fund’s investment rationale.",
+      "risks": "Dated disclosure, not a live position. Capital changes and corporate actions can alter percentages without a matching trade. Missing disclosure is not zero ownership.",
+      "sourceIds": [
+        "holdings"
+      ]
+    },
+    {
+      "id": "sampann",
+      "name": "Sampann Utpadan India Limited",
+      "listing": "Listed equity",
+      "sector": "Industrials",
+      "relationship": "Named shareholder: Unico Global Opportunities Fund Limited",
+      "ownership": "6.16% reported company equity",
+      "ownershipDate": "30 Sep 2026 · secondary disclosure; original filing not retrieved",
+      "stakePercent": 6.16,
+      "stance": "held",
+      "summary": "Unico Global Opportunities Fund Limited is reported as the named shareholder of Sampann Utpadan India Limited at 30 Sep 2026.",
+      "thesis": "Reported exposure to industrials. Public ownership data alone does not establish the fund’s investment rationale.",
+      "risks": "Dated disclosure, not a live position. Capital changes and corporate actions can alter percentages without a matching trade. Missing disclosure is not zero ownership.",
+      "sourceIds": [
+        "holdings"
+      ],
+      "ticker": "SAMPANN"
+    },
+    {
+      "id": "manomay",
+      "name": "Manomay Tex India Limited",
+      "listing": "Listed equity",
+      "sector": "Textiles",
+      "relationship": "Named shareholder: Unico Global Opportunities Fund Limited",
+      "ownership": "1.23% reported company equity",
+      "ownershipDate": "30 Sep 2026 · secondary disclosure; original filing not retrieved",
+      "stakePercent": 1.23,
+      "stance": "held",
+      "summary": "Unico Global Opportunities Fund Limited is reported as the named shareholder of Manomay Tex India Limited at 30 Sep 2026.",
+      "thesis": "Reported exposure to textiles. Public ownership data alone does not establish the fund’s investment rationale.",
+      "risks": "Dated disclosure, not a live position. Capital changes and corporate actions can alter percentages without a matching trade. Missing disclosure is not zero ownership.",
+      "sourceIds": [
+        "holdings"
+      ],
+      "ticker": "MANOMAY"
+    },
+    {
+      "id": "pcjeweller",
+      "name": "PC Jeweller Limited",
+      "listing": "Listed equity",
+      "sector": "Jewellery",
+      "relationship": "Named shareholder: Unico Global Opportunities Fund Limited",
+      "ownership": "3.13% reported company equity",
+      "ownershipDate": "30 Sep 2026 · secondary disclosure; original filing not retrieved",
+      "stakePercent": 3.13,
+      "stance": "held",
+      "summary": "Unico Global Opportunities Fund Limited is reported as the named shareholder of PC Jeweller Limited at 30 Sep 2026.",
+      "thesis": "Reported exposure to jewellery. Public ownership data alone does not establish the fund’s investment rationale.",
+      "risks": "Dated disclosure, not a live position. Capital changes and corporate actions can alter percentages without a matching trade. Missing disclosure is not zero ownership.",
+      "sourceIds": [
+        "holdings"
+      ],
+      "ticker": "PCJEWELLER"
+    },
+    {
+      "id": "dolphin",
+      "name": "Dolphin Offshore Enterprises (India) Limited",
+      "listing": "Listed equity",
+      "sector": "Offshore services",
+      "relationship": "Named shareholder: Unico Global Opportunities Fund Limited",
+      "ownership": "2.83% reported company equity",
+      "ownershipDate": "30 Sep 2026 · secondary disclosure; original filing not retrieved",
+      "stakePercent": 2.83,
+      "stance": "held",
+      "summary": "Unico Global Opportunities Fund Limited is reported as the named shareholder of Dolphin Offshore Enterprises (India) Limited at 30 Sep 2026.",
+      "thesis": "Reported exposure to offshore services. Public ownership data alone does not establish the fund’s investment rationale.",
+      "risks": "Dated disclosure, not a live position. Capital changes and corporate actions can alter percentages without a matching trade. Missing disclosure is not zero ownership.",
+      "sourceIds": [
+        "holdings"
+      ],
+      "ticker": "DOLPHIN"
+    },
+    {
+      "id": "phantomfx",
+      "name": "Phantom Digital Effects Limited",
+      "listing": "Listed equity",
+      "sector": "Visual effects",
+      "relationship": "Named shareholder: Unico Global Opportunities Fund Limited",
+      "ownership": "1.01% reported company equity",
+      "ownershipDate": "30 Jun 2026 · secondary disclosure; original filing not retrieved",
+      "stakePercent": 1.01,
+      "stance": "held",
+      "summary": "Unico Global Opportunities Fund Limited is reported as the named shareholder of Phantom Digital Effects Limited at 30 Jun 2026. Historical disclosure; September ownership has not been confirmed in this review.",
+      "thesis": "Reported exposure to visual effects. Public ownership data alone does not establish the fund’s investment rationale.",
+      "risks": "Dated disclosure, not a live position. Capital changes and corporate actions can alter percentages without a matching trade. Missing disclosure is not zero ownership.",
+      "sourceIds": [
+        "holdings"
+      ],
+      "ticker": "PHANTOMFX"
+    },
+    {
+      "id": "company-21",
+      "name": "RDB Infrastructure and Power Limited",
+      "listing": "Listed equity",
+      "sector": "Infrastructure",
+      "relationship": "Named shareholder: Unico Global Opportunities Fund Limited",
+      "ownership": "1.01% reported company equity",
+      "ownershipDate": "30 Jun 2026 · secondary disclosure; original filing not retrieved",
+      "stakePercent": 1.01,
+      "stance": "held",
+      "summary": "Unico Global Opportunities Fund Limited is reported as the named shareholder of RDB Infrastructure and Power Limited at 30 Jun 2026. Historical disclosure; September ownership has not been confirmed in this review.",
+      "thesis": "Reported exposure to infrastructure. Public ownership data alone does not establish the fund’s investment rationale.",
+      "risks": "Dated disclosure, not a live position. Capital changes and corporate actions can alter percentages without a matching trade. Missing disclosure is not zero ownership.",
+      "sourceIds": [
+        "holdings"
+      ]
+    },
+    {
+      "id": "company-22",
+      "name": "Starcom Information Technology Limited",
+      "listing": "Listed equity",
+      "sector": "Information technology",
+      "relationship": "Named shareholder: Unico Global Opportunities Fund Limited",
+      "ownership": "2.67% reported company equity",
+      "ownershipDate": "30 Jun 2026 · secondary disclosure; original filing not retrieved",
+      "stakePercent": 2.67,
+      "stance": "held",
+      "summary": "Unico Global Opportunities Fund Limited is reported as the named shareholder of Starcom Information Technology Limited at 30 Jun 2026. Historical disclosure; September ownership has not been confirmed in this review.",
+      "thesis": "Reported exposure to information technology. Public ownership data alone does not establish the fund’s investment rationale.",
+      "risks": "Dated disclosure, not a live position. Capital changes and corporate actions can alter percentages without a matching trade. Missing disclosure is not zero ownership.",
+      "sourceIds": [
+        "holdings"
+      ]
+    },
+    {
+      "id": "company-23",
+      "name": "Tiger Logistics (India) Limited",
+      "listing": "Listed equity",
+      "sector": "Logistics",
+      "relationship": "Named shareholder: Unico Global Opportunities Fund Limited",
+      "ownership": "1.91% reported company equity",
+      "ownershipDate": "30 Jun 2026 · secondary disclosure; original filing not retrieved",
+      "stakePercent": 1.91,
+      "stance": "held",
+      "summary": "Unico Global Opportunities Fund Limited is reported as the named shareholder of Tiger Logistics (India) Limited at 30 Jun 2026. Historical disclosure; September ownership has not been confirmed in this review.",
+      "thesis": "Reported exposure to logistics. Public ownership data alone does not establish the fund’s investment rationale.",
+      "risks": "Dated disclosure, not a live position. Capital changes and corporate actions can alter percentages without a matching trade. Missing disclosure is not zero ownership.",
+      "sourceIds": [
+        "holdings"
+      ]
+    },
+    {
+      "id": "duglobal",
+      "name": "Dudigital Global Limited",
+      "listing": "Listed equity",
+      "sector": "Business services",
+      "relationship": "Named shareholder: Unico Global Opportunities Fund Limited",
+      "ownership": "4.53% reported company equity",
+      "ownershipDate": "31 Mar 2026 · secondary disclosure; original filing not retrieved",
+      "stakePercent": 4.53,
+      "stance": "held",
+      "summary": "Unico Global Opportunities Fund Limited is reported as the named shareholder of Dudigital Global Limited at 31 Mar 2026. Historical disclosure; September ownership has not been confirmed in this review.",
+      "thesis": "Reported exposure to business services. Public ownership data alone does not establish the fund’s investment rationale.",
+      "risks": "Dated disclosure, not a live position. Capital changes and corporate actions can alter percentages without a matching trade. Missing disclosure is not zero ownership.",
+      "sourceIds": [
+        "holdings"
+      ],
+      "ticker": "DUGLOBAL"
+    },
+    {
+      "id": "service",
+      "name": "Service Care Limited",
+      "listing": "Listed equity",
+      "sector": "Business services",
+      "relationship": "Named shareholder: Unico Global Opportunities Fund Limited",
+      "ownership": "1.05% reported company equity",
+      "ownershipDate": "31 Mar 2026 · secondary disclosure; original filing not retrieved",
+      "stakePercent": 1.05,
+      "stance": "held",
+      "summary": "Unico Global Opportunities Fund Limited is reported as the named shareholder of Service Care Limited at 31 Mar 2026. Historical disclosure; September ownership has not been confirmed in this review.",
+      "thesis": "Reported exposure to business services. Public ownership data alone does not establish the fund’s investment rationale.",
+      "risks": "Dated disclosure, not a live position. Capital changes and corporate actions can alter percentages without a matching trade. Missing disclosure is not zero ownership.",
+      "sourceIds": [
+        "holdings"
+      ],
+      "ticker": "SERVICE"
+    }
+  ],
+  "events": [
+    {
+      "id": "dharmaj-snapshot",
+      "companyId": "dharmaj",
+      "date": "2026-09-30",
+      "dateLabel": "30 Sep 2026",
+      "title": "Reported ownership snapshot",
+      "kind": "snapshot",
+      "direction": "held",
+      "status": "Snapshot",
+      "detail": "1.48% reported company equity",
+      "qualification": "A dated shareholder observation, not evidence of a purchase or sale.",
+      "sourceIds": [
+        "holdings"
+      ]
+    },
+    {
+      "id": "raymondlsl-snapshot",
+      "companyId": "raymondlsl",
+      "date": "2026-09-30",
+      "dateLabel": "30 Sep 2026",
+      "title": "Reported ownership snapshot",
+      "kind": "snapshot",
+      "direction": "held",
+      "status": "Snapshot",
+      "detail": "1.23% reported company equity",
+      "qualification": "A dated shareholder observation, not evidence of a purchase or sale.",
+      "sourceIds": [
+        "holdings"
+      ]
+    },
+    {
+      "id": "wel-snapshot",
+      "companyId": "wel",
+      "date": "2026-09-30",
+      "dateLabel": "30 Sep 2026",
+      "title": "Reported ownership snapshot",
+      "kind": "snapshot",
+      "direction": "held",
+      "status": "Snapshot",
+      "detail": "3.19% reported company equity",
+      "qualification": "A dated shareholder observation, not evidence of a purchase or sale.",
+      "sourceIds": [
+        "holdings"
+      ]
+    },
+    {
+      "id": "treehouse-snapshot",
+      "companyId": "treehouse",
+      "date": "2026-09-30",
+      "dateLabel": "30 Sep 2026",
+      "title": "Reported ownership snapshot",
+      "kind": "snapshot",
+      "direction": "held",
+      "status": "Snapshot",
+      "detail": "2.27% reported company equity",
+      "qualification": "A dated shareholder observation, not evidence of a purchase or sale.",
+      "sourceIds": [
+        "holdings"
+      ]
+    },
+    {
+      "id": "prabha-snapshot",
+      "companyId": "prabha",
+      "date": "2026-09-30",
+      "dateLabel": "30 Sep 2026",
+      "title": "Reported ownership snapshot",
+      "kind": "snapshot",
+      "direction": "held",
+      "status": "Snapshot",
+      "detail": "1.01% reported company equity",
+      "qualification": "A dated shareholder observation, not evidence of a purchase or sale.",
+      "sourceIds": [
+        "holdings"
+      ]
+    },
+    {
+      "id": "pdsl-snapshot",
+      "companyId": "pdsl",
+      "date": "2026-09-30",
+      "dateLabel": "30 Sep 2026",
+      "title": "Reported ownership snapshot",
+      "kind": "snapshot",
+      "direction": "held",
+      "status": "Snapshot",
+      "detail": "1.20% reported company equity",
+      "qualification": "A dated shareholder observation, not evidence of a purchase or sale.",
+      "sourceIds": [
+        "holdings"
+      ]
+    },
+    {
+      "id": "ibullsltd-snapshot",
+      "companyId": "ibullsltd",
+      "date": "2026-09-30",
+      "dateLabel": "30 Sep 2026",
+      "title": "Reported ownership snapshot",
+      "kind": "snapshot",
+      "direction": "held",
+      "status": "Snapshot",
+      "detail": "1.23% reported company equity",
+      "qualification": "A dated shareholder observation, not evidence of a purchase or sale.",
+      "sourceIds": [
+        "holdings"
+      ]
+    },
+    {
+      "id": "hgs-snapshot",
+      "companyId": "hgs",
+      "date": "2026-09-30",
+      "dateLabel": "30 Sep 2026",
+      "title": "Reported ownership snapshot",
+      "kind": "snapshot",
+      "direction": "held",
+      "status": "Snapshot",
+      "detail": "1.25% reported company equity",
+      "qualification": "A dated shareholder observation, not evidence of a purchase or sale.",
+      "sourceIds": [
+        "holdings"
+      ]
+    },
+    {
+      "id": "raymondrel-snapshot",
+      "companyId": "raymondrel",
+      "date": "2026-09-30",
+      "dateLabel": "30 Sep 2026",
+      "title": "Reported ownership snapshot",
+      "kind": "snapshot",
+      "direction": "held",
+      "status": "Snapshot",
+      "detail": "1.09% reported company equity",
+      "qualification": "A dated shareholder observation, not evidence of a purchase or sale.",
+      "sourceIds": [
+        "holdings"
+      ]
+    },
+    {
+      "id": "micel-snapshot",
+      "companyId": "micel",
+      "date": "2026-09-30",
+      "dateLabel": "30 Sep 2026",
+      "title": "Reported ownership snapshot",
+      "kind": "snapshot",
+      "direction": "held",
+      "status": "Snapshot",
+      "detail": "8.10% reported company equity",
+      "qualification": "A dated shareholder observation, not evidence of a purchase or sale.",
+      "sourceIds": [
+        "holdings"
+      ]
+    },
+    {
+      "id": "ndlventure-snapshot",
+      "companyId": "ndlventure",
+      "date": "2026-09-30",
+      "dateLabel": "30 Sep 2026",
+      "title": "Reported ownership snapshot",
+      "kind": "snapshot",
+      "direction": "held",
+      "status": "Snapshot",
+      "detail": "1.07% reported company equity",
+      "qualification": "A dated shareholder observation, not evidence of a purchase or sale.",
+      "sourceIds": [
+        "holdings"
+      ]
+    },
+    {
+      "id": "company-11-snapshot",
+      "companyId": "company-11",
+      "date": "2026-09-30",
+      "dateLabel": "30 Sep 2026",
+      "title": "Reported ownership snapshot",
+      "kind": "snapshot",
+      "direction": "held",
+      "status": "Snapshot",
+      "detail": "3.90% reported company equity",
+      "qualification": "A dated shareholder observation, not evidence of a purchase or sale.",
+      "sourceIds": [
+        "holdings"
+      ]
+    },
+    {
+      "id": "hazoor-snapshot",
+      "companyId": "hazoor",
+      "date": "2026-09-30",
+      "dateLabel": "30 Sep 2026",
+      "title": "Reported ownership snapshot",
+      "kind": "snapshot",
+      "direction": "held",
+      "status": "Snapshot",
+      "detail": "3.12% reported company equity",
+      "qualification": "A dated shareholder observation, not evidence of a purchase or sale.",
+      "sourceIds": [
+        "holdings"
+      ]
+    },
+    {
+      "id": "company-13-snapshot",
+      "companyId": "company-13",
+      "date": "2026-09-30",
+      "dateLabel": "30 Sep 2026",
+      "title": "Reported ownership snapshot",
+      "kind": "snapshot",
+      "direction": "held",
+      "status": "Snapshot",
+      "detail": "7.44% reported company equity",
+      "qualification": "A dated shareholder observation, not evidence of a purchase or sale.",
+      "sourceIds": [
+        "holdings"
+      ]
+    },
+    {
+      "id": "elitecon-snapshot",
+      "companyId": "elitecon",
+      "date": "2026-09-30",
+      "dateLabel": "30 Sep 2026",
+      "title": "Reported ownership snapshot",
+      "kind": "snapshot",
+      "direction": "held",
+      "status": "Snapshot",
+      "detail": "8.55% reported company equity",
+      "qualification": "A dated shareholder observation, not evidence of a purchase or sale.",
+      "sourceIds": [
+        "holdings"
+      ]
+    },
+    {
+      "id": "company-15-snapshot",
+      "companyId": "company-15",
+      "date": "2026-09-30",
+      "dateLabel": "30 Sep 2026",
+      "title": "Reported ownership snapshot",
+      "kind": "snapshot",
+      "direction": "held",
+      "status": "Snapshot",
+      "detail": "8.25% reported company equity",
+      "qualification": "A dated shareholder observation, not evidence of a purchase or sale.",
+      "sourceIds": [
+        "holdings"
+      ]
+    },
+    {
+      "id": "sampann-snapshot",
+      "companyId": "sampann",
+      "date": "2026-09-30",
+      "dateLabel": "30 Sep 2026",
+      "title": "Reported ownership snapshot",
+      "kind": "snapshot",
+      "direction": "held",
+      "status": "Snapshot",
+      "detail": "6.16% reported company equity",
+      "qualification": "A dated shareholder observation, not evidence of a purchase or sale.",
+      "sourceIds": [
+        "holdings"
+      ]
+    },
+    {
+      "id": "manomay-snapshot",
+      "companyId": "manomay",
+      "date": "2026-09-30",
+      "dateLabel": "30 Sep 2026",
+      "title": "Reported ownership snapshot",
+      "kind": "snapshot",
+      "direction": "held",
+      "status": "Snapshot",
+      "detail": "1.23% reported company equity",
+      "qualification": "A dated shareholder observation, not evidence of a purchase or sale.",
+      "sourceIds": [
+        "holdings"
+      ]
+    },
+    {
+      "id": "pcjeweller-snapshot",
+      "companyId": "pcjeweller",
+      "date": "2026-09-30",
+      "dateLabel": "30 Sep 2026",
+      "title": "Reported ownership snapshot",
+      "kind": "snapshot",
+      "direction": "held",
+      "status": "Snapshot",
+      "detail": "3.13% reported company equity",
+      "qualification": "A dated shareholder observation, not evidence of a purchase or sale.",
+      "sourceIds": [
+        "holdings"
+      ]
+    },
+    {
+      "id": "dolphin-snapshot",
+      "companyId": "dolphin",
+      "date": "2026-09-30",
+      "dateLabel": "30 Sep 2026",
+      "title": "Reported ownership snapshot",
+      "kind": "snapshot",
+      "direction": "held",
+      "status": "Snapshot",
+      "detail": "2.83% reported company equity",
+      "qualification": "A dated shareholder observation, not evidence of a purchase or sale.",
+      "sourceIds": [
+        "holdings"
+      ]
+    },
+    {
+      "id": "phantomfx-snapshot",
+      "companyId": "phantomfx",
+      "date": "2026-06-30",
+      "dateLabel": "30 Jun 2026",
+      "title": "Reported ownership snapshot",
+      "kind": "snapshot",
+      "direction": "held",
+      "status": "Snapshot",
+      "detail": "1.01% reported company equity",
+      "qualification": "A dated shareholder observation, not evidence of a purchase or sale.",
+      "sourceIds": [
+        "holdings"
+      ]
+    },
+    {
+      "id": "company-21-snapshot",
+      "companyId": "company-21",
+      "date": "2026-06-30",
+      "dateLabel": "30 Jun 2026",
+      "title": "Reported ownership snapshot",
+      "kind": "snapshot",
+      "direction": "held",
+      "status": "Snapshot",
+      "detail": "1.01% reported company equity",
+      "qualification": "A dated shareholder observation, not evidence of a purchase or sale.",
+      "sourceIds": [
+        "holdings"
+      ]
+    },
+    {
+      "id": "company-22-snapshot",
+      "companyId": "company-22",
+      "date": "2026-06-30",
+      "dateLabel": "30 Jun 2026",
+      "title": "Reported ownership snapshot",
+      "kind": "snapshot",
+      "direction": "held",
+      "status": "Snapshot",
+      "detail": "2.67% reported company equity",
+      "qualification": "A dated shareholder observation, not evidence of a purchase or sale.",
+      "sourceIds": [
+        "holdings"
+      ]
+    },
+    {
+      "id": "company-23-snapshot",
+      "companyId": "company-23",
+      "date": "2026-06-30",
+      "dateLabel": "30 Jun 2026",
+      "title": "Reported ownership snapshot",
+      "kind": "snapshot",
+      "direction": "held",
+      "status": "Snapshot",
+      "detail": "1.91% reported company equity",
+      "qualification": "A dated shareholder observation, not evidence of a purchase or sale.",
+      "sourceIds": [
+        "holdings"
+      ]
+    },
+    {
+      "id": "duglobal-snapshot",
+      "companyId": "duglobal",
+      "date": "2026-03-31",
+      "dateLabel": "31 Mar 2026",
+      "title": "Reported ownership snapshot",
+      "kind": "snapshot",
+      "direction": "held",
+      "status": "Snapshot",
+      "detail": "4.53% reported company equity",
+      "qualification": "A dated shareholder observation, not evidence of a purchase or sale.",
+      "sourceIds": [
+        "holdings"
+      ]
+    },
+    {
+      "id": "service-snapshot",
+      "companyId": "service",
+      "date": "2026-03-31",
+      "dateLabel": "31 Mar 2026",
+      "title": "Reported ownership snapshot",
+      "kind": "snapshot",
+      "direction": "held",
+      "status": "Snapshot",
+      "detail": "1.05% reported company equity",
+      "qualification": "A dated shareholder observation, not evidence of a purchase or sale.",
+      "sourceIds": [
+        "holdings"
+      ]
+    }
+  ],
+  "report": {
+    "title": "Unico Global Opportunities Fund Limited · India holdings",
+    "summary": "Selected Indian-listed company disclosures for the named fund, with company-equity percentages and original reporting dates. No parent affiliation or investment strategy is inferred.",
+    "sections": [
+      {
+        "title": "Disclosed company exposure",
+        "text": "26 dated company records. Each percentage refers to ownership of the investee company, not allocation within the fund.",
+        "sourceIds": [
+          "holdings"
+        ]
+      },
+      {
+        "title": "Holder identity",
+        "text": "The profile follows Unico Global Opportunities Fund Limited. Similar fund names, other legal vehicles and common holdings are kept separate.",
+        "sourceIds": [
+          "holdings"
+        ]
+      },
+      {
+        "title": "Evidence and dates",
+        "text": "Shareholder records are secondary transcriptions pending original-filing reconciliation. Quarter-end ownership does not establish purchases or sales, and earlier records remain explicitly dated.",
+        "sourceIds": [
+          "holdings"
+        ]
+      }
+    ],
+    "themes": [
+      {
+        "name": "Disclosure follow-up",
+        "conviction": "Research watch",
+        "case": "Review the next company shareholding pattern to establish whether each named holding persists.",
+        "watch": "Exact legal shareholder, capital basis, corporate actions and the original filing date.",
+        "sourceIds": [
+          "holdings"
+        ]
+      }
+    ]
+  }
+}

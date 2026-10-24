@@ -1,0 +1,256 @@
+{
+  "id": "caladium-investment",
+  "name": "Caladium Investment Pte Ltd",
+  "asOf": "2026-10-24",
+  "checkedAt": "2026-10-24T04:48:16.144196+00:00",
+  "windowStart": "2025-10-24",
+  "windowEnd": "2026-10-24",
+  "coverage": "4 selected Indian-listed company records for Caladium Investment Pte Ltd. Named-holder coverage only; not a complete portfolio. Each record retains its disclosure date and ownership basis.",
+  "limitations": [
+    "Selected public disclosures, not a complete portfolio or a real-time ownership register.",
+    "Reported stakes are secondary transcriptions. Original exchange filings were not retrieved in this review.",
+    "Company-equity ownership, fund allocation and shares sold are different measures and are never combined.",
+    "This profile follows the named legal shareholder Caladium Investment Pte Ltd, including the punctuation variant Caladium Investment Pte. Ltd. Holdings are not combined with Government of Singapore or GIC records. Ather’s September company stake differs from the post-sale August percentage because the reporting dates and capital bases differ.",
+    "ABFRL is a June 2026 record; Bandhan Bank is a March 2026 post-sale record. Neither is presented as a September holding."
+  ],
+  "sources": {
+    "context": {
+      "title": "ABFRL annual report — Caladium warrant conversion",
+      "url": "https://www.abfrl.com/wp-content/uploads/2024/08/ABFRL-AR-2023-24-Final.pdf",
+      "publisher": "Aditya Birla Fashion and Retail",
+      "published": "Reviewed 24 Oct 2026; historical report where stated",
+      "kind": "primary",
+      "note": "Context only; does not verify the quarter-end ownership percentages."
+    },
+    "atherenerg": {
+      "title": "Ather Energy Limited — named shareholder disclosure",
+      "url": "https://block.deal/companies/ather-energy/",
+      "publisher": "block.deal",
+      "published": "30 Sep 2026",
+      "kind": "reporting",
+      "note": "Secondary transcription; original exchange filing not retrieved. "
+    },
+    "ablbl": {
+      "title": "Aditya Birla Lifestyle Brands Limited — named shareholder disclosure",
+      "url": "https://block.deal/companies/ablbl/",
+      "publisher": "block.deal",
+      "published": "30 Sep 2026",
+      "kind": "reporting",
+      "note": "Secondary transcription; original exchange filing not retrieved. "
+    },
+    "abfrl": {
+      "title": "Aditya Birla Fashion and Retail Limited — named shareholder disclosure",
+      "url": "https://www.way2wealth.com/company-information/shareholdingpatternnew/aditya-birla-fashion-and-retail-ltd",
+      "publisher": "Way2Wealth",
+      "published": "30 Jun 2026",
+      "kind": "reporting",
+      "note": "Secondary transcription; original exchange filing not retrieved. "
+    },
+    "bandhanbnk": {
+      "title": "Bandhan Bank Limited — named shareholder disclosure",
+      "url": "https://www.whalesbook.com/company/announcements/BANDHANBNK",
+      "publisher": "Whalesbook",
+      "published": "20 Mar 2026",
+      "kind": "reporting",
+      "note": "Secondary transcription; original exchange filing not retrieved. Historical post-sale voting-capital percentage; not a September holding."
+    },
+    "ather-sale": {
+      "title": "Caladium’s Ather Energy disposal disclosure",
+      "url": "https://www.whalesbook.com/company/announcements/ATHERENERG",
+      "publisher": "Whalesbook",
+      "published": "1 Sep 2026; transaction 28 Aug 2026",
+      "kind": "reporting",
+      "note": "Secondary report of a SAST disclosure. The original filing was not retrieved. August post-sale percentage is not a September ownership figure."
+    }
+  },
+  "companies": [
+    {
+      "id": "atherenerg",
+      "name": "Ather Energy Limited",
+      "ticker": "ATHERENERG",
+      "listing": "Listed equity",
+      "sector": "Electric vehicles",
+      "relationship": "Named shareholder: Caladium Investment Pte Ltd",
+      "ownership": "3.23% reported company equity",
+      "ownershipDate": "30 Sep 2026 · secondary disclosure; original filing not retrieved",
+      "stakePercent": 3.23,
+      "stance": "reduced",
+      "summary": "Caladium Investment Pte Ltd is reported as a shareholder of Ather Energy Limited at 30 Sep 2026. The September record reports 12,828,267 shares. A reported August sale is recorded separately and is not treated as a full exit.",
+      "thesis": "Disclosed exposure to electric vehicles. The shareholder record does not establish an investment rationale.",
+      "risks": "Dated public disclosure, not a live position. Missing holdings do not establish an exit. ",
+      "sourceIds": [
+        "atherenerg",
+        "ather-sale"
+      ]
+    },
+    {
+      "id": "ablbl",
+      "name": "Aditya Birla Lifestyle Brands Limited",
+      "ticker": "ABLBL",
+      "listing": "Listed equity",
+      "sector": "Retail",
+      "relationship": "Named shareholder: Caladium Investment Pte. Ltd. (punctuation variant)",
+      "ownership": "5.39% reported company equity",
+      "ownershipDate": "30 Sep 2026 · secondary disclosure; original filing not retrieved",
+      "stakePercent": 5.39,
+      "stance": "held",
+      "summary": "Caladium Investment Pte Ltd is reported as a shareholder of Aditya Birla Lifestyle Brands Limited at 30 Sep 2026.",
+      "thesis": "Disclosed exposure to retail. The shareholder record does not establish an investment rationale.",
+      "risks": "Dated public disclosure, not a live position. Missing holdings do not establish an exit. ",
+      "sourceIds": [
+        "ablbl"
+      ]
+    },
+    {
+      "id": "abfrl",
+      "name": "Aditya Birla Fashion and Retail Limited",
+      "ticker": "ABFRL",
+      "listing": "Listed equity",
+      "sector": "Retail",
+      "relationship": "Named shareholder: Caladium Investment Pte. Ltd. (punctuation variant)",
+      "ownership": "3.29% reported company equity",
+      "ownershipDate": "30 Jun 2026 · secondary disclosure; original filing not retrieved",
+      "stakePercent": 3.29,
+      "stance": "held",
+      "summary": "Caladium Investment Pte Ltd is reported as a shareholder of Aditya Birla Fashion and Retail Limited at 30 Jun 2026. Historical observation; a September holding has not been confirmed in this review.",
+      "thesis": "Disclosed exposure to retail. The shareholder record does not establish an investment rationale.",
+      "risks": "Dated public disclosure, not a live position. Missing holdings do not establish an exit. Historical record awaiting a newer disclosure.",
+      "sourceIds": [
+        "abfrl"
+      ]
+    },
+    {
+      "id": "bandhanbnk",
+      "name": "Bandhan Bank Limited",
+      "ticker": "BANDHANBNK",
+      "listing": "Listed equity",
+      "sector": "Banking",
+      "relationship": "Named shareholder: Caladium Investment Pte Ltd",
+      "ownership": "3.736% reported voting capital after sale",
+      "ownershipDate": "20 Mar 2026 · secondary disclosure; original filing not retrieved",
+      "stakePercent": 3.736,
+      "stance": "reduced",
+      "summary": "Caladium Investment Pte Ltd is reported as a shareholder of Bandhan Bank Limited at 20 Mar 2026. Historical observation; a September holding has not been confirmed in this review.",
+      "thesis": "Disclosed exposure to banking. The shareholder record does not establish an investment rationale.",
+      "risks": "Dated public disclosure, not a live position. Missing holdings do not establish an exit. Historical record awaiting a newer disclosure.",
+      "sourceIds": [
+        "bandhanbnk"
+      ]
+    }
+  ],
+  "events": [
+    {
+      "id": "atherenerg-snapshot",
+      "companyId": "atherenerg",
+      "date": "2026-09-30",
+      "dateLabel": "30 Sep 2026",
+      "title": "Reported holding snapshot",
+      "kind": "snapshot",
+      "direction": "held",
+      "status": "Snapshot",
+      "detail": "3.23% reported company equity",
+      "qualification": "Named-holder observation only. No purchases or sales inferred from the percentage.",
+      "sourceIds": [
+        "atherenerg"
+      ]
+    },
+    {
+      "id": "ablbl-snapshot",
+      "companyId": "ablbl",
+      "date": "2026-09-30",
+      "dateLabel": "30 Sep 2026",
+      "title": "Reported holding snapshot",
+      "kind": "snapshot",
+      "direction": "held",
+      "status": "Snapshot",
+      "detail": "5.39% reported company equity",
+      "qualification": "Named-holder observation only. No purchases or sales inferred from the percentage.",
+      "sourceIds": [
+        "ablbl"
+      ]
+    },
+    {
+      "id": "abfrl-snapshot",
+      "companyId": "abfrl",
+      "date": "2026-06-30",
+      "dateLabel": "30 Jun 2026",
+      "title": "Reported holding snapshot",
+      "kind": "snapshot",
+      "direction": "held",
+      "status": "Snapshot",
+      "detail": "3.29% reported company equity",
+      "qualification": "Named-holder observation only. No purchases or sales inferred from the percentage.",
+      "sourceIds": [
+        "abfrl"
+      ]
+    },
+    {
+      "id": "bandhanbnk-snapshot",
+      "companyId": "bandhanbnk",
+      "date": "2026-03-20",
+      "dateLabel": "20 Mar 2026",
+      "title": "Reported holding snapshot",
+      "kind": "snapshot",
+      "direction": "held",
+      "status": "Snapshot",
+      "detail": "3.736% reported voting capital after sale",
+      "qualification": "Named-holder observation only. No purchases or sales inferred from the percentage.",
+      "sourceIds": [
+        "bandhanbnk"
+      ]
+    },
+    {
+      "id": "ather-sale",
+      "companyId": "atherenerg",
+      "date": "2026-08-28",
+      "dateLabel": "28 Aug 2026",
+      "title": "Reported partial disposal of Ather shares",
+      "kind": "equity",
+      "direction": "reduced",
+      "status": "Reported",
+      "detail": "12,074,306 shares reportedly sold; 12,828,267 shares retained at the time, representing 3.24% on the then-reported capital base.",
+      "qualification": "A partial sale, not a full exit. The later September snapshot reports 3.23%; dates and denominators must remain distinct.",
+      "sourceIds": [
+        "ather-sale"
+      ]
+    }
+  ],
+  "report": {
+    "title": "Caladium Investment Pte Ltd · India exposure",
+    "summary": "This profile follows the named legal shareholder Caladium Investment Pte Ltd, including the punctuation variant Caladium Investment Pte. Ltd. Holdings are not combined with Government of Singapore or GIC records. Ather’s September company stake differs from the post-sale August percentage because the reporting dates and capital bases differ.",
+    "sections": [
+      {
+        "title": "Public company holdings",
+        "text": "4 selected company records with named-holder attribution and dated ownership. Coverage can omit positions below disclosure thresholds or where newer documents have not been retrieved.",
+        "sourceIds": [
+          "atherenerg"
+        ]
+      },
+      {
+        "title": "Identity and measurement",
+        "text": "This profile follows the named legal shareholder Caladium Investment Pte Ltd, including the punctuation variant Caladium Investment Pte. Ltd. Holdings are not combined with Government of Singapore or GIC records. Ather’s September company stake differs from the post-sale August percentage because the reporting dates and capital bases differ.",
+        "sourceIds": [
+          "context"
+        ]
+      },
+      {
+        "title": "Evidence quality",
+        "text": "Ownership figures remain reported until reconciled with original filings. A quarterly position is not evidence of a transaction. A reviewed date does not refresh historical ownership.",
+        "sourceIds": [
+          "atherenerg"
+        ]
+      }
+    ],
+    "themes": [
+      {
+        "name": "Next disclosure review",
+        "conviction": "Research watch",
+        "case": "Track subsequent company filings to establish whether each named holding persists.",
+        "watch": "Exact shareholder, reporting date, capital basis and source revisions.",
+        "sourceIds": [
+          "atherenerg"
+        ]
+      }
+    ]
+  }
+}

@@ -13,7 +13,7 @@ require.extensions['.tsx']=(m,f)=>m._compile(ts.transpile(fs.readFileSync(f,'utf
  const company=id=>data.companies.find(c=>c.id===id);assert.equal(company('federal').stakePercent,null);assert.equal(company('mphasis').stakePercent,30.53);assert.equal(company('novigo').stakePercent,null);assert.equal(company('rcb').stakePercent,null);assert.equal(company('epl').stance,'exited');
  assert.equal(data.events.find(e=>e.id==='sageone-sign').status,'Announced');assert.equal(data.events.find(e=>e.id==='ace-report').status,'Timing uncertain');assert.equal(data.events.find(e=>e.id==='horizon-ipo').direction,'reduced');
  const auth=require('../lib/access.ts'),store=require('../lib/foreign-investor-store.ts'),api=require('../app/api/foreign-investors/route.ts');
- assert.equal((await api.GET(new Request('https://test/api/foreign-investors'))).status,401);
+ assert.equal((await api.GET(new Request('https://test/api/foreign-investors'))).status,200);
  assert.equal((await api.GET(new Request('https://test/api/foreign-investors?id=unknown',{headers:{'x-fund-update-key':runtime.env.UPDATE_KEY}}))).status,404);
  let response=await api.GET(new Request('https://test/api/foreign-investors',{headers:{'x-fund-update-key':runtime.env.UPDATE_KEY}}));assert.equal(response.status,200);assert.equal((await response.json()).companies.length,38);assert.equal(response.headers.get('cache-control'),'private, no-store');
  const row=runtime.sqlite.prepare("SELECT payload FROM app_documents WHERE key='foreign-investor:blackstone'").get();assert(row);assert.equal(JSON.parse(row.payload).events.length,37);
@@ -39,7 +39,42 @@ require.extensions['.tsx']=(m,f)=>m._compile(ts.transpile(fs.readFileSync(f,'utf
  assert.equal(adia.companies.find(c=>c.id==='idfc-first').stakePercent,null);
  assert.equal(kkr.companies.find(c=>c.id==='cisternina').stance,'proposed');
  assert.equal(kkr.companies.find(c=>c.id==='hcg').stakePercent,null,'Agreement percentage must not be promoted to a current holding');
+ const gs=datasets.find(d=>d.id==='goldman-sachs');
+ assert.equal(gs.companies.length,8);assert.equal(gs.companies.filter(c=>c.listing.startsWith('Listed')).length,6);
+ for(const c of gs.companies.filter(c=>c.listing.startsWith('Listed'))){assert(c.relationship.includes('client')||c.relationship.includes('Managed-fund'));assert(c.ownership.includes('reported'));assert(c.ownershipDate.includes('original filing not retrieved'));assert(c.sourceIds.some(id=>gs.sources[id].kind==='reporting'));}
+ assert.equal(gs.companies.find(c=>c.id==='moengage').stakePercent,null);assert.equal(gs.companies.find(c=>c.id==='aragen').stakePercent,null);
+ assert(gs.companies.find(c=>c.id==='medi-assist').ownershipDate.startsWith('30 Jun 2026'));
+ assert.equal(logic.selectForeignCompanies(gs,{...base,query:'Pricol'}).length,1);
+ assert.equal(logic.selectForeignCompanies(gs,{...base,listing:'private'}).length,2);
+ const government=datasets.find(d=>d.id==='government-of-singapore'),amansa=datasets.find(d=>d.id==='amansa-holdings');
+ assert.equal(government.companies.length,33);assert.equal(amansa.companies.length,24);
+ assert.equal(government.companies.find(c=>c.ticker==='SEDEMAC').stakePercent,2.32);
+ assert.equal(amansa.companies.find(c=>c.ticker==='SEDEMAC').stakePercent,1.05);
+ assert.equal(amansa.companies.find(c=>c.ticker==='ESCORTS').stakePercent,null,'Conflicting percentages must remain unresolved');
+ assert(amansa.companies.find(c=>c.ticker==='KIRLPNU').ownershipDate.startsWith('30 Jun 2026'));
+ assert(amansa.companies.every(c=>c.relationship==='Named shareholder: Amansa Holdings Private Limited'));
+ assert(!amansa.companies.some(c=>c.ticker==='SWIGGY'||c.ticker==='AEQUS'),'Other Amansa vehicles must not be attributed to this holder');
+ assert([...government.companies,...amansa.companies].every(c=>c.ownershipDate.includes('original filing not retrieved')));
+ assert([...government.events,...amansa.events].every(e=>e.kind==='snapshot'),'A holding snapshot does not establish trading direction');
+ const monsoon=datasets.find(d=>d.id==='adia-monsoon'),caladium=datasets.find(d=>d.id==='caladium-investment'),world=datasets.find(d=>d.id==='smallcap-world-fund');
+ assert.equal(monsoon.companies.length,8);assert(monsoon.companies.every(c=>c.relationship.includes(' - Monsoon')));assert(!monsoon.companies.some(c=>c.ticker==='CAMS'),'ADIA Way must not become Monsoon');
+ assert.equal(caladium.companies.find(c=>c.ticker==='ATHERENERG').stakePercent,3.23);assert(caladium.companies.find(c=>c.ticker==='ABFRL').ownershipDate.startsWith('30 Jun 2026'));assert(caladium.companies.find(c=>c.ticker==='BANDHANBNK').ownershipDate.startsWith('20 Mar 2026'));assert(caladium.events.find(e=>e.id==='ather-sale').detail.includes('3.24%'));
+ assert.equal(world.companies.length,11);assert.equal(world.companies.find(c=>c.ticker==='APLAPOLLO').stakePercent,4.24);assert(world.companies.find(c=>c.ticker==='SHAILY').ownership.startsWith('Approximately 7.8%'));
+ const ebisu=datasets.find(d=>d.id==='ebisu-global-opportunities'),unico=datasets.find(d=>d.id==='unico-global-opportunities');
+ assert.equal(ebisu.companies.length,17);assert.equal(unico.companies.length,26);
+ assert.equal(ebisu.companies.find(c=>c.ticker==='MICEL').stakePercent,8.65);assert.equal(unico.companies.find(c=>c.ticker==='MICEL').stakePercent,8.10);
+ assert.equal(unico.companies.find(c=>c.ticker==='PCJEWELLER').stakePercent,3.13);assert.equal(ebisu.companies.find(c=>c.ticker==='ELITECON').stakePercent,4.71);
+ assert(unico.companies.find(c=>c.ticker==='SERVICE').ownershipDate.startsWith('31 Mar 2026'));assert(ebisu.companies.find(c=>c.name.startsWith('NTC')).ownershipDate.startsWith('30 Jun 2026'));
+ assert([...ebisu.events,...unico.events].every(e=>e.kind==='snapshot'));
+ const newIds=['synnex-technology','fidelity-low-priced-stock','fidelity-international-small-cap','government-pension-fund-global','massachusetts-institute-of-technology','rbc-emerging-markets-dividend','vanguard-emerging-markets-stock-index'];
+ for(const id of newIds){const d=datasets.find(d=>d.id===id);assert(d);assert(d.companies.every(c=>c.ownershipDate.startsWith('30 Sep 2026')));assert(d.companies.some(c=>c.ticker==='REDINGTON'));}
+ assert.equal(datasets.find(d=>d.id==='synnex-technology').companies[0].stakePercent,24.12);
+ assert(datasets.find(d=>d.id==='synnex-technology').companies[0].relationship.startsWith('Strategic corporate shareholder'));
+ assert.equal(datasets.find(d=>d.id==='fidelity-low-priced-stock').companies[0].stakePercent,2.65);
+ assert.equal(datasets.find(d=>d.id==='fidelity-international-small-cap').companies[0].stakePercent,2.05);
+ assert.equal(datasets.find(d=>d.id==='rbc-emerging-markets-dividend').companies.find(c=>c.ticker==='REDINGTON').stakePercent,1.22,'Fund weight must not be used as company ownership');
  const aggregate=logic.aggregateForeignResearch(datasets);logic.validateForeignResearch(aggregate);
+ assert(logic.selectForeignCompanies(aggregate,{...base,query:'MoEngage'}).some(c=>c.investorName==='Goldman Sachs'));
  assert.equal(aggregate.companies.length,datasets.reduce((sum,d)=>sum+d.companies.length,0));
  assert.equal(new Set(aggregate.companies.map(c=>c.id)).size,aggregate.companies.length,'Investor-specific company records cannot collide');
  assert.equal(new Set(aggregate.events.map(e=>e.id)).size,aggregate.events.length);
@@ -51,11 +86,11 @@ require.extensions['.tsx']=(m,f)=>m._compile(ts.transpile(fs.readFileSync(f,'utf
  const cookie=auth.sessionCookie+'='+await auth.createSession();
  Module._load=function(id,...args){return id==='next/headers'?{headers:async()=>new Headers({cookie})}:originalLoad.call(this,id,...args);};
  const page=await require('../app/foreign-investors/page.tsx').default();
- assert.equal(page.props.datasets.length,8);assert(renderToStaticMarkup(page).includes('BlackRock'));for(const name of ['KKR','Brookfield','ADIA','CPP Investments'])assert(renderToStaticMarkup(page).includes(name));
+ assert.equal(page.props.datasets.length,23);assert(renderToStaticMarkup(page).includes('BlackRock'));for(const name of ['KKR','Brookfield','ADIA','CPP Investments','Goldman Sachs','Government of Singapore','Amansa Holdings Private Limited'])assert(renderToStaticMarkup(page).includes(name));
  const blackrock=datasets.find(item=>item.id==='blackrock');assert.equal(blackrock.companies.length,11);assert(blackrock.companies.every(item=>item.stakePercent===null));assert(blackrock.companies.some(item=>item.id==='ather-energy'));assert.equal(blackrock.events[0].date,'2026-08-31');
  Module._load=originalLoad;
  assert(html.includes('Foreign investor portfolios'));assert(html.includes('holdings table'));assert(html.includes('foreign-sidebar'));assert(!html.includes('foreign-investor-overview'));assert(!html.includes('foreign-company-grid')); // Sidebar navigation with table coverage by default.
  assert(html.indexOf('Aadhar Housing Finance')<html.indexOf('The Federal Bank'));
  const invalid=structuredClone(data);invalid.events[0].sourceIds=['missing'];assert.throws(()=>logic.validateForeignResearch(invalid));
- console.log('Foreign investors verified: eight registered investors; 23 new company/platform records; source integrity; filters and aggregation; ownership safeguards; authenticated APIs; D1 persistence and newer-record protection; page rendering.');
+ console.log('Foreign investors verified: twenty-three registered profiles; all seven new named investors included; source integrity; filters and aggregation; ownership safeguards; authenticated APIs; D1 persistence and newer-record protection; page rendering.');
 })().catch(e=>{console.error(e);process.exitCode=1;});

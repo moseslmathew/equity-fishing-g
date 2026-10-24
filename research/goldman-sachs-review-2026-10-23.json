@@ -1,0 +1,78 @@
+{
+  "scope": "Selected India exposure: six listed-company records through the client-managed India Equity Portfolio and two private/India-linked investment relationships. Named holder, reporting date and evidence quality remain visible.",
+  "checkedAt": "2026-10-23T14:13:05.499045+00:00",
+  "unresolved": [
+    "Selective public records, not a complete Goldman Sachs portfolio, beneficial-ownership register or real-time exposure report.",
+    "Managed-fund holdings and Alternatives investments are distinct. None of these records establishes that the position is financed solely with Goldman Sachs proprietary capital.",
+    "Listed percentages are secondary transcriptions: five September 2026 records and one historical June 2026 record. Original exchange filings could not be retrieved; these figures remain reported, not independently reconciled.",
+    "Review date is not ownership date. Missing percentages remain unknown; absence from a public disclosure does not establish an exit.",
+    "Portfolio weights, investee-company stakes, financing round sizes and investment-banking mandates are different measures and are not combined."
+  ],
+  "records": [
+    {
+      "id": "aurionpro",
+      "ownership": "2.54% reported company stake \u00b7 India Equity Portfolio",
+      "ownershipDate": "30 Sep 2026 \u00b7 secondary disclosure; original filing not retrieved",
+      "sourceIds": [
+        "aurionpro"
+      ]
+    },
+    {
+      "id": "india-shelter",
+      "ownership": "2.39% reported company stake \u00b7 India Equity Portfolio",
+      "ownershipDate": "30 Sep 2026 \u00b7 secondary disclosure; original filing not retrieved",
+      "sourceIds": [
+        "india-shelter"
+      ]
+    },
+    {
+      "id": "pricol",
+      "ownership": "3.02% reported company stake \u00b7 India Equity Portfolio",
+      "ownershipDate": "30 Sep 2026 \u00b7 secondary disclosure; original filing not retrieved",
+      "sourceIds": [
+        "pricol"
+      ]
+    },
+    {
+      "id": "sjs",
+      "ownership": "2.84% reported company stake \u00b7 India Equity Portfolio",
+      "ownershipDate": "30 Sep 2026 \u00b7 secondary disclosure; original filing not retrieved",
+      "sourceIds": [
+        "sjs"
+      ]
+    },
+    {
+      "id": "td-power",
+      "ownership": "1.44% reported company stake \u00b7 India Equity Portfolio",
+      "ownershipDate": "30 Sep 2026 \u00b7 secondary disclosure; original filing not retrieved",
+      "sourceIds": [
+        "td-power"
+      ]
+    },
+    {
+      "id": "medi-assist",
+      "ownership": "5.18% reported company stake \u00b7 India Equity Portfolio",
+      "ownershipDate": "30 Jun 2026 \u00b7 secondary disclosure; original filing not retrieved",
+      "sourceIds": [
+        "medi-assist"
+      ]
+    },
+    {
+      "id": "moengage",
+      "ownership": "Investment confirmed; retained percentage undisclosed",
+      "ownershipDate": "5 Nov 2025 investment announcement",
+      "sourceIds": [
+        "moengage"
+      ]
+    },
+    {
+      "id": "aragen",
+      "ownership": "Historical investment confirmed; current percentage unverified",
+      "ownershipDate": "13 Jan 2025 company confirmation; initial investment 2021",
+      "sourceIds": [
+        "aragen",
+        "aragen-history"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,355 @@
+{
+  "id": "government-pension-fund-global",
+  "name": "Government Pension Fund Global",
+  "asOf": "2026-10-24",
+  "checkedAt": "2026-10-24T04:58:51.898430+00:00",
+  "windowStart": "2025-10-24",
+  "windowEnd": "2026-10-24",
+  "coverage": "Sovereign investment fund. 7 selected Indian-listed holdings under the exact named shareholder, with dated company-equity percentages.",
+  "limitations": [
+    "Selected public named-holder records, not a complete portfolio or real-time ownership register.",
+    "September percentages are secondary transcriptions. Original exchange filings were not retrieved or independently reconciled during this review.",
+    "The review date is separate from the ownership date. Absence from a disclosure does not establish an exit.",
+    "Norway’s Government Pension Fund Global. This named sovereign-fund record is separate from Government of Singapore and other sovereign investors.",
+    "Fund portfolio weights, investee-company stakes, share classes and manager-level exposure are different measures and are never combined."
+  ],
+  "sources": {
+    "redington": {
+      "title": "Redington Limited — September 2026 named shareholders",
+      "url": "https://block.deal/companies/redington/",
+      "publisher": "block.deal",
+      "published": "30 Sep 2026; reviewed 24 Oct 2026",
+      "kind": "reporting",
+      "note": "Secondary transcription with original exchange evidence links. Original exchange documents were not retrieved in this review; reported percentage is not independently reconciled."
+    },
+    "mphasis": {
+      "title": "Mphasis Limited — September 2026 named shareholders",
+      "url": "https://block.deal/entities/government-pension-fund-global/",
+      "publisher": "block.deal",
+      "published": "30 Sep 2026; reviewed 24 Oct 2026",
+      "kind": "reporting",
+      "note": "Secondary transcription with original exchange evidence links. Original exchange documents were not retrieved in this review; reported percentage is not independently reconciled."
+    },
+    "persistent": {
+      "title": "Persistent Systems Limited — September 2026 named shareholders",
+      "url": "https://block.deal/entities/government-pension-fund-global/",
+      "publisher": "block.deal",
+      "published": "30 Sep 2026; reviewed 24 Oct 2026",
+      "kind": "reporting",
+      "note": "Secondary transcription with original exchange evidence links. Original exchange documents were not retrieved in this review; reported percentage is not independently reconciled."
+    },
+    "crompton": {
+      "title": "Crompton Greaves Consumer Electricals Limited — September 2026 named shareholders",
+      "url": "https://block.deal/entities/government-pension-fund-global/",
+      "publisher": "block.deal",
+      "published": "30 Sep 2026; reviewed 24 Oct 2026",
+      "kind": "reporting",
+      "note": "Secondary transcription with original exchange evidence links. Original exchange documents were not retrieved in this review; reported percentage is not independently reconciled."
+    },
+    "exideind": {
+      "title": "Exide Industries Limited — September 2026 named shareholders",
+      "url": "https://block.deal/entities/government-pension-fund-global/",
+      "publisher": "block.deal",
+      "published": "30 Sep 2026; reviewed 24 Oct 2026",
+      "kind": "reporting",
+      "note": "Secondary transcription with original exchange evidence links. Original exchange documents were not retrieved in this review; reported percentage is not independently reconciled."
+    },
+    "thomascook": {
+      "title": "Thomas Cook (India) Limited — September 2026 named shareholders",
+      "url": "https://block.deal/entities/government-pension-fund-global/",
+      "publisher": "block.deal",
+      "published": "30 Sep 2026; reviewed 24 Oct 2026",
+      "kind": "reporting",
+      "note": "Secondary transcription with original exchange evidence links. Original exchange documents were not retrieved in this review; reported percentage is not independently reconciled."
+    },
+    "concordbio": {
+      "title": "Concord Biotech Limited — September 2026 named shareholders",
+      "url": "https://block.deal/entities/government-pension-fund-global/",
+      "publisher": "block.deal",
+      "published": "30 Sep 2026; reviewed 24 Oct 2026",
+      "kind": "reporting",
+      "note": "Secondary transcription with original exchange evidence links. Original exchange documents were not retrieved in this review; reported percentage is not independently reconciled."
+    },
+    "context": {
+      "title": "About Government Pension Fund Global",
+      "url": "https://www.nbim.no/en/about-us/about-the-fund/",
+      "publisher": "Norges Bank Investment Management",
+      "published": "Reviewed 24 Oct 2026",
+      "kind": "primary",
+      "note": "Fund identity and mandate, not evidence of each September company percentage."
+    }
+  },
+  "companies": [
+    {
+      "id": "redington",
+      "name": "Redington Limited",
+      "listing": "Listed equity",
+      "sector": "Technology distribution",
+      "relationship": "Sovereign investment fund · Named shareholder: Government Pension Fund Global",
+      "ownership": "2.01% reported company equity",
+      "ownershipDate": "30 Sep 2026 · secondary disclosure; original filing not retrieved",
+      "stakePercent": 2.01,
+      "stance": "held",
+      "summary": "Government Pension Fund Global is reported as a shareholder of Redington Limited at 30 Sep 2026. Norway’s Government Pension Fund Global. This named sovereign-fund record is separate from Government of Singapore and other sovereign investors.",
+      "thesis": "Disclosed exposure to technology distribution. The register does not establish an investment rationale.",
+      "risks": "A quarter-end observation, not live ownership. Disclosure thresholds, corporate actions and changes in capital can affect reported percentages.",
+      "sourceIds": [
+        "redington"
+      ],
+      "ticker": "REDINGTON"
+    },
+    {
+      "id": "mphasis",
+      "name": "Mphasis Limited",
+      "listing": "Listed equity",
+      "sector": "Information technology",
+      "relationship": "Sovereign investment fund · Named shareholder: Government Pension Fund Global",
+      "ownership": "1.52% reported company equity",
+      "ownershipDate": "30 Sep 2026 · secondary disclosure; original filing not retrieved",
+      "stakePercent": 1.52,
+      "stance": "held",
+      "summary": "Government Pension Fund Global is reported as a shareholder of Mphasis Limited at 30 Sep 2026. Norway’s Government Pension Fund Global. This named sovereign-fund record is separate from Government of Singapore and other sovereign investors.",
+      "thesis": "Disclosed exposure to information technology. The register does not establish an investment rationale.",
+      "risks": "A quarter-end observation, not live ownership. Disclosure thresholds, corporate actions and changes in capital can affect reported percentages.",
+      "sourceIds": [
+        "mphasis"
+      ],
+      "ticker": "MPHASIS"
+    },
+    {
+      "id": "persistent",
+      "name": "Persistent Systems Limited",
+      "listing": "Listed equity",
+      "sector": "Information technology",
+      "relationship": "Sovereign investment fund · Named shareholder: Government Pension Fund Global",
+      "ownership": "1.22% reported company equity",
+      "ownershipDate": "30 Sep 2026 · secondary disclosure; original filing not retrieved",
+      "stakePercent": 1.22,
+      "stance": "held",
+      "summary": "Government Pension Fund Global is reported as a shareholder of Persistent Systems Limited at 30 Sep 2026. Norway’s Government Pension Fund Global. This named sovereign-fund record is separate from Government of Singapore and other sovereign investors.",
+      "thesis": "Disclosed exposure to information technology. The register does not establish an investment rationale.",
+      "risks": "A quarter-end observation, not live ownership. Disclosure thresholds, corporate actions and changes in capital can affect reported percentages.",
+      "sourceIds": [
+        "persistent"
+      ],
+      "ticker": "PERSISTENT"
+    },
+    {
+      "id": "crompton",
+      "name": "Crompton Greaves Consumer Electricals Limited",
+      "listing": "Listed equity",
+      "sector": "Consumer electricals",
+      "relationship": "Sovereign investment fund · Named shareholder: Government Pension Fund Global",
+      "ownership": "3.80% reported company equity",
+      "ownershipDate": "30 Sep 2026 · secondary disclosure; original filing not retrieved",
+      "stakePercent": 3.8,
+      "stance": "held",
+      "summary": "Government Pension Fund Global is reported as a shareholder of Crompton Greaves Consumer Electricals Limited at 30 Sep 2026. Norway’s Government Pension Fund Global. This named sovereign-fund record is separate from Government of Singapore and other sovereign investors.",
+      "thesis": "Disclosed exposure to consumer electricals. The register does not establish an investment rationale.",
+      "risks": "A quarter-end observation, not live ownership. Disclosure thresholds, corporate actions and changes in capital can affect reported percentages.",
+      "sourceIds": [
+        "crompton"
+      ],
+      "ticker": "CROMPTON"
+    },
+    {
+      "id": "exideind",
+      "name": "Exide Industries Limited",
+      "listing": "Listed equity",
+      "sector": "Batteries",
+      "relationship": "Sovereign investment fund · Named shareholder: Government Pension Fund Global",
+      "ownership": "2.28% reported company equity",
+      "ownershipDate": "30 Sep 2026 · secondary disclosure; original filing not retrieved",
+      "stakePercent": 2.28,
+      "stance": "held",
+      "summary": "Government Pension Fund Global is reported as a shareholder of Exide Industries Limited at 30 Sep 2026. Norway’s Government Pension Fund Global. This named sovereign-fund record is separate from Government of Singapore and other sovereign investors.",
+      "thesis": "Disclosed exposure to batteries. The register does not establish an investment rationale.",
+      "risks": "A quarter-end observation, not live ownership. Disclosure thresholds, corporate actions and changes in capital can affect reported percentages.",
+      "sourceIds": [
+        "exideind"
+      ],
+      "ticker": "EXIDEIND"
+    },
+    {
+      "id": "thomascook",
+      "name": "Thomas Cook (India) Limited",
+      "listing": "Listed equity",
+      "sector": "Travel services",
+      "relationship": "Sovereign investment fund · Named shareholder: Government Pension Fund Global",
+      "ownership": "3.32% reported company equity",
+      "ownershipDate": "30 Sep 2026 · secondary disclosure; original filing not retrieved",
+      "stakePercent": 3.32,
+      "stance": "held",
+      "summary": "Government Pension Fund Global is reported as a shareholder of Thomas Cook (India) Limited at 30 Sep 2026. Norway’s Government Pension Fund Global. This named sovereign-fund record is separate from Government of Singapore and other sovereign investors.",
+      "thesis": "Disclosed exposure to travel services. The register does not establish an investment rationale.",
+      "risks": "A quarter-end observation, not live ownership. Disclosure thresholds, corporate actions and changes in capital can affect reported percentages.",
+      "sourceIds": [
+        "thomascook"
+      ],
+      "ticker": "THOMASCOOK"
+    },
+    {
+      "id": "concordbio",
+      "name": "Concord Biotech Limited",
+      "listing": "Listed equity",
+      "sector": "Biotechnology",
+      "relationship": "Sovereign investment fund · Named shareholder: Government Pension Fund Global",
+      "ownership": "2.95% reported company equity",
+      "ownershipDate": "30 Sep 2026 · secondary disclosure; original filing not retrieved",
+      "stakePercent": 2.95,
+      "stance": "held",
+      "summary": "Government Pension Fund Global is reported as a shareholder of Concord Biotech Limited at 30 Sep 2026. Norway’s Government Pension Fund Global. This named sovereign-fund record is separate from Government of Singapore and other sovereign investors.",
+      "thesis": "Disclosed exposure to biotechnology. The register does not establish an investment rationale.",
+      "risks": "A quarter-end observation, not live ownership. Disclosure thresholds, corporate actions and changes in capital can affect reported percentages.",
+      "sourceIds": [
+        "concordbio"
+      ],
+      "ticker": "CONCORDBIO"
+    }
+  ],
+  "events": [
+    {
+      "id": "redington-snapshot",
+      "companyId": "redington",
+      "date": "2026-09-30",
+      "dateLabel": "30 Sep 2026",
+      "title": "Reported quarter-end ownership",
+      "kind": "snapshot",
+      "direction": "held",
+      "status": "Snapshot",
+      "detail": "2.01% reported company equity",
+      "qualification": "Ownership snapshot only; purchases or sales are not inferred.",
+      "sourceIds": [
+        "redington"
+      ]
+    },
+    {
+      "id": "mphasis-snapshot",
+      "companyId": "mphasis",
+      "date": "2026-09-30",
+      "dateLabel": "30 Sep 2026",
+      "title": "Reported quarter-end ownership",
+      "kind": "snapshot",
+      "direction": "held",
+      "status": "Snapshot",
+      "detail": "1.52% reported company equity",
+      "qualification": "Ownership snapshot only; purchases or sales are not inferred.",
+      "sourceIds": [
+        "mphasis"
+      ]
+    },
+    {
+      "id": "persistent-snapshot",
+      "companyId": "persistent",
+      "date": "2026-09-30",
+      "dateLabel": "30 Sep 2026",
+      "title": "Reported quarter-end ownership",
+      "kind": "snapshot",
+      "direction": "held",
+      "status": "Snapshot",
+      "detail": "1.22% reported company equity",
+      "qualification": "Ownership snapshot only; purchases or sales are not inferred.",
+      "sourceIds": [
+        "persistent"
+      ]
+    },
+    {
+      "id": "crompton-snapshot",
+      "companyId": "crompton",
+      "date": "2026-09-30",
+      "dateLabel": "30 Sep 2026",
+      "title": "Reported quarter-end ownership",
+      "kind": "snapshot",
+      "direction": "held",
+      "status": "Snapshot",
+      "detail": "3.80% reported company equity",
+      "qualification": "Ownership snapshot only; purchases or sales are not inferred.",
+      "sourceIds": [
+        "crompton"
+      ]
+    },
+    {
+      "id": "exideind-snapshot",
+      "companyId": "exideind",
+      "date": "2026-09-30",
+      "dateLabel": "30 Sep 2026",
+      "title": "Reported quarter-end ownership",
+      "kind": "snapshot",
+      "direction": "held",
+      "status": "Snapshot",
+      "detail": "2.28% reported company equity",
+      "qualification": "Ownership snapshot only; purchases or sales are not inferred.",
+      "sourceIds": [
+        "exideind"
+      ]
+    },
+    {
+      "id": "thomascook-snapshot",
+      "companyId": "thomascook",
+      "date": "2026-09-30",
+      "dateLabel": "30 Sep 2026",
+      "title": "Reported quarter-end ownership",
+      "kind": "snapshot",
+      "direction": "held",
+      "status": "Snapshot",
+      "detail": "3.32% reported company equity",
+      "qualification": "Ownership snapshot only; purchases or sales are not inferred.",
+      "sourceIds": [
+        "thomascook"
+      ]
+    },
+    {
+      "id": "concordbio-snapshot",
+      "companyId": "concordbio",
+      "date": "2026-09-30",
+      "dateLabel": "30 Sep 2026",
+      "title": "Reported quarter-end ownership",
+      "kind": "snapshot",
+      "direction": "held",
+      "status": "Snapshot",
+      "detail": "2.95% reported company equity",
+      "qualification": "Ownership snapshot only; purchases or sales are not inferred.",
+      "sourceIds": [
+        "concordbio"
+      ]
+    }
+  ],
+  "report": {
+    "title": "Government Pension Fund Global · India exposure",
+    "summary": "Sovereign investment fund. Norway’s Government Pension Fund Global. This named sovereign-fund record is separate from Government of Singapore and other sovereign investors.",
+    "sections": [
+      {
+        "title": "Dated Indian holdings",
+        "text": "7 selected September 2026 named-holder records. Coverage is selective and does not represent the investor’s complete India or global portfolio.",
+        "sourceIds": [
+          "redington"
+        ]
+      },
+      {
+        "title": "Holder identity",
+        "text": "Norway’s Government Pension Fund Global. This named sovereign-fund record is separate from Government of Singapore and other sovereign investors.",
+        "sourceIds": [
+          "context"
+        ]
+      },
+      {
+        "title": "Ownership basis",
+        "text": "All displayed percentages refer to reported investee-company equity. Fund allocations, other vehicles and transaction amounts are not added to these values. Secondary figures await original-filing reconciliation.",
+        "sourceIds": [
+          "redington"
+        ]
+      }
+    ],
+    "themes": [
+      {
+        "name": "Subsequent disclosure review",
+        "conviction": "Research watch",
+        "case": "Track the next company register for the same named shareholder.",
+        "watch": "Legal holder, reporting date, capital changes and original filings.",
+        "sourceIds": [
+          "redington"
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,1163 @@
+{
+  "id": "government-of-singapore",
+  "name": "Government of Singapore",
+  "asOf": "2026-10-24",
+  "checkedAt": "2026-10-24T04:29:52.516868+00:00",
+  "windowStart": "2025-10-24",
+  "windowEnd": "2026-10-24",
+  "coverage": "Named Indian-listed shareholder records. Ownership is a percentage of the investee company, not a portfolio allocation. Coverage is limited to individually disclosed public holdings.",
+  "limitations": [
+    "Public named holdings are not a complete portfolio. Reporting thresholds and missing filings leave positions unobserved.",
+    "Secondary shareholder transcriptions are labelled reported; original exchange filings could not be retrieved in this review.",
+    "Review date differs from ownership date. Absence from a disclosure does not establish zero ownership or an exit.",
+    "The Singapore Ministry of Finance says Government assets are mainly managed by GIC, while Temasek owns its own assets. This profile follows the named Government of Singapore shareholder; it is not an additional independent pool to add to GIC or Temasek exposure."
+  ],
+  "sources": {
+    "holdings": {
+      "title": "Named shareholder disclosures — Government of Singapore",
+      "url": "https://block.deal/entities/government-of-singapore/",
+      "publisher": "block.deal",
+      "published": "30 Sep 2026",
+      "kind": "reporting",
+      "note": "Secondary transcription with exchange filing links. Original exchange documents were not retrieved in this review; reported figures have not been independently reconciled."
+    },
+    "identity": {
+      "title": "Reserve management and institutional identity",
+      "url": "https://www.mof.gov.sg/policies/reserves/who-manages-the-reserves/",
+      "publisher": "Singapore Ministry of Finance",
+      "published": "Reviewed 24 Oct 2026",
+      "kind": "primary"
+    }
+  },
+  "companies": [
+    {
+      "id": "leapind",
+      "name": "LEAP India Limited",
+      "ticker": "LEAPIND",
+      "listing": "Listed equity",
+      "sector": "Logistics",
+      "relationship": "Named shareholder: Government of Singapore",
+      "ownership": "1.23% reported company equity",
+      "ownershipDate": "30 Sep 2026 · secondary disclosure; original filing not retrieved",
+      "stakePercent": 1.23,
+      "stance": "held",
+      "summary": "Government of Singapore is reported as a named shareholder of LEAP India Limited at 30 Sep 2026.",
+      "thesis": "Disclosed equity exposure to logistics. This record does not establish the investor’s investment rationale.",
+      "risks": "Quarter-end snapshot, not a live holding. Changes in ownership percentage alone do not establish purchases or sales.",
+      "sourceIds": [
+        "holdings"
+      ]
+    },
+    {
+      "id": "craftsman",
+      "name": "Craftsman Automation Limited",
+      "ticker": "CRAFTSMAN",
+      "listing": "Listed equity",
+      "sector": "Engineering",
+      "relationship": "Named shareholder: Government of Singapore",
+      "ownership": "2.71% reported company equity",
+      "ownershipDate": "30 Sep 2026 · secondary disclosure; original filing not retrieved",
+      "stakePercent": 2.71,
+      "stance": "held",
+      "summary": "Government of Singapore is reported as a named shareholder of Craftsman Automation Limited at 30 Sep 2026.",
+      "thesis": "Disclosed equity exposure to engineering. This record does not establish the investor’s investment rationale.",
+      "risks": "Quarter-end snapshot, not a live holding. Changes in ownership percentage alone do not establish purchases or sales.",
+      "sourceIds": [
+        "holdings"
+      ]
+    },
+    {
+      "id": "sedemac",
+      "name": "SEDEMAC Mechatronics Limited",
+      "ticker": "SEDEMAC",
+      "listing": "Listed equity",
+      "sector": "Automotive electronics",
+      "relationship": "Named shareholder: Government of Singapore",
+      "ownership": "2.32% reported company equity",
+      "ownershipDate": "30 Sep 2026 · secondary disclosure; original filing not retrieved",
+      "stakePercent": 2.32,
+      "stance": "held",
+      "summary": "Government of Singapore is reported as a named shareholder of SEDEMAC Mechatronics Limited at 30 Sep 2026.",
+      "thesis": "Disclosed equity exposure to automotive electronics. This record does not establish the investor’s investment rationale.",
+      "risks": "Quarter-end snapshot, not a live holding. Changes in ownership percentage alone do not establish purchases or sales.",
+      "sourceIds": [
+        "holdings"
+      ]
+    },
+    {
+      "id": "lt",
+      "name": "Larsen & Toubro Limited",
+      "ticker": "LT",
+      "listing": "Listed equity",
+      "sector": "Engineering",
+      "relationship": "Named shareholder: Government of Singapore",
+      "ownership": "1.53% reported company equity",
+      "ownershipDate": "30 Sep 2026 · secondary disclosure; original filing not retrieved",
+      "stakePercent": 1.53,
+      "stance": "held",
+      "summary": "Government of Singapore is reported as a named shareholder of Larsen & Toubro Limited at 30 Sep 2026.",
+      "thesis": "Disclosed equity exposure to engineering. This record does not establish the investor’s investment rationale.",
+      "risks": "Quarter-end snapshot, not a live holding. Changes in ownership percentage alone do not establish purchases or sales.",
+      "sourceIds": [
+        "holdings"
+      ]
+    },
+    {
+      "id": "vmm",
+      "name": "Vishal Mega Mart Limited",
+      "ticker": "VMM",
+      "listing": "Listed equity",
+      "sector": "Retail",
+      "relationship": "Named shareholder: Government of Singapore",
+      "ownership": "2.74% reported company equity",
+      "ownershipDate": "30 Sep 2026 · secondary disclosure; original filing not retrieved",
+      "stakePercent": 2.74,
+      "stance": "held",
+      "summary": "Government of Singapore is reported as a named shareholder of Vishal Mega Mart Limited at 30 Sep 2026.",
+      "thesis": "Disclosed equity exposure to retail. This record does not establish the investor’s investment rationale.",
+      "risks": "Quarter-end snapshot, not a live holding. Changes in ownership percentage alone do not establish purchases or sales.",
+      "sourceIds": [
+        "holdings"
+      ]
+    },
+    {
+      "id": "maxhealth",
+      "name": "Max Healthcare Institute Limited",
+      "ticker": "MAXHEALTH",
+      "listing": "Listed equity",
+      "sector": "Healthcare",
+      "relationship": "Named shareholder: Government of Singapore",
+      "ownership": "3.33% reported company equity",
+      "ownershipDate": "30 Sep 2026 · secondary disclosure; original filing not retrieved",
+      "stakePercent": 3.33,
+      "stance": "held",
+      "summary": "Government of Singapore is reported as a named shareholder of Max Healthcare Institute Limited at 30 Sep 2026.",
+      "thesis": "Disclosed equity exposure to healthcare. This record does not establish the investor’s investment rationale.",
+      "risks": "Quarter-end snapshot, not a live holding. Changes in ownership percentage alone do not establish purchases or sales.",
+      "sourceIds": [
+        "holdings"
+      ]
+    },
+    {
+      "id": "hindalco",
+      "name": "Hindalco Industries Limited",
+      "ticker": "HINDALCO",
+      "listing": "Listed equity",
+      "sector": "Metals",
+      "relationship": "Named shareholder: Government of Singapore",
+      "ownership": "2.56% reported company equity",
+      "ownershipDate": "30 Sep 2026 · secondary disclosure; original filing not retrieved",
+      "stakePercent": 2.56,
+      "stance": "held",
+      "summary": "Government of Singapore is reported as a named shareholder of Hindalco Industries Limited at 30 Sep 2026.",
+      "thesis": "Disclosed equity exposure to metals. This record does not establish the investor’s investment rationale.",
+      "risks": "Quarter-end snapshot, not a live holding. Changes in ownership percentage alone do not establish purchases or sales.",
+      "sourceIds": [
+        "holdings"
+      ]
+    },
+    {
+      "id": "hdfcbank",
+      "name": "HDFC Bank Limited",
+      "ticker": "HDFCBANK",
+      "listing": "Listed equity",
+      "sector": "Banking",
+      "relationship": "Named shareholder: Government of Singapore",
+      "ownership": "2.13% reported company equity",
+      "ownershipDate": "30 Sep 2026 · secondary disclosure; original filing not retrieved",
+      "stakePercent": 2.13,
+      "stance": "held",
+      "summary": "Government of Singapore is reported as a named shareholder of HDFC Bank Limited at 30 Sep 2026.",
+      "thesis": "Disclosed equity exposure to banking. This record does not establish the investor’s investment rationale.",
+      "risks": "Quarter-end snapshot, not a live holding. Changes in ownership percentage alone do not establish purchases or sales.",
+      "sourceIds": [
+        "holdings"
+      ]
+    },
+    {
+      "id": "sonacoms",
+      "name": "Sona BLW Precision Forgings Limited",
+      "ticker": "SONACOMS",
+      "listing": "Listed equity",
+      "sector": "Automotive components",
+      "relationship": "Named shareholder: Government of Singapore",
+      "ownership": "6.38% reported company equity",
+      "ownershipDate": "30 Sep 2026 · secondary disclosure; original filing not retrieved",
+      "stakePercent": 6.38,
+      "stance": "held",
+      "summary": "Government of Singapore is reported as a named shareholder of Sona BLW Precision Forgings Limited at 30 Sep 2026.",
+      "thesis": "Disclosed equity exposure to automotive components. This record does not establish the investor’s investment rationale.",
+      "risks": "Quarter-end snapshot, not a live holding. Changes in ownership percentage alone do not establish purchases or sales.",
+      "sourceIds": [
+        "holdings"
+      ]
+    },
+    {
+      "id": "samhi",
+      "name": "SAMHI Hotels Limited",
+      "ticker": "SAMHI",
+      "listing": "Listed equity",
+      "sector": "Hospitality",
+      "relationship": "Named shareholder: Government of Singapore",
+      "ownership": "6.36% reported company equity",
+      "ownershipDate": "30 Sep 2026 · secondary disclosure; original filing not retrieved",
+      "stakePercent": 6.36,
+      "stance": "held",
+      "summary": "Government of Singapore is reported as a named shareholder of SAMHI Hotels Limited at 30 Sep 2026.",
+      "thesis": "Disclosed equity exposure to hospitality. This record does not establish the investor’s investment rationale.",
+      "risks": "Quarter-end snapshot, not a live holding. Changes in ownership percentage alone do not establish purchases or sales.",
+      "sourceIds": [
+        "holdings"
+      ]
+    },
+    {
+      "id": "indusindbk",
+      "name": "IndusInd Bank Limited",
+      "ticker": "INDUSINDBK",
+      "listing": "Listed equity",
+      "sector": "Banking",
+      "relationship": "Named shareholder: Government of Singapore",
+      "ownership": "2.57% reported company equity",
+      "ownershipDate": "30 Sep 2026 · secondary disclosure; original filing not retrieved",
+      "stakePercent": 2.57,
+      "stance": "held",
+      "summary": "Government of Singapore is reported as a named shareholder of IndusInd Bank Limited at 30 Sep 2026.",
+      "thesis": "Disclosed equity exposure to banking. This record does not establish the investor’s investment rationale.",
+      "risks": "Quarter-end snapshot, not a live holding. Changes in ownership percentage alone do not establish purchases or sales.",
+      "sourceIds": [
+        "holdings"
+      ]
+    },
+    {
+      "id": "igil",
+      "name": "International Gemological Institute Limited",
+      "ticker": "IGIL",
+      "listing": "Listed equity",
+      "sector": "Diamond certification",
+      "relationship": "Named shareholder: Government of Singapore",
+      "ownership": "1.32% reported company equity",
+      "ownershipDate": "30 Sep 2026 · secondary disclosure; original filing not retrieved",
+      "stakePercent": 1.32,
+      "stance": "held",
+      "summary": "Government of Singapore is reported as a named shareholder of International Gemological Institute Limited at 30 Sep 2026.",
+      "thesis": "Disclosed equity exposure to diamond certification. This record does not establish the investor’s investment rationale.",
+      "risks": "Quarter-end snapshot, not a live holding. Changes in ownership percentage alone do not establish purchases or sales.",
+      "sourceIds": [
+        "holdings"
+      ]
+    },
+    {
+      "id": "m-m",
+      "name": "Mahindra & Mahindra Limited",
+      "ticker": "M&M",
+      "listing": "Listed equity",
+      "sector": "Automotive",
+      "relationship": "Named shareholder: Government of Singapore",
+      "ownership": "1.50% reported company equity",
+      "ownershipDate": "30 Sep 2026 · secondary disclosure; original filing not retrieved",
+      "stakePercent": 1.5,
+      "stance": "held",
+      "summary": "Government of Singapore is reported as a named shareholder of Mahindra & Mahindra Limited at 30 Sep 2026.",
+      "thesis": "Disclosed equity exposure to automotive. This record does not establish the investor’s investment rationale.",
+      "risks": "Quarter-end snapshot, not a live holding. Changes in ownership percentage alone do not establish purchases or sales.",
+      "sourceIds": [
+        "holdings"
+      ]
+    },
+    {
+      "id": "sbilife",
+      "name": "SBI Life Insurance Company Limited",
+      "ticker": "SBILIFE",
+      "listing": "Listed equity",
+      "sector": "Insurance",
+      "relationship": "Named shareholder: Government of Singapore",
+      "ownership": "3.27% reported company equity",
+      "ownershipDate": "30 Sep 2026 · secondary disclosure; original filing not retrieved",
+      "stakePercent": 3.27,
+      "stance": "held",
+      "summary": "Government of Singapore is reported as a named shareholder of SBI Life Insurance Company Limited at 30 Sep 2026.",
+      "thesis": "Disclosed equity exposure to insurance. This record does not establish the investor’s investment rationale.",
+      "risks": "Quarter-end snapshot, not a live holding. Changes in ownership percentage alone do not establish purchases or sales.",
+      "sourceIds": [
+        "holdings"
+      ]
+    },
+    {
+      "id": "delhivery",
+      "name": "Delhivery Limited",
+      "ticker": "DELHIVERY",
+      "listing": "Listed equity",
+      "sector": "Logistics",
+      "relationship": "Named shareholder: Government of Singapore",
+      "ownership": "2.14% reported company equity",
+      "ownershipDate": "30 Sep 2026 · secondary disclosure; original filing not retrieved",
+      "stakePercent": 2.14,
+      "stance": "held",
+      "summary": "Government of Singapore is reported as a named shareholder of Delhivery Limited at 30 Sep 2026.",
+      "thesis": "Disclosed equity exposure to logistics. This record does not establish the investor’s investment rationale.",
+      "risks": "Quarter-end snapshot, not a live holding. Changes in ownership percentage alone do not establish purchases or sales.",
+      "sourceIds": [
+        "holdings"
+      ]
+    },
+    {
+      "id": "phoenixltd",
+      "name": "The Phoenix Mills Limited",
+      "ticker": "PHOENIXLTD",
+      "listing": "Listed equity",
+      "sector": "Real estate",
+      "relationship": "Named shareholder: Government of Singapore",
+      "ownership": "1.59% reported company equity",
+      "ownershipDate": "30 Sep 2026 · secondary disclosure; original filing not retrieved",
+      "stakePercent": 1.59,
+      "stance": "held",
+      "summary": "Government of Singapore is reported as a named shareholder of The Phoenix Mills Limited at 30 Sep 2026.",
+      "thesis": "Disclosed equity exposure to real estate. This record does not establish the investor’s investment rationale.",
+      "risks": "Quarter-end snapshot, not a live holding. Changes in ownership percentage alone do not establish purchases or sales.",
+      "sourceIds": [
+        "holdings"
+      ]
+    },
+    {
+      "id": "kalpataru",
+      "name": "Kalpataru Limited",
+      "ticker": "KALPATARU",
+      "listing": "Listed equity",
+      "sector": "Real estate",
+      "relationship": "Named shareholder: Government of Singapore",
+      "ownership": "4.55% reported company equity",
+      "ownershipDate": "30 Sep 2026 · secondary disclosure; original filing not retrieved",
+      "stakePercent": 4.55,
+      "stance": "held",
+      "summary": "Government of Singapore is reported as a named shareholder of Kalpataru Limited at 30 Sep 2026.",
+      "thesis": "Disclosed equity exposure to real estate. This record does not establish the investor’s investment rationale.",
+      "risks": "Quarter-end snapshot, not a live holding. Changes in ownership percentage alone do not establish purchases or sales.",
+      "sourceIds": [
+        "holdings"
+      ]
+    },
+    {
+      "id": "axisbank",
+      "name": "Axis Bank Limited",
+      "ticker": "AXISBANK",
+      "listing": "Listed equity",
+      "sector": "Banking",
+      "relationship": "Named shareholder: Government of Singapore",
+      "ownership": "1.26% reported company equity",
+      "ownershipDate": "30 Sep 2026 · secondary disclosure; original filing not retrieved",
+      "stakePercent": 1.26,
+      "stance": "held",
+      "summary": "Government of Singapore is reported as a named shareholder of Axis Bank Limited at 30 Sep 2026.",
+      "thesis": "Disclosed equity exposure to banking. This record does not establish the investor’s investment rationale.",
+      "risks": "Quarter-end snapshot, not a live holding. Changes in ownership percentage alone do not establish purchases or sales.",
+      "sourceIds": [
+        "holdings"
+      ]
+    },
+    {
+      "id": "bel",
+      "name": "Bharat Electronics Limited",
+      "ticker": "BEL",
+      "listing": "Listed equity",
+      "sector": "Defence electronics",
+      "relationship": "Named shareholder: Government of Singapore",
+      "ownership": "1.06% reported company equity",
+      "ownershipDate": "30 Sep 2026 · secondary disclosure; original filing not retrieved",
+      "stakePercent": 1.06,
+      "stance": "held",
+      "summary": "Government of Singapore is reported as a named shareholder of Bharat Electronics Limited at 30 Sep 2026.",
+      "thesis": "Disclosed equity exposure to defence electronics. This record does not establish the investor’s investment rationale.",
+      "risks": "Quarter-end snapshot, not a live holding. Changes in ownership percentage alone do not establish purchases or sales.",
+      "sourceIds": [
+        "holdings"
+      ]
+    },
+    {
+      "id": "divislab",
+      "name": "Divi’s Laboratories Limited",
+      "ticker": "DIVISLAB",
+      "listing": "Listed equity",
+      "sector": "Pharmaceuticals",
+      "relationship": "Named shareholder: Government of Singapore",
+      "ownership": "2.84% reported company equity",
+      "ownershipDate": "30 Sep 2026 · secondary disclosure; original filing not retrieved",
+      "stakePercent": 2.84,
+      "stance": "held",
+      "summary": "Government of Singapore is reported as a named shareholder of Divi’s Laboratories Limited at 30 Sep 2026.",
+      "thesis": "Disclosed equity exposure to pharmaceuticals. This record does not establish the investor’s investment rationale.",
+      "risks": "Quarter-end snapshot, not a live holding. Changes in ownership percentage alone do not establish purchases or sales.",
+      "sourceIds": [
+        "holdings"
+      ]
+    },
+    {
+      "id": "syngene",
+      "name": "Syngene International Limited",
+      "ticker": "SYNGENE",
+      "listing": "Listed equity",
+      "sector": "Life sciences",
+      "relationship": "Named shareholder: Government of Singapore",
+      "ownership": "1.16% reported company equity",
+      "ownershipDate": "30 Sep 2026 · secondary disclosure; original filing not retrieved",
+      "stakePercent": 1.16,
+      "stance": "held",
+      "summary": "Government of Singapore is reported as a named shareholder of Syngene International Limited at 30 Sep 2026.",
+      "thesis": "Disclosed equity exposure to life sciences. This record does not establish the investor’s investment rationale.",
+      "risks": "Quarter-end snapshot, not a live holding. Changes in ownership percentage alone do not establish purchases or sales.",
+      "sourceIds": [
+        "holdings"
+      ]
+    },
+    {
+      "id": "bharatforg",
+      "name": "Bharat Forge Limited",
+      "ticker": "BHARATFORG",
+      "listing": "Listed equity",
+      "sector": "Engineering",
+      "relationship": "Named shareholder: Government of Singapore",
+      "ownership": "1.07% reported company equity",
+      "ownershipDate": "30 Sep 2026 · secondary disclosure; original filing not retrieved",
+      "stakePercent": 1.07,
+      "stance": "held",
+      "summary": "Government of Singapore is reported as a named shareholder of Bharat Forge Limited at 30 Sep 2026.",
+      "thesis": "Disclosed equity exposure to engineering. This record does not establish the investor’s investment rationale.",
+      "risks": "Quarter-end snapshot, not a live holding. Changes in ownership percentage alone do not establish purchases or sales.",
+      "sourceIds": [
+        "holdings"
+      ]
+    },
+    {
+      "id": "godrejprop",
+      "name": "Godrej Properties Limited",
+      "ticker": "GODREJPROP",
+      "listing": "Listed equity",
+      "sector": "Real estate",
+      "relationship": "Named shareholder: Government of Singapore",
+      "ownership": "1.91% reported company equity",
+      "ownershipDate": "30 Sep 2026 · secondary disclosure; original filing not retrieved",
+      "stakePercent": 1.91,
+      "stance": "held",
+      "summary": "Government of Singapore is reported as a named shareholder of Godrej Properties Limited at 30 Sep 2026.",
+      "thesis": "Disclosed equity exposure to real estate. This record does not establish the investor’s investment rationale.",
+      "risks": "Quarter-end snapshot, not a live holding. Changes in ownership percentage alone do not establish purchases or sales.",
+      "sourceIds": [
+        "holdings"
+      ]
+    },
+    {
+      "id": "indigo",
+      "name": "InterGlobe Aviation Limited",
+      "ticker": "INDIGO",
+      "listing": "Listed equity",
+      "sector": "Aviation",
+      "relationship": "Named shareholder: Government of Singapore",
+      "ownership": "2.03% reported company equity",
+      "ownershipDate": "30 Sep 2026 · secondary disclosure; original filing not retrieved",
+      "stakePercent": 2.03,
+      "stance": "held",
+      "summary": "Government of Singapore is reported as a named shareholder of InterGlobe Aviation Limited at 30 Sep 2026.",
+      "thesis": "Disclosed equity exposure to aviation. This record does not establish the investor’s investment rationale.",
+      "risks": "Quarter-end snapshot, not a live holding. Changes in ownership percentage alone do not establish purchases or sales.",
+      "sourceIds": [
+        "holdings"
+      ]
+    },
+    {
+      "id": "srf",
+      "name": "SRF Limited",
+      "ticker": "SRF",
+      "listing": "Listed equity",
+      "sector": "Chemicals",
+      "relationship": "Named shareholder: Government of Singapore",
+      "ownership": "1.75% reported company equity",
+      "ownershipDate": "30 Sep 2026 · secondary disclosure; original filing not retrieved",
+      "stakePercent": 1.75,
+      "stance": "held",
+      "summary": "Government of Singapore is reported as a named shareholder of SRF Limited at 30 Sep 2026.",
+      "thesis": "Disclosed equity exposure to chemicals. This record does not establish the investor’s investment rationale.",
+      "risks": "Quarter-end snapshot, not a live holding. Changes in ownership percentage alone do not establish purchases or sales.",
+      "sourceIds": [
+        "holdings"
+      ]
+    },
+    {
+      "id": "naukri",
+      "name": "Info Edge (India) Limited",
+      "ticker": "NAUKRI",
+      "listing": "Listed equity",
+      "sector": "Internet services",
+      "relationship": "Named shareholder: Government of Singapore",
+      "ownership": "1.36% reported company equity",
+      "ownershipDate": "30 Sep 2026 · secondary disclosure; original filing not retrieved",
+      "stakePercent": 1.36,
+      "stance": "held",
+      "summary": "Government of Singapore is reported as a named shareholder of Info Edge (India) Limited at 30 Sep 2026.",
+      "thesis": "Disclosed equity exposure to internet services. This record does not establish the investor’s investment rationale.",
+      "risks": "Quarter-end snapshot, not a live holding. Changes in ownership percentage alone do not establish purchases or sales.",
+      "sourceIds": [
+        "holdings"
+      ]
+    },
+    {
+      "id": "shriramfin",
+      "name": "Shriram Finance Limited",
+      "ticker": "SHRIRAMFIN",
+      "listing": "Listed equity",
+      "sector": "Financial services",
+      "relationship": "Named shareholder: Government of Singapore",
+      "ownership": "3.75% reported company equity",
+      "ownershipDate": "30 Sep 2026 · secondary disclosure; original filing not retrieved",
+      "stakePercent": 3.75,
+      "stance": "held",
+      "summary": "Government of Singapore is reported as a named shareholder of Shriram Finance Limited at 30 Sep 2026.",
+      "thesis": "Disclosed equity exposure to financial services. This record does not establish the investor’s investment rationale.",
+      "risks": "Quarter-end snapshot, not a live holding. Changes in ownership percentage alone do not establish purchases or sales.",
+      "sourceIds": [
+        "holdings"
+      ]
+    },
+    {
+      "id": "ntpc",
+      "name": "NTPC Limited",
+      "ticker": "NTPC",
+      "listing": "Listed equity",
+      "sector": "Power",
+      "relationship": "Named shareholder: Government of Singapore",
+      "ownership": "1.68% reported company equity",
+      "ownershipDate": "30 Sep 2026 · secondary disclosure; original filing not retrieved",
+      "stakePercent": 1.68,
+      "stance": "held",
+      "summary": "Government of Singapore is reported as a named shareholder of NTPC Limited at 30 Sep 2026.",
+      "thesis": "Disclosed equity exposure to power. This record does not establish the investor’s investment rationale.",
+      "risks": "Quarter-end snapshot, not a live holding. Changes in ownership percentage alone do not establish purchases or sales.",
+      "sourceIds": [
+        "holdings"
+      ]
+    },
+    {
+      "id": "eternal",
+      "name": "Eternal Limited",
+      "ticker": "ETERNAL",
+      "listing": "Listed equity",
+      "sector": "Internet services",
+      "relationship": "Named shareholder: Government of Singapore",
+      "ownership": "1.18% reported company equity",
+      "ownershipDate": "30 Sep 2026 · secondary disclosure; original filing not retrieved",
+      "stakePercent": 1.18,
+      "stance": "held",
+      "summary": "Government of Singapore is reported as a named shareholder of Eternal Limited at 30 Sep 2026.",
+      "thesis": "Disclosed equity exposure to internet services. This record does not establish the investor’s investment rationale.",
+      "risks": "Quarter-end snapshot, not a live holding. Changes in ownership percentage alone do not establish purchases or sales.",
+      "sourceIds": [
+        "holdings"
+      ]
+    },
+    {
+      "id": "irb",
+      "name": "IRB Infrastructure Developers Limited",
+      "ticker": "IRB",
+      "listing": "Listed equity",
+      "sector": "Infrastructure",
+      "relationship": "Named shareholder: Government of Singapore",
+      "ownership": "1.71% reported company equity",
+      "ownershipDate": "30 Sep 2026 · secondary disclosure; original filing not retrieved",
+      "stakePercent": 1.71,
+      "stance": "held",
+      "summary": "Government of Singapore is reported as a named shareholder of IRB Infrastructure Developers Limited at 30 Sep 2026.",
+      "thesis": "Disclosed equity exposure to infrastructure. This record does not establish the investor’s investment rationale.",
+      "risks": "Quarter-end snapshot, not a live holding. Changes in ownership percentage alone do not establish purchases or sales.",
+      "sourceIds": [
+        "holdings"
+      ]
+    },
+    {
+      "id": "jswinfra",
+      "name": "JSW Infrastructure Limited",
+      "ticker": "JSWINFRA",
+      "listing": "Listed equity",
+      "sector": "Ports and logistics",
+      "relationship": "Named shareholder: Government of Singapore",
+      "ownership": "1.62% reported company equity",
+      "ownershipDate": "30 Sep 2026 · secondary disclosure; original filing not retrieved",
+      "stakePercent": 1.62,
+      "stance": "held",
+      "summary": "Government of Singapore is reported as a named shareholder of JSW Infrastructure Limited at 30 Sep 2026.",
+      "thesis": "Disclosed equity exposure to ports and logistics. This record does not establish the investor’s investment rationale.",
+      "risks": "Quarter-end snapshot, not a live holding. Changes in ownership percentage alone do not establish purchases or sales.",
+      "sourceIds": [
+        "holdings"
+      ]
+    },
+    {
+      "id": "endurance",
+      "name": "Endurance Technologies Limited",
+      "ticker": "ENDURANCE",
+      "listing": "Listed equity",
+      "sector": "Automotive components",
+      "relationship": "Named shareholder: Government of Singapore",
+      "ownership": "4.79% reported company equity",
+      "ownershipDate": "30 Sep 2026 · secondary disclosure; original filing not retrieved",
+      "stakePercent": 4.79,
+      "stance": "held",
+      "summary": "Government of Singapore is reported as a named shareholder of Endurance Technologies Limited at 30 Sep 2026.",
+      "thesis": "Disclosed equity exposure to automotive components. This record does not establish the investor’s investment rationale.",
+      "risks": "Quarter-end snapshot, not a live holding. Changes in ownership percentage alone do not establish purchases or sales.",
+      "sourceIds": [
+        "holdings"
+      ]
+    },
+    {
+      "id": "agarwaleye",
+      "name": "Dr. Agarwal’s Health Care Limited",
+      "ticker": "AGARWALEYE",
+      "listing": "Listed equity",
+      "sector": "Healthcare",
+      "relationship": "Named shareholder: Government of Singapore",
+      "ownership": "6.16% reported company equity",
+      "ownershipDate": "30 Sep 2026 · secondary disclosure; original filing not retrieved",
+      "stakePercent": 6.16,
+      "stance": "held",
+      "summary": "Government of Singapore is reported as a named shareholder of Dr. Agarwal’s Health Care Limited at 30 Sep 2026.",
+      "thesis": "Disclosed equity exposure to healthcare. This record does not establish the investor’s investment rationale.",
+      "risks": "Quarter-end snapshot, not a live holding. Changes in ownership percentage alone do not establish purchases or sales.",
+      "sourceIds": [
+        "holdings"
+      ]
+    }
+  ],
+  "events": [
+    {
+      "id": "leapind-snapshot",
+      "companyId": "leapind",
+      "date": "2026-09-30",
+      "dateLabel": "30 Sep 2026",
+      "title": "Reported quarter-end holding",
+      "kind": "snapshot",
+      "direction": "held",
+      "status": "Snapshot",
+      "detail": "1.23% reported company equity",
+      "qualification": "Secondary disclosure snapshot; not evidence of a trade or current ownership.",
+      "sourceIds": [
+        "holdings"
+      ]
+    },
+    {
+      "id": "craftsman-snapshot",
+      "companyId": "craftsman",
+      "date": "2026-09-30",
+      "dateLabel": "30 Sep 2026",
+      "title": "Reported quarter-end holding",
+      "kind": "snapshot",
+      "direction": "held",
+      "status": "Snapshot",
+      "detail": "2.71% reported company equity",
+      "qualification": "Secondary disclosure snapshot; not evidence of a trade or current ownership.",
+      "sourceIds": [
+        "holdings"
+      ]
+    },
+    {
+      "id": "sedemac-snapshot",
+      "companyId": "sedemac",
+      "date": "2026-09-30",
+      "dateLabel": "30 Sep 2026",
+      "title": "Reported quarter-end holding",
+      "kind": "snapshot",
+      "direction": "held",
+      "status": "Snapshot",
+      "detail": "2.32% reported company equity",
+      "qualification": "Secondary disclosure snapshot; not evidence of a trade or current ownership.",
+      "sourceIds": [
+        "holdings"
+      ]
+    },
+    {
+      "id": "lt-snapshot",
+      "companyId": "lt",
+      "date": "2026-09-30",
+      "dateLabel": "30 Sep 2026",
+      "title": "Reported quarter-end holding",
+      "kind": "snapshot",
+      "direction": "held",
+      "status": "Snapshot",
+      "detail": "1.53% reported company equity",
+      "qualification": "Secondary disclosure snapshot; not evidence of a trade or current ownership.",
+      "sourceIds": [
+        "holdings"
+      ]
+    },
+    {
+      "id": "vmm-snapshot",
+      "companyId": "vmm",
+      "date": "2026-09-30",
+      "dateLabel": "30 Sep 2026",
+      "title": "Reported quarter-end holding",
+      "kind": "snapshot",
+      "direction": "held",
+      "status": "Snapshot",
+      "detail": "2.74% reported company equity",
+      "qualification": "Secondary disclosure snapshot; not evidence of a trade or current ownership.",
+      "sourceIds": [
+        "holdings"
+      ]
+    },
+    {
+      "id": "maxhealth-snapshot",
+      "companyId": "maxhealth",
+      "date": "2026-09-30",
+      "dateLabel": "30 Sep 2026",
+      "title": "Reported quarter-end holding",
+      "kind": "snapshot",
+      "direction": "held",
+      "status": "Snapshot",
+      "detail": "3.33% reported company equity",
+      "qualification": "Secondary disclosure snapshot; not evidence of a trade or current ownership.",
+      "sourceIds": [
+        "holdings"
+      ]
+    },
+    {
+      "id": "hindalco-snapshot",
+      "companyId": "hindalco",
+      "date": "2026-09-30",
+      "dateLabel": "30 Sep 2026",
+      "title": "Reported quarter-end holding",
+      "kind": "snapshot",
+      "direction": "held",
+      "status": "Snapshot",
+      "detail": "2.56% reported company equity",
+      "qualification": "Secondary disclosure snapshot; not evidence of a trade or current ownership.",
+      "sourceIds": [
+        "holdings"
+      ]
+    },
+    {
+      "id": "hdfcbank-snapshot",
+      "companyId": "hdfcbank",
+      "date": "2026-09-30",
+      "dateLabel": "30 Sep 2026",
+      "title": "Reported quarter-end holding",
+      "kind": "snapshot",
+      "direction": "held",
+      "status": "Snapshot",
+      "detail": "2.13% reported company equity",
+      "qualification": "Secondary disclosure snapshot; not evidence of a trade or current ownership.",
+      "sourceIds": [
+        "holdings"
+      ]
+    },
+    {
+      "id": "sonacoms-snapshot",
+      "companyId": "sonacoms",
+      "date": "2026-09-30",
+      "dateLabel": "30 Sep 2026",
+      "title": "Reported quarter-end holding",
+      "kind": "snapshot",
+      "direction": "held",
+      "status": "Snapshot",
+      "detail": "6.38% reported company equity",
+      "qualification": "Secondary disclosure snapshot; not evidence of a trade or current ownership.",
+      "sourceIds": [
+        "holdings"
+      ]
+    },
+    {
+      "id": "samhi-snapshot",
+      "companyId": "samhi",
+      "date": "2026-09-30",
+      "dateLabel": "30 Sep 2026",
+      "title": "Reported quarter-end holding",
+      "kind": "snapshot",
+      "direction": "held",
+      "status": "Snapshot",
+      "detail": "6.36% reported company equity",
+      "qualification": "Secondary disclosure snapshot; not evidence of a trade or current ownership.",
+      "sourceIds": [
+        "holdings"
+      ]
+    },
+    {
+      "id": "indusindbk-snapshot",
+      "companyId": "indusindbk",
+      "date": "2026-09-30",
+      "dateLabel": "30 Sep 2026",
+      "title": "Reported quarter-end holding",
+      "kind": "snapshot",
+      "direction": "held",
+      "status": "Snapshot",
+      "detail": "2.57% reported company equity",
+      "qualification": "Secondary disclosure snapshot; not evidence of a trade or current ownership.",
+      "sourceIds": [
+        "holdings"
+      ]
+    },
+    {
+      "id": "igil-snapshot",
+      "companyId": "igil",
+      "date": "2026-09-30",
+      "dateLabel": "30 Sep 2026",
+      "title": "Reported quarter-end holding",
+      "kind": "snapshot",
+      "direction": "held",
+      "status": "Snapshot",
+      "detail": "1.32% reported company equity",
+      "qualification": "Secondary disclosure snapshot; not evidence of a trade or current ownership.",
+      "sourceIds": [
+        "holdings"
+      ]
+    },
+    {
+      "id": "m-m-snapshot",
+      "companyId": "m-m",
+      "date": "2026-09-30",
+      "dateLabel": "30 Sep 2026",
+      "title": "Reported quarter-end holding",
+      "kind": "snapshot",
+      "direction": "held",
+      "status": "Snapshot",
+      "detail": "1.50% reported company equity",
+      "qualification": "Secondary disclosure snapshot; not evidence of a trade or current ownership.",
+      "sourceIds": [
+        "holdings"
+      ]
+    },
+    {
+      "id": "sbilife-snapshot",
+      "companyId": "sbilife",
+      "date": "2026-09-30",
+      "dateLabel": "30 Sep 2026",
+      "title": "Reported quarter-end holding",
+      "kind": "snapshot",
+      "direction": "held",
+      "status": "Snapshot",
+      "detail": "3.27% reported company equity",
+      "qualification": "Secondary disclosure snapshot; not evidence of a trade or current ownership.",
+      "sourceIds": [
+        "holdings"
+      ]
+    },
+    {
+      "id": "delhivery-snapshot",
+      "companyId": "delhivery",
+      "date": "2026-09-30",
+      "dateLabel": "30 Sep 2026",
+      "title": "Reported quarter-end holding",
+      "kind": "snapshot",
+      "direction": "held",
+      "status": "Snapshot",
+      "detail": "2.14% reported company equity",
+      "qualification": "Secondary disclosure snapshot; not evidence of a trade or current ownership.",
+      "sourceIds": [
+        "holdings"
+      ]
+    },
+    {
+      "id": "phoenixltd-snapshot",
+      "companyId": "phoenixltd",
+      "date": "2026-09-30",
+      "dateLabel": "30 Sep 2026",
+      "title": "Reported quarter-end holding",
+      "kind": "snapshot",
+      "direction": "held",
+      "status": "Snapshot",
+      "detail": "1.59% reported company equity",
+      "qualification": "Secondary disclosure snapshot; not evidence of a trade or current ownership.",
+      "sourceIds": [
+        "holdings"
+      ]
+    },
+    {
+      "id": "kalpataru-snapshot",
+      "companyId": "kalpataru",
+      "date": "2026-09-30",
+      "dateLabel": "30 Sep 2026",
+      "title": "Reported quarter-end holding",
+      "kind": "snapshot",
+      "direction": "held",
+      "status": "Snapshot",
+      "detail": "4.55% reported company equity",
+      "qualification": "Secondary disclosure snapshot; not evidence of a trade or current ownership.",
+      "sourceIds": [
+        "holdings"
+      ]
+    },
+    {
+      "id": "axisbank-snapshot",
+      "companyId": "axisbank",
+      "date": "2026-09-30",
+      "dateLabel": "30 Sep 2026",
+      "title": "Reported quarter-end holding",
+      "kind": "snapshot",
+      "direction": "held",
+      "status": "Snapshot",
+      "detail": "1.26% reported company equity",
+      "qualification": "Secondary disclosure snapshot; not evidence of a trade or current ownership.",
+      "sourceIds": [
+        "holdings"
+      ]
+    },
+    {
+      "id": "bel-snapshot",
+      "companyId": "bel",
+      "date": "2026-09-30",
+      "dateLabel": "30 Sep 2026",
+      "title": "Reported quarter-end holding",
+      "kind": "snapshot",
+      "direction": "held",
+      "status": "Snapshot",
+      "detail": "1.06% reported company equity",
+      "qualification": "Secondary disclosure snapshot; not evidence of a trade or current ownership.",
+      "sourceIds": [
+        "holdings"
+      ]
+    },
+    {
+      "id": "divislab-snapshot",
+      "companyId": "divislab",
+      "date": "2026-09-30",
+      "dateLabel": "30 Sep 2026",
+      "title": "Reported quarter-end holding",
+      "kind": "snapshot",
+      "direction": "held",
+      "status": "Snapshot",
+      "detail": "2.84% reported company equity",
+      "qualification": "Secondary disclosure snapshot; not evidence of a trade or current ownership.",
+      "sourceIds": [
+        "holdings"
+      ]
+    },
+    {
+      "id": "syngene-snapshot",
+      "companyId": "syngene",
+      "date": "2026-09-30",
+      "dateLabel": "30 Sep 2026",
+      "title": "Reported quarter-end holding",
+      "kind": "snapshot",
+      "direction": "held",
+      "status": "Snapshot",
+      "detail": "1.16% reported company equity",
+      "qualification": "Secondary disclosure snapshot; not evidence of a trade or current ownership.",
+      "sourceIds": [
+        "holdings"
+      ]
+    },
+    {
+      "id": "bharatforg-snapshot",
+      "companyId": "bharatforg",
+      "date": "2026-09-30",
+      "dateLabel": "30 Sep 2026",
+      "title": "Reported quarter-end holding",
+      "kind": "snapshot",
+      "direction": "held",
+      "status": "Snapshot",
+      "detail": "1.07% reported company equity",
+      "qualification": "Secondary disclosure snapshot; not evidence of a trade or current ownership.",
+      "sourceIds": [
+        "holdings"
+      ]
+    },
+    {
+      "id": "godrejprop-snapshot",
+      "companyId": "godrejprop",
+      "date": "2026-09-30",
+      "dateLabel": "30 Sep 2026",
+      "title": "Reported quarter-end holding",
+      "kind": "snapshot",
+      "direction": "held",
+      "status": "Snapshot",
+      "detail": "1.91% reported company equity",
+      "qualification": "Secondary disclosure snapshot; not evidence of a trade or current ownership.",
+      "sourceIds": [
+        "holdings"
+      ]
+    },
+    {
+      "id": "indigo-snapshot",
+      "companyId": "indigo",
+      "date": "2026-09-30",
+      "dateLabel": "30 Sep 2026",
+      "title": "Reported quarter-end holding",
+      "kind": "snapshot",
+      "direction": "held",
+      "status": "Snapshot",
+      "detail": "2.03% reported company equity",
+      "qualification": "Secondary disclosure snapshot; not evidence of a trade or current ownership.",
+      "sourceIds": [
+        "holdings"
+      ]
+    },
+    {
+      "id": "srf-snapshot",
+      "companyId": "srf",
+      "date": "2026-09-30",
+      "dateLabel": "30 Sep 2026",
+      "title": "Reported quarter-end holding",
+      "kind": "snapshot",
+      "direction": "held",
+      "status": "Snapshot",
+      "detail": "1.75% reported company equity",
+      "qualification": "Secondary disclosure snapshot; not evidence of a trade or current ownership.",
+      "sourceIds": [
+        "holdings"
+      ]
+    },
+    {
+      "id": "naukri-snapshot",
+      "companyId": "naukri",
+      "date": "2026-09-30",
+      "dateLabel": "30 Sep 2026",
+      "title": "Reported quarter-end holding",
+      "kind": "snapshot",
+      "direction": "held",
+      "status": "Snapshot",
+      "detail": "1.36% reported company equity",
+      "qualification": "Secondary disclosure snapshot; not evidence of a trade or current ownership.",
+      "sourceIds": [
+        "holdings"
+      ]
+    },
+    {
+      "id": "shriramfin-snapshot",
+      "companyId": "shriramfin",
+      "date": "2026-09-30",
+      "dateLabel": "30 Sep 2026",
+      "title": "Reported quarter-end holding",
+      "kind": "snapshot",
+      "direction": "held",
+      "status": "Snapshot",
+      "detail": "3.75% reported company equity",
+      "qualification": "Secondary disclosure snapshot; not evidence of a trade or current ownership.",
+      "sourceIds": [
+        "holdings"
+      ]
+    },
+    {
+      "id": "ntpc-snapshot",
+      "companyId": "ntpc",
+      "date": "2026-09-30",
+      "dateLabel": "30 Sep 2026",
+      "title": "Reported quarter-end holding",
+      "kind": "snapshot",
+      "direction": "held",
+      "status": "Snapshot",
+      "detail": "1.68% reported company equity",
+      "qualification": "Secondary disclosure snapshot; not evidence of a trade or current ownership.",
+      "sourceIds": [
+        "holdings"
+      ]
+    },
+    {
+      "id": "eternal-snapshot",
+      "companyId": "eternal",
+      "date": "2026-09-30",
+      "dateLabel": "30 Sep 2026",
+      "title": "Reported quarter-end holding",
+      "kind": "snapshot",
+      "direction": "held",
+      "status": "Snapshot",
+      "detail": "1.18% reported company equity",
+      "qualification": "Secondary disclosure snapshot; not evidence of a trade or current ownership.",
+      "sourceIds": [
+        "holdings"
+      ]
+    },
+    {
+      "id": "irb-snapshot",
+      "companyId": "irb",
+      "date": "2026-09-30",
+      "dateLabel": "30 Sep 2026",
+      "title": "Reported quarter-end holding",
+      "kind": "snapshot",
+      "direction": "held",
+      "status": "Snapshot",
+      "detail": "1.71% reported company equity",
+      "qualification": "Secondary disclosure snapshot; not evidence of a trade or current ownership.",
+      "sourceIds": [
+        "holdings"
+      ]
+    },
+    {
+      "id": "jswinfra-snapshot",
+      "companyId": "jswinfra",
+      "date": "2026-09-30",
+      "dateLabel": "30 Sep 2026",
+      "title": "Reported quarter-end holding",
+      "kind": "snapshot",
+      "direction": "held",
+      "status": "Snapshot",
+      "detail": "1.62% reported company equity",
+      "qualification": "Secondary disclosure snapshot; not evidence of a trade or current ownership.",
+      "sourceIds": [
+        "holdings"
+      ]
+    },
+    {
+      "id": "endurance-snapshot",
+      "companyId": "endurance",
+      "date": "2026-09-30",
+      "dateLabel": "30 Sep 2026",
+      "title": "Reported quarter-end holding",
+      "kind": "snapshot",
+      "direction": "held",
+      "status": "Snapshot",
+      "detail": "4.79% reported company equity",
+      "qualification": "Secondary disclosure snapshot; not evidence of a trade or current ownership.",
+      "sourceIds": [
+        "holdings"
+      ]
+    },
+    {
+      "id": "agarwaleye-snapshot",
+      "companyId": "agarwaleye",
+      "date": "2026-09-30",
+      "dateLabel": "30 Sep 2026",
+      "title": "Reported quarter-end holding",
+      "kind": "snapshot",
+      "direction": "held",
+      "status": "Snapshot",
+      "detail": "6.16% reported company equity",
+      "qualification": "Secondary disclosure snapshot; not evidence of a trade or current ownership.",
+      "sourceIds": [
+        "holdings"
+      ]
+    }
+  ],
+  "report": {
+    "title": "Government of Singapore · India holdings",
+    "summary": "The Singapore Ministry of Finance says Government assets are mainly managed by GIC, while Temasek owns its own assets. This profile follows the named Government of Singapore shareholder; it is not an additional independent pool to add to GIC or Temasek exposure.",
+    "sections": [
+      {
+        "title": "Disclosed India exposure",
+        "text": "33 named company records, with reporting dates and source links. These are observations of company ownership, not a complete portfolio or inferred trading strategy.",
+        "sourceIds": [
+          "holdings"
+        ]
+      },
+      {
+        "title": "Holder identity",
+        "text": "The Singapore Ministry of Finance says Government assets are mainly managed by GIC, while Temasek owns its own assets. This profile follows the named Government of Singapore shareholder; it is not an additional independent pool to add to GIC or Temasek exposure.",
+        "sourceIds": [
+          "identity"
+        ]
+      },
+      {
+        "title": "Reading the records",
+        "text": "Percentages are reported company equity. Snapshot events are not purchases. No investment return, market value, or change in share count is inferred from the stake percentages.",
+        "sourceIds": [
+          "holdings"
+        ]
+      }
+    ],
+    "themes": [
+      {
+        "name": "Disclosure follow-up",
+        "conviction": "Research watch",
+        "case": "Review subsequent company shareholding patterns to establish whether the named position persists.",
+        "watch": "Original exchange filings, reporting dates and the exact legal holder. Do not infer a future deal from this list.",
+        "sourceIds": [
+          "holdings"
+        ]
+      }
+    ]
+  }
+}

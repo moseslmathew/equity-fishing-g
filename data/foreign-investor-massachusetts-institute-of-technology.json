@@ -1,0 +1,633 @@
+{
+  "id": "massachusetts-institute-of-technology",
+  "name": "Massachusetts Institute Of Technology",
+  "asOf": "2026-10-24",
+  "checkedAt": "2026-10-24T04:58:51.898634+00:00",
+  "windowStart": "2025-10-24",
+  "windowEnd": "2026-10-24",
+  "coverage": "Institutional shareholder. 14 selected Indian-listed holdings under the exact named shareholder, with dated company-equity percentages.",
+  "limitations": [
+    "Selected public named-holder records, not a complete portfolio or real-time ownership register.",
+    "September percentages are secondary transcriptions. Original exchange filings were not retrieved or independently reconciled during this review.",
+    "The review date is separate from the ownership date. Absence from a disclosure does not establish an exit.",
+    "The named Massachusetts Institute of Technology institutional shareholder. Public filing records do not by themselves establish a specific internal endowment mandate or the institution’s entire investment portfolio.",
+    "Fund portfolio weights, investee-company stakes, share classes and manager-level exposure are different measures and are never combined."
+  ],
+  "sources": {
+    "redington": {
+      "title": "Redington Limited — September 2026 named shareholders",
+      "url": "https://block.deal/companies/redington/",
+      "publisher": "block.deal",
+      "published": "30 Sep 2026; reviewed 24 Oct 2026",
+      "kind": "reporting",
+      "note": "Secondary transcription with original exchange evidence links. Original exchange documents were not retrieved in this review; reported percentage is not independently reconciled."
+    },
+    "iex": {
+      "title": "Indian Energy Exchange Limited — September 2026 named shareholders",
+      "url": "https://block.deal/entities/massachusetts-institute-of-technology/",
+      "publisher": "block.deal",
+      "published": "30 Sep 2026; reviewed 24 Oct 2026",
+      "kind": "reporting",
+      "note": "Secondary transcription with original exchange evidence links. Original exchange documents were not retrieved in this review; reported percentage is not independently reconciled."
+    },
+    "gael": {
+      "title": "Gujarat Ambuja Exports Limited — September 2026 named shareholders",
+      "url": "https://block.deal/entities/massachusetts-institute-of-technology/",
+      "publisher": "block.deal",
+      "published": "30 Sep 2026; reviewed 24 Oct 2026",
+      "kind": "reporting",
+      "note": "Secondary transcription with original exchange evidence links. Original exchange documents were not retrieved in this review; reported percentage is not independently reconciled."
+    },
+    "alivus": {
+      "title": "Alivus Life Sciences Limited — September 2026 named shareholders",
+      "url": "https://block.deal/entities/massachusetts-institute-of-technology/",
+      "publisher": "block.deal",
+      "published": "30 Sep 2026; reviewed 24 Oct 2026",
+      "kind": "reporting",
+      "note": "Secondary transcription with original exchange evidence links. Original exchange documents were not retrieved in this review; reported percentage is not independently reconciled."
+    },
+    "irmenergy": {
+      "title": "IRM Energy Limited — September 2026 named shareholders",
+      "url": "https://block.deal/entities/massachusetts-institute-of-technology/",
+      "publisher": "block.deal",
+      "published": "30 Sep 2026; reviewed 24 Oct 2026",
+      "kind": "reporting",
+      "note": "Secondary transcription with original exchange evidence links. Original exchange documents were not retrieved in this review; reported percentage is not independently reconciled."
+    },
+    "fairchemor": {
+      "title": "Fairchem Organics Limited — September 2026 named shareholders",
+      "url": "https://block.deal/entities/massachusetts-institute-of-technology/",
+      "publisher": "block.deal",
+      "published": "30 Sep 2026; reviewed 24 Oct 2026",
+      "kind": "reporting",
+      "note": "Secondary transcription with original exchange evidence links. Original exchange documents were not retrieved in this review; reported percentage is not independently reconciled."
+    },
+    "yatra": {
+      "title": "Yatra Online Limited — September 2026 named shareholders",
+      "url": "https://block.deal/entities/massachusetts-institute-of-technology/",
+      "publisher": "block.deal",
+      "published": "30 Sep 2026; reviewed 24 Oct 2026",
+      "kind": "reporting",
+      "note": "Secondary transcription with original exchange evidence links. Original exchange documents were not retrieved in this review; reported percentage is not independently reconciled."
+    },
+    "jgchem": {
+      "title": "J.G. Chemicals Limited — September 2026 named shareholders",
+      "url": "https://block.deal/entities/massachusetts-institute-of-technology/",
+      "publisher": "block.deal",
+      "published": "30 Sep 2026; reviewed 24 Oct 2026",
+      "kind": "reporting",
+      "note": "Secondary transcription with original exchange evidence links. Original exchange documents were not retrieved in this review; reported percentage is not independently reconciled."
+    },
+    "igil": {
+      "title": "International Gemological Institute Limited — September 2026 named shareholders",
+      "url": "https://block.deal/entities/massachusetts-institute-of-technology/",
+      "publisher": "block.deal",
+      "published": "30 Sep 2026; reviewed 24 Oct 2026",
+      "kind": "reporting",
+      "note": "Secondary transcription with original exchange evidence links. Original exchange documents were not retrieved in this review; reported percentage is not independently reconciled."
+    },
+    "blackbuck": {
+      "title": "BlackBuck Limited — September 2026 named shareholders",
+      "url": "https://block.deal/entities/massachusetts-institute-of-technology/",
+      "publisher": "block.deal",
+      "published": "30 Sep 2026; reviewed 24 Oct 2026",
+      "kind": "reporting",
+      "note": "Secondary transcription with original exchange evidence links. Original exchange documents were not retrieved in this review; reported percentage is not independently reconciled."
+    },
+    "niitltd": {
+      "title": "NIIT Limited — September 2026 named shareholders",
+      "url": "https://block.deal/entities/massachusetts-institute-of-technology/",
+      "publisher": "block.deal",
+      "published": "30 Sep 2026; reviewed 24 Oct 2026",
+      "kind": "reporting",
+      "note": "Secondary transcription with original exchange evidence links. Original exchange documents were not retrieved in this review; reported percentage is not independently reconciled."
+    },
+    "company-11": {
+      "title": "Calcom Vision Limited — September 2026 named shareholders",
+      "url": "https://block.deal/entities/massachusetts-institute-of-technology/",
+      "publisher": "block.deal",
+      "published": "30 Sep 2026; reviewed 24 Oct 2026",
+      "kind": "reporting",
+      "note": "Secondary transcription with original exchange evidence links. Original exchange documents were not retrieved in this review; reported percentage is not independently reconciled."
+    },
+    "aavas": {
+      "title": "Aavas Financiers Limited — September 2026 named shareholders",
+      "url": "https://block.deal/entities/massachusetts-institute-of-technology/",
+      "publisher": "block.deal",
+      "published": "30 Sep 2026; reviewed 24 Oct 2026",
+      "kind": "reporting",
+      "note": "Secondary transcription with original exchange evidence links. Original exchange documents were not retrieved in this review; reported percentage is not independently reconciled."
+    },
+    "everestind": {
+      "title": "Everest Industries Limited — September 2026 named shareholders",
+      "url": "https://block.deal/entities/massachusetts-institute-of-technology/",
+      "publisher": "block.deal",
+      "published": "30 Sep 2026; reviewed 24 Oct 2026",
+      "kind": "reporting",
+      "note": "Secondary transcription with original exchange evidence links. Original exchange documents were not retrieved in this review; reported percentage is not independently reconciled."
+    }
+  },
+  "companies": [
+    {
+      "id": "redington",
+      "name": "Redington Limited",
+      "listing": "Listed equity",
+      "sector": "Technology distribution",
+      "relationship": "Institutional shareholder · Named shareholder: Massachusetts Institute Of Technology",
+      "ownership": "1.88% reported company equity",
+      "ownershipDate": "30 Sep 2026 · secondary disclosure; original filing not retrieved",
+      "stakePercent": 1.88,
+      "stance": "held",
+      "summary": "Massachusetts Institute Of Technology is reported as a shareholder of Redington Limited at 30 Sep 2026. The named Massachusetts Institute of Technology institutional shareholder. Public filing records do not by themselves establish a specific internal endowment mandate or the institution’s entire investment portfolio.",
+      "thesis": "Disclosed exposure to technology distribution. The register does not establish an investment rationale.",
+      "risks": "A quarter-end observation, not live ownership. Disclosure thresholds, corporate actions and changes in capital can affect reported percentages.",
+      "sourceIds": [
+        "redington"
+      ],
+      "ticker": "REDINGTON"
+    },
+    {
+      "id": "iex",
+      "name": "Indian Energy Exchange Limited",
+      "listing": "Listed equity",
+      "sector": "Power exchange",
+      "relationship": "Institutional shareholder · Named shareholder: Massachusetts Institute Of Technology",
+      "ownership": "2.48% reported company equity",
+      "ownershipDate": "30 Sep 2026 · secondary disclosure; original filing not retrieved",
+      "stakePercent": 2.48,
+      "stance": "held",
+      "summary": "Massachusetts Institute Of Technology is reported as a shareholder of Indian Energy Exchange Limited at 30 Sep 2026. The named Massachusetts Institute of Technology institutional shareholder. Public filing records do not by themselves establish a specific internal endowment mandate or the institution’s entire investment portfolio.",
+      "thesis": "Disclosed exposure to power exchange. The register does not establish an investment rationale.",
+      "risks": "A quarter-end observation, not live ownership. Disclosure thresholds, corporate actions and changes in capital can affect reported percentages.",
+      "sourceIds": [
+        "iex"
+      ],
+      "ticker": "IEX"
+    },
+    {
+      "id": "gael",
+      "name": "Gujarat Ambuja Exports Limited",
+      "listing": "Listed equity",
+      "sector": "Food ingredients",
+      "relationship": "Institutional shareholder · Named shareholder: Massachusetts Institute Of Technology",
+      "ownership": "1.19% reported company equity",
+      "ownershipDate": "30 Sep 2026 · secondary disclosure; original filing not retrieved",
+      "stakePercent": 1.19,
+      "stance": "held",
+      "summary": "Massachusetts Institute Of Technology is reported as a shareholder of Gujarat Ambuja Exports Limited at 30 Sep 2026. The named Massachusetts Institute of Technology institutional shareholder. Public filing records do not by themselves establish a specific internal endowment mandate or the institution’s entire investment portfolio.",
+      "thesis": "Disclosed exposure to food ingredients. The register does not establish an investment rationale.",
+      "risks": "A quarter-end observation, not live ownership. Disclosure thresholds, corporate actions and changes in capital can affect reported percentages.",
+      "sourceIds": [
+        "gael"
+      ],
+      "ticker": "GAEL"
+    },
+    {
+      "id": "alivus",
+      "name": "Alivus Life Sciences Limited",
+      "listing": "Listed equity",
+      "sector": "Pharmaceuticals",
+      "relationship": "Institutional shareholder · Named shareholder: Massachusetts Institute Of Technology",
+      "ownership": "1.23% reported company equity",
+      "ownershipDate": "30 Sep 2026 · secondary disclosure; original filing not retrieved",
+      "stakePercent": 1.23,
+      "stance": "held",
+      "summary": "Massachusetts Institute Of Technology is reported as a shareholder of Alivus Life Sciences Limited at 30 Sep 2026. The named Massachusetts Institute of Technology institutional shareholder. Public filing records do not by themselves establish a specific internal endowment mandate or the institution’s entire investment portfolio.",
+      "thesis": "Disclosed exposure to pharmaceuticals. The register does not establish an investment rationale.",
+      "risks": "A quarter-end observation, not live ownership. Disclosure thresholds, corporate actions and changes in capital can affect reported percentages.",
+      "sourceIds": [
+        "alivus"
+      ],
+      "ticker": "ALIVUS"
+    },
+    {
+      "id": "irmenergy",
+      "name": "IRM Energy Limited",
+      "listing": "Listed equity",
+      "sector": "Energy",
+      "relationship": "Institutional shareholder · Named shareholder: Massachusetts Institute Of Technology",
+      "ownership": "1.38% reported company equity",
+      "ownershipDate": "30 Sep 2026 · secondary disclosure; original filing not retrieved",
+      "stakePercent": 1.38,
+      "stance": "held",
+      "summary": "Massachusetts Institute Of Technology is reported as a shareholder of IRM Energy Limited at 30 Sep 2026. The named Massachusetts Institute of Technology institutional shareholder. Public filing records do not by themselves establish a specific internal endowment mandate or the institution’s entire investment portfolio.",
+      "thesis": "Disclosed exposure to energy. The register does not establish an investment rationale.",
+      "risks": "A quarter-end observation, not live ownership. Disclosure thresholds, corporate actions and changes in capital can affect reported percentages.",
+      "sourceIds": [
+        "irmenergy"
+      ],
+      "ticker": "IRMENERGY"
+    },
+    {
+      "id": "fairchemor",
+      "name": "Fairchem Organics Limited",
+      "listing": "Listed equity",
+      "sector": "Specialty chemicals",
+      "relationship": "Institutional shareholder · Named shareholder: Massachusetts Institute Of Technology",
+      "ownership": "3.33% reported company equity",
+      "ownershipDate": "30 Sep 2026 · secondary disclosure; original filing not retrieved",
+      "stakePercent": 3.33,
+      "stance": "held",
+      "summary": "Massachusetts Institute Of Technology is reported as a shareholder of Fairchem Organics Limited at 30 Sep 2026. The named Massachusetts Institute of Technology institutional shareholder. Public filing records do not by themselves establish a specific internal endowment mandate or the institution’s entire investment portfolio.",
+      "thesis": "Disclosed exposure to specialty chemicals. The register does not establish an investment rationale.",
+      "risks": "A quarter-end observation, not live ownership. Disclosure thresholds, corporate actions and changes in capital can affect reported percentages.",
+      "sourceIds": [
+        "fairchemor"
+      ],
+      "ticker": "FAIRCHEMOR"
+    },
+    {
+      "id": "yatra",
+      "name": "Yatra Online Limited",
+      "listing": "Listed equity",
+      "sector": "Travel services",
+      "relationship": "Institutional shareholder · Named shareholder: Massachusetts Institute Of Technology",
+      "ownership": "1.26% reported company equity",
+      "ownershipDate": "30 Sep 2026 · secondary disclosure; original filing not retrieved",
+      "stakePercent": 1.26,
+      "stance": "held",
+      "summary": "Massachusetts Institute Of Technology is reported as a shareholder of Yatra Online Limited at 30 Sep 2026. The named Massachusetts Institute of Technology institutional shareholder. Public filing records do not by themselves establish a specific internal endowment mandate or the institution’s entire investment portfolio.",
+      "thesis": "Disclosed exposure to travel services. The register does not establish an investment rationale.",
+      "risks": "A quarter-end observation, not live ownership. Disclosure thresholds, corporate actions and changes in capital can affect reported percentages.",
+      "sourceIds": [
+        "yatra"
+      ],
+      "ticker": "YATRA"
+    },
+    {
+      "id": "jgchem",
+      "name": "J.G. Chemicals Limited",
+      "listing": "Listed equity",
+      "sector": "Chemicals",
+      "relationship": "Institutional shareholder · Named shareholder: Massachusetts Institute Of Technology",
+      "ownership": "2.62% reported company equity",
+      "ownershipDate": "30 Sep 2026 · secondary disclosure; original filing not retrieved",
+      "stakePercent": 2.62,
+      "stance": "held",
+      "summary": "Massachusetts Institute Of Technology is reported as a shareholder of J.G. Chemicals Limited at 30 Sep 2026. The named Massachusetts Institute of Technology institutional shareholder. Public filing records do not by themselves establish a specific internal endowment mandate or the institution’s entire investment portfolio.",
+      "thesis": "Disclosed exposure to chemicals. The register does not establish an investment rationale.",
+      "risks": "A quarter-end observation, not live ownership. Disclosure thresholds, corporate actions and changes in capital can affect reported percentages.",
+      "sourceIds": [
+        "jgchem"
+      ],
+      "ticker": "JGCHEM"
+    },
+    {
+      "id": "igil",
+      "name": "International Gemological Institute Limited",
+      "listing": "Listed equity",
+      "sector": "Diamond certification",
+      "relationship": "Institutional shareholder · Named shareholder: Massachusetts Institute Of Technology",
+      "ownership": "1.03% reported company equity",
+      "ownershipDate": "30 Sep 2026 · secondary disclosure; original filing not retrieved",
+      "stakePercent": 1.03,
+      "stance": "held",
+      "summary": "Massachusetts Institute Of Technology is reported as a shareholder of International Gemological Institute Limited at 30 Sep 2026. The named Massachusetts Institute of Technology institutional shareholder. Public filing records do not by themselves establish a specific internal endowment mandate or the institution’s entire investment portfolio.",
+      "thesis": "Disclosed exposure to diamond certification. The register does not establish an investment rationale.",
+      "risks": "A quarter-end observation, not live ownership. Disclosure thresholds, corporate actions and changes in capital can affect reported percentages.",
+      "sourceIds": [
+        "igil"
+      ],
+      "ticker": "IGIL"
+    },
+    {
+      "id": "blackbuck",
+      "name": "BlackBuck Limited",
+      "listing": "Listed equity",
+      "sector": "Logistics technology",
+      "relationship": "Institutional shareholder · Named shareholder: Massachusetts Institute Of Technology",
+      "ownership": "1.35% reported company equity",
+      "ownershipDate": "30 Sep 2026 · secondary disclosure; original filing not retrieved",
+      "stakePercent": 1.35,
+      "stance": "held",
+      "summary": "Massachusetts Institute Of Technology is reported as a shareholder of BlackBuck Limited at 30 Sep 2026. The named Massachusetts Institute of Technology institutional shareholder. Public filing records do not by themselves establish a specific internal endowment mandate or the institution’s entire investment portfolio.",
+      "thesis": "Disclosed exposure to logistics technology. The register does not establish an investment rationale.",
+      "risks": "A quarter-end observation, not live ownership. Disclosure thresholds, corporate actions and changes in capital can affect reported percentages.",
+      "sourceIds": [
+        "blackbuck"
+      ],
+      "ticker": "BLACKBUCK"
+    },
+    {
+      "id": "niitltd",
+      "name": "NIIT Limited",
+      "listing": "Listed equity",
+      "sector": "Education and training",
+      "relationship": "Institutional shareholder · Named shareholder: Massachusetts Institute Of Technology",
+      "ownership": "5.64% reported company equity",
+      "ownershipDate": "30 Sep 2026 · secondary disclosure; original filing not retrieved",
+      "stakePercent": 5.64,
+      "stance": "held",
+      "summary": "Massachusetts Institute Of Technology is reported as a shareholder of NIIT Limited at 30 Sep 2026. The named Massachusetts Institute of Technology institutional shareholder. Public filing records do not by themselves establish a specific internal endowment mandate or the institution’s entire investment portfolio.",
+      "thesis": "Disclosed exposure to education and training. The register does not establish an investment rationale.",
+      "risks": "A quarter-end observation, not live ownership. Disclosure thresholds, corporate actions and changes in capital can affect reported percentages.",
+      "sourceIds": [
+        "niitltd"
+      ],
+      "ticker": "NIITLTD"
+    },
+    {
+      "id": "company-11",
+      "name": "Calcom Vision Limited",
+      "listing": "Listed equity",
+      "sector": "Electronics",
+      "relationship": "Institutional shareholder · Named shareholder: Massachusetts Institute Of Technology",
+      "ownership": "6.55% reported company equity",
+      "ownershipDate": "30 Sep 2026 · secondary disclosure; original filing not retrieved",
+      "stakePercent": 6.55,
+      "stance": "held",
+      "summary": "Massachusetts Institute Of Technology is reported as a shareholder of Calcom Vision Limited at 30 Sep 2026. The named Massachusetts Institute of Technology institutional shareholder. Public filing records do not by themselves establish a specific internal endowment mandate or the institution’s entire investment portfolio.",
+      "thesis": "Disclosed exposure to electronics. The register does not establish an investment rationale.",
+      "risks": "A quarter-end observation, not live ownership. Disclosure thresholds, corporate actions and changes in capital can affect reported percentages.",
+      "sourceIds": [
+        "company-11"
+      ]
+    },
+    {
+      "id": "aavas",
+      "name": "Aavas Financiers Limited",
+      "listing": "Listed equity",
+      "sector": "Housing finance",
+      "relationship": "Institutional shareholder · Named shareholder: Massachusetts Institute Of Technology",
+      "ownership": "1.10% reported company equity",
+      "ownershipDate": "30 Sep 2026 · secondary disclosure; original filing not retrieved",
+      "stakePercent": 1.1,
+      "stance": "held",
+      "summary": "Massachusetts Institute Of Technology is reported as a shareholder of Aavas Financiers Limited at 30 Sep 2026. The named Massachusetts Institute of Technology institutional shareholder. Public filing records do not by themselves establish a specific internal endowment mandate or the institution’s entire investment portfolio.",
+      "thesis": "Disclosed exposure to housing finance. The register does not establish an investment rationale.",
+      "risks": "A quarter-end observation, not live ownership. Disclosure thresholds, corporate actions and changes in capital can affect reported percentages.",
+      "sourceIds": [
+        "aavas"
+      ],
+      "ticker": "AAVAS"
+    },
+    {
+      "id": "everestind",
+      "name": "Everest Industries Limited",
+      "listing": "Listed equity",
+      "sector": "Building materials",
+      "relationship": "Institutional shareholder · Named shareholder: Massachusetts Institute Of Technology",
+      "ownership": "9.93% reported company equity",
+      "ownershipDate": "30 Sep 2026 · secondary disclosure; original filing not retrieved",
+      "stakePercent": 9.93,
+      "stance": "held",
+      "summary": "Massachusetts Institute Of Technology is reported as a shareholder of Everest Industries Limited at 30 Sep 2026. The named Massachusetts Institute of Technology institutional shareholder. Public filing records do not by themselves establish a specific internal endowment mandate or the institution’s entire investment portfolio.",
+      "thesis": "Disclosed exposure to building materials. The register does not establish an investment rationale.",
+      "risks": "A quarter-end observation, not live ownership. Disclosure thresholds, corporate actions and changes in capital can affect reported percentages.",
+      "sourceIds": [
+        "everestind"
+      ],
+      "ticker": "EVERESTIND"
+    }
+  ],
+  "events": [
+    {
+      "id": "redington-snapshot",
+      "companyId": "redington",
+      "date": "2026-09-30",
+      "dateLabel": "30 Sep 2026",
+      "title": "Reported quarter-end ownership",
+      "kind": "snapshot",
+      "direction": "held",
+      "status": "Snapshot",
+      "detail": "1.88% reported company equity",
+      "qualification": "Ownership snapshot only; purchases or sales are not inferred.",
+      "sourceIds": [
+        "redington"
+      ]
+    },
+    {
+      "id": "iex-snapshot",
+      "companyId": "iex",
+      "date": "2026-09-30",
+      "dateLabel": "30 Sep 2026",
+      "title": "Reported quarter-end ownership",
+      "kind": "snapshot",
+      "direction": "held",
+      "status": "Snapshot",
+      "detail": "2.48% reported company equity",
+      "qualification": "Ownership snapshot only; purchases or sales are not inferred.",
+      "sourceIds": [
+        "iex"
+      ]
+    },
+    {
+      "id": "gael-snapshot",
+      "companyId": "gael",
+      "date": "2026-09-30",
+      "dateLabel": "30 Sep 2026",
+      "title": "Reported quarter-end ownership",
+      "kind": "snapshot",
+      "direction": "held",
+      "status": "Snapshot",
+      "detail": "1.19% reported company equity",
+      "qualification": "Ownership snapshot only; purchases or sales are not inferred.",
+      "sourceIds": [
+        "gael"
+      ]
+    },
+    {
+      "id": "alivus-snapshot",
+      "companyId": "alivus",
+      "date": "2026-09-30",
+      "dateLabel": "30 Sep 2026",
+      "title": "Reported quarter-end ownership",
+      "kind": "snapshot",
+      "direction": "held",
+      "status": "Snapshot",
+      "detail": "1.23% reported company equity",
+      "qualification": "Ownership snapshot only; purchases or sales are not inferred.",
+      "sourceIds": [
+        "alivus"
+      ]
+    },
+    {
+      "id": "irmenergy-snapshot",
+      "companyId": "irmenergy",
+      "date": "2026-09-30",
+      "dateLabel": "30 Sep 2026",
+      "title": "Reported quarter-end ownership",
+      "kind": "snapshot",
+      "direction": "held",
+      "status": "Snapshot",
+      "detail": "1.38% reported company equity",
+      "qualification": "Ownership snapshot only; purchases or sales are not inferred.",
+      "sourceIds": [
+        "irmenergy"
+      ]
+    },
+    {
+      "id": "fairchemor-snapshot",
+      "companyId": "fairchemor",
+      "date": "2026-09-30",
+      "dateLabel": "30 Sep 2026",
+      "title": "Reported quarter-end ownership",
+      "kind": "snapshot",
+      "direction": "held",
+      "status": "Snapshot",
+      "detail": "3.33% reported company equity",
+      "qualification": "Ownership snapshot only; purchases or sales are not inferred.",
+      "sourceIds": [
+        "fairchemor"
+      ]
+    },
+    {
+      "id": "yatra-snapshot",
+      "companyId": "yatra",
+      "date": "2026-09-30",
+      "dateLabel": "30 Sep 2026",
+      "title": "Reported quarter-end ownership",
+      "kind": "snapshot",
+      "direction": "held",
+      "status": "Snapshot",
+      "detail": "1.26% reported company equity",
+      "qualification": "Ownership snapshot only; purchases or sales are not inferred.",
+      "sourceIds": [
+        "yatra"
+      ]
+    },
+    {
+      "id": "jgchem-snapshot",
+      "companyId": "jgchem",
+      "date": "2026-09-30",
+      "dateLabel": "30 Sep 2026",
+      "title": "Reported quarter-end ownership",
+      "kind": "snapshot",
+      "direction": "held",
+      "status": "Snapshot",
+      "detail": "2.62% reported company equity",
+      "qualification": "Ownership snapshot only; purchases or sales are not inferred.",
+      "sourceIds": [
+        "jgchem"
+      ]
+    },
+    {
+      "id": "igil-snapshot",
+      "companyId": "igil",
+      "date": "2026-09-30",
+      "dateLabel": "30 Sep 2026",
+      "title": "Reported quarter-end ownership",
+      "kind": "snapshot",
+      "direction": "held",
+      "status": "Snapshot",
+      "detail": "1.03% reported company equity",
+      "qualification": "Ownership snapshot only; purchases or sales are not inferred.",
+      "sourceIds": [
+        "igil"
+      ]
+    },
+    {
+      "id": "blackbuck-snapshot",
+      "companyId": "blackbuck",
+      "date": "2026-09-30",
+      "dateLabel": "30 Sep 2026",
+      "title": "Reported quarter-end ownership",
+      "kind": "snapshot",
+      "direction": "held",
+      "status": "Snapshot",
+      "detail": "1.35% reported company equity",
+      "qualification": "Ownership snapshot only; purchases or sales are not inferred.",
+      "sourceIds": [
+        "blackbuck"
+      ]
+    },
+    {
+      "id": "niitltd-snapshot",
+      "companyId": "niitltd",
+      "date": "2026-09-30",
+      "dateLabel": "30 Sep 2026",
+      "title": "Reported quarter-end ownership",
+      "kind": "snapshot",
+      "direction": "held",
+      "status": "Snapshot",
+      "detail": "5.64% reported company equity",
+      "qualification": "Ownership snapshot only; purchases or sales are not inferred.",
+      "sourceIds": [
+        "niitltd"
+      ]
+    },
+    {
+      "id": "company-11-snapshot",
+      "companyId": "company-11",
+      "date": "2026-09-30",
+      "dateLabel": "30 Sep 2026",
+      "title": "Reported quarter-end ownership",
+      "kind": "snapshot",
+      "direction": "held",
+      "status": "Snapshot",
+      "detail": "6.55% reported company equity",
+      "qualification": "Ownership snapshot only; purchases or sales are not inferred.",
+      "sourceIds": [
+        "company-11"
+      ]
+    },
+    {
+      "id": "aavas-snapshot",
+      "companyId": "aavas",
+      "date": "2026-09-30",
+      "dateLabel": "30 Sep 2026",
+      "title": "Reported quarter-end ownership",
+      "kind": "snapshot",
+      "direction": "held",
+      "status": "Snapshot",
+      "detail": "1.10% reported company equity",
+      "qualification": "Ownership snapshot only; purchases or sales are not inferred.",
+      "sourceIds": [
+        "aavas"
+      ]
+    },
+    {
+      "id": "everestind-snapshot",
+      "companyId": "everestind",
+      "date": "2026-09-30",
+      "dateLabel": "30 Sep 2026",
+      "title": "Reported quarter-end ownership",
+      "kind": "snapshot",
+      "direction": "held",
+      "status": "Snapshot",
+      "detail": "9.93% reported company equity",
+      "qualification": "Ownership snapshot only; purchases or sales are not inferred.",
+      "sourceIds": [
+        "everestind"
+      ]
+    }
+  ],
+  "report": {
+    "title": "Massachusetts Institute Of Technology · India exposure",
+    "summary": "Institutional shareholder. The named Massachusetts Institute of Technology institutional shareholder. Public filing records do not by themselves establish a specific internal endowment mandate or the institution’s entire investment portfolio.",
+    "sections": [
+      {
+        "title": "Dated Indian holdings",
+        "text": "14 selected September 2026 named-holder records. Coverage is selective and does not represent the investor’s complete India or global portfolio.",
+        "sourceIds": [
+          "redington"
+        ]
+      },
+      {
+        "title": "Holder identity",
+        "text": "The named Massachusetts Institute of Technology institutional shareholder. Public filing records do not by themselves establish a specific internal endowment mandate or the institution’s entire investment portfolio.",
+        "sourceIds": [
+          "redington"
+        ]
+      },
+      {
+        "title": "Ownership basis",
+        "text": "All displayed percentages refer to reported investee-company equity. Fund allocations, other vehicles and transaction amounts are not added to these values. Secondary figures await original-filing reconciliation.",
+        "sourceIds": [
+          "redington"
+        ]
+      }
+    ],
+    "themes": [
+      {
+        "name": "Subsequent disclosure review",
+        "conviction": "Research watch",
+        "case": "Track the next company register for the same named shareholder.",
+        "watch": "Legal holder, reporting date, capital changes and original filings.",
+        "sourceIds": [
+          "redington"
+        ]
+      }
+    ]
+  }
+}

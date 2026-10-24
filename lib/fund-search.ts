@@ -4,7 +4,7 @@ import {matchesSearch} from "./search";
 import {companyIdentity} from "./company-identity";
 import {nseSymbol} from "./nse-security-links";
 
-export function allCompanyHoldings(data:MonthlyPortfolio){
+export function allCompanyHoldings(data:Pick<MonthlyPortfolio,"funds"|"fullComparisons"|"previousFunds"|"previousMonth">){
   const identity=companyIdentity([...data.fullComparisons.flatMap(c=>c.rows),...data.funds.flatMap(f=>f.holdings),...data.previousFunds.flatMap(f=>f.holdings)]);
   return data.funds.flatMap(fund=>{
     const comparison=data.fullComparisons.find(item=>item.fundId===fund.id&&item.currentDate===fund.portfolioDate);

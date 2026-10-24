@@ -1,0 +1,395 @@
+{
+  "id": "adia-monsoon",
+  "name": "Abu Dhabi Investment Authority – Monsoon",
+  "asOf": "2026-10-24",
+  "checkedAt": "2026-10-24T04:48:16.143851+00:00",
+  "windowStart": "2025-10-24",
+  "windowEnd": "2026-10-24",
+  "coverage": "8 selected Indian-listed company records for Abu Dhabi Investment Authority - Monsoon. Named-holder coverage only; not a complete portfolio. Each record retains its disclosure date and ownership basis.",
+  "limitations": [
+    "Selected public disclosures, not a complete portfolio or a real-time ownership register.",
+    "Reported stakes are secondary transcriptions. Original exchange filings were not retrieved in this review.",
+    "Company-equity ownership, fund allocation and shares sold are different measures and are never combined.",
+    "This profile follows the exact ADIA – Monsoon shareholder name. It remains separate from ADIA’s broader private investments and other named accounts such as Way and Stable. Percentages must not be added to a group-level ADIA record."
+  ],
+  "sources": {
+    "context": {
+      "title": "Fund or institutional context",
+      "url": "https://www.adia.ae/en/investments",
+      "publisher": "ADIA",
+      "published": "Reviewed 24 Oct 2026; historical report where stated",
+      "kind": "primary",
+      "note": "Context only; does not verify the quarter-end ownership percentages."
+    },
+    "datapattns": {
+      "title": "Data Patterns (India) Limited — named shareholder disclosure",
+      "url": "https://block.deal/companies/data-patterns-india/",
+      "publisher": "block.deal",
+      "published": "30 Sep 2026",
+      "kind": "reporting",
+      "note": "Secondary transcription; original exchange filing not retrieved. "
+    },
+    "samhi": {
+      "title": "SAMHI Hotels Limited — named shareholder disclosure",
+      "url": "https://informed.sh/company/samhi-hotels",
+      "publisher": "INFORMED",
+      "published": "30 Sep 2026",
+      "kind": "reporting",
+      "note": "Secondary transcription; original exchange filing not retrieved. "
+    },
+    "igil": {
+      "title": "International Gemological Institute Limited — named shareholder disclosure",
+      "url": "https://block.deal/companies/internatio-gemm-ins-i-l/",
+      "publisher": "block.deal",
+      "published": "30 Sep 2026",
+      "kind": "reporting",
+      "note": "Secondary transcription; original exchange filing not retrieved. "
+    },
+    "aavas": {
+      "title": "Aavas Financiers Limited — named shareholder disclosure",
+      "url": "https://patternsradar.com/s/AAVAS",
+      "publisher": "PatternsRadar",
+      "published": "30 Sep 2026",
+      "kind": "reporting",
+      "note": "Secondary transcription; original exchange filing not retrieved. "
+    },
+    "galaxysurf": {
+      "title": "Galaxy Surfactants Limited — named shareholder disclosure",
+      "url": "https://block.deal/companies/galaxy-surfactants/",
+      "publisher": "block.deal",
+      "published": "30 Sep 2026",
+      "kind": "reporting",
+      "note": "Secondary transcription; original exchange filing not retrieved. "
+    },
+    "azad": {
+      "title": "Azad Engineering Limited — named shareholder disclosure",
+      "url": "https://block.deal/companies/azad-engineering/",
+      "publisher": "block.deal",
+      "published": "30 Sep 2026",
+      "kind": "reporting",
+      "note": "Secondary transcription; original exchange filing not retrieved. "
+    },
+    "paras": {
+      "title": "Paras Defence and Space Technologies Limited — named shareholder disclosure",
+      "url": "https://patternsradar.com/s/PARAS",
+      "publisher": "PatternsRadar",
+      "published": "30 Sep 2026",
+      "kind": "reporting",
+      "note": "Secondary transcription; original exchange filing not retrieved. "
+    },
+    "sapphire": {
+      "title": "Sapphire Foods India Limited — named shareholder disclosure",
+      "url": "https://block.deal/companies/sapphire-foods-india/",
+      "publisher": "block.deal",
+      "published": "30 Sep 2026",
+      "kind": "reporting",
+      "note": "Secondary transcription; original exchange filing not retrieved. "
+    }
+  },
+  "companies": [
+    {
+      "id": "datapattns",
+      "name": "Data Patterns (India) Limited",
+      "ticker": "DATAPATTNS",
+      "listing": "Listed equity",
+      "sector": "Defence electronics",
+      "relationship": "Named shareholder: Abu Dhabi Investment Authority - Monsoon",
+      "ownership": "1.25% reported company equity",
+      "ownershipDate": "30 Sep 2026 · secondary disclosure; original filing not retrieved",
+      "stakePercent": 1.25,
+      "stance": "held",
+      "summary": "Abu Dhabi Investment Authority - Monsoon is reported as a shareholder of Data Patterns (India) Limited at 30 Sep 2026.",
+      "thesis": "Disclosed exposure to defence electronics. The shareholder record does not establish an investment rationale.",
+      "risks": "Dated public disclosure, not a live position. Missing holdings do not establish an exit. ",
+      "sourceIds": [
+        "datapattns"
+      ]
+    },
+    {
+      "id": "samhi",
+      "name": "SAMHI Hotels Limited",
+      "ticker": "SAMHI",
+      "listing": "Listed equity",
+      "sector": "Hospitality",
+      "relationship": "Named shareholder: Abu Dhabi Investment Authority - Monsoon",
+      "ownership": "2.54% reported company equity",
+      "ownershipDate": "30 Sep 2026 · secondary disclosure; original filing not retrieved",
+      "stakePercent": 2.54,
+      "stance": "held",
+      "summary": "Abu Dhabi Investment Authority - Monsoon is reported as a shareholder of SAMHI Hotels Limited at 30 Sep 2026.",
+      "thesis": "Disclosed exposure to hospitality. The shareholder record does not establish an investment rationale.",
+      "risks": "Dated public disclosure, not a live position. Missing holdings do not establish an exit. ",
+      "sourceIds": [
+        "samhi"
+      ]
+    },
+    {
+      "id": "igil",
+      "name": "International Gemological Institute Limited",
+      "ticker": "IGIL",
+      "listing": "Listed equity",
+      "sector": "Diamond certification",
+      "relationship": "Named shareholder: Abu Dhabi Investment Authority - Monsoon",
+      "ownership": "1.11% reported company equity",
+      "ownershipDate": "30 Sep 2026 · secondary disclosure; original filing not retrieved",
+      "stakePercent": 1.11,
+      "stance": "held",
+      "summary": "Abu Dhabi Investment Authority - Monsoon is reported as a shareholder of International Gemological Institute Limited at 30 Sep 2026.",
+      "thesis": "Disclosed exposure to diamond certification. The shareholder record does not establish an investment rationale.",
+      "risks": "Dated public disclosure, not a live position. Missing holdings do not establish an exit. ",
+      "sourceIds": [
+        "igil"
+      ]
+    },
+    {
+      "id": "aavas",
+      "name": "Aavas Financiers Limited",
+      "ticker": "AAVAS",
+      "listing": "Listed equity",
+      "sector": "Housing finance",
+      "relationship": "Named shareholder: Abu Dhabi Investment Authority - Monsoon",
+      "ownership": "2.12% reported company equity",
+      "ownershipDate": "30 Sep 2026 · secondary disclosure; original filing not retrieved",
+      "stakePercent": 2.12,
+      "stance": "held",
+      "summary": "Abu Dhabi Investment Authority - Monsoon is reported as a shareholder of Aavas Financiers Limited at 30 Sep 2026.",
+      "thesis": "Disclosed exposure to housing finance. The shareholder record does not establish an investment rationale.",
+      "risks": "Dated public disclosure, not a live position. Missing holdings do not establish an exit. ",
+      "sourceIds": [
+        "aavas"
+      ]
+    },
+    {
+      "id": "galaxysurf",
+      "name": "Galaxy Surfactants Limited",
+      "ticker": "GALAXYSURF",
+      "listing": "Listed equity",
+      "sector": "Specialty chemicals",
+      "relationship": "Named shareholder: Abu Dhabi Investment Authority - Monsoon",
+      "ownership": "1.29% reported company equity",
+      "ownershipDate": "30 Sep 2026 · secondary disclosure; original filing not retrieved",
+      "stakePercent": 1.29,
+      "stance": "held",
+      "summary": "Abu Dhabi Investment Authority - Monsoon is reported as a shareholder of Galaxy Surfactants Limited at 30 Sep 2026.",
+      "thesis": "Disclosed exposure to specialty chemicals. The shareholder record does not establish an investment rationale.",
+      "risks": "Dated public disclosure, not a live position. Missing holdings do not establish an exit. ",
+      "sourceIds": [
+        "galaxysurf"
+      ]
+    },
+    {
+      "id": "azad",
+      "name": "Azad Engineering Limited",
+      "ticker": "AZAD",
+      "listing": "Listed equity",
+      "sector": "Precision engineering",
+      "relationship": "Named shareholder: Abu Dhabi Investment Authority - Monsoon",
+      "ownership": "1.46% reported company equity",
+      "ownershipDate": "30 Sep 2026 · secondary disclosure; original filing not retrieved",
+      "stakePercent": 1.46,
+      "stance": "held",
+      "summary": "Abu Dhabi Investment Authority - Monsoon is reported as a shareholder of Azad Engineering Limited at 30 Sep 2026.",
+      "thesis": "Disclosed exposure to precision engineering. The shareholder record does not establish an investment rationale.",
+      "risks": "Dated public disclosure, not a live position. Missing holdings do not establish an exit. ",
+      "sourceIds": [
+        "azad"
+      ]
+    },
+    {
+      "id": "paras",
+      "name": "Paras Defence and Space Technologies Limited",
+      "ticker": "PARAS",
+      "listing": "Listed equity",
+      "sector": "Defence",
+      "relationship": "Named shareholder: Abu Dhabi Investment Authority - Monsoon",
+      "ownership": "2.20% reported company equity",
+      "ownershipDate": "30 Sep 2026 · secondary disclosure; original filing not retrieved",
+      "stakePercent": 2.2,
+      "stance": "held",
+      "summary": "Abu Dhabi Investment Authority - Monsoon is reported as a shareholder of Paras Defence and Space Technologies Limited at 30 Sep 2026.",
+      "thesis": "Disclosed exposure to defence. The shareholder record does not establish an investment rationale.",
+      "risks": "Dated public disclosure, not a live position. Missing holdings do not establish an exit. ",
+      "sourceIds": [
+        "paras"
+      ]
+    },
+    {
+      "id": "sapphire",
+      "name": "Sapphire Foods India Limited",
+      "ticker": "SAPPHIRE",
+      "listing": "Listed equity",
+      "sector": "Restaurants",
+      "relationship": "Named shareholder: Abu Dhabi Investment Authority - Monsoon",
+      "ownership": "1.88% reported company equity",
+      "ownershipDate": "30 Sep 2026 · secondary disclosure; original filing not retrieved",
+      "stakePercent": 1.88,
+      "stance": "held",
+      "summary": "Abu Dhabi Investment Authority - Monsoon is reported as a shareholder of Sapphire Foods India Limited at 30 Sep 2026.",
+      "thesis": "Disclosed exposure to restaurants. The shareholder record does not establish an investment rationale.",
+      "risks": "Dated public disclosure, not a live position. Missing holdings do not establish an exit. ",
+      "sourceIds": [
+        "sapphire"
+      ]
+    }
+  ],
+  "events": [
+    {
+      "id": "datapattns-snapshot",
+      "companyId": "datapattns",
+      "date": "2026-09-30",
+      "dateLabel": "30 Sep 2026",
+      "title": "Reported holding snapshot",
+      "kind": "snapshot",
+      "direction": "held",
+      "status": "Snapshot",
+      "detail": "1.25% reported company equity",
+      "qualification": "Named-holder observation only. No purchases or sales inferred from the percentage.",
+      "sourceIds": [
+        "datapattns"
+      ]
+    },
+    {
+      "id": "samhi-snapshot",
+      "companyId": "samhi",
+      "date": "2026-09-30",
+      "dateLabel": "30 Sep 2026",
+      "title": "Reported holding snapshot",
+      "kind": "snapshot",
+      "direction": "held",
+      "status": "Snapshot",
+      "detail": "2.54% reported company equity",
+      "qualification": "Named-holder observation only. No purchases or sales inferred from the percentage.",
+      "sourceIds": [
+        "samhi"
+      ]
+    },
+    {
+      "id": "igil-snapshot",
+      "companyId": "igil",
+      "date": "2026-09-30",
+      "dateLabel": "30 Sep 2026",
+      "title": "Reported holding snapshot",
+      "kind": "snapshot",
+      "direction": "held",
+      "status": "Snapshot",
+      "detail": "1.11% reported company equity",
+      "qualification": "Named-holder observation only. No purchases or sales inferred from the percentage.",
+      "sourceIds": [
+        "igil"
+      ]
+    },
+    {
+      "id": "aavas-snapshot",
+      "companyId": "aavas",
+      "date": "2026-09-30",
+      "dateLabel": "30 Sep 2026",
+      "title": "Reported holding snapshot",
+      "kind": "snapshot",
+      "direction": "held",
+      "status": "Snapshot",
+      "detail": "2.12% reported company equity",
+      "qualification": "Named-holder observation only. No purchases or sales inferred from the percentage.",
+      "sourceIds": [
+        "aavas"
+      ]
+    },
+    {
+      "id": "galaxysurf-snapshot",
+      "companyId": "galaxysurf",
+      "date": "2026-09-30",
+      "dateLabel": "30 Sep 2026",
+      "title": "Reported holding snapshot",
+      "kind": "snapshot",
+      "direction": "held",
+      "status": "Snapshot",
+      "detail": "1.29% reported company equity",
+      "qualification": "Named-holder observation only. No purchases or sales inferred from the percentage.",
+      "sourceIds": [
+        "galaxysurf"
+      ]
+    },
+    {
+      "id": "azad-snapshot",
+      "companyId": "azad",
+      "date": "2026-09-30",
+      "dateLabel": "30 Sep 2026",
+      "title": "Reported holding snapshot",
+      "kind": "snapshot",
+      "direction": "held",
+      "status": "Snapshot",
+      "detail": "1.46% reported company equity",
+      "qualification": "Named-holder observation only. No purchases or sales inferred from the percentage.",
+      "sourceIds": [
+        "azad"
+      ]
+    },
+    {
+      "id": "paras-snapshot",
+      "companyId": "paras",
+      "date": "2026-09-30",
+      "dateLabel": "30 Sep 2026",
+      "title": "Reported holding snapshot",
+      "kind": "snapshot",
+      "direction": "held",
+      "status": "Snapshot",
+      "detail": "2.20% reported company equity",
+      "qualification": "Named-holder observation only. No purchases or sales inferred from the percentage.",
+      "sourceIds": [
+        "paras"
+      ]
+    },
+    {
+      "id": "sapphire-snapshot",
+      "companyId": "sapphire",
+      "date": "2026-09-30",
+      "dateLabel": "30 Sep 2026",
+      "title": "Reported holding snapshot",
+      "kind": "snapshot",
+      "direction": "held",
+      "status": "Snapshot",
+      "detail": "1.88% reported company equity",
+      "qualification": "Named-holder observation only. No purchases or sales inferred from the percentage.",
+      "sourceIds": [
+        "sapphire"
+      ]
+    }
+  ],
+  "report": {
+    "title": "Abu Dhabi Investment Authority – Monsoon · India exposure",
+    "summary": "This profile follows the exact ADIA – Monsoon shareholder name. It remains separate from ADIA’s broader private investments and other named accounts such as Way and Stable. Percentages must not be added to a group-level ADIA record.",
+    "sections": [
+      {
+        "title": "Public company holdings",
+        "text": "8 selected company records with named-holder attribution and dated ownership. Coverage can omit positions below disclosure thresholds or where newer documents have not been retrieved.",
+        "sourceIds": [
+          "datapattns"
+        ]
+      },
+      {
+        "title": "Identity and measurement",
+        "text": "This profile follows the exact ADIA – Monsoon shareholder name. It remains separate from ADIA’s broader private investments and other named accounts such as Way and Stable. Percentages must not be added to a group-level ADIA record.",
+        "sourceIds": [
+          "context"
+        ]
+      },
+      {
+        "title": "Evidence quality",
+        "text": "Ownership figures remain reported until reconciled with original filings. A quarterly position is not evidence of a transaction. A reviewed date does not refresh historical ownership.",
+        "sourceIds": [
+          "datapattns"
+        ]
+      }
+    ],
+    "themes": [
+      {
+        "name": "Next disclosure review",
+        "conviction": "Research watch",
+        "case": "Track subsequent company filings to establish whether each named holding persists.",
+        "watch": "Exact shareholder, reporting date, capital basis and source revisions.",
+        "sourceIds": [
+          "datapattns"
+        ]
+      }
+    ]
+  }
+}

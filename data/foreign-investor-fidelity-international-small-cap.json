@@ -1,0 +1,142 @@
+{
+  "id": "fidelity-international-small-cap",
+  "name": "Fidelity Investment Trust Fidelity International Small Cap Fund",
+  "asOf": "2026-10-24",
+  "checkedAt": "2026-10-24T04:58:51.898291+00:00",
+  "windowStart": "2025-10-24",
+  "windowEnd": "2026-10-24",
+  "coverage": "Named investment fund. 2 selected Indian-listed holdings under the exact named shareholder, with dated company-equity percentages.",
+  "limitations": [
+    "Selected public named-holder records, not a complete portfolio or real-time ownership register.",
+    "September percentages are secondary transcriptions. Original exchange filings were not retrieved or independently reconciled during this review.",
+    "The review date is separate from the ownership date. Absence from a disclosure does not establish an exit.",
+    "The named Fidelity International Small Cap Fund shareholder. This is distinct from Fidelity Low-Priced Stock Fund and from other Fidelity-managed funds.",
+    "Fund portfolio weights, investee-company stakes, share classes and manager-level exposure are different measures and are never combined."
+  ],
+  "sources": {
+    "redington": {
+      "title": "Redington Limited — September 2026 named shareholders",
+      "url": "https://block.deal/companies/redington/",
+      "publisher": "block.deal",
+      "published": "30 Sep 2026; reviewed 24 Oct 2026",
+      "kind": "reporting",
+      "note": "Secondary transcription with original exchange evidence links. Original exchange documents were not retrieved in this review; reported percentage is not independently reconciled."
+    },
+    "krbl": {
+      "title": "KRBL Limited — September 2026 named shareholders",
+      "url": "https://block.deal/entities/fidelity-investment-trust-fidelity-international-small-cap-fund/",
+      "publisher": "block.deal",
+      "published": "30 Sep 2026; reviewed 24 Oct 2026",
+      "kind": "reporting",
+      "note": "Secondary transcription with original exchange evidence links. Original exchange documents were not retrieved in this review; reported percentage is not independently reconciled."
+    }
+  },
+  "companies": [
+    {
+      "id": "redington",
+      "name": "Redington Limited",
+      "listing": "Listed equity",
+      "sector": "Technology distribution",
+      "relationship": "Named investment fund · Named shareholder: Fidelity Investment Trust Fidelity International Small Cap Fund",
+      "ownership": "2.05% reported company equity",
+      "ownershipDate": "30 Sep 2026 · secondary disclosure; original filing not retrieved",
+      "stakePercent": 2.05,
+      "stance": "held",
+      "summary": "Fidelity Investment Trust Fidelity International Small Cap Fund is reported as a shareholder of Redington Limited at 30 Sep 2026. The named Fidelity International Small Cap Fund shareholder. This is distinct from Fidelity Low-Priced Stock Fund and from other Fidelity-managed funds.",
+      "thesis": "Disclosed exposure to technology distribution. The register does not establish an investment rationale.",
+      "risks": "A quarter-end observation, not live ownership. Disclosure thresholds, corporate actions and changes in capital can affect reported percentages.",
+      "sourceIds": [
+        "redington"
+      ],
+      "ticker": "REDINGTON"
+    },
+    {
+      "id": "krbl",
+      "name": "KRBL Limited",
+      "listing": "Listed equity",
+      "sector": "Food products",
+      "relationship": "Named investment fund · Named shareholder: Fidelity Investment Trust Fidelity International Small Cap Fund",
+      "ownership": "1.61% reported company equity",
+      "ownershipDate": "30 Sep 2026 · secondary disclosure; original filing not retrieved",
+      "stakePercent": 1.61,
+      "stance": "held",
+      "summary": "Fidelity Investment Trust Fidelity International Small Cap Fund is reported as a shareholder of KRBL Limited at 30 Sep 2026. The named Fidelity International Small Cap Fund shareholder. This is distinct from Fidelity Low-Priced Stock Fund and from other Fidelity-managed funds.",
+      "thesis": "Disclosed exposure to food products. The register does not establish an investment rationale.",
+      "risks": "A quarter-end observation, not live ownership. Disclosure thresholds, corporate actions and changes in capital can affect reported percentages.",
+      "sourceIds": [
+        "krbl"
+      ],
+      "ticker": "KRBL"
+    }
+  ],
+  "events": [
+    {
+      "id": "redington-snapshot",
+      "companyId": "redington",
+      "date": "2026-09-30",
+      "dateLabel": "30 Sep 2026",
+      "title": "Reported quarter-end ownership",
+      "kind": "snapshot",
+      "direction": "held",
+      "status": "Snapshot",
+      "detail": "2.05% reported company equity",
+      "qualification": "Ownership snapshot only; purchases or sales are not inferred.",
+      "sourceIds": [
+        "redington"
+      ]
+    },
+    {
+      "id": "krbl-snapshot",
+      "companyId": "krbl",
+      "date": "2026-09-30",
+      "dateLabel": "30 Sep 2026",
+      "title": "Reported quarter-end ownership",
+      "kind": "snapshot",
+      "direction": "held",
+      "status": "Snapshot",
+      "detail": "1.61% reported company equity",
+      "qualification": "Ownership snapshot only; purchases or sales are not inferred.",
+      "sourceIds": [
+        "krbl"
+      ]
+    }
+  ],
+  "report": {
+    "title": "Fidelity Investment Trust Fidelity International Small Cap Fund · India exposure",
+    "summary": "Named investment fund. The named Fidelity International Small Cap Fund shareholder. This is distinct from Fidelity Low-Priced Stock Fund and from other Fidelity-managed funds.",
+    "sections": [
+      {
+        "title": "Dated Indian holdings",
+        "text": "2 selected September 2026 named-holder records. Coverage is selective and does not represent the investor’s complete India or global portfolio.",
+        "sourceIds": [
+          "redington"
+        ]
+      },
+      {
+        "title": "Holder identity",
+        "text": "The named Fidelity International Small Cap Fund shareholder. This is distinct from Fidelity Low-Priced Stock Fund and from other Fidelity-managed funds.",
+        "sourceIds": [
+          "redington"
+        ]
+      },
+      {
+        "title": "Ownership basis",
+        "text": "All displayed percentages refer to reported investee-company equity. Fund allocations, other vehicles and transaction amounts are not added to these values. Secondary figures await original-filing reconciliation.",
+        "sourceIds": [
+          "redington"
+        ]
+      }
+    ],
+    "themes": [
+      {
+        "name": "Subsequent disclosure review",
+        "conviction": "Research watch",
+        "case": "Track the next company register for the same named shareholder.",
+        "watch": "Legal holder, reporting date, capital changes and original filings.",
+        "sourceIds": [
+          "redington"
+        ]
+      }
+    ]
+  }
+}

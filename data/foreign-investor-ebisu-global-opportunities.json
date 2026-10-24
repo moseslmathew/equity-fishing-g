@@ -1,0 +1,624 @@
+{
+  "id": "ebisu-global-opportunities",
+  "name": "Ebisu Global Opportunities Fund Limited",
+  "asOf": "2026-10-24",
+  "checkedAt": "2026-10-24T04:52:33.008889+00:00",
+  "windowStart": "2025-10-24",
+  "windowEnd": "2026-10-24",
+  "coverage": "17 selected named Indian-listed shareholder records. Includes dated historical records where a newer disclosure was not established.",
+  "limitations": [
+    "Public named-holder coverage only, not a complete portfolio or a live register.",
+    "Holdings retain the named legal fund; Ebisu and Unico are not combined, even when they own the same company.",
+    "Secondary transcriptions are labelled reported. Original exchange filings were not retrieved or independently reconciled in this review.",
+    "Review dates do not refresh historical ownership. June and March records remain historical; absence does not establish an exit.",
+    "Company stakes, fund allocation, shares sold, warrants and transaction values are different measures and are not combined."
+  ],
+  "sources": {
+    "holdings": {
+      "title": "Ebisu Global Opportunities Fund Limited — named shareholder disclosure index",
+      "url": "https://block.deal/entities/ebisu-global-opportunities-fund-limited/",
+      "publisher": "block.deal",
+      "published": "September 2026 and earlier snapshots; reviewed 24 Oct 2026",
+      "kind": "reporting",
+      "note": "Secondary transcriptions with exchange evidence links. Original exchange documents were not retrieved in this review; reported values are not independently reconciled."
+    }
+  },
+  "companies": [
+    {
+      "id": "baluforge",
+      "name": "Balu Forge Industries Limited",
+      "listing": "Listed equity",
+      "sector": "Engineering",
+      "relationship": "Named shareholder: Ebisu Global Opportunities Fund Limited",
+      "ownership": "1.73% reported company equity",
+      "ownershipDate": "30 Sep 2026 · secondary disclosure; original filing not retrieved",
+      "stakePercent": 1.73,
+      "stance": "held",
+      "summary": "Ebisu Global Opportunities Fund Limited is reported as the named shareholder of Balu Forge Industries Limited at 30 Sep 2026.",
+      "thesis": "Reported exposure to engineering. Public ownership data alone does not establish the fund’s investment rationale.",
+      "risks": "Dated disclosure, not a live position. Capital changes and corporate actions can alter percentages without a matching trade. Missing disclosure is not zero ownership.",
+      "sourceIds": [
+        "holdings"
+      ],
+      "ticker": "BALUFORGE"
+    },
+    {
+      "id": "raymondlsl",
+      "name": "Raymond Lifestyle Limited",
+      "listing": "Listed equity",
+      "sector": "Retail",
+      "relationship": "Named shareholder: Ebisu Global Opportunities Fund Limited",
+      "ownership": "1.01% reported company equity",
+      "ownershipDate": "30 Sep 2026 · secondary disclosure; original filing not retrieved",
+      "stakePercent": 1.01,
+      "stance": "held",
+      "summary": "Ebisu Global Opportunities Fund Limited is reported as the named shareholder of Raymond Lifestyle Limited at 30 Sep 2026.",
+      "thesis": "Reported exposure to retail. Public ownership data alone does not establish the fund’s investment rationale.",
+      "risks": "Dated disclosure, not a live position. Capital changes and corporate actions can alter percentages without a matching trade. Missing disclosure is not zero ownership.",
+      "sourceIds": [
+        "holdings"
+      ],
+      "ticker": "RAYMONDLSL"
+    },
+    {
+      "id": "raymondrel",
+      "name": "Raymond Realty Limited",
+      "listing": "Listed equity",
+      "sector": "Real estate",
+      "relationship": "Named shareholder: Ebisu Global Opportunities Fund Limited",
+      "ownership": "1.42% reported company equity",
+      "ownershipDate": "30 Sep 2026 · secondary disclosure; original filing not retrieved",
+      "stakePercent": 1.42,
+      "stance": "held",
+      "summary": "Ebisu Global Opportunities Fund Limited is reported as the named shareholder of Raymond Realty Limited at 30 Sep 2026.",
+      "thesis": "Reported exposure to real estate. Public ownership data alone does not establish the fund’s investment rationale.",
+      "risks": "Dated disclosure, not a live position. Capital changes and corporate actions can alter percentages without a matching trade. Missing disclosure is not zero ownership.",
+      "sourceIds": [
+        "holdings"
+      ],
+      "ticker": "RAYMONDREL"
+    },
+    {
+      "id": "company-3",
+      "name": "RDB Infrastructure and Power Limited",
+      "listing": "Listed equity",
+      "sector": "Infrastructure",
+      "relationship": "Named shareholder: Ebisu Global Opportunities Fund Limited",
+      "ownership": "1.01% reported company equity",
+      "ownershipDate": "30 Sep 2026 · secondary disclosure; original filing not retrieved",
+      "stakePercent": 1.01,
+      "stance": "held",
+      "summary": "Ebisu Global Opportunities Fund Limited is reported as the named shareholder of RDB Infrastructure and Power Limited at 30 Sep 2026.",
+      "thesis": "Reported exposure to infrastructure. Public ownership data alone does not establish the fund’s investment rationale.",
+      "risks": "Dated disclosure, not a live position. Capital changes and corporate actions can alter percentages without a matching trade. Missing disclosure is not zero ownership.",
+      "sourceIds": [
+        "holdings"
+      ]
+    },
+    {
+      "id": "micel",
+      "name": "MIC Electronics Limited",
+      "listing": "Listed equity",
+      "sector": "Electronics",
+      "relationship": "Named shareholder: Ebisu Global Opportunities Fund Limited",
+      "ownership": "8.65% reported company equity",
+      "ownershipDate": "30 Sep 2026 · secondary disclosure; original filing not retrieved",
+      "stakePercent": 8.65,
+      "stance": "held",
+      "summary": "Ebisu Global Opportunities Fund Limited is reported as the named shareholder of MIC Electronics Limited at 30 Sep 2026.",
+      "thesis": "Reported exposure to electronics. Public ownership data alone does not establish the fund’s investment rationale.",
+      "risks": "Dated disclosure, not a live position. Capital changes and corporate actions can alter percentages without a matching trade. Missing disclosure is not zero ownership.",
+      "sourceIds": [
+        "holdings"
+      ],
+      "ticker": "MICEL"
+    },
+    {
+      "id": "raymond",
+      "name": "Raymond Limited",
+      "listing": "Listed equity",
+      "sector": "Diversified",
+      "relationship": "Named shareholder: Ebisu Global Opportunities Fund Limited",
+      "ownership": "1.42% reported company equity",
+      "ownershipDate": "30 Sep 2026 · secondary disclosure; original filing not retrieved",
+      "stakePercent": 1.42,
+      "stance": "held",
+      "summary": "Ebisu Global Opportunities Fund Limited is reported as the named shareholder of Raymond Limited at 30 Sep 2026.",
+      "thesis": "Reported exposure to diversified. Public ownership data alone does not establish the fund’s investment rationale.",
+      "risks": "Dated disclosure, not a live position. Capital changes and corporate actions can alter percentages without a matching trade. Missing disclosure is not zero ownership.",
+      "sourceIds": [
+        "holdings"
+      ],
+      "ticker": "RAYMOND"
+    },
+    {
+      "id": "company-6",
+      "name": "Rathi Steel and Power Limited",
+      "listing": "Listed equity",
+      "sector": "Steel",
+      "relationship": "Named shareholder: Ebisu Global Opportunities Fund Limited",
+      "ownership": "1.88% reported company equity",
+      "ownershipDate": "30 Sep 2026 · secondary disclosure; original filing not retrieved",
+      "stakePercent": 1.88,
+      "stance": "held",
+      "summary": "Ebisu Global Opportunities Fund Limited is reported as the named shareholder of Rathi Steel and Power Limited at 30 Sep 2026.",
+      "thesis": "Reported exposure to steel. Public ownership data alone does not establish the fund’s investment rationale.",
+      "risks": "Dated disclosure, not a live position. Capital changes and corporate actions can alter percentages without a matching trade. Missing disclosure is not zero ownership.",
+      "sourceIds": [
+        "holdings"
+      ]
+    },
+    {
+      "id": "company-7",
+      "name": "Bhatia Communications & Retail (India) Limited",
+      "listing": "Listed equity",
+      "sector": "Retail",
+      "relationship": "Named shareholder: Ebisu Global Opportunities Fund Limited",
+      "ownership": "3.55% reported company equity",
+      "ownershipDate": "30 Sep 2026 · secondary disclosure; original filing not retrieved",
+      "stakePercent": 3.55,
+      "stance": "held",
+      "summary": "Ebisu Global Opportunities Fund Limited is reported as the named shareholder of Bhatia Communications & Retail (India) Limited at 30 Sep 2026.",
+      "thesis": "Reported exposure to retail. Public ownership data alone does not establish the fund’s investment rationale.",
+      "risks": "Dated disclosure, not a live position. Capital changes and corporate actions can alter percentages without a matching trade. Missing disclosure is not zero ownership.",
+      "sourceIds": [
+        "holdings"
+      ]
+    },
+    {
+      "id": "company-8",
+      "name": "Ebix Limited",
+      "listing": "Listed equity",
+      "sector": "Services",
+      "relationship": "Named shareholder: Ebisu Global Opportunities Fund Limited",
+      "ownership": "5.09% reported company equity",
+      "ownershipDate": "30 Sep 2026 · secondary disclosure; original filing not retrieved",
+      "stakePercent": 5.09,
+      "stance": "held",
+      "summary": "Ebisu Global Opportunities Fund Limited is reported as the named shareholder of Ebix Limited at 30 Sep 2026.",
+      "thesis": "Reported exposure to services. Public ownership data alone does not establish the fund’s investment rationale.",
+      "risks": "Dated disclosure, not a live position. Capital changes and corporate actions can alter percentages without a matching trade. Missing disclosure is not zero ownership.",
+      "sourceIds": [
+        "holdings"
+      ]
+    },
+    {
+      "id": "hazoor",
+      "name": "Hazoor Multi Projects Limited",
+      "listing": "Listed equity",
+      "sector": "Infrastructure",
+      "relationship": "Named shareholder: Ebisu Global Opportunities Fund Limited",
+      "ownership": "3.17% reported company equity",
+      "ownershipDate": "30 Sep 2026 · secondary disclosure; original filing not retrieved",
+      "stakePercent": 3.17,
+      "stance": "held",
+      "summary": "Ebisu Global Opportunities Fund Limited is reported as the named shareholder of Hazoor Multi Projects Limited at 30 Sep 2026.",
+      "thesis": "Reported exposure to infrastructure. Public ownership data alone does not establish the fund’s investment rationale.",
+      "risks": "Dated disclosure, not a live position. Capital changes and corporate actions can alter percentages without a matching trade. Missing disclosure is not zero ownership.",
+      "sourceIds": [
+        "holdings"
+      ],
+      "ticker": "HAZOOR"
+    },
+    {
+      "id": "elitecon",
+      "name": "Elitecon International Limited",
+      "listing": "Listed equity",
+      "sector": "Consumer products",
+      "relationship": "Named shareholder: Ebisu Global Opportunities Fund Limited",
+      "ownership": "4.71% reported company equity",
+      "ownershipDate": "30 Sep 2026 · secondary disclosure; original filing not retrieved",
+      "stakePercent": 4.71,
+      "stance": "held",
+      "summary": "Ebisu Global Opportunities Fund Limited is reported as the named shareholder of Elitecon International Limited at 30 Sep 2026.",
+      "thesis": "Reported exposure to consumer products. Public ownership data alone does not establish the fund’s investment rationale.",
+      "risks": "Dated disclosure, not a live position. Capital changes and corporate actions can alter percentages without a matching trade. Missing disclosure is not zero ownership.",
+      "sourceIds": [
+        "holdings"
+      ],
+      "ticker": "ELITECON"
+    },
+    {
+      "id": "apollo",
+      "name": "Apollo Micro Systems Limited",
+      "listing": "Listed equity",
+      "sector": "Defence electronics",
+      "relationship": "Named shareholder: Ebisu Global Opportunities Fund Limited",
+      "ownership": "2.69% reported company equity",
+      "ownershipDate": "30 Sep 2026 · secondary disclosure; original filing not retrieved",
+      "stakePercent": 2.69,
+      "stance": "held",
+      "summary": "Ebisu Global Opportunities Fund Limited is reported as the named shareholder of Apollo Micro Systems Limited at 30 Sep 2026.",
+      "thesis": "Reported exposure to defence electronics. Public ownership data alone does not establish the fund’s investment rationale.",
+      "risks": "Dated disclosure, not a live position. Capital changes and corporate actions can alter percentages without a matching trade. Missing disclosure is not zero ownership.",
+      "sourceIds": [
+        "holdings"
+      ],
+      "ticker": "APOLLO"
+    },
+    {
+      "id": "sampann",
+      "name": "Sampann Utpadan India Limited",
+      "listing": "Listed equity",
+      "sector": "Industrials",
+      "relationship": "Named shareholder: Ebisu Global Opportunities Fund Limited",
+      "ownership": "6.16% reported company equity",
+      "ownershipDate": "30 Sep 2026 · secondary disclosure; original filing not retrieved",
+      "stakePercent": 6.16,
+      "stance": "held",
+      "summary": "Ebisu Global Opportunities Fund Limited is reported as the named shareholder of Sampann Utpadan India Limited at 30 Sep 2026.",
+      "thesis": "Reported exposure to industrials. Public ownership data alone does not establish the fund’s investment rationale.",
+      "risks": "Dated disclosure, not a live position. Capital changes and corporate actions can alter percentages without a matching trade. Missing disclosure is not zero ownership.",
+      "sourceIds": [
+        "holdings"
+      ],
+      "ticker": "SAMPANN"
+    },
+    {
+      "id": "pcjeweller",
+      "name": "PC Jeweller Limited",
+      "listing": "Listed equity",
+      "sector": "Jewellery",
+      "relationship": "Named shareholder: Ebisu Global Opportunities Fund Limited",
+      "ownership": "5.15% reported company equity",
+      "ownershipDate": "30 Sep 2026 · secondary disclosure; original filing not retrieved",
+      "stakePercent": 5.15,
+      "stance": "held",
+      "summary": "Ebisu Global Opportunities Fund Limited is reported as the named shareholder of PC Jeweller Limited at 30 Sep 2026.",
+      "thesis": "Reported exposure to jewellery. Public ownership data alone does not establish the fund’s investment rationale.",
+      "risks": "Dated disclosure, not a live position. Capital changes and corporate actions can alter percentages without a matching trade. Missing disclosure is not zero ownership.",
+      "sourceIds": [
+        "holdings"
+      ],
+      "ticker": "PCJEWELLER"
+    },
+    {
+      "id": "omaxe",
+      "name": "Omaxe Limited",
+      "listing": "Listed equity",
+      "sector": "Real estate",
+      "relationship": "Named shareholder: Ebisu Global Opportunities Fund Limited",
+      "ownership": "2.63% reported company equity",
+      "ownershipDate": "30 Sep 2026 · secondary disclosure; original filing not retrieved",
+      "stakePercent": 2.63,
+      "stance": "held",
+      "summary": "Ebisu Global Opportunities Fund Limited is reported as the named shareholder of Omaxe Limited at 30 Sep 2026.",
+      "thesis": "Reported exposure to real estate. Public ownership data alone does not establish the fund’s investment rationale.",
+      "risks": "Dated disclosure, not a live position. Capital changes and corporate actions can alter percentages without a matching trade. Missing disclosure is not zero ownership.",
+      "sourceIds": [
+        "holdings"
+      ],
+      "ticker": "OMAXE"
+    },
+    {
+      "id": "dolphin",
+      "name": "Dolphin Offshore Enterprises (India) Limited",
+      "listing": "Listed equity",
+      "sector": "Offshore services",
+      "relationship": "Named shareholder: Ebisu Global Opportunities Fund Limited",
+      "ownership": "1.74% reported company equity",
+      "ownershipDate": "30 Sep 2026 · secondary disclosure; original filing not retrieved",
+      "stakePercent": 1.74,
+      "stance": "held",
+      "summary": "Ebisu Global Opportunities Fund Limited is reported as the named shareholder of Dolphin Offshore Enterprises (India) Limited at 30 Sep 2026.",
+      "thesis": "Reported exposure to offshore services. Public ownership data alone does not establish the fund’s investment rationale.",
+      "risks": "Dated disclosure, not a live position. Capital changes and corporate actions can alter percentages without a matching trade. Missing disclosure is not zero ownership.",
+      "sourceIds": [
+        "holdings"
+      ],
+      "ticker": "DOLPHIN"
+    },
+    {
+      "id": "company-16",
+      "name": "NTC Industries Limited",
+      "listing": "Listed equity",
+      "sector": "Consumer products",
+      "relationship": "Named shareholder: Ebisu Global Opportunities Fund Limited",
+      "ownership": "2.62% reported company equity",
+      "ownershipDate": "30 Jun 2026 · secondary disclosure; original filing not retrieved",
+      "stakePercent": 2.62,
+      "stance": "held",
+      "summary": "Ebisu Global Opportunities Fund Limited is reported as the named shareholder of NTC Industries Limited at 30 Jun 2026. Historical disclosure; September ownership has not been confirmed in this review.",
+      "thesis": "Reported exposure to consumer products. Public ownership data alone does not establish the fund’s investment rationale.",
+      "risks": "Dated disclosure, not a live position. Capital changes and corporate actions can alter percentages without a matching trade. Missing disclosure is not zero ownership.",
+      "sourceIds": [
+        "holdings"
+      ]
+    }
+  ],
+  "events": [
+    {
+      "id": "baluforge-snapshot",
+      "companyId": "baluforge",
+      "date": "2026-09-30",
+      "dateLabel": "30 Sep 2026",
+      "title": "Reported ownership snapshot",
+      "kind": "snapshot",
+      "direction": "held",
+      "status": "Snapshot",
+      "detail": "1.73% reported company equity",
+      "qualification": "A dated shareholder observation, not evidence of a purchase or sale.",
+      "sourceIds": [
+        "holdings"
+      ]
+    },
+    {
+      "id": "raymondlsl-snapshot",
+      "companyId": "raymondlsl",
+      "date": "2026-09-30",
+      "dateLabel": "30 Sep 2026",
+      "title": "Reported ownership snapshot",
+      "kind": "snapshot",
+      "direction": "held",
+      "status": "Snapshot",
+      "detail": "1.01% reported company equity",
+      "qualification": "A dated shareholder observation, not evidence of a purchase or sale.",
+      "sourceIds": [
+        "holdings"
+      ]
+    },
+    {
+      "id": "raymondrel-snapshot",
+      "companyId": "raymondrel",
+      "date": "2026-09-30",
+      "dateLabel": "30 Sep 2026",
+      "title": "Reported ownership snapshot",
+      "kind": "snapshot",
+      "direction": "held",
+      "status": "Snapshot",
+      "detail": "1.42% reported company equity",
+      "qualification": "A dated shareholder observation, not evidence of a purchase or sale.",
+      "sourceIds": [
+        "holdings"
+      ]
+    },
+    {
+      "id": "company-3-snapshot",
+      "companyId": "company-3",
+      "date": "2026-09-30",
+      "dateLabel": "30 Sep 2026",
+      "title": "Reported ownership snapshot",
+      "kind": "snapshot",
+      "direction": "held",
+      "status": "Snapshot",
+      "detail": "1.01% reported company equity",
+      "qualification": "A dated shareholder observation, not evidence of a purchase or sale.",
+      "sourceIds": [
+        "holdings"
+      ]
+    },
+    {
+      "id": "micel-snapshot",
+      "companyId": "micel",
+      "date": "2026-09-30",
+      "dateLabel": "30 Sep 2026",
+      "title": "Reported ownership snapshot",
+      "kind": "snapshot",
+      "direction": "held",
+      "status": "Snapshot",
+      "detail": "8.65% reported company equity",
+      "qualification": "A dated shareholder observation, not evidence of a purchase or sale.",
+      "sourceIds": [
+        "holdings"
+      ]
+    },
+    {
+      "id": "raymond-snapshot",
+      "companyId": "raymond",
+      "date": "2026-09-30",
+      "dateLabel": "30 Sep 2026",
+      "title": "Reported ownership snapshot",
+      "kind": "snapshot",
+      "direction": "held",
+      "status": "Snapshot",
+      "detail": "1.42% reported company equity",
+      "qualification": "A dated shareholder observation, not evidence of a purchase or sale.",
+      "sourceIds": [
+        "holdings"
+      ]
+    },
+    {
+      "id": "company-6-snapshot",
+      "companyId": "company-6",
+      "date": "2026-09-30",
+      "dateLabel": "30 Sep 2026",
+      "title": "Reported ownership snapshot",
+      "kind": "snapshot",
+      "direction": "held",
+      "status": "Snapshot",
+      "detail": "1.88% reported company equity",
+      "qualification": "A dated shareholder observation, not evidence of a purchase or sale.",
+      "sourceIds": [
+        "holdings"
+      ]
+    },
+    {
+      "id": "company-7-snapshot",
+      "companyId": "company-7",
+      "date": "2026-09-30",
+      "dateLabel": "30 Sep 2026",
+      "title": "Reported ownership snapshot",
+      "kind": "snapshot",
+      "direction": "held",
+      "status": "Snapshot",
+      "detail": "3.55% reported company equity",
+      "qualification": "A dated shareholder observation, not evidence of a purchase or sale.",
+      "sourceIds": [
+        "holdings"
+      ]
+    },
+    {
+      "id": "company-8-snapshot",
+      "companyId": "company-8",
+      "date": "2026-09-30",
+      "dateLabel": "30 Sep 2026",
+      "title": "Reported ownership snapshot",
+      "kind": "snapshot",
+      "direction": "held",
+      "status": "Snapshot",
+      "detail": "5.09% reported company equity",
+      "qualification": "A dated shareholder observation, not evidence of a purchase or sale.",
+      "sourceIds": [
+        "holdings"
+      ]
+    },
+    {
+      "id": "hazoor-snapshot",
+      "companyId": "hazoor",
+      "date": "2026-09-30",
+      "dateLabel": "30 Sep 2026",
+      "title": "Reported ownership snapshot",
+      "kind": "snapshot",
+      "direction": "held",
+      "status": "Snapshot",
+      "detail": "3.17% reported company equity",
+      "qualification": "A dated shareholder observation, not evidence of a purchase or sale.",
+      "sourceIds": [
+        "holdings"
+      ]
+    },
+    {
+      "id": "elitecon-snapshot",
+      "companyId": "elitecon",
+      "date": "2026-09-30",
+      "dateLabel": "30 Sep 2026",
+      "title": "Reported ownership snapshot",
+      "kind": "snapshot",
+      "direction": "held",
+      "status": "Snapshot",
+      "detail": "4.71% reported company equity",
+      "qualification": "A dated shareholder observation, not evidence of a purchase or sale.",
+      "sourceIds": [
+        "holdings"
+      ]
+    },
+    {
+      "id": "apollo-snapshot",
+      "companyId": "apollo",
+      "date": "2026-09-30",
+      "dateLabel": "30 Sep 2026",
+      "title": "Reported ownership snapshot",
+      "kind": "snapshot",
+      "direction": "held",
+      "status": "Snapshot",
+      "detail": "2.69% reported company equity",
+      "qualification": "A dated shareholder observation, not evidence of a purchase or sale.",
+      "sourceIds": [
+        "holdings"
+      ]
+    },
+    {
+      "id": "sampann-snapshot",
+      "companyId": "sampann",
+      "date": "2026-09-30",
+      "dateLabel": "30 Sep 2026",
+      "title": "Reported ownership snapshot",
+      "kind": "snapshot",
+      "direction": "held",
+      "status": "Snapshot",
+      "detail": "6.16% reported company equity",
+      "qualification": "A dated shareholder observation, not evidence of a purchase or sale.",
+      "sourceIds": [
+        "holdings"
+      ]
+    },
+    {
+      "id": "pcjeweller-snapshot",
+      "companyId": "pcjeweller",
+      "date": "2026-09-30",
+      "dateLabel": "30 Sep 2026",
+      "title": "Reported ownership snapshot",
+      "kind": "snapshot",
+      "direction": "held",
+      "status": "Snapshot",
+      "detail": "5.15% reported company equity",
+      "qualification": "A dated shareholder observation, not evidence of a purchase or sale.",
+      "sourceIds": [
+        "holdings"
+      ]
+    },
+    {
+      "id": "omaxe-snapshot",
+      "companyId": "omaxe",
+      "date": "2026-09-30",
+      "dateLabel": "30 Sep 2026",
+      "title": "Reported ownership snapshot",
+      "kind": "snapshot",
+      "direction": "held",
+      "status": "Snapshot",
+      "detail": "2.63% reported company equity",
+      "qualification": "A dated shareholder observation, not evidence of a purchase or sale.",
+      "sourceIds": [
+        "holdings"
+      ]
+    },
+    {
+      "id": "dolphin-snapshot",
+      "companyId": "dolphin",
+      "date": "2026-09-30",
+      "dateLabel": "30 Sep 2026",
+      "title": "Reported ownership snapshot",
+      "kind": "snapshot",
+      "direction": "held",
+      "status": "Snapshot",
+      "detail": "1.74% reported company equity",
+      "qualification": "A dated shareholder observation, not evidence of a purchase or sale.",
+      "sourceIds": [
+        "holdings"
+      ]
+    },
+    {
+      "id": "company-16-snapshot",
+      "companyId": "company-16",
+      "date": "2026-06-30",
+      "dateLabel": "30 Jun 2026",
+      "title": "Reported ownership snapshot",
+      "kind": "snapshot",
+      "direction": "held",
+      "status": "Snapshot",
+      "detail": "2.62% reported company equity",
+      "qualification": "A dated shareholder observation, not evidence of a purchase or sale.",
+      "sourceIds": [
+        "holdings"
+      ]
+    }
+  ],
+  "report": {
+    "title": "Ebisu Global Opportunities Fund Limited · India holdings",
+    "summary": "Selected Indian-listed company disclosures for the named fund, with company-equity percentages and original reporting dates. No parent affiliation or investment strategy is inferred.",
+    "sections": [
+      {
+        "title": "Disclosed company exposure",
+        "text": "17 dated company records. Each percentage refers to ownership of the investee company, not allocation within the fund.",
+        "sourceIds": [
+          "holdings"
+        ]
+      },
+      {
+        "title": "Holder identity",
+        "text": "The profile follows Ebisu Global Opportunities Fund Limited. Similar fund names, other legal vehicles and common holdings are kept separate.",
+        "sourceIds": [
+          "holdings"
+        ]
+      },
+      {
+        "title": "Evidence and dates",
+        "text": "Shareholder records are secondary transcriptions pending original-filing reconciliation. Quarter-end ownership does not establish purchases or sales, and earlier records remain explicitly dated.",
+        "sourceIds": [
+          "holdings"
+        ]
+      }
+    ],
+    "themes": [
+      {
+        "name": "Disclosure follow-up",
+        "conviction": "Research watch",
+        "case": "Review the next company shareholding pattern to establish whether each named holding persists.",
+        "watch": "Exact legal shareholder, capital basis, corporate actions and the original filing date.",
+        "sourceIds": [
+          "holdings"
+        ]
+      }
+    ]
+  }
+}

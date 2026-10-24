@@ -1,0 +1,412 @@
+{
+  "id": "goldman-sachs",
+  "name": "Goldman Sachs",
+  "asOf": "2026-10-23",
+  "checkedAt": "2026-10-23T14:13:05.499045+00:00",
+  "windowStart": "2025-10-23",
+  "windowEnd": "2026-10-23",
+  "coverage": "Selected India exposure: six listed-company records through the client-managed India Equity Portfolio and two private/India-linked investment relationships. Named holder, reporting date and evidence quality remain visible.",
+  "limitations": [
+    "Selective public records, not a complete Goldman Sachs portfolio, beneficial-ownership register or real-time exposure report.",
+    "Managed-fund holdings and Alternatives investments are distinct. None of these records establishes that the position is financed solely with Goldman Sachs proprietary capital.",
+    "Listed percentages are secondary transcriptions: five September 2026 records and one historical June 2026 record. Original exchange filings could not be retrieved; these figures remain reported, not independently reconciled.",
+    "Review date is not ownership date. Missing percentages remain unknown; absence from a public disclosure does not establish an exit.",
+    "Portfolio weights, investee-company stakes, financing round sizes and investment-banking mandates are different measures and are not combined."
+  ],
+  "sources": {
+    "strategy": {
+      "title": "Goldman Sachs India — businesses and investment services",
+      "url": "https://www.goldmansachs.com/worldwide/india",
+      "publisher": "Goldman Sachs",
+      "published": "Reviewed 23 Oct 2026",
+      "kind": "primary"
+    },
+    "fund": {
+      "title": "Goldman Sachs India Equity Portfolio — fund information",
+      "url": "https://am.gs.com/en-se/advisors/funds/detail/PV100867/LU0858290173/goldman-sachs-india-equity-portfolio",
+      "publisher": "Goldman Sachs Asset Management",
+      "published": "Fund information; retrieved view requires login",
+      "kind": "primary",
+      "note": "Identifies the managed fund. Fund portfolio weights must not be substituted for ownership of an investee company."
+    },
+    "aurionpro": {
+      "title": "Aurionpro — named FPI holdings, September 2026",
+      "url": "https://fundtrackerindia.com/stock/AURIONPRO",
+      "publisher": "Fund Tracker India",
+      "published": "30 Sep 2026; filing dated 21 Oct 2026",
+      "kind": "reporting",
+      "note": "Secondary transcription of NSE shareholding data. Original filing could not be retrieved in this review; percentage remains reported."
+    },
+    "india-shelter": {
+      "title": "India Shelter — named shareholders",
+      "url": "https://patternsradar.com/s/INDIASHLTR",
+      "publisher": "PatternsRadar",
+      "published": "30 Sep 2026; filing dated 21 Oct 2026",
+      "kind": "reporting",
+      "note": "Secondary transcription. Original exchange XML was unavailable during this review."
+    },
+    "pricol": {
+      "title": "Pricol — named shareholders",
+      "url": "https://patternsradar.com/s/PRICOLLTD",
+      "publisher": "PatternsRadar",
+      "published": "30 Sep 2026; filing dated 9 Oct 2026",
+      "kind": "reporting",
+      "note": "Secondary transcription. Original exchange filing was unavailable during this review."
+    },
+    "sjs": {
+      "title": "S.J.S. Enterprises — named shareholders",
+      "url": "https://patternsradar.com/s/SJS",
+      "publisher": "PatternsRadar",
+      "published": "30 Sep 2026; filing dated 15 Oct 2026",
+      "kind": "reporting",
+      "note": "Secondary transcription. Original exchange filing was unavailable during this review."
+    },
+    "td-power": {
+      "title": "TD Power Systems — shareholding pattern",
+      "url": "https://shop.valueresearchonline.com/stocks/45645/td-power-systems-ltd/shareholding/",
+      "publisher": "Value Research",
+      "published": "September 2026 quarter; page dated 16 Oct 2026",
+      "kind": "reporting",
+      "note": "Secondary shareholder table; original filing not independently reconciled. Share counts across the August stock split are not inferred."
+    },
+    "medi-assist": {
+      "title": "Named holder disclosure index — Medi Assist June holding",
+      "url": "https://block.deal/entities/goldman-sachs-funds-goldman-sachs-india-equity-portfolio/",
+      "publisher": "block.deal",
+      "published": "30 Jun 2026 snapshot",
+      "kind": "reporting",
+      "note": "Historical secondary transcription, not a September or current holding. Original exchange XML was unavailable."
+    },
+    "moengage": {
+      "title": "MoEngage announces $100 million round led by Goldman Sachs Alternatives and A91",
+      "url": "https://www.moengage.com/in-the-news/moengage-gets-100m-to-scale-marketing-ai-agents-and-accelerate-expansion-in-north-america/",
+      "publisher": "MoEngage",
+      "published": "5 Nov 2025",
+      "kind": "primary"
+    },
+    "aragen": {
+      "title": "Aragen announces Quadria investment alongside Goldman Sachs",
+      "url": "https://www.aragen.com/news/aragen-secures-100-mn-investment-from-quadria-capital/",
+      "publisher": "Aragen Life Sciences",
+      "published": "13 Jan 2025",
+      "kind": "primary"
+    },
+    "aragen-history": {
+      "title": "Aragen corporate history — Goldman Sachs investment in 2021",
+      "url": "https://www.aragen.com/our-journey/",
+      "publisher": "Aragen Life Sciences",
+      "published": "2021 milestone; reviewed 23 Oct 2026",
+      "kind": "primary"
+    }
+  },
+  "companies": [
+    {
+      "id": "aurionpro",
+      "name": "Aurionpro Solutions Limited",
+      "ticker": "AURIONPRO",
+      "listing": "Listed equity · client-managed fund",
+      "sector": "Banking technology",
+      "relationship": "Goldman Sachs Funds – Goldman Sachs India Equity Portfolio. Managed-fund exposure; not established as Goldman Sachs proprietary capital.",
+      "ownership": "2.54% reported company stake · India Equity Portfolio",
+      "ownershipDate": "30 Sep 2026 · secondary disclosure; original filing not retrieved",
+      "stakePercent": 2.54,
+      "stance": "held",
+      "summary": "A dated named-holder record for the India Equity Portfolio. Ownership percentages refer to company equity, not the allocation within the fund. This is not a consolidated Goldman Sachs group stake.",
+      "thesis": "Research interpretation: this record provides banking technology exposure through a managed equity portfolio; it does not reveal the manager’s investment rationale.",
+      "risks": "Software implementation, customer concentration and execution. Holdings can change after the reporting date; the original filing was not independently reconciled.",
+      "sourceIds": [
+        "aurionpro"
+      ]
+    },
+    {
+      "id": "india-shelter",
+      "name": "India Shelter Finance Corporation Limited",
+      "ticker": "INDIASHLTR",
+      "listing": "Listed equity · client-managed fund",
+      "sector": "Affordable housing finance",
+      "relationship": "Goldman Sachs Funds – Goldman Sachs India Equity Portfolio. Managed-fund exposure; not established as Goldman Sachs proprietary capital.",
+      "ownership": "2.39% reported company stake · India Equity Portfolio",
+      "ownershipDate": "30 Sep 2026 · secondary disclosure; original filing not retrieved",
+      "stakePercent": 2.39,
+      "stance": "held",
+      "summary": "A dated named-holder record for the India Equity Portfolio. Ownership percentages refer to company equity, not the allocation within the fund. This is not a consolidated Goldman Sachs group stake.",
+      "thesis": "Research interpretation: this record provides affordable housing finance exposure through a managed equity portfolio; it does not reveal the manager’s investment rationale.",
+      "risks": "Asset quality, funding costs and underwriting discipline. Holdings can change after the reporting date; the original filing was not independently reconciled.",
+      "sourceIds": [
+        "india-shelter"
+      ]
+    },
+    {
+      "id": "pricol",
+      "name": "Pricol Limited",
+      "ticker": "PRICOLLTD",
+      "listing": "Listed equity · client-managed fund",
+      "sector": "Automotive components",
+      "relationship": "Goldman Sachs Funds – Goldman Sachs India Equity Portfolio. Managed-fund exposure; not established as Goldman Sachs proprietary capital.",
+      "ownership": "3.02% reported company stake · India Equity Portfolio",
+      "ownershipDate": "30 Sep 2026 · secondary disclosure; original filing not retrieved",
+      "stakePercent": 3.02,
+      "stance": "held",
+      "summary": "A dated named-holder record for the India Equity Portfolio. Ownership percentages refer to company equity, not the allocation within the fund. This is not a consolidated Goldman Sachs group stake.",
+      "thesis": "Research interpretation: this record provides automotive components exposure through a managed equity portfolio; it does not reveal the manager’s investment rationale.",
+      "risks": "Vehicle demand, customer concentration and product execution. Holdings can change after the reporting date; the original filing was not independently reconciled.",
+      "sourceIds": [
+        "pricol"
+      ]
+    },
+    {
+      "id": "sjs",
+      "name": "S.J.S. Enterprises Limited",
+      "ticker": "SJS",
+      "listing": "Listed equity · client-managed fund",
+      "sector": "Decorative components",
+      "relationship": "Goldman Sachs Funds – Goldman Sachs India Equity Portfolio. Managed-fund exposure; not established as Goldman Sachs proprietary capital.",
+      "ownership": "2.84% reported company stake · India Equity Portfolio",
+      "ownershipDate": "30 Sep 2026 · secondary disclosure; original filing not retrieved",
+      "stakePercent": 2.84,
+      "stance": "held",
+      "summary": "A dated named-holder record for the India Equity Portfolio. Ownership percentages refer to company equity, not the allocation within the fund. This is not a consolidated Goldman Sachs group stake.",
+      "thesis": "Research interpretation: this record provides decorative components exposure through a managed equity portfolio; it does not reveal the manager’s investment rationale.",
+      "risks": "Customer demand, acquisition integration and margins. Holdings can change after the reporting date; the original filing was not independently reconciled.",
+      "sourceIds": [
+        "sjs"
+      ]
+    },
+    {
+      "id": "td-power",
+      "name": "TD Power Systems Limited",
+      "ticker": "TDPOWERSYS",
+      "listing": "Listed equity · client-managed fund",
+      "sector": "Electrical equipment",
+      "relationship": "Goldman Sachs Funds – Goldman Sachs India Equity Portfolio. Managed-fund exposure; not established as Goldman Sachs proprietary capital.",
+      "ownership": "1.44% reported company stake · India Equity Portfolio",
+      "ownershipDate": "30 Sep 2026 · secondary disclosure; original filing not retrieved",
+      "stakePercent": 1.44,
+      "stance": "held",
+      "summary": "A dated named-holder record for the India Equity Portfolio. Ownership percentages refer to company equity, not the allocation within the fund. This is not a consolidated Goldman Sachs group stake.",
+      "thesis": "Research interpretation: this record provides electrical equipment exposure through a managed equity portfolio; it does not reveal the manager’s investment rationale.",
+      "risks": "Order conversion, working capital and industrial demand. Holdings can change after the reporting date; the original filing was not independently reconciled.",
+      "sourceIds": [
+        "td-power"
+      ]
+    },
+    {
+      "id": "medi-assist",
+      "name": "Medi Assist Healthcare Services Limited",
+      "ticker": "MEDIASSIST",
+      "listing": "Listed equity · client-managed fund",
+      "sector": "Health insurance administration",
+      "relationship": "Goldman Sachs Funds – Goldman Sachs India Equity Portfolio. Managed-fund exposure; not established as Goldman Sachs proprietary capital.",
+      "ownership": "5.18% reported company stake · India Equity Portfolio",
+      "ownershipDate": "30 Jun 2026 · secondary disclosure; original filing not retrieved",
+      "stakePercent": 5.18,
+      "stance": "held",
+      "summary": "A dated named-holder record for the India Equity Portfolio. Ownership percentages refer to company equity, not the allocation within the fund. This is not a consolidated Goldman Sachs group stake.",
+      "thesis": "Research interpretation: this record provides health insurance administration exposure through a managed equity portfolio; it does not reveal the manager’s investment rationale.",
+      "risks": "Client retention, regulatory requirements and technology execution. Holdings can change after the reporting date; the original filing was not independently reconciled.",
+      "sourceIds": [
+        "medi-assist"
+      ]
+    },
+    {
+      "id": "moengage",
+      "name": "MoEngage",
+      "listing": "Private · India-linked · Alternatives",
+      "sector": "Customer engagement software",
+      "relationship": "Growth Equity at Goldman Sachs Alternatives, an existing investor, participated alongside A91 Partners. This is a separate strategy from the listed India Equity Portfolio.",
+      "ownership": "Investment confirmed; retained percentage undisclosed",
+      "ownershipDate": "5 Nov 2025 investment announcement",
+      "stakePercent": null,
+      "stance": "added",
+      "summary": "The Bengaluru and San Francisco company announced a $100 million financing involving Goldman Sachs Alternatives and A91. The total round is not Goldman Sachs’ individual cheque or ownership percentage.",
+      "thesis": "Research interpretation: enterprise engagement software provides exposure to recurring software spending and AI-enabled marketing workflows.",
+      "risks": "Competition, retention, growth efficiency and private-market valuation. Later financing or secondary sales may change ownership.",
+      "sourceIds": [
+        "moengage"
+      ]
+    },
+    {
+      "id": "aragen",
+      "name": "Aragen Life Sciences Limited",
+      "listing": "Private · India · pre-IPO research",
+      "sector": "Pharmaceutical research and manufacturing",
+      "relationship": "Goldman Sachs invested in 2021; Aragen identified it as an existing strategic investor when announcing Quadria’s investment in January 2025. Named holding vehicle and current retained percentage not reconciled.",
+      "ownership": "Historical investment confirmed; current percentage unverified",
+      "ownershipDate": "13 Jan 2025 company confirmation; initial investment 2021",
+      "stakePercent": null,
+      "stance": "held",
+      "summary": "Company announcements establish the investment relationship. The $100 million announced in January 2025 belongs to Quadria’s transaction, not a new Goldman Sachs investment. No 2026 retained stake is inferred.",
+      "thesis": "Research interpretation: outsourced drug discovery and manufacturing can benefit from specialist capability and customer relationships.",
+      "risks": "R&D funding cycles, customer concentration, capacity returns and subsequent ownership changes. IPO advisory roles alone do not establish equity ownership.",
+      "sourceIds": [
+        "aragen",
+        "aragen-history"
+      ]
+    }
+  ],
+  "events": [
+    {
+      "id": "aurionpro-snapshot",
+      "companyId": "aurionpro",
+      "date": "2026-09-30",
+      "dateLabel": "30 Sep 2026",
+      "title": "Reported named-fund ownership snapshot",
+      "kind": "snapshot",
+      "direction": "held",
+      "status": "Snapshot",
+      "detail": "Secondary disclosure reports 2.54% of company equity under the named India Equity Portfolio.",
+      "qualification": "A quarter-end observation, not a purchase or sale. Original filing not retrieved. No present-day ownership or trade direction is inferred.",
+      "sourceIds": [
+        "aurionpro"
+      ]
+    },
+    {
+      "id": "india-shelter-snapshot",
+      "companyId": "india-shelter",
+      "date": "2026-09-30",
+      "dateLabel": "30 Sep 2026",
+      "title": "Reported named-fund ownership snapshot",
+      "kind": "snapshot",
+      "direction": "held",
+      "status": "Snapshot",
+      "detail": "Secondary disclosure reports 2.39% of company equity under the named India Equity Portfolio.",
+      "qualification": "A quarter-end observation, not a purchase or sale. Original filing not retrieved. No present-day ownership or trade direction is inferred.",
+      "sourceIds": [
+        "india-shelter"
+      ]
+    },
+    {
+      "id": "pricol-snapshot",
+      "companyId": "pricol",
+      "date": "2026-09-30",
+      "dateLabel": "30 Sep 2026",
+      "title": "Reported named-fund ownership snapshot",
+      "kind": "snapshot",
+      "direction": "held",
+      "status": "Snapshot",
+      "detail": "Secondary disclosure reports 3.02% of company equity under the named India Equity Portfolio.",
+      "qualification": "A quarter-end observation, not a purchase or sale. Original filing not retrieved. No present-day ownership or trade direction is inferred.",
+      "sourceIds": [
+        "pricol"
+      ]
+    },
+    {
+      "id": "sjs-snapshot",
+      "companyId": "sjs",
+      "date": "2026-09-30",
+      "dateLabel": "30 Sep 2026",
+      "title": "Reported named-fund ownership snapshot",
+      "kind": "snapshot",
+      "direction": "held",
+      "status": "Snapshot",
+      "detail": "Secondary disclosure reports 2.84% of company equity under the named India Equity Portfolio.",
+      "qualification": "A quarter-end observation, not a purchase or sale. Original filing not retrieved. No present-day ownership or trade direction is inferred.",
+      "sourceIds": [
+        "sjs"
+      ]
+    },
+    {
+      "id": "td-power-snapshot",
+      "companyId": "td-power",
+      "date": "2026-09-30",
+      "dateLabel": "30 Sep 2026",
+      "title": "Reported named-fund ownership snapshot",
+      "kind": "snapshot",
+      "direction": "held",
+      "status": "Snapshot",
+      "detail": "Secondary disclosure reports 1.44% of company equity under the named India Equity Portfolio.",
+      "qualification": "A quarter-end observation, not a purchase or sale. Original filing not retrieved. No present-day ownership or trade direction is inferred.",
+      "sourceIds": [
+        "td-power"
+      ]
+    },
+    {
+      "id": "medi-assist-snapshot",
+      "companyId": "medi-assist",
+      "date": "2026-06-30",
+      "dateLabel": "30 Jun 2026",
+      "title": "Reported named-fund ownership snapshot",
+      "kind": "snapshot",
+      "direction": "held",
+      "status": "Snapshot",
+      "detail": "Secondary disclosure reports 5.18% of company equity under the named India Equity Portfolio.",
+      "qualification": "A quarter-end observation, not a purchase or sale. Original filing not retrieved. No present-day ownership or trade direction is inferred.",
+      "sourceIds": [
+        "medi-assist"
+      ]
+    },
+    {
+      "id": "moengage-round",
+      "companyId": "moengage",
+      "date": "2025-11-05",
+      "dateLabel": "5 Nov 2025",
+      "title": "Goldman Sachs Alternatives participates in MoEngage financing",
+      "kind": "equity",
+      "direction": "added",
+      "status": "Completed",
+      "detail": "MoEngage announced a $100 million round involving its existing investor Goldman Sachs Alternatives and A91 Partners.",
+      "qualification": "Aggregate round size is not Goldman Sachs’ investment amount. Retained percentage and effects of subsequent transactions were not disclosed here.",
+      "sourceIds": [
+        "moengage"
+      ]
+    }
+  ],
+  "report": {
+    "title": "Goldman Sachs · Indian exposure",
+    "summary": "Two investment routes: client-managed listed equities and separate private-market strategies. Eight selected records retain the named holder, ownership date and source qualification; no group-wide stake or total portfolio value is calculated.",
+    "sections": [
+      {
+        "title": "Listed equities · client-managed fund",
+        "text": "The six public-company records are attributed to Goldman Sachs Funds – Goldman Sachs India Equity Portfolio. Percentages measure the named fund’s stake in each company, not the company’s weight inside the fund. Third-party tables transcribe the disclosures; original filings were unavailable for reconciliation.",
+        "sourceIds": [
+          "aurionpro",
+          "india-shelter",
+          "pricol",
+          "sjs",
+          "td-power",
+          "medi-assist"
+        ]
+      },
+      {
+        "title": "Private investments · separate strategies",
+        "text": "MoEngage’s November 2025 announcement identifies Goldman Sachs Alternatives as an existing investor in its financing. Aragen’s January 2025 announcement confirms an older strategic investment relationship. Neither provides a current retained percentage. These are not positions in the listed India Equity Portfolio.",
+        "sourceIds": [
+          "moengage",
+          "aragen",
+          "aragen-history"
+        ]
+      },
+      {
+        "title": "Advisory work is not equity exposure",
+        "text": "Goldman Sachs operates banking, trading and asset-management businesses in India. An IPO or acquisition advisory mandate, analyst coverage or a client execution trade is not evidence of proprietary company ownership. This profile includes investment records rather than advisory clients.",
+        "sourceIds": [
+          "strategy"
+        ]
+      }
+    ],
+    "themes": [
+      {
+        "name": "Listed-company exposure",
+        "conviction": "Research interpretation",
+        "case": "The selected records span finance, technology, industrial components and healthcare services. Holdings alone do not reveal the manager’s investment rationale.",
+        "watch": "Subsequent quarterly disclosures, exact legal holder and original filing reconciliation.",
+        "sourceIds": [
+          "india-shelter",
+          "pricol",
+          "td-power",
+          "medi-assist"
+        ]
+      },
+      {
+        "name": "Specialist private-market businesses",
+        "conviction": "Research interpretation",
+        "case": "MoEngage and Aragen provide examples of software and life-sciences investment relationships. They do not establish a comprehensive private portfolio or a future deal pipeline.",
+        "watch": "Later financing, dilution, secondary sales and explicit ownership disclosures.",
+        "sourceIds": [
+          "moengage",
+          "aragen"
+        ]
+      }
+    ]
+  }
+}

@@ -1,5 +1,6 @@
 "use client";
 import { BarChart3, User, LogOut } from "lucide-react";
+import GlobalCompanySearch from "./global-company-search";
 import SiteNavigation, { type WorkspaceSection } from "./site-navigation";
 import { useClerkAuth } from "./clerk-client";
 
@@ -20,6 +21,7 @@ export default function WorkspaceHeader({
         </span>
         Smallcap<span className="header-sub">Observatory</span>
       </a>
+      <GlobalCompanySearch />
       <div className="header-actions">
         <SiteNavigation section={section} onNavigate={onNavigate} />
         {isLoaded && isSignedIn && user ? (

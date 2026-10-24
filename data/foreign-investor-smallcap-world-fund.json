@@ -1,0 +1,519 @@
+{
+  "id": "smallcap-world-fund",
+  "name": "Smallcap World Fund, Inc",
+  "asOf": "2026-10-24",
+  "checkedAt": "2026-10-24T04:48:16.144412+00:00",
+  "windowStart": "2025-10-24",
+  "windowEnd": "2026-10-24",
+  "coverage": "11 selected Indian-listed company records for Smallcap World Fund, Inc. Named-holder coverage only; not a complete portfolio. Each record retains its disclosure date and ownership basis.",
+  "limitations": [
+    "Selected public disclosures, not a complete portfolio or a real-time ownership register.",
+    "Reported stakes are secondary transcriptions. Original exchange filings were not retrieved in this review.",
+    "Company-equity ownership, fund allocation and shares sold are different measures and are never combined.",
+    "Capital Group’s SMALLCAP World Fund is a global investment fund. This profile covers selected Indian-listed holdings under its named shareholder record. Other Capital Group funds, including New World Fund, remain separate. Company-equity percentages below are not percentages of the fund’s net assets.",
+    "Some source percentages are rounded to one decimal; the displayed approximation preserves that precision."
+  ],
+  "sources": {
+    "context": {
+      "title": "Fund or institutional context",
+      "url": "https://www.capitalgroup.com/individual/investments/mutual-funds/details/scwf-a",
+      "publisher": "Capital Group",
+      "published": "Reviewed 24 Oct 2026; historical report where stated",
+      "kind": "primary",
+      "note": "Context only; does not verify the quarter-end ownership percentages."
+    },
+    "aegislog": {
+      "title": "Aegis Logistics Limited — named shareholder disclosure",
+      "url": "https://trendlyne.com/portfolio/superstar-shareholders/54015/Q3-2026/smallcap-world-fund-inc/",
+      "publisher": "Trendlyne",
+      "published": "30 Sep 2026",
+      "kind": "reporting",
+      "note": "Secondary transcription; original exchange filing not retrieved. Percentage rounded to one decimal by the source."
+    },
+    "aplapollo": {
+      "title": "APL Apollo Tubes Limited — named shareholder disclosure",
+      "url": "https://block.deal/companies/apl-apollo-tubes/",
+      "publisher": "block.deal",
+      "published": "30 Sep 2026",
+      "kind": "reporting",
+      "note": "Secondary transcription; original exchange filing not retrieved. "
+    },
+    "shaily": {
+      "title": "Shaily Engineering Plastics Limited — named shareholder disclosure",
+      "url": "https://trendlyne.com/portfolio/superstar-shareholders/54015/Q3-2026/smallcap-world-fund-inc/",
+      "publisher": "Trendlyne",
+      "published": "30 Sep 2026",
+      "kind": "reporting",
+      "note": "Secondary transcription; original exchange filing not retrieved. Percentage rounded to one decimal by the source."
+    },
+    "rblbank": {
+      "title": "RBL Bank Limited — named shareholder disclosure",
+      "url": "https://trendlyne.com/portfolio/superstar-shareholders/54015/Q3-2026/smallcap-world-fund-inc/",
+      "publisher": "Trendlyne",
+      "published": "30 Sep 2026",
+      "kind": "reporting",
+      "note": "Secondary transcription; original exchange filing not retrieved. Percentage rounded to one decimal by the source."
+    },
+    "lauruslabs": {
+      "title": "Laurus Labs Limited — named shareholder disclosure",
+      "url": "https://trendlyne.com/portfolio/superstar-shareholders/54015/Q3-2026/smallcap-world-fund-inc/",
+      "publisher": "Trendlyne",
+      "published": "30 Sep 2026",
+      "kind": "reporting",
+      "note": "Secondary transcription; original exchange filing not retrieved. Percentage rounded to one decimal by the source."
+    },
+    "avl": {
+      "title": "Aditya Vision Limited — named shareholder disclosure",
+      "url": "https://trendlyne.com/portfolio/superstar-shareholders/54015/Q3-2026/smallcap-world-fund-inc/",
+      "publisher": "Trendlyne",
+      "published": "30 Sep 2026",
+      "kind": "reporting",
+      "note": "Secondary transcription; original exchange filing not retrieved. Percentage rounded to one decimal by the source."
+    },
+    "aubank": {
+      "title": "AU Small Finance Bank Limited — named shareholder disclosure",
+      "url": "https://trendlyne.com/portfolio/superstar-shareholders/54015/Q3-2026/smallcap-world-fund-inc/",
+      "publisher": "Trendlyne",
+      "published": "30 Sep 2026",
+      "kind": "reporting",
+      "note": "Secondary transcription; original exchange filing not retrieved. Percentage rounded to one decimal by the source."
+    },
+    "tiindia": {
+      "title": "Tube Investments of India Limited — named shareholder disclosure",
+      "url": "https://trendlyne.com/portfolio/superstar-shareholders/54015/Q3-2026/smallcap-world-fund-inc/",
+      "publisher": "Trendlyne",
+      "published": "30 Sep 2026",
+      "kind": "reporting",
+      "note": "Secondary transcription; original exchange filing not retrieved. Percentage rounded to one decimal by the source."
+    },
+    "asterdm": {
+      "title": "Aster DM Quality Care Limited — named shareholder disclosure",
+      "url": "https://trendlyne.com/portfolio/superstar-shareholders/54015/Q3-2026/smallcap-world-fund-inc/",
+      "publisher": "Trendlyne",
+      "published": "30 Sep 2026",
+      "kind": "reporting",
+      "note": "Secondary transcription; original exchange filing not retrieved. Percentage rounded to one decimal by the source."
+    },
+    "hdfcamc": {
+      "title": "HDFC Asset Management Company Limited — named shareholder disclosure",
+      "url": "https://trendlyne.com/portfolio/superstar-shareholders/54015/Q3-2026/smallcap-world-fund-inc/",
+      "publisher": "Trendlyne",
+      "published": "30 Sep 2026",
+      "kind": "reporting",
+      "note": "Secondary transcription; original exchange filing not retrieved. Percentage rounded to one decimal by the source."
+    },
+    "iifl": {
+      "title": "IIFL Finance Limited — named shareholder disclosure",
+      "url": "https://block.deal/entities/smallcap-world-fund-inc/",
+      "publisher": "block.deal",
+      "published": "30 Sep 2026",
+      "kind": "reporting",
+      "note": "Secondary transcription; original exchange filing not retrieved. "
+    }
+  },
+  "companies": [
+    {
+      "id": "aegislog",
+      "name": "Aegis Logistics Limited",
+      "ticker": "AEGISLOG",
+      "listing": "Listed equity",
+      "sector": "Logistics",
+      "relationship": "Named shareholder: Smallcap World Fund, Inc",
+      "ownership": "Approximately 2.5% reported company equity",
+      "ownershipDate": "30 Sep 2026 · secondary disclosure; original filing not retrieved",
+      "stakePercent": 2.5,
+      "stance": "held",
+      "summary": "Smallcap World Fund, Inc is reported as a shareholder of Aegis Logistics Limited at 30 Sep 2026. The published percentage is rounded to one decimal; no additional precision is inferred.",
+      "thesis": "Disclosed exposure to logistics. The shareholder record does not establish an investment rationale.",
+      "risks": "Dated public disclosure, not a live position. Missing holdings do not establish an exit. ",
+      "sourceIds": [
+        "aegislog"
+      ]
+    },
+    {
+      "id": "aplapollo",
+      "name": "APL Apollo Tubes Limited",
+      "ticker": "APLAPOLLO",
+      "listing": "Listed equity",
+      "sector": "Steel tubes",
+      "relationship": "Named shareholder: Smallcap World Fund, Inc",
+      "ownership": "4.24% reported company equity",
+      "ownershipDate": "30 Sep 2026 · secondary disclosure; original filing not retrieved",
+      "stakePercent": 4.24,
+      "stance": "held",
+      "summary": "Smallcap World Fund, Inc is reported as a shareholder of APL Apollo Tubes Limited at 30 Sep 2026.",
+      "thesis": "Disclosed exposure to steel tubes. The shareholder record does not establish an investment rationale.",
+      "risks": "Dated public disclosure, not a live position. Missing holdings do not establish an exit. ",
+      "sourceIds": [
+        "aplapollo"
+      ]
+    },
+    {
+      "id": "shaily",
+      "name": "Shaily Engineering Plastics Limited",
+      "ticker": "SHAILY",
+      "listing": "Listed equity",
+      "sector": "Engineering",
+      "relationship": "Named shareholder: Smallcap World Fund, Inc",
+      "ownership": "Approximately 7.8% reported company equity",
+      "ownershipDate": "30 Sep 2026 · secondary disclosure; original filing not retrieved",
+      "stakePercent": 7.8,
+      "stance": "held",
+      "summary": "Smallcap World Fund, Inc is reported as a shareholder of Shaily Engineering Plastics Limited at 30 Sep 2026. The published percentage is rounded to one decimal; no additional precision is inferred.",
+      "thesis": "Disclosed exposure to engineering. The shareholder record does not establish an investment rationale.",
+      "risks": "Dated public disclosure, not a live position. Missing holdings do not establish an exit. ",
+      "sourceIds": [
+        "shaily"
+      ]
+    },
+    {
+      "id": "rblbank",
+      "name": "RBL Bank Limited",
+      "ticker": "RBLBANK",
+      "listing": "Listed equity",
+      "sector": "Banking",
+      "relationship": "Named shareholder: Smallcap World Fund, Inc",
+      "ownership": "Approximately 1.2% reported company equity",
+      "ownershipDate": "30 Sep 2026 · secondary disclosure; original filing not retrieved",
+      "stakePercent": 1.2,
+      "stance": "held",
+      "summary": "Smallcap World Fund, Inc is reported as a shareholder of RBL Bank Limited at 30 Sep 2026. The published percentage is rounded to one decimal; no additional precision is inferred.",
+      "thesis": "Disclosed exposure to banking. The shareholder record does not establish an investment rationale.",
+      "risks": "Dated public disclosure, not a live position. Missing holdings do not establish an exit. ",
+      "sourceIds": [
+        "rblbank"
+      ]
+    },
+    {
+      "id": "lauruslabs",
+      "name": "Laurus Labs Limited",
+      "ticker": "LAURUSLABS",
+      "listing": "Listed equity",
+      "sector": "Pharmaceuticals",
+      "relationship": "Named shareholder: Smallcap World Fund, Inc",
+      "ownership": "Approximately 2.3% reported company equity",
+      "ownershipDate": "30 Sep 2026 · secondary disclosure; original filing not retrieved",
+      "stakePercent": 2.3,
+      "stance": "held",
+      "summary": "Smallcap World Fund, Inc is reported as a shareholder of Laurus Labs Limited at 30 Sep 2026. The published percentage is rounded to one decimal; no additional precision is inferred.",
+      "thesis": "Disclosed exposure to pharmaceuticals. The shareholder record does not establish an investment rationale.",
+      "risks": "Dated public disclosure, not a live position. Missing holdings do not establish an exit. ",
+      "sourceIds": [
+        "lauruslabs"
+      ]
+    },
+    {
+      "id": "avl",
+      "name": "Aditya Vision Limited",
+      "ticker": "AVL",
+      "listing": "Listed equity",
+      "sector": "Retail",
+      "relationship": "Named shareholder: Smallcap World Fund, Inc",
+      "ownership": "Approximately 7.0% reported company equity",
+      "ownershipDate": "30 Sep 2026 · secondary disclosure; original filing not retrieved",
+      "stakePercent": 7.0,
+      "stance": "held",
+      "summary": "Smallcap World Fund, Inc is reported as a shareholder of Aditya Vision Limited at 30 Sep 2026. The published percentage is rounded to one decimal; no additional precision is inferred.",
+      "thesis": "Disclosed exposure to retail. The shareholder record does not establish an investment rationale.",
+      "risks": "Dated public disclosure, not a live position. Missing holdings do not establish an exit. ",
+      "sourceIds": [
+        "avl"
+      ]
+    },
+    {
+      "id": "aubank",
+      "name": "AU Small Finance Bank Limited",
+      "ticker": "AUBANK",
+      "listing": "Listed equity",
+      "sector": "Banking",
+      "relationship": "Named shareholder: Smallcap World Fund, Inc",
+      "ownership": "Approximately 2.2% reported company equity",
+      "ownershipDate": "30 Sep 2026 · secondary disclosure; original filing not retrieved",
+      "stakePercent": 2.2,
+      "stance": "held",
+      "summary": "Smallcap World Fund, Inc is reported as a shareholder of AU Small Finance Bank Limited at 30 Sep 2026. The published percentage is rounded to one decimal; no additional precision is inferred.",
+      "thesis": "Disclosed exposure to banking. The shareholder record does not establish an investment rationale.",
+      "risks": "Dated public disclosure, not a live position. Missing holdings do not establish an exit. ",
+      "sourceIds": [
+        "aubank"
+      ]
+    },
+    {
+      "id": "tiindia",
+      "name": "Tube Investments of India Limited",
+      "ticker": "TIINDIA",
+      "listing": "Listed equity",
+      "sector": "Engineering",
+      "relationship": "Named shareholder: Smallcap World Fund, Inc",
+      "ownership": "Approximately 4.3% reported company equity",
+      "ownershipDate": "30 Sep 2026 · secondary disclosure; original filing not retrieved",
+      "stakePercent": 4.3,
+      "stance": "held",
+      "summary": "Smallcap World Fund, Inc is reported as a shareholder of Tube Investments of India Limited at 30 Sep 2026. The published percentage is rounded to one decimal; no additional precision is inferred.",
+      "thesis": "Disclosed exposure to engineering. The shareholder record does not establish an investment rationale.",
+      "risks": "Dated public disclosure, not a live position. Missing holdings do not establish an exit. ",
+      "sourceIds": [
+        "tiindia"
+      ]
+    },
+    {
+      "id": "asterdm",
+      "name": "Aster DM Quality Care Limited",
+      "ticker": "ASTERDM",
+      "listing": "Listed equity",
+      "sector": "Healthcare",
+      "relationship": "Named shareholder: Smallcap World Fund, Inc",
+      "ownership": "Approximately 1.2% reported company equity",
+      "ownershipDate": "30 Sep 2026 · secondary disclosure; original filing not retrieved",
+      "stakePercent": 1.2,
+      "stance": "held",
+      "summary": "Smallcap World Fund, Inc is reported as a shareholder of Aster DM Quality Care Limited at 30 Sep 2026. The published percentage is rounded to one decimal; no additional precision is inferred.",
+      "thesis": "Disclosed exposure to healthcare. The shareholder record does not establish an investment rationale.",
+      "risks": "Dated public disclosure, not a live position. Missing holdings do not establish an exit. ",
+      "sourceIds": [
+        "asterdm"
+      ]
+    },
+    {
+      "id": "hdfcamc",
+      "name": "HDFC Asset Management Company Limited",
+      "ticker": "HDFCAMC",
+      "listing": "Listed equity",
+      "sector": "Asset management",
+      "relationship": "Named shareholder: Smallcap World Fund, Inc",
+      "ownership": "Approximately 1.1% reported company equity",
+      "ownershipDate": "30 Sep 2026 · secondary disclosure; original filing not retrieved",
+      "stakePercent": 1.1,
+      "stance": "held",
+      "summary": "Smallcap World Fund, Inc is reported as a shareholder of HDFC Asset Management Company Limited at 30 Sep 2026. The published percentage is rounded to one decimal; no additional precision is inferred.",
+      "thesis": "Disclosed exposure to asset management. The shareholder record does not establish an investment rationale.",
+      "risks": "Dated public disclosure, not a live position. Missing holdings do not establish an exit. ",
+      "sourceIds": [
+        "hdfcamc"
+      ]
+    },
+    {
+      "id": "iifl",
+      "name": "IIFL Finance Limited",
+      "ticker": "IIFL",
+      "listing": "Listed equity",
+      "sector": "Financial services",
+      "relationship": "Named shareholder: Smallcap World Fund, Inc",
+      "ownership": "1.86% reported company equity",
+      "ownershipDate": "30 Sep 2026 · secondary disclosure; original filing not retrieved",
+      "stakePercent": 1.86,
+      "stance": "held",
+      "summary": "Smallcap World Fund, Inc is reported as a shareholder of IIFL Finance Limited at 30 Sep 2026.",
+      "thesis": "Disclosed exposure to financial services. The shareholder record does not establish an investment rationale.",
+      "risks": "Dated public disclosure, not a live position. Missing holdings do not establish an exit. ",
+      "sourceIds": [
+        "iifl"
+      ]
+    }
+  ],
+  "events": [
+    {
+      "id": "aegislog-snapshot",
+      "companyId": "aegislog",
+      "date": "2026-09-30",
+      "dateLabel": "30 Sep 2026",
+      "title": "Reported holding snapshot",
+      "kind": "snapshot",
+      "direction": "held",
+      "status": "Snapshot",
+      "detail": "Approximately 2.5% reported company equity",
+      "qualification": "Named-holder observation only. No purchases or sales inferred from the percentage.",
+      "sourceIds": [
+        "aegislog"
+      ]
+    },
+    {
+      "id": "aplapollo-snapshot",
+      "companyId": "aplapollo",
+      "date": "2026-09-30",
+      "dateLabel": "30 Sep 2026",
+      "title": "Reported holding snapshot",
+      "kind": "snapshot",
+      "direction": "held",
+      "status": "Snapshot",
+      "detail": "4.24% reported company equity",
+      "qualification": "Named-holder observation only. No purchases or sales inferred from the percentage.",
+      "sourceIds": [
+        "aplapollo"
+      ]
+    },
+    {
+      "id": "shaily-snapshot",
+      "companyId": "shaily",
+      "date": "2026-09-30",
+      "dateLabel": "30 Sep 2026",
+      "title": "Reported holding snapshot",
+      "kind": "snapshot",
+      "direction": "held",
+      "status": "Snapshot",
+      "detail": "Approximately 7.8% reported company equity",
+      "qualification": "Named-holder observation only. No purchases or sales inferred from the percentage.",
+      "sourceIds": [
+        "shaily"
+      ]
+    },
+    {
+      "id": "rblbank-snapshot",
+      "companyId": "rblbank",
+      "date": "2026-09-30",
+      "dateLabel": "30 Sep 2026",
+      "title": "Reported holding snapshot",
+      "kind": "snapshot",
+      "direction": "held",
+      "status": "Snapshot",
+      "detail": "Approximately 1.2% reported company equity",
+      "qualification": "Named-holder observation only. No purchases or sales inferred from the percentage.",
+      "sourceIds": [
+        "rblbank"
+      ]
+    },
+    {
+      "id": "lauruslabs-snapshot",
+      "companyId": "lauruslabs",
+      "date": "2026-09-30",
+      "dateLabel": "30 Sep 2026",
+      "title": "Reported holding snapshot",
+      "kind": "snapshot",
+      "direction": "held",
+      "status": "Snapshot",
+      "detail": "Approximately 2.3% reported company equity",
+      "qualification": "Named-holder observation only. No purchases or sales inferred from the percentage.",
+      "sourceIds": [
+        "lauruslabs"
+      ]
+    },
+    {
+      "id": "avl-snapshot",
+      "companyId": "avl",
+      "date": "2026-09-30",
+      "dateLabel": "30 Sep 2026",
+      "title": "Reported holding snapshot",
+      "kind": "snapshot",
+      "direction": "held",
+      "status": "Snapshot",
+      "detail": "Approximately 7.0% reported company equity",
+      "qualification": "Named-holder observation only. No purchases or sales inferred from the percentage.",
+      "sourceIds": [
+        "avl"
+      ]
+    },
+    {
+      "id": "aubank-snapshot",
+      "companyId": "aubank",
+      "date": "2026-09-30",
+      "dateLabel": "30 Sep 2026",
+      "title": "Reported holding snapshot",
+      "kind": "snapshot",
+      "direction": "held",
+      "status": "Snapshot",
+      "detail": "Approximately 2.2% reported company equity",
+      "qualification": "Named-holder observation only. No purchases or sales inferred from the percentage.",
+      "sourceIds": [
+        "aubank"
+      ]
+    },
+    {
+      "id": "tiindia-snapshot",
+      "companyId": "tiindia",
+      "date": "2026-09-30",
+      "dateLabel": "30 Sep 2026",
+      "title": "Reported holding snapshot",
+      "kind": "snapshot",
+      "direction": "held",
+      "status": "Snapshot",
+      "detail": "Approximately 4.3% reported company equity",
+      "qualification": "Named-holder observation only. No purchases or sales inferred from the percentage.",
+      "sourceIds": [
+        "tiindia"
+      ]
+    },
+    {
+      "id": "asterdm-snapshot",
+      "companyId": "asterdm",
+      "date": "2026-09-30",
+      "dateLabel": "30 Sep 2026",
+      "title": "Reported holding snapshot",
+      "kind": "snapshot",
+      "direction": "held",
+      "status": "Snapshot",
+      "detail": "Approximately 1.2% reported company equity",
+      "qualification": "Named-holder observation only. No purchases or sales inferred from the percentage.",
+      "sourceIds": [
+        "asterdm"
+      ]
+    },
+    {
+      "id": "hdfcamc-snapshot",
+      "companyId": "hdfcamc",
+      "date": "2026-09-30",
+      "dateLabel": "30 Sep 2026",
+      "title": "Reported holding snapshot",
+      "kind": "snapshot",
+      "direction": "held",
+      "status": "Snapshot",
+      "detail": "Approximately 1.1% reported company equity",
+      "qualification": "Named-holder observation only. No purchases or sales inferred from the percentage.",
+      "sourceIds": [
+        "hdfcamc"
+      ]
+    },
+    {
+      "id": "iifl-snapshot",
+      "companyId": "iifl",
+      "date": "2026-09-30",
+      "dateLabel": "30 Sep 2026",
+      "title": "Reported holding snapshot",
+      "kind": "snapshot",
+      "direction": "held",
+      "status": "Snapshot",
+      "detail": "1.86% reported company equity",
+      "qualification": "Named-holder observation only. No purchases or sales inferred from the percentage.",
+      "sourceIds": [
+        "iifl"
+      ]
+    }
+  ],
+  "report": {
+    "title": "Smallcap World Fund, Inc · India exposure",
+    "summary": "Capital Group’s SMALLCAP World Fund is a global investment fund. This profile covers selected Indian-listed holdings under its named shareholder record. Other Capital Group funds, including New World Fund, remain separate. Company-equity percentages below are not percentages of the fund’s net assets.",
+    "sections": [
+      {
+        "title": "Public company holdings",
+        "text": "11 selected company records with named-holder attribution and dated ownership. Coverage can omit positions below disclosure thresholds or where newer documents have not been retrieved.",
+        "sourceIds": [
+          "aegislog"
+        ]
+      },
+      {
+        "title": "Identity and measurement",
+        "text": "Capital Group’s SMALLCAP World Fund is a global investment fund. This profile covers selected Indian-listed holdings under its named shareholder record. Other Capital Group funds, including New World Fund, remain separate. Company-equity percentages below are not percentages of the fund’s net assets.",
+        "sourceIds": [
+          "context"
+        ]
+      },
+      {
+        "title": "Evidence quality",
+        "text": "Ownership figures remain reported until reconciled with original filings. A quarterly position is not evidence of a transaction. A reviewed date does not refresh historical ownership.",
+        "sourceIds": [
+          "aegislog"
+        ]
+      }
+    ],
+    "themes": [
+      {
+        "name": "Next disclosure review",
+        "conviction": "Research watch",
+        "case": "Track subsequent company filings to establish whether each named holding persists.",
+        "watch": "Exact shareholder, reporting date, capital basis and source revisions.",
+        "sourceIds": [
+          "aegislog"
+        ]
+      }
+    ]
+  }
+}

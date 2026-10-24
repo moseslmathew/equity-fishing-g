@@ -1,0 +1,101 @@
+{
+  "id": "fidelity-low-priced-stock",
+  "name": "Fidelity Puritan Trust-Fidelity Low-Priced Stock Fund",
+  "asOf": "2026-10-24",
+  "checkedAt": "2026-10-24T04:58:51.898147+00:00",
+  "windowStart": "2025-10-24",
+  "windowEnd": "2026-10-24",
+  "coverage": "Named investment fund. 1 selected Indian-listed holdings under the exact named shareholder, with dated company-equity percentages.",
+  "limitations": [
+    "Selected public named-holder records, not a complete portfolio or real-time ownership register.",
+    "September percentages are secondary transcriptions. Original exchange filings were not retrieved or independently reconciled during this review.",
+    "The review date is separate from the ownership date. Absence from a disclosure does not establish an exit.",
+    "The named Fidelity Low-Priced Stock Fund shareholder. Other Fidelity funds are separate legal investment records; their stakes are not added here.",
+    "Fund portfolio weights, investee-company stakes, share classes and manager-level exposure are different measures and are never combined."
+  ],
+  "sources": {
+    "redington": {
+      "title": "Redington Limited — September 2026 named shareholders",
+      "url": "https://block.deal/companies/redington/",
+      "publisher": "block.deal",
+      "published": "30 Sep 2026; reviewed 24 Oct 2026",
+      "kind": "reporting",
+      "note": "Secondary transcription with original exchange evidence links. Original exchange documents were not retrieved in this review; reported percentage is not independently reconciled."
+    }
+  },
+  "companies": [
+    {
+      "id": "redington",
+      "name": "Redington Limited",
+      "listing": "Listed equity",
+      "sector": "Technology distribution",
+      "relationship": "Named investment fund · Named shareholder: Fidelity Puritan Trust-Fidelity Low-Priced Stock Fund",
+      "ownership": "2.65% reported company equity",
+      "ownershipDate": "30 Sep 2026 · secondary disclosure; original filing not retrieved",
+      "stakePercent": 2.65,
+      "stance": "held",
+      "summary": "Fidelity Puritan Trust-Fidelity Low-Priced Stock Fund is reported as a shareholder of Redington Limited at 30 Sep 2026. The named Fidelity Low-Priced Stock Fund shareholder. Other Fidelity funds are separate legal investment records; their stakes are not added here.",
+      "thesis": "Disclosed exposure to technology distribution. The register does not establish an investment rationale.",
+      "risks": "A quarter-end observation, not live ownership. Disclosure thresholds, corporate actions and changes in capital can affect reported percentages.",
+      "sourceIds": [
+        "redington"
+      ],
+      "ticker": "REDINGTON"
+    }
+  ],
+  "events": [
+    {
+      "id": "redington-snapshot",
+      "companyId": "redington",
+      "date": "2026-09-30",
+      "dateLabel": "30 Sep 2026",
+      "title": "Reported quarter-end ownership",
+      "kind": "snapshot",
+      "direction": "held",
+      "status": "Snapshot",
+      "detail": "2.65% reported company equity",
+      "qualification": "Ownership snapshot only; purchases or sales are not inferred.",
+      "sourceIds": [
+        "redington"
+      ]
+    }
+  ],
+  "report": {
+    "title": "Fidelity Puritan Trust-Fidelity Low-Priced Stock Fund · India exposure",
+    "summary": "Named investment fund. The named Fidelity Low-Priced Stock Fund shareholder. Other Fidelity funds are separate legal investment records; their stakes are not added here.",
+    "sections": [
+      {
+        "title": "Dated Indian holdings",
+        "text": "1 selected September 2026 named-holder records. Coverage is selective and does not represent the investor’s complete India or global portfolio.",
+        "sourceIds": [
+          "redington"
+        ]
+      },
+      {
+        "title": "Holder identity",
+        "text": "The named Fidelity Low-Priced Stock Fund shareholder. Other Fidelity funds are separate legal investment records; their stakes are not added here.",
+        "sourceIds": [
+          "redington"
+        ]
+      },
+      {
+        "title": "Ownership basis",
+        "text": "All displayed percentages refer to reported investee-company equity. Fund allocations, other vehicles and transaction amounts are not added to these values. Secondary figures await original-filing reconciliation.",
+        "sourceIds": [
+          "redington"
+        ]
+      }
+    ],
+    "themes": [
+      {
+        "name": "Subsequent disclosure review",
+        "conviction": "Research watch",
+        "case": "Track the next company register for the same named shareholder.",
+        "watch": "Legal holder, reporting date, capital changes and original filings.",
+        "sourceIds": [
+          "redington"
+        ]
+      }
+    ]
+  }
+}

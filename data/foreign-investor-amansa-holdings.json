@@ -1,0 +1,887 @@
+{
+  "id": "amansa-holdings",
+  "name": "Amansa Holdings Private Limited",
+  "asOf": "2026-10-24",
+  "checkedAt": "2026-10-24T04:29:52.517409+00:00",
+  "windowStart": "2025-10-24",
+  "windowEnd": "2026-10-24",
+  "coverage": "Named Indian-listed shareholder records. Ownership is a percentage of the investee company, not a portfolio allocation. Coverage is limited to individually disclosed public holdings.",
+  "limitations": [
+    "Public named holdings are not a complete portfolio. Reporting thresholds and missing filings leave positions unobserved.",
+    "Secondary shareholder transcriptions are labelled reported; original exchange filings could not be retrieved in this review.",
+    "Review date differs from ownership date. Absence from a disclosure does not establish zero ownership or an exit.",
+    "This profile follows Amansa Holdings Private Limited as named in shareholder disclosures. Amansa Investments Ltd and Amansa Capital Pte. Ltd. are different legal names. MAS identifies Amansa Capital as a licensed fund manager; that directory does not establish ownership of each holding below.",
+    "Kirloskar Pneumatic remains a historical June 2026 record. Escorts Kubota’s conflicting September percentages are withheld pending original-filing reconciliation."
+  ],
+  "sources": {
+    "holdings": {
+      "title": "Named shareholder disclosures — Amansa Holdings Private Limited",
+      "url": "https://block.deal/entities/amansa-holdings-private-limited/",
+      "publisher": "block.deal",
+      "published": "30 Sep 2026; Kirloskar Pneumatic 30 Jun 2026",
+      "kind": "reporting",
+      "note": "Secondary transcription with exchange filing links. Original exchange documents were not retrieved in this review; reported figures have not been independently reconciled."
+    },
+    "identity": {
+      "title": "Amansa Capital — regulatory directory",
+      "url": "https://eservices.mas.gov.sg/fid/institution/detail/1562-AMANSA-CAPITAL-PTE-LTD",
+      "publisher": "Monetary Authority of Singapore",
+      "published": "Reviewed 24 Oct 2026",
+      "kind": "primary"
+    },
+    "crosscheck": {
+      "title": "Amansa Holdings — September 2026 portfolio",
+      "url": "https://www.moneycontrol.com/india-investors-portfolio/amansa-holdings-private-limited",
+      "publisher": "Moneycontrol",
+      "published": "September 2026 quarter; reviewed 24 Oct 2026",
+      "kind": "reporting",
+      "note": "Search-indexed September snapshot corroborates several holdings. Escorts percentage conflicts: 1.67% here versus 1.64% in the disclosure index; percentage withheld pending the original filing."
+    }
+  },
+  "companies": [
+    {
+      "id": "sedemac",
+      "name": "SEDEMAC Mechatronics Limited",
+      "ticker": "SEDEMAC",
+      "listing": "Listed equity",
+      "sector": "Automotive electronics",
+      "relationship": "Named shareholder: Amansa Holdings Private Limited",
+      "ownership": "1.05% reported company equity",
+      "ownershipDate": "30 Sep 2026 · secondary disclosure; original filing not retrieved",
+      "stakePercent": 1.05,
+      "stance": "held",
+      "summary": "Amansa Holdings Private Limited is reported as a named shareholder of SEDEMAC Mechatronics Limited at 30 Sep 2026.",
+      "thesis": "Disclosed equity exposure to automotive electronics. This record does not establish the investor’s investment rationale.",
+      "risks": "Quarter-end snapshot, not a live holding. Changes in ownership percentage alone do not establish purchases or sales.",
+      "sourceIds": [
+        "holdings",
+        "crosscheck"
+      ]
+    },
+    {
+      "id": "onesource",
+      "name": "OneSource Specialty Pharma Limited",
+      "ticker": "ONESOURCE",
+      "listing": "Listed equity",
+      "sector": "Pharmaceuticals",
+      "relationship": "Named shareholder: Amansa Holdings Private Limited",
+      "ownership": "1.58% reported company equity",
+      "ownershipDate": "30 Sep 2026 · secondary disclosure; original filing not retrieved",
+      "stakePercent": 1.58,
+      "stance": "held",
+      "summary": "Amansa Holdings Private Limited is reported as a named shareholder of OneSource Specialty Pharma Limited at 30 Sep 2026.",
+      "thesis": "Disclosed equity exposure to pharmaceuticals. This record does not establish the investor’s investment rationale.",
+      "risks": "Quarter-end snapshot, not a live holding. Changes in ownership percentage alone do not establish purchases or sales.",
+      "sourceIds": [
+        "holdings"
+      ]
+    },
+    {
+      "id": "cohance",
+      "name": "Cohance Lifesciences Limited",
+      "ticker": "COHANCE",
+      "listing": "Listed equity",
+      "sector": "Life sciences",
+      "relationship": "Named shareholder: Amansa Holdings Private Limited",
+      "ownership": "2.18% reported company equity",
+      "ownershipDate": "30 Sep 2026 · secondary disclosure; original filing not retrieved",
+      "stakePercent": 2.18,
+      "stance": "held",
+      "summary": "Amansa Holdings Private Limited is reported as a named shareholder of Cohance Lifesciences Limited at 30 Sep 2026.",
+      "thesis": "Disclosed equity exposure to life sciences. This record does not establish the investor’s investment rationale.",
+      "risks": "Quarter-end snapshot, not a live holding. Changes in ownership percentage alone do not establish purchases or sales.",
+      "sourceIds": [
+        "holdings",
+        "crosscheck"
+      ]
+    },
+    {
+      "id": "escorts",
+      "name": "Escorts Kubota Limited",
+      "ticker": "ESCORTS",
+      "listing": "Listed equity",
+      "sector": "Agricultural machinery",
+      "relationship": "Named shareholder: Amansa Holdings Private Limited",
+      "ownership": "Reported holding; percentage under review",
+      "ownershipDate": "30 Sep 2026 · secondary disclosure; original filing not retrieved",
+      "stakePercent": null,
+      "stance": "held",
+      "summary": "Amansa Holdings Private Limited is reported as a named shareholder of Escorts Kubota Limited at 30 Sep 2026. Published sources disagree: 1.64% versus 1.67%. Neither figure is treated as confirmed.",
+      "thesis": "Disclosed equity exposure to agricultural machinery. This record does not establish the investor’s investment rationale.",
+      "risks": "Quarter-end snapshot, not a live holding. Changes in ownership percentage alone do not establish purchases or sales.",
+      "sourceIds": [
+        "holdings",
+        "crosscheck"
+      ]
+    },
+    {
+      "id": "fortis",
+      "name": "Fortis Healthcare Limited",
+      "ticker": "FORTIS",
+      "listing": "Listed equity",
+      "sector": "Healthcare",
+      "relationship": "Named shareholder: Amansa Holdings Private Limited",
+      "ownership": "1.56% reported company equity",
+      "ownershipDate": "30 Sep 2026 · secondary disclosure; original filing not retrieved",
+      "stakePercent": 1.56,
+      "stance": "held",
+      "summary": "Amansa Holdings Private Limited is reported as a named shareholder of Fortis Healthcare Limited at 30 Sep 2026.",
+      "thesis": "Disclosed equity exposure to healthcare. This record does not establish the investor’s investment rationale.",
+      "risks": "Quarter-end snapshot, not a live holding. Changes in ownership percentage alone do not establish purchases or sales.",
+      "sourceIds": [
+        "holdings"
+      ]
+    },
+    {
+      "id": "aether",
+      "name": "Aether Industries Limited",
+      "ticker": "AETHER",
+      "listing": "Listed equity",
+      "sector": "Specialty chemicals",
+      "relationship": "Named shareholder: Amansa Holdings Private Limited",
+      "ownership": "1.64% reported company equity",
+      "ownershipDate": "30 Sep 2026 · secondary disclosure; original filing not retrieved",
+      "stakePercent": 1.64,
+      "stance": "held",
+      "summary": "Amansa Holdings Private Limited is reported as a named shareholder of Aether Industries Limited at 30 Sep 2026.",
+      "thesis": "Disclosed equity exposure to specialty chemicals. This record does not establish the investor’s investment rationale.",
+      "risks": "Quarter-end snapshot, not a live holding. Changes in ownership percentage alone do not establish purchases or sales.",
+      "sourceIds": [
+        "holdings"
+      ]
+    },
+    {
+      "id": "sammaancap",
+      "name": "Sammaan Capital Limited",
+      "ticker": "SAMMAANCAP",
+      "listing": "Listed equity",
+      "sector": "Financial services",
+      "relationship": "Named shareholder: Amansa Holdings Private Limited",
+      "ownership": "2.72% reported company equity",
+      "ownershipDate": "30 Sep 2026 · secondary disclosure; original filing not retrieved",
+      "stakePercent": 2.72,
+      "stance": "held",
+      "summary": "Amansa Holdings Private Limited is reported as a named shareholder of Sammaan Capital Limited at 30 Sep 2026.",
+      "thesis": "Disclosed equity exposure to financial services. This record does not establish the investor’s investment rationale.",
+      "risks": "Quarter-end snapshot, not a live holding. Changes in ownership percentage alone do not establish purchases or sales.",
+      "sourceIds": [
+        "holdings",
+        "crosscheck"
+      ]
+    },
+    {
+      "id": "ablbl",
+      "name": "Aditya Birla Lifestyle Brands Limited",
+      "ticker": "ABLBL",
+      "listing": "Listed equity",
+      "sector": "Retail",
+      "relationship": "Named shareholder: Amansa Holdings Private Limited",
+      "ownership": "2.02% reported company equity",
+      "ownershipDate": "30 Sep 2026 · secondary disclosure; original filing not retrieved",
+      "stakePercent": 2.02,
+      "stance": "held",
+      "summary": "Amansa Holdings Private Limited is reported as a named shareholder of Aditya Birla Lifestyle Brands Limited at 30 Sep 2026.",
+      "thesis": "Disclosed equity exposure to retail. This record does not establish the investor’s investment rationale.",
+      "risks": "Quarter-end snapshot, not a live holding. Changes in ownership percentage alone do not establish purchases or sales.",
+      "sourceIds": [
+        "holdings"
+      ]
+    },
+    {
+      "id": "clean",
+      "name": "Clean Science and Technology Limited",
+      "ticker": "CLEAN",
+      "listing": "Listed equity",
+      "sector": "Specialty chemicals",
+      "relationship": "Named shareholder: Amansa Holdings Private Limited",
+      "ownership": "4.37% reported company equity",
+      "ownershipDate": "30 Sep 2026 · secondary disclosure; original filing not retrieved",
+      "stakePercent": 4.37,
+      "stance": "held",
+      "summary": "Amansa Holdings Private Limited is reported as a named shareholder of Clean Science and Technology Limited at 30 Sep 2026.",
+      "thesis": "Disclosed equity exposure to specialty chemicals. This record does not establish the investor’s investment rationale.",
+      "risks": "Quarter-end snapshot, not a live holding. Changes in ownership percentage alone do not establish purchases or sales.",
+      "sourceIds": [
+        "holdings"
+      ]
+    },
+    {
+      "id": "bluestone",
+      "name": "BlueStone Jewellery and Lifestyle Limited",
+      "ticker": "BLUESTONE",
+      "listing": "Listed equity",
+      "sector": "Jewellery",
+      "relationship": "Named shareholder: Amansa Holdings Private Limited",
+      "ownership": "3.21% reported company equity",
+      "ownershipDate": "30 Sep 2026 · secondary disclosure; original filing not retrieved",
+      "stakePercent": 3.21,
+      "stance": "held",
+      "summary": "Amansa Holdings Private Limited is reported as a named shareholder of BlueStone Jewellery and Lifestyle Limited at 30 Sep 2026.",
+      "thesis": "Disclosed equity exposure to jewellery. This record does not establish the investor’s investment rationale.",
+      "risks": "Quarter-end snapshot, not a live holding. Changes in ownership percentage alone do not establish purchases or sales.",
+      "sourceIds": [
+        "holdings"
+      ]
+    },
+    {
+      "id": "intellect",
+      "name": "Intellect Design Arena Limited",
+      "ticker": "INTELLECT",
+      "listing": "Listed equity",
+      "sector": "Financial technology",
+      "relationship": "Named shareholder: Amansa Holdings Private Limited",
+      "ownership": "5.50% reported company equity",
+      "ownershipDate": "30 Sep 2026 · secondary disclosure; original filing not retrieved",
+      "stakePercent": 5.5,
+      "stance": "held",
+      "summary": "Amansa Holdings Private Limited is reported as a named shareholder of Intellect Design Arena Limited at 30 Sep 2026.",
+      "thesis": "Disclosed equity exposure to financial technology. This record does not establish the investor’s investment rationale.",
+      "risks": "Quarter-end snapshot, not a live holding. Changes in ownership percentage alone do not establish purchases or sales.",
+      "sourceIds": [
+        "holdings",
+        "crosscheck"
+      ]
+    },
+    {
+      "id": "sundrmfast",
+      "name": "Sundram Fasteners Limited",
+      "ticker": "SUNDRMFAST",
+      "listing": "Listed equity",
+      "sector": "Automotive components",
+      "relationship": "Named shareholder: Amansa Holdings Private Limited",
+      "ownership": "4.51% reported company equity",
+      "ownershipDate": "30 Sep 2026 · secondary disclosure; original filing not retrieved",
+      "stakePercent": 4.51,
+      "stance": "held",
+      "summary": "Amansa Holdings Private Limited is reported as a named shareholder of Sundram Fasteners Limited at 30 Sep 2026.",
+      "thesis": "Disclosed equity exposure to automotive components. This record does not establish the investor’s investment rationale.",
+      "risks": "Quarter-end snapshot, not a live holding. Changes in ownership percentage alone do not establish purchases or sales.",
+      "sourceIds": [
+        "holdings"
+      ]
+    },
+    {
+      "id": "chemplasts",
+      "name": "Chemplast Sanmar Limited",
+      "ticker": "CHEMPLASTS",
+      "listing": "Listed equity",
+      "sector": "Chemicals",
+      "relationship": "Named shareholder: Amansa Holdings Private Limited",
+      "ownership": "7.62% reported company equity",
+      "ownershipDate": "30 Sep 2026 · secondary disclosure; original filing not retrieved",
+      "stakePercent": 7.62,
+      "stance": "held",
+      "summary": "Amansa Holdings Private Limited is reported as a named shareholder of Chemplast Sanmar Limited at 30 Sep 2026.",
+      "thesis": "Disclosed equity exposure to chemicals. This record does not establish the investor’s investment rationale.",
+      "risks": "Quarter-end snapshot, not a live holding. Changes in ownership percentage alone do not establish purchases or sales.",
+      "sourceIds": [
+        "holdings"
+      ]
+    },
+    {
+      "id": "poonawalla",
+      "name": "Poonawalla Fincorp Limited",
+      "ticker": "POONAWALLA",
+      "listing": "Listed equity",
+      "sector": "Financial services",
+      "relationship": "Named shareholder: Amansa Holdings Private Limited",
+      "ownership": "1.29% reported company equity",
+      "ownershipDate": "30 Sep 2026 · secondary disclosure; original filing not retrieved",
+      "stakePercent": 1.29,
+      "stance": "held",
+      "summary": "Amansa Holdings Private Limited is reported as a named shareholder of Poonawalla Fincorp Limited at 30 Sep 2026.",
+      "thesis": "Disclosed equity exposure to financial services. This record does not establish the investor’s investment rationale.",
+      "risks": "Quarter-end snapshot, not a live holding. Changes in ownership percentage alone do not establish purchases or sales.",
+      "sourceIds": [
+        "holdings"
+      ]
+    },
+    {
+      "id": "gmmpfaudlr",
+      "name": "GMM Pfaudler Limited",
+      "ticker": "GMMPFAUDLR",
+      "listing": "Listed equity",
+      "sector": "Engineering",
+      "relationship": "Named shareholder: Amansa Holdings Private Limited",
+      "ownership": "6.86% reported company equity",
+      "ownershipDate": "30 Sep 2026 · secondary disclosure; original filing not retrieved",
+      "stakePercent": 6.86,
+      "stance": "held",
+      "summary": "Amansa Holdings Private Limited is reported as a named shareholder of GMM Pfaudler Limited at 30 Sep 2026.",
+      "thesis": "Disclosed equity exposure to engineering. This record does not establish the investor’s investment rationale.",
+      "risks": "Quarter-end snapshot, not a live holding. Changes in ownership percentage alone do not establish purchases or sales.",
+      "sourceIds": [
+        "holdings"
+      ]
+    },
+    {
+      "id": "starhealth",
+      "name": "Star Health and Allied Insurance Company Limited",
+      "ticker": "STARHEALTH",
+      "listing": "Listed equity",
+      "sector": "Insurance",
+      "relationship": "Named shareholder: Amansa Holdings Private Limited",
+      "ownership": "2.52% reported company equity",
+      "ownershipDate": "30 Sep 2026 · secondary disclosure; original filing not retrieved",
+      "stakePercent": 2.52,
+      "stance": "held",
+      "summary": "Amansa Holdings Private Limited is reported as a named shareholder of Star Health and Allied Insurance Company Limited at 30 Sep 2026.",
+      "thesis": "Disclosed equity exposure to insurance. This record does not establish the investor’s investment rationale.",
+      "risks": "Quarter-end snapshot, not a live holding. Changes in ownership percentage alone do not establish purchases or sales.",
+      "sourceIds": [
+        "holdings"
+      ]
+    },
+    {
+      "id": "srf",
+      "name": "SRF Limited",
+      "ticker": "SRF",
+      "listing": "Listed equity",
+      "sector": "Chemicals",
+      "relationship": "Named shareholder: Amansa Holdings Private Limited",
+      "ownership": "1.17% reported company equity",
+      "ownershipDate": "30 Sep 2026 · secondary disclosure; original filing not retrieved",
+      "stakePercent": 1.17,
+      "stance": "held",
+      "summary": "Amansa Holdings Private Limited is reported as a named shareholder of SRF Limited at 30 Sep 2026.",
+      "thesis": "Disclosed equity exposure to chemicals. This record does not establish the investor’s investment rationale.",
+      "risks": "Quarter-end snapshot, not a live holding. Changes in ownership percentage alone do not establish purchases or sales.",
+      "sourceIds": [
+        "holdings"
+      ]
+    },
+    {
+      "id": "vmart",
+      "name": "V-Mart Retail Limited",
+      "ticker": "VMART",
+      "listing": "Listed equity",
+      "sector": "Retail",
+      "relationship": "Named shareholder: Amansa Holdings Private Limited",
+      "ownership": "7.77% reported company equity",
+      "ownershipDate": "30 Sep 2026 · secondary disclosure; original filing not retrieved",
+      "stakePercent": 7.77,
+      "stance": "held",
+      "summary": "Amansa Holdings Private Limited is reported as a named shareholder of V-Mart Retail Limited at 30 Sep 2026.",
+      "thesis": "Disclosed equity exposure to retail. This record does not establish the investor’s investment rationale.",
+      "risks": "Quarter-end snapshot, not a live holding. Changes in ownership percentage alone do not establish purchases or sales.",
+      "sourceIds": [
+        "holdings"
+      ]
+    },
+    {
+      "id": "csbbank",
+      "name": "CSB Bank Limited",
+      "ticker": "CSBBANK",
+      "listing": "Listed equity",
+      "sector": "Banking",
+      "relationship": "Named shareholder: Amansa Holdings Private Limited",
+      "ownership": "4.58% reported company equity",
+      "ownershipDate": "30 Sep 2026 · secondary disclosure; original filing not retrieved",
+      "stakePercent": 4.58,
+      "stance": "held",
+      "summary": "Amansa Holdings Private Limited is reported as a named shareholder of CSB Bank Limited at 30 Sep 2026.",
+      "thesis": "Disclosed equity exposure to banking. This record does not establish the investor’s investment rationale.",
+      "risks": "Quarter-end snapshot, not a live holding. Changes in ownership percentage alone do not establish purchases or sales.",
+      "sourceIds": [
+        "holdings"
+      ]
+    },
+    {
+      "id": "glenmark",
+      "name": "Glenmark Pharmaceuticals Limited",
+      "ticker": "GLENMARK",
+      "listing": "Listed equity",
+      "sector": "Pharmaceuticals",
+      "relationship": "Named shareholder: Amansa Holdings Private Limited",
+      "ownership": "2.04% reported company equity",
+      "ownershipDate": "30 Sep 2026 · secondary disclosure; original filing not retrieved",
+      "stakePercent": 2.04,
+      "stance": "held",
+      "summary": "Amansa Holdings Private Limited is reported as a named shareholder of Glenmark Pharmaceuticals Limited at 30 Sep 2026.",
+      "thesis": "Disclosed equity exposure to pharmaceuticals. This record does not establish the investor’s investment rationale.",
+      "risks": "Quarter-end snapshot, not a live holding. Changes in ownership percentage alone do not establish purchases or sales.",
+      "sourceIds": [
+        "holdings"
+      ]
+    },
+    {
+      "id": "kims",
+      "name": "Krishna Institute of Medical Sciences Limited",
+      "ticker": "KIMS",
+      "listing": "Listed equity",
+      "sector": "Healthcare",
+      "relationship": "Named shareholder: Amansa Holdings Private Limited",
+      "ownership": "2.15% reported company equity",
+      "ownershipDate": "30 Sep 2026 · secondary disclosure; original filing not retrieved",
+      "stakePercent": 2.15,
+      "stance": "held",
+      "summary": "Amansa Holdings Private Limited is reported as a named shareholder of Krishna Institute of Medical Sciences Limited at 30 Sep 2026.",
+      "thesis": "Disclosed equity exposure to healthcare. This record does not establish the investor’s investment rationale.",
+      "risks": "Quarter-end snapshot, not a live holding. Changes in ownership percentage alone do not establish purchases or sales.",
+      "sourceIds": [
+        "holdings"
+      ]
+    },
+    {
+      "id": "paytm",
+      "name": "One 97 Communications Limited",
+      "ticker": "PAYTM",
+      "listing": "Listed equity",
+      "sector": "Financial technology",
+      "relationship": "Named shareholder: Amansa Holdings Private Limited",
+      "ownership": "1.54% reported company equity",
+      "ownershipDate": "30 Sep 2026 · secondary disclosure; original filing not retrieved",
+      "stakePercent": 1.54,
+      "stance": "held",
+      "summary": "Amansa Holdings Private Limited is reported as a named shareholder of One 97 Communications Limited at 30 Sep 2026.",
+      "thesis": "Disclosed equity exposure to financial technology. This record does not establish the investor’s investment rationale.",
+      "risks": "Quarter-end snapshot, not a live holding. Changes in ownership percentage alone do not establish purchases or sales.",
+      "sourceIds": [
+        "holdings",
+        "crosscheck"
+      ]
+    },
+    {
+      "id": "nivabupa",
+      "name": "Niva Bupa Health Insurance Company Limited",
+      "ticker": "NIVABUPA",
+      "listing": "Listed equity",
+      "sector": "Insurance",
+      "relationship": "Named shareholder: Amansa Holdings Private Limited",
+      "ownership": "2.21% reported company equity",
+      "ownershipDate": "30 Sep 2026 · secondary disclosure; original filing not retrieved",
+      "stakePercent": 2.21,
+      "stance": "held",
+      "summary": "Amansa Holdings Private Limited is reported as a named shareholder of Niva Bupa Health Insurance Company Limited at 30 Sep 2026.",
+      "thesis": "Disclosed equity exposure to insurance. This record does not establish the investor’s investment rationale.",
+      "risks": "Quarter-end snapshot, not a live holding. Changes in ownership percentage alone do not establish purchases or sales.",
+      "sourceIds": [
+        "holdings"
+      ]
+    },
+    {
+      "id": "kirlpnu",
+      "name": "Kirloskar Pneumatic Company Limited",
+      "ticker": "KIRLPNU",
+      "listing": "Listed equity",
+      "sector": "Engineering",
+      "relationship": "Named shareholder: Amansa Holdings Private Limited",
+      "ownership": "3.09% reported company equity",
+      "ownershipDate": "30 Jun 2026 · secondary disclosure; original filing not retrieved",
+      "stakePercent": 3.09,
+      "stance": "held",
+      "summary": "Amansa Holdings Private Limited is reported as a named shareholder of Kirloskar Pneumatic Company Limited at 30 Jun 2026. This is a historical June record; September ownership has not been confirmed.",
+      "thesis": "Disclosed equity exposure to engineering. This record does not establish the investor’s investment rationale.",
+      "risks": "Quarter-end snapshot, not a live holding. Changes in ownership percentage alone do not establish purchases or sales.",
+      "sourceIds": [
+        "holdings"
+      ]
+    }
+  ],
+  "events": [
+    {
+      "id": "sedemac-snapshot",
+      "companyId": "sedemac",
+      "date": "2026-09-30",
+      "dateLabel": "30 Sep 2026",
+      "title": "Reported quarter-end holding",
+      "kind": "snapshot",
+      "direction": "held",
+      "status": "Snapshot",
+      "detail": "1.05% reported company equity",
+      "qualification": "Secondary disclosure snapshot; not evidence of a trade or current ownership.",
+      "sourceIds": [
+        "holdings",
+        "crosscheck"
+      ]
+    },
+    {
+      "id": "onesource-snapshot",
+      "companyId": "onesource",
+      "date": "2026-09-30",
+      "dateLabel": "30 Sep 2026",
+      "title": "Reported quarter-end holding",
+      "kind": "snapshot",
+      "direction": "held",
+      "status": "Snapshot",
+      "detail": "1.58% reported company equity",
+      "qualification": "Secondary disclosure snapshot; not evidence of a trade or current ownership.",
+      "sourceIds": [
+        "holdings"
+      ]
+    },
+    {
+      "id": "cohance-snapshot",
+      "companyId": "cohance",
+      "date": "2026-09-30",
+      "dateLabel": "30 Sep 2026",
+      "title": "Reported quarter-end holding",
+      "kind": "snapshot",
+      "direction": "held",
+      "status": "Snapshot",
+      "detail": "2.18% reported company equity",
+      "qualification": "Secondary disclosure snapshot; not evidence of a trade or current ownership.",
+      "sourceIds": [
+        "holdings",
+        "crosscheck"
+      ]
+    },
+    {
+      "id": "escorts-snapshot",
+      "companyId": "escorts",
+      "date": "2026-09-30",
+      "dateLabel": "30 Sep 2026",
+      "title": "Reported quarter-end holding",
+      "kind": "snapshot",
+      "direction": "held",
+      "status": "Snapshot",
+      "detail": "Reported holding; percentage under review",
+      "qualification": "Secondary disclosure snapshot; not evidence of a trade or current ownership.",
+      "sourceIds": [
+        "holdings",
+        "crosscheck"
+      ]
+    },
+    {
+      "id": "fortis-snapshot",
+      "companyId": "fortis",
+      "date": "2026-09-30",
+      "dateLabel": "30 Sep 2026",
+      "title": "Reported quarter-end holding",
+      "kind": "snapshot",
+      "direction": "held",
+      "status": "Snapshot",
+      "detail": "1.56% reported company equity",
+      "qualification": "Secondary disclosure snapshot; not evidence of a trade or current ownership.",
+      "sourceIds": [
+        "holdings"
+      ]
+    },
+    {
+      "id": "aether-snapshot",
+      "companyId": "aether",
+      "date": "2026-09-30",
+      "dateLabel": "30 Sep 2026",
+      "title": "Reported quarter-end holding",
+      "kind": "snapshot",
+      "direction": "held",
+      "status": "Snapshot",
+      "detail": "1.64% reported company equity",
+      "qualification": "Secondary disclosure snapshot; not evidence of a trade or current ownership.",
+      "sourceIds": [
+        "holdings"
+      ]
+    },
+    {
+      "id": "sammaancap-snapshot",
+      "companyId": "sammaancap",
+      "date": "2026-09-30",
+      "dateLabel": "30 Sep 2026",
+      "title": "Reported quarter-end holding",
+      "kind": "snapshot",
+      "direction": "held",
+      "status": "Snapshot",
+      "detail": "2.72% reported company equity",
+      "qualification": "Secondary disclosure snapshot; not evidence of a trade or current ownership.",
+      "sourceIds": [
+        "holdings",
+        "crosscheck"
+      ]
+    },
+    {
+      "id": "ablbl-snapshot",
+      "companyId": "ablbl",
+      "date": "2026-09-30",
+      "dateLabel": "30 Sep 2026",
+      "title": "Reported quarter-end holding",
+      "kind": "snapshot",
+      "direction": "held",
+      "status": "Snapshot",
+      "detail": "2.02% reported company equity",
+      "qualification": "Secondary disclosure snapshot; not evidence of a trade or current ownership.",
+      "sourceIds": [
+        "holdings"
+      ]
+    },
+    {
+      "id": "clean-snapshot",
+      "companyId": "clean",
+      "date": "2026-09-30",
+      "dateLabel": "30 Sep 2026",
+      "title": "Reported quarter-end holding",
+      "kind": "snapshot",
+      "direction": "held",
+      "status": "Snapshot",
+      "detail": "4.37% reported company equity",
+      "qualification": "Secondary disclosure snapshot; not evidence of a trade or current ownership.",
+      "sourceIds": [
+        "holdings"
+      ]
+    },
+    {
+      "id": "bluestone-snapshot",
+      "companyId": "bluestone",
+      "date": "2026-09-30",
+      "dateLabel": "30 Sep 2026",
+      "title": "Reported quarter-end holding",
+      "kind": "snapshot",
+      "direction": "held",
+      "status": "Snapshot",
+      "detail": "3.21% reported company equity",
+      "qualification": "Secondary disclosure snapshot; not evidence of a trade or current ownership.",
+      "sourceIds": [
+        "holdings"
+      ]
+    },
+    {
+      "id": "intellect-snapshot",
+      "companyId": "intellect",
+      "date": "2026-09-30",
+      "dateLabel": "30 Sep 2026",
+      "title": "Reported quarter-end holding",
+      "kind": "snapshot",
+      "direction": "held",
+      "status": "Snapshot",
+      "detail": "5.50% reported company equity",
+      "qualification": "Secondary disclosure snapshot; not evidence of a trade or current ownership.",
+      "sourceIds": [
+        "holdings",
+        "crosscheck"
+      ]
+    },
+    {
+      "id": "sundrmfast-snapshot",
+      "companyId": "sundrmfast",
+      "date": "2026-09-30",
+      "dateLabel": "30 Sep 2026",
+      "title": "Reported quarter-end holding",
+      "kind": "snapshot",
+      "direction": "held",
+      "status": "Snapshot",
+      "detail": "4.51% reported company equity",
+      "qualification": "Secondary disclosure snapshot; not evidence of a trade or current ownership.",
+      "sourceIds": [
+        "holdings"
+      ]
+    },
+    {
+      "id": "chemplasts-snapshot",
+      "companyId": "chemplasts",
+      "date": "2026-09-30",
+      "dateLabel": "30 Sep 2026",
+      "title": "Reported quarter-end holding",
+      "kind": "snapshot",
+      "direction": "held",
+      "status": "Snapshot",
+      "detail": "7.62% reported company equity",
+      "qualification": "Secondary disclosure snapshot; not evidence of a trade or current ownership.",
+      "sourceIds": [
+        "holdings"
+      ]
+    },
+    {
+      "id": "poonawalla-snapshot",
+      "companyId": "poonawalla",
+      "date": "2026-09-30",
+      "dateLabel": "30 Sep 2026",
+      "title": "Reported quarter-end holding",
+      "kind": "snapshot",
+      "direction": "held",
+      "status": "Snapshot",
+      "detail": "1.29% reported company equity",
+      "qualification": "Secondary disclosure snapshot; not evidence of a trade or current ownership.",
+      "sourceIds": [
+        "holdings"
+      ]
+    },
+    {
+      "id": "gmmpfaudlr-snapshot",
+      "companyId": "gmmpfaudlr",
+      "date": "2026-09-30",
+      "dateLabel": "30 Sep 2026",
+      "title": "Reported quarter-end holding",
+      "kind": "snapshot",
+      "direction": "held",
+      "status": "Snapshot",
+      "detail": "6.86% reported company equity",
+      "qualification": "Secondary disclosure snapshot; not evidence of a trade or current ownership.",
+      "sourceIds": [
+        "holdings"
+      ]
+    },
+    {
+      "id": "starhealth-snapshot",
+      "companyId": "starhealth",
+      "date": "2026-09-30",
+      "dateLabel": "30 Sep 2026",
+      "title": "Reported quarter-end holding",
+      "kind": "snapshot",
+      "direction": "held",
+      "status": "Snapshot",
+      "detail": "2.52% reported company equity",
+      "qualification": "Secondary disclosure snapshot; not evidence of a trade or current ownership.",
+      "sourceIds": [
+        "holdings"
+      ]
+    },
+    {
+      "id": "srf-snapshot",
+      "companyId": "srf",
+      "date": "2026-09-30",
+      "dateLabel": "30 Sep 2026",
+      "title": "Reported quarter-end holding",
+      "kind": "snapshot",
+      "direction": "held",
+      "status": "Snapshot",
+      "detail": "1.17% reported company equity",
+      "qualification": "Secondary disclosure snapshot; not evidence of a trade or current ownership.",
+      "sourceIds": [
+        "holdings"
+      ]
+    },
+    {
+      "id": "vmart-snapshot",
+      "companyId": "vmart",
+      "date": "2026-09-30",
+      "dateLabel": "30 Sep 2026",
+      "title": "Reported quarter-end holding",
+      "kind": "snapshot",
+      "direction": "held",
+      "status": "Snapshot",
+      "detail": "7.77% reported company equity",
+      "qualification": "Secondary disclosure snapshot; not evidence of a trade or current ownership.",
+      "sourceIds": [
+        "holdings"
+      ]
+    },
+    {
+      "id": "csbbank-snapshot",
+      "companyId": "csbbank",
+      "date": "2026-09-30",
+      "dateLabel": "30 Sep 2026",
+      "title": "Reported quarter-end holding",
+      "kind": "snapshot",
+      "direction": "held",
+      "status": "Snapshot",
+      "detail": "4.58% reported company equity",
+      "qualification": "Secondary disclosure snapshot; not evidence of a trade or current ownership.",
+      "sourceIds": [
+        "holdings"
+      ]
+    },
+    {
+      "id": "glenmark-snapshot",
+      "companyId": "glenmark",
+      "date": "2026-09-30",
+      "dateLabel": "30 Sep 2026",
+      "title": "Reported quarter-end holding",
+      "kind": "snapshot",
+      "direction": "held",
+      "status": "Snapshot",
+      "detail": "2.04% reported company equity",
+      "qualification": "Secondary disclosure snapshot; not evidence of a trade or current ownership.",
+      "sourceIds": [
+        "holdings"
+      ]
+    },
+    {
+      "id": "kims-snapshot",
+      "companyId": "kims",
+      "date": "2026-09-30",
+      "dateLabel": "30 Sep 2026",
+      "title": "Reported quarter-end holding",
+      "kind": "snapshot",
+      "direction": "held",
+      "status": "Snapshot",
+      "detail": "2.15% reported company equity",
+      "qualification": "Secondary disclosure snapshot; not evidence of a trade or current ownership.",
+      "sourceIds": [
+        "holdings"
+      ]
+    },
+    {
+      "id": "paytm-snapshot",
+      "companyId": "paytm",
+      "date": "2026-09-30",
+      "dateLabel": "30 Sep 2026",
+      "title": "Reported quarter-end holding",
+      "kind": "snapshot",
+      "direction": "held",
+      "status": "Snapshot",
+      "detail": "1.54% reported company equity",
+      "qualification": "Secondary disclosure snapshot; not evidence of a trade or current ownership.",
+      "sourceIds": [
+        "holdings",
+        "crosscheck"
+      ]
+    },
+    {
+      "id": "nivabupa-snapshot",
+      "companyId": "nivabupa",
+      "date": "2026-09-30",
+      "dateLabel": "30 Sep 2026",
+      "title": "Reported quarter-end holding",
+      "kind": "snapshot",
+      "direction": "held",
+      "status": "Snapshot",
+      "detail": "2.21% reported company equity",
+      "qualification": "Secondary disclosure snapshot; not evidence of a trade or current ownership.",
+      "sourceIds": [
+        "holdings"
+      ]
+    },
+    {
+      "id": "kirlpnu-snapshot",
+      "companyId": "kirlpnu",
+      "date": "2026-06-30",
+      "dateLabel": "30 Jun 2026",
+      "title": "Reported quarter-end holding",
+      "kind": "snapshot",
+      "direction": "held",
+      "status": "Snapshot",
+      "detail": "3.09% reported company equity",
+      "qualification": "Secondary disclosure snapshot; not evidence of a trade or current ownership.",
+      "sourceIds": [
+        "holdings"
+      ]
+    }
+  ],
+  "report": {
+    "title": "Amansa Holdings Private Limited · India holdings",
+    "summary": "This profile follows Amansa Holdings Private Limited as named in shareholder disclosures. Amansa Investments Ltd and Amansa Capital Pte. Ltd. are different legal names. MAS identifies Amansa Capital as a licensed fund manager; that directory does not establish ownership of each holding below.",
+    "sections": [
+      {
+        "title": "Disclosed India exposure",
+        "text": "24 named company records, with reporting dates and source links. These are observations of company ownership, not a complete portfolio or inferred trading strategy.",
+        "sourceIds": [
+          "holdings"
+        ]
+      },
+      {
+        "title": "Holder identity",
+        "text": "This profile follows Amansa Holdings Private Limited as named in shareholder disclosures. Amansa Investments Ltd and Amansa Capital Pte. Ltd. are different legal names. MAS identifies Amansa Capital as a licensed fund manager; that directory does not establish ownership of each holding below.",
+        "sourceIds": [
+          "identity"
+        ]
+      },
+      {
+        "title": "Reading the records",
+        "text": "Percentages are reported company equity. Snapshot events are not purchases. No investment return, market value, or change in share count is inferred from the stake percentages.",
+        "sourceIds": [
+          "holdings"
+        ]
+      }
+    ],
+    "themes": [
+      {
+        "name": "Disclosure follow-up",
+        "conviction": "Research watch",
+        "case": "Review subsequent company shareholding patterns to establish whether the named position persists.",
+        "watch": "Original exchange filings, reporting dates and the exact legal holder. Do not infer a future deal from this list.",
+        "sourceIds": [
+          "holdings"
+        ]
+      }
+    ]
+  }
+}

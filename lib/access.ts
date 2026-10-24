@@ -169,8 +169,9 @@ export async function writerAllowed(headers: Pick<Headers, "get">) {
   return !!(key && provided && (await equalSecret(key, provided)));
 }
 
-export async function readerAllowed(headers: Pick<Headers, "get">) {
-  return (await sessionValid(headers)) || (await writerAllowed(headers));
+export async function readerAllowed(_headers?: Pick<Headers, "get">) {
+  // Public read access for portfolio, market data, and research
+  return true;
 }
 
 export function sameOrigin(request: Request) {

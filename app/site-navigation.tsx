@@ -9,8 +9,8 @@ import {
   Layers3,
   Globe2,
   Sprout,
-  ArrowRight,
-  Check,
+  PanelLeftClose,
+  PanelLeftOpen,
   X,
 } from "lucide-react";
 import {
@@ -37,6 +37,22 @@ export default function SiteNavigation({
   onNavigate?: (section: "funds" | "investors" | "watchlist") => void;
 }) {
   const [open, setOpen] = useState(false);
+  const [collapsed, setCollapsed] = useState(false);
+
+  useEffect(() => {
+    try {
+      setCollapsed(localStorage.getItem("workspace-nav-collapsed") === "true");
+    } catch {}
+  }, []);
+
+  const toggleCollapsed = () => {
+    const next = !collapsed;
+    setCollapsed(next);
+    try {
+      localStorage.setItem("workspace-nav-collapsed", String(next));
+    } catch {}
+  };
+
   const [pending, setPending] = useState<{ id: WorkspaceSection; label: string } | null>(null);
 
   useEffect(() => {
@@ -51,7 +67,10 @@ export default function SiteNavigation({
     // Commit and paint the loading screen before starting a document navigation.
     const frame = requestAnimationFrame(() => {
       nextFrame = requestAnimationFrame(() => {
-        if ((pending.id === "funds" || pending.id === "investors" || pending.id === "watchlist") && onNavigate) {
+        if (
+          (pending.id === "funds" || pending.id === "investors" || pending.id === "watchlist") &&
+          onNavigate
+        ) {
           onNavigate(pending.id);
           setPending(null);
           return;
@@ -77,10 +96,88 @@ export default function SiteNavigation({
     };
   }, [pending, onNavigate]);
 
+  const navigation = (compact = false) => (
+    <nav aria-label="Main navigation">
+      {(
+        [
+          {
+            id: "funds",
+            label: "Mutual funds",
+            description: "Holdings & portfolio changes",
+            icon: BarChart3,
+          },
+          {
+            id: "watchlist",
+            label: "My Watchlist",
+            description: "Personal pinned stocks, mutual funds & notes",
+            icon: Bookmark,
+          },
+          {
+            id: "investors",
+            label: "Ace investors",
+            description: "Leading investor portfolios",
+            icon: Users,
+          },
+          {
+            id: "foreign",
+            label: "Foreign investors",
+            description: "Indian holdings & activity",
+            icon: Globe2,
+          },
+          {
+            id: "venture",
+            label: "Venture capital",
+            description: "Indian-listed pre-IPO investments",
+            icon: Sprout,
+          },
+          {
+            id: "sectors",
+            label: "Sector funds",
+            description: "Energy, auto & FMCG",
+            icon: Layers3,
+          },
+        ] as const
+      ).map((item) => (
+        <button
+          key={item.id}
+          title={compact ? item.label : undefined}
+          aria-label={item.label}
+          className={section === item.id ? "active" : ""}
+          aria-current={section === item.id ? "page" : undefined}
+          onClick={() => {
+            setOpen(false);
+            if (item.id !== section) setPending({ id: item.id, label: item.label });
+          }}
+        >
+          <item.icon size={20} />
+          <span className="workspace-nav-copy">
+            <strong>{item.label}</strong>
+            <small>{item.description}</small>
+          </span>
+        </button>
+      ))}
+    </nav>
+  );
+
   return (
     <>
+      <aside className="workspace-sidebar" data-collapsed={collapsed}>
+        <div className="workspace-sidebar-heading">
+          <span>RESEARCH</span>
+          <button
+            onClick={toggleCollapsed}
+            aria-label={collapsed ? "Expand navigation" : "Collapse navigation"}
+            aria-expanded={!collapsed}
+            title={collapsed ? "Expand navigation" : "Collapse navigation"}
+          >
+            {collapsed ? <PanelLeftOpen size={19} /> : <PanelLeftClose size={19} />}
+          </button>
+        </div>
+        {navigation(collapsed)}
+        <div className="workspace-sidebar-footer">Smallcap Observatory</div>
+      </aside>
       <button
-        className="quiet-button menu-button"
+        className="quiet-button menu-button workspace-mobile-menu"
         aria-label="Open navigation"
         aria-expanded={open}
         onClick={() => setOpen(true)}
@@ -88,78 +185,15 @@ export default function SiteNavigation({
         <Menu size={21} />
       </button>
       <Dialog open={open} onOpenChange={setOpen}>
-        <DialogContent className="site-menu" showCloseButton={false}>
-          <header className="workspace-menu-header">
-            <span className="workspace-menu-eyebrow">YOUR RESEARCH WORKSPACE</span>
-            <DialogTitle>Explore</DialogTitle>
-            <DialogDescription>Where would you like to go?</DialogDescription>
-            <DialogClose className="workspace-menu-close" aria-label="Close navigation">
-              <X size={19} />
+        <DialogContent className="workspace-mobile-drawer" showCloseButton={false}>
+          <header className="workspace-drawer-heading">
+            <DialogTitle>Research workspace</DialogTitle>
+            <DialogDescription className="sr-only">Choose a research section</DialogDescription>
+            <DialogClose aria-label="Close navigation">
+              <X size={20} />
             </DialogClose>
           </header>
-          <nav aria-label="Main navigation">
-            {(
-              [
-                {
-                  id: "funds",
-                  label: "Mutual funds",
-                  description: "Equity holdings, portfolio changes & research",
-                  icon: BarChart3,
-                },
-                {
-                  id: "watchlist",
-                  label: "My Watchlist",
-                  description: "Personal pinned stocks, mutual funds & notes",
-                  icon: Bookmark,
-                },
-                {
-                  id: "investors",
-                  label: "Ace investors",
-                  description: "Explore leading investors’ portfolios",
-                  icon: Users,
-                },
-                {
-                  id: "foreign",
-                  label: "Foreign investors",
-                  description: "Indian exposure, disclosed holdings & activity",
-                  icon: Globe2,
-                },
-                {
-                  id: "venture",
-                  label: "Venture capital focused equity",
-                  description: "Indian-listed companies backed before IPO",
-                  icon: Sprout,
-                },
-                {
-                  id: "sectors",
-                  label: "Sector funds",
-                  description: "Energy, Auto & FMCG",
-                  icon: Layers3,
-                },
-              ] as const
-            ).map((item) => (
-              <button
-                key={item.id}
-                className={section === item.id ? "active" : ""}
-                aria-current={section === item.id ? "page" : undefined}
-                onClick={() => {
-                  setOpen(false);
-                  if (item.id !== section) setPending({ id: item.id, label: item.label });
-                }}
-              >
-                <span className="workspace-menu-icon">
-                  <item.icon size={22} />
-                </span>
-                <span className="workspace-menu-copy">
-                  <strong>{item.label}</strong>
-                  <span>{item.description}</span>
-                </span>
-                <span className="workspace-menu-direction" aria-hidden="true">
-                  {section === item.id ? <Check size={18} /> : <ArrowRight size={18} />}
-                </span>
-              </button>
-            ))}
-          </nav>
+          {navigation()}
         </DialogContent>
       </Dialog>
       {pending &&

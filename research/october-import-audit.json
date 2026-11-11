@@ -1,0 +1,578 @@
+{
+  "checkedAt": "2026-11-11T02:45:11.834Z",
+  "funds": [
+    {
+      "fundId": "dsp",
+      "originalWorkbook": true,
+      "rows": 85,
+      "equityWeightSum": 87.91,
+      "crosschecked": 79,
+      "conflicts": [],
+      "reviewPositions": 1,
+      "officialAudit": {
+        "file": "dsp-october/DSP Equity FOF ISIN Portfolio as on 31 Oct 2026.xlsx",
+        "sheet": "SMALLCAP",
+        "scheme": "DSP Small Cap Fund",
+        "sha256": "61851c8ad8cab86dbbc251d88858c58d4d88b8a265c2782ebfbb1776cd4459d9",
+        "equityRows": 85,
+        "equityMarketValueLakhs": 1780735.0399999996,
+        "disclosedEquityMarketValueLakhs": 1780735.04,
+        "netAssetsLakhs": 2025231.58,
+        "equityWeightSum": 87.91,
+        "disclosedEquityWeight": 87.91,
+        "schemeDateAndSectionValidated": true,
+        "quantityUnits": "Absolute shares",
+        "weightUnits": "Percentage of total net assets",
+        "excluded": "Debt, money market, cash, TREPS, derivatives and fund units"
+      }
+    },
+    {
+      "fundId": "nippon",
+      "originalWorkbook": true,
+      "rows": 260,
+      "equityWeightSum": 97.36,
+      "crosschecked": 25,
+      "conflicts": [],
+      "reviewPositions": 5,
+      "officialAudit": {
+        "file": "nippon-october.xls",
+        "sheet": "SC",
+        "scheme": "NIPPON INDIA SMALL CAP FUND",
+        "sha256": "b977e274f58608b800a6b8333df4d2f621ed3679e9a5bb0ee906414157cab111",
+        "equityRows": 260,
+        "equityMarketValueLakhs": 7488309.290000002,
+        "disclosedEquityMarketValueLakhs": 7488309.29,
+        "netAssetsLakhs": 7690282.960185899,
+        "equityWeightSum": 97.36,
+        "disclosedEquityWeight": 97.36,
+        "schemeDateAndSectionValidated": true,
+        "quantityUnits": "Absolute shares",
+        "weightUnits": "Percentage of total net assets",
+        "excluded": "Debt, money market, cash, TREPS, derivatives and fund units"
+      }
+    },
+    {
+      "fundId": "quantum",
+      "originalWorkbook": true,
+      "rows": 55,
+      "equityWeightSum": 91.51,
+      "crosschecked": 0,
+      "conflicts": [],
+      "reviewPositions": 1,
+      "officialAudit": {
+        "file": "quantum-october.xlsx",
+        "sheet": "QSCAPF",
+        "scheme": "Quantum Small Cap Fund",
+        "sha256": "ae12f8119d5613da818cfb2a3ca6c6141609266cfd10e22793f6a0fb9a3e90d6",
+        "equityRows": 55,
+        "equityMarketValueLakhs": 22566.690000000006,
+        "disclosedEquityMarketValueLakhs": 22566.69,
+        "netAssetsLakhs": 24661.2984335308,
+        "equityWeightSum": 91.51,
+        "disclosedEquityWeight": 91.51,
+        "schemeDateAndSectionValidated": true,
+        "quantityUnits": "Absolute shares",
+        "weightUnits": "Percentage of total net assets",
+        "excluded": "Debt, money market, cash, TREPS, derivatives and fund units"
+      }
+    },
+    {
+      "fundId": "edelweiss",
+      "originalWorkbook": false,
+      "rows": 98,
+      "equityWeightSum": 99.15,
+      "crosschecked": 0,
+      "conflicts": [],
+      "reviewPositions": 98,
+      "officialAudit": null
+    },
+    {
+      "fundId": "invesco",
+      "originalWorkbook": true,
+      "rows": 74,
+      "equityWeightSum": 99.69,
+      "crosschecked": 72,
+      "conflicts": [],
+      "reviewPositions": 1,
+      "officialAudit": {
+        "file": "invesco-october.xlsx",
+        "sheet": "Smallcap",
+        "scheme": "Invesco India Small cap Fund",
+        "sha256": "ebb891a1eccd2d532740144717b896f3e80e96b4012868ddfc4782b9ea9d10b6",
+        "equityRows": 74,
+        "equityMarketValueLakhs": 1626781.599999999,
+        "disclosedEquityMarketValueLakhs": 1626781.6,
+        "netAssetsLakhs": 1631958.25,
+        "equityWeightSum": 99.69,
+        "disclosedEquityWeight": 99.69,
+        "schemeDateAndSectionValidated": true,
+        "quantityUnits": "Absolute shares",
+        "weightUnits": "Percentage of total net assets",
+        "excluded": "Debt, money market, cash, TREPS, derivatives and fund units"
+      }
+    },
+    {
+      "fundId": "motilal",
+      "originalWorkbook": true,
+      "rows": 64,
+      "equityWeightSum": 96.37,
+      "crosschecked": 62,
+      "conflicts": [],
+      "reviewPositions": 1,
+      "officialAudit": {
+        "file": "motilal-october.xlsx",
+        "sheet": "YO46",
+        "scheme": "MOTILAL OSWAL SMALL CAP FUND",
+        "sha256": "23cfee4dd4fbeabc37c9d1aaa62c5cf5a2e022cfb1fa18c31a4fc7278d7398c5",
+        "equityRows": 64,
+        "equityMarketValueLakhs": 780421.0100000001,
+        "disclosedEquityMarketValueLakhs": 780421.01,
+        "netAssetsLakhs": 809627.05,
+        "equityWeightSum": 96.37,
+        "disclosedEquityWeight": 96.37,
+        "schemeDateAndSectionValidated": true,
+        "quantityUnits": "Absolute shares",
+        "weightUnits": "Percentage of total net assets",
+        "excluded": "Debt, money market, cash, TREPS, derivatives and fund units"
+      }
+    },
+    {
+      "fundId": "trustmf",
+      "originalWorkbook": false,
+      "rows": 73,
+      "equityWeightSum": 92.98,
+      "crosschecked": 71,
+      "conflicts": [],
+      "reviewPositions": 5,
+      "officialAudit": null
+    },
+    {
+      "fundId": "absl",
+      "originalWorkbook": false,
+      "rows": 86,
+      "equityWeightSum": 95.708,
+      "crosschecked": 83,
+      "conflicts": [],
+      "reviewPositions": 6,
+      "officialAudit": null
+    },
+    {
+      "fundId": "uti",
+      "originalWorkbook": true,
+      "rows": 104,
+      "equityWeightSum": 94.76,
+      "crosschecked": 20,
+      "conflicts": [],
+      "reviewPositions": 5,
+      "officialAudit": {
+        "file": "Sebi Exposure as on 31 Oct 2026_FINAL.xlsx",
+        "sha256": "899b7bdd394824a24b199977c65404846b44c3343dd10bc9ab37b0368e89c7d5",
+        "complete": true,
+        "aum": {
+          "crore": 5012.1357,
+          "date": "2026-10-31",
+          "sourceUrl": "https://d3ce1o48hc5oli.cloudfront.net/s3fs-public/2026-11/uti_mf_scheme_portfolios_31.10.2026.zip?VersionId=TCdWa523cHJddb2DfCo24kQ36qDHRk6o",
+          "verified": true
+        }
+      }
+    },
+    {
+      "fundId": "sundaram",
+      "originalWorkbook": false,
+      "rows": 75,
+      "equityWeightSum": 97.0362,
+      "crosschecked": 64,
+      "conflicts": [],
+      "reviewPositions": 11,
+      "officialAudit": null
+    },
+    {
+      "fundId": "pgim",
+      "originalWorkbook": false,
+      "rows": 72,
+      "equityWeightSum": 96.14,
+      "crosschecked": 71,
+      "conflicts": [],
+      "reviewPositions": 2,
+      "officialAudit": null
+    },
+    {
+      "fundId": "iti",
+      "originalWorkbook": true,
+      "rows": 83,
+      "equityWeightSum": 94.71,
+      "crosschecked": 0,
+      "conflicts": [],
+      "reviewPositions": 2,
+      "officialAudit": {
+        "file": "iti-october.xlsx",
+        "sheet": "ITISCF",
+        "sha256": "7616b1be6ad4be911d4f39600ade1fc51fa4b9f58a49286ee1eff3155782d394",
+        "equityRows": 83,
+        "parser": "Existing fail-closed parseDisclosureFile using exact scheme, completed month and established layout/cash configuration",
+        "equityWeightSum": 94.70999999999997,
+        "schemeDateAndSectionValidated": true,
+        "quantityUnits": "Absolute shares",
+        "weightUnits": "Percentage of total net assets",
+        "excluded": "Debt, money market, cash, TREPS, derivatives and fund units"
+      }
+    },
+    {
+      "fundId": "lic",
+      "originalWorkbook": false,
+      "rows": 48,
+      "equityWeightSum": 92.14,
+      "crosschecked": 44,
+      "conflicts": [],
+      "reviewPositions": 8,
+      "officialAudit": null
+    },
+    {
+      "fundId": "jm",
+      "originalWorkbook": false,
+      "rows": 84,
+      "equityWeightSum": 97.9718,
+      "crosschecked": 0,
+      "conflicts": [],
+      "reviewPositions": 84,
+      "officialAudit": null
+    },
+    {
+      "fundId": "helios",
+      "originalWorkbook": true,
+      "rows": 98,
+      "equityWeightSum": 97.54,
+      "crosschecked": 95,
+      "conflicts": [],
+      "reviewPositions": 0,
+      "officialAudit": {
+        "file": "helios-small-cap-october.xlsx",
+        "sheet": "HSCF",
+        "scheme": "Helios Small Cap Fund",
+        "sha256": "0b8d6de05410518bc0171fad0ea333854fadc6c2e18fdd67fac09ed236db6b4b",
+        "equityRows": 98,
+        "equityMarketValueLakhs": 185007.47999999992,
+        "disclosedEquityMarketValueLakhs": 185007.48,
+        "netAssetsLakhs": 189629.41,
+        "equityWeightSum": 97.54,
+        "disclosedEquityWeight": 97.54,
+        "schemeDateAndSectionValidated": true,
+        "quantityUnits": "Absolute shares",
+        "weightUnits": "Percentage of total net assets",
+        "excluded": "Debt, money market, cash, TREPS, derivatives and fund units"
+      }
+    },
+    {
+      "fundId": "abakkus",
+      "originalWorkbook": false,
+      "rows": 65,
+      "equityWeightSum": 93.93,
+      "crosschecked": 62,
+      "conflicts": [],
+      "reviewPositions": 3,
+      "officialAudit": null
+    },
+    {
+      "fundId": "mahindra",
+      "originalWorkbook": true,
+      "rows": 84,
+      "equityWeightSum": 97.8,
+      "crosschecked": 0,
+      "conflicts": [],
+      "reviewPositions": 5,
+      "officialAudit": {
+        "file": "mahindra-october.xlsx",
+        "sheet": "MMF21",
+        "sha256": "c21b7b8cc132fd43d61f4ef37b0f65b7e2f082c6f680a665a5080d05efe084da",
+        "equityRows": 84,
+        "parser": "Existing fail-closed parseDisclosureFile using exact scheme, completed month and established layout/cash configuration",
+        "equityWeightSum": 97.80000000000001,
+        "schemeDateAndSectionValidated": true,
+        "quantityUnits": "Absolute shares",
+        "weightUnits": "Percentage of total net assets",
+        "excluded": "Debt, money market, cash, TREPS, derivatives and fund units"
+      }
+    },
+    {
+      "fundId": "bajaj",
+      "originalWorkbook": false,
+      "rows": 92,
+      "equityWeightSum": 97.97,
+      "crosschecked": 90,
+      "conflicts": [],
+      "reviewPositions": 3,
+      "officialAudit": null
+    },
+    {
+      "fundId": "helios-financial",
+      "originalWorkbook": true,
+      "rows": 30,
+      "equityWeightSum": 99.55,
+      "crosschecked": 28,
+      "conflicts": [],
+      "reviewPositions": 0,
+      "officialAudit": {
+        "file": "helios-financial-services-october.xlsx",
+        "sheet": "HFSF",
+        "scheme": "Helios Financial Services Fund",
+        "sha256": "b895e0c045a6ca87d7965159b5c965df76fccbbb8987e1d4772324525ea34271",
+        "equityRows": 30,
+        "equityMarketValueLakhs": 18926.38,
+        "disclosedEquityMarketValueLakhs": 18926.38,
+        "netAssetsLakhs": 19014.07,
+        "equityWeightSum": 99.55,
+        "disclosedEquityWeight": 99.55,
+        "schemeDateAndSectionValidated": true,
+        "quantityUnits": "Absolute shares",
+        "weightUnits": "Percentage of total net assets",
+        "excluded": "Debt, money market, cash, TREPS, derivatives and fund units"
+      }
+    },
+    {
+      "fundId": "helios-flexi",
+      "originalWorkbook": true,
+      "rows": 72,
+      "equityWeightSum": 98.46,
+      "crosschecked": 69,
+      "conflicts": [],
+      "reviewPositions": 0,
+      "officialAudit": {
+        "file": "helios-flexi-cap-october.xlsx",
+        "sheet": "HFCF",
+        "scheme": "Helios Flexi Cap Fund",
+        "sha256": "b5aaf97a232bfe45f33351067ef4baf3f3336e62ce7915264237eee790db4cd4",
+        "equityRows": 72,
+        "equityMarketValueLakhs": 891247.7300000002,
+        "disclosedEquityMarketValueLakhs": 891247.73,
+        "netAssetsLakhs": 905731.88,
+        "equityWeightSum": 98.46,
+        "disclosedEquityWeight": 98.46,
+        "schemeDateAndSectionValidated": true,
+        "quantityUnits": "Absolute shares",
+        "weightUnits": "Percentage of total net assets",
+        "excluded": "Debt, money market, cash, TREPS, derivatives and fund units"
+      }
+    },
+    {
+      "fundId": "helios-large-mid",
+      "originalWorkbook": true,
+      "rows": 62,
+      "equityWeightSum": 99,
+      "crosschecked": 58,
+      "conflicts": [],
+      "reviewPositions": 0,
+      "officialAudit": {
+        "file": "helios-large-mid-cap-october.xlsx",
+        "sheet": "HLM",
+        "scheme": "Helios Large & Mid Cap Fund",
+        "sha256": "8a42c83c5e7163a91f3ed3fc282eed3d3222fb89c1b98215d60170167aa33a0c",
+        "equityRows": 62,
+        "equityMarketValueLakhs": 147554.41000000003,
+        "disclosedEquityMarketValueLakhs": 147554.41,
+        "netAssetsLakhs": 149109.9,
+        "equityWeightSum": 99,
+        "disclosedEquityWeight": 99,
+        "schemeDateAndSectionValidated": true,
+        "quantityUnits": "Absolute shares",
+        "weightUnits": "Percentage of total net assets",
+        "excluded": "Debt, money market, cash, TREPS, derivatives and fund units"
+      }
+    },
+    {
+      "fundId": "helios-mid",
+      "originalWorkbook": true,
+      "rows": 77,
+      "equityWeightSum": 99.43,
+      "crosschecked": 75,
+      "conflicts": [],
+      "reviewPositions": 0,
+      "officialAudit": {
+        "file": "helios-mid-cap-october.xlsx",
+        "sheet": "HMCF",
+        "scheme": "Helios Mid Cap Fund",
+        "sha256": "eef2988645405b8a1e850976c00dc24fb571c5520007e2b50b7c0f1fd69e9238",
+        "equityRows": 77,
+        "equityMarketValueLakhs": 240898.40000000005,
+        "disclosedEquityMarketValueLakhs": 240898.4,
+        "netAssetsLakhs": 242139.58,
+        "equityWeightSum": 99.43,
+        "disclosedEquityWeight": 99.43,
+        "schemeDateAndSectionValidated": true,
+        "quantityUnits": "Absolute shares",
+        "weightUnits": "Percentage of total net assets",
+        "excluded": "Debt, money market, cash, TREPS, derivatives and fund units"
+      }
+    },
+    {
+      "fundId": "sbi-small",
+      "originalWorkbook": true,
+      "rows": 63,
+      "equityWeightSum": 83.88,
+      "crosschecked": 62,
+      "conflicts": [],
+      "reviewPositions": 0,
+      "officialAudit": {
+        "file": "sbi-october-2026.xlsx",
+        "sha256": "3561f640a28a09e947b9bcd3516b7680a59a3849226b27d4d8023fcf2fddbf7f",
+        "complete": true,
+        "aum": {
+          "crore": 39202.7636,
+          "date": "2026-10-31",
+          "sourceUrl": "https://www.sbimf.com/docs/default-source/scheme-portfolios/all-schemes-monthly-portfolio---as-on-31st-october-2026.xlsx?sfvrsn=95fe7a7e_2",
+          "verified": true
+        }
+      }
+    },
+    {
+      "fundId": "canara-small",
+      "originalWorkbook": true,
+      "rows": 98,
+      "equityWeightSum": 95.44,
+      "crosschecked": 94,
+      "conflicts": [],
+      "reviewPositions": 7,
+      "officialAudit": {
+        "file": "canara-october-2026.xlsx",
+        "sha256": "2c617d15e32ab5c728cb8c98b1f50c4267d2adb2209a6f3be86324bc8070a8e3",
+        "complete": true,
+        "aum": {
+          "crore": 13129.433899999998,
+          "date": "2026-10-31",
+          "sourceUrl": "https://www.canararobeco.com/wp-content/uploads/2026/11/SC-%E2%80%93-Canara-Robeco-Small-Cap-Fund-%E2%80%93-October-2026.xlsx",
+          "verified": true
+        }
+      }
+    },
+    {
+      "fundId": "kotak-small",
+      "originalWorkbook": false,
+      "rows": 79,
+      "equityWeightSum": 98.58,
+      "crosschecked": 65,
+      "conflicts": [],
+      "reviewPositions": 14,
+      "officialAudit": null
+    },
+    {
+      "fundId": "whiteoak-mid",
+      "originalWorkbook": false,
+      "rows": 141,
+      "equityWeightSum": 87.91,
+      "crosschecked": 25,
+      "conflicts": [],
+      "reviewPositions": 118,
+      "officialAudit": null
+    },
+    {
+      "fundId": "dsp-mid",
+      "originalWorkbook": true,
+      "rows": 63,
+      "equityWeightSum": 95.11,
+      "crosschecked": 56,
+      "conflicts": [],
+      "reviewPositions": 1,
+      "officialAudit": {
+        "file": "dsp-october/DSP Equity FOF ISIN Portfolio as on 31 Oct 2026.xlsx",
+        "sheet": "MIDCAP",
+        "scheme": "DSP Mid Cap Fund",
+        "sha256": "61851c8ad8cab86dbbc251d88858c58d4d88b8a265c2782ebfbb1776cd4459d9",
+        "equityRows": 63,
+        "equityMarketValueLakhs": 1793006.8000000005,
+        "disclosedEquityMarketValueLakhs": 1793006.8,
+        "netAssetsLakhs": 1885269.8,
+        "equityWeightSum": 95.11,
+        "disclosedEquityWeight": 95.11,
+        "schemeDateAndSectionValidated": true,
+        "quantityUnits": "Absolute shares",
+        "weightUnits": "Percentage of total net assets",
+        "excluded": "Debt, money market, cash, TREPS, derivatives and fund units"
+      }
+    },
+    {
+      "fundId": "edelweiss-mid",
+      "originalWorkbook": false,
+      "rows": 103,
+      "equityWeightSum": 97.84,
+      "crosschecked": 0,
+      "conflicts": [],
+      "reviewPositions": 103,
+      "officialAudit": null
+    },
+    {
+      "fundId": "uti-mid",
+      "originalWorkbook": true,
+      "rows": 87,
+      "equityWeightSum": 97.68,
+      "crosschecked": 0,
+      "conflicts": [],
+      "reviewPositions": 6,
+      "officialAudit": {
+        "file": "Sebi Exposure as on 31 Oct 2026_FINAL.xlsx",
+        "sha256": "899b7bdd394824a24b199977c65404846b44c3343dd10bc9ab37b0368e89c7d5",
+        "complete": true,
+        "aum": {
+          "crore": 11566.0903,
+          "date": "2026-10-31",
+          "sourceUrl": "https://d3ce1o48hc5oli.cloudfront.net/s3fs-public/2026-11/uti_mf_scheme_portfolios_31.10.2026.zip?VersionId=TCdWa523cHJddb2DfCo24kQ36qDHRk6o",
+          "verified": true
+        }
+      }
+    },
+    {
+      "fundId": "kotak-mid",
+      "originalWorkbook": false,
+      "rows": 71,
+      "equityWeightSum": 98.55,
+      "crosschecked": 0,
+      "conflicts": [],
+      "reviewPositions": 71,
+      "officialAudit": null
+    }
+  ],
+  "pending": [
+    {
+      "fundId": "groww",
+      "name": "Groww",
+      "reason": "No verified October month-end equity disclosure retrieved. September records retained.",
+      "sources": [
+        "https://decryptmutualfunds.com/fund-houses/groww/small-cap-fund",
+        "https://fundtrackerindia.com/scheme/groww-small-cap-fund",
+        "https://mfscanner.com/fund/groww-small-cap-fund",
+        "https://www.questgroup.in/MutualFund/Scheme-Profile/46214/Groww-Small-Cap-Fund---Direct-%28IDCW%29"
+      ]
+    },
+    {
+      "fundId": "mirae",
+      "name": "Mirae Asset Small Cap Fund",
+      "reason": "No verified October month-end equity disclosure retrieved. September records retained.",
+      "sources": [
+        "https://decryptmutualfunds.com/fund-houses/mirae-asset/small-cap-fund",
+        "https://fundtrackerindia.com/scheme/mirae-asset-small-cap-fund",
+        "https://decryptmutualfunds.com/fund-houses/mirae-asset/small-cap-fund",
+        "https://scripbook.com/scheme/sch-mirae-mirae-asset-small-cap-fund/"
+      ]
+    },
+    {
+      "fundId": "franklin-small",
+      "name": "Franklin India Small Cap Fund",
+      "reason": "No verified October month-end equity disclosure retrieved. September records retained.",
+      "sources": [
+        "https://decryptmutualfunds.com/fund-houses/franklin-templeton/small-cap-fund",
+        "https://fundtrackerindia.com/scheme/franklin-india-small-cap-fund",
+        "https://www.franklintempletonindia.com/download/en-in/monthly-portfolio-dsclr/79c9638b-ce3e-48c8-8036-a571ecd54260/MF-Monthly-Portfolio-ISIN-30-Sep-2026.xlsx",
+        "https://mfscanner.com/fund/franklin-india-small-cap-fund"
+      ]
+    },
+    {
+      "fundId": "franklin-mid",
+      "name": "Franklin India Mid Cap Fund",
+      "reason": "No verified October month-end equity disclosure retrieved. September records retained.",
+      "sources": [
+        "https://decryptmutualfunds.com/fund-houses/franklin-templeton/mid-cap-fund",
+        "https://fundtrackerindia.com/scheme/franklin-india-mid-cap-fund",
+        "https://www.franklintempletonindia.com/download/en-in/monthly-portfolio-dsclr/79c9638b-ce3e-48c8-8036-a571ecd54260/MF-Monthly-Portfolio-ISIN-30-Sep-2026.xlsx",
+        "https://mfscanner.com/fund/franklin-india-mid-cap-fund"
+      ]
+    }
+  ]
+}

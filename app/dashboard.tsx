@@ -90,6 +90,7 @@ export default function Dashboard(){
                 {error&&<p className="error-notice" role="alert">{error} Showing the last loaded comparison.</p>}
                 {data && (
                   <>
+                    {data.missingFunds.length>0&&<details className="fund-coverage" key={data.requestedMonth}><summary><span className="fund-coverage-status"><span className="fund-coverage-dot" aria-hidden="true"/><strong>{data.funds.length}<span> / {data.funds.length+data.missingFunds.length}</span></strong><span>funds available</span></span><span className="fund-coverage-pending">{data.missingFunds.length} pending<ChevronDown size={15} aria-hidden="true"/></span></summary><div className="fund-coverage-details"><p>Awaiting verified {monthLabel(data.requestedMonth)} holdings</p><ul>{data.missingFunds.map(id=><li key={id}>{schemeNames[id]??id}</li>)}</ul><small>Choose an earlier reporting month to view their saved holdings.</small></div></details>}
                     <nav className="portfolio-section-cards" aria-label="Portfolio views">{([
                       {id:"funds",title:"Fund portfolios",description:"Explore fund allocations or combine portfolios.",metric:data.funds.length+" funds available",Icon:Layers3},
                       {id:"shared",title:"Shared holdings",description:"Find companies held by multiple funds.",metric:shared.companies.length+" shared companies",Icon:Files},

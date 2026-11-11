@@ -4,6 +4,7 @@ import {comparisonCounts,type FullComparison} from "./full-portfolio";
 import {bundledComparisons} from "./full-portfolio-store";
 import {companyKey} from "./top-holdings";
 import {schemeNames,fundCatalog} from "./fund-catalog";
+import {monthlyLetter} from "./monthly-letter";
 
 export function portfolioFingerprint(comparisons:FullComparison[]){
   // Change detection, not a security hash. Include quantities, notes and provenance.
@@ -32,7 +33,9 @@ export function researchReport(input:FullComparison[]=bundledComparisons,report:
   const screen=[...grouped.entries()].map(([key,g])=>{const e=evidence(g);return {key,name:g.name,adding:e.adding,reducing:e.reducing,repeatFunds:e.repeatFunds,positivePeriods:e.positivePeriods,review:g.periods.reduce((n,p)=>n+p.company.review,0),periods:e.periods.map(p=>({month:p.month,coverage:p.coverage,adding:p.company?.adding??0,reducing:p.company?.reducing??0,review:p.company?.review??0,held:p.company?.funds.filter(f=>f.currentQuantity>0).length??0,observed:!!p.company,addingNames:p.company?.funds.filter(f=>f.status==="new"||f.status==="increased").map(f=>f.name)??[],reducingNames:p.company?.funds.filter(f=>f.status==="decreased"||f.status==="exited").map(f=>f.name)??[]}))};}).sort((a,b)=>b.repeatFunds.length-a.repeatFunds.length||b.positivePeriods-a.positivePeriods||b.adding-a.adding||a.reducing-b.reducing||a.name.localeCompare(b.name));
   const snapshots=new Set<string>();for(const c of comparisons){snapshots.add(c.fundId+":"+c.currentDate);snapshots.add(c.fundId+":"+c.previousDate);}
   const allFunds=new Set(comparisons.map(c=>c.fundId));
-  return {...report,portfolioChanged:portfolioFingerprint(comparisons)!==report.portfolioFingerprint,coverage:allFunds.size,universe:grouped.size,snapshotCount:snapshots.size,comparisonCount:comparisons.length,screen,
+  const newest=analyses.at(-1);
+  const letter=newest?monthlyLetter(report,newest,comparisons.filter(c=>c.currentDate.startsWith(newest.month))):null;
+  return {...report,...letter,portfolioChanged:!letter&&portfolioFingerprint(comparisons)!==report.portfolioFingerprint,coverage:allFunds.size,universe:grouped.size,snapshotCount:snapshots.size,comparisonCount:comparisons.length,screen,
     coverageByMonth:[...new Set(comparisons.flatMap(c=>[c.previousDate.slice(0,7),c.currentDate.slice(0,7)]))].sort().map(month=>({month,funds:new Set(comparisons.filter(c=>c.currentDate.slice(0,7)===month||c.previousDate.slice(0,7)===month).map(c=>c.fundId)).size})),
     periods:analyses.map(p=>({month:p.month,previousMonth:p.previousMonth,coverage:p.coverage,missingFunds:p.missingFunds,companies:p.companies.length,adding:p.companies.filter(c=>c.adding>0).length,reducing:p.companies.filter(c=>c.reducing>0).length,mixed:p.companies.filter(c=>c.mixed).length,review:p.reviewPositions})),
     fundActivity:fundCatalog.map(f=>({id:f.id,name:f.name,periods:months.map(month=>{const c=comparisons.find(c=>c.fundId===f.id&&c.currentDate.slice(0,7)===month);return c?{month,counts:comparisonCounts(c),checkedAt:c.checkedAt,basis:c.basis,sources:c.sources}:null;})})),

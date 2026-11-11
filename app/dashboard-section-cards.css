@@ -1,4 +1,24 @@
 .portfolio-section-cards{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px;margin:4px 0 22px}
+.fund-coverage{margin:0 0 20px;border:1px solid #e8e1f0;border-radius:10px;background:#fff;color:#74677f}
+.fund-coverage>summary{display:flex;align-items:center;justify-content:space-between;gap:14px;min-height:46px;padding:10px 15px;list-style:none;cursor:pointer;font-size:12px;border-radius:10px}
+.fund-coverage>summary::-webkit-details-marker{display:none}
+.fund-coverage>summary:hover{background:#fcfaff}
+.fund-coverage>summary:focus-visible{outline:2px solid #9869cc;outline-offset:3px}
+.fund-coverage-status{display:flex;align-items:center;gap:8px;min-width:0}
+.fund-coverage-status strong{color:#493155;font-size:13px;font-weight:650;font-variant-numeric:tabular-nums;white-space:nowrap}
+.fund-coverage-status strong>span{color:#a396ad;font-weight:400}
+.fund-coverage-dot{width:6px;height:6px;border-radius:50%;background:#a784cb;flex-shrink:0;margin-right:3px}
+.fund-coverage-pending{display:flex;align-items:center;gap:8px;color:#87669e;font-size:11px;white-space:nowrap}
+.fund-coverage-pending svg{transition:transform .15s;color:#ad99bb}
+.fund-coverage[open] .fund-coverage-pending svg{transform:rotate(180deg)}
+.fund-coverage-details{padding:15px 18px 16px;border-top:1px solid #f0eaf5}
+.fund-coverage-details>p{font-size:11px;font-weight:500;color:#96839f;margin-bottom:12px}
+.fund-coverage-details ul{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px 24px;list-style:none;margin:0;padding:0}
+.fund-coverage-details li{font-size:12px;color:#584861;display:flex;align-items:baseline;gap:9px;line-height:1.5}
+.fund-coverage-details li:before{content:"";width:4px;height:4px;flex-shrink:0;border-radius:50%;background:#c4b3d2;position:relative;top:-2px}
+.fund-coverage-details small{display:block;font-size:10px;color:#aa9ab3;margin-top:15px;line-height:1.5}
+@media(max-width:650px){.fund-coverage{margin-bottom:16px}.fund-coverage>summary{padding:10px 12px;gap:8px}.fund-coverage-details ul{grid-template-columns:1fr;gap:9px}.fund-coverage-status{gap:6px}.fund-coverage-dot{display:none}}
+@media(prefers-reduced-motion:reduce){.fund-coverage-pending svg{transition:none}}
 .portfolio-view-card{display:flex;flex-direction:column;align-items:flex-start;text-align:left;min-width:0;padding:20px;border:1px solid #e5ddec;border-radius:14px;background:#fff;box-shadow:0 2px 6px #3e245504;transition:border-color .15s,box-shadow .15s,background .15s}
 .portfolio-view-card:hover{border-color:#c5a8e7;box-shadow:0 5px 18px #6c429c0d;background:#fefcff}
 .portfolio-view-card.is-active{border-color:#a87bd5;background:#faf6ff;box-shadow:0 0 0 1px #b78dde25}

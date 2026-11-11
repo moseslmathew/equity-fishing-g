@@ -3,6 +3,7 @@ import {neon} from "@neondatabase/serverless";
 import expansion from "../data/fund-expansion-2026-10.json";
 import seed from "../data/seed.json";
 import september from "../data/september-portfolios.json";
+import october from "../data/october-portfolios.json";
 import fullSeed from "../data/full-portfolio-seed.json";
 import researchSeed from "../data/agent-research.json";
 import philosophies from "../data/investor-philosophies.json";
@@ -105,11 +106,29 @@ function accepted(f:Fund){return f.verification!=="conflict"&&f.checkStatus!=="f
 let initializing:Promise<void>|undefined;
 // Data backfill is deliberately outside schema migrations. Retry-safe upserts never replace newer records.
 export async function ensureDatabase(){
- const db=database();if(await db.prepare("SELECT key FROM app_documents WHERE key=?").bind("migration:legacy-v1").first()){await importSeptember(db);await importFundExpansion(db);return;}
+ const db=database();if(await db.prepare("SELECT key FROM app_documents WHERE key=?").bind("migration:legacy-v1").first()){await importSeptember(db);await importFundExpansion(db);await importOctober(db);return;}
  if(!initializing)initializing=importLegacy(db).catch(e=>{initializing=undefined;throw e;});
  await initializing;
  await importSeptember(db);
  await importFundExpansion(db);
+ await importOctober(db);
+}
+async function importOctober(db:D1Database){
+ const marker="import:october-2026:"+october.checkedAt;
+ if(await db.prepare("SELECT key FROM app_documents WHERE key=?").bind(marker).first())return;
+ const comparisons=october.comparisons as FullComparison[];
+ for(const c of comparisons)validateFullComparison(c);
+ await batches(db,[...([...october.funds,...october.historicalFunds] as Fund[]).filter(accepted).map(f=>fundStatement(db,f)),...comparisons.map(c=>comparisonStatement(db,c))]);
+ const current=parse<Portfolio>(await db.prepare("SELECT payload FROM app_documents WHERE key=?").bind("portfolio:current").first<{payload:string}>());
+ if(current){
+  const replacements=new Map((october.funds as Fund[]).map(f=>[f.id,f]));
+  const baseline=[...seed.funds,...expansion.funds.filter(f=>f.portfolioDate==="2026-09-30")] as Fund[];
+  const funds=baseline.map(base=>{const f=current.funds.find(f=>f.id===base.id)??base;const next=replacements.get(f.id);return next&&(next.portfolioDate>f.portfolioDate||next.portfolioDate===f.portfolioDate&&next.lastCheckedAt>f.lastCheckedAt)?next:f;});
+  for(const f of october.funds as Fund[])if(!funds.some(old=>old.id===f.id))funds.push(f);
+  const checkedAt=[current.checkedAt,october.checkedAt].sort().at(-1)!;
+  await db.batch([documentStatement(db,"portfolio:current",{...current,funds,checkedAt,updatedAt:checkedAt,summary:`October 2026: ${october.funds.length} schemes imported; ${october.pending.length} awaiting verified disclosures. September history retained.`},checkedAt)]);
+ }
+ await db.batch([documentStatement(db,marker,{funds:october.funds.length,comparisons:comparisons.length,pending:october.pending},october.checkedAt)]);
 }
 // Versioned, retry-safe addition: saved records checked more recently always win.
 async function importFundExpansion(db:DatabaseClient){

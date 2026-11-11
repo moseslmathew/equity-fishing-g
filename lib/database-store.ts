@@ -47,17 +47,43 @@ function getNeonDatabase(url: string): DatabaseClient {
           boundParams = params;
           return stmt;
         },
-        async first<T = any>() {
-          const rows = await sql.query(pgSql, boundParams);
-          return (rows[0] as T) ?? null;
+        async first<T = any>(col?: string) {
+          try {
+            const rows = await sql.query(pgSql, boundParams);
+            const r = (rows[0] as any) ?? null;
+            return (col && r ? r[col] : r) as T;
+          } catch (err) {
+            const d1 = (env as Cloudflare.Env)?.DB;
+            if (d1) {
+              const s = d1.prepare(query).bind(...boundParams);
+              return (col ? await s.first(col) : await s.first()) as T;
+            }
+            throw err;
+          }
         },
         async all<T = any>() {
-          const rows = await sql.query(pgSql, boundParams);
-          return { results: rows as T[] };
+          try {
+            const rows = await sql.query(pgSql, boundParams);
+            return { results: rows as T[] };
+          } catch (err) {
+            const d1 = (env as Cloudflare.Env)?.DB;
+            if (d1) {
+              return (await (d1.prepare(query).bind(...boundParams) as any).all()) as { results: T[] };
+            }
+            throw err;
+          }
         },
         async run() {
-          await sql.query(pgSql, boundParams);
-          return { success: true };
+          try {
+            await sql.query(pgSql, boundParams);
+            return { success: true };
+          } catch (err) {
+            const d1 = (env as Cloudflare.Env)?.DB;
+            if (d1) {
+              return (await (d1.prepare(query).bind(...boundParams) as any).run()) as any;
+            }
+            throw err;
+          }
         },
         get _sql() {
           return pgSql;
@@ -69,15 +95,28 @@ function getNeonDatabase(url: string): DatabaseClient {
       return stmt as any;
     },
     async batch(statements: any[]) {
-      await Promise.all(
-        statements.map(async (s) => {
-          if (s._sql) {
-            await sql.query(s._sql, s._params || []);
-          } else if (typeof s.run === "function") {
-            await s.run();
+      try {
+        await Promise.all(
+          statements.map(async (s) => {
+            if (s._sql) {
+              await sql.query(s._sql, s._params || []);
+            } else if (typeof s.run === "function") {
+              await s.run();
+            }
+          })
+        );
+      } catch (err) {
+        const d1 = (env as Cloudflare.Env)?.DB;
+        if (d1) {
+          for (const s of statements) {
+            if (typeof s.run === "function") {
+              await s.run();
+            }
           }
-        })
-      );
+          return;
+        }
+        throw err;
+      }
     },
   };
   neonDbInstance = client;

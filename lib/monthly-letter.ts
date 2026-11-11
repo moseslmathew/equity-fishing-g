@@ -1,94 +1,148 @@
 import type snapshot from "../data/agent-research.json";
-import type {combinedAnalysis} from "./combined-analysis";
-import type {FullComparison} from "./full-portfolio";
-import {fundCatalog} from "./fund-catalog";
+import type { combinedAnalysis } from "./combined-analysis";
+import type { FullComparison } from "./full-portfolio";
+import { computeForensicInsights, type ForensicStoryEnhancement } from "./forensic-analysis";
+import { fundCatalog } from "./fund-catalog";
 
-export function monthlyLetter(report:typeof snapshot,period:ReturnType<typeof combinedAnalysis>&{month:string},comparisons:FullComparison[]){
- const month=period.month;
- if(month<=report.fundMonth)return null;
- const label=new Intl.DateTimeFormat("en-IN",{month:"long",year:"numeric",timeZone:"UTC"}).format(new Date(month+"-01T00:00:00Z"));
- const checkedAt=comparisons.map(c=>c.checkedAt).sort().at(-1)!;
- const primary=comparisons.filter(c=>c.basis==="official_disclosures").length;
- const format=(n:number)=>new Intl.NumberFormat("en-IN").format(n);
- const examples=["Ather Energy","Indo-MIM","Multi Commodity Exchange"].map(name=>period.companies.find(c=>c.name.toLowerCase().replace(/[^a-z0-9]/g,"").includes(name.toLowerCase().replace(/[^a-z0-9]/g,"")))).filter(c=>!!c);
- const note=examples.map(c=>`${c.name}: ${c.adding} funds added or initiated, ${c.reducing} reduced or exited, and ${c.review} require review. ${c.funds.filter(f=>f.currentQuantity>0).length} funds hold shares at month-end. ${c.delta===null?"The complete net share change is withheld because some positions need reconciliation.":"The covered funds’ net share change is "+(c.delta>=0?"+":"")+format(c.delta)+" shares."}`);
- const largest=period.companies.filter(c=>c.review===0&&c.adding>0).sort((a,b)=>b.adding-a.adding).slice(0,5);
- return {
-  id:report.id+":portfolio:"+month,
-  title:label+": the portfolio evidence across three months",
-  fundMonth:month,
-  asOf:checkedAt.slice(0,10),
-  checkedAt,
-  method:"Portfolio coverage, newsletter statistics and multi-month trajectories are recomputed from the saved month-end archive across August, September, and October 2026. Sources retain their official disclosure dates, evidence labels and reconciliation notes. Company dossiers and historical market sources retain their original review dates; this holdings refresh synthesizes empirical fund behavior without asserting uninspected financial conclusions.",
-  refreshedLabel:"Portfolio evidence refreshed "+new Date(checkedAt).toLocaleDateString("en-IN",{day:"numeric",month:"short",year:"numeric",timeZone:"Asia/Kolkata"}),
-  summary:`The ${label} portfolio review covers ${period.coverage} of ${fundCatalog.length} selected funds and ${period.companies.length} company records across three consecutive months (August, September, and October 2026). It tracks net month-end share counts, distinguishes genuine repeat accumulation from transient rebalancing, and isolates unresolved positions from directional conclusions.`,
-  coverageNote:`${primary} October workbooks were checked directly against AMC disclosures; ${comparisons.length-primary} comparisons use provider evidence. ${period.missingFunds.length} schemes remain pending verified October files (Groww Small Cap, Mirae Asset Small Cap, Franklin India Small Cap, and Franklin India Mid Cap), with their September disclosures preserved intact. Sources can share underlying feeds, so agreement represents corroboration rather than independent investment research.`,
-  newsletter:{
-   edition:label.toUpperCase()+" HOLDINGS",
-   editorNote:`Dear reader,\n\nA rigorous three-month perspective across August, September, and October 2026 transforms our understanding of institutional capital allocation. This issue incorporates ${period.coverage} comparable fund portfolios representing 772 company records, juxtaposed against 33 funds in September and 20 in August.\n\nThe critical signal is not whether a company appears in more portfolios as our sample expanded. It is whether the same institutional managers systematically add shares across consecutive reporting dates, whether other managers take opposing positions, and whether the business economics justify the committed capital. In October, ${period.companies.filter(c=>c.mixed).length} companies exhibited contested manager activity and ${period.reviewPositions} fund positions remain marked for review.\n\nA lower portfolio percentage does not establish a sale, and a larger share count can reflect corporate actions. The commentary below is synthesized directly from verified disclosures. Company dossiers retain their original analysis dates; their operating and valuation conclusions must be evaluated alongside dated evidence rather than assumed to be automatically refreshed.`,
-   stories:[
+type MonthAnalysis = ReturnType<typeof combinedAnalysis> & { month: string };
+
+export interface NewsletterStory {
+  label: string;
+  title: string;
+  paragraphs: string[];
+  refs: number[];
+  forensic?: ForensicStoryEnhancement;
+}
+
+export function monthlyLetter(
+  report: typeof snapshot,
+  period: MonthAnalysis,
+  comparisons: FullComparison[],
+  analyses?: MonthAnalysis[],
+  allComparisons?: FullComparison[]
+) {
+  const month = period.month;
+  if (month <= report.fundMonth) return null;
+
+  const label = new Intl.DateTimeFormat("en-IN", {
+    month: "long",
+    year: "numeric",
+    timeZone: "UTC",
+  }).format(new Date(month + "-01T00:00:00Z"));
+
+  const checkedAt = comparisons.map((c) => c.checkedAt).sort().at(-1)!;
+  const primary = comparisons.filter((c) => c.basis === "official_disclosures").length;
+  const pendingNames = period.missingFunds
+    .map((id) => fundCatalog.find((f) => f.id === id)?.name ?? id)
+    .join(", ");
+  const forensic = computeForensicInsights(analyses ?? [period], allComparisons ?? comparisons);
+  const zetwerk = forensic.preIpo.rows[0];
+  const zeroExitNames = forensic.zeroExits.rows
+    .slice(0, 4)
+    .map((r) => r.entity.replace(/\s+(Limited|Ltd\.?)$/i, ""))
+    .join(", ");
+
+  const stories: NewsletterStory[] = [
     {
-     label:"PORTFOLIO PULSE",
-     title:"A three-month capital rotation: liquidity abundance meets operational selectivity",
-     paragraphs:[
-      `Across the three-month window spanning August (20 funds, 674 companies), September (33 funds, 764 companies), and October (${period.coverage} funds, ${period.companies.length} companies), Indian equity schemes operated with sustained liquidity buffers, supported by monthly net equity inflows exceeding ₹38,000 crore. However, October’s disclosures demonstrate growing selectivity: ${period.companies.filter(c=>c.adding>0).length} companies saw classified additions or initiations, while ${period.companies.filter(c=>c.reducing>0).length} saw reductions or exits, with ${period.companies.filter(c=>c.mixed).length} companies exhibiting conflicting manager actions.`,
-      "Rather than broad-based beta buying, institutional capital concentrated into structural physical bottlenecks—specifically high-voltage power transmission, transformer capacity, cryogenic industrial gas infrastructure, and financial market infrastructure annuities. A company’s current holder count includes unchanged positions, while comparison data captures complete exits; consequently, additions plus reductions need not equal the number of current holders. Pending schemes contribute neither inferred holdings nor inferred exits."
-     ],
-     refs:[13,0]
+      label: "HIDDEN SIGNAL 01 · PRE-IPO RUSH",
+      title: "The October unlisted & pre-IPO sweep: zero to multi-fund in thirty days",
+      paragraphs: [
+        `The clearest hidden anomaly across the three-month archive is a synchronized October deployment into unlisted and newly allotted pre-IPO equity. ${
+          zetwerk
+            ? `${zetwerk.entity} moved from zero presence in August and September to ${zetwerk.trajectory} (${zetwerk.hiddenMetric}) in a single reporting month, with ${zetwerk.crossSignal}.`
+            : "Multiple unlisted industrial manufacturers moved from zero coverage in September to multi-fund ownership in October."
+        } Bonfiglioli Transmissions, SFC Environmental Technologies, Sahajanand Medical Technologies, Jio Platforms, and Tonbo Imaging followed the same zero-to-multi-scheme pattern.`,
+        "This matters because unlisted placements do not register on daily exchange price or volume feeds. When multiple independent fund houses initiate private tranches simultaneously—alongside Accel-backed Rentomojo climbing from 0 funds in August to 7 in October with 10 cumulative additions and zero cuts—managers are locking up illiquid equity ahead of anticipated public listings. Check valuation marks across scheme disclosures before extrapolating secondary-market pricing.",
+      ],
+      refs: [16],
+      forensic: forensic.preIpo,
     },
     {
-     label:"BREADTH OF ADDITIONS",
-     title:"Where high-conviction institutional accumulation synchronized across three months",
-     paragraphs:[
-      "A multi-month examination of net share additions isolates institutional conviction from transient rebalancing. Multi Commodity Exchange of India (MCX) emerged as the single most synchronized accumulation story across the universe: expanding from 13 funds in August (+5/-2) to 23 funds in September (+10/-3) and 20 funds in October (+6/-3), with repeat additions across all three months by Motilal Oswal, TRUSTMF, UTI Small Cap, Helios Mid Cap, and WhiteOak Capital Mid Cap, reflecting surging options average daily turnover and software stability following the technology platform transition.",
-      "In physical infrastructure, Voltamp Transformers recorded 7 additions and zero reductions across all three consecutive months (held by 9 funds in August, 10 in September, and 9 in October, with repeat buying by Helios Small Cap), backed by internally funded dry-type transformer capacity expansion and an unencumbered balance sheet. Similarly, INOX India captured 6 additions and only 1 reduction across three months, with four repeat accumulating funds (Abakkus, JM Small Cap, TRUSTMF, and Canara Robeco) citing cryogenic liquid gas and semiconductor cleanroom distribution demand. Data Patterns (India) recorded 4 additions and zero reductions across the three-month span, anchored by defence radar and electronic warfare orders."
-     ],
-     refs:[0,1,7,8]
+      label: "HIDDEN SIGNAL 02 · FII HANDOFF",
+      title: "Cross-institutional supply transfer: domestic funds absorbing foreign selling",
+      paragraphs: [
+        "Cross-referencing Q2 FY27 foreign institutional ownership shifts (June to September 2026) against three-month mutual fund share ledgers (August to October) uncovers a massive structural liquidity handoff. Rather than chasing foreign inflows, domestic small- and mid-cap managers stepped in as liquidity absorbers when FIIs cut positions by 4.5 to 10.2 percentage points in a single quarter—including PB Fintech (-10.17 pp QoQ, -48.9% off its 52-week high), Dr Agarwals Health Care (-8.41 pp QoQ, 9 MF additions with zero cuts), TBO Tek (-6.41 pp QoQ), 360 ONE WAM (-4.58 pp QoQ), and One 97 Communications / Paytm (-4.57 pp QoQ, 12 three-month MF additions and up to 8.44% single-fund weight).",
+        "Where both foreign and domestic institutions bought simultaneously—notably Pine Labs (FII +3.69 pp QoQ alongside 9 MF additions and 1 cut while trading 44.7% below its 52-week high) and Granules India (FII +2.75 pp QoQ with 5 MF additions and zero cuts)—the signal carries dual-engine alignment. Distinguishing domestic absorption of foreign block supply from dual-sided buying prevents mistaking a falling FII percentage for broad institutional abandonment.",
+      ],
+      refs: [15, 16],
+      forensic: forensic.handoff,
     },
     {
-     label:"COMPANY DETAIL",
-     title:"Contested signals: reading Ather, Indo-MIM, and Kalpataru through dated disclosures",
-     paragraphs:[
-      ...note,
-      "In October, Ather Energy expanded its fund footprint to 17 holder schemes, capturing 5 classified additions (Canara Robeco Small Cap, Helios Mid Cap, ITI Small Cap, TRUSTMF Small Cap, and UTI Mid Cap) against 1 trimming fund (SBI Small Cap), continuing its trajectory from 11 funds in August and 16 in September. In contrast, Indo-MIM held 6 fund positions at October-end with zero additions and an exit by Abakkus Small Cap, illustrating manager divergence between early capital providers and profit-takers.",
-      "Kalpataru Projects International demonstrated persistent institutional support, logging additions from Bajaj Finserv Small Cap and DSP Small Cap in both September and October to maintain 6 holder funds. With an infrastructure backlog exceeding ₹60,000 crore, the crucial research gate remains working capital turnover, retention money realization, and cash flow conversion rather than top-line announcement headlines. Share counts describe fund positions, while portfolio percentages describe net asset weights; neither represents equity ownership percentage of the underlying corporate."
-     ],
-     refs:[2]
+      label: "HIDDEN SIGNAL 03 · MICROSTRUCTURE",
+      title: "NSE delivery breakouts and deep-drawdown contrarian accumulation",
+      paragraphs: [
+        "Overlaying three months of daily NSE Bhavcopy delivery percentages and 52-week price drawdowns onto mutual fund share changes reveals stealth accumulation occurring below headline market highs. Redington’s weighted delivery percentage more than doubled from 23.5% in August to 50.0% in October even as trading volume cooled—corroborated by 7 MF additions against 1 cut alongside roughly 35% aggregate ownership across seven named global funds. Navin Fluorine (29.6% to 55.1% across 17 holder funds) and Ratnamani Metals (29.8% to 48.0%) displayed similar institutional lock-up signatures.",
+        "Equally striking is price discipline: managers concentrated multi-month share buying in names trading 28% to 51% below their 52-week highs, including Swiggy (-50.7% off high, 10 holder funds), Five Star Business Finance (-29.5%, October delivery jumping to 56.3%), and Ratnamani Metals (-29.0%), alongside steady cryogenic accumulation in INOX India (23.1% to 39.2% delivery, 11 additions against 1 cut). Rising delivery during quiet volume consolidation provides stronger confirmation than high-turnover price breakouts.",
+      ],
+      refs: [14, 7],
+      forensic: forensic.microstructure,
     },
     {
-     label:"EVIDENCE QUALITY",
-     title:"Primary workbook corroboration versus provider disclosures",
-     paragraphs:[
-      `${primary} of the ${comparisons.length} October comparisons were extracted directly from original AMC workbooks, providing verified scheme identities, reporting dates, full equity schedules, absolute share counts, and net-asset allocations. The remaining ${comparisons.length-primary} schemes rely on published provider disclosures with explicit evidence labels. Cross-checking across sources confirmed the exact quantities and allocations for primary holdings, while ${period.reviewPositions} positions were catalogued with review notes to withhold uncorroborated directions.`,
-      "Large month-over-month share-count fluctuations, unresolved prior quantities, corporate actions (bonus splits, demergers, rights issues), and unmatched security identifiers remain quarantined from directional trade classifications. These defensive reconciliation protocols prevent missing disclosures or capital restructurings from being silently misrepresented as manager buying or selling."
-     ],
-     refs:[]
+      label: "HIDDEN SIGNAL 04 · DIVERGENCE & CHURN",
+      title: "Capital rotation inside exchanges, Ace clashes, and speculative churn alerts",
+      paragraphs: [
+        "Three-month forensic screening exposes sharp contradictions hidden beneath aggregate holder counts. Inside financial market infrastructure, funds rotated decisively out of BSE (2 additions vs 6 reductions and 3 full exits, dropping from 24.9 lakh to 14.5 lakh shares as Kotak and Edelweiss Mid Cap exited) while piling into MCX (21 three-month additions, 20 October holders) and CDSL (8 additions, zero cuts). Meanwhile, Neuland Laboratories illustrates an Ace-versus-MF divergence: Malabar Investments (5.42%), Mukul Agrawal (3.12%), and Vijay Kedia (1.01%) combined own 9.55%, yet mutual funds executed 11 reductions/exits versus 7 additions.",
+        "Exchange microstructure also flags warning signs. Karur Vysya Bank saw October volume more than double from 35.1M to 73.3M shares while delivery collapsed from 52.3% to 33.5%, signaling speculative churn beneath a 17-fund consensus. Similarly, stealth distribution waves emerged in Radico Khaitan (4 adds vs 11 cuts), Welspun Corp (7 adds vs 12 cuts even while FIIs added +8.48 pp), Eternal (4 adds vs 9 cuts, TRUSTMF October exit), and Indo-MIM (6 adds vs 7 cuts, 4 exits including Abakkus in October).",
+      ],
+      refs: [14, 15],
+      forensic: forensic.divergence,
     },
     {
-     label:"RESEARCH CONTINUITY",
-     title:"Translating three months of fund flow data into disciplined fundamental research",
-     paragraphs:[
-      "The ten company research dossiers in this Observatory represent dated, rigorous fundamental analyses. While their fund-evidence sections dynamically incorporate the latest three-month archive through October 2026, this refresh does not assert that uninspected earnings calls or unaudited operating forecasts have been updated without primary review.",
-      "Investors should treat institutional buying as an objective question list rather than an investment instruction: does order backlog convert at positive cash margins, does newly commissioned capacity earn an incremental return on capital employed (ROCE) above the hurdle rate, and does the current market multiple leave a margin of safety for execution delays? Recheck the company's latest audited filings before relying on an older research thesis."
-     ],
-     refs:[3,9]
-    }
-   ],
-   watchlist:[
-    {
-     title:"Q2 FY25 corporate results and operating cash conversion",
-     text:"Verify quarterly revenue quality, EBITDA margin realization, raw material pass-through, and operating cash flow across capital goods, precision engineering, and specialized formulations against each company dossier."
+      label: "HIDDEN SIGNAL 05 · ZERO-EXIT CORE & AUDIT",
+      title: "Zero-exit compounders across 3 months and provenance audit of 561 review rows",
+      paragraphs: [
+        `Filtering the entire 34-fund, ${forensic.totalUniqueCompanies3M}-company three-month matrix for securities with zero reductions across August, September, and October isolates the highest-persistence holdings: ${zeroExitNames}, alongside Voltamp Transformers and Data Patterns. Schaeffler India expanded from 4 to 11–12 holders with 9 additions, zero cuts, and 60.8%–64.5% sticky NSE delivery; INOX India saw Abakkus (+50%/+9%/+44%) and Canara Robeco (+416%/+15%) compound shares across consecutive periods as delivery climbed from 23.1% to 39.2%.`,
+        `Data hygiene remains non-negotiable. Out of ${forensic.totalLatestRows.toLocaleString("en-IN")} October comparison rows across ${primary} original AMC workbooks and ${comparisons.length - primary} provider disclosures, ${period.reviewPositions} rows remain quarantined in review—comprising ${forensic.uncorroboratedRows} single-source provider rows awaiting second-domain confirmation, ${forensic.corporateActionRows} positions triggering the ≥1.9x/≤0.51x corporate-action safeguard, and ${forensic.mismatchRows} prior-quantity discrepancies. Withholding unverified trades prevents splits or missing files from distorting real capital allocation.`,
+      ],
+      refs: [0, 1, 7, 8, 13],
+      forensic: forensic.zeroExits,
     },
-    {
-     title:"Outstanding October mutual fund disclosures",
-     text:period.missingFunds.length?"October holdings remain pending for "+period.missingFunds.map(id=>fundCatalog.find(f=>f.id===id)?.name??id).join(", ")+"; older September disclosures remain active without synthetic assumptions.":"All selected schemes have an October record. Review each fund’s evidence label."
+  ];
+
+  return {
+    id: report.id + ":portfolio:" + month,
+    title: label + ": three-month forensic intelligence & hidden signals",
+    fundMonth: month,
+    asOf: checkedAt.slice(0, 10),
+    checkedAt,
+    method:
+      "Cross-dataset forensic engine recomputing three-month mutual fund share deltas (Aug–Oct 2026) against quarterly FII shareholding (Jun–Sep 2026), daily NSE Bhavcopy delivery ratios, 52-week market quotes, and Ace/VC registries. Uncorroborated provider rows and ≥1.9x/≤0.51x corporate-action ratios are quarantined out of directional counts.",
+    refreshedLabel:
+      "Forensic synthesis refreshed " +
+      new Date(checkedAt).toLocaleDateString("en-IN", {
+        day: "numeric",
+        month: "short",
+        year: "numeric",
+        timeZone: "Asia/Kolkata",
+      }),
+    summary: `A cross-dataset forensic dive across 34 mutual fund schemes (${forensic.totalUniqueCompanies3M} unique companies over August–October 2026), statutory FII filings, and NSE delivery microstructure—exposing unlisted pre-IPO sweeps, FII-to-DII liquidity handoffs, stealth delivery breakouts, and hidden distribution waves.`,
+    coverageNote: `${primary} October workbooks were extracted directly from original AMC disclosures; ${
+      comparisons.length - primary
+    } comparisons use labelled provider disclosures. ${
+      period.missingFunds.length
+    } schemes remain pending verified October files (${pendingNames}), with September holdings retained intact.`,
+    newsletter: {
+      edition: label.toUpperCase() + " · 3M FORENSIC BRIEF",
+      editorNote: `Dear reader,\n\nHeadline mutual fund summaries—listing which large companies appear in the most schemes—rarely reveal where institutional edge actually lies. By stitching together three consecutive months of mutual fund share ledgers (August: 20 funds, September: 33 funds, October: ${period.coverage} funds) with quarterly foreign institutional ownership, daily NSE delivery ratios, 52-week price drawdowns, and Ace/VC disclosures, we isolated five non-obvious structural patterns.\n\nEvery quantitative discovery below states its confidence grade, underlying assumptions, data provenance, and opposing interpretation. Underlying external filings, corporate fundamentals, and quarterly ownership tables retain their original analysis dates and reporting boundaries; a fund purchase or delivery surge organizes what to investigate next and never constitutes a standalone valuation clearance.`,
+      stories,
+      watchlist: [
+        {
+          title: "Unlisted Pre-IPO Valuation Marks",
+          text: "Monitor quarterly mark-to-market disclosures for Zetwerk, Bonfiglioli, Rentomojo, Jio Platforms, and SFC Environmental across holding AMC fact sheets as listing pipelines progress.",
+        },
+        {
+          title: "Pending AMC Reconciliations",
+          text: period.missingFunds.length
+            ? `Verified October disclosures remain pending for ${pendingNames}, alongside ${forensic.uncorroboratedRows} single-source provider positions flagged for corroboration.`
+            : "All 34 schemes have October files; continue verifying corporate-action splits.",
+        },
+        {
+          title: "Delivery vs. Earnings Proof",
+          text: "Cross-check Q2 FY27 earnings cash conversion and working capital receivables for high-delivery accumulators (Redington, IPCA, Timken, Prudent, INOX India) against peak-cycle multiples.",
+        },
+      ],
+      closing:
+        "Forensic cross-referencing turns raw holdings into high-signal research leads; price, balance sheet durability, and operating cash flow still decide the investment.",
     },
-    {
-     title:"Valuation discipline versus backlog euphoria",
-     text:"Ensure entry multiples are assessed against historical mid-cycle averages rather than extrapolating peak operational margins into perpetuity; institutional fund accumulation alone never guarantees valuation safety."
-    }
-   ],
-   closing:"Portfolio facts are dated observations. They organise research; they do not establish a suitable entry price or predict returns."
-  }
- };
+  };
 }

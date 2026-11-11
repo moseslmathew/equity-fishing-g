@@ -825,6 +825,27 @@
       "kind": "Official industry statistics",
       "period": "September 2026; INR crore",
       "checkedOn": "2026-10-23"
+    },
+    {
+      "label": "NSE Equity Bhavcopy & Delivery Archives (Aug–Oct 2026)",
+      "url": "https://www.nseindia.com/all-reports",
+      "kind": "Official exchange daily volume & delivery data",
+      "period": "August–October 2026",
+      "checkedOn": "2026-10-22"
+    },
+    {
+      "label": "Quarterly Statutory Shareholding Filings (FII & Ace Holders)",
+      "url": "https://www.screener.in/",
+      "kind": "Exchange quarterly ownership filings",
+      "period": "Q1–Q2 FY27 (through 30 Sep 2026)",
+      "checkedOn": "2026-10-22"
+    },
+    {
+      "label": "AMFI Monthly Mutual Fund Portfolio Disclosures",
+      "url": "https://www.amfiindia.com/research-information/other-data",
+      "kind": "Official AMC portfolio archive",
+      "period": "August–October 2026",
+      "checkedOn": "2026-11-11"
     }
   ],
   "modelName": "Exact runtime model unavailable",

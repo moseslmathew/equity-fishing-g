@@ -34,7 +34,7 @@ export function researchReport(input:FullComparison[]=bundledComparisons,report:
   const snapshots=new Set<string>();for(const c of comparisons){snapshots.add(c.fundId+":"+c.currentDate);snapshots.add(c.fundId+":"+c.previousDate);}
   const allFunds=new Set(comparisons.map(c=>c.fundId));
   const newest=analyses.at(-1);
-  const letter=newest?monthlyLetter(report,newest,comparisons.filter(c=>c.currentDate.startsWith(newest.month))):null;
+  const letter=newest?monthlyLetter(report,newest,comparisons.filter(c=>c.currentDate.startsWith(newest.month)),analyses,comparisons):null;
   return {...report,...letter,portfolioChanged:!letter&&portfolioFingerprint(comparisons)!==report.portfolioFingerprint,coverage:allFunds.size,universe:grouped.size,snapshotCount:snapshots.size,comparisonCount:comparisons.length,screen,
     coverageByMonth:[...new Set(comparisons.flatMap(c=>[c.previousDate.slice(0,7),c.currentDate.slice(0,7)]))].sort().map(month=>({month,funds:new Set(comparisons.filter(c=>c.currentDate.slice(0,7)===month||c.previousDate.slice(0,7)===month).map(c=>c.fundId)).size})),
     periods:analyses.map(p=>({month:p.month,previousMonth:p.previousMonth,coverage:p.coverage,missingFunds:p.missingFunds,companies:p.companies.length,adding:p.companies.filter(c=>c.adding>0).length,reducing:p.companies.filter(c=>c.reducing>0).length,mixed:p.companies.filter(c=>c.mixed).length,review:p.reviewPositions})),

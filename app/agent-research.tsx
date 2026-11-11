@@ -1,37 +1,52 @@
 "use client";
-import {fundCatalog} from "../lib/fund-catalog";
 import {useEffect,useState} from "react";
-import {ArrowUpRight,Sparkles,Printer,X} from "lucide-react";
+import {Printer,X} from "lucide-react";
 import {Dialog,DialogTrigger,DialogContent,DialogTitle,DialogDescription,DialogClose} from "../components/ui/dialog";
-import ResearchOverview,{monthLabel} from "./research-overview";
+import ResearchOverview from "./research-overview";
 import type {ResearchReport} from "../lib/agent-research";
-type Stock=ResearchReport["stocks"][number];
-function Citations({stock,refs}:{stock:Stock;refs:number[]}){return <>{[...new Set(refs)].map(i=>stock.sources[i]?<a key={i} className="research-citation" href={stock.sources[i].url} title={stock.sources[i].label} target="_blank" rel="noopener noreferrer" aria-label={stock.sources[i].label}>[{i+1}]</a>:null)}</>;}
-function FundReading({stock}:{stock:Stock}){
- const evidence=stock.fundEvidence;
- if(!evidence)return <p className="research-fund-reading">Company identity could not be reconciled with the portfolio archive; fund conclusions are withheld.</p>;
- return <div className="research-fund-reading"><strong>What the portfolios support</strong>{evidence.periods.map(period=>{
- const adds=period.company?.funds.filter(f=>f.status==="new"||f.status==="increased")??[],cuts=period.company?.funds.filter(f=>f.status==="decreased"||f.status==="exited")??[];
- return <p key={period.month}>{monthLabel(period.previousMonth)} → {monthLabel(period.month)}: {period.company?<>{adds.length?<>Added or initiated by {adds.map(f=>f.name).join(", ")}. </>:"No classified addition in the covered funds. "}{cuts.length?<>Reduced or exited by {cuts.map(f=>f.name).join(", ")}. </>:"No classified reduction in the covered funds. "}</>:"No position appears in the covered portfolios. "}{period.coverage<fundCatalog.length&&"This window covers only "+period.coverage+" funds; the other funds’ positions are unknown."}</p>;
- })}<p>{evidence.repeatFunds.length?"Consecutive additions by "+evidence.repeatFunds.join(", ")+" give the signal persistence.":"No consecutive addition by the same manager is observed."} Month-end changes do not reveal transaction timing or manager intent.</p>
- <details className="research-source-list"><summary>Portfolio disclosure links</summary><ul>{[...new Map(evidence.periods.flatMap(p=>p.company?.funds.flatMap(f=>f.sources)??[]).map(s=>[s.url,s])).values()].map(s=><li key={s.url}><a href={s.url} target="_blank" rel="noopener noreferrer">{s.label}</a></li>)}</ul></details></div>;
-}
-function StockReading({stock}:{stock:Stock}){return <>
- <p className="research-compact-meta">Company analysis: sources checked on their stated dates. Portfolio evidence below is recomputed from the current saved archive.</p><p className="research-stock-verdict">{stock.verdict}</p>
- <div className="research-prose research-stock-prose">{stock.sections.map(section=><div className="research-paragraph" key={section.title}><h3>{section.title}</h3>{section.text.split("\n\n").map((paragraph,i,all)=><p key={i}>{paragraph}{i===all.length-1&&<Citations stock={stock} refs={section.refs}/>}</p>)}</div>)}</div>
- <FundReading stock={stock}/>
- <details className="research-source-list"><summary>Sources &amp; verification</summary><p>{stock.quality}</p><ol>{stock.sources.map((source,i)=><li key={source.url}><a href={source.url} target="_blank" rel="noopener noreferrer">[{i+1}] {source.label}</a><small>{source.kind} · {source.period} · checked {source.checkedOn}</small></li>)}</ol><p>Each source shows its own reporting period and verification date.</p></details>
- </>;}
+
 export default function AgentResearch(){
  const [report,setReport]=useState<ResearchReport|null>(null),[error,setError]=useState("");
  const [open,setOpen]=useState(false);
- useEffect(()=>{if(!open)return;setError("");setReport(null);const controller=new AbortController();fetch("/api/research",{cache:"no-store",signal:controller.signal}).then(async r=>{if(!r.ok)throw new Error("Research report could not be loaded.");return r.json() as Promise<ResearchReport>;}).then(setReport).catch(e=>{if(e.name!=="AbortError")setError(e.message);});return()=>controller.abort();},[open]);
- return <Dialog open={open} onOpenChange={setOpen}><DialogTrigger asChild><button className="research-ai-button" aria-label="Open AI research report"><svg width="19" height="19" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 1.5 15.2 8.8 22.5 12 15.2 15.2 12 22.5 8.8 15.2 1.5 12 8.8 8.8Z"/></svg><span>AI Insights</span></button></DialogTrigger><DialogContent className="research-popup" showCloseButton={false}><div className="research-popup-header"><DialogTitle className="research-popup-title">AI Insights · The Observatory Letter</DialogTitle><DialogClose asChild><button className="research-popup-close" aria-label="Close research report"><X size={19} aria-hidden="true"/>Close</button></DialogClose></div><DialogDescription className="sr-only">A detailed portfolio newsletter with dated developments, fund evidence, risks and ten company dossiers.</DialogDescription><div className="research-content research-popup-scroll">
- {error?<p role="alert">{error} Refresh the page to try again.</p>:!report?<p role="status" className="loading-status"><span className="loading-spinner"/>Loading research…</p>:<>
- <header className="research-heading research-editorial-header"><div><span className="research-eyebrow">THE SMALLCAP OBSERVATORY / RESEARCH</span><h2>{report.title}</h2><p className="research-compact-meta" title={report.modelDisclosure}>{report.refreshedLabel} · {report.horizon} outlook</p></div><div className="research-actions"><button className="quiet-button" onClick={()=>window.print()}><Printer size={16}/>Print report</button></div></header>
- <ResearchOverview report={report}/>
- <section className="research-stock-section" aria-labelledby="top-ten-title" data-report-section="stocks"><div className="research-section-heading"><span>CONTINUE READING / COMPANY DOSSIERS</span><h2 id="top-ten-title">Company research dossiers</h2><p>{report.intelligence.selectionNote}</p></div><div className="research-case-list">{report.stocks.map((stock,index)=><Dialog key={stock.symbol}><div className="research-case"><DialogTrigger asChild><button className="research-case-trigger" aria-label={"Open analysis for "+stock.name} aria-haspopup="dialog"><span className="research-rank">{String(index+1).padStart(2,"0")}</span><span className="research-company"><strong>{stock.name}</strong><small>{stock.tag}</small></span><span className="research-open-case">Analysis <ArrowUpRight size={16} aria-hidden="true"/></span></button></DialogTrigger></div><DialogContent className="research-popup research-stock-popup" showCloseButton={false}><div className="research-popup-header"><DialogTitle className="research-popup-title">{stock.name}</DialogTitle><DialogClose asChild><button className="research-popup-close" aria-label={"Close analysis for "+stock.name}><X size={19} aria-hidden="true"/>Close</button></DialogClose></div><DialogDescription className="sr-only">Business growth, investment risks and fund evidence for {stock.name}.</DialogDescription><div className="research-content research-popup-scroll research-case-content"><p className="research-eyebrow">{stock.tag}</p><StockReading stock={stock}/><div className="research-case-bottom"><DialogClose asChild><button className="minimize-button"><X size={15}/>Close analysis</button></DialogClose></div></div></DialogContent></Dialog>)}</div><div className="research-print-only">{report.stocks.map((stock,i)=><article key={stock.symbol}><h2>{i+1}. {stock.name}</h2><StockReading stock={stock}/></article>)}</div><p className="research-shortlist-note">The order reflects research conviction and evidence quality, not predicted returns or an instruction to buy. No portfolio holding establishes a suitable entry price.</p></section>
- <div className="research-case-bottom"><button className="minimize-button" onClick={()=>setOpen(false)}><X size={15}/>Close report</button></div>
- </>}
- </div></DialogContent></Dialog>;
+ useEffect(()=>{
+  if(!open)return;
+  setError("");
+  setReport(null);
+  const controller=new AbortController();
+  fetch("/api/research",{cache:"no-store",signal:controller.signal})
+   .then(async r=>{if(!r.ok)throw new Error("Research report could not be loaded.");return r.json() as Promise<ResearchReport>;})
+   .then(setReport)
+   .catch(e=>{if(e.name!=="AbortError")setError(e.message);});
+  return()=>controller.abort();
+ },[open]);
+
+ return <Dialog open={open} onOpenChange={setOpen}>
+  <DialogTrigger asChild>
+   <button className="research-ai-button" aria-label="Open AI research report">
+    <svg width="19" height="19" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 1.5 15.2 8.8 22.5 12 15.2 15.2 12 22.5 8.8 15.2 1.5 12 8.8 8.8Z"/></svg>
+    <span>AI Insights</span>
+   </button>
+  </DialogTrigger>
+  <DialogContent className="research-popup" showCloseButton={false}>
+   <div className="research-popup-header">
+    <DialogTitle className="research-popup-title">AI Insights · Three-Month Forensic Brief</DialogTitle>
+    <DialogClose asChild><button className="research-popup-close" aria-label="Close research report"><X size={19} aria-hidden="true"/>Close</button></DialogClose>
+   </div>
+   <DialogDescription className="sr-only">A three-month forensic portfolio report uncovering unlisted pre-IPO placements, FII-to-DII liquidity transfers, NSE delivery breakouts, divergences and audit boundaries.</DialogDescription>
+   <div className="research-content research-popup-scroll">
+    {error?<p role="alert">{error} Refresh the page to try again.</p>:!report?<p role="status" className="loading-status"><span className="loading-spinner"/>Analyzing three-month dataset…</p>:<>
+     <header className="research-heading research-editorial-header">
+      <div>
+       <span className="research-eyebrow">THE SMALLCAP OBSERVATORY / FORENSIC RESEARCH</span>
+       <h2>{report.title}</h2>
+       <p className="research-compact-meta" title={report.modelDisclosure}>{report.refreshedLabel} · {report.horizon} outlook</p>
+      </div>
+      <div className="research-actions"><button className="quiet-button" onClick={()=>window.print()}><Printer size={16}/>Print report</button></div>
+     </header>
+     <ResearchOverview report={report}/>
+     <div className="research-case-bottom"><button className="minimize-button" onClick={()=>setOpen(false)}><X size={15}/>Close report</button></div>
+    </>}
+   </div>
+  </DialogContent>
+ </Dialog>;
 }

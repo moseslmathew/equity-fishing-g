@@ -113,7 +113,7 @@ export async function ensureDatabase(){
  await importFundExpansion(db);
  await importOctober(db);
 }
-async function importOctober(db:D1Database){
+async function importOctober(db:DatabaseClient){
  const marker="import:october-2026:"+october.checkedAt;
  if(await db.prepare("SELECT key FROM app_documents WHERE key=?").bind(marker).first())return;
  const comparisons=october.comparisons as FullComparison[];

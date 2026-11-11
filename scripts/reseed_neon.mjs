@@ -1,6 +1,35 @@
 import { neon } from "@neondatabase/serverless";
 import fs from "fs";
 import path from "path";
+import dns from "node:dns";
+import { Agent, setGlobalDispatcher } from "../node_modules/.pnpm/undici@7.24.8/node_modules/undici/index.js";
+
+const resolver = new dns.Resolver();
+resolver.setServers(["8.8.8.8", "8.8.4.4"]);
+
+setGlobalDispatcher(
+  new Agent({
+    connect: {
+      lookup: (hostname, options, callback) => {
+        if (typeof options === "function") {
+          callback = options;
+          options = {};
+        }
+        resolver.resolve4(hostname, (err, addresses) => {
+          if (err) return callback(err);
+          if (!addresses || !addresses.length) return callback(new Error("No address found for " + hostname));
+          if (options && options.all) {
+            return callback(
+              null,
+              addresses.map((a) => ({ address: a, family: 4 }))
+            );
+          }
+          return callback(null, addresses[0], 4);
+        });
+      },
+    },
+  })
+);
 
 const databaseUrl = process.env.DATABASE_URL;
 if (!databaseUrl) {
@@ -23,6 +52,9 @@ async function reseed() {
   const september = JSON.parse(fs.readFileSync("data/september-portfolios.json", "utf8"));
   const fullSeed = JSON.parse(fs.readFileSync("data/full-portfolio-seed.json", "utf8"));
   const expansion = JSON.parse(fs.readFileSync("data/fund-expansion-2026-10.json", "utf8"));
+  const october = fs.existsSync("data/october-portfolios.json")
+    ? JSON.parse(fs.readFileSync("data/october-portfolios.json", "utf8"))
+    : null;
   const philosophies = JSON.parse(fs.readFileSync("data/investor-philosophies.json", "utf8"));
   const agentResearch = JSON.parse(fs.readFileSync("data/agent-research.json", "utf8"));
   const aceResearch = JSON.parse(fs.readFileSync("data/ace-investor-research.json", "utf8"));
@@ -36,14 +68,24 @@ async function reseed() {
 
   // 2. Build complete portfolio:current covering all 34 funds
   console.log("Seeding portfolio:current with all 34 funds...");
-  const currentFunds = [
+  const replacements = new Map((october?.funds || []).map((f) => [f.id, f]));
+  const baseFunds = [
     ...seed.funds,
     ...(expansion.funds.filter((f) => f.portfolioDate === "2026-09-30") || []),
   ];
+  const currentFunds = baseFunds.map((base) => {
+    const next = replacements.get(base.id);
+    return next && (next.portfolioDate > base.portfolioDate || (next.portfolioDate === base.portfolioDate && next.lastCheckedAt > base.lastCheckedAt)) ? next : base;
+  });
+  for (const f of (october?.funds || [])) {
+    if (!currentFunds.some((old) => old.id === f.id)) currentFunds.push(f);
+  }
   const currentPortfolio = {
     ...seed,
-    checkedAt: expansion.checkedAt || september.checkedAt || seed.checkedAt,
-    summary: "Complete 34 equity funds universe: 24 small-cap, 7 mid-cap, and 3 other equity schemes.",
+    checkedAt: october?.checkedAt || expansion.checkedAt || september.checkedAt || seed.checkedAt,
+    summary: october
+      ? `October 2026: ${october.funds.length} schemes imported; ${october.pending.length} awaiting verified disclosures. September history retained.`
+      : "Complete 34 equity funds universe: 24 small-cap, 7 mid-cap, and 3 other equity schemes.",
     funds: currentFunds,
   };
 
@@ -52,12 +94,14 @@ async function reseed() {
     ["portfolio:current", JSON.stringify(currentPortfolio), iso(currentPortfolio.checkedAt)]
   );
 
-  // 3. Seed fund_snapshots: seed (August) + september + expansion (August & September)
+  // 3. Seed fund_snapshots: seed (August) + september + expansion (August & September) + october
   console.log("Seeding fund snapshots across all 34 funds and reporting periods...");
   const allFunds = [
     ...seed.funds,
     ...(september.funds || []),
     ...(expansion.funds || []),
+    ...(october?.funds || []),
+    ...(october?.historicalFunds || []),
   ];
 
   const uniqueSnapshots = new Map();
@@ -77,12 +121,13 @@ async function reseed() {
   }
   console.log(`Seeded ${uniqueSnapshots.size} unique fund snapshots.`);
 
-  // 4. Seed fund_comparisons: fullSeed + september + expansion comparisons
+  // 4. Seed fund_comparisons: fullSeed + september + expansion + october comparisons
   console.log("Seeding fund comparisons...");
   const allComparisons = [
     ...fullSeed,
     ...(september.comparisons || []),
     ...(expansion.comparisons || []),
+    ...(october?.comparisons || []),
   ];
 
   const uniqueComparisons = new Map();
@@ -207,6 +252,17 @@ async function reseed() {
       iso(expansion.checkedAt),
     ]
   );
+
+  if (october) {
+    await sql.query(
+      "INSERT INTO app_documents (key, payload, checked_at) VALUES ($1, $2, $3) ON CONFLICT(key) DO UPDATE SET payload = excluded.payload, checked_at = excluded.checked_at",
+      [
+        `import:october-2026:${october.checkedAt}`,
+        JSON.stringify({ funds: october.funds.length, comparisons: october.comparisons.length, pending: october.pending }),
+        iso(october.checkedAt),
+      ]
+    );
+  }
 
   await sql.query(
     "INSERT INTO app_documents (key, payload, checked_at) VALUES ($1, $2, $3) ON CONFLICT(key) DO UPDATE SET payload = excluded.payload, checked_at = excluded.checked_at",

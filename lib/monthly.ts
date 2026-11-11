@@ -24,11 +24,12 @@ export function calendarMonth(now=new Date()) {
   return parts.find(p=>p.type==="year")!.value+"-"+parts.find(p=>p.type==="month")!.value;
 }
 const prefix="portfolio/months/";
-export async function archivePortfolio(bucket:R2Bucket,snapshot:Portfolio) {
+export async function archivePortfolio(bucket:R2Bucket|undefined,snapshot:Portfolio) {
+  if(!bucket)return;
   await Promise.all(snapshot.funds.filter(f=>f.verification!=="conflict"&&f.checkStatus!=="failed"&&f.checkStatus!=="conflict").map(f=>bucket.put(prefix+f.portfolioDate.slice(0,7)+"/"+f.id+".json",JSON.stringify(f),{httpMetadata:{contentType:"application/json"}})));
 }
-async function readMonth(_bucket:R2Bucket,month:string,_current:Portfolio,_baseline:Portfolio) {return (await import("./database-store")).readDatabaseFunds(month);}
-export async function monthlyPortfolio(bucket:R2Bucket,current:Portfolio,baseline:Portfolio,selection:string):Promise<MonthlyPortfolio> {
+async function readMonth(_bucket:R2Bucket|undefined,month:string,_current:Portfolio,_baseline:Portfolio) {return (await import("./database-store")).readDatabaseFunds(month);}
+export async function monthlyPortfolio(bucket:R2Bucket|undefined,current:Portfolio,baseline:Portfolio,selection:string):Promise<MonthlyPortfolio> {
   const availableMonths=await (await import("./database-store")).availableDatabaseMonths();
   const requestedMonth=selection==="latest"?availableMonths[0]:selection;
   const previousMonth=monthBefore(requestedMonth);

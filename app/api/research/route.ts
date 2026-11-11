@@ -9,8 +9,7 @@ export const dynamic="force-dynamic";
 export async function GET(request:Request){
   if(!await readerAllowed(request.headers))return deny();
   try {
-    const bucket=(env as Cloudflare.Env).BUCKET;
-    if(!bucket)throw new Error("Portfolio storage unavailable.");
+    const bucket=(env as Partial<Cloudflare.Env>)?.BUCKET;
     return Response.json(researchReport(await readAllFullComparisons(bucket),await readResearchSnapshot()),{headers:{"Cache-Control":"no-store"}});
   }catch{return Response.json({error:"The complete research archive could not be loaded. Please retry."},{status:503,headers:{"Cache-Control":"no-store"}});}
 }

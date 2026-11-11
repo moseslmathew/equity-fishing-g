@@ -2,39 +2,52 @@ import { spawnSync } from "node:child_process";
 import { fileURLToPath } from "node:url";
 import { readExecutionProfile } from "./execution-profile.mjs";
 
-try {
-  const dns = await import("node:dns");
-  const resolver = new dns.Resolver();
-  resolver.setServers(["8.8.8.8", "8.8.4.4"]);
-  const undiciUrl = new URL("../node_modules/.pnpm/undici@7.24.8/node_modules/undici/index.js", import.meta.url).href;
-  const { Agent, setGlobalDispatcher } = await import(undiciUrl);
-  setGlobalDispatcher(
-    new Agent({
-      connect: {
-        lookup: (hostname, options, callback) => {
-          if (typeof options === "function") {
-            callback = options;
-            options = {};
-          }
-          resolver.resolve4(hostname, (err, addresses) => {
-            if (err) return callback(err);
-            if (!addresses || !addresses.length) return callback(new Error("No address found for " + hostname));
-            if (options && options.all) {
-              return callback(
-                null,
-                addresses.map((a) => ({ address: a, family: 4 }))
-              );
+const isVercel = Boolean(process.env.VERCEL);
+
+if (!isVercel) {
+  try {
+    const dns = await import("node:dns");
+    const resolver = new dns.Resolver();
+    resolver.setServers(["8.8.8.8", "8.8.4.4"]);
+    const undiciUrl = new URL("../node_modules/.pnpm/undici@7.24.8/node_modules/undici/index.js", import.meta.url).href;
+    const { Agent, setGlobalDispatcher } = await import(undiciUrl);
+    setGlobalDispatcher(
+      new Agent({
+        connect: {
+          lookup: (hostname, options, callback) => {
+            if (typeof options === "function") {
+              callback = options;
+              options = {};
             }
-            return callback(null, addresses[0], 4);
-          });
+            resolver.resolve4(hostname, (err, addresses) => {
+              if (err) return callback(err);
+              if (!addresses || !addresses.length) return callback(new Error("No address found for " + hostname));
+              if (options && options.all) {
+                return callback(
+                  null,
+                  addresses.map((a) => ({ address: a, family: 4 }))
+                );
+              }
+              return callback(null, addresses[0], 4);
+            });
+          },
         },
-      },
-    })
-  );
-} catch {}
+      })
+    );
+  } catch {}
+}
 
 const [command, ...args] = process.argv.slice(2);
 if (!["dev", "build"].includes(command)) throw new Error("Expected dev or build.");
+
+if (isVercel) {
+  const nextCli = fileURLToPath(new URL("../node_modules/next/dist/bin/next", import.meta.url));
+  const result = spawnSync(process.execPath, [nextCli, command, ...args], { stdio: "inherit" });
+  if (result.error) throw result.error;
+  process.exit(result.status ?? 1);
+}
+
+process.env.EQUITY_FISHING_RUNTIME = "vinext";
 const managedLinux = readExecutionProfile() === "managed-linux";
 
 if (managedLinux && command === "build") {

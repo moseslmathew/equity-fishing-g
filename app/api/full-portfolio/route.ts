@@ -6,7 +6,7 @@ import {validateFullComparison,type FullComparison} from "../../../lib/full-port
 import {readFullComparisons,fullKey} from "../../../lib/full-portfolio-store";
 export const dynamic="force-dynamic";
 const headers={"Cache-Control":"no-store"};
-function bucket(){const b=(env as Cloudflare.Env).BUCKET;if(!b)throw new Error("Portfolio storage unavailable.");return b;}
+function bucket(){return (env as Partial<Cloudflare.Env>)?.BUCKET;}
 export async function GET(request:Request) {
   if(!await readerAllowed(request.headers))return deny();
   const month=new URL(request.url).searchParams.get("month");

@@ -15,7 +15,12 @@ export const sessionCookie = "__Host-fund_session";
 export const sessionDuration = 60 * 60 * 24 * 7;
 
 export function authEnv() {
-  return env as AuthEnv;
+  const processValues = typeof process !== "undefined" && process.env ? process.env : {};
+  const workerValues = env && typeof env === "object" ? Object.fromEntries(Object.entries(env as Record<string, unknown>).filter(([, v]) => v !== undefined)) : {};
+  return {
+    ...processValues,
+    ...workerValues,
+  } as AuthEnv;
 }
 
 export function getClerkPublishableKey(): string {

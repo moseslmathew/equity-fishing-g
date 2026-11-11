@@ -19,15 +19,13 @@ function expandedSnapshot(current:Portfolio):Portfolio {
     runs:added?[baseline.runs[0],...current.runs].filter((run,i,all)=>all.findIndex(other=>other.at===run.at)===i).slice(0,60):current.runs,
     funds:baseline.funds.map(base=>current.funds.find(f=>f.id===base.id)??base)};
 }
-async function expandedReadSnapshot(b:R2Bucket,current:Portfolio){
+async function expandedReadSnapshot(b:R2Bucket|undefined,current:Portfolio){
   const snapshot=expandedSnapshot(current);
   const comparisons=(await Promise.all([...new Set(snapshot.funds.map(f=>f.portfolioDate.slice(0,7)))].map(month=>readFullComparisons(b,month)))).flat();
   return {...snapshot,funds:snapshot.funds.map(f=>withTopHoldings(f,comparisons.find(c=>c.fundId===f.id&&c.currentDate===f.portfolioDate)))};
 }
-async function bucket() {
-  const b = (env as Cloudflare.Env).BUCKET;
-  if (!b) throw new Error("Portfolio storage is unavailable.");
-  return b;
+async function bucket(): Promise<R2Bucket | undefined> {
+  return (env as Partial<Cloudflare.Env>)?.BUCKET;
 }
 export async function GET(request:Request) {
   if(!await readerAllowed(request.headers))return deny();

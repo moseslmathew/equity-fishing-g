@@ -167,7 +167,8 @@ export async function nseCandidates(query:string){
   const terms=clean.split(/\s+/).filter(Boolean);
 
   const securities=(nseEquitySecurities as unknown as {securities:[string,string,string][]})?.securities??[];
-  const quotes=(companyQuotes as any)?.quotes??{};
+  const quotes=(companyQuotes as unknown as {quotes?:Record<string,RecordValue>})?.quotes??{};
+  const bySymbol=new Map<string,[string,string,string]>();
 
   const scored:Array<{
     symbol:string;
@@ -181,7 +182,9 @@ export async function nseCandidates(query:string){
     score:number;
   }>=[];
 
-  for(const [symbol,name,isin] of securities){
+  for(const row of securities){
+    const [symbol,name,isin]=row;
+    bySymbol.set(symbol.toUpperCase(),row);
     const sLower=symbol.toLowerCase();
     const nLower=name.toLowerCase();
     let score=0;
@@ -211,7 +214,55 @@ export async function nseCandidates(query:string){
   }
 
   scored.sort((a,b)=>b.score-a.score||a.symbol.localeCompare(b.symbol));
-  return scored.slice(0,15).map(({score:_,...item})=>item);
+  const merged=scored.slice(0,15);
+  const needsLive=merged.length<5||merged.some(item=>item.price===null);
+
+  if(needsLive){
+    try{
+      // Fall back to live NSE MCP search so recently listed IPOs appear even if not yet bundled.
+      let timer:ReturnType<typeof setTimeout>|undefined;
+      const liveData=await Promise.race([
+        callNse("history","search_symbols",{query:query.trim()}),
+        new Promise<never>((_,reject)=>{timer=setTimeout(()=>reject(new Error("NSE search timed out.")),3500);})
+      ]).finally(()=>{if(timer)clearTimeout(timer);});
+      const results=Array.isArray(liveData.results)?liveData.results.map(object):[];
+      for(const row of results){
+        const rawSymbol=typeof row.symbol==="string"?row.symbol.trim().toUpperCase():"";
+        if(!rawSymbol||!validNseSymbol(rawSymbol))continue;
+        const liveClose=positive(row.last_close);
+        const livePct=number(row.pct_change);
+        const liveDate=string(row.last_date);
+        const existing=merged.find(item=>item.symbol.toUpperCase()===rawSymbol);
+        if(existing){
+          if(existing.price===null&&liveClose!==null)existing.price=liveClose;
+          if(existing.changePercent===null&&livePct!==null)existing.changePercent=livePct;
+          if(existing.close===null&&liveClose!==null)existing.close=liveClose;
+          if(!existing.date&&liveDate)existing.date=liveDate;
+        }else{
+          const known=bySymbol.get(rawSymbol);
+          const companyName=known?.[1]??string(row.company_name??row.name)??rawSymbol;
+          const isin=known?.[2]??string(row.isin)??"";
+          const q=quotes[rawSymbol];
+          merged.push({
+            symbol:rawSymbol,
+            name:companyName,
+            isin,
+            sector:inferSector(rawSymbol,companyName),
+            price:positive(q?.price)??liveClose,
+            changePercent:number(q?.changePercent)??livePct,
+            close:liveClose??positive(q?.previousClose??q?.price),
+            date:liveDate??string(q?.asOf??q?.asOfIso),
+            score:known?600:450
+          });
+        }
+      }
+      merged.sort((a,b)=>b.score-a.score||a.symbol.localeCompare(b.symbol));
+    }catch{
+      // Preserve local directory candidates if live NSE MCP lookup is slow or offline.
+    }
+  }
+
+  return merged.slice(0,15).map(({symbol,name,isin,sector,price,changePercent,close,date})=>({symbol,name,isin,sector,price,changePercent,close,date}));
 }
 
 export function normalizeNseQuote(symbol:string,payload:unknown){
@@ -229,7 +280,7 @@ export function normalizeNseEod(symbol:string,payload:unknown){
 
 function getCachedQuote(symbol: string) {
   try {
-    return (companyQuotes as any)?.quotes?.[symbol] ?? null;
+    return ((companyQuotes as unknown as { quotes?: Record<string, ReturnType<typeof normalizeNseQuote>> })?.quotes?.[symbol]) ?? null;
   } catch {
     return null;
   }

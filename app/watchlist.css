@@ -626,6 +626,10 @@
   font-size: 13px;
   color: #7b6f8d;
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
 }
 
 /* Selected Stock Preview Card */

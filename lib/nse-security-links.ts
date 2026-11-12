@@ -30,3 +30,13 @@ export function nseSecurity(symbol:string){
   const row=directory.securities.find(row=>row[0]===symbol);
   return row?{symbol:row[0],name:row[1],isin:row[2]}:null;
 }
+export async function resolveNseSecurity(symbol:string){
+  const bundled=nseSecurity(symbol);
+  if(bundled)return bundled;
+  const {nseCandidates,validNseSymbol}=await import("./nse-mcp");
+  const normalized=symbol.trim().toUpperCase();
+  if(!validNseSymbol(normalized))return null;
+  const candidates=await nseCandidates(normalized);
+  const match=candidates.find(c=>c.symbol.toUpperCase()===normalized);
+  return match?{symbol:match.symbol,name:match.name,isin:match.isin}:null;
+}

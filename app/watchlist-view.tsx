@@ -505,7 +505,10 @@ export default function WatchlistView() {
                           }
                         }}
                         onFocus={() => {
-                          if (candidates.length > 0) setShowDropdown(true);
+                          if (candidates.length > 0 || searchQuery.trim().length >= 1) setShowDropdown(true);
+                        }}
+                        onKeyDown={(e) => {
+                          if (e.key === "Escape") setShowDropdown(false);
                         }}
                         autoFocus
                       />
@@ -568,7 +571,20 @@ export default function WatchlistView() {
                           ))
                         ) : !isSearching && searchQuery.trim().length >= 1 ? (
                           <li className="watchlist-suggestions-empty">
-                            No matching NSE equity found for "{searchQuery}". You can enter details manually below.
+                            <span>No matching NSE equity found for &quot;{searchQuery}&quot;.</span>
+                            <button
+                              type="button"
+                              className="watchlist-manual-toggle"
+                              onClick={() => {
+                                const trimmed = searchQuery.trim();
+                                if (!itemKey) setItemKey(trimmed.toUpperCase().replace(/\s+/g, ""));
+                                if (!itemTitle) setItemTitle(trimmed);
+                                setShowDropdown(false);
+                                setIsManualEdit(true);
+                              }}
+                            >
+                              Enter details manually
+                            </button>
                           </li>
                         ) : null}
                       </ul>

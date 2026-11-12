@@ -127,38 +127,81 @@ export function inferSector(symbol: string, name: string): string {
   return "Equity · NSE Main Board";
 }
 
+async function withNseSession<T>(
+  service: Service,
+  timeoutMs: number,
+  fn: (call: (id: number, name: string, args: RecordValue) => Promise<RecordValue>) => Promise<T>,
+  fetcher: typeof fetch = (input, init) => globalThis.fetch(input, init)
+): Promise<T> {
+  const allowed = service === "live" ? ["cm_get_stock_quote"] : ["search_symbols", "get_bulk_quote"];
+  const controller = new AbortController(), timer = setTimeout(() => controller.abort(), timeoutMs);
+  let session: string | undefined;
+  let cookie: string | undefined;
+  const headers = () => ({
+    "Content-Type": "application/json",
+    "Accept": "application/json, text/event-stream",
+    "MCP-Protocol-Version": "2025-03-26",
+    ...(session ? { "Mcp-Session-Id": session } : {}),
+    ...(cookie ? { "Cookie": cookie } : {}),
+  });
+  const post = (body: unknown) =>
+    fetcher(nseSources[service], {
+      method: "POST",
+      headers: headers(),
+      body: JSON.stringify(body),
+      signal: controller.signal,
+      redirect: "manual",
+    });
+  try {
+    const response = await post({
+      jsonrpc: "2.0",
+      id: 1,
+      method: "initialize",
+      params: { protocolVersion: "2025-03-26", capabilities: {}, clientInfo: { name: "equity-fishing-reader", version: "1.0" } },
+    });
+    session = response.headers.get("mcp-session-id") ?? undefined;
+    cookie = response.headers.get("set-cookie") ?? undefined;
+    const initialized = await readNseRpc(response, 1);
+    if (initialized.error) throw new Error("NSE connection could not be initialized.");
+    try {
+      const notification = await post({ jsonrpc: "2.0", method: "notifications/initialized" });
+      await notification.body?.cancel();
+    } catch {
+      /* NSE MCP returns 404 for notifications/initialized */
+    }
+    return await fn(async (id, name, args) => {
+      if (!allowed.includes(name)) throw new Error("Unsupported NSE data request.");
+      const result = await readNseRpc(
+        await post({ jsonrpc: "2.0", id, method: "tools/call", params: { name, arguments: args } }),
+        id
+      );
+      if (result.error) throw new Error("NSE could not complete the data request.");
+      return unwrapNseResult(result.result);
+    });
+  } finally {
+    clearTimeout(timer);
+    if (session) {
+      try {
+        const closed = await fetcher(nseSources[service], {
+          method: "DELETE",
+          headers: headers(),
+          signal: AbortSignal.timeout(1000),
+          redirect: "manual",
+        });
+        await closed.body?.cancel();
+      } catch {
+        /* Cleanup is best effort; no retry of the data request. */
+      }
+    }
+  }
+}
+
 export async function callNse(service:Service,name:string,args:RecordValue,fetcher:typeof fetch=(input,init)=>globalThis.fetch(input,init)){
   const allowed=service==="live"?["cm_get_stock_quote"]:["search_symbols","get_bulk_quote"];
   if(!allowed.includes(name))throw new Error("Unsupported NSE data request.");
   // This budget covers initialization, notification and the quote call together.
   // NSE can take over 14 seconds for that sequence even when all steps succeed.
-  const controller=new AbortController(),timer=setTimeout(()=>controller.abort(),45_000);
-  let session:string|undefined;
-  let cookie:string|undefined;
-  const headers=()=>({
-    "Content-Type":"application/json",
-    "Accept":"application/json, text/event-stream",
-    "MCP-Protocol-Version":"2025-03-26",
-    ...(session?{"Mcp-Session-Id":session}:{}),
-    ...(cookie?{"Cookie":cookie}:{})
-  });
-  const post=(body:unknown)=>fetcher(nseSources[service],{method:"POST",headers:headers(),body:JSON.stringify(body),signal:controller.signal,redirect:"manual"});
-  try{
-    const response=await post({jsonrpc:"2.0",id:1,method:"initialize",params:{protocolVersion:"2025-03-26",capabilities:{},clientInfo:{name:"equity-fishing-reader",version:"1.0"}}});
-    session=response.headers.get("mcp-session-id")??undefined;
-    cookie=response.headers.get("set-cookie")??undefined;
-    const initialized=await readNseRpc(response,1);if(initialized.error)throw new Error("NSE connection could not be initialized.");
-    try{
-      const notification=await post({jsonrpc:"2.0",method:"notifications/initialized"});
-      await notification.body?.cancel();
-    }catch{/* NSE MCP returns 404 for notifications/initialized */}
-    const result=await readNseRpc(await post({jsonrpc:"2.0",id:2,method:"tools/call",params:{name,arguments:args}}),2);
-    if(result.error)throw new Error("NSE could not complete the data request.");
-    return unwrapNseResult(result.result);
-  }finally{
-    clearTimeout(timer);
-    if(session)try{const closed=await fetcher(nseSources[service],{method:"DELETE",headers:headers(),signal:AbortSignal.timeout(1000),redirect:"manual"});await closed.body?.cancel();}catch{/* Cleanup is best effort; no retry of the data request. */}
-  }
+  return withNseSession(service,45_000,(call)=>call(2,name,args),fetcher);
 }
 
 export async function nseCandidates(query:string){
@@ -292,6 +335,65 @@ export async function nseSnapshot(symbol:string){
   const liveVal = live.status==="fulfilled" ? live.value : fallback;
   return {symbol,retrievedAt:new Date().toISOString(),live:liveVal,eod:eod.status==="fulfilled"?eod.value:null,liveError:liveVal?null:(live.status==="rejected"?nseFailure(live.reason):null),eodError:eod.status==="rejected"?nseFailure(eod.reason):null};
 }
+export type BatchQuoteEntry = {
+  price: number | null;
+  previousClose: number | null;
+  change: number | null;
+  changePercent: number | null;
+  asOf: string | null;
+  asOfIso: string | null;
+  source: "live" | "cached";
+};
+
+/**
+ * Fetches live NSE quotes for multiple symbols over a single MCP session,
+ * falling back per symbol to bundled quotes if NSE MCP is unavailable.
+ */
+export async function nseBatchQuotes(
+  symbols: string[],
+  fetcher?: typeof fetch
+): Promise<Record<string, BatchQuoteEntry | null>> {
+  const unique = [...new Set(symbols.map((s) => s.trim().toUpperCase()).filter(validNseSymbol))].slice(0, 30);
+  const out: Record<string, BatchQuoteEntry | null> = {};
+  if (!unique.length) return out;
+
+  try {
+    await withNseSession(
+      "live",
+      15_000,
+      async (call) => {
+        const settled = await Promise.allSettled(
+          unique.map((sym, i) => call(i + 2, "cm_get_stock_quote", { symbol: sym }).then((d) => normalizeNseQuote(sym, d)))
+        );
+        settled.forEach((res, i) => {
+          const sym = unique[i];
+          if (res.status === "fulfilled" && res.value.price !== null) {
+            out[sym] = {
+              price: res.value.price,
+              previousClose: res.value.previousClose,
+              change: res.value.change,
+              changePercent: res.value.changePercent,
+              asOf: res.value.asOf,
+              asOfIso: res.value.asOfIso,
+              source: "live",
+            };
+          } else {
+            const cached = getCachedQuote(sym);
+            out[sym] = cached && cached.price != null ? { ...cached, source: "cached" } : null;
+          }
+        });
+      },
+      fetcher
+    );
+  } catch {
+    for (const sym of unique) {
+      const cached = getCachedQuote(sym);
+      out[sym] = cached && cached.price != null ? { ...cached, source: "cached" } : null;
+    }
+  }
+  return out;
+}
+
 export type NseSnapshot=Awaited<ReturnType<typeof nseSnapshot>>;
 export type NseCandidate=Awaited<ReturnType<typeof nseCandidates>>[number];
 

@@ -1,10 +1,15 @@
 import {readerAllowed,deny} from "../../../lib/access";
-import {nseCandidates,nseSnapshot,validNseSymbol,nseFailure} from "../../../lib/nse-mcp";
+import {nseBatchQuotes,nseCandidates,nseSnapshot,validNseSymbol,nseFailure} from "../../../lib/nse-mcp";
 export const dynamic="force-dynamic";
 const headers={"Cache-Control":"private, no-store"};
 export async function GET(request:Request){
   if(!await readerAllowed(request.headers))return deny();
-  const params=new URL(request.url).searchParams,symbol=params.get("symbol"),query=params.get("query")?.trim();
+  const params=new URL(request.url).searchParams,symbol=params.get("symbol"),symbolsParam=params.get("symbols"),query=params.get("query")?.trim();
+  if(symbolsParam!==null){
+    const list=symbolsParam.split(",").map(s=>s.trim().toUpperCase()).filter(Boolean);
+    if(list.length===0||list.length>30||list.some(s=>!validNseSymbol(s)))return Response.json({error:"Provide 1–30 valid NSE equity symbols."},{status:400,headers});
+    return Response.json({quotes:await nseBatchQuotes(list),retrievedAt:new Date().toISOString()},{headers});
+  }
   if(symbol!==null&&!validNseSymbol(symbol))return Response.json({error:"Enter a valid NSE equity symbol."},{status:400,headers});
   if(symbol===null&&(!query||query.length<1||query.length>100||/[\u0000-\u001f]/.test(query)))return Response.json({error:"Search using 1–100 characters."},{status:400,headers});
   try{

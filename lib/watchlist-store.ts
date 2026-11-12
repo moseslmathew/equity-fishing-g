@@ -12,10 +12,53 @@ export type WatchlistItem = {
   updatedAt: string;
 };
 
+let ensuredWatchlistTable: Promise<void> | null = null;
+
+/**
+ * Ensures the `user_watchlists` table and its unique `(user_id, item_type, item_key)`
+ * index exist on both Neon PostgreSQL and local Cloudflare D1 SQLite.
+ */
+async function ensureWatchlistTable(db: DatabaseClient): Promise<void> {
+  if (!ensuredWatchlistTable) {
+    ensuredWatchlistTable = (async () => {
+      await db
+        .prepare(
+          `CREATE TABLE IF NOT EXISTS user_watchlists (
+            id TEXT PRIMARY KEY,
+            user_id TEXT NOT NULL,
+            item_type TEXT NOT NULL,
+            item_key TEXT NOT NULL,
+            item_title TEXT,
+            item_subtitle TEXT,
+            notes TEXT,
+            created_at TEXT,
+            updated_at TEXT
+          )`
+        )
+        .run();
+      await db
+        .prepare("CREATE INDEX IF NOT EXISTS idx_user_watchlists_user_id ON user_watchlists (user_id)")
+        .run();
+      await db
+        .prepare(
+          "CREATE UNIQUE INDEX IF NOT EXISTS idx_user_watchlists_unique ON user_watchlists (user_id, item_type, item_key)"
+        )
+        .run();
+    })().catch((err) => {
+      ensuredWatchlistTable = null;
+      throw err;
+    });
+  }
+  await ensuredWatchlistTable;
+}
+
 export async function getUserWatchlist(userId: string): Promise<WatchlistItem[]> {
   const db = database();
+  await ensureWatchlistTable(db);
   const rows = await db
-    .prepare("SELECT id, user_id as \"userId\", item_type as \"itemType\", item_key as \"itemKey\", item_title as \"itemTitle\", item_subtitle as \"itemSubtitle\", notes, created_at as \"createdAt\", updated_at as \"updatedAt\" FROM user_watchlists WHERE user_id = ? ORDER BY created_at DESC")
+    .prepare(
+      'SELECT id, user_id as "userId", item_type as "itemType", item_key as "itemKey", item_title as "itemTitle", item_subtitle as "itemSubtitle", notes, created_at as "createdAt", updated_at as "updatedAt" FROM user_watchlists WHERE user_id = ? ORDER BY created_at DESC'
+    )
     .bind(userId)
     .all<WatchlistItem>();
 
@@ -31,6 +74,7 @@ export async function addToWatchlist(item: {
   notes?: string;
 }): Promise<WatchlistItem> {
   const db = database();
+  await ensureWatchlistTable(db);
   const id = `${item.userId}:${item.itemType}:${item.itemKey}`;
   const now = new Date().toISOString();
 
@@ -67,8 +111,13 @@ export async function addToWatchlist(item: {
   };
 }
 
-export async function removeFromWatchlist(userId: string, itemType: "stock" | "fund", itemKey: string): Promise<boolean> {
+export async function removeFromWatchlist(
+  userId: string,
+  itemType: "stock" | "fund",
+  itemKey: string
+): Promise<boolean> {
   const db = database();
+  await ensureWatchlistTable(db);
   await db
     .prepare("DELETE FROM user_watchlists WHERE user_id = ? AND item_type = ? AND item_key = ?")
     .bind(userId, itemType, itemKey)

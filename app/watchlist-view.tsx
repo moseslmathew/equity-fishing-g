@@ -98,6 +98,7 @@ export default function WatchlistView() {
   const [itemSubtitle, setItemSubtitle] = useState("");
   const [notes, setNotes] = useState("");
   const [submitting, setSubmitting] = useState(false);
+  const [submitError, setSubmitError] = useState("");
 
   // NSE autocomplete & modal preview quote
   const [searchQuery, setSearchQuery] = useState("");
@@ -276,6 +277,7 @@ export default function WatchlistView() {
     setShowDropdown(false);
     setLiveQuote(null);
     setIsManualEdit(false);
+    setSubmitError("");
   };
 
   const handleSelectPredefinedFund = (fundId: string) => {
@@ -292,6 +294,7 @@ export default function WatchlistView() {
     if (!itemKey.trim() || !itemTitle.trim()) return;
 
     setSubmitting(true);
+    setSubmitError("");
     try {
       const normalizedKey = itemType === "stock" ? itemKey.trim().toUpperCase() : itemKey.trim();
       const res = await fetch("/api/watchlist", {
@@ -315,7 +318,7 @@ export default function WatchlistView() {
       setLoading(true);
       await loadWatchlist();
     } catch (err) {
-      alert(err instanceof Error ? err.message : "Error adding to watchlist");
+      setSubmitError(err instanceof Error ? err.message : "Error adding to watchlist");
     } finally {
       setSubmitting(false);
     }
@@ -1055,6 +1058,12 @@ export default function WatchlistView() {
                   className="watchlist-textarea"
                 />
               </div>
+
+              {submitError && (
+                <p className="error-notice" role="alert" style={{ marginBottom: "12px" }}>
+                  {submitError}
+                </p>
+              )}
 
               <div className="watchlist-modal-footer">
                 <button

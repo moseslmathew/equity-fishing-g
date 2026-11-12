@@ -1,5 +1,6 @@
 "use client";
-import { BarChart3, User, LogOut } from "lucide-react";
+import { User, LogOut } from "lucide-react";
+import BrandLogo from "../components/brand-logo";
 import GlobalCompanySearch from "./global-company-search";
 import SiteNavigation, { type WorkspaceSection } from "./site-navigation";
 import { useClerkAuth } from "./clerk-client";
@@ -17,7 +18,7 @@ export default function WorkspaceHeader({
     <header className="site-header">
       <a className="site-brand" href="/">
         <span className="brand-mark">
-          <BarChart3 size={20} />
+          <BrandLogo size={31} />
         </span>
         Smallcap<span className="header-sub">Observatory</span>
       </a>

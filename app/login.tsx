@@ -1,6 +1,7 @@
 "use client";
 import { useEffect } from "react";
-import { BarChart3, UserCheck, ShieldCheck, ArrowLeft } from "lucide-react";
+import { UserCheck, ShieldCheck, ArrowLeft } from "lucide-react";
+import BrandLogo from "../components/brand-logo";
 import { useClerkAuth } from "./clerk-client";
 
 export default function Login() {
@@ -16,7 +17,7 @@ export default function Login() {
     <main className="login-page">
       <div className="login-brand">
         <span className="brand-mark">
-          <BarChart3 size={22} />
+          <BrandLogo size={44} />
         </span>
         <span>
           Smallcap<span className="brand-sub">OBSERVATORY</span>

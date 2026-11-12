@@ -7,8 +7,9 @@ export const metadata: Metadata = {
   title: "Smallcap Observatory | Mutual fund holdings",
   description: "Compare small-cap and selected Helios equity funds, their top 30 holdings, full portfolio changes and dated sources.",
   icons: {
-    icon: "/favicon.svg",
-    shortcut: "/favicon.svg",
+    icon: [{ url: "/favicon.svg?v=2", type: "image/svg+xml" }],
+    shortcut: "/favicon.svg?v=2",
+    apple: "/favicon.svg?v=2",
   },
 };
 

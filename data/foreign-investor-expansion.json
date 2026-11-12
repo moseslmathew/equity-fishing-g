@@ -1,0 +1,311 @@
+{
+  "checkedAt": "2026-11-11T16:00:00.000Z",
+  "investors": [
+    {
+      "id": "elevation-capital",
+      "name": "Elevation Capital",
+      "category": "venture",
+      "asOf": "2026-11-11",
+      "checkedAt": "2026-11-11T16:00:00.000Z",
+      "windowStart": "2025-11-11",
+      "windowEnd": "2026-11-11",
+      "coverage": "Selected Indian-listed investment relationships verified against official investor material. Current ownership is shown only where separately evidenced.",
+      "limitations": [
+        "Selected India-related coverage, not a complete portfolio or proof of registered FPI status.",
+        "A portfolio listing establishes a documented investment relationship, not a current retained stake. Unknown ownership is not zero.",
+        "Each company keeps its own evidence date. Private, listed, historical and exited investments must be distinguished."
+      ],
+      "sources": {
+        "portfolio": {
+          "title": "Elevation Capital \u00b7 official portfolio evidence",
+          "url": "https://www.elevationcapital.com/portfolio",
+          "publisher": "Elevation Capital",
+          "published": "Reviewed 11 Nov 2026",
+          "kind": "primary",
+          "note": "Investment relationship only. A current company-equity percentage was not verified."
+        }
+      },
+      "companies": [
+        {
+          "id": "firstcry",
+          "name": "Brainbees Solutions \u00b7 FirstCry",
+          "ticker": "FIRSTCRY",
+          "listing": "Listed equity",
+          "sector": "Children\u2019s products",
+          "relationship": "Venture / growth investment recorded by the investor",
+          "ownership": "Documented investment relationship \u00b7 current stake unconfirmed",
+          "ownershipDate": "Ownership date unconfirmed",
+          "stakePercent": null,
+          "stance": "unconfirmed",
+          "summary": "Elevation Capital includes this business in its official investment portfolio or presentation.",
+          "thesis": "Portfolio evidence establishes the relationship; it does not disclose the investor\u2019s present thesis.",
+          "risks": "Retained ownership and subsequent disposals require a dated shareholding filing.",
+          "sourceIds": [
+            "portfolio"
+          ]
+        },
+        {
+          "id": "indiamart",
+          "name": "IndiaMART InterMESH",
+          "ticker": "INDIAMART",
+          "listing": "Listed equity",
+          "sector": "B2B commerce",
+          "relationship": "Venture / growth investment recorded by the investor",
+          "ownership": "Documented investment relationship \u00b7 current stake unconfirmed",
+          "ownershipDate": "Ownership date unconfirmed",
+          "stakePercent": null,
+          "stance": "unconfirmed",
+          "summary": "Elevation Capital includes this business in its official investment portfolio or presentation.",
+          "thesis": "Portfolio evidence establishes the relationship; it does not disclose the investor\u2019s present thesis.",
+          "risks": "Retained ownership and subsequent disposals require a dated shareholding filing.",
+          "sourceIds": [
+            "portfolio"
+          ]
+        },
+        {
+          "id": "ixigo",
+          "name": "Le Travenues Technology \u00b7 ixigo",
+          "ticker": "IXIGO",
+          "listing": "Listed equity",
+          "sector": "Online travel",
+          "relationship": "Venture / growth investment recorded by the investor",
+          "ownership": "Documented investment relationship \u00b7 current stake unconfirmed",
+          "ownershipDate": "Ownership date unconfirmed",
+          "stakePercent": null,
+          "stance": "unconfirmed",
+          "summary": "Elevation Capital includes this business in its official investment portfolio or presentation.",
+          "thesis": "Portfolio evidence establishes the relationship; it does not disclose the investor\u2019s present thesis.",
+          "risks": "Retained ownership and subsequent disposals require a dated shareholding filing.",
+          "sourceIds": [
+            "portfolio"
+          ]
+        },
+        {
+          "id": "justdial",
+          "name": "Just Dial",
+          "ticker": "JUSTDIAL",
+          "listing": "Listed equity",
+          "sector": "Local search",
+          "relationship": "Venture / growth investment recorded by the investor",
+          "ownership": "Documented investment relationship \u00b7 current stake unconfirmed",
+          "ownershipDate": "Ownership date unconfirmed",
+          "stakePercent": null,
+          "stance": "unconfirmed",
+          "summary": "Elevation Capital includes this business in its official investment portfolio or presentation.",
+          "thesis": "Portfolio evidence establishes the relationship; it does not disclose the investor\u2019s present thesis.",
+          "risks": "Retained ownership and subsequent disposals require a dated shareholding filing.",
+          "sourceIds": [
+            "portfolio"
+          ]
+        },
+        {
+          "id": "meesho",
+          "name": "Meesho",
+          "ticker": "MEESHO",
+          "listing": "Listed equity",
+          "sector": "E-commerce",
+          "relationship": "Venture / growth investment recorded by the investor",
+          "ownership": "Documented investment relationship \u00b7 current stake unconfirmed",
+          "ownershipDate": "Ownership date unconfirmed",
+          "stakePercent": null,
+          "stance": "unconfirmed",
+          "summary": "Elevation Capital includes this business in its official investment portfolio or presentation.",
+          "thesis": "Portfolio evidence establishes the relationship; it does not disclose the investor\u2019s present thesis.",
+          "risks": "Retained ownership and subsequent disposals require a dated shareholding filing.",
+          "sourceIds": [
+            "portfolio"
+          ]
+        },
+        {
+          "id": "paytm",
+          "name": "One 97 Communications \u00b7 Paytm",
+          "ticker": "PAYTM",
+          "listing": "Listed equity",
+          "sector": "Payments",
+          "relationship": "Venture / growth investment recorded by the investor",
+          "ownership": "Documented investment relationship \u00b7 current stake unconfirmed",
+          "ownershipDate": "Ownership date unconfirmed",
+          "stakePercent": null,
+          "stance": "unconfirmed",
+          "summary": "Elevation Capital includes this business in its official investment portfolio or presentation.",
+          "thesis": "Portfolio evidence establishes the relationship; it does not disclose the investor\u2019s present thesis.",
+          "risks": "Retained ownership and subsequent disposals require a dated shareholding filing.",
+          "sourceIds": [
+            "portfolio"
+          ]
+        },
+        {
+          "id": "tracxn",
+          "name": "Tracxn Technologies",
+          "ticker": "TRACXN",
+          "listing": "Listed equity",
+          "sector": "Company intelligence",
+          "relationship": "Venture / growth investment recorded by the investor",
+          "ownership": "Documented investment relationship \u00b7 current stake unconfirmed",
+          "ownershipDate": "Ownership date unconfirmed",
+          "stakePercent": null,
+          "stance": "unconfirmed",
+          "summary": "Elevation Capital includes this business in its official investment portfolio or presentation.",
+          "thesis": "Portfolio evidence establishes the relationship; it does not disclose the investor\u2019s present thesis.",
+          "risks": "Retained ownership and subsequent disposals require a dated shareholding filing.",
+          "sourceIds": [
+            "portfolio"
+          ]
+        }
+      ],
+      "events": [],
+      "report": {
+        "title": "Elevation Capital \u00b7 India exposure",
+        "summary": "Documented investment relationships in Indian-listed businesses. Current retained stakes remain unconfirmed unless separately disclosed.",
+        "sections": [
+          {
+            "title": "Evidence and ownership",
+            "text": "The official investor material verifies backing. Inclusion does not establish continued ownership or a current percentage.",
+            "sourceIds": [
+              "portfolio"
+            ]
+          }
+        ],
+        "themes": []
+      }
+    },
+    {
+      "id": "nexus-venture-partners",
+      "name": "Nexus Venture Partners",
+      "category": "venture",
+      "asOf": "2026-11-11",
+      "checkedAt": "2026-11-11T16:00:00.000Z",
+      "windowStart": "2025-11-11",
+      "windowEnd": "2026-11-11",
+      "coverage": "Selected Indian-listed investment relationships verified against official investor material. Current ownership is shown only where separately evidenced.",
+      "limitations": [
+        "Selected India-related coverage, not a complete portfolio or proof of registered FPI status.",
+        "A portfolio listing establishes a documented investment relationship, not a current retained stake. Unknown ownership is not zero.",
+        "Each company keeps its own evidence date. Private, listed, historical and exited investments must be distinguished."
+      ],
+      "sources": {
+        "portfolio": {
+          "title": "Nexus Venture Partners \u00b7 official portfolio evidence",
+          "url": "https://www.nexusvp.com/companies",
+          "publisher": "Nexus Venture Partners",
+          "published": "Reviewed 11 Nov 2026",
+          "kind": "primary",
+          "note": "Investment relationship only. A current company-equity percentage was not verified."
+        }
+      },
+      "companies": [
+        {
+          "id": "delhivery",
+          "name": "Delhivery",
+          "ticker": "DELHIVERY",
+          "listing": "Listed equity",
+          "sector": "Logistics",
+          "relationship": "Venture / growth investment recorded by the investor",
+          "ownership": "Documented investment relationship \u00b7 current stake unconfirmed",
+          "ownershipDate": "Ownership date unconfirmed",
+          "stakePercent": null,
+          "stance": "unconfirmed",
+          "summary": "Nexus Venture Partners includes this business in its official investment portfolio or presentation.",
+          "thesis": "Portfolio evidence establishes the relationship; it does not disclose the investor\u2019s present thesis.",
+          "risks": "Retained ownership and subsequent disposals require a dated shareholding filing.",
+          "sourceIds": [
+            "portfolio"
+          ]
+        }
+      ],
+      "events": [],
+      "report": {
+        "title": "Nexus Venture Partners \u00b7 India exposure",
+        "summary": "Documented investment relationships in Indian-listed businesses. Current retained stakes remain unconfirmed unless separately disclosed.",
+        "sections": [
+          {
+            "title": "Evidence and ownership",
+            "text": "The official investor material verifies backing. Inclusion does not establish continued ownership or a current percentage.",
+            "sourceIds": [
+              "portfolio"
+            ]
+          }
+        ],
+        "themes": []
+      }
+    },
+    {
+      "id": "softbank-vision-fund",
+      "name": "SoftBank Vision Fund",
+      "category": "venture",
+      "asOf": "2026-11-11",
+      "checkedAt": "2026-11-11T16:00:00.000Z",
+      "windowStart": "2025-11-11",
+      "windowEnd": "2026-11-11",
+      "coverage": "Selected Indian-listed investment relationships verified against official investor material. Current ownership is shown only where separately evidenced.",
+      "limitations": [
+        "Selected India-related coverage, not a complete portfolio or proof of registered FPI status.",
+        "A portfolio listing establishes a documented investment relationship, not a current retained stake. Unknown ownership is not zero.",
+        "Each company keeps its own evidence date. Private, listed, historical and exited investments must be distinguished."
+      ],
+      "sources": {
+        "portfolio": {
+          "title": "SoftBank Vision Fund \u00b7 official portfolio evidence",
+          "url": "https://group.softbank/media/Project/sbg/sbg/pdf/ir/presentations/2025/investor-presentation_q3fy2025_01_en.pdf",
+          "publisher": "SoftBank Vision Fund",
+          "published": "12 Feb 2026 \u00b7 Q3 FY2025 briefing, pages 81\u201382",
+          "kind": "primary",
+          "note": "Investment relationship only. A current company-equity percentage was not verified."
+        }
+      },
+      "companies": [
+        {
+          "id": "lenskart",
+          "name": "Lenskart Solutions",
+          "ticker": "LENSKART",
+          "listing": "Listed equity",
+          "sector": "Eyewear",
+          "relationship": "Venture / growth investment recorded by the investor",
+          "ownership": "Historical SVF2 investment \u00b7 current stake unconfirmed",
+          "ownershipDate": "31 Dec 2025 \u00b7 historical disclosure",
+          "stakePercent": null,
+          "stance": "historical",
+          "summary": "The investor\u2019s December 2025 portfolio presentation documents this investment; subsequent disposals are not reconciled here.",
+          "thesis": "Portfolio evidence establishes the relationship; it does not disclose the investor\u2019s present thesis.",
+          "risks": "Retained ownership and subsequent disposals require a dated shareholding filing.",
+          "sourceIds": [
+            "portfolio"
+          ]
+        },
+        {
+          "id": "meesho",
+          "name": "Meesho",
+          "ticker": "MEESHO",
+          "listing": "Listed equity",
+          "sector": "E-commerce",
+          "relationship": "Venture / growth investment recorded by the investor",
+          "ownership": "Historical SVF2 investment \u00b7 current stake unconfirmed",
+          "ownershipDate": "31 Dec 2025 \u00b7 historical disclosure",
+          "stakePercent": null,
+          "stance": "historical",
+          "summary": "The investor\u2019s December 2025 portfolio presentation documents this investment; subsequent disposals are not reconciled here.",
+          "thesis": "Portfolio evidence establishes the relationship; it does not disclose the investor\u2019s present thesis.",
+          "risks": "Retained ownership and subsequent disposals require a dated shareholding filing.",
+          "sourceIds": [
+            "portfolio"
+          ]
+        }
+      ],
+      "events": [],
+      "report": {
+        "title": "SoftBank Vision Fund \u00b7 India exposure",
+        "summary": "Documented investment relationships in Indian-listed businesses. Current retained stakes remain unconfirmed unless separately disclosed.",
+        "sections": [
+          {
+            "title": "Evidence and ownership",
+            "text": "The official investor material verifies backing. Inclusion does not establish continued ownership or a current percentage.",
+            "sourceIds": [
+              "portfolio"
+            ]
+          }
+        ],
+        "themes": []
+      }
+    }
+  ]
+}

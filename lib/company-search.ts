@@ -9,7 +9,7 @@ export type SearchEntry={id:string;owner:string;value:number|null;measure:"alloc
 export type SearchGroup={id:string;label:string;href:string;entries:SearchEntry[]};
 export type CompanySearchResult={id:string;name:string;symbol:string|null;aliases:string[];groups:SearchGroup[]};
 export type SearchInput={portfolio?:Parameters<typeof allCompanyHoldings>[0];ace?:AceCombinedResult;foreign?:ForeignResearch[];venture?:VentureResearch;research?:{asOf:string;stocks:{name:string;symbol:string;verdict:string;sources?:{checkedOn:string}[]}[]}};
-export const searchSections={funds:{label:"Mutual funds",href:"/"},ace:{label:"Ace investors",href:"/#investors"},foreign:{label:"Foreign investors",href:"/foreign-investors"},venture:{label:"Venture capital",href:"/venture-capital"},research:{label:"AI Insights",href:"/"}};
+export const searchSections={funds:{label:"Mutual funds",href:"/"},ace:{label:"Ace investors",href:"/#investors"},foreign:{label:"Foreign investors",href:"/foreign-investors"},venture:{label:"Venture capital",href:"/foreign-investors?type=venture"},research:{label:"AI Insights",href:"/"}};
 export function searchCompanies(input:SearchInput,query:string,limit=12){
  const companies=new Map<string,CompanySearchResult>();
  const fundRows=input.portfolio?allCompanyHoldings(input.portfolio):[];

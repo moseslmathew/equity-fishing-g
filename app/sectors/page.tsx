@@ -1,7 +1,2 @@
-import SectorFunds from "../sector-funds";
-
-export const dynamic = "force-dynamic";
-
-export default function SectorsPage(){
-  return <SectorFunds/>;
-}
+import {redirect} from "next/navigation";
+export default function SectorsPage(){redirect("/");}

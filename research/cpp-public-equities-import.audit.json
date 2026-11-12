@@ -1,0 +1,2525 @@
+{
+  "sourceUrl": "https://cdn4.cppinvestments.com/wp-content/uploads/2025/05/Foreign-Publicly-Traded-Equity-Holdings_ibfs-Q4F25.html",
+  "sourceFile": "research/cpp-public-equities-import/source-2025-03-31.html",
+  "sourceSha256": "762353ea8eead41f9d2e3eba948e7af6da3d44422d5a41c6bb4d1de0cc68749c",
+  "disclosureDate": "2025-03-31",
+  "checkedAt": "2026-11-11T04:04:43.339Z",
+  "selectedCountryOfExposure": "INDIA",
+  "rowCount": 208,
+  "sharesUnit": "Thousands, as published; not exact absolute shares",
+  "marketValueUnit": "CAD millions, as published; economic exposure may include derivatives",
+  "currentPercentagesInferred": false,
+  "nseDirectory": {
+    "source": "https://nsearchives.nseindia.com/content/equities/EQUITY_L.csv",
+    "checkedAt": "2026-10-20",
+    "matching": "Case, punctuation, ampersand/and and Ltd/Limited equivalence only; no fuzzy identity or rename assumptions",
+    "matchedCount": 174,
+    "unmatchedCount": 34,
+    "matched": [
+      {
+        "sourceName": "ABB India Ltd",
+        "directoryName": "ABB India Limited",
+        "ticker": "ABB",
+        "isin": "INE117A01022"
+      },
+      {
+        "sourceName": "Aditya Birla Capital Ltd",
+        "directoryName": "Aditya Birla Capital Limited",
+        "ticker": "ABCAPITAL",
+        "isin": "INE674K01013"
+      },
+      {
+        "sourceName": "Aditya Birla Fashion and Retail Ltd",
+        "directoryName": "Aditya Birla Fashion and Retail Limited",
+        "ticker": "ABFRL",
+        "isin": "INE647O01011"
+      },
+      {
+        "sourceName": "Alkem Laboratories Ltd",
+        "directoryName": "Alkem Laboratories Limited",
+        "ticker": "ALKEM",
+        "isin": "INE540L01014"
+      },
+      {
+        "sourceName": "Apar Industries Ltd",
+        "directoryName": "Apar Industries Limited",
+        "ticker": "APARINDS",
+        "isin": "INE372A01015"
+      },
+      {
+        "sourceName": "APL Apollo Tubes Ltd",
+        "directoryName": "APL Apollo Tubes Limited",
+        "ticker": "APLAPOLLO",
+        "isin": "INE702C01027"
+      },
+      {
+        "sourceName": "Apollo Hospitals Enterprise Ltd",
+        "directoryName": "Apollo Hospitals Enterprise Limited",
+        "ticker": "APOLLOHOSP",
+        "isin": "INE437A01024"
+      },
+      {
+        "sourceName": "Apollo Tyres Ltd",
+        "directoryName": "Apollo Tyres Limited",
+        "ticker": "APOLLOTYRE",
+        "isin": "INE438A01022"
+      },
+      {
+        "sourceName": "Ashok Leyland Ltd",
+        "directoryName": "Ashok Leyland Limited",
+        "ticker": "ASHOKLEY",
+        "isin": "INE208A01029"
+      },
+      {
+        "sourceName": "Asian Paints Ltd",
+        "directoryName": "Asian Paints Limited",
+        "ticker": "ASIANPAINT",
+        "isin": "INE021A01026"
+      },
+      {
+        "sourceName": "Astral Ltd",
+        "directoryName": "Astral Limited",
+        "ticker": "ASTRAL",
+        "isin": "INE006I01046"
+      },
+      {
+        "sourceName": "AU Small Finance Bank Ltd",
+        "directoryName": "AU Small Finance Bank Limited",
+        "ticker": "AUBANK",
+        "isin": "INE949L01017"
+      },
+      {
+        "sourceName": "Aurobindo Pharma Ltd",
+        "directoryName": "Aurobindo Pharma Limited",
+        "ticker": "AUROPHARMA",
+        "isin": "INE406A01037"
+      },
+      {
+        "sourceName": "Avenue Supermarts Ltd",
+        "directoryName": "Avenue Supermarts Limited",
+        "ticker": "DMART",
+        "isin": "INE192R01011"
+      },
+      {
+        "sourceName": "Axis Bank Ltd",
+        "directoryName": "Axis Bank Limited",
+        "ticker": "AXISBANK",
+        "isin": "INE238A01034"
+      },
+      {
+        "sourceName": "Bajaj Auto Ltd",
+        "directoryName": "Bajaj Auto Limited",
+        "ticker": "BAJAJ-AUTO",
+        "isin": "INE917I01010"
+      },
+      {
+        "sourceName": "Bajaj Finance Ltd",
+        "directoryName": "Bajaj Finance Limited",
+        "ticker": "BAJFINANCE",
+        "isin": "INE296A01032"
+      },
+      {
+        "sourceName": "Bajaj Finserv Ltd",
+        "directoryName": "Bajaj Finserv Limited",
+        "ticker": "BAJAJFINSV",
+        "isin": "INE918I01026"
+      },
+      {
+        "sourceName": "Bajaj Holdings & Investment Ltd",
+        "directoryName": "Bajaj Holdings & Investment Limited",
+        "ticker": "BAJAJHLDNG",
+        "isin": "INE118A01012"
+      },
+      {
+        "sourceName": "Balkrishna Industries Ltd",
+        "directoryName": "Balkrishna Industries Limited",
+        "ticker": "BALKRISIND",
+        "isin": "INE787D01026"
+      },
+      {
+        "sourceName": "Bandhan Bank Ltd",
+        "directoryName": "Bandhan Bank Limited",
+        "ticker": "BANDHANBNK",
+        "isin": "INE545U01014"
+      },
+      {
+        "sourceName": "Bank of Baroda",
+        "directoryName": "Bank of Baroda",
+        "ticker": "BANKBARODA",
+        "isin": "INE028A01039"
+      },
+      {
+        "sourceName": "Bank of India",
+        "directoryName": "Bank of India",
+        "ticker": "BANKINDIA",
+        "isin": "INE084A01016"
+      },
+      {
+        "sourceName": "Bharat Dynamics Ltd",
+        "directoryName": "Bharat Dynamics Limited",
+        "ticker": "BDL",
+        "isin": "INE171Z01026"
+      },
+      {
+        "sourceName": "Bharat Forge Ltd",
+        "directoryName": "Bharat Forge Limited",
+        "ticker": "BHARATFORG",
+        "isin": "INE465A01025"
+      },
+      {
+        "sourceName": "Bharat Heavy Electricals Ltd",
+        "directoryName": "Bharat Heavy Electricals Limited",
+        "ticker": "BHEL",
+        "isin": "INE257A01026"
+      },
+      {
+        "sourceName": "Bharti Airtel Ltd",
+        "directoryName": "Bharti Airtel Limited",
+        "ticker": "BHARTIARTL",
+        "isin": "INE397D01024"
+      },
+      {
+        "sourceName": "Blue Star Ltd",
+        "directoryName": "Blue Star Limited",
+        "ticker": "BLUESTARCO",
+        "isin": "INE472A01039"
+      },
+      {
+        "sourceName": "Bosch Ltd",
+        "directoryName": "Bosch Limited",
+        "ticker": "BOSCHLTD",
+        "isin": "INE323A01026"
+      },
+      {
+        "sourceName": "Britannia Industries Ltd",
+        "directoryName": "Britannia Industries Limited",
+        "ticker": "BRITANNIA",
+        "isin": "INE216A01030"
+      },
+      {
+        "sourceName": "Canara Bank",
+        "directoryName": "Canara Bank",
+        "ticker": "CANBK",
+        "isin": "INE476A01022"
+      },
+      {
+        "sourceName": "CG Power & Industrial Solutions Ltd",
+        "directoryName": "CG Power and Industrial Solutions Limited",
+        "ticker": "CGPOWER",
+        "isin": "INE067A01029"
+      },
+      {
+        "sourceName": "Cochin Shipyard Ltd",
+        "directoryName": "Cochin Shipyard Limited",
+        "ticker": "COCHINSHIP",
+        "isin": "INE704P01025"
+      },
+      {
+        "sourceName": "Coforge Ltd",
+        "directoryName": "Coforge Limited",
+        "ticker": "COFORGE",
+        "isin": "INE591G01025"
+      },
+      {
+        "sourceName": "Colgate-Palmolive India Ltd",
+        "directoryName": "Colgate Palmolive (India) Limited",
+        "ticker": "COLPAL",
+        "isin": "INE259A01022"
+      },
+      {
+        "sourceName": "Coromandel International Ltd",
+        "directoryName": "Coromandel International Limited",
+        "ticker": "COROMANDEL",
+        "isin": "INE169A01031"
+      },
+      {
+        "sourceName": "Cummins India Ltd",
+        "directoryName": "Cummins India Limited",
+        "ticker": "CUMMINSIND",
+        "isin": "INE298A01020"
+      },
+      {
+        "sourceName": "Dabur India Ltd",
+        "directoryName": "Dabur India Limited",
+        "ticker": "DABUR",
+        "isin": "INE016A01026"
+      },
+      {
+        "sourceName": "Dalmia Bharat Ltd",
+        "directoryName": "Dalmia Bharat Limited",
+        "ticker": "DALBHARAT",
+        "isin": "INE00R701025"
+      },
+      {
+        "sourceName": "Deepak Nitrite Ltd",
+        "directoryName": "Deepak Nitrite Limited",
+        "ticker": "DEEPAKNTR",
+        "isin": "INE288B01029"
+      },
+      {
+        "sourceName": "Delhivery Ltd",
+        "directoryName": "Delhivery Limited",
+        "ticker": "DELHIVERY",
+        "isin": "INE148O01028"
+      },
+      {
+        "sourceName": "Divi's Laboratories Ltd",
+        "directoryName": "Divi's Laboratories Limited",
+        "ticker": "DIVISLAB",
+        "isin": "INE361B01024"
+      },
+      {
+        "sourceName": "Dixon Technologies India Ltd",
+        "directoryName": "Dixon Technologies (India) Limited",
+        "ticker": "DIXON",
+        "isin": "INE935N01020"
+      },
+      {
+        "sourceName": "DLF Ltd",
+        "directoryName": "DLF Limited",
+        "ticker": "DLF",
+        "isin": "INE271C01023"
+      },
+      {
+        "sourceName": "Dr Reddy's Laboratories Ltd",
+        "directoryName": "Dr. Reddy's Laboratories Limited",
+        "ticker": "DRREDDY",
+        "isin": "INE089A01031"
+      },
+      {
+        "sourceName": "Eicher Motors Ltd",
+        "directoryName": "Eicher Motors Limited",
+        "ticker": "EICHERMOT",
+        "isin": "INE066A01021"
+      },
+      {
+        "sourceName": "Escorts Kubota Ltd",
+        "directoryName": "Escorts Kubota Limited",
+        "ticker": "ESCORTS",
+        "isin": "INE042A01014"
+      },
+      {
+        "sourceName": "Eternal Ltd",
+        "directoryName": "ETERNAL LIMITED",
+        "ticker": "ETERNAL",
+        "isin": "INE758T01015"
+      },
+      {
+        "sourceName": "Exide Industries Ltd",
+        "directoryName": "Exide Industries Limited",
+        "ticker": "EXIDEIND",
+        "isin": "INE302A01020"
+      },
+      {
+        "sourceName": "Five-Star Business Finance Ltd",
+        "directoryName": "Five-Star Business Finance Limited",
+        "ticker": "FIVESTAR",
+        "isin": "INE128S01021"
+      },
+      {
+        "sourceName": "Fortis Healthcare Ltd",
+        "directoryName": "Fortis Healthcare Limited",
+        "ticker": "FORTIS",
+        "isin": "INE061F01013"
+      },
+      {
+        "sourceName": "FSN E-Commerce Ventures Ltd",
+        "directoryName": "FSN E-Commerce Ventures Limited",
+        "ticker": "NYKAA",
+        "isin": "INE388Y01029"
+      },
+      {
+        "sourceName": "GAIL India Ltd",
+        "directoryName": "GAIL (India) Limited",
+        "ticker": "GAIL",
+        "isin": "INE129A01019"
+      },
+      {
+        "sourceName": "GE Vernova T&D India Ltd",
+        "directoryName": "GE Vernova T&D India Limited",
+        "ticker": "GVT&D",
+        "isin": "INE200A01026"
+      },
+      {
+        "sourceName": "Gland Pharma Ltd",
+        "directoryName": "Gland Pharma Limited",
+        "ticker": "GLAND",
+        "isin": "INE068V01023"
+      },
+      {
+        "sourceName": "GlaxoSmithKline Pharmaceuticals Ltd",
+        "directoryName": "GlaxoSmithKline Pharmaceuticals Limited",
+        "ticker": "GLAXO",
+        "isin": "INE159A01016"
+      },
+      {
+        "sourceName": "Glenmark Pharmaceuticals Ltd",
+        "directoryName": "Glenmark Pharmaceuticals Limited",
+        "ticker": "GLENMARK",
+        "isin": "INE935A01035"
+      },
+      {
+        "sourceName": "Godrej Consumer Products Ltd",
+        "directoryName": "Godrej Consumer Products Limited",
+        "ticker": "GODREJCP",
+        "isin": "INE102D01028"
+      },
+      {
+        "sourceName": "Godrej Industries Ltd",
+        "directoryName": "Godrej Industries Limited",
+        "ticker": "GODREJIND",
+        "isin": "INE233A01035"
+      },
+      {
+        "sourceName": "Godrej Properties Ltd",
+        "directoryName": "Godrej Properties Limited",
+        "ticker": "GODREJPROP",
+        "isin": "INE484J01027"
+      },
+      {
+        "sourceName": "Grasim Industries Ltd",
+        "directoryName": "Grasim Industries Limited",
+        "ticker": "GRASIM",
+        "isin": "INE047A01021"
+      },
+      {
+        "sourceName": "Gujarat Fluorochemicals Ltd",
+        "directoryName": "Gujarat Fluorochemicals Limited",
+        "ticker": "FLUOROCHEM",
+        "isin": "INE09N301011"
+      },
+      {
+        "sourceName": "Havells India Ltd",
+        "directoryName": "Havells India Limited",
+        "ticker": "HAVELLS",
+        "isin": "INE176B01034"
+      },
+      {
+        "sourceName": "HCL Technologies Ltd",
+        "directoryName": "HCL Technologies Limited",
+        "ticker": "HCLTECH",
+        "isin": "INE860A01027"
+      },
+      {
+        "sourceName": "HDFC Bank Ltd",
+        "directoryName": "HDFC Bank Limited",
+        "ticker": "HDFCBANK",
+        "isin": "INE040A01034"
+      },
+      {
+        "sourceName": "Hero MotoCorp Ltd",
+        "directoryName": "Hero MotoCorp Limited",
+        "ticker": "HEROMOTOCO",
+        "isin": "INE158A01026"
+      },
+      {
+        "sourceName": "Hindalco Industries Ltd",
+        "directoryName": "Hindalco Industries Limited",
+        "ticker": "HINDALCO",
+        "isin": "INE038A01020"
+      },
+      {
+        "sourceName": "Hindustan Aeronautics Ltd",
+        "directoryName": "Hindustan Aeronautics Limited",
+        "ticker": "HAL",
+        "isin": "INE066F01020"
+      },
+      {
+        "sourceName": "Hindustan Unilever Ltd",
+        "directoryName": "Hindustan Unilever Limited",
+        "ticker": "HINDUNILVR",
+        "isin": "INE030A01027"
+      },
+      {
+        "sourceName": "Hitachi Energy India Ltd",
+        "directoryName": "Hitachi Energy India Limited",
+        "ticker": "POWERINDIA",
+        "isin": "INE07Y701011"
+      },
+      {
+        "sourceName": "Hyundai Motor India Ltd",
+        "directoryName": "Hyundai Motor India Limited",
+        "ticker": "HYUNDAI",
+        "isin": "INE0V6F01027"
+      },
+      {
+        "sourceName": "ICICI Bank Ltd",
+        "directoryName": "ICICI Bank Limited",
+        "ticker": "ICICIBANK",
+        "isin": "INE090A01021"
+      },
+      {
+        "sourceName": "IDFC First Bank Ltd",
+        "directoryName": "IDFC First Bank Limited",
+        "ticker": "IDFCFIRSTB",
+        "isin": "INE092T01019"
+      },
+      {
+        "sourceName": "Indian Bank",
+        "directoryName": "Indian Bank",
+        "ticker": "INDIANB",
+        "isin": "INE562A01011"
+      },
+      {
+        "sourceName": "Indian Renewable Energy Development Agency Ltd",
+        "directoryName": "Indian Renewable Energy Development Agency Limited",
+        "ticker": "IREDA",
+        "isin": "INE202E01016"
+      },
+      {
+        "sourceName": "Indraprastha Gas Ltd",
+        "directoryName": "Indraprastha Gas Limited",
+        "ticker": "IGL",
+        "isin": "INE203G01027"
+      },
+      {
+        "sourceName": "Indus Towers Ltd",
+        "directoryName": "Indus Towers Limited",
+        "ticker": "INDUSTOWER",
+        "isin": "INE121J01017"
+      },
+      {
+        "sourceName": "IndusInd Bank Ltd",
+        "directoryName": "IndusInd Bank Limited",
+        "ticker": "INDUSINDBK",
+        "isin": "INE095A01012"
+      },
+      {
+        "sourceName": "Info Edge India Ltd",
+        "directoryName": "Info Edge (India) Limited",
+        "ticker": "NAUKRI",
+        "isin": "INE663F01032"
+      },
+      {
+        "sourceName": "Infosys Ltd",
+        "directoryName": "Infosys Limited",
+        "ticker": "INFY",
+        "isin": "INE009A01021"
+      },
+      {
+        "sourceName": "InterGlobe Aviation Ltd",
+        "directoryName": "InterGlobe Aviation Limited",
+        "ticker": "INDIGO",
+        "isin": "INE646L01027"
+      },
+      {
+        "sourceName": "Ipca Laboratories Ltd",
+        "directoryName": "IPCA Laboratories Limited",
+        "ticker": "IPCALAB",
+        "isin": "INE571A01038"
+      },
+      {
+        "sourceName": "ITC Ltd",
+        "directoryName": "ITC Limited",
+        "ticker": "ITC",
+        "isin": "INE154A01025"
+      },
+      {
+        "sourceName": "Jio Financial Services Ltd",
+        "directoryName": "Jio Financial Services Limited",
+        "ticker": "JIOFIN",
+        "isin": "INE758E01017"
+      },
+      {
+        "sourceName": "JK Cement Ltd",
+        "directoryName": "JK Cement Limited",
+        "ticker": "JKCEMENT",
+        "isin": "INE823G01014"
+      },
+      {
+        "sourceName": "JSW Energy Ltd",
+        "directoryName": "JSW Energy Limited",
+        "ticker": "JSWENERGY",
+        "isin": "INE121E01018"
+      },
+      {
+        "sourceName": "JSW Infrastructure Ltd",
+        "directoryName": "JSW Infrastructure Limited",
+        "ticker": "JSWINFRA",
+        "isin": "INE880J01026"
+      },
+      {
+        "sourceName": "JSW Steel Ltd",
+        "directoryName": "JSW Steel Limited",
+        "ticker": "JSWSTEEL",
+        "isin": "INE019A01038"
+      },
+      {
+        "sourceName": "Jubilant Foodworks Ltd",
+        "directoryName": "Jubilant Foodworks Limited",
+        "ticker": "JUBLFOOD",
+        "isin": "INE797F01020"
+      },
+      {
+        "sourceName": "Kaynes Technology India Ltd",
+        "directoryName": "Kaynes Technology India Limited",
+        "ticker": "KAYNES",
+        "isin": "INE918Z01012"
+      },
+      {
+        "sourceName": "KEI Industries Ltd",
+        "directoryName": "KEI Industries Limited",
+        "ticker": "KEI",
+        "isin": "INE878B01027"
+      },
+      {
+        "sourceName": "Kotak Mahindra Bank Ltd",
+        "directoryName": "Kotak Mahindra Bank Limited",
+        "ticker": "KOTAKBANK",
+        "isin": "INE237A01036"
+      },
+      {
+        "sourceName": "KPIT Technologies Ltd",
+        "directoryName": "KPIT Technologies Limited",
+        "ticker": "KPITTECH",
+        "isin": "INE04I401011"
+      },
+      {
+        "sourceName": "L&T Finance Ltd",
+        "directoryName": "L&T Finance Limited",
+        "ticker": "LTF",
+        "isin": "INE498L01015"
+      },
+      {
+        "sourceName": "L&T Technology Services Ltd",
+        "directoryName": "L&T Technology Services Limited",
+        "ticker": "LTTS",
+        "isin": "INE010V01017"
+      },
+      {
+        "sourceName": "Larsen & Toubro Ltd",
+        "directoryName": "Larsen & Toubro Limited",
+        "ticker": "LT",
+        "isin": "INE018A01030"
+      },
+      {
+        "sourceName": "LIC Housing Finance Ltd",
+        "directoryName": "LIC Housing Finance Limited",
+        "ticker": "LICHSGFIN",
+        "isin": "INE115A01026"
+      },
+      {
+        "sourceName": "Linde India Ltd",
+        "directoryName": "Linde India Limited",
+        "ticker": "LINDEINDIA",
+        "isin": "INE473A01011"
+      },
+      {
+        "sourceName": "Lupin Ltd",
+        "directoryName": "Lupin Limited",
+        "ticker": "LUPIN",
+        "isin": "INE326A01037"
+      },
+      {
+        "sourceName": "Mahindra & Mahindra Financial Services Ltd",
+        "directoryName": "Mahindra & Mahindra Financial Services Limited",
+        "ticker": "M&MFIN",
+        "isin": "INE774D01024"
+      },
+      {
+        "sourceName": "Mahindra & Mahindra Ltd",
+        "directoryName": "Mahindra & Mahindra Limited",
+        "ticker": "M&M",
+        "isin": "INE101A01026"
+      },
+      {
+        "sourceName": "Mankind Pharma Ltd",
+        "directoryName": "Mankind Pharma Limited",
+        "ticker": "MANKIND",
+        "isin": "INE634S01028"
+      },
+      {
+        "sourceName": "Marico Ltd",
+        "directoryName": "Marico Limited",
+        "ticker": "MARICO",
+        "isin": "INE196A01026"
+      },
+      {
+        "sourceName": "Maruti Suzuki India Ltd",
+        "directoryName": "Maruti Suzuki India Limited",
+        "ticker": "MARUTI",
+        "isin": "INE585B01010"
+      },
+      {
+        "sourceName": "Max Financial Services Ltd",
+        "directoryName": "Max Financial Services Limited",
+        "ticker": "MFSL",
+        "isin": "INE180A01020"
+      },
+      {
+        "sourceName": "Max Healthcare Institute Ltd",
+        "directoryName": "Max Healthcare Institute Limited",
+        "ticker": "MAXHEALTH",
+        "isin": "INE027H01010"
+      },
+      {
+        "sourceName": "Mazagon Dock Shipbuilders Ltd",
+        "directoryName": "Mazagon Dock Shipbuilders Limited",
+        "ticker": "MAZDOCK",
+        "isin": "INE249Z01020"
+      },
+      {
+        "sourceName": "Motilal Oswal Financial Services Ltd",
+        "directoryName": "Motilal Oswal Financial Services Limited",
+        "ticker": "MOTILALOFS",
+        "isin": "INE338I01027"
+      },
+      {
+        "sourceName": "Mphasis Ltd",
+        "directoryName": "MphasiS Limited",
+        "ticker": "MPHASIS",
+        "isin": "INE356A01018"
+      },
+      {
+        "sourceName": "MRF Ltd",
+        "directoryName": "MRF Limited",
+        "ticker": "MRF",
+        "isin": "INE883A01011"
+      },
+      {
+        "sourceName": "Muthoot Finance Ltd",
+        "directoryName": "Muthoot Finance Limited",
+        "ticker": "MUTHOOTFIN",
+        "isin": "INE414G01012"
+      },
+      {
+        "sourceName": "NBCC India Ltd",
+        "directoryName": "NBCC (India) Limited",
+        "ticker": "NBCC",
+        "isin": "INE095N01031"
+      },
+      {
+        "sourceName": "Nestle India Ltd",
+        "directoryName": "Nestle India Limited",
+        "ticker": "NESTLEIND",
+        "isin": "INE239A01024"
+      },
+      {
+        "sourceName": "NHPC Ltd",
+        "directoryName": "NHPC Limited",
+        "ticker": "NHPC",
+        "isin": "INE848E01016"
+      },
+      {
+        "sourceName": "Nippon Life India Asset Management Ltd",
+        "directoryName": "Nippon Life India Asset Management Limited",
+        "ticker": "NAM-INDIA",
+        "isin": "INE298J01013"
+      },
+      {
+        "sourceName": "NMDC Ltd",
+        "directoryName": "NMDC Limited",
+        "ticker": "NMDC",
+        "isin": "INE584A01023"
+      },
+      {
+        "sourceName": "Oberoi Realty Ltd",
+        "directoryName": "Oberoi Realty Limited",
+        "ticker": "OBEROIRLTY",
+        "isin": "INE093I01010"
+      },
+      {
+        "sourceName": "Oil India Ltd",
+        "directoryName": "Oil India Limited",
+        "ticker": "OIL",
+        "isin": "INE274J01014"
+      },
+      {
+        "sourceName": "One 97 Communications Ltd",
+        "directoryName": "One 97 Communications Limited",
+        "ticker": "PAYTM",
+        "isin": "INE982J01020"
+      },
+      {
+        "sourceName": "Oracle Financial Services Software Ltd",
+        "directoryName": "Oracle Financial Services Software Limited",
+        "ticker": "OFSS",
+        "isin": "INE881D01027"
+      },
+      {
+        "sourceName": "Page Industries Ltd",
+        "directoryName": "Page Industries Limited",
+        "ticker": "PAGEIND",
+        "isin": "INE761H01022"
+      },
+      {
+        "sourceName": "Patanjali Foods Ltd",
+        "directoryName": "Patanjali Foods Limited",
+        "ticker": "PATANJALI",
+        "isin": "INE619A01035"
+      },
+      {
+        "sourceName": "PB Fintech Ltd",
+        "directoryName": "PB Fintech Limited",
+        "ticker": "POLICYBZR",
+        "isin": "INE417T01026"
+      },
+      {
+        "sourceName": "Persistent Systems Ltd",
+        "directoryName": "Persistent Systems Limited",
+        "ticker": "PERSISTENT",
+        "isin": "INE262H01021"
+      },
+      {
+        "sourceName": "Petronet LNG Ltd",
+        "directoryName": "Petronet LNG Limited",
+        "ticker": "PETRONET",
+        "isin": "INE347G01014"
+      },
+      {
+        "sourceName": "PI Industries Ltd",
+        "directoryName": "PI Industries Limited",
+        "ticker": "PIIND",
+        "isin": "INE603J01030"
+      },
+      {
+        "sourceName": "Pidilite Industries Ltd",
+        "directoryName": "Pidilite Industries Limited",
+        "ticker": "PIDILITIND",
+        "isin": "INE318A01026"
+      },
+      {
+        "sourceName": "Polycab India Ltd",
+        "directoryName": "Polycab India Limited",
+        "ticker": "POLYCAB",
+        "isin": "INE455K01017"
+      },
+      {
+        "sourceName": "Poonawalla Fincorp Ltd",
+        "directoryName": "Poonawalla Fincorp Limited",
+        "ticker": "POONAWALLA",
+        "isin": "INE511C01022"
+      },
+      {
+        "sourceName": "Prestige Estates Projects Ltd",
+        "directoryName": "Prestige Estates Projects Limited",
+        "ticker": "PRESTIGE",
+        "isin": "INE811K01011"
+      },
+      {
+        "sourceName": "Procter & Gamble Hygiene & Health Care Ltd",
+        "directoryName": "Procter & Gamble Hygiene and Health Care Limited",
+        "ticker": "PGHH",
+        "isin": "INE179A01014"
+      },
+      {
+        "sourceName": "Punjab National Bank",
+        "directoryName": "Punjab National Bank",
+        "ticker": "PNB",
+        "isin": "INE160A01022"
+      },
+      {
+        "sourceName": "Rail Vikas Nigam Ltd",
+        "directoryName": "Rail Vikas Nigam Limited",
+        "ticker": "RVNL",
+        "isin": "INE415G01027"
+      },
+      {
+        "sourceName": "REC Ltd",
+        "directoryName": "REC Limited",
+        "ticker": "RECLTD",
+        "isin": "INE020B01018"
+      },
+      {
+        "sourceName": "Reliance Industries Ltd",
+        "directoryName": "Reliance Industries Limited",
+        "ticker": "RELIANCE",
+        "isin": "INE002A01018"
+      },
+      {
+        "sourceName": "Samvardhana Motherson International Ltd",
+        "directoryName": "Samvardhana Motherson International Limited",
+        "ticker": "MOTHERSON",
+        "isin": "INE775A01035"
+      },
+      {
+        "sourceName": "SBI Cards & Payment Services Ltd",
+        "directoryName": "SBI Cards and Payment Services Limited",
+        "ticker": "SBICARD",
+        "isin": "INE018E01016"
+      },
+      {
+        "sourceName": "Shree Cement Ltd",
+        "directoryName": "SHREE CEMENT LIMITED",
+        "ticker": "SHREECEM",
+        "isin": "INE070A01015"
+      },
+      {
+        "sourceName": "Shriram Finance Ltd",
+        "directoryName": "Shriram Finance Limited",
+        "ticker": "SHRIRAMFIN",
+        "isin": "INE721A01047"
+      },
+      {
+        "sourceName": "Siemens Ltd",
+        "directoryName": "Siemens Limited",
+        "ticker": "SIEMENS",
+        "isin": "INE003A01024"
+      },
+      {
+        "sourceName": "SJVN Ltd",
+        "directoryName": "SJVN Limited",
+        "ticker": "SJVN",
+        "isin": "INE002L01015"
+      },
+      {
+        "sourceName": "Solar Industries India Ltd",
+        "directoryName": "Solar Industries India Limited",
+        "ticker": "SOLARINDS",
+        "isin": "INE343H01029"
+      },
+      {
+        "sourceName": "Sona Blw Precision Forgings Ltd",
+        "directoryName": "Sona BLW Precision Forgings Limited",
+        "ticker": "SONACOMS",
+        "isin": "INE073K01018"
+      },
+      {
+        "sourceName": "SRF Ltd",
+        "directoryName": "SRF Limited",
+        "ticker": "SRF",
+        "isin": "INE647A01010"
+      },
+      {
+        "sourceName": "State Bank of India",
+        "directoryName": "State Bank of India",
+        "ticker": "SBIN",
+        "isin": "INE062A01020"
+      },
+      {
+        "sourceName": "Steel Authority of India Ltd",
+        "directoryName": "Steel Authority of India Limited",
+        "ticker": "SAIL",
+        "isin": "INE114A01011"
+      },
+      {
+        "sourceName": "Sun Pharmaceutical Industries Ltd",
+        "directoryName": "Sun Pharmaceutical Industries Limited",
+        "ticker": "SUNPHARMA",
+        "isin": "INE044A01036"
+      },
+      {
+        "sourceName": "Sundaram Finance Ltd",
+        "directoryName": "Sundaram Finance Limited",
+        "ticker": "SUNDARMFIN",
+        "isin": "INE660A01013"
+      },
+      {
+        "sourceName": "Supreme Industries Ltd",
+        "directoryName": "Supreme Industries Limited",
+        "ticker": "SUPREMEIND",
+        "isin": "INE195A01028"
+      },
+      {
+        "sourceName": "Suzlon Energy Ltd",
+        "directoryName": "Suzlon Energy Limited",
+        "ticker": "SUZLON",
+        "isin": "INE040H01021"
+      },
+      {
+        "sourceName": "Tata Chemicals Ltd",
+        "directoryName": "Tata Chemicals Limited",
+        "ticker": "TATACHEM",
+        "isin": "INE092A01019"
+      },
+      {
+        "sourceName": "Tata Communications Ltd",
+        "directoryName": "Tata Communications Limited",
+        "ticker": "TATACOMM",
+        "isin": "INE151A01013"
+      },
+      {
+        "sourceName": "Tata Consultancy Services Ltd",
+        "directoryName": "Tata Consultancy Services Limited",
+        "ticker": "TCS",
+        "isin": "INE467B01029"
+      },
+      {
+        "sourceName": "Tata Consumer Products Ltd",
+        "directoryName": "TATA CONSUMER PRODUCTS LIMITED",
+        "ticker": "TATACONSUM",
+        "isin": "INE192A01025"
+      },
+      {
+        "sourceName": "Tata Elxsi Ltd",
+        "directoryName": "Tata Elxsi Limited",
+        "ticker": "TATAELXSI",
+        "isin": "INE670A01012"
+      },
+      {
+        "sourceName": "Tata Motors Ltd",
+        "directoryName": "Tata Motors Limited",
+        "ticker": "TMCV",
+        "isin": "INE1TAE01010"
+      },
+      {
+        "sourceName": "Tata Steel Ltd",
+        "directoryName": "Tata Steel Limited",
+        "ticker": "TATASTEEL",
+        "isin": "INE081A01020"
+      },
+      {
+        "sourceName": "Tata Technologies Ltd",
+        "directoryName": "Tata Technologies Limited",
+        "ticker": "TATATECH",
+        "isin": "INE142M01025"
+      },
+      {
+        "sourceName": "Tech Mahindra Ltd",
+        "directoryName": "Tech Mahindra Limited",
+        "ticker": "TECHM",
+        "isin": "INE669C01036"
+      },
+      {
+        "sourceName": "Timken India Ltd",
+        "directoryName": "Timken India Limited",
+        "ticker": "TIMKEN",
+        "isin": "INE325A01013"
+      },
+      {
+        "sourceName": "Torrent Pharmaceuticals Ltd",
+        "directoryName": "Torrent Pharmaceuticals Limited",
+        "ticker": "TORNTPHARM",
+        "isin": "INE685A01028"
+      },
+      {
+        "sourceName": "Trent Ltd",
+        "directoryName": "Trent Limited",
+        "ticker": "TRENT",
+        "isin": "INE849A01020"
+      },
+      {
+        "sourceName": "Tube Investments of India Ltd",
+        "directoryName": "Tube Investments of India Limited",
+        "ticker": "TIINDIA",
+        "isin": "INE974X01010"
+      },
+      {
+        "sourceName": "UltraTech Cement Ltd",
+        "directoryName": "UltraTech Cement Limited",
+        "ticker": "ULTRACEMCO",
+        "isin": "INE481G01011"
+      },
+      {
+        "sourceName": "United Breweries Ltd",
+        "directoryName": "United Breweries Limited",
+        "ticker": "UBL",
+        "isin": "INE686F01025"
+      },
+      {
+        "sourceName": "United Spirits Ltd",
+        "directoryName": "United Spirits Limited",
+        "ticker": "UNITDSPR",
+        "isin": "INE854D01024"
+      },
+      {
+        "sourceName": "UNO Minda Ltd",
+        "directoryName": "UNO Minda Limited",
+        "ticker": "UNOMINDA",
+        "isin": "INE405E01023"
+      },
+      {
+        "sourceName": "UPL Ltd",
+        "directoryName": "UPL Limited",
+        "ticker": "UPL",
+        "isin": "INE628A01036"
+      },
+      {
+        "sourceName": "Varun Beverages Ltd",
+        "directoryName": "Varun Beverages Limited",
+        "ticker": "VBL",
+        "isin": "INE200M01039"
+      },
+      {
+        "sourceName": "Vodafone Idea Ltd",
+        "directoryName": "Vodafone Idea Limited",
+        "ticker": "IDEA",
+        "isin": "INE669E01016"
+      },
+      {
+        "sourceName": "Voltas Ltd",
+        "directoryName": "Voltas Limited",
+        "ticker": "VOLTAS",
+        "isin": "INE226A01021"
+      },
+      {
+        "sourceName": "Wipro Ltd",
+        "directoryName": "Wipro Limited",
+        "ticker": "WIPRO",
+        "isin": "INE075A01022"
+      },
+      {
+        "sourceName": "Yes Bank Ltd",
+        "directoryName": "Yes Bank Limited",
+        "ticker": "YESBANK",
+        "isin": "INE528G01035"
+      },
+      {
+        "sourceName": "Zydus Lifesciences Ltd",
+        "directoryName": "Zydus Lifesciences Limited",
+        "ticker": "ZYDUSLIFE",
+        "isin": "INE010B01027"
+      }
+    ],
+    "unmatched": [
+      "Berger Paints India Ltd",
+      "Bharat Petroleum Corp Ltd",
+      "Cholamandalam Investment and Finance Co Ltd",
+      "Cipla Ltd/India",
+      "Container Corp Of India Ltd",
+      "Federal Bank Ltd",
+      "Gujarat Gas Ltd",
+      "HDFC Asset Management Co Ltd",
+      "HDFC Life Insurance Co Ltd",
+      "Hindustan Petroleum Corp Ltd",
+      "Housing & Urban Development Corp Ltd",
+      "ICICI Lombard General Insurance Co Ltd",
+      "ICICI Prudential Life Insurance Co Ltd",
+      "Indian Hotels Co Ltd/The",
+      "Indian Oil Corp Ltd",
+      "Indian Railway Catering & Tourism Corp Ltd",
+      "Indian Railway Finance Corp Ltd",
+      "Jindal Steel & Power Ltd",
+      "Life Insurance Corp of India",
+      "LTIMindtree Ltd",
+      "Macrotech Developers Ltd",
+      "MakeMyTrip Ltd",
+      "National Aluminium Co Ltd",
+      "Piramal Enterprises Ltd",
+      "Power Finance Corp Ltd",
+      "Power Grid Corp of India Ltd",
+      "ReNew Energy Global PLC",
+      "SBI Life Insurance Co Ltd",
+      "Tata Investment Corp Ltd",
+      "Tata Power Co Ltd/The",
+      "Titan Co Ltd",
+      "TVS Motor Co Ltd",
+      "Union Bank of India Ltd",
+      "WNS Holdings Ltd"
+    ]
+  },
+  "records": [
+    {
+      "name": "ABB India Ltd",
+      "reportedSharesThousands": 175,
+      "reportedMarketValueCadMillions": 16,
+      "countryOfExposure": "INDIA",
+      "ticker": "ABB"
+    },
+    {
+      "name": "Aditya Birla Capital Ltd",
+      "reportedSharesThousands": 2435,
+      "reportedMarketValueCadMillions": 8,
+      "countryOfExposure": "INDIA",
+      "ticker": "ABCAPITAL"
+    },
+    {
+      "name": "Aditya Birla Fashion and Retail Ltd",
+      "reportedSharesThousands": 1323,
+      "reportedMarketValueCadMillions": 6,
+      "countryOfExposure": "INDIA",
+      "ticker": "ABFRL"
+    },
+    {
+      "name": "Alkem Laboratories Ltd",
+      "reportedSharesThousands": 98,
+      "reportedMarketValueCadMillions": 8,
+      "countryOfExposure": "INDIA",
+      "ticker": "ALKEM"
+    },
+    {
+      "name": "Apar Industries Ltd",
+      "reportedSharesThousands": 80,
+      "reportedMarketValueCadMillions": 7,
+      "countryOfExposure": "INDIA",
+      "ticker": "APARINDS"
+    },
+    {
+      "name": "APL Apollo Tubes Ltd",
+      "reportedSharesThousands": 549,
+      "reportedMarketValueCadMillions": 14,
+      "countryOfExposure": "INDIA",
+      "ticker": "APLAPOLLO"
+    },
+    {
+      "name": "Apollo Hospitals Enterprise Ltd",
+      "reportedSharesThousands": 248,
+      "reportedMarketValueCadMillions": 28,
+      "countryOfExposure": "INDIA",
+      "ticker": "APOLLOHOSP"
+    },
+    {
+      "name": "Apollo Tyres Ltd",
+      "reportedSharesThousands": 898,
+      "reportedMarketValueCadMillions": 6,
+      "countryOfExposure": "INDIA",
+      "ticker": "APOLLOTYRE"
+    },
+    {
+      "name": "Ashok Leyland Ltd",
+      "reportedSharesThousands": 4712,
+      "reportedMarketValueCadMillions": 16,
+      "countryOfExposure": "INDIA",
+      "ticker": "ASHOKLEY"
+    },
+    {
+      "name": "Asian Paints Ltd",
+      "reportedSharesThousands": 163,
+      "reportedMarketValueCadMillions": 6,
+      "countryOfExposure": "INDIA",
+      "ticker": "ASIANPAINT"
+    },
+    {
+      "name": "Astral Ltd",
+      "reportedSharesThousands": 377,
+      "reportedMarketValueCadMillions": 8,
+      "countryOfExposure": "INDIA",
+      "ticker": "ASTRAL"
+    },
+    {
+      "name": "AU Small Finance Bank Ltd",
+      "reportedSharesThousands": 879,
+      "reportedMarketValueCadMillions": 8,
+      "countryOfExposure": "INDIA",
+      "ticker": "AUBANK"
+    },
+    {
+      "name": "Aurobindo Pharma Ltd",
+      "reportedSharesThousands": 713,
+      "reportedMarketValueCadMillions": 14,
+      "countryOfExposure": "INDIA",
+      "ticker": "AUROPHARMA"
+    },
+    {
+      "name": "Avenue Supermarts Ltd",
+      "reportedSharesThousands": 310,
+      "reportedMarketValueCadMillions": 21,
+      "countryOfExposure": "INDIA",
+      "ticker": "DMART"
+    },
+    {
+      "name": "Axis Bank Ltd",
+      "reportedSharesThousands": 5271,
+      "reportedMarketValueCadMillions": 98,
+      "countryOfExposure": "INDIA",
+      "ticker": "AXISBANK"
+    },
+    {
+      "name": "Bajaj Auto Ltd",
+      "reportedSharesThousands": 159,
+      "reportedMarketValueCadMillions": 21,
+      "countryOfExposure": "INDIA",
+      "ticker": "BAJAJ-AUTO"
+    },
+    {
+      "name": "Bajaj Finance Ltd",
+      "reportedSharesThousands": 672,
+      "reportedMarketValueCadMillions": 101,
+      "countryOfExposure": "INDIA",
+      "ticker": "BAJFINANCE"
+    },
+    {
+      "name": "Bajaj Finserv Ltd",
+      "reportedSharesThousands": 925,
+      "reportedMarketValueCadMillions": 31,
+      "countryOfExposure": "INDIA",
+      "ticker": "BAJAJFINSV"
+    },
+    {
+      "name": "Bajaj Holdings & Investment Ltd",
+      "reportedSharesThousands": 64,
+      "reportedMarketValueCadMillions": 14,
+      "countryOfExposure": "INDIA",
+      "ticker": "BAJAJHLDNG"
+    },
+    {
+      "name": "Balkrishna Industries Ltd",
+      "reportedSharesThousands": 174,
+      "reportedMarketValueCadMillions": 7,
+      "countryOfExposure": "INDIA",
+      "ticker": "BALKRISIND"
+    },
+    {
+      "name": "Bandhan Bank Ltd",
+      "reportedSharesThousands": 3051,
+      "reportedMarketValueCadMillions": 8,
+      "countryOfExposure": "INDIA",
+      "ticker": "BANDHANBNK"
+    },
+    {
+      "name": "Bank of Baroda",
+      "reportedSharesThousands": 2497,
+      "reportedMarketValueCadMillions": 10,
+      "countryOfExposure": "INDIA",
+      "ticker": "BANKBARODA"
+    },
+    {
+      "name": "Bank of India",
+      "reportedSharesThousands": 3519,
+      "reportedMarketValueCadMillions": 6,
+      "countryOfExposure": "INDIA",
+      "ticker": "BANKINDIA"
+    },
+    {
+      "name": "Berger Paints India Ltd",
+      "reportedSharesThousands": 872,
+      "reportedMarketValueCadMillions": 7,
+      "countryOfExposure": "INDIA"
+    },
+    {
+      "name": "Bharat Dynamics Ltd",
+      "reportedSharesThousands": 436,
+      "reportedMarketValueCadMillions": 9,
+      "countryOfExposure": "INDIA",
+      "ticker": "BDL"
+    },
+    {
+      "name": "Bharat Forge Ltd",
+      "reportedSharesThousands": 596,
+      "reportedMarketValueCadMillions": 12,
+      "countryOfExposure": "INDIA",
+      "ticker": "BHARATFORG"
+    },
+    {
+      "name": "Bharat Heavy Electricals Ltd",
+      "reportedSharesThousands": 4614,
+      "reportedMarketValueCadMillions": 17,
+      "countryOfExposure": "INDIA",
+      "ticker": "BHEL"
+    },
+    {
+      "name": "Bharat Petroleum Corp Ltd",
+      "reportedSharesThousands": 4249,
+      "reportedMarketValueCadMillions": 20,
+      "countryOfExposure": "INDIA"
+    },
+    {
+      "name": "Bharti Airtel Ltd",
+      "reportedSharesThousands": 5722,
+      "reportedMarketValueCadMillions": 167,
+      "countryOfExposure": "INDIA",
+      "ticker": "BHARTIARTL"
+    },
+    {
+      "name": "Blue Star Ltd",
+      "reportedSharesThousands": 505,
+      "reportedMarketValueCadMillions": 18,
+      "countryOfExposure": "INDIA",
+      "ticker": "BLUESTARCO"
+    },
+    {
+      "name": "Bosch Ltd",
+      "reportedSharesThousands": 19,
+      "reportedMarketValueCadMillions": 9,
+      "countryOfExposure": "INDIA",
+      "ticker": "BOSCHLTD"
+    },
+    {
+      "name": "Britannia Industries Ltd",
+      "reportedSharesThousands": 268,
+      "reportedMarketValueCadMillions": 22,
+      "countryOfExposure": "INDIA",
+      "ticker": "BRITANNIA"
+    },
+    {
+      "name": "Canara Bank",
+      "reportedSharesThousands": 4376,
+      "reportedMarketValueCadMillions": 7,
+      "countryOfExposure": "INDIA",
+      "ticker": "CANBK"
+    },
+    {
+      "name": "CG Power & Industrial Solutions Ltd",
+      "reportedSharesThousands": 2137,
+      "reportedMarketValueCadMillions": 23,
+      "countryOfExposure": "INDIA",
+      "ticker": "CGPOWER"
+    },
+    {
+      "name": "Cholamandalam Investment and Finance Co Ltd",
+      "reportedSharesThousands": 1013,
+      "reportedMarketValueCadMillions": 26,
+      "countryOfExposure": "INDIA"
+    },
+    {
+      "name": "Cipla Ltd/India",
+      "reportedSharesThousands": 1554,
+      "reportedMarketValueCadMillions": 38,
+      "countryOfExposure": "INDIA"
+    },
+    {
+      "name": "Cochin Shipyard Ltd",
+      "reportedSharesThousands": 338,
+      "reportedMarketValueCadMillions": 8,
+      "countryOfExposure": "INDIA",
+      "ticker": "COCHINSHIP"
+    },
+    {
+      "name": "Coforge Ltd",
+      "reportedSharesThousands": 189,
+      "reportedMarketValueCadMillions": 26,
+      "countryOfExposure": "INDIA",
+      "ticker": "COFORGE"
+    },
+    {
+      "name": "Colgate-Palmolive India Ltd",
+      "reportedSharesThousands": 296,
+      "reportedMarketValueCadMillions": 12,
+      "countryOfExposure": "INDIA",
+      "ticker": "COLPAL"
+    },
+    {
+      "name": "Container Corp Of India Ltd",
+      "reportedSharesThousands": 815,
+      "reportedMarketValueCadMillions": 9,
+      "countryOfExposure": "INDIA"
+    },
+    {
+      "name": "Coromandel International Ltd",
+      "reportedSharesThousands": 361,
+      "reportedMarketValueCadMillions": 12,
+      "countryOfExposure": "INDIA",
+      "ticker": "COROMANDEL"
+    },
+    {
+      "name": "Cummins India Ltd",
+      "reportedSharesThousands": 427,
+      "reportedMarketValueCadMillions": 22,
+      "countryOfExposure": "INDIA",
+      "ticker": "CUMMINSIND"
+    },
+    {
+      "name": "Dabur India Ltd",
+      "reportedSharesThousands": 1300,
+      "reportedMarketValueCadMillions": 11,
+      "countryOfExposure": "INDIA",
+      "ticker": "DABUR"
+    },
+    {
+      "name": "Dalmia Bharat Ltd",
+      "reportedSharesThousands": 241,
+      "reportedMarketValueCadMillions": 7,
+      "countryOfExposure": "INDIA",
+      "ticker": "DALBHARAT"
+    },
+    {
+      "name": "Deepak Nitrite Ltd",
+      "reportedSharesThousands": 208,
+      "reportedMarketValueCadMillions": 7,
+      "countryOfExposure": "INDIA",
+      "ticker": "DEEPAKNTR"
+    },
+    {
+      "name": "Delhivery Ltd",
+      "reportedSharesThousands": 1610,
+      "reportedMarketValueCadMillions": 7,
+      "countryOfExposure": "INDIA",
+      "ticker": "DELHIVERY"
+    },
+    {
+      "name": "Divi's Laboratories Ltd",
+      "reportedSharesThousands": 326,
+      "reportedMarketValueCadMillions": 32,
+      "countryOfExposure": "INDIA",
+      "ticker": "DIVISLAB"
+    },
+    {
+      "name": "Dixon Technologies India Ltd",
+      "reportedSharesThousands": 76,
+      "reportedMarketValueCadMillions": 17,
+      "countryOfExposure": "INDIA",
+      "ticker": "DIXON"
+    },
+    {
+      "name": "DLF Ltd",
+      "reportedSharesThousands": 1834,
+      "reportedMarketValueCadMillions": 21,
+      "countryOfExposure": "INDIA",
+      "ticker": "DLF"
+    },
+    {
+      "name": "Dr Reddy's Laboratories Ltd",
+      "reportedSharesThousands": 1536,
+      "reportedMarketValueCadMillions": 30,
+      "countryOfExposure": "INDIA",
+      "ticker": "DRREDDY"
+    },
+    {
+      "name": "Eicher Motors Ltd",
+      "reportedSharesThousands": 335,
+      "reportedMarketValueCadMillions": 30,
+      "countryOfExposure": "INDIA",
+      "ticker": "EICHERMOT"
+    },
+    {
+      "name": "Escorts Kubota Ltd",
+      "reportedSharesThousands": 111,
+      "reportedMarketValueCadMillions": 6,
+      "countryOfExposure": "INDIA",
+      "ticker": "ESCORTS"
+    },
+    {
+      "name": "Eternal Ltd",
+      "reportedSharesThousands": 53439,
+      "reportedMarketValueCadMillions": 181,
+      "countryOfExposure": "INDIA",
+      "ticker": "ETERNAL"
+    },
+    {
+      "name": "Exide Industries Ltd",
+      "reportedSharesThousands": 1238,
+      "reportedMarketValueCadMillions": 8,
+      "countryOfExposure": "INDIA",
+      "ticker": "EXIDEIND"
+    },
+    {
+      "name": "Federal Bank Ltd",
+      "reportedSharesThousands": 4480,
+      "reportedMarketValueCadMillions": 15,
+      "countryOfExposure": "INDIA"
+    },
+    {
+      "name": "Five-Star Business Finance Ltd",
+      "reportedSharesThousands": 460,
+      "reportedMarketValueCadMillions": 6,
+      "countryOfExposure": "INDIA",
+      "ticker": "FIVESTAR"
+    },
+    {
+      "name": "Fortis Healthcare Ltd",
+      "reportedSharesThousands": 1071,
+      "reportedMarketValueCadMillions": 13,
+      "countryOfExposure": "INDIA",
+      "ticker": "FORTIS"
+    },
+    {
+      "name": "FSN E-Commerce Ventures Ltd",
+      "reportedSharesThousands": 3712,
+      "reportedMarketValueCadMillions": 11,
+      "countryOfExposure": "INDIA",
+      "ticker": "NYKAA"
+    },
+    {
+      "name": "GAIL India Ltd",
+      "reportedSharesThousands": 13585,
+      "reportedMarketValueCadMillions": 42,
+      "countryOfExposure": "INDIA",
+      "ticker": "GAIL"
+    },
+    {
+      "name": "GE Vernova T&D India Ltd",
+      "reportedSharesThousands": 290,
+      "reportedMarketValueCadMillions": 8,
+      "countryOfExposure": "INDIA",
+      "ticker": "GVT&D"
+    },
+    {
+      "name": "Gland Pharma Ltd",
+      "reportedSharesThousands": 209,
+      "reportedMarketValueCadMillions": 6,
+      "countryOfExposure": "INDIA",
+      "ticker": "GLAND"
+    },
+    {
+      "name": "GlaxoSmithKline Pharmaceuticals Ltd",
+      "reportedSharesThousands": 118,
+      "reportedMarketValueCadMillions": 6,
+      "countryOfExposure": "INDIA",
+      "ticker": "GLAXO"
+    },
+    {
+      "name": "Glenmark Pharmaceuticals Ltd",
+      "reportedSharesThousands": 384,
+      "reportedMarketValueCadMillions": 10,
+      "countryOfExposure": "INDIA",
+      "ticker": "GLENMARK"
+    },
+    {
+      "name": "Godrej Consumer Products Ltd",
+      "reportedSharesThousands": 858,
+      "reportedMarketValueCadMillions": 17,
+      "countryOfExposure": "INDIA",
+      "ticker": "GODREJCP"
+    },
+    {
+      "name": "Godrej Industries Ltd",
+      "reportedSharesThousands": 283,
+      "reportedMarketValueCadMillions": 5,
+      "countryOfExposure": "INDIA",
+      "ticker": "GODREJIND"
+    },
+    {
+      "name": "Godrej Properties Ltd",
+      "reportedSharesThousands": 408,
+      "reportedMarketValueCadMillions": 15,
+      "countryOfExposure": "INDIA",
+      "ticker": "GODREJPROP"
+    },
+    {
+      "name": "Grasim Industries Ltd",
+      "reportedSharesThousands": 970,
+      "reportedMarketValueCadMillions": 43,
+      "countryOfExposure": "INDIA",
+      "ticker": "GRASIM"
+    },
+    {
+      "name": "Gujarat Fluorochemicals Ltd",
+      "reportedSharesThousands": 112,
+      "reportedMarketValueCadMillions": 8,
+      "countryOfExposure": "INDIA",
+      "ticker": "FLUOROCHEM"
+    },
+    {
+      "name": "Gujarat Gas Ltd",
+      "reportedSharesThousands": 798,
+      "reportedMarketValueCadMillions": 6,
+      "countryOfExposure": "INDIA"
+    },
+    {
+      "name": "Havells India Ltd",
+      "reportedSharesThousands": 757,
+      "reportedMarketValueCadMillions": 19,
+      "countryOfExposure": "INDIA",
+      "ticker": "HAVELLS"
+    },
+    {
+      "name": "HCL Technologies Ltd",
+      "reportedSharesThousands": 2491,
+      "reportedMarketValueCadMillions": 67,
+      "countryOfExposure": "INDIA",
+      "ticker": "HCLTECH"
+    },
+    {
+      "name": "HDFC Asset Management Co Ltd",
+      "reportedSharesThousands": 248,
+      "reportedMarketValueCadMillions": 17,
+      "countryOfExposure": "INDIA"
+    },
+    {
+      "name": "HDFC Bank Ltd",
+      "reportedSharesThousands": 11747,
+      "reportedMarketValueCadMillions": 362,
+      "countryOfExposure": "INDIA",
+      "ticker": "HDFCBANK"
+    },
+    {
+      "name": "HDFC Life Insurance Co Ltd",
+      "reportedSharesThousands": 2222,
+      "reportedMarketValueCadMillions": 26,
+      "countryOfExposure": "INDIA"
+    },
+    {
+      "name": "Hero MotoCorp Ltd",
+      "reportedSharesThousands": 323,
+      "reportedMarketValueCadMillions": 20,
+      "countryOfExposure": "INDIA",
+      "ticker": "HEROMOTOCO"
+    },
+    {
+      "name": "Hindalco Industries Ltd",
+      "reportedSharesThousands": 4356,
+      "reportedMarketValueCadMillions": 50,
+      "countryOfExposure": "INDIA",
+      "ticker": "HINDALCO"
+    },
+    {
+      "name": "Hindustan Aeronautics Ltd",
+      "reportedSharesThousands": 600,
+      "reportedMarketValueCadMillions": 42,
+      "countryOfExposure": "INDIA",
+      "ticker": "HAL"
+    },
+    {
+      "name": "Hindustan Petroleum Corp Ltd",
+      "reportedSharesThousands": 1760,
+      "reportedMarketValueCadMillions": 11,
+      "countryOfExposure": "INDIA"
+    },
+    {
+      "name": "Hindustan Unilever Ltd",
+      "reportedSharesThousands": 2326,
+      "reportedMarketValueCadMillions": 88,
+      "countryOfExposure": "INDIA",
+      "ticker": "HINDUNILVR"
+    },
+    {
+      "name": "Hitachi Energy India Ltd",
+      "reportedSharesThousands": 50,
+      "reportedMarketValueCadMillions": 11,
+      "countryOfExposure": "INDIA",
+      "ticker": "POWERINDIA"
+    },
+    {
+      "name": "Housing & Urban Development Corp Ltd",
+      "reportedSharesThousands": 1935,
+      "reportedMarketValueCadMillions": 6,
+      "countryOfExposure": "INDIA"
+    },
+    {
+      "name": "Hyundai Motor India Ltd",
+      "reportedSharesThousands": 1609,
+      "reportedMarketValueCadMillions": 46,
+      "countryOfExposure": "INDIA",
+      "ticker": "HYUNDAI"
+    },
+    {
+      "name": "ICICI Bank Ltd",
+      "reportedSharesThousands": 10824,
+      "reportedMarketValueCadMillions": 246,
+      "countryOfExposure": "INDIA",
+      "ticker": "ICICIBANK"
+    },
+    {
+      "name": "ICICI Lombard General Insurance Co Ltd",
+      "reportedSharesThousands": 566,
+      "reportedMarketValueCadMillions": 17,
+      "countryOfExposure": "INDIA"
+    },
+    {
+      "name": "ICICI Prudential Life Insurance Co Ltd",
+      "reportedSharesThousands": 889,
+      "reportedMarketValueCadMillions": 8,
+      "countryOfExposure": "INDIA"
+    },
+    {
+      "name": "IDFC First Bank Ltd",
+      "reportedSharesThousands": 8649,
+      "reportedMarketValueCadMillions": 8,
+      "countryOfExposure": "INDIA",
+      "ticker": "IDFCFIRSTB"
+    },
+    {
+      "name": "Indian Bank",
+      "reportedSharesThousands": 718,
+      "reportedMarketValueCadMillions": 7,
+      "countryOfExposure": "INDIA",
+      "ticker": "INDIANB"
+    },
+    {
+      "name": "Indian Hotels Co Ltd/The",
+      "reportedSharesThousands": 2095,
+      "reportedMarketValueCadMillions": 28,
+      "countryOfExposure": "INDIA"
+    },
+    {
+      "name": "Indian Oil Corp Ltd",
+      "reportedSharesThousands": 9281,
+      "reportedMarketValueCadMillions": 20,
+      "countryOfExposure": "INDIA"
+    },
+    {
+      "name": "Indian Railway Catering & Tourism Corp Ltd",
+      "reportedSharesThousands": 896,
+      "reportedMarketValueCadMillions": 11,
+      "countryOfExposure": "INDIA"
+    },
+    {
+      "name": "Indian Railway Finance Corp Ltd",
+      "reportedSharesThousands": 7078,
+      "reportedMarketValueCadMillions": 15,
+      "countryOfExposure": "INDIA"
+    },
+    {
+      "name": "Indian Renewable Energy Development Agency Ltd",
+      "reportedSharesThousands": 2595,
+      "reportedMarketValueCadMillions": 7,
+      "countryOfExposure": "INDIA",
+      "ticker": "IREDA"
+    },
+    {
+      "name": "Indraprastha Gas Ltd",
+      "reportedSharesThousands": 4106,
+      "reportedMarketValueCadMillions": 14,
+      "countryOfExposure": "INDIA",
+      "ticker": "IGL"
+    },
+    {
+      "name": "Indus Towers Ltd",
+      "reportedSharesThousands": 2860,
+      "reportedMarketValueCadMillions": 16,
+      "countryOfExposure": "INDIA",
+      "ticker": "INDUSTOWER"
+    },
+    {
+      "name": "IndusInd Bank Ltd",
+      "reportedSharesThousands": 1391,
+      "reportedMarketValueCadMillions": 15,
+      "countryOfExposure": "INDIA",
+      "ticker": "INDUSINDBK"
+    },
+    {
+      "name": "Info Edge India Ltd",
+      "reportedSharesThousands": 194,
+      "reportedMarketValueCadMillions": 23,
+      "countryOfExposure": "INDIA",
+      "ticker": "NAUKRI"
+    },
+    {
+      "name": "Infosys Ltd",
+      "reportedSharesThousands": 8895,
+      "reportedMarketValueCadMillions": 235,
+      "countryOfExposure": "INDIA",
+      "ticker": "INFY"
+    },
+    {
+      "name": "InterGlobe Aviation Ltd",
+      "reportedSharesThousands": 609,
+      "reportedMarketValueCadMillions": 52,
+      "countryOfExposure": "INDIA",
+      "ticker": "INDIGO"
+    },
+    {
+      "name": "Ipca Laboratories Ltd",
+      "reportedSharesThousands": 374,
+      "reportedMarketValueCadMillions": 9,
+      "countryOfExposure": "INDIA",
+      "ticker": "IPCALAB"
+    },
+    {
+      "name": "ITC Ltd",
+      "reportedSharesThousands": 6256,
+      "reportedMarketValueCadMillions": 43,
+      "countryOfExposure": "INDIA",
+      "ticker": "ITC"
+    },
+    {
+      "name": "Jindal Steel & Power Ltd",
+      "reportedSharesThousands": 1079,
+      "reportedMarketValueCadMillions": 17,
+      "countryOfExposure": "INDIA"
+    },
+    {
+      "name": "Jio Financial Services Ltd",
+      "reportedSharesThousands": 9838,
+      "reportedMarketValueCadMillions": 38,
+      "countryOfExposure": "INDIA",
+      "ticker": "JIOFIN"
+    },
+    {
+      "name": "JK Cement Ltd",
+      "reportedSharesThousands": 92,
+      "reportedMarketValueCadMillions": 8,
+      "countryOfExposure": "INDIA",
+      "ticker": "JKCEMENT"
+    },
+    {
+      "name": "JSW Energy Ltd",
+      "reportedSharesThousands": 4229,
+      "reportedMarketValueCadMillions": 38,
+      "countryOfExposure": "INDIA",
+      "ticker": "JSWENERGY"
+    },
+    {
+      "name": "JSW Infrastructure Ltd",
+      "reportedSharesThousands": 1282,
+      "reportedMarketValueCadMillions": 7,
+      "countryOfExposure": "INDIA",
+      "ticker": "JSWINFRA"
+    },
+    {
+      "name": "JSW Steel Ltd",
+      "reportedSharesThousands": 2822,
+      "reportedMarketValueCadMillions": 51,
+      "countryOfExposure": "INDIA",
+      "ticker": "JSWSTEEL"
+    },
+    {
+      "name": "Jubilant Foodworks Ltd",
+      "reportedSharesThousands": 934,
+      "reportedMarketValueCadMillions": 10,
+      "countryOfExposure": "INDIA",
+      "ticker": "JUBLFOOD"
+    },
+    {
+      "name": "Kaynes Technology India Ltd",
+      "reportedSharesThousands": 102,
+      "reportedMarketValueCadMillions": 8,
+      "countryOfExposure": "INDIA",
+      "ticker": "KAYNES"
+    },
+    {
+      "name": "KEI Industries Ltd",
+      "reportedSharesThousands": 291,
+      "reportedMarketValueCadMillions": 14,
+      "countryOfExposure": "INDIA",
+      "ticker": "KEI"
+    },
+    {
+      "name": "Kotak Mahindra Bank Ltd",
+      "reportedSharesThousands": 6494,
+      "reportedMarketValueCadMillions": 237,
+      "countryOfExposure": "INDIA",
+      "ticker": "KOTAKBANK"
+    },
+    {
+      "name": "KPIT Technologies Ltd",
+      "reportedSharesThousands": 271,
+      "reportedMarketValueCadMillions": 6,
+      "countryOfExposure": "INDIA",
+      "ticker": "KPITTECH"
+    },
+    {
+      "name": "L&T Finance Ltd",
+      "reportedSharesThousands": 2254,
+      "reportedMarketValueCadMillions": 6,
+      "countryOfExposure": "INDIA",
+      "ticker": "LTF"
+    },
+    {
+      "name": "L&T Technology Services Ltd",
+      "reportedSharesThousands": 90,
+      "reportedMarketValueCadMillions": 7,
+      "countryOfExposure": "INDIA",
+      "ticker": "LTTS"
+    },
+    {
+      "name": "Larsen & Toubro Ltd",
+      "reportedSharesThousands": 1825,
+      "reportedMarketValueCadMillions": 107,
+      "countryOfExposure": "INDIA",
+      "ticker": "LT"
+    },
+    {
+      "name": "LIC Housing Finance Ltd",
+      "reportedSharesThousands": 830,
+      "reportedMarketValueCadMillions": 8,
+      "countryOfExposure": "INDIA",
+      "ticker": "LICHSGFIN"
+    },
+    {
+      "name": "Life Insurance Corp of India",
+      "reportedSharesThousands": 611,
+      "reportedMarketValueCadMillions": 8,
+      "countryOfExposure": "INDIA"
+    },
+    {
+      "name": "Linde India Ltd",
+      "reportedSharesThousands": 64,
+      "reportedMarketValueCadMillions": 7,
+      "countryOfExposure": "INDIA",
+      "ticker": "LINDEINDIA"
+    },
+    {
+      "name": "LTIMindtree Ltd",
+      "reportedSharesThousands": 241,
+      "reportedMarketValueCadMillions": 18,
+      "countryOfExposure": "INDIA"
+    },
+    {
+      "name": "Lupin Ltd",
+      "reportedSharesThousands": 615,
+      "reportedMarketValueCadMillions": 21,
+      "countryOfExposure": "INDIA",
+      "ticker": "LUPIN"
+    },
+    {
+      "name": "Macrotech Developers Ltd",
+      "reportedSharesThousands": 828,
+      "reportedMarketValueCadMillions": 17,
+      "countryOfExposure": "INDIA"
+    },
+    {
+      "name": "Mahindra & Mahindra Financial Services Ltd",
+      "reportedSharesThousands": 1164,
+      "reportedMarketValueCadMillions": 6,
+      "countryOfExposure": "INDIA",
+      "ticker": "M&MFIN"
+    },
+    {
+      "name": "Mahindra & Mahindra Ltd",
+      "reportedSharesThousands": 2067,
+      "reportedMarketValueCadMillions": 93,
+      "countryOfExposure": "INDIA",
+      "ticker": "M&M"
+    },
+    {
+      "name": "MakeMyTrip Ltd",
+      "reportedSharesThousands": 217,
+      "reportedMarketValueCadMillions": 31,
+      "countryOfExposure": "INDIA"
+    },
+    {
+      "name": "Mankind Pharma Ltd",
+      "reportedSharesThousands": 1270,
+      "reportedMarketValueCadMillions": 52,
+      "countryOfExposure": "INDIA",
+      "ticker": "MANKIND"
+    },
+    {
+      "name": "Marico Ltd",
+      "reportedSharesThousands": 1163,
+      "reportedMarketValueCadMillions": 13,
+      "countryOfExposure": "INDIA",
+      "ticker": "MARICO"
+    },
+    {
+      "name": "Maruti Suzuki India Ltd",
+      "reportedSharesThousands": 132,
+      "reportedMarketValueCadMillions": 26,
+      "countryOfExposure": "INDIA",
+      "ticker": "MARUTI"
+    },
+    {
+      "name": "Max Financial Services Ltd",
+      "reportedSharesThousands": 663,
+      "reportedMarketValueCadMillions": 13,
+      "countryOfExposure": "INDIA",
+      "ticker": "MFSL"
+    },
+    {
+      "name": "Max Healthcare Institute Ltd",
+      "reportedSharesThousands": 4770,
+      "reportedMarketValueCadMillions": 88,
+      "countryOfExposure": "INDIA",
+      "ticker": "MAXHEALTH"
+    },
+    {
+      "name": "Mazagon Dock Shipbuilders Ltd",
+      "reportedSharesThousands": 288,
+      "reportedMarketValueCadMillions": 13,
+      "countryOfExposure": "INDIA",
+      "ticker": "MAZDOCK"
+    },
+    {
+      "name": "Motilal Oswal Financial Services Ltd",
+      "reportedSharesThousands": 555,
+      "reportedMarketValueCadMillions": 6,
+      "countryOfExposure": "INDIA",
+      "ticker": "MOTILALOFS"
+    },
+    {
+      "name": "Mphasis Ltd",
+      "reportedSharesThousands": 140,
+      "reportedMarketValueCadMillions": 6,
+      "countryOfExposure": "INDIA",
+      "ticker": "MPHASIS"
+    },
+    {
+      "name": "MRF Ltd",
+      "reportedSharesThousands": 5,
+      "reportedMarketValueCadMillions": 10,
+      "countryOfExposure": "INDIA",
+      "ticker": "MRF"
+    },
+    {
+      "name": "Muthoot Finance Ltd",
+      "reportedSharesThousands": 244,
+      "reportedMarketValueCadMillions": 10,
+      "countryOfExposure": "INDIA",
+      "ticker": "MUTHOOTFIN"
+    },
+    {
+      "name": "National Aluminium Co Ltd",
+      "reportedSharesThousands": 2324,
+      "reportedMarketValueCadMillions": 7,
+      "countryOfExposure": "INDIA"
+    },
+    {
+      "name": "NBCC India Ltd",
+      "reportedSharesThousands": 4884,
+      "reportedMarketValueCadMillions": 7,
+      "countryOfExposure": "INDIA",
+      "ticker": "NBCC"
+    },
+    {
+      "name": "Nestle India Ltd",
+      "reportedSharesThousands": 902,
+      "reportedMarketValueCadMillions": 34,
+      "countryOfExposure": "INDIA",
+      "ticker": "NESTLEIND"
+    },
+    {
+      "name": "NHPC Ltd",
+      "reportedSharesThousands": 17028,
+      "reportedMarketValueCadMillions": 24,
+      "countryOfExposure": "INDIA",
+      "ticker": "NHPC"
+    },
+    {
+      "name": "Nippon Life India Asset Management Ltd",
+      "reportedSharesThousands": 563,
+      "reportedMarketValueCadMillions": 5,
+      "countryOfExposure": "INDIA",
+      "ticker": "NAM-INDIA"
+    },
+    {
+      "name": "NMDC Ltd",
+      "reportedSharesThousands": 10263,
+      "reportedMarketValueCadMillions": 12,
+      "countryOfExposure": "INDIA",
+      "ticker": "NMDC"
+    },
+    {
+      "name": "Oberoi Realty Ltd",
+      "reportedSharesThousands": 342,
+      "reportedMarketValueCadMillions": 9,
+      "countryOfExposure": "INDIA",
+      "ticker": "OBEROIRLTY"
+    },
+    {
+      "name": "Oil India Ltd",
+      "reportedSharesThousands": 1056,
+      "reportedMarketValueCadMillions": 7,
+      "countryOfExposure": "INDIA",
+      "ticker": "OIL"
+    },
+    {
+      "name": "One 97 Communications Ltd",
+      "reportedSharesThousands": 1354,
+      "reportedMarketValueCadMillions": 18,
+      "countryOfExposure": "INDIA",
+      "ticker": "PAYTM"
+    },
+    {
+      "name": "Oracle Financial Services Software Ltd",
+      "reportedSharesThousands": 57,
+      "reportedMarketValueCadMillions": 8,
+      "countryOfExposure": "INDIA",
+      "ticker": "OFSS"
+    },
+    {
+      "name": "Page Industries Ltd",
+      "reportedSharesThousands": 15,
+      "reportedMarketValueCadMillions": 10,
+      "countryOfExposure": "INDIA",
+      "ticker": "PAGEIND"
+    },
+    {
+      "name": "Patanjali Foods Ltd",
+      "reportedSharesThousands": 289,
+      "reportedMarketValueCadMillions": 9,
+      "countryOfExposure": "INDIA",
+      "ticker": "PATANJALI"
+    },
+    {
+      "name": "PB Fintech Ltd",
+      "reportedSharesThousands": 770,
+      "reportedMarketValueCadMillions": 21,
+      "countryOfExposure": "INDIA",
+      "ticker": "POLICYBZR"
+    },
+    {
+      "name": "Persistent Systems Ltd",
+      "reportedSharesThousands": 244,
+      "reportedMarketValueCadMillions": 23,
+      "countryOfExposure": "INDIA",
+      "ticker": "PERSISTENT"
+    },
+    {
+      "name": "Petronet LNG Ltd",
+      "reportedSharesThousands": 1973,
+      "reportedMarketValueCadMillions": 10,
+      "countryOfExposure": "INDIA",
+      "ticker": "PETRONET"
+    },
+    {
+      "name": "PI Industries Ltd",
+      "reportedSharesThousands": 237,
+      "reportedMarketValueCadMillions": 14,
+      "countryOfExposure": "INDIA",
+      "ticker": "PIIND"
+    },
+    {
+      "name": "Pidilite Industries Ltd",
+      "reportedSharesThousands": 437,
+      "reportedMarketValueCadMillions": 21,
+      "countryOfExposure": "INDIA",
+      "ticker": "PIDILITIND"
+    },
+    {
+      "name": "Piramal Enterprises Ltd",
+      "reportedSharesThousands": 320,
+      "reportedMarketValueCadMillions": 5,
+      "countryOfExposure": "INDIA"
+    },
+    {
+      "name": "Polycab India Ltd",
+      "reportedSharesThousands": 146,
+      "reportedMarketValueCadMillions": 13,
+      "countryOfExposure": "INDIA",
+      "ticker": "POLYCAB"
+    },
+    {
+      "name": "Poonawalla Fincorp Ltd",
+      "reportedSharesThousands": 922,
+      "reportedMarketValueCadMillions": 5,
+      "countryOfExposure": "INDIA",
+      "ticker": "POONAWALLA"
+    },
+    {
+      "name": "Power Finance Corp Ltd",
+      "reportedSharesThousands": 3456,
+      "reportedMarketValueCadMillions": 24,
+      "countryOfExposure": "INDIA"
+    },
+    {
+      "name": "Power Grid Corp of India Ltd",
+      "reportedSharesThousands": 18624,
+      "reportedMarketValueCadMillions": 91,
+      "countryOfExposure": "INDIA"
+    },
+    {
+      "name": "Prestige Estates Projects Ltd",
+      "reportedSharesThousands": 530,
+      "reportedMarketValueCadMillions": 11,
+      "countryOfExposure": "INDIA",
+      "ticker": "PRESTIGE"
+    },
+    {
+      "name": "Procter & Gamble Hygiene & Health Care Ltd",
+      "reportedSharesThousands": 26,
+      "reportedMarketValueCadMillions": 6,
+      "countryOfExposure": "INDIA",
+      "ticker": "PGHH"
+    },
+    {
+      "name": "Punjab National Bank",
+      "reportedSharesThousands": 5101,
+      "reportedMarketValueCadMillions": 8,
+      "countryOfExposure": "INDIA",
+      "ticker": "PNB"
+    },
+    {
+      "name": "Rail Vikas Nigam Ltd",
+      "reportedSharesThousands": 1923,
+      "reportedMarketValueCadMillions": 11,
+      "countryOfExposure": "INDIA",
+      "ticker": "RVNL"
+    },
+    {
+      "name": "REC Ltd",
+      "reportedSharesThousands": 2871,
+      "reportedMarketValueCadMillions": 21,
+      "countryOfExposure": "INDIA",
+      "ticker": "RECLTD"
+    },
+    {
+      "name": "Reliance Industries Ltd",
+      "reportedSharesThousands": 19714,
+      "reportedMarketValueCadMillions": 423,
+      "countryOfExposure": "INDIA",
+      "ticker": "RELIANCE"
+    },
+    {
+      "name": "ReNew Energy Global PLC",
+      "reportedSharesThousands": 76501,
+      "reportedMarketValueCadMillions": 649,
+      "countryOfExposure": "INDIA"
+    },
+    {
+      "name": "Samvardhana Motherson International Ltd",
+      "reportedSharesThousands": 6160,
+      "reportedMarketValueCadMillions": 14,
+      "countryOfExposure": "INDIA",
+      "ticker": "MOTHERSON"
+    },
+    {
+      "name": "SBI Cards & Payment Services Ltd",
+      "reportedSharesThousands": 505,
+      "reportedMarketValueCadMillions": 7,
+      "countryOfExposure": "INDIA",
+      "ticker": "SBICARD"
+    },
+    {
+      "name": "SBI Life Insurance Co Ltd",
+      "reportedSharesThousands": 974,
+      "reportedMarketValueCadMillions": 25,
+      "countryOfExposure": "INDIA"
+    },
+    {
+      "name": "Shree Cement Ltd",
+      "reportedSharesThousands": 29,
+      "reportedMarketValueCadMillions": 15,
+      "countryOfExposure": "INDIA",
+      "ticker": "SHREECEM"
+    },
+    {
+      "name": "Shriram Finance Ltd",
+      "reportedSharesThousands": 3406,
+      "reportedMarketValueCadMillions": 38,
+      "countryOfExposure": "INDIA",
+      "ticker": "SHRIRAMFIN"
+    },
+    {
+      "name": "Siemens Ltd",
+      "reportedSharesThousands": 294,
+      "reportedMarketValueCadMillions": 26,
+      "countryOfExposure": "INDIA",
+      "ticker": "SIEMENS"
+    },
+    {
+      "name": "SJVN Ltd",
+      "reportedSharesThousands": 5445,
+      "reportedMarketValueCadMillions": 8,
+      "countryOfExposure": "INDIA",
+      "ticker": "SJVN"
+    },
+    {
+      "name": "Solar Industries India Ltd",
+      "reportedSharesThousands": 66,
+      "reportedMarketValueCadMillions": 12,
+      "countryOfExposure": "INDIA",
+      "ticker": "SOLARINDS"
+    },
+    {
+      "name": "Sona Blw Precision Forgings Ltd",
+      "reportedSharesThousands": 1075,
+      "reportedMarketValueCadMillions": 8,
+      "countryOfExposure": "INDIA",
+      "ticker": "SONACOMS"
+    },
+    {
+      "name": "SRF Ltd",
+      "reportedSharesThousands": 435,
+      "reportedMarketValueCadMillions": 22,
+      "countryOfExposure": "INDIA",
+      "ticker": "SRF"
+    },
+    {
+      "name": "State Bank of India",
+      "reportedSharesThousands": 4307,
+      "reportedMarketValueCadMillions": 56,
+      "countryOfExposure": "INDIA",
+      "ticker": "SBIN"
+    },
+    {
+      "name": "Steel Authority of India Ltd",
+      "reportedSharesThousands": 4327,
+      "reportedMarketValueCadMillions": 8,
+      "countryOfExposure": "INDIA",
+      "ticker": "SAIL"
+    },
+    {
+      "name": "Sun Pharmaceutical Industries Ltd",
+      "reportedSharesThousands": 2744,
+      "reportedMarketValueCadMillions": 80,
+      "countryOfExposure": "INDIA",
+      "ticker": "SUNPHARMA"
+    },
+    {
+      "name": "Sundaram Finance Ltd",
+      "reportedSharesThousands": 66,
+      "reportedMarketValueCadMillions": 5,
+      "countryOfExposure": "INDIA",
+      "ticker": "SUNDARMFIN"
+    },
+    {
+      "name": "Supreme Industries Ltd",
+      "reportedSharesThousands": 188,
+      "reportedMarketValueCadMillions": 11,
+      "countryOfExposure": "INDIA",
+      "ticker": "SUPREMEIND"
+    },
+    {
+      "name": "Suzlon Energy Ltd",
+      "reportedSharesThousands": 35549,
+      "reportedMarketValueCadMillions": 34,
+      "countryOfExposure": "INDIA",
+      "ticker": "SUZLON"
+    },
+    {
+      "name": "Tata Chemicals Ltd",
+      "reportedSharesThousands": 473,
+      "reportedMarketValueCadMillions": 7,
+      "countryOfExposure": "INDIA",
+      "ticker": "TATACHEM"
+    },
+    {
+      "name": "Tata Communications Ltd",
+      "reportedSharesThousands": 305,
+      "reportedMarketValueCadMillions": 8,
+      "countryOfExposure": "INDIA",
+      "ticker": "TATACOMM"
+    },
+    {
+      "name": "Tata Consultancy Services Ltd",
+      "reportedSharesThousands": 2904,
+      "reportedMarketValueCadMillions": 176,
+      "countryOfExposure": "INDIA",
+      "ticker": "TCS"
+    },
+    {
+      "name": "Tata Consumer Products Ltd",
+      "reportedSharesThousands": 1451,
+      "reportedMarketValueCadMillions": 24,
+      "countryOfExposure": "INDIA",
+      "ticker": "TATACONSUM"
+    },
+    {
+      "name": "Tata Elxsi Ltd",
+      "reportedSharesThousands": 83,
+      "reportedMarketValueCadMillions": 7,
+      "countryOfExposure": "INDIA",
+      "ticker": "TATAELXSI"
+    },
+    {
+      "name": "Tata Investment Corp Ltd",
+      "reportedSharesThousands": 51,
+      "reportedMarketValueCadMillions": 5,
+      "countryOfExposure": "INDIA"
+    },
+    {
+      "name": "Tata Motors Ltd",
+      "reportedSharesThousands": 25451,
+      "reportedMarketValueCadMillions": 289,
+      "countryOfExposure": "INDIA",
+      "ticker": "TMCV"
+    },
+    {
+      "name": "Tata Power Co Ltd/The",
+      "reportedSharesThousands": 7843,
+      "reportedMarketValueCadMillions": 50,
+      "countryOfExposure": "INDIA"
+    },
+    {
+      "name": "Tata Steel Ltd",
+      "reportedSharesThousands": 20364,
+      "reportedMarketValueCadMillions": 53,
+      "countryOfExposure": "INDIA",
+      "ticker": "TATASTEEL"
+    },
+    {
+      "name": "Tata Technologies Ltd",
+      "reportedSharesThousands": 477,
+      "reportedMarketValueCadMillions": 5,
+      "countryOfExposure": "INDIA",
+      "ticker": "TATATECH"
+    },
+    {
+      "name": "Tech Mahindra Ltd",
+      "reportedSharesThousands": 1631,
+      "reportedMarketValueCadMillions": 39,
+      "countryOfExposure": "INDIA",
+      "ticker": "TECHM"
+    },
+    {
+      "name": "Timken India Ltd",
+      "reportedSharesThousands": 113,
+      "reportedMarketValueCadMillions": 5,
+      "countryOfExposure": "INDIA",
+      "ticker": "TIMKEN"
+    },
+    {
+      "name": "Titan Co Ltd",
+      "reportedSharesThousands": 2677,
+      "reportedMarketValueCadMillions": 138,
+      "countryOfExposure": "INDIA"
+    },
+    {
+      "name": "Torrent Pharmaceuticals Ltd",
+      "reportedSharesThousands": 183,
+      "reportedMarketValueCadMillions": 10,
+      "countryOfExposure": "INDIA",
+      "ticker": "TORNTPHARM"
+    },
+    {
+      "name": "Trent Ltd",
+      "reportedSharesThousands": 430,
+      "reportedMarketValueCadMillions": 39,
+      "countryOfExposure": "INDIA",
+      "ticker": "TRENT"
+    },
+    {
+      "name": "Tube Investments of India Ltd",
+      "reportedSharesThousands": 224,
+      "reportedMarketValueCadMillions": 10,
+      "countryOfExposure": "INDIA",
+      "ticker": "TIINDIA"
+    },
+    {
+      "name": "TVS Motor Co Ltd",
+      "reportedSharesThousands": 530,
+      "reportedMarketValueCadMillions": 22,
+      "countryOfExposure": "INDIA"
+    },
+    {
+      "name": "UltraTech Cement Ltd",
+      "reportedSharesThousands": 331,
+      "reportedMarketValueCadMillions": 64,
+      "countryOfExposure": "INDIA",
+      "ticker": "ULTRACEMCO"
+    },
+    {
+      "name": "Union Bank of India Ltd",
+      "reportedSharesThousands": 3686,
+      "reportedMarketValueCadMillions": 8,
+      "countryOfExposure": "INDIA"
+    },
+    {
+      "name": "United Breweries Ltd",
+      "reportedSharesThousands": 211,
+      "reportedMarketValueCadMillions": 7,
+      "countryOfExposure": "INDIA",
+      "ticker": "UBL"
+    },
+    {
+      "name": "United Spirits Ltd",
+      "reportedSharesThousands": 760,
+      "reportedMarketValueCadMillions": 18,
+      "countryOfExposure": "INDIA",
+      "ticker": "UNITDSPR"
+    },
+    {
+      "name": "UNO Minda Ltd",
+      "reportedSharesThousands": 533,
+      "reportedMarketValueCadMillions": 8,
+      "countryOfExposure": "INDIA",
+      "ticker": "UNOMINDA"
+    },
+    {
+      "name": "UPL Ltd",
+      "reportedSharesThousands": 1553,
+      "reportedMarketValueCadMillions": 17,
+      "countryOfExposure": "INDIA",
+      "ticker": "UPL"
+    },
+    {
+      "name": "Varun Beverages Ltd",
+      "reportedSharesThousands": 2278,
+      "reportedMarketValueCadMillions": 21,
+      "countryOfExposure": "INDIA",
+      "ticker": "VBL"
+    },
+    {
+      "name": "Vodafone Idea Ltd",
+      "reportedSharesThousands": 47012,
+      "reportedMarketValueCadMillions": 5,
+      "countryOfExposure": "INDIA",
+      "ticker": "IDEA"
+    },
+    {
+      "name": "Voltas Ltd",
+      "reportedSharesThousands": 766,
+      "reportedMarketValueCadMillions": 19,
+      "countryOfExposure": "INDIA",
+      "ticker": "VOLTAS"
+    },
+    {
+      "name": "Wipro Ltd",
+      "reportedSharesThousands": 6918,
+      "reportedMarketValueCadMillions": 31,
+      "countryOfExposure": "INDIA",
+      "ticker": "WIPRO"
+    },
+    {
+      "name": "WNS Holdings Ltd",
+      "reportedSharesThousands": 175,
+      "reportedMarketValueCadMillions": 16,
+      "countryOfExposure": "INDIA"
+    },
+    {
+      "name": "Yes Bank Ltd",
+      "reportedSharesThousands": 51289,
+      "reportedMarketValueCadMillions": 15,
+      "countryOfExposure": "INDIA",
+      "ticker": "YESBANK"
+    },
+    {
+      "name": "Zydus Lifesciences Ltd",
+      "reportedSharesThousands": 619,
+      "reportedMarketValueCadMillions": 9,
+      "countryOfExposure": "INDIA",
+      "ticker": "ZYDUSLIFE"
+    }
+  ]
+}

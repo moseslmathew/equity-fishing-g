@@ -1,5 +1,5 @@
 import {readerAllowed,deny} from "../../../lib/access";
-import {GET as aceGET} from "../investors/combined/route";
+
 import {foreignInvestorIds,readForeignResearch} from "../../../lib/foreign-investor-store";
 import {database,ensureDatabase,readDatabaseComparisons,readResearchSnapshot} from "../../../lib/database-store";
 import {ventureResearch} from "../../../lib/venture-capital";
@@ -25,13 +25,12 @@ export async function GET(request:Request){
  if(query.length>100)return Response.json({error:"Use 100 characters or fewer."},{status:400,headers});
  const result=await Promise.allSettled([
   searchPortfolio(),
-  aceGET(request).then(json),
   Promise.all(foreignInvestorIds.map(id=>readForeignResearch(id))).then(rows=>{if(rows.some(r=>!r))throw new Error('Incomplete coverage');return rows as NonNullable<typeof rows[number]>[];}),
   readResearchSnapshot()
  ]);
- const labels=["Mutual funds","Ace investors","Foreign investors","AI Insights"];
+ const labels=["Mutual funds","Foreign investors","AI Insights"];
  const unavailable=result.flatMap((r,i)=>r.status==="rejected"?[labels[i]]:[]);
  const value=(i:number)=>result[i].status==="fulfilled"?result[i].value:undefined;
- const input:SearchInput={portfolio:value(0) as SearchInput["portfolio"],ace:value(1) as SearchInput["ace"],foreign:value(2) as SearchInput["foreign"],research:value(3) as SearchInput["research"],venture:ventureResearch};
+ const input:SearchInput={portfolio:value(0) as SearchInput["portfolio"],foreign:value(1) as SearchInput["foreign"],research:value(2) as SearchInput["research"]};
  return Response.json({...searchCompanies(input,query),unavailable},{headers});
 }

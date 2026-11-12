@@ -5,10 +5,7 @@ import {
   Menu,
   BarChart3,
   Bookmark,
-  Users,
-  Layers3,
   Globe2,
-  Sprout,
   PanelLeftClose,
   PanelLeftOpen,
   X,
@@ -79,13 +76,9 @@ export default function SiteNavigation({
           pending.id === "foreign"
             ? "/foreign-investors"
             : pending.id === "venture"
-            ? "/venture-capital"
-            : pending.id === "sectors"
-            ? "/sectors"
+            ? "/foreign-investors?type=venture"
             : pending.id === "watchlist"
             ? "/#watchlist"
-            : pending.id === "investors"
-            ? "/#investors"
             : "/";
         window.location.assign(url);
       });
@@ -113,28 +106,10 @@ export default function SiteNavigation({
             icon: Bookmark,
           },
           {
-            id: "investors",
-            label: "Ace investors",
-            description: "Leading investor portfolios",
-            icon: Users,
-          },
-          {
             id: "foreign",
             label: "Foreign investors",
-            description: "Indian holdings & activity",
+            description: "Institutions, venture capital & holdings",
             icon: Globe2,
-          },
-          {
-            id: "venture",
-            label: "Venture capital",
-            description: "Indian-listed pre-IPO investments",
-            icon: Sprout,
-          },
-          {
-            id: "sectors",
-            label: "Sector funds",
-            description: "Energy, auto & FMCG",
-            icon: Layers3,
           },
         ] as const
       ).map((item) => (

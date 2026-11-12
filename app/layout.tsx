@@ -27,6 +27,7 @@ export default function RootLayout({
           <Script
             src="https://cdn.jsdelivr.net/npm/@clerk/clerk-js@5/dist/clerk.browser.js"
             data-clerk-publishable-key={publishableKey}
+            crossOrigin="anonymous"
             strategy="beforeInteractive"
           />
         )}

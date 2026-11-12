@@ -9,32 +9,80 @@ export type ClerkUser = {
   imageUrl?: string;
 };
 
+type ClerkRawUser = {
+  id?: string;
+  fullName?: string | null;
+  firstName?: string | null;
+  lastName?: string | null;
+  imageUrl?: string | null;
+  profileImageUrl?: string | null;
+  primaryEmailAddress?: { emailAddress?: string } | null;
+  emailAddresses?: Array<{ emailAddress?: string }> | null;
+};
+
+type ClerkSession = {
+  id: string;
+  status?: string;
+  user?: ClerkRawUser | null;
+};
+
+type ClerkEmission = {
+  user?: ClerkRawUser | null;
+  session?: ClerkSession | null;
+  client?: {
+    sessions?: ClerkSession[];
+  } | null;
+};
+
 declare global {
   interface Window {
     Clerk?: {
       loaded?: boolean;
       version?: string;
       load: (options?: Record<string, unknown>) => Promise<void>;
-      user: any | null;
-      session: { id: string; user?: any } | null;
+      user: ClerkRawUser | null;
+      session: ClerkSession | null;
       client?: {
-        sessions?: Array<{
-          id: string;
-          status: string;
-          user?: any;
-        }>;
+        sessions?: ClerkSession[];
       };
       setActive?: (options: { session: string | null }) => Promise<void>;
       openSignIn: (options?: Record<string, unknown>) => void;
       openSignUp: (options?: Record<string, unknown>) => void;
       openUserProfile: () => void;
       signOut: () => Promise<void>;
-      addListener: (listener: (emission: any) => void) => () => void;
+      addListener: (listener: (emission: ClerkEmission) => void) => () => void;
     };
   }
 }
 
-function extractUser(rawUser: any): ClerkUser | null {
+let clerkLoadPromise: Promise<boolean> | null = null;
+
+/**
+ * Ensures `window.Clerk.load()` is invoked at most once concurrently across
+ * all mounted components (header, watchlist, login). Concurrent `.load()`
+ * calls on ClerkJS v5 cause initialization races and broken modal mounts.
+ */
+async function ensureClerkLoaded(): Promise<boolean> {
+  if (typeof window === "undefined" || !window.Clerk) return false;
+  if (window.Clerk.loaded) return true;
+  if (!clerkLoadPromise) {
+    clerkLoadPromise = (async () => {
+      try {
+        if (!window.Clerk!.loaded && typeof window.Clerk!.load === "function") {
+          await window.Clerk!.load();
+        }
+        return Boolean(window.Clerk?.loaded);
+      } catch (err) {
+        console.error("Clerk load failed:", err);
+        clerkLoadPromise = null;
+        return false;
+      }
+    })();
+  }
+  return clerkLoadPromise;
+}
+
+function extractUser(rawUser: ClerkRawUser | null | undefined): ClerkUser | null {
   if (!rawUser || !rawUser.id) return null;
   const email =
     rawUser.primaryEmailAddress?.emailAddress ||
@@ -59,15 +107,15 @@ export function useClerkAuth() {
   const [user, setUser] = useState<ClerkUser | null>(null);
 
   const syncState = useCallback(async () => {
-    if (!window.Clerk) return;
+    if (typeof window === "undefined" || !window.Clerk) return;
 
     try {
-      // 1. Ensure Clerk is loaded
-      if (!window.Clerk.loaded && typeof window.Clerk.load === "function") {
-        await window.Clerk.load();
+      const ready = await ensureClerkLoaded();
+      if (!ready) {
+        setIsLoaded(true);
+        return;
       }
 
-      // 2. If Clerk.session is not set but client has an active session, activate it
       if (!window.Clerk.session && window.Clerk.client?.sessions?.length) {
         const activeSession =
           window.Clerk.client.sessions.find((s) => s.status === "active") ||
@@ -82,7 +130,6 @@ export function useClerkAuth() {
         }
       }
 
-      // 3. Extract user from current active session or user object
       const rawUser =
         window.Clerk.user ||
         window.Clerk.session?.user ||
@@ -98,45 +145,59 @@ export function useClerkAuth() {
   }, []);
 
   useEffect(() => {
-    let checkInterval: NodeJS.Timeout;
+    let cancelled = false;
+    let initialized = false;
+    let checkInterval: ReturnType<typeof setInterval> | undefined;
     let removeListener: (() => void) | undefined;
 
-    const init = async () => {
-      if (window.Clerk) {
-        await syncState();
+    const tryInit = async () => {
+      if (initialized || cancelled || !window.Clerk) return;
+      initialized = true;
+      if (checkInterval) clearInterval(checkInterval);
 
-        if (typeof window.Clerk.addListener === "function") {
-          removeListener = window.Clerk.addListener(async (emission) => {
-            if (!window.Clerk?.session && emission?.client?.sessions?.length) {
-              const active =
-                emission.client.sessions.find((s: any) => s.status === "active") ||
-                emission.client.sessions[0];
-              if (active && typeof window.Clerk?.setActive === "function") {
-                try {
-                  await window.Clerk.setActive({ session: active.id });
-                } catch {}
-              }
+      await syncState();
+      if (cancelled || !window.Clerk) return;
+
+      if (typeof window.Clerk.addListener === "function") {
+        removeListener = window.Clerk.addListener(async (emission) => {
+          if (cancelled) return;
+          if (!window.Clerk?.session && emission?.client?.sessions?.length) {
+            const active =
+              emission.client.sessions.find((s) => s.status === "active") ||
+              emission.client.sessions[0];
+            if (active && typeof window.Clerk?.setActive === "function") {
+              try {
+                await window.Clerk.setActive({ session: active.id });
+              } catch {}
             }
+          }
 
-            const raw =
-              emission?.user ||
-              window.Clerk?.user ||
-              emission?.session?.user ||
-              window.Clerk?.session?.user ||
-              null;
+          const raw =
+            emission?.user ||
+            window.Clerk?.user ||
+            emission?.session?.user ||
+            window.Clerk?.session?.user ||
+            null;
 
-            setUser(extractUser(raw));
-            setIsLoaded(true);
-          });
-        }
-        clearInterval(checkInterval);
+          setUser(extractUser(raw));
+          setIsLoaded(true);
+        });
       }
     };
 
-    checkInterval = setInterval(init, 150);
+    if (typeof window !== "undefined" && window.Clerk) {
+      Promise.resolve().then(() => {
+        void tryInit();
+      });
+    } else {
+      checkInterval = setInterval(() => {
+        void tryInit();
+      }, 150);
+    }
+
     const timeout = setTimeout(() => {
-      clearInterval(checkInterval);
-      setIsLoaded(true);
+      if (checkInterval) clearInterval(checkInterval);
+      if (!cancelled) setIsLoaded(true);
     }, 4000);
 
     const handleFocus = () => {
@@ -145,21 +206,46 @@ export function useClerkAuth() {
     window.addEventListener("focus", handleFocus);
 
     return () => {
-      clearInterval(checkInterval);
+      cancelled = true;
+      if (checkInterval) clearInterval(checkInterval);
       clearTimeout(timeout);
       window.removeEventListener("focus", handleFocus);
       if (removeListener) removeListener();
     };
   }, [syncState]);
 
-  const openSignIn = () => {
-    if (window.Clerk?.openSignIn) {
+  const openSignIn = useCallback(async () => {
+    if (typeof window === "undefined") return;
+    if (!window.Clerk?.openSignIn) {
+      if (window.location.pathname !== "/login") window.location.assign("/login");
+      return;
+    }
+
+    try {
+      const ready = await ensureClerkLoaded();
+      if (!ready || !window.Clerk.loaded) {
+        clerkLoadPromise = null;
+        const retried = await ensureClerkLoaded();
+        if (!retried) {
+          if (window.location.pathname !== "/login") window.location.assign("/login");
+          return;
+        }
+      }
+
+      if (
+        window.Clerk.user ||
+        window.Clerk.session ||
+        window.Clerk.client?.sessions?.some((s) => s.status === "active")
+      ) {
+        await syncState();
+        return;
+      }
+
       window.Clerk.openSignIn({
         afterSignInUrl: window.location.href,
         afterSignUpUrl: window.location.href,
       });
 
-      // Poll periodically for 8 seconds after opening modal to catch sign-in completion
       let attempts = 0;
       const poll = setInterval(async () => {
         attempts++;
@@ -168,24 +254,35 @@ export function useClerkAuth() {
           clearInterval(poll);
         }
       }, 350);
-    } else {
-      window.location.href = "/";
+    } catch (err) {
+      console.error("Clerk openSignIn error:", err);
+      await syncState();
     }
-  };
+  }, [syncState]);
 
-  const openUserProfile = () => {
-    if (window.Clerk?.openUserProfile) {
-      window.Clerk.openUserProfile();
+  const openUserProfile = useCallback(async () => {
+    if (typeof window === "undefined" || !window.Clerk?.openUserProfile) return;
+    try {
+      const ready = await ensureClerkLoaded();
+      if (ready && window.Clerk.loaded) {
+        window.Clerk.openUserProfile();
+      }
+    } catch (err) {
+      console.error("Clerk openUserProfile error:", err);
     }
-  };
+  }, []);
 
-  const signOut = async () => {
-    if (window.Clerk?.signOut) {
+  const signOut = useCallback(async () => {
+    if (typeof window === "undefined" || !window.Clerk?.signOut) return;
+    try {
+      await ensureClerkLoaded();
       await window.Clerk.signOut();
       setUser(null);
       window.location.replace("/");
+    } catch (err) {
+      console.error("Clerk signOut error:", err);
     }
-  };
+  }, []);
 
   return {
     isLoaded,

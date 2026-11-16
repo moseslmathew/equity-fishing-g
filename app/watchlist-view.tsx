@@ -7,7 +7,6 @@ import {
   ArrowUpDown,
   Bookmark,
   Building2,
-  CheckCircle2,
   Download,
   ExternalLink,
   Plus,
@@ -83,7 +82,7 @@ export default function WatchlistView() {
   const [error, setError] = useState("");
   const [activeTab, setActiveTab] = useState<"all" | "stock" | "fund">("all");
   const [tableFilter, setTableFilter] = useState("");
-  const [sort, setSort] = useState<{ key: SortKey; dir: SortDir }>({ key: "createdAt", dir: -1 });
+  const [sort, setSort] = useState<{ key: SortKey; dir: SortDir }>({ key: "title", dir: 1 });
 
   // Live LTP state refreshed automatically on page load & manual Sync
   const [quotes, setQuotes] = useState<Record<string, BatchQuoteEntry | null>>({});
@@ -116,14 +115,8 @@ export default function WatchlistView() {
   >([]);
   const [isSearching, setIsSearching] = useState(false);
   const [showDropdown, setShowDropdown] = useState(false);
-  const [liveQuote, setLiveQuote] = useState<{
-    price: number | null;
-    change: number | null;
-    changePercent: number | null;
-    series?: string | null;
-  } | null>(null);
-  const [loadingQuote, setLoadingQuote] = useState(false);
   const [isManualEdit, setIsManualEdit] = useState(false);
+  const [directAddingKey, setDirectAddingKey] = useState<string | null>(null);
 
   const fetchLiveQuotes = useCallback(async (list: WatchlistItem[]) => {
     const stockSymbols = [...new Set(list.filter((i) => i.itemType === "stock").map((i) => i.itemKey.trim().toUpperCase()).filter(Boolean))];
@@ -225,47 +218,6 @@ export default function WatchlistView() {
     };
   }, [searchQuery, itemType]);
 
-  const handleSelectStock = async (c: (typeof candidates)[number]) => {
-    setItemKey(c.symbol);
-    setItemTitle(c.name);
-    setItemSubtitle(c.sector || "Equity");
-    setSearchQuery("");
-    setShowDropdown(false);
-    setCandidates([]);
-    setIsManualEdit(false);
-
-    if (c.price !== null) {
-      setLiveQuote({ price: c.price, change: null, changePercent: c.changePercent });
-    }
-
-    setLoadingQuote(true);
-    try {
-      const res = await fetch(`/api/nse?symbol=${encodeURIComponent(c.symbol)}`);
-      if (res.ok) {
-        const snap = (await res.json()) as {
-          live?: {
-            price: number | null;
-            change: number | null;
-            changePercent: number | null;
-            series?: string | null;
-          } | null;
-        };
-        if (snap.live) {
-          setLiveQuote({
-            price: snap.live.price,
-            change: snap.live.change,
-            changePercent: snap.live.changePercent,
-            series: snap.live.series,
-          });
-        }
-      }
-    } catch {
-      // Keep candidate quote if live fetch fails
-    } finally {
-      setLoadingQuote(false);
-    }
-  };
-
   const handleCloseModal = () => {
     setShowAddModal(false);
     setItemKey("");
@@ -275,17 +227,85 @@ export default function WatchlistView() {
     setSearchQuery("");
     setCandidates([]);
     setShowDropdown(false);
-    setLiveQuote(null);
     setIsManualEdit(false);
+    setDirectAddingKey(null);
     setSubmitError("");
   };
 
-  const handleSelectPredefinedFund = (fundId: string) => {
-    const found = fundCatalog.find((f) => f.id === fundId);
-    if (found) {
-      setItemKey(found.id);
-      setItemTitle(found.name);
-      setItemSubtitle("Mutual Fund");
+  const handleDirectAddStock = async (c: (typeof candidates)[number]) => {
+    if (directAddingKey) return;
+    setDirectAddingKey(c.symbol);
+    setSubmitError("");
+    try {
+      const res = await fetch("/api/watchlist", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          itemType: "stock",
+          itemKey: c.symbol.trim().toUpperCase(),
+          itemTitle: c.name.trim(),
+          itemSubtitle: c.sector?.trim() || "Equity",
+        }),
+      });
+
+      if (!res.ok) {
+        const errorData = (await res.json()) as { error?: string };
+        throw new Error(errorData.error || "Failed to add security to watchlist");
+      }
+
+      if (c.price !== null && c.price !== undefined) {
+        setQuotes((prev) => ({
+          ...prev,
+          [c.symbol.trim().toUpperCase()]: {
+            price: c.price,
+            previousClose: c.close ?? null,
+            change: null,
+            changePercent: c.changePercent,
+            asOf: c.date ?? new Date().toLocaleTimeString("en-IN", { hour: "2-digit", minute: "2-digit" }),
+            asOfIso: new Date().toISOString(),
+            source: "live",
+          },
+        }));
+      }
+
+      handleCloseModal();
+      setLoading(true);
+      await loadWatchlist();
+    } catch (err) {
+      setSubmitError(err instanceof Error ? err.message : "Error adding to watchlist");
+    } finally {
+      setDirectAddingKey(null);
+    }
+  };
+
+  const handleDirectAddFund = async (fund: { id: string; name: string }) => {
+    if (directAddingKey) return;
+    setDirectAddingKey(fund.id);
+    setSubmitError("");
+    try {
+      const res = await fetch("/api/watchlist", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          itemType: "fund",
+          itemKey: fund.id,
+          itemTitle: fund.name,
+          itemSubtitle: "Mutual Fund",
+        }),
+      });
+
+      if (!res.ok) {
+        const errorData = (await res.json()) as { error?: string };
+        throw new Error(errorData.error || "Failed to add fund to watchlist");
+      }
+
+      handleCloseModal();
+      setLoading(true);
+      await loadWatchlist();
+    } catch (err) {
+      setSubmitError(err instanceof Error ? err.message : "Error adding to watchlist");
+    } finally {
+      setDirectAddingKey(null);
     }
   };
 
@@ -609,16 +629,6 @@ export default function WatchlistView() {
                     {sortIndicator("change")}
                   </button>
                 </th>
-                <th
-                  scope="col"
-                  className="is-numeric"
-                  aria-sort={sort.key === "createdAt" ? (sort.dir === 1 ? "ascending" : "descending") : "none"}
-                >
-                  <button type="button" className="watchlist-sort-btn is-right" onClick={() => toggleSort("createdAt")}>
-                    <span>Added</span>
-                    {sortIndicator("createdAt")}
-                  </button>
-                </th>
                 <th scope="col" className="is-actions">
                   <span className="sr-only">Actions</span>
                 </th>
@@ -641,7 +651,6 @@ export default function WatchlistView() {
                     <td className="watchlist-cell-security" data-label="Security">
                       <div className="watchlist-security-row">
                         <a href={href} className="watchlist-security-link">
-                          <span className="watchlist-ticker-chip">{item.itemKey}</span>
                           <span className="watchlist-security-name">{item.itemTitle}</span>
                         </a>
                         {mixedTypes && !isStock && (
@@ -712,10 +721,6 @@ export default function WatchlistView() {
                       )}
                     </td>
 
-                    <td className="is-numeric watchlist-cell-date" data-label="Added">
-                      {formatCompactDate(item.createdAt)}
-                    </td>
-
                     <td className="is-actions watchlist-cell-actions">
                       <a
                         href={href}
@@ -773,7 +778,7 @@ export default function WatchlistView() {
                       setSearchQuery("");
                       setCandidates([]);
                       setShowDropdown(false);
-                      setLiveQuote(null);
+                      setIsManualEdit(false);
                     }}
                     className={`watchlist-type-option ${itemType === "stock" ? "is-selected" : ""}`}
                   >
@@ -790,7 +795,7 @@ export default function WatchlistView() {
                       setSearchQuery("");
                       setCandidates([]);
                       setShowDropdown(false);
-                      setLiveQuote(null);
+                      setIsManualEdit(false);
                     }}
                     className={`watchlist-type-option ${itemType === "fund" ? "is-selected" : ""}`}
                   >
@@ -800,7 +805,7 @@ export default function WatchlistView() {
                 </div>
               </div>
 
-              {itemType === "stock" && !itemKey && (
+              {itemType === "stock" && !isManualEdit && (
                 <div className="watchlist-form-group">
                   <label className="watchlist-form-label">Search Security by Company Name or Ticker</label>
                   <div className="watchlist-search-wrapper">
@@ -827,6 +832,10 @@ export default function WatchlistView() {
                         }}
                         onKeyDown={(e) => {
                           if (e.key === "Escape") setShowDropdown(false);
+                          else if (e.key === "Enter" && candidates.length > 0 && !directAddingKey) {
+                            e.preventDefault();
+                            void handleDirectAddStock(candidates[0]);
+                          }
                         }}
                         autoFocus
                       />
@@ -852,43 +861,56 @@ export default function WatchlistView() {
                     {showDropdown && (
                       <ul className="watchlist-suggestions-menu" role="listbox">
                         {candidates.length > 0 ? (
-                          candidates.map((c) => (
-                            <li
-                              key={c.symbol}
-                              className="watchlist-suggestion-item"
-                              onClick={() => handleSelectStock(c)}
-                              role="option"
-                              aria-selected={itemKey === c.symbol}
-                            >
-                              <div className="watchlist-suggestion-left">
-                                <div className="watchlist-suggestion-headline">
-                                  <span className="watchlist-suggestion-symbol">{c.symbol}</span>
-                                  <span className="watchlist-suggestion-name">{c.name}</span>
+                          candidates.map((c) => {
+                            const isAddingThis = directAddingKey === c.symbol;
+                            return (
+                              <li
+                                key={c.symbol}
+                                className={`watchlist-suggestion-item ${isAddingThis ? "is-adding" : ""}`}
+                                onClick={() => {
+                                  if (!directAddingKey) void handleDirectAddStock(c);
+                                }}
+                                role="option"
+                                aria-selected={false}
+                                aria-disabled={Boolean(directAddingKey)}
+                              >
+                                <div className="watchlist-suggestion-left">
+                                  <div className="watchlist-suggestion-headline">
+                                    <span className="watchlist-suggestion-symbol">{c.symbol}</span>
+                                    <span className="watchlist-suggestion-name">{c.name}</span>
+                                  </div>
+                                  <div className="watchlist-suggestion-meta">
+                                    <span>{c.sector}</span>
+                                    {c.isin && <span>· ISIN: {c.isin}</span>}
+                                  </div>
                                 </div>
-                                <div className="watchlist-suggestion-meta">
-                                  <span>{c.sector}</span>
-                                  {c.isin && <span>· ISIN: {c.isin}</span>}
-                                </div>
-                              </div>
-                              {c.price !== null && c.price !== undefined && (
                                 <div className="watchlist-suggestion-right">
-                                  <span className="watchlist-suggestion-price">
-                                    ₹{c.price.toLocaleString("en-IN")}
-                                  </span>
-                                  {c.changePercent !== null && c.changePercent !== undefined && (
-                                    <span
-                                      className={`watchlist-suggestion-change ${
-                                        c.changePercent >= 0 ? "positive" : "negative"
-                                      }`}
-                                    >
-                                      {c.changePercent >= 0 ? "+" : ""}
-                                      {c.changePercent.toFixed(2)}%
-                                    </span>
+                                  {isAddingThis ? (
+                                    <span className="watchlist-adding-indicator">Adding…</span>
+                                  ) : (
+                                    <>
+                                      {c.price !== null && c.price !== undefined && (
+                                        <span className="watchlist-suggestion-price">
+                                          ₹{c.price.toLocaleString("en-IN")}
+                                        </span>
+                                      )}
+                                      {c.changePercent !== null && c.changePercent !== undefined && (
+                                        <span
+                                          className={`watchlist-suggestion-change ${
+                                            c.changePercent >= 0 ? "positive" : "negative"
+                                          }`}
+                                        >
+                                          {c.changePercent >= 0 ? "+" : ""}
+                                          {c.changePercent.toFixed(2)}%
+                                        </span>
+                                      )}
+                                      <span className="watchlist-add-pill">+ Add</span>
+                                    </>
                                   )}
                                 </div>
-                              )}
-                            </li>
-                          ))
+                              </li>
+                            );
+                          })
                         ) : !isSearching && searchQuery.trim().length >= 1 ? (
                           <li className="watchlist-suggestions-empty">
                             <span>No matching NSE equity found for &quot;{searchQuery}&quot;.</span>
@@ -897,8 +919,8 @@ export default function WatchlistView() {
                               className="watchlist-manual-toggle"
                               onClick={() => {
                                 const trimmed = searchQuery.trim();
-                                if (!itemKey) setItemKey(trimmed.toUpperCase().replace(/\s+/g, ""));
-                                if (!itemTitle) setItemTitle(trimmed);
+                                setItemKey(trimmed.toUpperCase().replace(/\s+/g, ""));
+                                setItemTitle(trimmed);
                                 setShowDropdown(false);
                                 setIsManualEdit(true);
                               }}
@@ -910,7 +932,7 @@ export default function WatchlistView() {
                       </ul>
                     )}
                   </div>
-                  {!isManualEdit && (
+                  <div style={{ marginTop: "12px" }}>
                     <button
                       type="button"
                       className="watchlist-manual-toggle"
@@ -918,82 +940,29 @@ export default function WatchlistView() {
                     >
                       Or enter ticker details manually
                     </button>
-                  )}
-                </div>
-              )}
-
-              {itemType === "stock" && itemKey && itemTitle && (
-                <div className="watchlist-selected-card">
-                  <div className="watchlist-selected-header">
-                    <span className="watchlist-selected-badge">{itemKey}</span>
-                    <span className="watchlist-selected-verified">
-                      <CheckCircle2 size={12} />
-                      <span>NSE Verified</span>
-                    </span>
-                    <button
-                      type="button"
-                      className="watchlist-selected-change-btn"
-                      onClick={() => {
-                        setItemKey("");
-                        setItemTitle("");
-                        setItemSubtitle("");
-                        setLiveQuote(null);
-                        setSearchQuery("");
-                      }}
-                    >
-                      Change Security
-                    </button>
                   </div>
-                  <h4 className="watchlist-selected-title">{itemTitle}</h4>
-                  <p className="watchlist-selected-sector">{itemSubtitle || "Equity"}</p>
-                  {(liveQuote?.price || loadingQuote) && (
-                    <div className="watchlist-selected-quote">
-                      {loadingQuote ? (
-                        <span className="watchlist-selected-quote-note">Fetching live quote from NSE…</span>
-                      ) : (
-                        <>
-                          <span className="watchlist-selected-price">
-                            ₹{liveQuote?.price?.toLocaleString("en-IN")}
-                          </span>
-                          {liveQuote?.changePercent !== null && liveQuote?.changePercent !== undefined && (
-                            <span
-                              className={`watchlist-selected-change ${
-                                liveQuote.changePercent >= 0 ? "positive" : "negative"
-                              }`}
-                            >
-                              {liveQuote.changePercent >= 0 ? "+" : ""}
-                              {liveQuote.changePercent.toFixed(2)}%
-                            </span>
-                          )}
-                          <span className="watchlist-selected-quote-note">Live via NSE</span>
-                        </>
-                      )}
-                    </div>
-                  )}
-                  {!isManualEdit && (
-                    <div style={{ marginTop: "10px" }}>
-                      <button
-                        type="button"
-                        className="watchlist-manual-toggle"
-                        onClick={() => setIsManualEdit(true)}
-                      >
-                        Customize title or sector
-                      </button>
-                    </div>
-                  )}
                 </div>
               )}
 
-              {itemType === "fund" && (
+              {itemType === "fund" && !isManualEdit && (
                 <div className="watchlist-form-group">
-                  <label className="watchlist-form-label">Quick Select Tracked Scheme</label>
+                  <label className="watchlist-form-label">Select Tracked Scheme to Add</label>
                   <select
                     className="watchlist-input"
-                    onChange={(e) => handleSelectPredefinedFund(e.target.value)}
-                    defaultValue=""
+                    value=""
+                    disabled={Boolean(directAddingKey)}
+                    onChange={(e) => {
+                      const fundId = e.target.value;
+                      if (fundId) {
+                        const found = fundCatalog.find((f) => f.id === fundId);
+                        if (found) {
+                          void handleDirectAddFund(found);
+                        }
+                      }
+                    }}
                   >
                     <option value="" disabled>
-                      Choose a fund or enter manually below...
+                      {directAddingKey ? "Adding fund to watchlist…" : "Click to select a fund to add directly…"}
                     </option>
                     {fundCatalog.map((f) => (
                       <option key={f.id} value={f.id}>
@@ -1001,10 +970,24 @@ export default function WatchlistView() {
                       </option>
                     ))}
                   </select>
+                  <div style={{ marginTop: "12px" }}>
+                    <button
+                      type="button"
+                      className="watchlist-manual-toggle"
+                      onClick={() => {
+                        setItemKey("");
+                        setItemTitle("");
+                        setItemSubtitle("Mutual Fund");
+                        setIsManualEdit(true);
+                      }}
+                    >
+                      Or enter custom fund manually
+                    </button>
+                  </div>
                 </div>
               )}
 
-              {(itemType === "fund" || isManualEdit) && (
+              {isManualEdit && (
                 <>
                   <div className="watchlist-form-group">
                     <label className="watchlist-form-label">
@@ -1046,18 +1029,18 @@ export default function WatchlistView() {
                       className="watchlist-input"
                     />
                   </div>
+
+                  <div className="watchlist-form-group">
+                    <label className="watchlist-form-label">Notes / Thesis (Optional)</label>
+                    <textarea
+                      placeholder="Target price, allocation strategy, or why you are monitoring this..."
+                      value={notes}
+                      onChange={(e) => setNotes(e.target.value)}
+                      className="watchlist-textarea"
+                    />
+                  </div>
                 </>
               )}
-
-              <div className="watchlist-form-group">
-                <label className="watchlist-form-label">Notes / Thesis (Optional)</label>
-                <textarea
-                  placeholder="Target price, allocation strategy, or why you are monitoring this..."
-                  value={notes}
-                  onChange={(e) => setNotes(e.target.value)}
-                  className="watchlist-textarea"
-                />
-              </div>
 
               {submitError && (
                 <p className="error-notice" role="alert" style={{ marginBottom: "12px" }}>
@@ -1066,21 +1049,33 @@ export default function WatchlistView() {
               )}
 
               <div className="watchlist-modal-footer">
-                <button
-                  type="button"
-                  className="watchlist-button-secondary"
-                  onClick={handleCloseModal}
-                  disabled={submitting}
-                >
-                  Cancel
-                </button>
-                <button
-                  type="submit"
-                  className="watchlist-button-primary"
-                  disabled={submitting || !itemKey.trim() || !itemTitle.trim()}
-                >
-                  {submitting ? "Adding…" : "Add to Watchlist"}
-                </button>
+                {isManualEdit ? (
+                  <>
+                    <button
+                      type="button"
+                      className="watchlist-button-secondary"
+                      onClick={() => setIsManualEdit(false)}
+                      disabled={submitting}
+                    >
+                      Back to Search
+                    </button>
+                    <button
+                      type="submit"
+                      className="watchlist-button-primary"
+                      disabled={submitting || !itemKey.trim() || !itemTitle.trim()}
+                    >
+                      {submitting ? "Adding…" : "Add to Watchlist"}
+                    </button>
+                  </>
+                ) : (
+                  <button
+                    type="button"
+                    className="watchlist-button-secondary"
+                    onClick={handleCloseModal}
+                  >
+                    Close
+                  </button>
+                )}
               </div>
             </form>
           </div>

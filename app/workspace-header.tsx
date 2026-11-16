@@ -16,7 +16,17 @@ export default function WorkspaceHeader({
 
   return (
     <header className="site-header">
-      <a className="site-brand" href="/">
+      {/* eslint-disable-next-line @next/next/no-html-link-for-pages */}
+      <a
+        className="site-brand"
+        href="/"
+        onClick={(e) => {
+          if (onNavigate) {
+            e.preventDefault();
+            onNavigate("funds");
+          }
+        }}
+      >
         <span className="brand-mark">
           <BrandLogo size={31} />
         </span>

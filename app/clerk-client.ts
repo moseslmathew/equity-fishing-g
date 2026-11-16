@@ -82,6 +82,18 @@ async function ensureClerkLoaded(): Promise<boolean> {
   return clerkLoadPromise;
 }
 
+function triggerPostSignInWatchlist() {
+  if (typeof window === "undefined") return;
+  try {
+    sessionStorage.removeItem("clerk_post_sign_in_nav");
+  } catch {}
+  if (window.location.pathname !== "/" || window.location.hash !== "#watchlist") {
+    window.location.assign("/#watchlist");
+  } else {
+    window.dispatchEvent(new HashChangeEvent("hashchange"));
+  }
+}
+
 function extractUser(rawUser: ClerkRawUser | null | undefined): ClerkUser | null {
   if (!rawUser || !rawUser.id) return null;
   const email =
@@ -179,8 +191,22 @@ export function useClerkAuth() {
             window.Clerk?.session?.user ||
             null;
 
-          setUser(extractUser(raw));
+          const currentUser = extractUser(raw);
+          setUser(currentUser);
           setIsLoaded(true);
+
+          if (currentUser) {
+            let shouldNav = false;
+            try {
+              if (sessionStorage.getItem("clerk_post_sign_in_nav") === "watchlist") {
+                sessionStorage.removeItem("clerk_post_sign_in_nav");
+                shouldNav = true;
+              }
+            } catch {}
+            if (shouldNav) {
+              triggerPostSignInWatchlist();
+            }
+          }
         });
       }
     };
@@ -241,9 +267,20 @@ export function useClerkAuth() {
         return;
       }
 
+      const watchlistTarget =
+        typeof window !== "undefined" ? `${window.location.origin}/#watchlist` : "/#watchlist";
+
+      try {
+        sessionStorage.setItem("clerk_post_sign_in_nav", "watchlist");
+      } catch {}
+
       window.Clerk.openSignIn({
-        afterSignInUrl: window.location.href,
-        afterSignUpUrl: window.location.href,
+        forceRedirectUrl: watchlistTarget,
+        fallbackRedirectUrl: watchlistTarget,
+        signUpForceRedirectUrl: watchlistTarget,
+        signUpFallbackRedirectUrl: watchlistTarget,
+        afterSignInUrl: watchlistTarget,
+        afterSignUpUrl: watchlistTarget,
       });
 
       let attempts = 0;
@@ -252,6 +289,9 @@ export function useClerkAuth() {
         await syncState();
         if (window.Clerk?.user || attempts > 25) {
           clearInterval(poll);
+          if (window.Clerk?.user) {
+            triggerPostSignInWatchlist();
+          }
         }
       }, 350);
     } catch (err) {

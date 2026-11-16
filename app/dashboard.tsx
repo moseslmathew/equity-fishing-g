@@ -17,7 +17,7 @@ const previousMonth=(s:string)=>{const [y,m]=s.split("-").map(Number);return new
 
 export default function Dashboard(){
   const [data,setData]=useState<MonthlyPortfolio|null>(null),[error,setError]=useState(""),[loading,setLoading]=useState(true),[requestedMonth,setRequestedMonth]=useState("latest");
-  const [section,setSection]=useState<"funds"|"investors"|"watchlist">("funds");
+  const [section,setSection]=useState<"funds"|"investors"|"watchlist">(()=>typeof window !== "undefined" && window.location.hash==="#watchlist" ? "watchlist" : "funds");
   const [fundSearch,setFundSearch]=useState("");
   const [activePanel,setActivePanel]=useState<"combined"|"funds"|"shared"|null>(null);
   const panelToggle=(panel:"combined"|"funds"|"shared",open:boolean)=>setActivePanel(current=>open?panel:current===panel?null:current);
@@ -40,10 +40,44 @@ export default function Dashboard(){
   };
 
   useEffect(()=>{
-    if(window.location.hash==="#watchlist") setSection("watchlist");
-    else if(window.location.hash==="#investors") window.history.replaceState(null,"",window.location.pathname+window.location.search);
-    void load();
+    const syncFromHash=()=>{
+      const hash=window.location.hash;
+      if(hash==="#watchlist") setSection("watchlist");
+      else if(hash==="#investors") {
+        window.history.replaceState(null,"",window.location.pathname+window.location.search);
+        setSection("funds");
+      } else if(!hash || hash==="#funds") {
+        setSection("funds");
+      }
+    };
+    window.addEventListener("hashchange",syncFromHash);
+    window.addEventListener("popstate",syncFromHash);
+    let active = true;
+    Promise.resolve().then(()=>{
+      if(active){
+        syncFromHash();
+        void load();
+      }
+    });
+    return ()=>{
+      active = false;
+      window.removeEventListener("hashchange",syncFromHash);
+      window.removeEventListener("popstate",syncFromHash);
+    };
   },[]);
+
+  const handleNavigate=(next:"funds"|"investors"|"watchlist")=>{
+    setSection(next);
+    if(next==="watchlist"){
+      if(window.location.hash!=="#watchlist"){
+        window.history.pushState(null,"","/#watchlist");
+      }
+    }else{
+      if(window.location.hash==="#watchlist"){
+        window.history.pushState(null,"",window.location.pathname+window.location.search);
+      }
+    }
+  };
 
   if(!data && section!=="watchlist")return <main className="state"><h1>Equity funds</h1>{loading?<p className="loading-status" role="status"><span className="loading-spinner" aria-hidden="true"/>Loading your funds…</p>:<><p role="alert">{error}</p><button className="button" onClick={()=>void load()}>Try again</button></>}</main>;
   const months=data ? [...new Set([data.calendarMonth,previousMonth(data.calendarMonth),...data.availableMonths])].sort().reverse() : [];
@@ -51,7 +85,7 @@ export default function Dashboard(){
 
   return (
     <div className="dashboard">
-      <WorkspaceHeader section={section} onNavigate={setSection}/>
+      <WorkspaceHeader section={section} onNavigate={handleNavigate}/>
       <main className="fund-main">
         {section==="watchlist" ? (
           <WatchlistView/>

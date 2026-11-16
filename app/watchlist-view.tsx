@@ -5,6 +5,7 @@ import {
   ArrowDown,
   ArrowUp,
   ArrowUpDown,
+  BarChart3,
   Bookmark,
   Building2,
   Download,
@@ -722,6 +723,16 @@ export default function WatchlistView() {
                     </td>
 
                     <td className="is-actions watchlist-cell-actions">
+                      {isStock && (
+                        <a
+                          href={`/companies/${encodeURIComponent(item.itemKey)}?view=charts`}
+                          className="watchlist-row-action watchlist-chart-action"
+                          aria-label={`Open charts for ${item.itemTitle}`}
+                          title="Open stock charts"
+                        >
+                          <BarChart3 size={15} />
+                        </a>
+                      )}
                       <a
                         href={href}
                         className="watchlist-row-action"

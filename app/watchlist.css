@@ -465,6 +465,11 @@
   background: var(--soft);
 }
 
+.watchlist-chart-action:hover {
+  color: #7043c1;
+  background: #f3ecfb;
+}
+
 .watchlist-remove-btn:hover {
   color: #c92a2a;
   background: #fdecec;

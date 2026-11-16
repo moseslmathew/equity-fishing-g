@@ -6,7 +6,6 @@ import { useEffect, useRef, useState } from "react";
 import { ArrowLeft, ArrowUpRight, BarChart3, LayoutGrid, RefreshCw, TrendingUp } from "lucide-react";
 import VolumeAnalysis from "./volume-analysis";
 import PriceDynamicsChart from "./price-dynamics-chart";
-import StockTechnicalChart from "./stock-technical-chart";
 import type { NseSnapshot } from "../../../lib/nse-mcp";
 
 const amount = (n: number | null | undefined) =>
@@ -331,10 +330,7 @@ export default function CompanyDetails({
                     </section>
                   )}
 
-                  {/* 1. Candlestick & Technical Trend Chart */}
-                  <StockTechnicalChart symbol={security.symbol} />
-
-                  {/* 2. Interactive Price Range & Dynamics Spectrum */}
+                  {/* Interactive Price Range & Dynamics Spectrum */}
                   <PriceDynamicsChart
                     symbol={security.symbol}
                     price={q?.price ?? null}

@@ -39,8 +39,6 @@ const pct = (n: number | null | undefined) =>
 export default function PriceDynamicsChart({
   symbol,
   price,
-  change,
-  changePercent,
   open,
   high,
   low,
@@ -73,25 +71,23 @@ export default function PriceDynamicsChart({
   const fromLow = price && yearLow ? ((price - yearLow) / yearLow) * 100 : null;
   const sessionSpread = high && low && low > 0 ? ((high - low) / low) * 100 : null;
 
-  const isPositive = (changePercent ?? 0) >= 0;
-
   return (
     <section className="company-panel company-price-chart" aria-label="Interactive Price Dynamics">
       <div className="volume-heading">
         <h2>
           <Gauge size={17} aria-hidden="true" />
-          <span>Price & Range Dynamics</span>
+          <span>Price Spectrum & Range Dynamics</span>
         </h2>
         <span className="price-chart-symbol">NSE · {symbol}</span>
       </div>
 
-      <div className="volume-tabs" role="group" aria-label="Price range view">
+      <div className="volume-tabs" role="group" aria-label="Price range timeframe">
         <button
           type="button"
           aria-pressed={activeTab === "session"}
           onClick={() => setActiveTab("session")}
         >
-          Session Range
+          Session Spectrum
         </button>
         <button
           type="button"
@@ -106,30 +102,21 @@ export default function PriceDynamicsChart({
         <div className="volume-period-header">
           <div className="volume-period-label">
             {activeTab === "session"
-              ? "Today's Trading Range & Spectrum"
+              ? "Session Spectrum & Relative Position"
               : "52-Week High–Low Band & Momentum"}
           </div>
-          <div
-            style={{
-              fontSize: "11px",
-              fontWeight: 600,
-              color: isPositive ? "#16a34a" : "#dc2626",
-            }}
-          >
-            {pct(changePercent)} ({inr(change)})
+          <div style={{ fontSize: "11px", color: "var(--muted)" }}>
+            Position:{" "}
+            <strong style={{ color: "var(--ink)", fontWeight: 600 }}>
+              {(activeTab === "session" ? sessionPos : yearPos).toFixed(1)}%
+            </strong>{" "}
+            of range
           </div>
         </div>
 
         <div className="volume-overview" style={{ alignItems: "stretch" }}>
-          {/* Key Statistics */}
+          {/* Key Range Statistics (No duplicate LTP) */}
           <dl className="volume-statistics">
-            <div>
-              <dt>
-                <i style={{ background: "#7043c1" }} />
-                <span>Last Traded Price</span>
-              </dt>
-              <dd>{inr(price)}</dd>
-            </div>
             {activeTab === "session" ? (
               <>
                 <div>
@@ -150,7 +137,7 @@ export default function PriceDynamicsChart({
                 </div>
                 <div style={{ borderTop: "1px dashed var(--line)", paddingTop: "14px", marginTop: "14px" }}>
                   <dt>
-                    <span>Session High–Low Spread</span>
+                    <span>Session Spread</span>
                   </dt>
                   <dd>{sessionSpread !== null ? sessionSpread.toFixed(2) + "%" : "—"}</dd>
                 </div>
@@ -181,6 +168,14 @@ export default function PriceDynamicsChart({
                   </dt>
                   <dd style={{ color: (fromHigh ?? 0) < 0 ? "#dc2626" : "inherit" }}>
                     {pct(fromHigh)}
+                  </dd>
+                </div>
+                <div>
+                  <dt>
+                    <span>Above 52-Week Low</span>
+                  </dt>
+                  <dd style={{ color: (fromLow ?? 0) > 0 ? "#16a34a" : "inherit" }}>
+                    {pct(fromLow)}
                   </dd>
                 </div>
               </>
@@ -267,9 +262,11 @@ export default function PriceDynamicsChart({
                     side="top"
                     sideOffset={12}
                   >
-                    <strong>Current LTP: {inr(price)}</strong>
+                    <strong>LTP Position: {inr(price)}</strong>
                     <div style={{ fontSize: "11px", marginTop: "4px" }}>
-                      Position: {(activeTab === "session" ? sessionPos : yearPos).toFixed(1)}% of range
+                      {(activeTab === "session" ? sessionPos : yearPos).toFixed(1)}% between{" "}
+                      {inr(activeTab === "session" ? low : yearLow)} and{" "}
+                      {inr(activeTab === "session" ? high : yearHigh)}
                     </div>
                   </TooltipContent>
                 </Tooltip>

@@ -135,16 +135,16 @@
       "name": "Multi Commodity Exchange of India Ltd.",
       "key": "name:multicommodityexchangeofin",
       "quantities": [
-        9776461,
-        9873004,
-        9535201
+        10390810,
+        10588430,
+        10250627
       ],
       "holders": [
-        19,
-        18,
-        18
+        22,
+        21,
+        21
       ],
-      "growth": -2.4677641531020273,
+      "growth": -1.3491056038942104,
       "repeatAdders": [
         "Helios Mid Cap Fund",
         "TRUSTMF Small Cap Fund",
@@ -157,7 +157,7 @@
       "adding": 6,
       "reducing": 3,
       "primaryPositions": 5,
-      "positionCount": 19,
+      "positionCount": 22,
       "sources": [
         {
           "label": "DecryptMutualFunds September portfolio",
@@ -223,6 +223,46 @@
           "label": "Fund Tracker India · October 2026",
           "url": "https://fundtrackerindia.com/scheme/dsp-midcap-fund",
           "scope": "October cross-check: 56 exact company quantities and allocations matched; 0 disagreements. This page may cover only a subset of equities."
+        },
+        {
+          "label": "Official AMC monthly portfolio",
+          "url": "https://www.franklintempletonindia.com/download/en-in/monthly-portfolio-dsclr/79c9638b-ce3e-48c8-8036-a571ecd54260/MF-Monthly-Portfolio-ISIN-30-Sep-2026.xlsx",
+          "scope": "Full equity quantities and allocations as at 2026-09-30. Original AMC spreadsheet."
+        },
+        {
+          "label": "Official AMC monthly portfolio",
+          "url": "https://www.franklintempletonindia.com/download/en-in/monthly-portfolio-dsclr/52e4efe4-b370-4fe7-9024-19a63fde979a/Monthly-Portfolio-ISIN-31-Aug-2026.xlsx",
+          "scope": "Full equity quantities and allocations as at 2026-08-31. Original AMC spreadsheet."
+        },
+        {
+          "label": "MFScanner · September vs August",
+          "url": "https://mfscanner.com/fund/franklin-india-mid-cap-fund",
+          "scope": "Published full-equity current and previous quantities. Unreconciled provider changes are withheld."
+        },
+        {
+          "label": "DecryptMutualFunds · October 2026",
+          "url": "https://decryptmutualfunds.com/fund-houses/franklin-templeton/mid-cap-fund",
+          "scope": "October provider quantities and allocations; original AMC workbook not retrieved."
+        },
+        {
+          "label": "Fund Tracker India · October 2026",
+          "url": "https://fundtrackerindia.com/scheme/franklin-india-mid-cap-fund",
+          "scope": "October cross-check: 68 exact company quantities and allocations matched; 0 disagreements. This page may cover only a subset of equities."
+        },
+        {
+          "label": "DecryptMutualFunds",
+          "url": "https://decryptmutualfunds.com/fund-houses/groww/small-cap-fund",
+          "scope": "Full September company ISIN quantities, reported quantity deltas and %NAV; prior quantities derived from provider deltas."
+        },
+        {
+          "label": "Anand Rathi",
+          "url": "https://anandrathi.com/mutual-funds/schemes/groww-small-cap-fund-regular-idcw",
+          "scope": "All top 15 September company allocations cross-checked. Full quantities and deltas remain singly sourced; not confirmed trades."
+        },
+        {
+          "label": "Fund Tracker India · October 2026",
+          "url": "https://fundtrackerindia.com/scheme/groww-small-cap-fund",
+          "scope": "October cross-check: 65 exact company quantities and allocations matched; 0 disagreements. This page may cover only a subset of equities."
         },
         {
           "label": "DecryptMutualFunds",
@@ -378,6 +418,31 @@
           "label": "Official October 2026 portfolio",
           "url": "https://cms.mahindramanulife.com/storage/mmimplweb/uploads/download/74690f29-5b55-4a21-80c6-5838d2452a39.xlsx",
           "scope": "Original AMC October workbook; complete equity quantities and % of net assets."
+        },
+        {
+          "label": "Official September portfolio",
+          "url": "https://www.miraeassetmf.co.in/docs/default-source/portfolios/mascf_sept2026.xlsx",
+          "scope": "Full equity quantities and %NAV as at 30 September 2026."
+        },
+        {
+          "label": "Official August portfolio",
+          "url": "https://www.miraeassetmf.co.in/docs/default-source/portfolios/mascf_aug2026.xlsx",
+          "scope": "Full equity quantities and %NAV as at 31 August 2026."
+        },
+        {
+          "label": "MFScanner — August only",
+          "url": "https://mfscanner.com/fund/mirae-asset-small-cap-fund",
+          "scope": "Still August 2026; not a September cross-check."
+        },
+        {
+          "label": "DecryptMutualFunds · October 2026",
+          "url": "https://decryptmutualfunds.com/fund-houses/mirae-asset/small-cap-fund",
+          "scope": "October provider quantities and allocations; original AMC workbook not retrieved."
+        },
+        {
+          "label": "Fund Tracker India · October 2026",
+          "url": "https://fundtrackerindia.com/scheme/mirae-asset-small-cap-fund",
+          "scope": "October cross-check: 77 exact company quantities and allocations matched; 0 disagreements. This page may cover only a subset of equities."
         },
         {
           "label": "Official September portfolio",
@@ -968,26 +1033,26 @@
       "name": "City Union Bank Ltd.",
       "key": "name:cityunionbank",
       "quantities": [
-        100886808,
-        106747247,
-        110099214
+        113987568,
+        119848007,
+        123786897
       ],
       "holders": [
-        13,
-        13,
-        14
+        17,
+        17,
+        18
       ],
-      "growth": 9.13142776803881,
+      "growth": 8.596840139619436,
       "repeatAdders": [
         "Canara Robeco Small Cap Fund",
         "Invesco India Smallcap Fund",
         "TRUSTMF Small Cap Fund"
       ],
       "repeatReducers": [],
-      "adding": 5,
-      "reducing": 1,
+      "adding": 7,
+      "reducing": 2,
       "primaryPositions": 4,
-      "positionCount": 14,
+      "positionCount": 18,
       "sources": [
         {
           "label": "DecryptMutualFunds September portfolio",
@@ -1028,6 +1093,56 @@
           "label": "Fund Tracker India · October 2026",
           "url": "https://fundtrackerindia.com/scheme/canara-robeco-small-cap-fund",
           "scope": "October cross-check: 94 exact company quantities and allocations matched; 0 disagreements. This page may cover only a subset of equities."
+        },
+        {
+          "label": "Official AMC monthly portfolio",
+          "url": "https://www.franklintempletonindia.com/download/en-in/monthly-portfolio-dsclr/79c9638b-ce3e-48c8-8036-a571ecd54260/MF-Monthly-Portfolio-ISIN-30-Sep-2026.xlsx",
+          "scope": "Full equity quantities and allocations as at 2026-09-30. Original AMC spreadsheet."
+        },
+        {
+          "label": "Official AMC monthly portfolio",
+          "url": "https://www.franklintempletonindia.com/download/en-in/monthly-portfolio-dsclr/52e4efe4-b370-4fe7-9024-19a63fde979a/Monthly-Portfolio-ISIN-31-Aug-2026.xlsx",
+          "scope": "Full equity quantities and allocations as at 2026-08-31. Original AMC spreadsheet."
+        },
+        {
+          "label": "MFScanner · September vs August",
+          "url": "https://mfscanner.com/fund/franklin-india-mid-cap-fund",
+          "scope": "Published full-equity current and previous quantities. Unreconciled provider changes are withheld."
+        },
+        {
+          "label": "DecryptMutualFunds · October 2026",
+          "url": "https://decryptmutualfunds.com/fund-houses/franklin-templeton/mid-cap-fund",
+          "scope": "October provider quantities and allocations; original AMC workbook not retrieved."
+        },
+        {
+          "label": "Fund Tracker India · October 2026",
+          "url": "https://fundtrackerindia.com/scheme/franklin-india-mid-cap-fund",
+          "scope": "October cross-check: 68 exact company quantities and allocations matched; 0 disagreements. This page may cover only a subset of equities."
+        },
+        {
+          "label": "DecryptMutualFunds · October 2026",
+          "url": "https://decryptmutualfunds.com/fund-houses/franklin-templeton/small-cap-fund",
+          "scope": "October provider quantities and allocations; original AMC workbook not retrieved."
+        },
+        {
+          "label": "Fund Tracker India · October 2026",
+          "url": "https://fundtrackerindia.com/scheme/franklin-india-small-cap-fund",
+          "scope": "October cross-check: 85 exact company quantities and allocations matched; 0 disagreements. This page may cover only a subset of equities."
+        },
+        {
+          "label": "DecryptMutualFunds",
+          "url": "https://decryptmutualfunds.com/fund-houses/groww/small-cap-fund",
+          "scope": "Full September company ISIN quantities, reported quantity deltas and %NAV; prior quantities derived from provider deltas."
+        },
+        {
+          "label": "Anand Rathi",
+          "url": "https://anandrathi.com/mutual-funds/schemes/groww-small-cap-fund-regular-idcw",
+          "scope": "All top 15 September company allocations cross-checked. Full quantities and deltas remain singly sourced; not confirmed trades."
+        },
+        {
+          "label": "Fund Tracker India · October 2026",
+          "url": "https://fundtrackerindia.com/scheme/groww-small-cap-fund",
+          "scope": "October cross-check: 65 exact company quantities and allocations matched; 0 disagreements. This page may cover only a subset of equities."
         },
         {
           "label": "DecryptMutualFunds",
@@ -1153,6 +1268,31 @@
           "label": "Fund Tracker India · October 2026",
           "url": "https://fundtrackerindia.com/scheme/lic-mf-small-cap-fund",
           "scope": "October cross-check: 44 exact company quantities and allocations matched; 0 disagreements. This page may cover only a subset of equities."
+        },
+        {
+          "label": "Official September portfolio",
+          "url": "https://www.miraeassetmf.co.in/docs/default-source/portfolios/mascf_sept2026.xlsx",
+          "scope": "Full equity quantities and %NAV as at 30 September 2026."
+        },
+        {
+          "label": "Official August portfolio",
+          "url": "https://www.miraeassetmf.co.in/docs/default-source/portfolios/mascf_aug2026.xlsx",
+          "scope": "Full equity quantities and %NAV as at 31 August 2026."
+        },
+        {
+          "label": "MFScanner — August only",
+          "url": "https://mfscanner.com/fund/mirae-asset-small-cap-fund",
+          "scope": "Still August 2026; not a September cross-check."
+        },
+        {
+          "label": "DecryptMutualFunds · October 2026",
+          "url": "https://decryptmutualfunds.com/fund-houses/mirae-asset/small-cap-fund",
+          "scope": "October provider quantities and allocations; original AMC workbook not retrieved."
+        },
+        {
+          "label": "Fund Tracker India · October 2026",
+          "url": "https://fundtrackerindia.com/scheme/mirae-asset-small-cap-fund",
+          "scope": "October cross-check: 77 exact company quantities and allocations matched; 0 disagreements. This page may cover only a subset of equities."
         },
         {
           "label": "Official September portfolio",

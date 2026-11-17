@@ -52,6 +52,9 @@ async function reseed() {
   const september = JSON.parse(fs.readFileSync("data/september-portfolios.json", "utf8"));
   const fullSeed = JSON.parse(fs.readFileSync("data/full-portfolio-seed.json", "utf8"));
   const expansion = JSON.parse(fs.readFileSync("data/fund-expansion-2026-10.json", "utf8"));
+  const performanceExpansion = fs.existsSync("data/performance-fund-expansion.json")
+    ? JSON.parse(fs.readFileSync("data/performance-fund-expansion.json", "utf8"))
+    : null;
   const october = fs.existsSync("data/october-portfolios.json")
     ? JSON.parse(fs.readFileSync("data/october-portfolios.json", "utf8"))
     : null;
@@ -80,12 +83,15 @@ async function reseed() {
   for (const f of (october?.funds || [])) {
     if (!currentFunds.some((old) => old.id === f.id)) currentFunds.push(f);
   }
+  for (const f of (performanceExpansion?.funds || [])) {
+    if (!currentFunds.some((old) => old.id === f.id)) currentFunds.push(f);
+  }
   const currentPortfolio = {
     ...seed,
-    checkedAt: october?.checkedAt || expansion.checkedAt || september.checkedAt || seed.checkedAt,
+    checkedAt: october?.checkedAt || performanceExpansion?.checkedAt || expansion.checkedAt || september.checkedAt || seed.checkedAt,
     summary: october
-      ? `October 2026: ${october.funds.length} schemes imported; ${october.pending.length} awaiting verified disclosures. September history retained.`
-      : "Complete 34 equity funds universe: 24 small-cap, 7 mid-cap, and 3 other equity schemes.",
+      ? `October 2026: ${october.funds.length + (performanceExpansion?.funds?.length || 0)} schemes imported; ${october.pending.length} awaiting verified disclosures. September history retained.`
+      : "Complete 43 equity funds universe: 27 small-cap, 13 mid-cap, and 3 other equity schemes.",
     funds: currentFunds,
   };
 
@@ -94,14 +100,15 @@ async function reseed() {
     ["portfolio:current", JSON.stringify(currentPortfolio), iso(currentPortfolio.checkedAt)]
   );
 
-  // 3. Seed fund_snapshots: seed (August) + september + expansion (August & September) + october
-  console.log("Seeding fund snapshots across all 34 funds and reporting periods...");
+  // 3. Seed fund_snapshots: seed (August) + september + expansion (August & September) + october + performanceExpansion
+  console.log("Seeding fund snapshots across all 43 funds and reporting periods...");
   const allFunds = [
     ...seed.funds,
     ...(september.funds || []),
     ...(expansion.funds || []),
     ...(october?.funds || []),
     ...(october?.historicalFunds || []),
+    ...(performanceExpansion?.funds || []),
   ];
 
   const uniqueSnapshots = new Map();
@@ -121,13 +128,14 @@ async function reseed() {
   }
   console.log(`Seeded ${uniqueSnapshots.size} unique fund snapshots.`);
 
-  // 4. Seed fund_comparisons: fullSeed + september + expansion + october comparisons
+  // 4. Seed fund_comparisons: fullSeed + september + expansion + october + performanceExpansion comparisons
   console.log("Seeding fund comparisons...");
   const allComparisons = [
     ...fullSeed,
     ...(september.comparisons || []),
     ...(expansion.comparisons || []),
     ...(october?.comparisons || []),
+    ...(performanceExpansion?.comparisons || []),
   ];
 
   const uniqueComparisons = new Map();
@@ -252,6 +260,17 @@ async function reseed() {
       iso(expansion.checkedAt),
     ]
   );
+
+  if (performanceExpansion) {
+    await sql.query(
+      "INSERT INTO app_documents (key, payload, checked_at) VALUES ($1, $2, $3) ON CONFLICT(key) DO UPDATE SET payload = excluded.payload, checked_at = excluded.checked_at",
+      [
+        `import:performance-expansion:${performanceExpansion.checkedAt}`,
+        JSON.stringify({ funds: performanceExpansion.funds.length }),
+        iso(performanceExpansion.checkedAt),
+      ]
+    );
+  }
 
   if (october) {
     await sql.query(

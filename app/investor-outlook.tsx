@@ -1,0 +1,24 @@
+import type {ResearchReport} from '../lib/agent-research';
+const n=(v:number)=>new Intl.NumberFormat('en-IN',{maximumFractionDigits:2}).format(v);
+export default function InvestorOutlook({report}:{report:ResearchReport}){
+ const outlook=report.investorOutlook;if(!outlook)return null;
+ return <section className="investor-outlook research-newsletter" aria-label="Investor outlook">
+ <div className="newsletter-edition"><span>THE INVESTOR OUTLOOK</span><span>Research reviewed {outlook.reviewedOn}</span></div>
+ <h2>{outlook.title}</h2><p className="newsletter-deck">{outlook.thesis}</p>
+ <p className="newsletter-scope">Aug–Oct 2026 · {report.deepResearch?.funds.length} matched funds · {report.deepResearch?.positions} reconciled positions · {report.deepResearch?.excluded.length} excluded. Each company below uses its own reconciled subset. This selected sample does not establish a market-wide trend.</p>
+ <nav className="newsletter-contents" aria-label="Investment findings">{outlook.cases.map(c=><a href={'#outlook-'+c.symbol} key={c.symbol}>{c.symbol}</a>)}<a href="#outlook-next">What could follow</a></nav>
+ <div className="outlook-summary">{outlook.cases.map(c=><a key={c.symbol} href={'#outlook-'+c.symbol}><strong>{c.symbol}</strong><span>{c.stance}</span></a>)}</div>
+ {outlook.cases.map((c,i)=><article className="newsletter-story" id={'outlook-'+c.symbol} key={c.symbol}><div className="newsletter-story-index">{i+1}</div><div><span className="newsletter-kicker">{c.symbol} · {c.stance}</span><h2>{c.title}</h2>
+ <div className="outlook-table-wrap"><table className="outlook-table"><caption>{c.evidence.name} · reconciled mutual fund positions</caption><thead><tr><th scope="col">Measure</th>{['Aug 2026','Sep 2026','Oct 2026'].map(m=><th scope="col" key={m}>{m}</th>)}</tr></thead><tbody><tr><th scope="row">Shares held</th>{c.evidence.quantities.map((q,j)=><td key={j}>{n(q)}</td>)}</tr><tr><th scope="row">Funds holding</th>{c.evidence.holders.map((q,j)=><td key={j}>{q}</td>)}</tr></tbody></table></div>
+ <p className="newsletter-scope">Two-month quantity change: {c.evidence.growth===null?'Zero base; percentage undefined':n(c.evidence.growth)+'%'}. Latest interval: {c.evidence.adding} adding / {c.evidence.reducing} reducing. {c.evidence.primaryPositions} of {c.evidence.positionCount} positions have original AMC comparisons in both intervals.</p>
+ {c.evidence.repeatAdders.length>0&&<p><strong>Repeated additions:</strong> {c.evidence.repeatAdders.join('; ')}.</p>}
+ {c.evidence.repeatReducers.length>0&&<p><strong>Repeated reductions:</strong> {c.evidence.repeatReducers.join('; ')}.</p>}
+ <h3>Business evidence</h3><p>{c.facts}</p><p className="outlook-calculation"><strong>What the arithmetic reveals</strong><br/>{c.calculation}</p>
+ {c.foreign&&<p className="newsletter-scope"><strong>Foreign ownership cross-check:</strong> {n(c.foreign.before)}% in June → {n(c.foreign.after)}% in September ({c.foreign.change>0?'+':''}{n(c.foreign.change)} pp). Percentage of company equity, not fund allocation. Provider archive checked {c.foreign.checkedAt.slice(0,10)}; original filings not reverified in this review. The period differs from the mutual fund window. <a href={c.foreign.source} target="_blank" rel="noopener noreferrer">Saved series source ↗</a></p>}
+ <h3>Our interpretation</h3><p>{c.interpretation}</p><h3>The competing explanation</h3><p>{c.alternative}</p>
+ <div className="outlook-scenarios">{c.scenarios.map(s=><div key={s.label}><h4>{s.label}</h4><p>{s.text}</p></div>)}</div><p className="outlook-checkpoint"><strong>Next evidence to watch:</strong> {c.checkpoint}</p>
+ <details className="newsletter-sources"><summary>Evidence and reporting dates</summary>{c.sources.map(s=><p key={s.url}><a href={s.url} target="_blank" rel="noopener noreferrer">{s.label} ↗</a></p>)}<p>Holdings evidence is recomputed from the saved disclosures:</p>{c.evidence.sources.map(s=><a href={s.url} key={s.url} target="_blank" rel="noopener noreferrer">{s.label} ↗</a>)}</details>
+ </div></article>)}
+ <section id="outlook-next" className="newsletter-watchlist"><span className="newsletter-kicker">WHAT COULD FOLLOW · NEXT 1–2 REPORTING CYCLES</span><h2>Let the next evidence decide the direction</h2><p>If repeated additions broaden across funds and the operating checkpoints hold, the accumulation thesis gains support. If shares rise but cash conversion, funding or margins weaken, institutional persistence deserves less weight. If managers remain divided, position concentration and valuation become more useful than the number of buyers.</p><p>{outlook.scenarioRule}</p><p>{outlook.valuationRule}</p><p><strong>Market-data gap:</strong> Usable daily NSE records were not obtained for the three-month window. Delivery trends, price drawdowns and technical confirmation are therefore not assessed in this issue.</p></section>
+ </section>;
+}

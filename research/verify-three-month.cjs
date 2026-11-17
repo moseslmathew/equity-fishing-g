@@ -1,0 +1,18 @@
+const assert=require('node:assert/strict');
+const runtime=require('./database-test-runtime.cjs').setup({get:async()=>null,list:async()=>({objects:[]})});
+const {threeMonthResearch}=require('../lib/three-month-research.ts');
+const row=(name,previousQuantity,currentQuantity,previousWeight=1,weight=1,note=null)=>({key:name,name,previousQuantity,currentQuantity,previousWeight,weight,note});
+const comparison=(fundId,month,rows)=>({fundId,currentDate:month==='09'?'2026-09-30':'2026-10-31',previousDate:month==='09'?'2026-08-31':'2026-09-30',checkedAt:'2026-11-10T00:00:00Z',scope:'full_equity',basis:'official_disclosures',rows,notes:[],sources:[{label:fundId+' '+month,url:'https://example.com/'+fundId+'/'+month,scope:'Full equity'}]});
+const first=[row('Repeat',100,120),row('Divergence',100,110,2,2),row('Reversal',100,150),row('Surviving',0,10),row('Abandoned',0,20),row('Mismatch',100,110),row('Unknown',null,20),row('Flagged',10,20,1,1,'Corporate action'),row('Duplicate',10,20),row('Duplicate',10,20),row('Allocation mismatch',10,20),row('Exit',10,0)];
+const last=[row('Repeat',120,150),row('Divergence',110,120,2,1),row('Reversal',150,50),row('Surviving',10,11),row('Abandoned',20,0),row('Mismatch',111,120),row('Unknown',20,30),row('Flagged',20,30),row('Duplicate',40,50),row('Allocation mismatch',20,30,1.1,1),row('Final initiation',0,30)];
+const input=[comparison('alpha','09',first),comparison('alpha','10',last),comparison('beta','09',[row('Repeat',100,110)]),comparison('beta','10',[row('Repeat',110,120)]),comparison('unmatched','10',[row('Repeat',0,9999)])];
+const d=threeMonthResearch(input,'2026-10');
+assert.deepEqual(d.months,['2026-08','2026-09','2026-10']);assert.equal(d.funds.length,2);assert.equal(d.excluded.length,5);assert.equal(d.counts.persistent,1);assert.equal(d.counts.reversals,2);assert.equal(d.counts.allocationDivergence,1);assert.equal(d.counts.initiations,2);assert.equal(d.counts.retained,1);assert.equal(d.counts.abandoned,1);assert.equal(d.positions,8);
+assert(d.stories[0].paragraphs.some(p=>p.includes('200 → 230 → 270')));
+assert(d.stories[4].paragraphs[0].includes('50% retention'));
+for(const s of d.stories)for(const r of s.refs)assert(d.sources[r]?.url);
+assert(!JSON.stringify(d).includes('NaN'));assert(!JSON.stringify(d).includes('Infinity'));
+assert.equal(threeMonthResearch([input[1]],'2026-10').available,false);
+assert.equal(threeMonthResearch([{...input[0],currentDate:'2026-09-15'},input[1]],'2026-10').available,false);
+assert.equal(threeMonthResearch([...input,{...input[1],checkedAt:'2026-11-11T00:00:00Z',rows:last.map(r=>r.name==='Repeat'?{...r,currentQuantity:160}:r)}],'2026-10').stories[0].paragraphs.some(p=>p.includes('200 → 230 → 280')),true);
+(async()=>{const store=require('../lib/database-store.ts');await store.ensureDatabase();const report=require('../lib/agent-research.ts').researchReport(await store.readDatabaseComparisons());assert.equal(report.deepResearch.months.join(','),'2026-08,2026-09,2026-10');assert.equal(report.deepResearch.funds.length,29);assert.equal(report.deepResearch.positions,2096);assert.equal(report.deepResearch.counts.retained,68);assert.equal(report.portfolioChanged,false);for(const s of report.newsletter.stories)for(const i of s.refs)assert(report.newsletterSources[i]);assert(!require('node:fs').readFileSync('app/agent-research.tsx','utf8').includes('Company research dossiers'));console.log('Three-month analysis verified: matched cohort, reconciliation, exclusions, retention, reversals, allocation divergence, zero bases, date boundaries, latest revision, linked evidence, and live archive integration.');runtime.sqlite.close();})().catch(e=>{console.error(e);process.exitCode=1});

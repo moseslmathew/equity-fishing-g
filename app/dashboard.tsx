@@ -1,5 +1,5 @@
 "use client";
-import {useEffect,useState} from "react";
+import {useEffect,useMemo,useState} from "react";
 import {RotateCw,ChevronDown,ArrowRight,ChartNoAxesCombined,Layers3,Files} from "lucide-react";
 import "./dashboard-section-cards.css";
 import type {MonthlyPortfolio} from "../lib/monthly";

@@ -22,7 +22,7 @@ const store=require('../lib/database-store.ts');
  for(const p of october.pending)assert(!view.funds.some(f=>f.id===p.fundId));
  const shared=sharedCompanyHoldings(view);assert(shared.companies.length>0);assert.equal(shared.fullFunds,oct.length);
  const combined=combinedAnalysis(view.fullComparisons,'2026-10');assert.equal(combined.coverage,oct.length);assert.equal(combined.missingFunds.length,october.pending.length);
- const research=require('../lib/agent-research.ts').researchReport(await store.readDatabaseComparisons());assert.equal(research.fundMonth,'2026-10');assert(research.title.includes('October 2026'));assert(research.newsletter.stories.some(s=>s.paragraphs.some(p=>p.includes('direction')||p.includes('review'))));assert.equal(research.portfolioChanged,false);
+ const research=require('../lib/agent-research.ts').researchReport(await store.readDatabaseComparisons());assert.equal(research.fundMonth,'2026-10');assert(research.title.includes('October 2026'));assert.equal(research.deepResearch.months.join(','),'2026-08,2026-09,2026-10');assert(research.newsletter.stories.some(s=>s.label.includes('PERSISTENCE')));assert.equal(research.portfolioChanged,false);
  // Original workbook is authoritative where a provider gives a different SBI position.
  const sbi=october.comparisons.find(c=>c.fundId==='sbi-small');assert.equal(sbi.basis,'official_disclosures');assert.equal(sbi.rows.find(r=>r.key==='INE0LEZ01016').currentQuantity,10000000);
  const first=JSON.stringify(await store.readDatabaseComparisons('2026-10'));await store.ensureDatabase();assert.equal(JSON.stringify(await store.readDatabaseComparisons('2026-10')),first);

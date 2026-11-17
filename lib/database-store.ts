@@ -1,5 +1,6 @@
 import {env} from "cloudflare:workers";
 import {neon} from "@neondatabase/serverless";
+import performanceExpansion from "../data/performance-fund-expansion.json";
 import expansion from "../data/fund-expansion-2026-10.json";
 import seed from "../data/seed.json";
 import september from "../data/september-portfolios.json";
@@ -144,13 +145,19 @@ async function batches(db:DatabaseClient,statements:any[]){for(let i=0;i<stateme
 function accepted(f:Fund){return f.verification!=="conflict"&&f.checkStatus!=="failed"&&f.checkStatus!=="conflict";}
 let initializing:Promise<void>|undefined;
 // Data backfill is deliberately outside schema migrations. Retry-safe upserts never replace newer records.
-export async function ensureDatabase(){
- const db=database();if(await db.prepare("SELECT key FROM app_documents WHERE key=?").bind("migration:legacy-v1").first()){await importSeptember(db);await importFundExpansion(db);await importOctober(db);return;}
- if(!initializing)initializing=importLegacy(db).catch(e=>{initializing=undefined;throw e;});
- await initializing;
+export function ensureDatabase():Promise<void>{
+ // Only migration completion is retained; portfolio and research reads stay live.
+ // Share concurrent initialization and retry after a failed migration.
+ if(!initializing)initializing=initializeDatabase().catch(e=>{initializing=undefined;throw e;});
+ return initializing;
+}
+async function initializeDatabase(){
+ const db=database();
+ if(!await db.prepare("SELECT key FROM app_documents WHERE key=?").bind("migration:legacy-v1").first())await importLegacy(db);
  await importSeptember(db);
  await importFundExpansion(db);
  await importOctober(db);
+ await importPerformanceExpansion(db);
 }
 async function importOctober(db:DatabaseClient){
  const marker="import:october-2026:"+october.checkedAt;
@@ -220,3 +227,14 @@ export async function readInvestorPortfolio(id:string){await ensureDatabase();re
 export async function readResearchSnapshot(){await ensureDatabase();await database().prepare("INSERT INTO research_reports (id,checked_at,model,fingerprint,payload) VALUES (?,?,?,?,?) ON CONFLICT(id) DO NOTHING").bind(researchSeed.id,iso(researchSeed.checkedAt),researchSeed.modelName,researchSeed.portfolioFingerprint,JSON.stringify(researchSeed)).run();const p=parse<typeof researchSeed>(await database().prepare("SELECT payload FROM research_reports WHERE id NOT LIKE 'ace-%' ORDER BY checked_at DESC LIMIT 1").first<{payload:string}>());if(!p)throw new Error("Research report missing.");return p;}
 export async function saveInvestorPortfolio(id:string,p:InvestorPortfolio){await ensureDatabase();const db=database();const row=await db.prepare("SELECT payload FROM app_documents WHERE key=?").bind("investor:"+id).first<{payload:string}>();if(!row)throw new Error("Unknown investor.");const meta=JSON.parse(row.payload);meta.holdingsCount=p.holdings.length;await db.batch([investorStatement(db,id,p),documentStatement(db,"investor:"+id,meta,p.checkedOn)]);}
 export async function saveResearchSnapshot(p:typeof researchSeed){await ensureDatabase();await database().batch([database().prepare("INSERT INTO research_reports (id,checked_at,model,fingerprint,payload) VALUES (?,?,?,?,?) ON CONFLICT(id) DO NOTHING").bind(p.id+":"+iso(p.checkedAt),iso(p.checkedAt),p.modelName,p.portfolioFingerprint,JSON.stringify(p))]);}
+
+async function importPerformanceExpansion(db:DatabaseClient){
+ const marker="import:performance-expansion:"+performanceExpansion.checkedAt;
+ if(await db.prepare("SELECT key FROM app_documents WHERE key=?").bind(marker).first())return;
+ const funds=performanceExpansion.funds as Fund[],comparisons=performanceExpansion.comparisons as FullComparison[];
+ for(const c of comparisons)validateFullComparison(c);
+ await batches(db,[...funds.map(f=>fundStatement(db,f)),...comparisons.map(c=>comparisonStatement(db,c))]);
+ const current=parse<Portfolio>(await db.prepare("SELECT payload FROM app_documents WHERE key=?").bind("portfolio:current").first<{payload:string}>());
+ if(current){const all=[...current.funds];for(const f of funds)if(!all.some(old=>old.id===f.id))all.push(f);await db.batch([documentStatement(db,"portfolio:current",{...current,funds:all,checkedAt:[current.checkedAt,performanceExpansion.checkedAt].sort().at(-1)!},performanceExpansion.checkedAt)]);}
+ await db.batch([documentStatement(db,marker,{funds:funds.length},performanceExpansion.checkedAt)]);
+}

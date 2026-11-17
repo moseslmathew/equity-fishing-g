@@ -1,0 +1,1280 @@
+{
+  "reviewedOn": "2026-11-12",
+  "holdingsMonth": "2026-10",
+  "title": "Accumulation is selective. Earnings and cash flow must carry the next leg.",
+  "thesis": "The useful question is whether institutional persistence is accompanied by improving economics at a defensible price. This issue follows four contrasting situations: cash-backed expansion, bank growth with a funding constraint, an exchange whose operating momentum exceeds its fund-ownership momentum, and disagreement between domestic and foreign ownership measures. These are selected research cases, not a forecast for the entire Indian market.",
+  "cases": [
+    {
+      "symbol": "ACUTAAS",
+      "match": "Acutaas Chemicals",
+      "title": "Accumulation has a cash-flow cross-check",
+      "stance": "Business evidence supports further research",
+      "facts": "Acutaas reported consolidated H1 FY27 operating cash flow of ₹215.92 crore and total PAT of ₹198.14 crore. Property, plant and equipment purchases were ₹123.92 crore. Q2 revenue was ₹436.92 crore and total PAT ₹123.14 crore. These are reported results, not forecasts.",
+      "calculation": "Operating cash flow / total PAT = 215.919 / 198.1352 = 109.0%. Operating cash flow less PPE purchases = ₹92.00 crore; this narrow cash-surplus measure excludes other investing flows. Q1 revenue inferred as H1 minus Q2 was ₹329.67 crore, making Q2 growth 32.5% sequentially.",
+      "interpretation": "Cash generation adds substance to the accumulation signal. Nevertheless, a strong quarter can reflect product mix or shipment timing. The useful next question is whether demand and cash conversion persist as capacity grows.",
+      "alternative": "A manager may have increased shares after inflows or to rebalance a portfolio. The holdings cannot establish that the manager anticipated these results. Full-year returns on capital and a dated valuation still need to justify the entry price.",
+      "scenarios": [
+        {
+          "label": "Strengthens",
+          "text": "Subsequent results sustain revenue and margins, with operating cash flow covering expansion and inventories remaining controlled."
+        },
+        {
+          "label": "Working case",
+          "text": "Growth continues but quarterly margins vary. Track cash conversion through the next half-year rather than extrapolating Q2."
+        },
+        {
+          "label": "Weakens",
+          "text": "Inventory or receivables absorb cash while margins fall; repeated additions alone would no longer offer a persuasive cross-check."
+        }
+      ],
+      "checkpoint": "Next quarterly revenue and margin; next half-year operating cash flow versus PAT and PPE spending.",
+      "sources": [
+        {
+          "label": "NSE: Acutaas consolidated Q2 and H1 FY27 results, approved 27 Oct 2026",
+          "url": "https://nsearchives.nseindia.com/corporate/ixbrl/INTEGRATED_FILING_INDAS_205014_27102026184220_iXBRL_WEB.html"
+        }
+      ]
+    },
+    {
+      "symbol": "CUB",
+      "match": "City Union Bank",
+      "title": "The growth story has a funding test",
+      "stance": "Constructive operating evidence; monitor funding",
+      "facts": "City Union Bank's September 2026 presentation reports advances of ₹72,441.5 crore, deposits of ₹83,893.1 crore and CASA deposits of ₹22,350.2 crore. Year-on-year advances grew 26%, deposits 21%, and CASA 14%. Q2 net profit was ₹415.9 crore, NIM 3.87%, gross NPA 1.44% and net NPA 0.48%.",
+      "calculation": "Advances / deposits = 86.4%, versus 82.8% a year earlier using the disclosed balances. CASA / deposits = 26.6%, versus 28.1%. Q2 non-tax provisions rose from ₹57 crore to ₹120 crore; the ₹245 crore total provision line includes ₹125 crore of tax and should not all be treated as credit cost.",
+      "interpretation": "Loan expansion is running ahead of funding growth. A lower low-cost deposit share can raise funding pressure even when headline profit is strong. Institutional additions are more convincing if the bank preserves margins and underwriting while funding this expansion.",
+      "alternative": "Higher provisions are not by themselves proof of loan deterioration; their composition and subsequent slippages matter. Share additions and a falling foreign ownership percentage also have different denominators and reporting windows.",
+      "scenarios": [
+        {
+          "label": "Strengthens",
+          "text": "Deposit and CASA growth catch up with advances while margins and asset quality remain resilient."
+        },
+        {
+          "label": "Working case",
+          "text": "Growth stays healthy but funding becomes more expensive. Earnings depend on managing the spread between loan yields and funding cost."
+        },
+        {
+          "label": "Weakens",
+          "text": "Deposit competition compresses NIM at the same time as slippages and credit provisions rise."
+        }
+      ],
+      "checkpoint": "Next-quarter advances/deposits, CASA share, NIM and the non-tax provision breakdown. Check valuation against sustainable ROE and book value before considering an entry.",
+      "sources": [
+        {
+          "label": "City Union Bank: September 2026 investor presentation, pages 9–11",
+          "url": "https://cityunionbank.bank.in/filemanager/Oct26/CUB-INVT-PPT-SEP2026.pdf"
+        }
+      ]
+    },
+    {
+      "symbol": "MCX",
+      "match": "Multi Commodity Exchange of India",
+      "title": "Strong operations do not remove expectation risk",
+      "stance": "Operating momentum; ownership disagreement",
+      "facts": "MCX's 4 November presentation reports H1 FY27 operating revenue of ₹1,502 crore and PAT of ₹868 crore, up 100.8% and 116.4% year on year. Options premium average daily turnover rose from ₹9,086 crore in Q1 to ₹10,291 crore in Q2. Its IR page displayed a delayed market capitalisation of ₹91,867.19 crore on 11 November 2026 at 14:13.",
+      "calculation": "Options premium turnover grew 13.3% sequentially. Market capitalisation / (2 × H1 PAT) is approximately 52.9 times. This is an illustrative annualised run-rate multiple, not a trailing P/E or an earnings forecast; it assumes the second half repeats the first.",
+      "interpretation": "The operating engine has momentum, yet the reconciled fund total shrank over the three-month window. The tension matters: a rapidly growing business can still disappoint if its valuation requires exceptional activity to persist. Share counts do not establish whether reductions reflected valuation discipline, redemptions or rebalancing.",
+      "alternative": "Trading activity can be cyclical, and revenue depends on product mix and monetisation. Notional options turnover is not exchange revenue. The November results were published after the October holdings date, so they cannot prove the reason for earlier fund decisions.",
+      "scenarios": [
+        {
+          "label": "Strengthens",
+          "text": "Options premium activity, active participation and revenue keep growing without meaningful margin deterioration."
+        },
+        {
+          "label": "Working case",
+          "text": "Growth remains positive but moderates against a stronger base; the valuation leaves less room for operational disappointment."
+        },
+        {
+          "label": "Weakens",
+          "text": "Activity normalises or regulation/competition changes monetisation, putting both earnings expectations and the valuation multiple under pressure."
+        }
+      ],
+      "checkpoint": "Monthly trading statistics, especially options premium turnover; next-quarter operating revenue and margin. Recalculate valuation with a fresh quote and complete trailing earnings.",
+      "sources": [
+        {
+          "label": "MCX: Q2/H1 FY27 investor presentation, 4 Nov 2026",
+          "url": "https://www.mcxindia.com/docs/default-source/investor-relations/announcements/2026-11-04_presentation_signed.pdf"
+        },
+        {
+          "label": "MCX investor relations: dated market capitalisation and quote",
+          "url": "https://www.mcxindia.com/investor-relations/"
+        }
+      ]
+    },
+    {
+      "symbol": "RADICO",
+      "match": "Radico Khaitan",
+      "title": "Opposing ownership signals deserve an open conclusion",
+      "stance": "Ownership divergence; business thesis unresolved",
+      "facts": "The matched fund archive shows repeated reductions in Radico Khaitan. The saved FII/FPI series reports 18.20% in June and 19.43% in September 2026, a rise of 1.23 percentage points. This is a provider-sourced ownership series, last checked 22 October, and has not been newly reconciled to the original shareholding filings in this review.",
+      "calculation": "The FII change covers June–September; the mutual fund quantity comparison covers August–October. Those windows overlap only partly. Percentage ownership may also change with issued capital. The two measures cannot establish who traded with whom or prove that one investor group was better informed.",
+      "interpretation": "This belongs on a disagreement watchlist rather than a simple accumulation or distribution list. A useful investment conclusion requires business results, price paid and a common-period ownership comparison. We have withheld an earnings or valuation verdict here because those checks are not complete.",
+      "alternative": "Different mandates, reporting dates, position sizes and denominator changes can create the divergence. Foreign ownership is an aggregate category, not a single investment decision.",
+      "scenarios": [
+        {
+          "label": "Strengthens",
+          "text": "Fresh issuer results support earnings and cash generation, and subsequent comparable disclosures show broader ownership support."
+        },
+        {
+          "label": "Working case",
+          "text": "Investor groups remain divided while the operating trend is unresolved; follow the evidence without assigning a directional trade call."
+        },
+        {
+          "label": "Weakens",
+          "text": "Operating evidence deteriorates and reductions broaden across independently checked, comparable periods."
+        }
+      ],
+      "checkpoint": "Reconcile September and December statutory shareholding patterns and review the latest issuer results before treating this as a contrarian opportunity.",
+      "sources": []
+    }
+  ],
+  "valuationRule": "No buy/sell ranking or target price is assigned. A holding trend identifies a research lead; valuation must be checked with a dated price and an appropriate earnings or book-value denominator. The MCX run-rate sensitivity is explicitly illustrative.",
+  "scenarioRule": "Scenarios are conditional interpretations for the next one to two reporting cycles. No probabilities or promised returns are assigned. Corporate evidence is reviewed as of 12 November 2026 and is not automatically refreshed when holdings change.",
+  "reviewedHoldings": [
+    {
+      "name": "Multi Commodity Exchange of India Ltd.",
+      "key": "name:multicommodityexchangeofin",
+      "quantities": [
+        9776461,
+        9873004,
+        9535201
+      ],
+      "holders": [
+        19,
+        18,
+        18
+      ],
+      "growth": -2.4677641531020273,
+      "repeatAdders": [
+        "Helios Mid Cap Fund",
+        "TRUSTMF Small Cap Fund",
+        "UTI Small Cap Fund",
+        "WhiteOak Capital Mid Cap Fund"
+      ],
+      "repeatReducers": [
+        "Mahindra Manulife Small Cap Fund"
+      ],
+      "adding": 6,
+      "reducing": 3,
+      "primaryPositions": 5,
+      "positionCount": 19,
+      "sources": [
+        {
+          "label": "DecryptMutualFunds September portfolio",
+          "url": "https://decryptmutualfunds.com/fund-houses/aditya-birla-sun-life/small-cap-fund",
+          "scope": "Full share quantities, %NAV and adjacent-August net quantity changes, dated 30 September 2026."
+        },
+        {
+          "label": "GMPIPOWatch / FinAPI September portfolio",
+          "url": "https://www.gmpipowatch.com/mutual-funds/scheme/aditya-birla-sun-life-small-cap-fund-regular-plan-growth-105804",
+          "scope": "All top15 September allocations match DecryptMutualFunds."
+        },
+        {
+          "label": "Fund Tracker India · October 2026",
+          "url": "https://fundtrackerindia.com/scheme/aditya-birla-sun-life-small-cap-fund",
+          "scope": "October cross-check: 83 exact company quantities and allocations matched; 0 disagreements. This page may cover only a subset of equities."
+        },
+        {
+          "label": "Official AMC monthly portfolio",
+          "url": "https://www.canararobeco.com/wp-content/uploads/2026/09/SC-–-Canara-Robeco-Small-Cap-Fund-–-August-2026.xlsx",
+          "scope": "Full equity quantities and allocations as at 2026-08-31. Original AMC spreadsheet."
+        },
+        {
+          "label": "Official AMC monthly portfolio",
+          "url": "https://www.canararobeco.com/wp-content/uploads/2026/10/SC-–-Canara-Robeco-Small-Cap-Fund-–-September-2026.xlsx",
+          "scope": "Full equity quantities and allocations as at 2026-09-30. Original AMC spreadsheet."
+        },
+        {
+          "label": "MFScanner · September vs August",
+          "url": "https://mfscanner.com/fund/canara-robeco-small-cap-fund",
+          "scope": "Published full-equity current and previous quantities. Unreconciled provider changes are withheld."
+        },
+        {
+          "label": "Official October 2026 portfolio",
+          "url": "https://www.canararobeco.com/wp-content/uploads/2026/11/SC-%E2%80%93-Canara-Robeco-Small-Cap-Fund-%E2%80%93-October-2026.xlsx",
+          "scope": "Original AMC October workbook; complete equity quantities and % of net assets."
+        },
+        {
+          "label": "Fund Tracker India · October 2026",
+          "url": "https://fundtrackerindia.com/scheme/canara-robeco-small-cap-fund",
+          "scope": "October cross-check: 94 exact company quantities and allocations matched; 0 disagreements. This page may cover only a subset of equities."
+        },
+        {
+          "label": "Official AMC monthly portfolio",
+          "url": "https://www.dspim.com/media/pages/mandatory-disclosures/portfolio-disclosures/8a6dbe504f-1789452169/dsp-monthend-portfolio-as-on-31-aug-2026.zip",
+          "scope": "Full equity quantities and allocations as at 2026-08-31. Original AMC spreadsheet."
+        },
+        {
+          "label": "Official AMC monthly portfolio",
+          "url": "https://www.dspim.com/media/pages/mandatory-disclosures/portfolio-disclosures/7737577fda-1791551248/dsp-monthend-portfolio-as-on-30-september-2026.zip",
+          "scope": "Full equity quantities and allocations as at 2026-09-30. Original AMC spreadsheet."
+        },
+        {
+          "label": "MFScanner · September vs August",
+          "url": "https://mfscanner.com/fund/dsp-midcap-fund",
+          "scope": "Published full-equity current and previous quantities. Unreconciled provider changes are withheld."
+        },
+        {
+          "label": "Official October 2026 portfolio",
+          "url": "https://www.dspim.com/media/pages/mandatory-disclosures/portfolio-disclosures/7064cd3e18-1794228730/dsp-monthend-portfolio-as-on-31-october-2026.zip",
+          "scope": "Original AMC October workbook; complete equity quantities and % of net assets."
+        },
+        {
+          "label": "Fund Tracker India · October 2026",
+          "url": "https://fundtrackerindia.com/scheme/dsp-midcap-fund",
+          "scope": "October cross-check: 56 exact company quantities and allocations matched; 0 disagreements. This page may cover only a subset of equities."
+        },
+        {
+          "label": "DecryptMutualFunds",
+          "url": "https://decryptmutualfunds.com/fund-houses/helios/small-cap-fund",
+          "scope": "Full September company ISIN quantities, reported quantity deltas and %NAV; prior quantities derived from provider deltas."
+        },
+        {
+          "label": "GMP IPO Watch / FinAPI",
+          "url": "https://www.gmpipowatch.com/mutual-funds/scheme/helios-small-cap-fund-direct-plan-growth-153912",
+          "scope": "All top 15 September company allocations cross-checked. Full quantities and deltas remain singly sourced; not confirmed trades."
+        },
+        {
+          "label": "Official October 2026 portfolio",
+          "url": "https://www.heliosmf.in/wp-content/uploads/2026/11/helios-small-cap-fund-monthly-portfolio-as-on-31st-october-2026.xlsx",
+          "scope": "Original AMC October workbook; complete equity quantities and % of net assets."
+        },
+        {
+          "label": "Fund Tracker India · October 2026",
+          "url": "https://fundtrackerindia.com/scheme/helios-small-cap-fund",
+          "scope": "October cross-check: 95 exact company quantities and allocations matched; 0 disagreements. This page may cover only a subset of equities."
+        },
+        {
+          "label": "DecryptMutualFunds monthly records",
+          "url": "https://decryptmutualfunds.com/fund-houses/helios/financial-services-fund",
+          "scope": "Full September and August equity quantities and allocations. Singly sourced quantity comparison; original AMC workbooks not retrieved."
+        },
+        {
+          "label": "GMP IPO Watch / FinAPI",
+          "url": "https://www.gmpipowatch.com/mutual-funds/scheme/helios-financial-services-fund-direct-plan-growth-152679",
+          "scope": "Top 15 September allocations matched; August weight corroboration is limited to explicit displayed one-month pp deltas."
+        },
+        {
+          "label": "Official October 2026 portfolio",
+          "url": "https://www.heliosmf.in/wp-content/uploads/2026/11/helios-financial-services-fund-monthly-portfolio-as-on-31st-october-2026.xlsx",
+          "scope": "Original AMC October workbook; complete equity quantities and % of net assets."
+        },
+        {
+          "label": "Fund Tracker India · October 2026",
+          "url": "https://fundtrackerindia.com/scheme/helios-financial-services-fund",
+          "scope": "October cross-check: 28 exact company quantities and allocations matched; 0 disagreements. This page may cover only a subset of equities."
+        },
+        {
+          "label": "DecryptMutualFunds monthly records",
+          "url": "https://decryptmutualfunds.com/fund-houses/helios/flexi-cap-fund",
+          "scope": "Full September and August equity quantities and allocations. Singly sourced quantity comparison; original AMC workbooks not retrieved."
+        },
+        {
+          "label": "GMP IPO Watch / FinAPI",
+          "url": "https://www.gmpipowatch.com/mutual-funds/scheme/helios-flexi-cap-fund-direct-plan-growth-152135",
+          "scope": "Top 15 September allocations matched; August weight corroboration is limited to explicit displayed one-month pp deltas."
+        },
+        {
+          "label": "Official October 2026 portfolio",
+          "url": "https://www.heliosmf.in/wp-content/uploads/2026/11/helios-flexi-cap-fund-monthly-portfolio-as-on-31st-october-2026.xlsx",
+          "scope": "Original AMC October workbook; complete equity quantities and % of net assets."
+        },
+        {
+          "label": "Fund Tracker India · October 2026",
+          "url": "https://fundtrackerindia.com/scheme/helios-flexi-cap-fund",
+          "scope": "October cross-check: 69 exact company quantities and allocations matched; 0 disagreements. This page may cover only a subset of equities."
+        },
+        {
+          "label": "DecryptMutualFunds monthly records",
+          "url": "https://decryptmutualfunds.com/fund-houses/helios/large-mid-cap-fund",
+          "scope": "Full September and August equity quantities and allocations. Singly sourced quantity comparison; original AMC workbooks not retrieved."
+        },
+        {
+          "label": "GMP IPO Watch / FinAPI",
+          "url": "https://www.gmpipowatch.com/mutual-funds/scheme/helios-large-mid-cap-fund-direct-plan-growth-152941",
+          "scope": "Top 15 September allocations matched; August weight corroboration is limited to explicit displayed one-month pp deltas."
+        },
+        {
+          "label": "Official October 2026 portfolio",
+          "url": "https://www.heliosmf.in/wp-content/uploads/2026/11/helios-large-mid-cap-fund-monthly-portfolio-as-on-31st-october-2026.xlsx",
+          "scope": "Original AMC October workbook; complete equity quantities and % of net assets."
+        },
+        {
+          "label": "Fund Tracker India · October 2026",
+          "url": "https://fundtrackerindia.com/scheme/helios-large-mid-cap-fund",
+          "scope": "October cross-check: 58 exact company quantities and allocations matched; 0 disagreements. This page may cover only a subset of equities."
+        },
+        {
+          "label": "DecryptMutualFunds monthly records",
+          "url": "https://decryptmutualfunds.com/fund-houses/helios/mid-cap-fund",
+          "scope": "Full September and August equity quantities and allocations. Singly sourced quantity comparison; original AMC workbooks not retrieved."
+        },
+        {
+          "label": "GMP IPO Watch / FinAPI",
+          "url": "https://www.gmpipowatch.com/mutual-funds/scheme/helios-mid-cap-fund-direct-plan-growth-153326",
+          "scope": "Top 15 September allocations matched; August weight corroboration is limited to explicit displayed one-month pp deltas."
+        },
+        {
+          "label": "Official October 2026 portfolio",
+          "url": "https://www.heliosmf.in/wp-content/uploads/2026/11/helios-mid-cap-fund-monthly-portfolio-as-on-31st-october-2026.xlsx",
+          "scope": "Original AMC October workbook; complete equity quantities and % of net assets."
+        },
+        {
+          "label": "Fund Tracker India · October 2026",
+          "url": "https://fundtrackerindia.com/scheme/helios-mid-cap-fund",
+          "scope": "October cross-check: 75 exact company quantities and allocations matched; 0 disagreements. This page may cover only a subset of equities."
+        },
+        {
+          "label": "DecryptMutualFunds — September / August comparison",
+          "url": "https://decryptmutualfunds.com/fund-houses/iti/small-cap-fund",
+          "scope": "Full September equity quantities and explicit changes versus August; prior quantities calculated from disclosed changes."
+        },
+        {
+          "label": "GMPIPOWatch (FinAPI) — September portfolio",
+          "url": "https://www.gmpipowatch.com/mutual-funds/scheme/iti-small-cap-fund-direct-plan-growth-option-147919",
+          "scope": "All September top 15 company allocations matched; quantity comparison not independently confirmed."
+        },
+        {
+          "label": "Official October 2026 portfolio",
+          "url": "https://itiamc.com/admin/pdf/1794219275-ITIMF_Monthly_Portfolio_October_2026.xlsx",
+          "scope": "Original AMC October workbook; complete equity quantities and % of net assets."
+        },
+        {
+          "label": "LIC Mutual Fund original September disclosure",
+          "url": "https://www.licmf.com/assets/downloads/portfolio/monthly/2026/9/LEESCF09-10-2026-15:47:01.xlsx",
+          "scope": "Full official September equity ISIN quantities and %NAV."
+        },
+        {
+          "label": "LIC Mutual Fund original August disclosure",
+          "url": "https://www.licmf.com/assets/downloads/portfolio/monthly/2026/8/LEESCF09-09-2026-09:58:30.xlsx",
+          "scope": "Full official August equity ISIN quantities and %NAV."
+        },
+        {
+          "label": "GMP IPO Watch / FinAPI",
+          "url": "https://www.gmpipowatch.com/mutual-funds/scheme/lic-mf-small-cap-fund-regular-plan-growth-152003",
+          "scope": "All top 15 September company allocations cross-checked; full quantities not independently cross-checked."
+        },
+        {
+          "label": "DecryptMutualFunds · October 2026",
+          "url": "https://decryptmutualfunds.com/fund-houses/lic/small-cap-fund",
+          "scope": "October provider quantities and allocations; original AMC workbook not retrieved."
+        },
+        {
+          "label": "Fund Tracker India · October 2026",
+          "url": "https://fundtrackerindia.com/scheme/lic-mf-small-cap-fund",
+          "scope": "October cross-check: 44 exact company quantities and allocations matched; 0 disagreements. This page may cover only a subset of equities."
+        },
+        {
+          "label": "DecryptMutualFunds September portfolio",
+          "url": "https://decryptmutualfunds.com/fund-houses/mahindra-manulife/small-cap-fund",
+          "scope": "Full share quantities, %NAV and adjacent-August net quantity changes, dated 30 September 2026."
+        },
+        {
+          "label": "GMPIPOWatch / FinAPI September portfolio",
+          "url": "https://www.gmpipowatch.com/mutual-funds/scheme/mahindra-manulife-small-cap-fund-direct-plan-growth-150915",
+          "scope": "All top15 September allocations match DecryptMutualFunds."
+        },
+        {
+          "label": "Official October 2026 portfolio",
+          "url": "https://cms.mahindramanulife.com/storage/mmimplweb/uploads/download/74690f29-5b55-4a21-80c6-5838d2452a39.xlsx",
+          "scope": "Original AMC October workbook; complete equity quantities and % of net assets."
+        },
+        {
+          "label": "Official September portfolio",
+          "url": "https://www.motilaloswalmf.com/content/dam/motilal-mf/sheets/fund-csvs/Month_End_Portfolio_September_2026/YO46.xlsx",
+          "scope": "Full equity quantities and %NAV as at 30 September 2026."
+        },
+        {
+          "label": "Official August portfolio",
+          "url": "https://www.motilaloswalmf.com/content/dam/motilal-mf/sheets/fund-csvs/Month_End_Portfolio_August_2026/YO46.xlsx",
+          "scope": "Full equity quantities and %NAV as at 31 August 2026."
+        },
+        {
+          "label": "DecryptMutualFunds September corroboration",
+          "url": "https://decryptmutualfunds.com/fund-houses/motilal-oswal/small-cap-fund",
+          "scope": "Top 15 September allocations and quantities exactly match original AMC spreadsheet; provider current 58 equities."
+        },
+        {
+          "label": "Official October 2026 portfolio",
+          "url": "https://www.motilaloswalmf.com/content/dam/motilal-mf/downloads/mf/month-end-portfolio/2026/nov/Copy%20of%20Monthly%20Portfolio%2031-10-2026-Final%20rahul.xlsx",
+          "scope": "Original AMC October workbook; complete equity quantities and % of net assets."
+        },
+        {
+          "label": "Fund Tracker India · October 2026",
+          "url": "https://fundtrackerindia.com/scheme/motilal-oswal-small-cap-fund",
+          "scope": "October cross-check: 62 exact company quantities and allocations matched; 0 disagreements. This page may cover only a subset of equities."
+        },
+        {
+          "label": "Official September portfolio",
+          "url": "https://mf.nipponindiaim.com/InvestorServices/FactsheetsDocuments/NIMF-MONTHLY-PORTFOLIO-30-Sep-26.xls",
+          "scope": "Full equity share quantities and allocations as at 30 September 2026; original AMC spreadsheet."
+        },
+        {
+          "label": "Official August portfolio",
+          "url": "https://mf.nipponindiaim.com/InvestorServices/FactsheetsDocuments/NIMF-MONTHLY-PORTFOLIO-31-Aug-26.xls",
+          "scope": "Full equity share quantities and allocations as at 31 August 2026; original AMC spreadsheet."
+        },
+        {
+          "label": "DecryptMutualFunds — September cross-check",
+          "url": "https://decryptmutualfunds.com/fund-houses/nippon-india/small-cap-fund",
+          "scope": "All 256 September security quantities and displayed allocations reconciled against original AMC disclosure; independently published regulatory-derived dataset."
+        },
+        {
+          "label": "Official October 2026 portfolio",
+          "url": "https://mf.nipponindiaim.com/InvestorServices/FactsheetsDocuments/NIMF-MONTHLY-PORTFOLIO-31-Oct-26.xls",
+          "scope": "Original AMC October workbook; complete equity quantities and % of net assets."
+        },
+        {
+          "label": "Fund Tracker India · October 2026",
+          "url": "https://fundtrackerindia.com/scheme/nippon-india-small-cap-fund",
+          "scope": "October cross-check: 25 exact company quantities and allocations matched; 0 disagreements. This page may cover only a subset of equities."
+        },
+        {
+          "label": "DecryptMutualFunds",
+          "url": "https://decryptmutualfunds.com/fund-houses/pgim-india/small-cap-fund",
+          "scope": "Full September company ISIN quantities, reported quantity deltas and %NAV; prior quantities derived from provider deltas."
+        },
+        {
+          "label": "GMP IPO Watch / FinAPI",
+          "url": "https://www.gmpipowatch.com/mutual-funds/scheme/pgim-india-small-cap-fund-direct-plan-direct-growth-149019",
+          "scope": "All top 15 September company allocations cross-checked. Full quantities and deltas remain singly sourced; not confirmed trades."
+        },
+        {
+          "label": "Fund Tracker India · October 2026",
+          "url": "https://fundtrackerindia.com/scheme/pgim-india-small-cap-fund",
+          "scope": "October cross-check: 71 exact company quantities and allocations matched; 0 disagreements. This page may cover only a subset of equities."
+        },
+        {
+          "label": "Official AMC monthly portfolio",
+          "url": "https://www.sbimf.com/docs/default-source/scheme-portfolios/all-schemes-monthly-portfolio---as-on-30th-september-2026.xlsx?sfvrsn=2a79126c_2",
+          "scope": "Full equity quantities and allocations as at 2026-09-30. Original AMC spreadsheet."
+        },
+        {
+          "label": "Official AMC monthly portfolio",
+          "url": "https://www.sbimf.com/docs/default-source/scheme-portfolios/all-schemes-monthly-portfolio---as-on-31st-august-2026.xlsx?sfvrsn=a7fdc2ec_2",
+          "scope": "Full equity quantities and allocations as at 2026-08-31. Original AMC spreadsheet."
+        },
+        {
+          "label": "Official October 2026 portfolio",
+          "url": "https://www.sbimf.com/docs/default-source/scheme-portfolios/all-schemes-monthly-portfolio---as-on-31st-october-2026.xlsx?sfvrsn=95fe7a7e_2",
+          "scope": "Original AMC October workbook; complete equity quantities and % of net assets."
+        },
+        {
+          "label": "Fund Tracker India · October 2026",
+          "url": "https://fundtrackerindia.com/scheme/sbi-small-cap-fund",
+          "scope": "October cross-check: 62 exact company quantities and allocations matched; 0 disagreements. This page may cover only a subset of equities."
+        },
+        {
+          "label": "DecryptMutualFunds — September / August comparison",
+          "url": "https://decryptmutualfunds.com/fund-houses/trust/small-cap-fund",
+          "scope": "Full September equity quantities and explicit changes versus August; prior quantities calculated from disclosed changes."
+        },
+        {
+          "label": "GMPIPOWatch (FinAPI) — September portfolio",
+          "url": "https://www.gmpipowatch.com/mutual-funds/scheme/trustmf-small-cap-fund-direct-plan-idcw-152937",
+          "scope": "All September top 15 company allocations matched; quantity comparison not independently confirmed."
+        },
+        {
+          "label": "Fund Tracker India · October 2026",
+          "url": "https://fundtrackerindia.com/scheme/trustmf-small-cap-fund",
+          "scope": "October cross-check: 71 exact company quantities and allocations matched; 0 disagreements. This page may cover only a subset of equities."
+        },
+        {
+          "label": "DecryptMutualFunds — September / August comparison",
+          "url": "https://decryptmutualfunds.com/fund-houses/uti/small-cap-fund",
+          "scope": "Full September equity quantities and explicit changes versus August; prior quantities calculated from disclosed changes."
+        },
+        {
+          "label": "GMPIPOWatch (FinAPI) — September portfolio",
+          "url": "https://www.gmpipowatch.com/mutual-funds/scheme/uti-small-cap-fund-direct-plan-idcw-148619",
+          "scope": "All September top 15 company allocations matched; quantity comparison not independently confirmed."
+        },
+        {
+          "label": "Official October 2026 portfolio",
+          "url": "https://d3ce1o48hc5oli.cloudfront.net/s3fs-public/2026-11/uti_mf_scheme_portfolios_31.10.2026.zip?VersionId=TCdWa523cHJddb2DfCo24kQ36qDHRk6o",
+          "scope": "Original AMC October workbook; complete equity quantities and % of net assets."
+        },
+        {
+          "label": "Fund Tracker India · October 2026",
+          "url": "https://fundtrackerindia.com/scheme/uti-small-cap-fund",
+          "scope": "October cross-check: 20 exact company quantities and allocations matched; 0 disagreements. This page may cover only a subset of equities."
+        },
+        {
+          "label": "DecryptMutualFunds · 2026-09",
+          "url": "https://decryptmutualfunds.com/fund-houses/uti/mid-cap-fund",
+          "scope": "Full equity quantities and allocations as at 2026-09-30. Published provider record."
+        },
+        {
+          "label": "DecryptMutualFunds · 2026-08",
+          "url": "https://decryptmutualfunds.com/fund-houses/uti/mid-cap-fund/aug-2026",
+          "scope": "Full equity quantities and allocations as at 2026-08-31. Published provider record."
+        },
+        {
+          "label": "MFScanner · September vs August",
+          "url": "https://mfscanner.com/fund/uti-mid-cap-fund",
+          "scope": "Published full-equity current and previous quantities. Unreconciled provider changes are withheld."
+        },
+        {
+          "label": "DecryptMutualFunds · 2026-09",
+          "url": "https://decryptmutualfunds.com/fund-houses/whiteoak-capital/mid-cap-fund",
+          "scope": "Full equity quantities and allocations as at 2026-09-30. Published provider record."
+        },
+        {
+          "label": "DecryptMutualFunds · 2026-08",
+          "url": "https://decryptmutualfunds.com/fund-houses/whiteoak-capital/mid-cap-fund/aug-2026",
+          "scope": "Full equity quantities and allocations as at 2026-08-31. Published provider record."
+        },
+        {
+          "label": "MFScanner · September vs August",
+          "url": "https://mfscanner.com/fund/whiteoak-capital-mid-cap-fund",
+          "scope": "Published full-equity current and previous quantities. Unreconciled provider changes are withheld."
+        },
+        {
+          "label": "Fund Tracker India · October 2026",
+          "url": "https://fundtrackerindia.com/scheme/whiteoak-capital-mid-cap-fund",
+          "scope": "October cross-check: 25 exact company quantities and allocations matched; 0 disagreements. This page may cover only a subset of equities."
+        }
+      ]
+    },
+    {
+      "name": "Radico Khaitan Ltd.",
+      "key": "name:radicokhaitan",
+      "quantities": [
+        2861984,
+        2653903,
+        2371978
+      ],
+      "holders": [
+        9,
+        8,
+        9
+      ],
+      "growth": -17.121199838992812,
+      "repeatAdders": [],
+      "repeatReducers": [
+        "Canara Robeco Small Cap Fund",
+        "Nippon India Small Cap Fund"
+      ],
+      "adding": 3,
+      "reducing": 3,
+      "primaryPositions": 3,
+      "positionCount": 10,
+      "sources": [
+        {
+          "label": "DecryptMutualFunds September portfolio",
+          "url": "https://decryptmutualfunds.com/fund-houses/aditya-birla-sun-life/small-cap-fund",
+          "scope": "Full share quantities, %NAV and adjacent-August net quantity changes, dated 30 September 2026."
+        },
+        {
+          "label": "GMPIPOWatch / FinAPI September portfolio",
+          "url": "https://www.gmpipowatch.com/mutual-funds/scheme/aditya-birla-sun-life-small-cap-fund-regular-plan-growth-105804",
+          "scope": "All top15 September allocations match DecryptMutualFunds."
+        },
+        {
+          "label": "Fund Tracker India · October 2026",
+          "url": "https://fundtrackerindia.com/scheme/aditya-birla-sun-life-small-cap-fund",
+          "scope": "October cross-check: 83 exact company quantities and allocations matched; 0 disagreements. This page may cover only a subset of equities."
+        },
+        {
+          "label": "Official September portfolio",
+          "url": "https://media.bajajamc.com/wp-content/uploads/2026/10/Bajaj-Finserv-Mutual-Fund_Monthly-Portfolio-as-on-30-Sep2026-1.xls",
+          "scope": "Full equity quantities and allocations as at 30 September 2026; original AMC spreadsheet."
+        },
+        {
+          "label": "Official August portfolio",
+          "url": "https://media.bajajamc.com/wp-content/uploads/2026/09/Bajaj-Finserv-Mutual-Fund_Monthly-Portfolio-as-on-31-Aug-2026.xls",
+          "scope": "Full equity quantities and allocations as at 31 August 2026; original AMC spreadsheet."
+        },
+        {
+          "label": "DecryptMutualFunds — September corroboration",
+          "url": "https://decryptmutualfunds.com/fund-houses/bajaj-finserv/small-cap-fund",
+          "scope": "September top 15 equity ISIN quantities and %NAV independently cross-checked; all matched."
+        },
+        {
+          "label": "Fund Tracker India · October 2026",
+          "url": "https://fundtrackerindia.com/scheme/bajaj-finserv-small-cap-fund",
+          "scope": "October cross-check: 90 exact company quantities and allocations matched; 0 disagreements. This page may cover only a subset of equities."
+        },
+        {
+          "label": "Official AMC monthly portfolio",
+          "url": "https://www.canararobeco.com/wp-content/uploads/2026/09/SC-–-Canara-Robeco-Small-Cap-Fund-–-August-2026.xlsx",
+          "scope": "Full equity quantities and allocations as at 2026-08-31. Original AMC spreadsheet."
+        },
+        {
+          "label": "Official AMC monthly portfolio",
+          "url": "https://www.canararobeco.com/wp-content/uploads/2026/10/SC-–-Canara-Robeco-Small-Cap-Fund-–-September-2026.xlsx",
+          "scope": "Full equity quantities and allocations as at 2026-09-30. Original AMC spreadsheet."
+        },
+        {
+          "label": "MFScanner · September vs August",
+          "url": "https://mfscanner.com/fund/canara-robeco-small-cap-fund",
+          "scope": "Published full-equity current and previous quantities. Unreconciled provider changes are withheld."
+        },
+        {
+          "label": "Official October 2026 portfolio",
+          "url": "https://www.canararobeco.com/wp-content/uploads/2026/11/SC-%E2%80%93-Canara-Robeco-Small-Cap-Fund-%E2%80%93-October-2026.xlsx",
+          "scope": "Original AMC October workbook; complete equity quantities and % of net assets."
+        },
+        {
+          "label": "Fund Tracker India · October 2026",
+          "url": "https://fundtrackerindia.com/scheme/canara-robeco-small-cap-fund",
+          "scope": "October cross-check: 94 exact company quantities and allocations matched; 0 disagreements. This page may cover only a subset of equities."
+        },
+        {
+          "label": "DecryptMutualFunds monthly records",
+          "url": "https://decryptmutualfunds.com/fund-houses/helios/mid-cap-fund",
+          "scope": "Full September and August equity quantities and allocations. Singly sourced quantity comparison; original AMC workbooks not retrieved."
+        },
+        {
+          "label": "GMP IPO Watch / FinAPI",
+          "url": "https://www.gmpipowatch.com/mutual-funds/scheme/helios-mid-cap-fund-direct-plan-growth-153326",
+          "scope": "Top 15 September allocations matched; August weight corroboration is limited to explicit displayed one-month pp deltas."
+        },
+        {
+          "label": "Official October 2026 portfolio",
+          "url": "https://www.heliosmf.in/wp-content/uploads/2026/11/helios-mid-cap-fund-monthly-portfolio-as-on-31st-october-2026.xlsx",
+          "scope": "Original AMC October workbook; complete equity quantities and % of net assets."
+        },
+        {
+          "label": "Fund Tracker India · October 2026",
+          "url": "https://fundtrackerindia.com/scheme/helios-mid-cap-fund",
+          "scope": "October cross-check: 75 exact company quantities and allocations matched; 0 disagreements. This page may cover only a subset of equities."
+        },
+        {
+          "label": "DecryptMutualFunds — September / August comparison",
+          "url": "https://decryptmutualfunds.com/fund-houses/iti/small-cap-fund",
+          "scope": "Full September equity quantities and explicit changes versus August; prior quantities calculated from disclosed changes."
+        },
+        {
+          "label": "GMPIPOWatch (FinAPI) — September portfolio",
+          "url": "https://www.gmpipowatch.com/mutual-funds/scheme/iti-small-cap-fund-direct-plan-growth-option-147919",
+          "scope": "All September top 15 company allocations matched; quantity comparison not independently confirmed."
+        },
+        {
+          "label": "Official October 2026 portfolio",
+          "url": "https://itiamc.com/admin/pdf/1794219275-ITIMF_Monthly_Portfolio_October_2026.xlsx",
+          "scope": "Original AMC October workbook; complete equity quantities and % of net assets."
+        },
+        {
+          "label": "Official September portfolio",
+          "url": "https://www.motilaloswalmf.com/content/dam/motilal-mf/sheets/fund-csvs/Month_End_Portfolio_September_2026/YO46.xlsx",
+          "scope": "Full equity quantities and %NAV as at 30 September 2026."
+        },
+        {
+          "label": "Official August portfolio",
+          "url": "https://www.motilaloswalmf.com/content/dam/motilal-mf/sheets/fund-csvs/Month_End_Portfolio_August_2026/YO46.xlsx",
+          "scope": "Full equity quantities and %NAV as at 31 August 2026."
+        },
+        {
+          "label": "DecryptMutualFunds September corroboration",
+          "url": "https://decryptmutualfunds.com/fund-houses/motilal-oswal/small-cap-fund",
+          "scope": "Top 15 September allocations and quantities exactly match original AMC spreadsheet; provider current 58 equities."
+        },
+        {
+          "label": "Official October 2026 portfolio",
+          "url": "https://www.motilaloswalmf.com/content/dam/motilal-mf/downloads/mf/month-end-portfolio/2026/nov/Copy%20of%20Monthly%20Portfolio%2031-10-2026-Final%20rahul.xlsx",
+          "scope": "Original AMC October workbook; complete equity quantities and % of net assets."
+        },
+        {
+          "label": "Fund Tracker India · October 2026",
+          "url": "https://fundtrackerindia.com/scheme/motilal-oswal-small-cap-fund",
+          "scope": "October cross-check: 62 exact company quantities and allocations matched; 0 disagreements. This page may cover only a subset of equities."
+        },
+        {
+          "label": "Official September portfolio",
+          "url": "https://mf.nipponindiaim.com/InvestorServices/FactsheetsDocuments/NIMF-MONTHLY-PORTFOLIO-30-Sep-26.xls",
+          "scope": "Full equity share quantities and allocations as at 30 September 2026; original AMC spreadsheet."
+        },
+        {
+          "label": "Official August portfolio",
+          "url": "https://mf.nipponindiaim.com/InvestorServices/FactsheetsDocuments/NIMF-MONTHLY-PORTFOLIO-31-Aug-26.xls",
+          "scope": "Full equity share quantities and allocations as at 31 August 2026; original AMC spreadsheet."
+        },
+        {
+          "label": "DecryptMutualFunds — September cross-check",
+          "url": "https://decryptmutualfunds.com/fund-houses/nippon-india/small-cap-fund",
+          "scope": "All 256 September security quantities and displayed allocations reconciled against original AMC disclosure; independently published regulatory-derived dataset."
+        },
+        {
+          "label": "Official October 2026 portfolio",
+          "url": "https://mf.nipponindiaim.com/InvestorServices/FactsheetsDocuments/NIMF-MONTHLY-PORTFOLIO-31-Oct-26.xls",
+          "scope": "Original AMC October workbook; complete equity quantities and % of net assets."
+        },
+        {
+          "label": "Fund Tracker India · October 2026",
+          "url": "https://fundtrackerindia.com/scheme/nippon-india-small-cap-fund",
+          "scope": "October cross-check: 25 exact company quantities and allocations matched; 0 disagreements. This page may cover only a subset of equities."
+        },
+        {
+          "label": "DecryptMutualFunds",
+          "url": "https://decryptmutualfunds.com/fund-houses/pgim-india/small-cap-fund",
+          "scope": "Full September company ISIN quantities, reported quantity deltas and %NAV; prior quantities derived from provider deltas."
+        },
+        {
+          "label": "GMP IPO Watch / FinAPI",
+          "url": "https://www.gmpipowatch.com/mutual-funds/scheme/pgim-india-small-cap-fund-direct-plan-direct-growth-149019",
+          "scope": "All top 15 September company allocations cross-checked. Full quantities and deltas remain singly sourced; not confirmed trades."
+        },
+        {
+          "label": "Fund Tracker India · October 2026",
+          "url": "https://fundtrackerindia.com/scheme/pgim-india-small-cap-fund",
+          "scope": "October cross-check: 71 exact company quantities and allocations matched; 0 disagreements. This page may cover only a subset of equities."
+        },
+        {
+          "label": "DecryptMutualFunds — September / August comparison",
+          "url": "https://decryptmutualfunds.com/fund-houses/trust/small-cap-fund",
+          "scope": "Full September equity quantities and explicit changes versus August; prior quantities calculated from disclosed changes."
+        },
+        {
+          "label": "GMPIPOWatch (FinAPI) — September portfolio",
+          "url": "https://www.gmpipowatch.com/mutual-funds/scheme/trustmf-small-cap-fund-direct-plan-idcw-152937",
+          "scope": "All September top 15 company allocations matched; quantity comparison not independently confirmed."
+        },
+        {
+          "label": "Fund Tracker India · October 2026",
+          "url": "https://fundtrackerindia.com/scheme/trustmf-small-cap-fund",
+          "scope": "October cross-check: 71 exact company quantities and allocations matched; 0 disagreements. This page may cover only a subset of equities."
+        },
+        {
+          "label": "DecryptMutualFunds — September / August comparison",
+          "url": "https://decryptmutualfunds.com/fund-houses/uti/small-cap-fund",
+          "scope": "Full September equity quantities and explicit changes versus August; prior quantities calculated from disclosed changes."
+        },
+        {
+          "label": "GMPIPOWatch (FinAPI) — September portfolio",
+          "url": "https://www.gmpipowatch.com/mutual-funds/scheme/uti-small-cap-fund-direct-plan-idcw-148619",
+          "scope": "All September top 15 company allocations matched; quantity comparison not independently confirmed."
+        },
+        {
+          "label": "Official October 2026 portfolio",
+          "url": "https://d3ce1o48hc5oli.cloudfront.net/s3fs-public/2026-11/uti_mf_scheme_portfolios_31.10.2026.zip?VersionId=TCdWa523cHJddb2DfCo24kQ36qDHRk6o",
+          "scope": "Original AMC October workbook; complete equity quantities and % of net assets."
+        },
+        {
+          "label": "Fund Tracker India · October 2026",
+          "url": "https://fundtrackerindia.com/scheme/uti-small-cap-fund",
+          "scope": "October cross-check: 20 exact company quantities and allocations matched; 0 disagreements. This page may cover only a subset of equities."
+        }
+      ]
+    },
+    {
+      "name": "Acutaas Chemicals Ltd.",
+      "key": "name:acutaaschemicals",
+      "quantities": [
+        1932510,
+        2183184,
+        2377019
+      ],
+      "holders": [
+        10,
+        10,
+        10
+      ],
+      "growth": 23.00164035373685,
+      "repeatAdders": [
+        "Aditya Birla Sun Life Small Cap Fund",
+        "Mahindra Manulife Small Cap Fund",
+        "TRUSTMF Small Cap Fund"
+      ],
+      "repeatReducers": [],
+      "adding": 5,
+      "reducing": 1,
+      "primaryPositions": 1,
+      "positionCount": 10,
+      "sources": [
+        {
+          "label": "DecryptMutualFunds September portfolio",
+          "url": "https://decryptmutualfunds.com/fund-houses/aditya-birla-sun-life/small-cap-fund",
+          "scope": "Full share quantities, %NAV and adjacent-August net quantity changes, dated 30 September 2026."
+        },
+        {
+          "label": "GMPIPOWatch / FinAPI September portfolio",
+          "url": "https://www.gmpipowatch.com/mutual-funds/scheme/aditya-birla-sun-life-small-cap-fund-regular-plan-growth-105804",
+          "scope": "All top15 September allocations match DecryptMutualFunds."
+        },
+        {
+          "label": "Fund Tracker India · October 2026",
+          "url": "https://fundtrackerindia.com/scheme/aditya-birla-sun-life-small-cap-fund",
+          "scope": "October cross-check: 83 exact company quantities and allocations matched; 0 disagreements. This page may cover only a subset of equities."
+        },
+        {
+          "label": "Official September portfolio",
+          "url": "https://media.bajajamc.com/wp-content/uploads/2026/10/Bajaj-Finserv-Mutual-Fund_Monthly-Portfolio-as-on-30-Sep2026-1.xls",
+          "scope": "Full equity quantities and allocations as at 30 September 2026; original AMC spreadsheet."
+        },
+        {
+          "label": "Official August portfolio",
+          "url": "https://media.bajajamc.com/wp-content/uploads/2026/09/Bajaj-Finserv-Mutual-Fund_Monthly-Portfolio-as-on-31-Aug-2026.xls",
+          "scope": "Full equity quantities and allocations as at 31 August 2026; original AMC spreadsheet."
+        },
+        {
+          "label": "DecryptMutualFunds — September corroboration",
+          "url": "https://decryptmutualfunds.com/fund-houses/bajaj-finserv/small-cap-fund",
+          "scope": "September top 15 equity ISIN quantities and %NAV independently cross-checked; all matched."
+        },
+        {
+          "label": "Fund Tracker India · October 2026",
+          "url": "https://fundtrackerindia.com/scheme/bajaj-finserv-small-cap-fund",
+          "scope": "October cross-check: 90 exact company quantities and allocations matched; 0 disagreements. This page may cover only a subset of equities."
+        },
+        {
+          "label": "DecryptMutualFunds",
+          "url": "https://decryptmutualfunds.com/fund-houses/helios/small-cap-fund",
+          "scope": "Full September company ISIN quantities, reported quantity deltas and %NAV; prior quantities derived from provider deltas."
+        },
+        {
+          "label": "GMP IPO Watch / FinAPI",
+          "url": "https://www.gmpipowatch.com/mutual-funds/scheme/helios-small-cap-fund-direct-plan-growth-153912",
+          "scope": "All top 15 September company allocations cross-checked. Full quantities and deltas remain singly sourced; not confirmed trades."
+        },
+        {
+          "label": "Official October 2026 portfolio",
+          "url": "https://www.heliosmf.in/wp-content/uploads/2026/11/helios-small-cap-fund-monthly-portfolio-as-on-31st-october-2026.xlsx",
+          "scope": "Original AMC October workbook; complete equity quantities and % of net assets."
+        },
+        {
+          "label": "Fund Tracker India · October 2026",
+          "url": "https://fundtrackerindia.com/scheme/helios-small-cap-fund",
+          "scope": "October cross-check: 95 exact company quantities and allocations matched; 0 disagreements. This page may cover only a subset of equities."
+        },
+        {
+          "label": "DecryptMutualFunds monthly records",
+          "url": "https://decryptmutualfunds.com/fund-houses/helios/flexi-cap-fund",
+          "scope": "Full September and August equity quantities and allocations. Singly sourced quantity comparison; original AMC workbooks not retrieved."
+        },
+        {
+          "label": "GMP IPO Watch / FinAPI",
+          "url": "https://www.gmpipowatch.com/mutual-funds/scheme/helios-flexi-cap-fund-direct-plan-growth-152135",
+          "scope": "Top 15 September allocations matched; August weight corroboration is limited to explicit displayed one-month pp deltas."
+        },
+        {
+          "label": "Official October 2026 portfolio",
+          "url": "https://www.heliosmf.in/wp-content/uploads/2026/11/helios-flexi-cap-fund-monthly-portfolio-as-on-31st-october-2026.xlsx",
+          "scope": "Original AMC October workbook; complete equity quantities and % of net assets."
+        },
+        {
+          "label": "Fund Tracker India · October 2026",
+          "url": "https://fundtrackerindia.com/scheme/helios-flexi-cap-fund",
+          "scope": "October cross-check: 69 exact company quantities and allocations matched; 0 disagreements. This page may cover only a subset of equities."
+        },
+        {
+          "label": "DecryptMutualFunds monthly records",
+          "url": "https://decryptmutualfunds.com/fund-houses/helios/mid-cap-fund",
+          "scope": "Full September and August equity quantities and allocations. Singly sourced quantity comparison; original AMC workbooks not retrieved."
+        },
+        {
+          "label": "GMP IPO Watch / FinAPI",
+          "url": "https://www.gmpipowatch.com/mutual-funds/scheme/helios-mid-cap-fund-direct-plan-growth-153326",
+          "scope": "Top 15 September allocations matched; August weight corroboration is limited to explicit displayed one-month pp deltas."
+        },
+        {
+          "label": "Official October 2026 portfolio",
+          "url": "https://www.heliosmf.in/wp-content/uploads/2026/11/helios-mid-cap-fund-monthly-portfolio-as-on-31st-october-2026.xlsx",
+          "scope": "Original AMC October workbook; complete equity quantities and % of net assets."
+        },
+        {
+          "label": "Fund Tracker India · October 2026",
+          "url": "https://fundtrackerindia.com/scheme/helios-mid-cap-fund",
+          "scope": "October cross-check: 75 exact company quantities and allocations matched; 0 disagreements. This page may cover only a subset of equities."
+        },
+        {
+          "label": "DecryptMutualFunds — September / August comparison",
+          "url": "https://decryptmutualfunds.com/fund-houses/iti/small-cap-fund",
+          "scope": "Full September equity quantities and explicit changes versus August; prior quantities calculated from disclosed changes."
+        },
+        {
+          "label": "GMPIPOWatch (FinAPI) — September portfolio",
+          "url": "https://www.gmpipowatch.com/mutual-funds/scheme/iti-small-cap-fund-direct-plan-growth-option-147919",
+          "scope": "All September top 15 company allocations matched; quantity comparison not independently confirmed."
+        },
+        {
+          "label": "Official October 2026 portfolio",
+          "url": "https://itiamc.com/admin/pdf/1794219275-ITIMF_Monthly_Portfolio_October_2026.xlsx",
+          "scope": "Original AMC October workbook; complete equity quantities and % of net assets."
+        },
+        {
+          "label": "DecryptMutualFunds September portfolio",
+          "url": "https://decryptmutualfunds.com/fund-houses/mahindra-manulife/small-cap-fund",
+          "scope": "Full share quantities, %NAV and adjacent-August net quantity changes, dated 30 September 2026."
+        },
+        {
+          "label": "GMPIPOWatch / FinAPI September portfolio",
+          "url": "https://www.gmpipowatch.com/mutual-funds/scheme/mahindra-manulife-small-cap-fund-direct-plan-growth-150915",
+          "scope": "All top15 September allocations match DecryptMutualFunds."
+        },
+        {
+          "label": "Official October 2026 portfolio",
+          "url": "https://cms.mahindramanulife.com/storage/mmimplweb/uploads/download/74690f29-5b55-4a21-80c6-5838d2452a39.xlsx",
+          "scope": "Original AMC October workbook; complete equity quantities and % of net assets."
+        },
+        {
+          "label": "Official AMC monthly portfolio",
+          "url": "https://www.sbimf.com/docs/default-source/scheme-portfolios/all-schemes-monthly-portfolio---as-on-30th-september-2026.xlsx?sfvrsn=2a79126c_2",
+          "scope": "Full equity quantities and allocations as at 2026-09-30. Original AMC spreadsheet."
+        },
+        {
+          "label": "Official AMC monthly portfolio",
+          "url": "https://www.sbimf.com/docs/default-source/scheme-portfolios/all-schemes-monthly-portfolio---as-on-31st-august-2026.xlsx?sfvrsn=a7fdc2ec_2",
+          "scope": "Full equity quantities and allocations as at 2026-08-31. Original AMC spreadsheet."
+        },
+        {
+          "label": "Official October 2026 portfolio",
+          "url": "https://www.sbimf.com/docs/default-source/scheme-portfolios/all-schemes-monthly-portfolio---as-on-31st-october-2026.xlsx?sfvrsn=95fe7a7e_2",
+          "scope": "Original AMC October workbook; complete equity quantities and % of net assets."
+        },
+        {
+          "label": "Fund Tracker India · October 2026",
+          "url": "https://fundtrackerindia.com/scheme/sbi-small-cap-fund",
+          "scope": "October cross-check: 62 exact company quantities and allocations matched; 0 disagreements. This page may cover only a subset of equities."
+        },
+        {
+          "label": "DecryptMutualFunds — September / August comparison",
+          "url": "https://decryptmutualfunds.com/fund-houses/trust/small-cap-fund",
+          "scope": "Full September equity quantities and explicit changes versus August; prior quantities calculated from disclosed changes."
+        },
+        {
+          "label": "GMPIPOWatch (FinAPI) — September portfolio",
+          "url": "https://www.gmpipowatch.com/mutual-funds/scheme/trustmf-small-cap-fund-direct-plan-idcw-152937",
+          "scope": "All September top 15 company allocations matched; quantity comparison not independently confirmed."
+        },
+        {
+          "label": "Fund Tracker India · October 2026",
+          "url": "https://fundtrackerindia.com/scheme/trustmf-small-cap-fund",
+          "scope": "October cross-check: 71 exact company quantities and allocations matched; 0 disagreements. This page may cover only a subset of equities."
+        },
+        {
+          "label": "DecryptMutualFunds — September / August comparison",
+          "url": "https://decryptmutualfunds.com/fund-houses/uti/small-cap-fund",
+          "scope": "Full September equity quantities and explicit changes versus August; prior quantities calculated from disclosed changes."
+        },
+        {
+          "label": "GMPIPOWatch (FinAPI) — September portfolio",
+          "url": "https://www.gmpipowatch.com/mutual-funds/scheme/uti-small-cap-fund-direct-plan-idcw-148619",
+          "scope": "All September top 15 company allocations matched; quantity comparison not independently confirmed."
+        },
+        {
+          "label": "Official October 2026 portfolio",
+          "url": "https://d3ce1o48hc5oli.cloudfront.net/s3fs-public/2026-11/uti_mf_scheme_portfolios_31.10.2026.zip?VersionId=TCdWa523cHJddb2DfCo24kQ36qDHRk6o",
+          "scope": "Original AMC October workbook; complete equity quantities and % of net assets."
+        },
+        {
+          "label": "Fund Tracker India · October 2026",
+          "url": "https://fundtrackerindia.com/scheme/uti-small-cap-fund",
+          "scope": "October cross-check: 20 exact company quantities and allocations matched; 0 disagreements. This page may cover only a subset of equities."
+        }
+      ]
+    },
+    {
+      "name": "City Union Bank Ltd.",
+      "key": "name:cityunionbank",
+      "quantities": [
+        100886808,
+        106747247,
+        110099214
+      ],
+      "holders": [
+        13,
+        13,
+        14
+      ],
+      "growth": 9.13142776803881,
+      "repeatAdders": [
+        "Canara Robeco Small Cap Fund",
+        "Invesco India Smallcap Fund",
+        "TRUSTMF Small Cap Fund"
+      ],
+      "repeatReducers": [],
+      "adding": 5,
+      "reducing": 1,
+      "primaryPositions": 4,
+      "positionCount": 14,
+      "sources": [
+        {
+          "label": "DecryptMutualFunds September portfolio",
+          "url": "https://decryptmutualfunds.com/fund-houses/aditya-birla-sun-life/small-cap-fund",
+          "scope": "Full share quantities, %NAV and adjacent-August net quantity changes, dated 30 September 2026."
+        },
+        {
+          "label": "GMPIPOWatch / FinAPI September portfolio",
+          "url": "https://www.gmpipowatch.com/mutual-funds/scheme/aditya-birla-sun-life-small-cap-fund-regular-plan-growth-105804",
+          "scope": "All top15 September allocations match DecryptMutualFunds."
+        },
+        {
+          "label": "Fund Tracker India · October 2026",
+          "url": "https://fundtrackerindia.com/scheme/aditya-birla-sun-life-small-cap-fund",
+          "scope": "October cross-check: 83 exact company quantities and allocations matched; 0 disagreements. This page may cover only a subset of equities."
+        },
+        {
+          "label": "Official AMC monthly portfolio",
+          "url": "https://www.canararobeco.com/wp-content/uploads/2026/09/SC-–-Canara-Robeco-Small-Cap-Fund-–-August-2026.xlsx",
+          "scope": "Full equity quantities and allocations as at 2026-08-31. Original AMC spreadsheet."
+        },
+        {
+          "label": "Official AMC monthly portfolio",
+          "url": "https://www.canararobeco.com/wp-content/uploads/2026/10/SC-–-Canara-Robeco-Small-Cap-Fund-–-September-2026.xlsx",
+          "scope": "Full equity quantities and allocations as at 2026-09-30. Original AMC spreadsheet."
+        },
+        {
+          "label": "MFScanner · September vs August",
+          "url": "https://mfscanner.com/fund/canara-robeco-small-cap-fund",
+          "scope": "Published full-equity current and previous quantities. Unreconciled provider changes are withheld."
+        },
+        {
+          "label": "Official October 2026 portfolio",
+          "url": "https://www.canararobeco.com/wp-content/uploads/2026/11/SC-%E2%80%93-Canara-Robeco-Small-Cap-Fund-%E2%80%93-October-2026.xlsx",
+          "scope": "Original AMC October workbook; complete equity quantities and % of net assets."
+        },
+        {
+          "label": "Fund Tracker India · October 2026",
+          "url": "https://fundtrackerindia.com/scheme/canara-robeco-small-cap-fund",
+          "scope": "October cross-check: 94 exact company quantities and allocations matched; 0 disagreements. This page may cover only a subset of equities."
+        },
+        {
+          "label": "DecryptMutualFunds",
+          "url": "https://decryptmutualfunds.com/fund-houses/helios/small-cap-fund",
+          "scope": "Full September company ISIN quantities, reported quantity deltas and %NAV; prior quantities derived from provider deltas."
+        },
+        {
+          "label": "GMP IPO Watch / FinAPI",
+          "url": "https://www.gmpipowatch.com/mutual-funds/scheme/helios-small-cap-fund-direct-plan-growth-153912",
+          "scope": "All top 15 September company allocations cross-checked. Full quantities and deltas remain singly sourced; not confirmed trades."
+        },
+        {
+          "label": "Official October 2026 portfolio",
+          "url": "https://www.heliosmf.in/wp-content/uploads/2026/11/helios-small-cap-fund-monthly-portfolio-as-on-31st-october-2026.xlsx",
+          "scope": "Original AMC October workbook; complete equity quantities and % of net assets."
+        },
+        {
+          "label": "Fund Tracker India · October 2026",
+          "url": "https://fundtrackerindia.com/scheme/helios-small-cap-fund",
+          "scope": "October cross-check: 95 exact company quantities and allocations matched; 0 disagreements. This page may cover only a subset of equities."
+        },
+        {
+          "label": "DecryptMutualFunds monthly records",
+          "url": "https://decryptmutualfunds.com/fund-houses/helios/financial-services-fund",
+          "scope": "Full September and August equity quantities and allocations. Singly sourced quantity comparison; original AMC workbooks not retrieved."
+        },
+        {
+          "label": "GMP IPO Watch / FinAPI",
+          "url": "https://www.gmpipowatch.com/mutual-funds/scheme/helios-financial-services-fund-direct-plan-growth-152679",
+          "scope": "Top 15 September allocations matched; August weight corroboration is limited to explicit displayed one-month pp deltas."
+        },
+        {
+          "label": "Official October 2026 portfolio",
+          "url": "https://www.heliosmf.in/wp-content/uploads/2026/11/helios-financial-services-fund-monthly-portfolio-as-on-31st-october-2026.xlsx",
+          "scope": "Original AMC October workbook; complete equity quantities and % of net assets."
+        },
+        {
+          "label": "Fund Tracker India · October 2026",
+          "url": "https://fundtrackerindia.com/scheme/helios-financial-services-fund",
+          "scope": "October cross-check: 28 exact company quantities and allocations matched; 0 disagreements. This page may cover only a subset of equities."
+        },
+        {
+          "label": "DecryptMutualFunds monthly records",
+          "url": "https://decryptmutualfunds.com/fund-houses/helios/mid-cap-fund",
+          "scope": "Full September and August equity quantities and allocations. Singly sourced quantity comparison; original AMC workbooks not retrieved."
+        },
+        {
+          "label": "GMP IPO Watch / FinAPI",
+          "url": "https://www.gmpipowatch.com/mutual-funds/scheme/helios-mid-cap-fund-direct-plan-growth-153326",
+          "scope": "Top 15 September allocations matched; August weight corroboration is limited to explicit displayed one-month pp deltas."
+        },
+        {
+          "label": "Official October 2026 portfolio",
+          "url": "https://www.heliosmf.in/wp-content/uploads/2026/11/helios-mid-cap-fund-monthly-portfolio-as-on-31st-october-2026.xlsx",
+          "scope": "Original AMC October workbook; complete equity quantities and % of net assets."
+        },
+        {
+          "label": "Fund Tracker India · October 2026",
+          "url": "https://fundtrackerindia.com/scheme/helios-mid-cap-fund",
+          "scope": "October cross-check: 75 exact company quantities and allocations matched; 0 disagreements. This page may cover only a subset of equities."
+        },
+        {
+          "label": "DecryptMutualFunds September portfolio",
+          "url": "https://decryptmutualfunds.com/fund-houses/invesco/small-cap-fund",
+          "scope": "Full share quantities, %NAV and adjacent-August net quantity changes, dated 30 September 2026."
+        },
+        {
+          "label": "GMPIPOWatch / FinAPI September portfolio",
+          "url": "https://www.gmpipowatch.com/mutual-funds/scheme/invesco-india-small-cap-fund-direct-plan-growth-145137",
+          "scope": "All top15 September allocations match DecryptMutualFunds."
+        },
+        {
+          "label": "Official October 2026 portfolio",
+          "url": "https://www.invescomutualfund.com/docs/default-source/aboutus/smallcap.xlsx?sfvrsn=c8e810cd_1",
+          "scope": "Original AMC October workbook; complete equity quantities and % of net assets."
+        },
+        {
+          "label": "Official September 2026 portfolio",
+          "url": "https://www.invescomutualfund.com/docs/default-source/completes-monthly-holding/invesco-india-smallcap-fund_sep_2026_equity.xlsx?sfvrsn=aceb2acd_1",
+          "scope": "Original AMC September workbook; complete equity quantities and allocations."
+        },
+        {
+          "label": "Fund Tracker India · October 2026",
+          "url": "https://fundtrackerindia.com/scheme/invesco-india-small-cap-fund",
+          "scope": "October cross-check: 72 exact company quantities and allocations matched; 0 disagreements. This page may cover only a subset of equities."
+        },
+        {
+          "label": "DecryptMutualFunds — September / August comparison",
+          "url": "https://decryptmutualfunds.com/fund-houses/iti/small-cap-fund",
+          "scope": "Full September equity quantities and explicit changes versus August; prior quantities calculated from disclosed changes."
+        },
+        {
+          "label": "GMPIPOWatch (FinAPI) — September portfolio",
+          "url": "https://www.gmpipowatch.com/mutual-funds/scheme/iti-small-cap-fund-direct-plan-growth-option-147919",
+          "scope": "All September top 15 company allocations matched; quantity comparison not independently confirmed."
+        },
+        {
+          "label": "Official October 2026 portfolio",
+          "url": "https://itiamc.com/admin/pdf/1794219275-ITIMF_Monthly_Portfolio_October_2026.xlsx",
+          "scope": "Original AMC October workbook; complete equity quantities and % of net assets."
+        },
+        {
+          "label": "LIC Mutual Fund original September disclosure",
+          "url": "https://www.licmf.com/assets/downloads/portfolio/monthly/2026/9/LEESCF09-10-2026-15:47:01.xlsx",
+          "scope": "Full official September equity ISIN quantities and %NAV."
+        },
+        {
+          "label": "LIC Mutual Fund original August disclosure",
+          "url": "https://www.licmf.com/assets/downloads/portfolio/monthly/2026/8/LEESCF09-09-2026-09:58:30.xlsx",
+          "scope": "Full official August equity ISIN quantities and %NAV."
+        },
+        {
+          "label": "GMP IPO Watch / FinAPI",
+          "url": "https://www.gmpipowatch.com/mutual-funds/scheme/lic-mf-small-cap-fund-regular-plan-growth-152003",
+          "scope": "All top 15 September company allocations cross-checked; full quantities not independently cross-checked."
+        },
+        {
+          "label": "DecryptMutualFunds · October 2026",
+          "url": "https://decryptmutualfunds.com/fund-houses/lic/small-cap-fund",
+          "scope": "October provider quantities and allocations; original AMC workbook not retrieved."
+        },
+        {
+          "label": "Fund Tracker India · October 2026",
+          "url": "https://fundtrackerindia.com/scheme/lic-mf-small-cap-fund",
+          "scope": "October cross-check: 44 exact company quantities and allocations matched; 0 disagreements. This page may cover only a subset of equities."
+        },
+        {
+          "label": "Official September portfolio",
+          "url": "https://www.motilaloswalmf.com/content/dam/motilal-mf/sheets/fund-csvs/Month_End_Portfolio_September_2026/YO46.xlsx",
+          "scope": "Full equity quantities and %NAV as at 30 September 2026."
+        },
+        {
+          "label": "Official August portfolio",
+          "url": "https://www.motilaloswalmf.com/content/dam/motilal-mf/sheets/fund-csvs/Month_End_Portfolio_August_2026/YO46.xlsx",
+          "scope": "Full equity quantities and %NAV as at 31 August 2026."
+        },
+        {
+          "label": "DecryptMutualFunds September corroboration",
+          "url": "https://decryptmutualfunds.com/fund-houses/motilal-oswal/small-cap-fund",
+          "scope": "Top 15 September allocations and quantities exactly match original AMC spreadsheet; provider current 58 equities."
+        },
+        {
+          "label": "Official October 2026 portfolio",
+          "url": "https://www.motilaloswalmf.com/content/dam/motilal-mf/downloads/mf/month-end-portfolio/2026/nov/Copy%20of%20Monthly%20Portfolio%2031-10-2026-Final%20rahul.xlsx",
+          "scope": "Original AMC October workbook; complete equity quantities and % of net assets."
+        },
+        {
+          "label": "Fund Tracker India · October 2026",
+          "url": "https://fundtrackerindia.com/scheme/motilal-oswal-small-cap-fund",
+          "scope": "October cross-check: 62 exact company quantities and allocations matched; 0 disagreements. This page may cover only a subset of equities."
+        },
+        {
+          "label": "Official September portfolio",
+          "url": "https://mf.nipponindiaim.com/InvestorServices/FactsheetsDocuments/NIMF-MONTHLY-PORTFOLIO-30-Sep-26.xls",
+          "scope": "Full equity share quantities and allocations as at 30 September 2026; original AMC spreadsheet."
+        },
+        {
+          "label": "Official August portfolio",
+          "url": "https://mf.nipponindiaim.com/InvestorServices/FactsheetsDocuments/NIMF-MONTHLY-PORTFOLIO-31-Aug-26.xls",
+          "scope": "Full equity share quantities and allocations as at 31 August 2026; original AMC spreadsheet."
+        },
+        {
+          "label": "DecryptMutualFunds — September cross-check",
+          "url": "https://decryptmutualfunds.com/fund-houses/nippon-india/small-cap-fund",
+          "scope": "All 256 September security quantities and displayed allocations reconciled against original AMC disclosure; independently published regulatory-derived dataset."
+        },
+        {
+          "label": "Official October 2026 portfolio",
+          "url": "https://mf.nipponindiaim.com/InvestorServices/FactsheetsDocuments/NIMF-MONTHLY-PORTFOLIO-31-Oct-26.xls",
+          "scope": "Original AMC October workbook; complete equity quantities and % of net assets."
+        },
+        {
+          "label": "Fund Tracker India · October 2026",
+          "url": "https://fundtrackerindia.com/scheme/nippon-india-small-cap-fund",
+          "scope": "October cross-check: 25 exact company quantities and allocations matched; 0 disagreements. This page may cover only a subset of equities."
+        },
+        {
+          "label": "DecryptMutualFunds",
+          "url": "https://decryptmutualfunds.com/fund-houses/pgim-india/small-cap-fund",
+          "scope": "Full September company ISIN quantities, reported quantity deltas and %NAV; prior quantities derived from provider deltas."
+        },
+        {
+          "label": "GMP IPO Watch / FinAPI",
+          "url": "https://www.gmpipowatch.com/mutual-funds/scheme/pgim-india-small-cap-fund-direct-plan-direct-growth-149019",
+          "scope": "All top 15 September company allocations cross-checked. Full quantities and deltas remain singly sourced; not confirmed trades."
+        },
+        {
+          "label": "Fund Tracker India · October 2026",
+          "url": "https://fundtrackerindia.com/scheme/pgim-india-small-cap-fund",
+          "scope": "October cross-check: 71 exact company quantities and allocations matched; 0 disagreements. This page may cover only a subset of equities."
+        },
+        {
+          "label": "Official AMC monthly portfolio",
+          "url": "https://www.sbimf.com/docs/default-source/scheme-portfolios/all-schemes-monthly-portfolio---as-on-30th-september-2026.xlsx?sfvrsn=2a79126c_2",
+          "scope": "Full equity quantities and allocations as at 2026-09-30. Original AMC spreadsheet."
+        },
+        {
+          "label": "Official AMC monthly portfolio",
+          "url": "https://www.sbimf.com/docs/default-source/scheme-portfolios/all-schemes-monthly-portfolio---as-on-31st-august-2026.xlsx?sfvrsn=a7fdc2ec_2",
+          "scope": "Full equity quantities and allocations as at 2026-08-31. Original AMC spreadsheet."
+        },
+        {
+          "label": "Official October 2026 portfolio",
+          "url": "https://www.sbimf.com/docs/default-source/scheme-portfolios/all-schemes-monthly-portfolio---as-on-31st-october-2026.xlsx?sfvrsn=95fe7a7e_2",
+          "scope": "Original AMC October workbook; complete equity quantities and % of net assets."
+        },
+        {
+          "label": "Fund Tracker India · October 2026",
+          "url": "https://fundtrackerindia.com/scheme/sbi-small-cap-fund",
+          "scope": "October cross-check: 62 exact company quantities and allocations matched; 0 disagreements. This page may cover only a subset of equities."
+        },
+        {
+          "label": "DecryptMutualFunds — September / August comparison",
+          "url": "https://decryptmutualfunds.com/fund-houses/trust/small-cap-fund",
+          "scope": "Full September equity quantities and explicit changes versus August; prior quantities calculated from disclosed changes."
+        },
+        {
+          "label": "GMPIPOWatch (FinAPI) — September portfolio",
+          "url": "https://www.gmpipowatch.com/mutual-funds/scheme/trustmf-small-cap-fund-direct-plan-idcw-152937",
+          "scope": "All September top 15 company allocations matched; quantity comparison not independently confirmed."
+        },
+        {
+          "label": "Fund Tracker India · October 2026",
+          "url": "https://fundtrackerindia.com/scheme/trustmf-small-cap-fund",
+          "scope": "October cross-check: 71 exact company quantities and allocations matched; 0 disagreements. This page may cover only a subset of equities."
+        },
+        {
+          "label": "DecryptMutualFunds — September / August comparison",
+          "url": "https://decryptmutualfunds.com/fund-houses/uti/small-cap-fund",
+          "scope": "Full September equity quantities and explicit changes versus August; prior quantities calculated from disclosed changes."
+        },
+        {
+          "label": "GMPIPOWatch (FinAPI) — September portfolio",
+          "url": "https://www.gmpipowatch.com/mutual-funds/scheme/uti-small-cap-fund-direct-plan-idcw-148619",
+          "scope": "All September top 15 company allocations matched; quantity comparison not independently confirmed."
+        },
+        {
+          "label": "Official October 2026 portfolio",
+          "url": "https://d3ce1o48hc5oli.cloudfront.net/s3fs-public/2026-11/uti_mf_scheme_portfolios_31.10.2026.zip?VersionId=TCdWa523cHJddb2DfCo24kQ36qDHRk6o",
+          "scope": "Original AMC October workbook; complete equity quantities and % of net assets."
+        },
+        {
+          "label": "Fund Tracker India · October 2026",
+          "url": "https://fundtrackerindia.com/scheme/uti-small-cap-fund",
+          "scope": "October cross-check: 20 exact company quantities and allocations matched; 0 disagreements. This page may cover only a subset of equities."
+        }
+      ]
+    }
+  ]
+}

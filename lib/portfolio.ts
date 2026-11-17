@@ -7,14 +7,14 @@ export type Portfolio = { version: number; checkedAt: string; updatedAt: string;
 export const ids = fundCatalog.map(f=>f.id);
 export function validatePortfolio(value: unknown): asserts value is Portfolio {
   const p = value as Portfolio;
-  if (!p || p.version !== 1 || !Array.isArray(p.funds) || p.funds.length !== ids.length || !Number.isFinite(Date.parse(p.checkedAt)) || typeof p.summary !== "string" || p.summary.length > 2000) throw new Error("Invalid snapshot.");
+  if (!p || p.version !== 1 || !Array.isArray(p.funds) || p.funds.length === 0 || p.funds.length > ids.length || !Number.isFinite(Date.parse(p.checkedAt)) || typeof p.summary !== "string" || p.summary.length > 2000) throw new Error("Invalid snapshot.");
   if (!p.schedule || typeof p.schedule.enabled !== "boolean" || p.schedule.time !== "08:00" || p.schedule.timezone !== "Asia/Kolkata") throw new Error("Invalid schedule.");
   const seen = new Set<string>();
   for (const f of p.funds) {
     if (!ids.includes(f.id) || seen.has(f.id)) throw new Error("Fund snapshot must contain every scheme in the current catalog.");
     seen.add(f.id);
     if (typeof f.name !== "string" || !/^#[a-f0-9]{6}$/i.test(f.color) || typeof f.monogram !== "string" || !["official_match","official_only","provider_match","provider_only","conflict"].includes(f.verification) || !["checked","no_new","failed","conflict"].includes(f.checkStatus) || !/^\d{4}-\d{2}-\d{2}$/.test(f.portfolioDate) || !Number.isFinite(Date.parse(f.lastCheckedAt))) throw new Error("Invalid fund metadata.");
-    if (!Array.isArray(f.holdings) || ![15,30].includes(f.holdings.length) || !Array.isArray(f.sources) || f.sources.length < 2 || !Array.isArray(f.notes) || f.notes.some(n => typeof n !== "string")) throw new Error("Fifteen legacy holdings or thirty holdings and at least two evidence sources are required.");
+    if (!Array.isArray(f.holdings) || (f.holdings.length<1||f.holdings.length>60) || !Array.isArray(f.sources) || f.sources.length < 2 || !Array.isArray(f.notes) || f.notes.some(n => typeof n !== "string")) throw new Error("Between one and sixty holdings and at least two evidence sources are required.");
     if(f.holdingsEvidence&&(!["saved_full_portfolio","published_allocations"].includes(f.holdingsEvidence.basis)||!Number.isFinite(Date.parse(f.holdingsEvidence.checkedAt))||!Array.isArray(f.holdingsEvidence.sources)||f.holdingsEvidence.sources.length<2||f.holdingsEvidence.sources.some(s=>typeof s.label!=="string"||typeof s.scope!=="string"||new URL(s.url).protocol!=="https:")))throw new Error("Invalid extended holdings evidence.");
     const keys = new Set<string>();
     for (const h of f.holdings) {

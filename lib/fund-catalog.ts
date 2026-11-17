@@ -1,4 +1,14 @@
 export const fundCatalog = [
+  {id:"bandhan-small",name:"Bandhan Small Cap Fund"},
+  {id:"boi-small",name:"Bank of India Small Cap Fund"},
+  {id:"quant-small",name:"Quant Small Cap Fund"},
+  {id:"motilal-mid",name:"Motilal Oswal Midcap Fund"},
+  {id:"invesco-mid",name:"Invesco India Mid Cap Fund"},
+  {id:"hsbc-mid",name:"HSBC Midcap Fund"},
+  {id:"hdfc-mid",name:"HDFC Mid Cap Fund"},
+  {id:"nippon-mid",name:"Nippon India Growth Mid Cap Fund"},
+  {id:"icici-mid",name:"ICICI Prudential Mid Cap Fund"},
+
   {id:"nippon",name:"Nippon India Small Cap Fund",aumCr:82580},
   {id:"dsp",name:"DSP Small Cap Fund",aumCr:21659},
   {id:"invesco",name:"Invesco India Smallcap Fund",aumCr:15744},
@@ -41,11 +51,11 @@ export const schemeAliases:Record<string,string[]> = {
   "dsp-mid":["DSP Mid Cap Fund"],
 };
 export const schemeNames:Record<string,string> = Object.fromEntries(fundCatalog.map(f=>[f.id,f.name]));
-export const schemeCategories:Record<string,string> = Object.fromEntries(fundCatalog.map(f=>[f.id,({"helios-financial":"Financial services · Sector equity","helios-flexi":"Flexi cap","helios-large-mid":"Large & mid cap","helios-mid":"Mid cap","whiteoak-mid":"Mid cap","dsp-mid":"Mid cap","edelweiss-mid":"Mid cap","uti-mid":"Mid cap","kotak-mid":"Mid cap","franklin-mid":"Mid cap"} as Record<string,string>)[f.id]??"Small cap"]));
+export const schemeCategories:Record<string,string> = Object.fromEntries(fundCatalog.map(f=>[f.id,({"helios-financial":"Financial services · Sector equity","helios-flexi":"Flexi cap","helios-large-mid":"Large & mid cap","helios-mid":"Mid cap","whiteoak-mid":"Mid cap","dsp-mid":"Mid cap","edelweiss-mid":"Mid cap","uti-mid":"Mid cap","kotak-mid":"Mid cap","franklin-mid":"Mid cap","motilal-mid":"Mid cap","invesco-mid":"Mid cap","hsbc-mid":"Mid cap","hdfc-mid":"Mid cap","nippon-mid":"Mid cap","icici-mid":"Mid cap"} as Record<string,string>)[f.id]??"Small cap"]));
 export const selectionEvidence = {
   checkedOn:"2026-10-20",
   url:"https://www.indmoney.com/mutual-funds/equity/small-cap",
-  note:"The original 20 active small-cap schemes, retaining the original eight and adding the twelve largest remaining non-bank-branded schemes in the checked category list. The original selection excluded Tata, Franklin and Quant; Franklin schemes were subsequently added at your request. Coverage uses reported scheme AUM checked on 2 October 2026; fund cards and table rows are displayed alphabetically by full fund name. This is not a ranking of research quality or trust. Passive funds, ETFs and funds of funds are excluded. Four additional Helios equity schemes—Financial Services, Flexi Cap, Large & Mid Cap and Mid Cap—were added at your request on 15 October 2026. They are labelled by category and grouped with Helios Small Cap Fund. Ten further schemes—four small-cap and six mid-cap funds—were added at your request on 20 October 2026. The catalogue now contains 34 schemes: 24 small-cap, seven mid-cap, and the three other Helios categories. Holdings dates are separate from selection dates."
+  note:"The original 20 active small-cap schemes, retaining the original eight and adding the twelve largest remaining non-bank-branded schemes in the checked category list. The original selection excluded Tata, Franklin and Quant; Franklin schemes were subsequently added at your request. Coverage uses reported scheme AUM checked on 2 October 2026; fund cards and table rows are displayed alphabetically by full fund name. This is not a ranking of research quality or trust. Passive funds, ETFs and funds of funds are excluded. Four additional Helios equity schemes—Financial Services, Flexi Cap, Large & Mid Cap and Mid Cap—were added at your request on 15 October 2026. They are labelled by category and grouped with Helios Small Cap Fund. Ten further schemes—four small-cap and six mid-cap funds—were added at your request on 20 October 2026. Nine historically strong-performing schemes were added at user request on 16 November 2026. The catalogue now contains 43 schemes: 27 small-cap, 13 mid-cap, and three other Helios categories. The nine additions have provider-sourced October holdings; original AMC verification remains pending. Holdings dates are separate from selection dates."
 };
 
 export const fundUniverseDescription = `${fundCatalog.length} equity funds · ${fundCatalog.filter(f=>schemeCategories[f.id]==="Small cap").length} small-cap · ${fundCatalog.filter(f=>schemeCategories[f.id]==="Mid cap").length} mid-cap · 3 other equity schemes`;

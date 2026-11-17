@@ -1,6 +1,7 @@
 import {env} from "cloudflare:workers";
 import {neon} from "@neondatabase/serverless";
 import performanceExpansion from "../data/performance-fund-expansion.json";
+import octoberRecheck from "../data/october-recheck.json";
 import expansion from "../data/fund-expansion-2026-10.json";
 import seed from "../data/seed.json";
 import september from "../data/september-portfolios.json";
@@ -158,6 +159,7 @@ async function initializeDatabase(){
  await importFundExpansion(db);
  await importOctober(db);
  await importPerformanceExpansion(db);
+ await importOctoberRecheck(db);
 }
 async function importOctober(db:DatabaseClient){
  const marker="import:october-2026:"+october.checkedAt;
@@ -237,4 +239,15 @@ async function importPerformanceExpansion(db:DatabaseClient){
  const current=parse<Portfolio>(await db.prepare("SELECT payload FROM app_documents WHERE key=?").bind("portfolio:current").first<{payload:string}>());
  if(current){const all=[...current.funds];for(const f of funds)if(!all.some(old=>old.id===f.id))all.push(f);await db.batch([documentStatement(db,"portfolio:current",{...current,funds:all,checkedAt:[current.checkedAt,performanceExpansion.checkedAt].sort().at(-1)!},performanceExpansion.checkedAt)]);}
  await db.batch([documentStatement(db,marker,{funds:funds.length},performanceExpansion.checkedAt)]);
+}
+
+async function importOctoberRecheck(db:DatabaseClient){
+ const marker="import:october-recheck:"+octoberRecheck.checkedAt;
+ if(await db.prepare("SELECT key FROM app_documents WHERE key=?").bind(marker).first())return;
+ const funds=octoberRecheck.funds as Fund[],comparisons=octoberRecheck.comparisons as FullComparison[];
+ for(const c of comparisons)validateFullComparison(c);
+ await batches(db,[...funds.map(f=>fundStatement(db,f)),...comparisons.map(c=>comparisonStatement(db,c))]);
+ const current=parse<Portfolio>(await db.prepare("SELECT payload FROM app_documents WHERE key=?").bind("portfolio:current").first<{payload:string}>());
+ if(current){const all=current.funds.map(f=>{const next=funds.find(n=>n.id===f.id);return next&&next.portfolioDate>=f.portfolioDate&&next.lastCheckedAt>f.lastCheckedAt?next:f;});await db.batch([documentStatement(db,"portfolio:current",{...current,funds:all,checkedAt:octoberRecheck.checkedAt},octoberRecheck.checkedAt)]);}
+ await db.batch([documentStatement(db,marker,{funds:funds.length,audit:octoberRecheck.audit},octoberRecheck.checkedAt)]);
 }

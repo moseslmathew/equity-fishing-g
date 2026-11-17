@@ -1,4 +1,5 @@
 "use client";
+import ReviewStatus from "./review-status";
 import {useState} from "react";
 import {comparisonCounts,movement,netQuantity,type FullComparison,type FullHolding,type Movement} from "../lib/full-portfolio";
 const number=(n:number)=>n.toLocaleString("en-IN");
@@ -27,7 +28,7 @@ export default function FundAnalysis({name,comparison}:{name:string;comparison?:
     <div className="movement-scroll" tabIndex={0} aria-label="Full portfolio movement table">
       <table className="movement-table"><caption className="sr-only">Company share quantities for {month(c.previousDate)} and {month(c.currentDate)}, with net changes</caption><thead><tr><th scope="col">Company</th><th scope="col">Movement</th><th scope="col">{shortMonth(c.previousDate)} shares</th><th scope="col">{shortMonth(c.currentDate)} shares</th><th scope="col">Net shares</th><th scope="col">Share change</th><th scope="col">{shortMonth(c.currentDate)} allocation</th></tr></thead><tbody>{rows.map(r=>{
         const status=movement(r),delta=netQuantity(r),percent=r.previousQuantity&&delta!==null?delta/r.previousQuantity*100:null;
-        return <tr key={r.key}><th scope="row">{r.name}{r.note&&<span className="movement-row-note">{r.note}</span>}</th><td><span className={"movement-label "+status}>{labels[status]}</span></td><td>{r.previousQuantity===null?"—":number(r.previousQuantity)}</td><td>{number(r.currentQuantity)}</td><td className={status==="increased"||status==="new"?"positive":status==="decreased"||status==="exited"?"negative":""}>{deltaText(r)}</td><td>{percent===null?"—":(percent>0?"+":"")+percent.toFixed(1)+"%"}</td><td>{r.weight===null?"—":r.weight.toFixed(2)+"%"}</td></tr>;
+        return <tr key={r.key}><th scope="row">{r.name}</th><td>{status==="review"?<ReviewStatus reasons={[r.note??"Prior quantity is unavailable; share movement cannot be confirmed."]}/>:<span className={"movement-label "+status}>{labels[status]}</span>}</td><td>{r.previousQuantity===null?"—":number(r.previousQuantity)}</td><td>{number(r.currentQuantity)}</td><td className={status==="increased"||status==="new"?"positive":status==="decreased"||status==="exited"?"negative":""}>{deltaText(r)}</td><td>{percent===null?"—":(percent>0?"+":"")+percent.toFixed(1)+"%"}</td><td>{r.weight===null?"—":r.weight.toFixed(2)+"%"}</td></tr>;
       })}</tbody></table>
       {rows.length===0&&<p className="movement-empty">No {filter==="decreased"?"decreases in continuing positions":filter==="exited"?"company exits":filter==="new"?"new company positions":"movements in this group"} reported for this comparison.</p>}
     </div>

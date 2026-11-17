@@ -33,3 +33,7 @@ export function combinedAnalysis(comparisons:FullComparison[],month:string,ident
   companies.sort((a,b)=>Math.abs(b.delta??0)-Math.abs(a.delta??0)||a.name.localeCompare(b.name));
   return {companies,coverage:latest.size,missingFunds:fundCatalog.filter(f=>!latest.has(f.id)).map(f=>f.name),previousMonth,reviewPositions:companies.reduce((sum,c)=>sum+c.review,0)};
 }
+
+// Fresh entries concern individual fund initiations, independently of the
+// company-wide aggregate (which may be withheld while other rows need review).
+export function hasFreshFundPosition(company:CombinedCompany){return company.funds.some(f=>f.status==="new");}

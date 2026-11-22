@@ -265,6 +265,124 @@
   white-space: nowrap;
 }
 
+/* Drag & Drop Arrange Column Styles */
+.watchlist-table th.watchlist-col-drag,
+.watchlist-table td.watchlist-cell-drag {
+  width: 44px;
+  min-width: 44px;
+  max-width: 44px;
+  padding: 10px 4px 10px 14px;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.watchlist-drag-container {
+  display: inline-flex;
+  align-items: center;
+  gap: 2px;
+}
+
+.watchlist-drag-handle {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 26px;
+  border-radius: 5px;
+  color: #a497b3;
+  cursor: grab;
+  transition: all 0.15s ease;
+  user-select: none;
+}
+
+.watchlist-drag-handle:hover {
+  background: #f2ebf9;
+  color: #62398a;
+}
+
+.watchlist-drag-handle:active {
+  cursor: grabbing;
+}
+
+.watchlist-reorder-arrows {
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+}
+
+.watchlist-reorder-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 16px;
+  height: 12px;
+  border: none;
+  background: transparent;
+  color: #a497b3;
+  border-radius: 3px;
+  cursor: pointer;
+  padding: 0;
+  transition: all 0.12s ease;
+}
+
+.watchlist-reorder-btn:hover:not(:disabled) {
+  background: #ede4f7;
+  color: #62398a;
+}
+
+.watchlist-reorder-btn:disabled {
+  opacity: 0.2;
+  cursor: default;
+}
+
+/* Drag State Styling */
+.watchlist-table tbody tr.watchlist-row {
+  cursor: default;
+  transition: background-color 0.12s ease, box-shadow 0.12s ease, opacity 0.12s ease;
+}
+
+.watchlist-table tbody tr.watchlist-row.is-dragging {
+  opacity: 0.35;
+  background: #f3ecfa !important;
+}
+
+.watchlist-table tbody tr.watchlist-row.drag-over-above {
+  box-shadow: inset 0 3px 0 0 #743bb0;
+  background: #faf6fd !important;
+}
+
+.watchlist-table tbody tr.watchlist-row.drag-over-below {
+  box-shadow: inset 0 -3px 0 0 #743bb0;
+  background: #faf6fd !important;
+}
+
+.watchlist-toolbar-right {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.watchlist-custom-sort-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 12px;
+  font-size: 12px;
+  font-weight: 550;
+  color: #62398a;
+  background: #f3ecfa;
+  border: 1px solid #d8c7ec;
+  border-radius: 7px;
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+
+.watchlist-custom-sort-btn:hover {
+  background: #e9def4;
+  border-color: #be9fe2;
+}
+
 .watchlist-sort-btn {
   display: inline-flex;
   align-items: center;

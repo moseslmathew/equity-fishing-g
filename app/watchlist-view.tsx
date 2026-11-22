@@ -8,8 +8,11 @@ import {
   BarChart3,
   Bookmark,
   Building2,
+  ChevronDown,
+  ChevronUp,
   Download,
   ExternalLink,
+  GripVertical,
   Plus,
   RefreshCw,
   Search,
@@ -31,11 +34,12 @@ type WatchlistItem = {
   itemTitle: string;
   itemSubtitle?: string;
   notes?: string;
+  sortOrder?: number;
   createdAt: string;
   updatedAt: string;
 };
 
-type SortKey = "title" | "price" | "change" | "createdAt";
+type SortKey = "custom" | "title" | "price" | "change" | "createdAt";
 type SortDir = 1 | -1;
 
 const BOILERPLATE_SUBTITLES = new Set([
@@ -83,7 +87,12 @@ export default function WatchlistView() {
   const [error, setError] = useState("");
   const [activeTab, setActiveTab] = useState<"all" | "stock" | "fund">("all");
   const [tableFilter, setTableFilter] = useState("");
-  const [sort, setSort] = useState<{ key: SortKey; dir: SortDir }>({ key: "title", dir: 1 });
+  const [sort, setSort] = useState<{ key: SortKey; dir: SortDir }>({ key: "custom", dir: 1 });
+
+  // Drag-and-drop arrange state
+  const [draggedItemKey, setDraggedItemKey] = useState<string | null>(null);
+  const [dragOverItemKey, setDragOverItemKey] = useState<string | null>(null);
+  const [dragDropSide, setDragDropSide] = useState<"above" | "below">("above");
 
   // Live LTP state refreshed automatically on page load & manual Sync
   const [quotes, setQuotes] = useState<Record<string, BatchQuoteEntry | null>>({});
@@ -375,6 +384,92 @@ export default function WatchlistView() {
     }));
   };
 
+  const handleDragStart = (e: React.DragEvent, item: WatchlistItem) => {
+    const key = `${item.itemType}:${item.itemKey}`;
+    setDraggedItemKey(key);
+    e.dataTransfer.effectAllowed = "move";
+    e.dataTransfer.setData("text/plain", key);
+  };
+
+  const handleDragOver = (e: React.DragEvent, targetItem: WatchlistItem) => {
+    e.preventDefault();
+    e.dataTransfer.dropEffect = "move";
+    const targetKey = `${targetItem.itemType}:${targetItem.itemKey}`;
+    if (targetKey === draggedItemKey) return;
+
+    const rect = e.currentTarget.getBoundingClientRect();
+    const midY = rect.top + rect.height / 2;
+    const side = e.clientY < midY ? "above" : "below";
+
+    setDragOverItemKey(targetKey);
+    setDragDropSide(side);
+  };
+
+  const handleDragEnd = () => {
+    setDraggedItemKey(null);
+    setDragOverItemKey(null);
+  };
+
+  const saveReorderedItems = async (reordered: WatchlistItem[]) => {
+    setItems(reordered);
+    setSort({ key: "custom", dir: 1 });
+    try {
+      const authHeaders = await getClerkAuthHeaders();
+      await fetch("/api/watchlist", {
+        method: "PUT",
+        headers: { "Content-Type": "application/json", ...authHeaders },
+        body: JSON.stringify({
+          orderedItems: reordered.map((i) => ({ itemType: i.itemType, itemKey: i.itemKey })),
+        }),
+      });
+    } catch (err) {
+      console.error("Failed to persist reordered watchlist", err);
+    }
+  };
+
+  const handleDrop = (e: React.DragEvent, targetItem: WatchlistItem) => {
+    e.preventDefault();
+    if (!draggedItemKey) return;
+    const targetKey = `${targetItem.itemType}:${targetItem.itemKey}`;
+    if (targetKey === draggedItemKey) {
+      handleDragEnd();
+      return;
+    }
+
+    const fromIndex = items.findIndex((i) => `${i.itemType}:${i.itemKey}` === draggedItemKey);
+    const toIndex = items.findIndex((i) => `${i.itemType}:${i.itemKey}` === targetKey);
+    if (fromIndex === -1 || toIndex === -1) {
+      handleDragEnd();
+      return;
+    }
+
+    const updated = [...items];
+    const [moved] = updated.splice(fromIndex, 1);
+    const targetIndexAfterRemoval = updated.findIndex((i) => `${i.itemType}:${i.itemKey}` === targetKey);
+    const insertIndex = dragDropSide === "above" ? targetIndexAfterRemoval : targetIndexAfterRemoval + 1;
+
+    updated.splice(Math.max(0, Math.min(updated.length, insertIndex)), 0, moved);
+    handleDragEnd();
+    void saveReorderedItems(updated);
+  };
+
+  const handleMoveRow = (indexInVisible: number, delta: -1 | 1) => {
+    const targetIdx = indexInVisible + delta;
+    if (targetIdx < 0 || targetIdx >= visibleItems.length) return;
+
+    const currentItem = visibleItems[indexInVisible];
+    const targetItem = visibleItems[targetIdx];
+
+    const fromIndex = items.findIndex((i) => i.itemType === currentItem.itemType && i.itemKey === currentItem.itemKey);
+    const toIndex = items.findIndex((i) => i.itemType === targetItem.itemType && i.itemKey === targetItem.itemKey);
+    if (fromIndex === -1 || toIndex === -1) return;
+
+    const updated = [...items];
+    const [moved] = updated.splice(fromIndex, 1);
+    updated.splice(toIndex, 0, moved);
+    void saveReorderedItems(updated);
+  };
+
   const visibleItems = useMemo(() => {
     const q = tableFilter.trim().toLowerCase();
     const list = items.filter((item) => {
@@ -387,6 +482,10 @@ export default function WatchlistView() {
         (item.notes?.toLowerCase().includes(q) ?? false)
       );
     });
+
+    if (sort.key === "custom") {
+      return list;
+    }
 
     return [...list].sort((a, b) => {
       if (sort.key === "title") {
@@ -518,18 +617,32 @@ export default function WatchlistView() {
           ))}
         </div>
 
-        {items.length > 0 && (
-          <div className="watchlist-table-filter">
-            <Search size={14} className="watchlist-filter-icon" aria-hidden="true" />
-            <input
-              type="search"
-              placeholder="Filter ticker or company…"
-              aria-label="Filter watchlist"
-              value={tableFilter}
-              onChange={(e) => setTableFilter(e.target.value)}
-            />
-          </div>
-        )}
+        <div className="watchlist-toolbar-right">
+          {sort.key !== "custom" && (
+            <button
+              type="button"
+              className="watchlist-custom-sort-btn"
+              onClick={() => setSort({ key: "custom", dir: 1 })}
+              title="Reset to your custom arranged order"
+            >
+              <ArrowUpDown size={13} />
+              <span>Reset to Custom Order</span>
+            </button>
+          )}
+
+          {items.length > 0 && (
+            <div className="watchlist-table-filter">
+              <Search size={14} className="watchlist-filter-icon" aria-hidden="true" />
+              <input
+                type="search"
+                placeholder="Filter ticker or company…"
+                aria-label="Filter watchlist"
+                value={tableFilter}
+                onChange={(e) => setTableFilter(e.target.value)}
+              />
+            </div>
+          )}
+        </div>
       </div>
 
       {error && (
@@ -578,6 +691,9 @@ export default function WatchlistView() {
           <table className="watchlist-table">
             <thead>
               <tr>
+                <th scope="col" className="watchlist-col-drag" aria-label="Arrange items">
+                  <span className="sr-only">Arrange</span>
+                </th>
                 <th
                   scope="col"
                   aria-sort={sort.key === "title" ? (sort.dir === 1 ? "ascending" : "descending") : "none"}
@@ -613,7 +729,7 @@ export default function WatchlistView() {
               </tr>
             </thead>
             <tbody>
-              {visibleItems.map((item) => {
+              {visibleItems.map((item, index) => {
                 const isStock = item.itemType === "stock";
                 const quote = isStock ? quotes[item.itemKey.toUpperCase()] : null;
                 const sub = displaySubtitle(item);
@@ -623,9 +739,60 @@ export default function WatchlistView() {
                   : `/#${encodeURIComponent(item.itemKey)}`;
                 const pct = quote?.changePercent;
                 const hasQuoteLoaded = !isStock || item.itemKey.toUpperCase() in quotes;
+                const itemCompositeKey = `${item.itemType}:${item.itemKey}`;
 
                 return (
-                  <tr key={item.id}>
+                  <tr
+                    key={item.id}
+                    draggable
+                    onDragStart={(e) => handleDragStart(e, item)}
+                    onDragOver={(e) => handleDragOver(e, item)}
+                    onDrop={(e) => handleDrop(e, item)}
+                    onDragEnd={handleDragEnd}
+                    className={`watchlist-row ${
+                      draggedItemKey === itemCompositeKey
+                        ? "is-dragging"
+                        : dragOverItemKey === itemCompositeKey
+                        ? dragDropSide === "above"
+                          ? "drag-over-above"
+                          : "drag-over-below"
+                        : ""
+                    }`}
+                  >
+                    <td className="watchlist-cell-drag" onClick={(e) => e.stopPropagation()}>
+                      <div className="watchlist-drag-container">
+                        <span
+                          className="watchlist-drag-handle"
+                          title="Drag to arrange items"
+                          aria-label={`Drag to arrange ${item.itemTitle}`}
+                        >
+                          <GripVertical size={16} />
+                        </span>
+                        <div className="watchlist-reorder-arrows">
+                          <button
+                            type="button"
+                            onClick={() => handleMoveRow(index, -1)}
+                            disabled={index === 0}
+                            className="watchlist-reorder-btn"
+                            title="Move up"
+                            aria-label={`Move ${item.itemTitle} up`}
+                          >
+                            <ChevronUp size={12} />
+                          </button>
+                          <button
+                            type="button"
+                            onClick={() => handleMoveRow(index, 1)}
+                            disabled={index === visibleItems.length - 1}
+                            className="watchlist-reorder-btn"
+                            title="Move down"
+                            aria-label={`Move ${item.itemTitle} down`}
+                          >
+                            <ChevronDown size={12} />
+                          </button>
+                        </div>
+                      </div>
+                    </td>
+
                     <td className="watchlist-cell-security" data-label="Security">
                       <div className="watchlist-security-row">
                         <a href={href} className="watchlist-security-link">

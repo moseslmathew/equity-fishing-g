@@ -1,5 +1,10 @@
 import { getAuthenticatedUser, deny, readerAllowed } from "../../../lib/access";
-import { getUserWatchlist, addToWatchlist, removeFromWatchlist } from "../../../lib/watchlist-store";
+import {
+  getUserWatchlist,
+  addToWatchlist,
+  removeFromWatchlist,
+  reorderWatchlist,
+} from "../../../lib/watchlist-store";
 
 export const dynamic = "force-dynamic";
 const headers = { "Cache-Control": "no-store" };
@@ -56,6 +61,29 @@ export async function POST(request: Request) {
   } catch (error) {
     console.error("Watchlist add failed:", error);
     return Response.json({ error: "Failed to add to watchlist" }, { status: 500, headers });
+  }
+}
+
+export async function PUT(request: Request) {
+  if (!(await readerAllowed(request.headers))) return deny();
+
+  const user = await getAuthenticatedUser(request.headers);
+  const userId = user?.userId || "default-user";
+
+  try {
+    const body = (await request.json()) as {
+      orderedItems?: Array<{ itemType: "stock" | "fund"; itemKey: string }>;
+    };
+
+    if (!Array.isArray(body.orderedItems)) {
+      return Response.json({ error: "orderedItems must be an array" }, { status: 400, headers });
+    }
+
+    await reorderWatchlist(userId, body.orderedItems);
+    return Response.json({ success: true }, { headers });
+  } catch (error) {
+    console.error("Watchlist reorder failed:", error);
+    return Response.json({ error: "Failed to reorder watchlist" }, { status: 500, headers });
   }
 }
 

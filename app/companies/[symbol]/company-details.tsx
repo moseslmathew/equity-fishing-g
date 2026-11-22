@@ -520,9 +520,11 @@ export default function CompanyDetails({
             onClick={(e) => e.stopPropagation()}
           >
             <div className="company-chart-modal-header">
-              <div className="company-chart-modal-title">
-                <span className="company-chart-modal-tag">NSE · {security.symbol}</span>
+              <div className="company-chart-modal-heading">
                 <h2 id="company-chart-modal-title">{security.name}</h2>
+                <p className="company-chart-modal-subtitle">
+                  NSE · {security.symbol} · Price and volume
+                </p>
               </div>
               <button
                 type="button"
@@ -542,6 +544,8 @@ export default function CompanyDetails({
                 currentPrice={q?.price ?? eod?.close ?? null}
                 currentChange={q?.change ?? null}
                 currentChangePercent={q?.changePercent ?? null}
+                eodDate={eod?.date ?? null}
+                eodVolume={eod?.volume ?? q?.volume ?? null}
               />
             </div>
           </div>

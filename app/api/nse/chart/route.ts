@@ -34,8 +34,10 @@ const RANGE_CONFIG: Record<string, { range: string; interval: string; ttlMs: num
   "1D": { range: "1d", interval: "5m", ttlMs: 60_000 },
   "5D": { range: "5d", interval: "15m", ttlMs: 120_000 },
   "1M": { range: "1mo", interval: "1d", ttlMs: 300_000 },
+  "3M": { range: "3mo", interval: "1d", ttlMs: 300_000 },
   "6M": { range: "6mo", interval: "1d", ttlMs: 600_000 },
   "1Y": { range: "1y", interval: "1d", ttlMs: 600_000 },
+  "3Y": { range: "3y", interval: "1wk", ttlMs: 1_200_000 },
   "5Y": { range: "5y", interval: "1wk", ttlMs: 1_800_000 },
   "ALL": { range: "max", interval: "1mo", ttlMs: 3_600_000 },
 };

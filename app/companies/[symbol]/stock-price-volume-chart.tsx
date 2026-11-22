@@ -1,15 +1,9 @@
 "use client";
 
 import { useEffect, useId, useMemo, useRef, useState } from "react";
-import {
-  Calendar,
-  CandlestickChart,
-  LineChart as LineChartIcon,
-  RefreshCw,
-  TrendingDown,
-  TrendingUp,
-} from "lucide-react";
+import { RefreshCw } from "lucide-react";
 import type { ChartPoint, ChartResponse } from "../../api/nse/chart/route";
+import "./stock-price-volume-chart.css";
 
 export interface StockPriceVolumeChartProps {
   symbol: string;
@@ -17,19 +11,21 @@ export interface StockPriceVolumeChartProps {
   currentPrice?: number | null;
   currentChange?: number | null;
   currentChangePercent?: number | null;
+  eodDate?: string | null;
+  eodVolume?: number | null;
 }
 
-type RangeOption = "1D" | "5D" | "1M" | "6M" | "1Y" | "5Y" | "ALL";
-type ChartType = "area" | "candles";
+type RangeOption = "5D" | "1M" | "3M" | "6M" | "1Y" | "3Y" | "5Y" | "ALL";
 
 const RANGES: { key: RangeOption; label: string }[] = [
-  { key: "1D", label: "1D" },
   { key: "5D", label: "5D" },
   { key: "1M", label: "1M" },
+  { key: "3M", label: "3M" },
   { key: "6M", label: "6M" },
   { key: "1Y", label: "1Y" },
+  { key: "3Y", label: "3Y" },
   { key: "5Y", label: "5Y" },
-  { key: "ALL", label: "MAX" },
+  { key: "ALL", label: "All" },
 ];
 
 const formatInr = (n: number | null | undefined) => {
@@ -43,50 +39,24 @@ const formatInr = (n: number | null | undefined) => {
   );
 };
 
-const formatVolume = (v: number | null | undefined) => {
-  if (v == null || !Number.isFinite(v) || v <= 0) return "0";
-  if (v >= 10_000_000) return (v / 10_000_000).toFixed(2) + " Cr";
-  if (v >= 100_000) return (v / 100_000).toFixed(2) + " L";
-  if (v >= 1_000) return (v / 1_000).toFixed(1) + " K";
+const formatVolumeRaw = (v: number | null | undefined) => {
+  if (v == null || !Number.isFinite(v) || v <= 0) return "—";
   return v.toLocaleString("en-IN");
 };
 
-const formatDateLabel = (timestampSec: number, range: RangeOption) => {
-  const date = new Date(timestampSec * 1000);
-  if (range === "1D") {
-    return date.toLocaleTimeString("en-IN", {
-      hour: "2-digit",
-      minute: "2-digit",
-      hour12: true,
-      timeZone: "Asia/Kolkata",
-    });
-  }
-  if (range === "5D") {
-    return (
-      date.toLocaleDateString("en-IN", {
-        weekday: "short",
-        day: "numeric",
-        month: "short",
-        timeZone: "Asia/Kolkata",
-      }) +
-      " " +
-      date.toLocaleTimeString("en-IN", {
-        hour: "2-digit",
-        minute: "2-digit",
-        hour12: true,
-        timeZone: "Asia/Kolkata",
-      })
-    );
-  }
-  if (range === "1M" || range === "6M" || range === "1Y") {
-    return date.toLocaleDateString("en-IN", {
-      day: "numeric",
-      month: "short",
-      year: "numeric",
-      timeZone: "Asia/Kolkata",
-    });
-  }
-  return date.toLocaleDateString("en-IN", {
+const formatTickDate = (timestampSec: number) => {
+  const d = new Date(timestampSec * 1000);
+  return d.toLocaleDateString("en-IN", {
+    day: "numeric",
+    month: "short",
+    timeZone: "Asia/Kolkata",
+  });
+};
+
+const formatTooltipDate = (timestampSec: number) => {
+  const d = new Date(timestampSec * 1000);
+  return d.toLocaleDateString("en-IN", {
+    day: "numeric",
     month: "short",
     year: "numeric",
     timeZone: "Asia/Kolkata",
@@ -99,9 +69,10 @@ export default function StockPriceVolumeChart({
   currentPrice: initialPrice,
   currentChange: initialChange,
   currentChangePercent: initialChangePercent,
+  eodDate,
+  eodVolume,
 }: StockPriceVolumeChartProps) {
-  const [range, setRange] = useState<RangeOption>("1Y");
-  const [chartType, setChartType] = useState<ChartType>("area");
+  const [range, setRange] = useState<RangeOption>("1M");
   const [data, setData] = useState<ChartResponse | null>(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState("");
@@ -152,19 +123,21 @@ export default function StockPriceVolumeChart({
     maxPrice,
     priceRange,
     maxVolume,
-    isPositivePeriod,
     highPoint,
     lowPoint,
+    periodChangePercent,
+    isPositive,
   } = useMemo(() => {
     if (!points.length) {
       return {
         minPrice: 0,
         maxPrice: 100,
         priceRange: 100,
-        maxVolume: 100,
-        isPositivePeriod: true,
+        maxVolume: 1,
         highPoint: null,
         lowPoint: null,
+        periodChangePercent: initialChangePercent ?? 0,
+        isPositive: (initialChangePercent ?? 0) >= 0,
       };
     }
 
@@ -189,45 +162,45 @@ export default function StockPriceVolumeChart({
       }
     }
 
-    // Add 4% padding to top and bottom of price chart for breathing room
-    const padding = (max - min) * 0.05 || max * 0.05 || 1;
-    const paddedMin = Math.max(0, min - padding);
-    const paddedMax = max + padding;
+    // Add breathing room to top and bottom
+    const pad = (max - min) * 0.08 || max * 0.05 || 1;
+    const paddedMin = Math.max(0, min - pad);
+    const paddedMax = max + pad;
     const pRange = paddedMax - paddedMin || 1;
 
-    const firstPoint = points[0];
-    const lastPoint = points[points.length - 1];
-    const isUp = (lastPoint?.close ?? 0) >= (firstPoint?.close ?? 0);
+    const firstClose = points[0]?.close ?? 0;
+    const lastClose = points[points.length - 1]?.close ?? 0;
+    const pct = data?.meta?.periodChangePercent ?? (firstClose > 0 ? ((lastClose / firstClose) - 1) * 100 : 0);
 
     return {
       minPrice: paddedMin,
       maxPrice: paddedMax,
       priceRange: pRange,
       maxVolume: maxVol || 1,
-      isPositivePeriod: isUp,
       highPoint: { point: points[hIdx], index: hIdx },
       lowPoint: { point: points[lIdx], index: lIdx },
+      periodChangePercent: pct,
+      isPositive: pct >= 0,
     };
-  }, [points]);
+  }, [points, data?.meta?.periodChangePercent, initialChangePercent]);
 
-  // SVG dimensions
+  // SVG coordinate dimensions
   const svgWidth = 1000;
   const svgHeight = 440;
   const paddingLeft = 16;
-  const paddingRight = 72; // Space for right Y-axis price labels
+  const paddingRight = 78; // Space for right Y-axis price labels
   const chartWidth = svgWidth - paddingLeft - paddingRight;
 
-  const priceTop = 24;
-  const priceHeight = 260; // 24 to 284
-  const priceBottom = priceTop + priceHeight;
+  const priceTop = 26;
+  const priceHeight = 250;
+  const priceBottom = priceTop + priceHeight; // 276
 
-  const volumeTop = 304;
-  const volumeHeight = 90; // 304 to 394
-  const volumeBottom = volumeTop + volumeHeight;
+  const volumeTop = 295;
+  const volumeHeight = 90;
+  const volumeBottom = volumeTop + volumeHeight; // 385
 
-  const timeAxisY = 422;
+  const timeAxisY = 418;
 
-  // Coordinate helper functions
   const getX = (index: number) => {
     if (points.length <= 1) return paddingLeft + chartWidth / 2;
     return paddingLeft + (index / (points.length - 1)) * chartWidth;
@@ -238,8 +211,8 @@ export default function StockPriceVolumeChart({
   };
 
   const getVolY = (volume: number) => {
-    const barHeight = (volume / maxVolume) * volumeHeight;
-    return volumeBottom - barHeight;
+    const barH = (volume / maxVolume) * volumeHeight;
+    return volumeBottom - barH;
   };
 
   // Generate SVG path for line/area chart
@@ -270,198 +243,88 @@ export default function StockPriceVolumeChart({
     return { linePath: d, areaPath: area };
   }, [points, minPrice, priceRange]);
 
-  // Horizontal price grid lines (4 lines across the price pane)
-  const priceGridLines = useMemo(() => {
-    const lines: { y: number; price: number }[] = [];
-    const count = 4;
-    for (let i = 0; i <= count; i++) {
-      const price = minPrice + (priceRange / count) * i;
-      const y = getY(price);
-      lines.push({ y, price });
-    }
-    return lines;
-  }, [minPrice, priceRange]);
-
-  // Time axis ticks (up to 6 ticks along the bottom)
-  const timeTicks = useMemo(() => {
+  // 5 Evenly spaced right-axis price lines
+  const axisTicks = useMemo(() => {
     if (!points.length) return [];
-    if (points.length === 1) {
-      return [{ x: getX(0), label: formatDateLabel(points[0].time, range) }];
-    }
-    const count = Math.min(6, points.length);
-    const ticks: { x: number; label: string }[] = [];
-    for (let i = 0; i < count; i++) {
-      const index = Math.min(
-        points.length - 1,
-        Math.max(0, Math.round((i / (count - 1)) * (points.length - 1)))
-      );
-      const p = points[index];
-      if (p && Number.isFinite(p.time)) {
-        ticks.push({
-          x: getX(index),
-          label: formatDateLabel(p.time, range),
-        });
-      }
+    const ticks: { price: number; y: number }[] = [];
+    for (let i = 0; i <= 4; i++) {
+      const p = minPrice + (priceRange / 4) * i;
+      ticks.push({
+        price: p,
+        y: priceBottom - (priceHeight / 4) * i,
+      });
     }
     return ticks;
-  }, [points, range]);
+  }, [minPrice, priceRange, priceBottom, priceHeight, points.length]);
 
-  // Active point for HUD (hovered point if mouse over chart, otherwise latest point)
-  const activePoint = useMemo(() => {
-    if (
-      hoverIndex !== null &&
-      Number.isInteger(hoverIndex) &&
-      hoverIndex >= 0 &&
-      hoverIndex < points.length &&
-      points[hoverIndex]
-    ) {
-      return points[hoverIndex];
+  // Evenly spaced X-axis date ticks
+  const timeTicks = useMemo(() => {
+    if (!points.length) return [];
+    const count = points.length;
+    if (count <= 1) {
+      return [{ x: paddingLeft + chartWidth / 2, label: formatTickDate(points[0].time) }];
     }
-    return points.length > 0 ? points[points.length - 1] : null;
-  }, [hoverIndex, points]);
-
-  // Compute active performance stats
-  const activeStats = useMemo(() => {
-    if (!points.length || !activePoint) {
-      return {
-        price: initialPrice ?? 0,
-        change: initialChange ?? 0,
-        changePercent: initialChangePercent ?? 0,
-        isUp: (initialChange ?? 0) >= 0,
-        dateLabel: "Latest Session",
-      };
+    const maxTicks = 10;
+    const step = Math.max(1, Math.floor((count - 1) / maxTicks));
+    const ticks: { x: number; label: string }[] = [];
+    for (let i = 0; i < count; i += step) {
+      ticks.push({
+        x: getX(i),
+        label: formatTickDate(points[i].time),
+      });
     }
+    if (ticks[ticks.length - 1].x !== getX(count - 1)) {
+      ticks.push({
+        x: getX(count - 1),
+        label: formatTickDate(points[count - 1].time),
+      });
+    }
+    return ticks;
+  }, [points, chartWidth, paddingLeft]);
 
-    const firstPoint = points[0];
-    const price = activePoint.close;
-    const basePrice = firstPoint.close;
-    const change = price - basePrice;
-    const changePercent = basePrice > 0 ? (change / basePrice) * 100 : 0;
-    const isUp = change >= 0;
-
-    return {
-      price,
-      change,
-      changePercent,
-      isUp,
-      dateLabel: formatDateLabel(activePoint.time, range),
-    };
-  }, [points, activePoint, range, initialPrice, initialChange, initialChangePercent]);
-
-  // Handle pointer scrub across chart
-  const handlePointerMove = (e: React.PointerEvent<SVGSVGElement>) => {
+  // Mouse interaction for crosshair and scrub
+  const handleMouseMove = (e: React.MouseEvent<SVGSVGElement>) => {
     if (!points.length) return;
-    if (points.length === 1) {
-      setHoverIndex(0);
-      return;
-    }
     const rect = e.currentTarget.getBoundingClientRect();
-    const clientX = e.clientX - rect.left;
-    const ratio = Math.max(
-      0,
-      Math.min(
-        1,
-        (clientX - (paddingLeft / svgWidth) * rect.width) / ((chartWidth / svgWidth) * rect.width)
-      )
-    );
-    const index = Math.round(ratio * (points.length - 1));
-    const clamped = Math.max(0, Math.min(points.length - 1, index));
-    setHoverIndex(clamped);
+    const xClient = e.clientX - rect.left;
+    const xSvg = (xClient / rect.width) * svgWidth;
+    const clampedX = Math.max(paddingLeft, Math.min(paddingLeft + chartWidth, xSvg));
+    const ratio = (clampedX - paddingLeft) / chartWidth;
+    const idx = Math.round(ratio * (points.length - 1));
+    setHoverIndex(Math.max(0, Math.min(points.length - 1, idx)));
   };
 
-  const handlePointerLeave = () => {
+  const handleMouseLeave = () => {
     setHoverIndex(null);
   };
 
-  // Color scheme constants
-  const strokeColor = isPositivePeriod ? "#10b981" : "#ef4444";
-  const gradStartColor = isPositivePeriod ? "rgba(16, 185, 129, 0.28)" : "rgba(239, 68, 68, 0.28)";
-  const gradEndColor = isPositivePeriod ? "rgba(16, 185, 129, 0.0)" : "rgba(239, 68, 68, 0.0)";
+  const activePoint = hoverIndex !== null && points[hoverIndex] ? points[hoverIndex] : null;
+
+  // Latest closing and volume for bottom card
+  const latestPoint = points.length ? points[points.length - 1] : null;
+  const latestClose = initialPrice ?? latestPoint?.close ?? null;
+  const latestVolume = eodVolume ?? latestPoint?.volume ?? null;
+  const latestDateLabel = eodDate
+    ? formatTooltipDate(Date.parse(eodDate) / 1000)
+    : latestPoint
+    ? formatTooltipDate(latestPoint.time)
+    : "Latest session";
+
+  const strokeColor = "#059669"; // Emerald green
+  const gradientId = `grad_${chartId}`;
 
   return (
     <div className="stock-chart-card" ref={containerRef}>
-      {/* 1. Header HUD & Metric Display */}
-      <div className="stock-chart-header">
-        <div className="stock-chart-header-left">
-          <div className="stock-chart-price-display">
-            <span className="stock-chart-price-value">
-              {formatInr(activeStats.price)}
-            </span>
-            <span
-              className={`stock-chart-badge ${
-                activeStats.isUp ? "is-positive" : "is-negative"
-              }`}
-            >
-              {activeStats.isUp ? (
-                <TrendingUp size={15} aria-hidden="true" />
-              ) : (
-                <TrendingDown size={15} aria-hidden="true" />
-              )}
-              <span>
-                {activeStats.change >= 0 ? "+" : ""}
-                {activeStats.change.toFixed(2)} ({activeStats.changePercent >= 0 ? "+" : ""}
-                {activeStats.changePercent.toFixed(2)}%)
-              </span>
-              <span className="stock-chart-range-tag">
-                {hoverIndex !== null ? "Selected" : range}
-              </span>
-            </span>
-          </div>
-
-          <p className="stock-chart-timestamp">
-            <Calendar size={13} aria-hidden="true" />
-            <span>
-              {activePoint
-                ? new Date(activePoint.time * 1000).toLocaleString("en-IN", {
-                    timeZone: "Asia/Kolkata",
-                    dateStyle: "full",
-                    timeStyle: range === "1D" || range === "5D" ? "short" : undefined,
-                  })
-                : "Latest quote"}
-            </span>
-            {hoverIndex !== null && (
-              <span className="stock-chart-scrub-hint">· Hovered point</span>
-            )}
-          </p>
-        </div>
-
-        <div className="stock-chart-header-right">
-          {/* Chart Style Toggle (Area vs Candlesticks) */}
-          <div className="stock-chart-type-toggle" role="group" aria-label="Chart display type">
-            <button
-              type="button"
-              className={`stock-chart-toggle-btn ${chartType === "area" ? "is-active" : ""}`}
-              onClick={() => setChartType("area")}
-              title="Line area chart"
-              aria-pressed={chartType === "area"}
-            >
-              <LineChartIcon size={14} />
-              <span>Line</span>
-            </button>
-            <button
-              type="button"
-              className={`stock-chart-toggle-btn ${chartType === "candles" ? "is-active" : ""}`}
-              onClick={() => setChartType("candles")}
-              title="Candlestick chart"
-              aria-pressed={chartType === "candles"}
-            >
-              <CandlestickChart size={14} />
-              <span>Candles</span>
-            </button>
-          </div>
-        </div>
-      </div>
-
-      {/* 2. Timeframe Selector Pills */}
-      <div className="stock-chart-toolbar">
-        <div className="stock-chart-range-tabs" role="tablist" aria-label="Chart timeframes">
+      {/* 1. Timeframe Pills and Period Stats (Same Row) */}
+      <div className="stock-chart-toolbar-row">
+        <div className="stock-chart-pills" role="tablist" aria-label="Timeframe">
           {RANGES.map((r) => (
             <button
               key={r.key}
               type="button"
               role="tab"
               aria-selected={range === r.key}
-              className={`stock-chart-range-tab ${range === r.key ? "is-active" : ""}`}
+              className={`stock-chart-pill ${range === r.key ? "is-selected" : ""}`}
               onClick={() => setRange(r.key)}
               disabled={loading}
             >
@@ -470,148 +333,164 @@ export default function StockPriceVolumeChart({
           ))}
         </div>
 
-        <div className="stock-chart-toolbar-meta">
-          {data?.meta && (
-            <div className="stock-chart-hi-lo">
-              <span>
-                H: <strong>{formatInr(data.meta.periodHigh)}</strong>
-              </span>
-              <span>
-                L: <strong>{formatInr(data.meta.periodLow)}</strong>
-              </span>
-            </div>
-          )}
+        <div className="stock-chart-stats-row">
+          <div className="stock-chart-stat-item">
+            <span className="stock-chart-stat-label">Change</span>
+            <span
+              className={`stock-chart-change-pill ${
+                isPositive ? "is-positive" : "is-negative"
+              }`}
+            >
+              {periodChangePercent >= 0 ? "+" : ""}
+              {periodChangePercent.toFixed(2)}%
+            </span>
+          </div>
+
+          <div className="stock-chart-stat-item">
+            <span className="stock-chart-stat-label">High</span>
+            <strong className="stock-chart-stat-val">
+              {formatInr(highPoint?.point ? highPoint.point.high : data?.meta?.periodHigh)}
+            </strong>
+          </div>
+
+          <div className="stock-chart-stat-item">
+            <span className="stock-chart-stat-label">Low</span>
+            <strong className="stock-chart-stat-val">
+              {formatInr(lowPoint?.point ? lowPoint.point.low : data?.meta?.periodLow)}
+            </strong>
+          </div>
         </div>
       </div>
 
-      {/* 3. Main Chart Canvas Area */}
+      {/* 2. Interactive SVG Canvas Viewport */}
       <div className="stock-chart-viewport" aria-busy={loading}>
         {loading && (
           <div className="stock-chart-loading-overlay">
             <RefreshCw size={22} className="company-spinning" />
-            <span>Updating {range} price & volume chart…</span>
+            <span>Updating {range} chart…</span>
           </div>
         )}
 
         {error ? (
           <div className="stock-chart-error-state" role="alert">
             <p>{error}</p>
-            <button
-              type="button"
-              className="stock-chart-retry-btn"
-              onClick={() => setRange((r) => r)}
-            >
+            <button type="button" onClick={() => setRange(range)}>
               Retry
             </button>
           </div>
-        ) : points.length === 0 && !loading ? (
-          <div className="stock-chart-error-state">
-            <p>No trading data available for this timeframe.</p>
-          </div>
         ) : (
           <svg
-            className="stock-chart-svg"
             viewBox={`0 0 ${svgWidth} ${svgHeight}`}
+            className="stock-chart-svg"
             preserveAspectRatio="none"
-            onPointerMove={handlePointerMove}
-            onPointerLeave={handlePointerLeave}
+            onMouseMove={handleMouseMove}
+            onMouseLeave={handleMouseLeave}
           >
             <defs>
-              <linearGradient id={`grad_${chartId}`} x1="0" y1="0" x2="0" y2="1">
-                <stop offset="0%" stopColor={gradStartColor} />
-                <stop offset="95%" stopColor={gradEndColor} />
+              <linearGradient id={gradientId} x1="0" y1="0" x2="0" y2="1">
+                <stop offset="0%" stopColor="#059669" stopOpacity="0.18" />
+                <stop offset="90%" stopColor="#059669" stopOpacity="0.01" />
+                <stop offset="100%" stopColor="#059669" stopOpacity="0" />
               </linearGradient>
             </defs>
 
-            {/* Price Grid Lines & Right Price Labels */}
-            {priceGridLines.map((line, idx) => (
+            {/* Horizontal Gridlines & Right Axis Price Labels */}
+            {axisTicks.map((tick, idx) => (
               <g key={idx}>
                 <line
                   x1={paddingLeft}
-                  y1={line.y}
+                  y1={tick.y}
                   x2={paddingLeft + chartWidth}
-                  y2={line.y}
+                  y2={tick.y}
                   className="stock-chart-gridline"
                 />
                 <text
-                  x={paddingLeft + chartWidth + 8}
-                  y={line.y + 4}
-                  className="stock-chart-axis-label"
+                  x={svgWidth - 10}
+                  y={tick.y + 3.5}
+                  textAnchor="end"
+                  className="stock-chart-axis-price"
                 >
-                  ₹{line.price >= 1000 ? line.price.toFixed(0) : line.price.toFixed(1)}
+                  ₹{tick.price >= 1000 ? tick.price.toFixed(1) : tick.price.toFixed(2)}
                 </text>
               </g>
             ))}
 
-            {/* Separator between Price and Volume Panes */}
+            {/* Separator Line between Price and Volume Panes */}
             <line
               x1={paddingLeft}
-              y1={volumeTop - 12}
+              y1={volumeTop - 10}
               x2={paddingLeft + chartWidth}
-              y2={volumeTop - 12}
-              className="stock-chart-pane-divider"
+              y2={volumeTop - 10}
+              stroke="#e2e8f0"
+              strokeWidth="0.8"
             />
 
-            {/* Volume Scale Label */}
-            <text
-              x={paddingLeft + chartWidth + 8}
-              y={volumeTop + 14}
-              className="stock-chart-axis-label volume-label"
-            >
-              Vol: {formatVolume(maxVolume)}
-            </text>
+            {/* Price Area Fill & Line */}
+            <path d={areaPath} fill={`url(#${gradientId})`} />
+            <path
+              d={linePath}
+              fill="none"
+              stroke={strokeColor}
+              strokeWidth="2.2"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+            />
 
-            {/* Area or Candlesticks Plot */}
-            {chartType === "area" ? (
-              <>
-                {/* Area Gradient Fill */}
-                <path d={areaPath} fill={`url(#grad_${chartId})`} />
-                {/* Crisp Price Stroke Line */}
-                <path
-                  d={linePath}
-                  fill="none"
-                  stroke={strokeColor}
-                  strokeWidth="2.2"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
+            {/* Dotted Line & Marker for Peak High */}
+            {highPoint && highPoint.point && (
+              <g className="stock-chart-peak-group">
+                <line
+                  x1={getX(highPoint.index)}
+                  y1={getY(highPoint.point.high)}
+                  x2={paddingLeft + chartWidth}
+                  y2={getY(highPoint.point.high)}
+                  stroke="#cbd5e1"
+                  strokeWidth="1"
+                  strokeDasharray="3 3"
                 />
-              </>
-            ) : (
-              /* Candlestick Rendering */
-              <g className="stock-chart-candles">
-                {points.map((p, idx) => {
-                  const x = getX(idx);
-                  const isUp = p.close >= p.open;
-                  const candleColor = isUp ? "#10b981" : "#ef4444";
-                  const wickY1 = getY(p.high);
-                  const wickY2 = getY(p.low);
-                  const bodyY = getY(Math.max(p.open, p.close));
-                  const bodyHeight = Math.max(2, Math.abs(getY(p.open) - getY(p.close)));
-                  const candleWidth = Math.max(2, Math.min(10, (chartWidth / points.length) * 0.75));
+                <circle
+                  cx={getX(highPoint.index)}
+                  cy={getY(highPoint.point.high)}
+                  r="4"
+                  fill="#059669"
+                />
+                <text
+                  x={getX(highPoint.index) - 8}
+                  y={getY(highPoint.point.high) - 9}
+                  textAnchor="end"
+                  className="stock-chart-peak-text is-high"
+                >
+                  ₹{highPoint.point.high.toLocaleString("en-IN", { minimumFractionDigits: 2, maximumFractionDigits: 2 })}
+                </text>
+              </g>
+            )}
 
-                  return (
-                    <g key={idx}>
-                      {/* Wick */}
-                      <line
-                        x1={x}
-                        y1={wickY1}
-                        x2={x}
-                        y2={wickY2}
-                        stroke={candleColor}
-                        strokeWidth="1.2"
-                      />
-                      {/* Body */}
-                      <rect
-                        x={x - candleWidth / 2}
-                        y={bodyY}
-                        width={candleWidth}
-                        height={bodyHeight}
-                        fill={isUp ? candleColor : candleColor}
-                        rx="1"
-                      />
-                    </g>
-                  );
-                })}
+            {/* Dotted Line & Marker for Valley Low */}
+            {lowPoint && lowPoint.point && (
+              <g className="stock-chart-valley-group">
+                <line
+                  x1={getX(lowPoint.index)}
+                  y1={getY(lowPoint.point.low)}
+                  x2={paddingLeft + chartWidth}
+                  y2={getY(lowPoint.point.low)}
+                  stroke="#cbd5e1"
+                  strokeWidth="1"
+                  strokeDasharray="3 3"
+                />
+                <circle
+                  cx={getX(lowPoint.index)}
+                  cy={getY(lowPoint.point.low)}
+                  r="4"
+                  fill="#ef4444"
+                />
+                <text
+                  x={getX(lowPoint.index) + 8}
+                  y={getY(lowPoint.point.low) + 16}
+                  textAnchor="start"
+                  className="stock-chart-peak-text is-low"
+                >
+                  ₹{lowPoint.point.low.toLocaleString("en-IN", { minimumFractionDigits: 2, maximumFractionDigits: 2 })}
+                </text>
               </g>
             )}
 
@@ -620,10 +499,10 @@ export default function StockPriceVolumeChart({
               {points.map((p, idx) => {
                 const x = getX(idx);
                 const isUp = p.close >= p.open;
-                const barColor = isUp ? "#10b981" : "#ef4444";
+                const barColor = isUp ? "#10b981" : "#f87171";
                 const barY = getVolY(p.volume);
-                const barHeight = Math.max(1, volumeBottom - barY);
-                const barWidth = Math.max(1.5, Math.min(8, (chartWidth / points.length) * 0.7));
+                const barHeight = Math.max(1.5, volumeBottom - barY);
+                const barWidth = Math.max(2, Math.min(10, (chartWidth / points.length) * 0.72));
 
                 return (
                   <rect
@@ -633,88 +512,43 @@ export default function StockPriceVolumeChart({
                     width={barWidth}
                     height={barHeight}
                     fill={barColor}
-                    opacity={hoverIndex === idx ? 0.95 : 0.6}
-                    rx="1"
+                    opacity={hoverIndex === idx ? 0.95 : 0.65}
+                    rx="1.5"
                   />
                 );
               })}
             </g>
 
-            {/* High & Low Price Markers on Area Chart */}
-            {chartType === "area" && highPoint && highPoint.point && (
-              <g className="stock-chart-peak-marker">
-                <circle
-                  cx={getX(highPoint.index)}
-                  cy={getY(highPoint.point.high)}
-                  r="3.5"
-                  fill="#10b981"
-                  stroke="#ffffff"
-                  strokeWidth="1.5"
-                />
-                <text
-                  x={getX(highPoint.index)}
-                  y={getY(highPoint.point.high) - 8}
-                  textAnchor="middle"
-                  className="stock-chart-peak-label"
-                >
-                  ₹{highPoint.point.high.toFixed(0)}
-                </text>
-              </g>
-            )}
-
-            {chartType === "area" && lowPoint && lowPoint.point && (
-              <g className="stock-chart-peak-marker">
-                <circle
-                  cx={getX(lowPoint.index)}
-                  cy={getY(lowPoint.point.low)}
-                  r="3.5"
-                  fill="#ef4444"
-                  stroke="#ffffff"
-                  strokeWidth="1.5"
-                />
-                <text
-                  x={getX(lowPoint.index)}
-                  y={getY(lowPoint.point.low) + 14}
-                  textAnchor="middle"
-                  className="stock-chart-peak-label"
-                >
-                  ₹{lowPoint.point.low.toFixed(0)}
-                </text>
-              </g>
-            )}
-
-            {/* Time Axis Labels along bottom */}
+            {/* X-Axis Date Labels along bottom */}
             {timeTicks.map((tick, idx) => (
               <text
                 key={idx}
                 x={tick.x}
                 y={timeAxisY}
                 textAnchor={idx === 0 ? "start" : idx === timeTicks.length - 1 ? "end" : "middle"}
-                className="stock-chart-time-label"
+                className="stock-chart-date-tick"
               >
                 {tick.label}
               </text>
             ))}
 
-            {/* Crosshair & Hover Cursor */}
+            {/* Crosshair Line & Point on Scrub */}
             {hoverIndex !== null && points[hoverIndex] && (
-              <g className="stock-chart-crosshair">
-                {/* Vertical Crosshair Line */}
+              <g className="stock-chart-hover-marker">
                 <line
                   x1={getX(hoverIndex)}
                   y1={priceTop}
                   x2={getX(hoverIndex)}
                   y2={volumeBottom}
-                  stroke="#8b5cf6"
-                  strokeWidth="1.2"
+                  stroke="#94a3b8"
+                  strokeWidth="1"
                   strokeDasharray="3 3"
                 />
-                {/* Active Price Point Circle */}
                 <circle
                   cx={getX(hoverIndex)}
                   cy={getY(points[hoverIndex].close)}
-                  r="5"
-                  fill="#8b5cf6"
+                  r="4.5"
+                  fill="#059669"
                   stroke="#ffffff"
                   strokeWidth="2"
                 />
@@ -722,6 +556,51 @@ export default function StockPriceVolumeChart({
             )}
           </svg>
         )}
+
+        {/* 3. Floating Tooltip Card on Scrub */}
+        {activePoint && hoverIndex !== null && (
+          <div
+            className="stock-chart-floating-tooltip"
+            style={{
+              left: `${Math.min(78, Math.max(14, (getX(hoverIndex) / svgWidth) * 100))}%`,
+              top: `${Math.min(52, Math.max(12, (getY(activePoint.close) / svgHeight) * 100 - 15))}%`,
+            }}
+          >
+            <div className="stock-chart-tooltip-date">
+              {formatTooltipDate(activePoint.time)}
+            </div>
+            <div className="stock-chart-tooltip-row">
+              <span className="stock-chart-tooltip-lbl">Close</span>
+              <strong className="stock-chart-tooltip-val">
+                {formatInr(activePoint.close)}
+              </strong>
+            </div>
+            <div className="stock-chart-tooltip-row">
+              <span className="stock-chart-tooltip-lbl">Volume</span>
+              <strong className="stock-chart-tooltip-val">
+                {formatVolumeRaw(activePoint.volume)}
+              </strong>
+            </div>
+          </div>
+        )}
+      </div>
+
+      {/* 4. Bottom Summary Card (Close, Volume, NSE Bhavcopy note) */}
+      <div className="stock-chart-bottom-summary">
+        <div className="stock-chart-summary-date">{latestDateLabel}</div>
+        <div className="stock-chart-summary-card">
+          <div className="stock-chart-summary-col">
+            <span className="stock-chart-summary-lbl">CLOSE</span>
+            <span className="stock-chart-summary-val">{formatInr(latestClose)}</span>
+          </div>
+          <div className="stock-chart-summary-col">
+            <span className="stock-chart-summary-lbl">VOLUME</span>
+            <span className="stock-chart-summary-val">{formatVolumeRaw(latestVolume)}</span>
+          </div>
+        </div>
+        <p className="stock-chart-summary-note">
+          NSE Bhavcopy · Daily closes and traded volume · Prices are unadjusted for corporate actions
+        </p>
       </div>
     </div>
   );

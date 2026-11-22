@@ -18,7 +18,7 @@ import {
   TrendingUp,
   X,
 } from "lucide-react";
-import { useClerkAuth } from "./clerk-client";
+import { useClerkAuth, getClerkAuthHeaders } from "./clerk-client";
 import { fundCatalog } from "../lib/fund-catalog";
 import type { BatchQuoteEntry } from "../lib/nse-mcp";
 import "./watchlist.css";
@@ -153,7 +153,11 @@ export default function WatchlistView() {
   const loadWatchlist = useCallback(async () => {
     setError("");
     try {
-      const res = await fetch("/api/watchlist", { cache: "no-store" });
+      const authHeaders = await getClerkAuthHeaders();
+      const res = await fetch("/api/watchlist", {
+        headers: authHeaders,
+        cache: "no-store",
+      });
       if (!res.ok) {
         if (res.status === 401) {
           setItems([]);
@@ -232,9 +236,10 @@ export default function WatchlistView() {
     setDirectAddingKey(c.symbol);
     setSubmitError("");
     try {
+      const authHeaders = await getClerkAuthHeaders();
       const res = await fetch("/api/watchlist", {
         method: "POST",
-        headers: { "Content-Type": "application/json" },
+        headers: { "Content-Type": "application/json", ...authHeaders },
         body: JSON.stringify({
           itemType: "stock",
           itemKey: c.symbol.trim().toUpperCase(),
@@ -278,9 +283,10 @@ export default function WatchlistView() {
     setDirectAddingKey(fund.id);
     setSubmitError("");
     try {
+      const authHeaders = await getClerkAuthHeaders();
       const res = await fetch("/api/watchlist", {
         method: "POST",
-        headers: { "Content-Type": "application/json" },
+        headers: { "Content-Type": "application/json", ...authHeaders },
         body: JSON.stringify({
           itemType: "fund",
           itemKey: fund.id,
@@ -312,9 +318,10 @@ export default function WatchlistView() {
     setSubmitError("");
     try {
       const normalizedKey = itemType === "stock" ? itemKey.trim().toUpperCase() : itemKey.trim();
+      const authHeaders = await getClerkAuthHeaders();
       const res = await fetch("/api/watchlist", {
         method: "POST",
-        headers: { "Content-Type": "application/json" },
+        headers: { "Content-Type": "application/json", ...authHeaders },
         body: JSON.stringify({
           itemType,
           itemKey: normalizedKey,
@@ -343,8 +350,10 @@ export default function WatchlistView() {
     if (!confirm(`Remove ${key} from your personal watchlist?`)) return;
 
     try {
+      const authHeaders = await getClerkAuthHeaders();
       const res = await fetch(`/api/watchlist?itemType=${type}&itemKey=${encodeURIComponent(key)}`, {
         method: "DELETE",
+        headers: authHeaders,
       });
       if (res.ok) {
         setItems((prev) => prev.filter((i) => !(i.itemType === type && i.itemKey === key)));

@@ -333,3 +333,16 @@ export function useClerkAuth() {
     signOut,
   };
 }
+
+export async function getClerkAuthHeaders(): Promise<Record<string, string>> {
+  if (typeof window === "undefined" || !window.Clerk) return {};
+  try {
+    if (window.Clerk.session && typeof (window.Clerk.session as any).getToken === "function") {
+      const token = await (window.Clerk.session as any).getToken();
+      if (token) {
+        return { Authorization: `Bearer ${token}` };
+      }
+    }
+  } catch {}
+  return {};
+}

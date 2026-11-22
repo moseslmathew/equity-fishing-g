@@ -62,7 +62,41 @@ export async function getUserWatchlist(userId: string): Promise<WatchlistItem[]>
     .bind(userId)
     .all<WatchlistItem>();
 
-  return rows.results || [];
+  let list = (rows.results || []).map((r: any) => ({
+    ...r,
+    createdAt: typeof r.createdAt === "object" && r.createdAt?.toISOString ? r.createdAt.toISOString() : String(r.createdAt || new Date().toISOString()),
+    updatedAt: typeof r.updatedAt === "object" && r.updatedAt?.toISOString ? r.updatedAt.toISOString() : String(r.updatedAt || new Date().toISOString()),
+  }));
+
+  // If a signed-in user has no items yet, copy any existing items from default-user into their account so their additions persist
+  if (list.length === 0 && userId !== "default-user") {
+    const defaultRows = await db
+      .prepare(
+        'SELECT id, user_id as "userId", item_type as "itemType", item_key as "itemKey", item_title as "itemTitle", item_subtitle as "itemSubtitle", notes, created_at as "createdAt", updated_at as "updatedAt" FROM user_watchlists WHERE user_id = ? ORDER BY created_at DESC'
+      )
+      .bind("default-user")
+      .all<WatchlistItem>();
+    const defaults = defaultRows.results || [];
+    for (const item of defaults) {
+      await addToWatchlist({
+        userId,
+        itemType: item.itemType,
+        itemKey: item.itemKey,
+        itemTitle: item.itemTitle,
+        itemSubtitle: item.itemSubtitle,
+        notes: item.notes,
+      });
+    }
+    list = defaults.map((d: any) => ({
+      ...d,
+      userId,
+      id: `${userId}:${d.itemType}:${d.itemKey}`,
+      createdAt: typeof d.createdAt === "object" && d.createdAt?.toISOString ? d.createdAt.toISOString() : String(d.createdAt || new Date().toISOString()),
+      updatedAt: typeof d.updatedAt === "object" && d.updatedAt?.toISOString ? d.updatedAt.toISOString() : String(d.updatedAt || new Date().toISOString()),
+    }));
+  }
+
+  return list;
 }
 
 export async function addToWatchlist(item: {

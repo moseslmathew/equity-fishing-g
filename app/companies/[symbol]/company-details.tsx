@@ -3,9 +3,10 @@
 import Link from "next/link";
 import GlobalCompanySearch from "../../global-company-search";
 import { useEffect, useRef, useState } from "react";
-import { ArrowLeft, ArrowUpRight, RefreshCw, TrendingUp } from "lucide-react";
+import { ArrowLeft, ArrowUpRight, Bookmark, RefreshCw, TrendingUp } from "lucide-react";
 import VolumeAnalysis from "./volume-analysis";
 import StockPriceVolumeChart from "./stock-price-volume-chart";
+import { getClerkAuthHeaders } from "../../clerk-client";
 import "./stock-price-volume-chart.css";
 import type { NseSnapshot } from "../../../lib/nse-mcp";
 
@@ -108,7 +109,59 @@ export default function CompanyDetails({
   const [error, setError] = useState("");
   const [volumeRefresh, setVolumeRefresh] = useState(0);
   const [reloadTrigger, setReloadTrigger] = useState(0);
+  const [inWatchlist, setInWatchlist] = useState(false);
+  const [watchlistBusy, setWatchlistBusy] = useState(false);
   const active = useRef<AbortController | null>(null);
+
+  useEffect(() => {
+    let activeReq = true;
+    getClerkAuthHeaders().then((headers) => {
+      fetch("/api/watchlist", { headers, cache: "no-store" })
+        .then((res) => (res.ok ? res.json() : { items: [] }))
+        .then((data: { items?: Array<{ itemKey: string; itemType: string }> }) => {
+          if (!activeReq) return;
+          const exists = (data.items || []).some(
+            (i) => i.itemType === "stock" && i.itemKey.toUpperCase() === security.symbol.toUpperCase()
+          );
+          setInWatchlist(exists);
+        })
+        .catch(() => {});
+    });
+    return () => {
+      activeReq = false;
+    };
+  }, [security.symbol]);
+
+  const handleToggleWatchlist = async () => {
+    if (watchlistBusy) return;
+    setWatchlistBusy(true);
+    try {
+      const authHeaders = await getClerkAuthHeaders();
+      if (inWatchlist) {
+        const res = await fetch(
+          `/api/watchlist?itemType=stock&itemKey=${encodeURIComponent(security.symbol.toUpperCase())}`,
+          { method: "DELETE", headers: authHeaders }
+        );
+        if (res.ok) setInWatchlist(false);
+      } else {
+        const res = await fetch("/api/watchlist", {
+          method: "POST",
+          headers: { "Content-Type": "application/json", ...authHeaders },
+          body: JSON.stringify({
+            itemType: "stock",
+            itemKey: security.symbol.toUpperCase(),
+            itemTitle: security.name,
+            itemSubtitle: "Equity",
+          }),
+        });
+        if (res.ok) setInWatchlist(true);
+      }
+    } catch (err) {
+      console.error("Watchlist toggle failed", err);
+    } finally {
+      setWatchlistBusy(false);
+    }
+  };
 
   useEffect(() => {
     active.current?.abort();
@@ -190,6 +243,16 @@ export default function CompanyDetails({
           </div>
 
           <div className="company-actions">
+            <button
+              type="button"
+              onClick={handleToggleWatchlist}
+              disabled={watchlistBusy}
+              className={`company-watchlist-btn ${inWatchlist ? "is-in-watchlist" : ""}`}
+              title={inWatchlist ? "Remove from watchlist" : "Save to watchlist"}
+            >
+              <Bookmark size={15} fill={inWatchlist ? "currentColor" : "none"} />
+              <span>{inWatchlist ? "In Watchlist" : "Watchlist"}</span>
+            </button>
             <button disabled={loading} onClick={handleRefresh} title="Refresh live quotes">
               <RefreshCw size={15} className={loading ? "company-spinning" : ""} />
               {loading ? "Loading" : "Refresh"}

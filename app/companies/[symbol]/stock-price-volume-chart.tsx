@@ -246,6 +246,14 @@ export default function StockPriceVolumeChart({
   // Generate SVG path for line/area chart
   const { linePath, areaPath } = useMemo(() => {
     if (!points.length) return { linePath: "", areaPath: "" };
+    if (points.length === 1) {
+      const x = getX(0);
+      const y = getY(points[0].close);
+      return {
+        linePath: `M ${x - 20} ${y} L ${x + 20} ${y}`,
+        areaPath: `M ${x - 20} ${y} L ${x + 20} ${y} L ${x + 20} ${priceBottom} L ${x - 20} ${priceBottom} Z`,
+      };
+    }
 
     const firstX = getX(0);
     const firstY = getY(points[0].close);
@@ -275,27 +283,42 @@ export default function StockPriceVolumeChart({
     return lines;
   }, [minPrice, priceRange]);
 
-  // Time axis ticks (5 ticks along the bottom)
+  // Time axis ticks (up to 6 ticks along the bottom)
   const timeTicks = useMemo(() => {
     if (!points.length) return [];
+    if (points.length === 1) {
+      return [{ x: getX(0), label: formatDateLabel(points[0].time, range) }];
+    }
     const count = Math.min(6, points.length);
     const ticks: { x: number; label: string }[] = [];
     for (let i = 0; i < count; i++) {
-      const index = Math.round((i / (count - 1)) * (points.length - 1));
-      ticks.push({
-        x: getX(index),
-        label: formatDateLabel(points[index].time, range),
-      });
+      const index = Math.min(
+        points.length - 1,
+        Math.max(0, Math.round((i / (count - 1)) * (points.length - 1)))
+      );
+      const p = points[index];
+      if (p && Number.isFinite(p.time)) {
+        ticks.push({
+          x: getX(index),
+          label: formatDateLabel(p.time, range),
+        });
+      }
     }
     return ticks;
   }, [points, range]);
 
   // Active point for HUD (hovered point if mouse over chart, otherwise latest point)
   const activePoint = useMemo(() => {
-    if (hoverIndex !== null && points[hoverIndex]) {
+    if (
+      hoverIndex !== null &&
+      Number.isInteger(hoverIndex) &&
+      hoverIndex >= 0 &&
+      hoverIndex < points.length &&
+      points[hoverIndex]
+    ) {
       return points[hoverIndex];
     }
-    return points[points.length - 1] || null;
+    return points.length > 0 ? points[points.length - 1] : null;
   }, [hoverIndex, points]);
 
   // Compute active performance stats
@@ -329,9 +352,19 @@ export default function StockPriceVolumeChart({
   // Handle pointer scrub across chart
   const handlePointerMove = (e: React.PointerEvent<SVGSVGElement>) => {
     if (!points.length) return;
+    if (points.length === 1) {
+      setHoverIndex(0);
+      return;
+    }
     const rect = e.currentTarget.getBoundingClientRect();
     const clientX = e.clientX - rect.left;
-    const ratio = Math.max(0, Math.min(1, (clientX - (paddingLeft / svgWidth) * rect.width) / ((chartWidth / svgWidth) * rect.width)));
+    const ratio = Math.max(
+      0,
+      Math.min(
+        1,
+        (clientX - (paddingLeft / svgWidth) * rect.width) / ((chartWidth / svgWidth) * rect.width)
+      )
+    );
     const index = Math.round(ratio * (points.length - 1));
     const clamped = Math.max(0, Math.min(points.length - 1, index));
     setHoverIndex(clamped);
@@ -609,7 +642,7 @@ export default function StockPriceVolumeChart({
             </g>
 
             {/* High & Low Price Markers on Area Chart */}
-            {chartType === "area" && highPoint && (
+            {chartType === "area" && highPoint && highPoint.point && (
               <g className="stock-chart-peak-marker">
                 <circle
                   cx={getX(highPoint.index)}
@@ -630,7 +663,7 @@ export default function StockPriceVolumeChart({
               </g>
             )}
 
-            {chartType === "area" && lowPoint && (
+            {chartType === "area" && lowPoint && lowPoint.point && (
               <g className="stock-chart-peak-marker">
                 <circle
                   cx={getX(lowPoint.index)}

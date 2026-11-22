@@ -8,12 +8,14 @@ import {
   ArrowUpRight,
   BarChart3,
   Bookmark,
+  MessageSquareQuote,
   RefreshCw,
   TrendingUp,
   X,
 } from "lucide-react";
 import VolumeAnalysis from "./volume-analysis";
 import StockPriceVolumeChart from "./stock-price-volume-chart";
+import ConcallModal from "./concall-modal";
 import { getClerkAuthHeaders } from "../../clerk-client";
 import "./stock-price-volume-chart.css";
 import type { NseSnapshot } from "../../../lib/nse-mcp";
@@ -120,6 +122,7 @@ export default function CompanyDetails({
   const [inWatchlist, setInWatchlist] = useState(false);
   const [watchlistBusy, setWatchlistBusy] = useState(false);
   const [showChartModal, setShowChartModal] = useState(false);
+  const [showConcallModal, setShowConcallModal] = useState(false);
   const active = useRef<AbortController | null>(null);
 
   // Synchronize watchlist state with database
@@ -142,14 +145,15 @@ export default function CompanyDetails({
     };
   }, [security.symbol]);
 
-  // Handle escape key and body scroll lock for modal
+  // Handle escape key and body scroll lock for modals
   useEffect(() => {
     const handleKeyDown = (e: KeyboardEvent) => {
-      if (e.key === "Escape" && showChartModal) {
-        setShowChartModal(false);
+      if (e.key === "Escape") {
+        if (showChartModal) setShowChartModal(false);
+        if (showConcallModal) setShowConcallModal(false);
       }
     };
-    if (showChartModal) {
+    if (showChartModal || showConcallModal) {
       document.body.style.overflow = "hidden";
       window.addEventListener("keydown", handleKeyDown);
     } else {
@@ -159,7 +163,7 @@ export default function CompanyDetails({
       document.body.style.overflow = "";
       window.removeEventListener("keydown", handleKeyDown);
     };
-  }, [showChartModal]);
+  }, [showChartModal, showConcallModal]);
 
   const handleToggleWatchlist = async () => {
     if (watchlistBusy) return;
@@ -280,6 +284,15 @@ export default function CompanyDetails({
             >
               <BarChart3 size={15} />
               <span>Charts</span>
+            </button>
+            <button
+              type="button"
+              onClick={() => setShowConcallModal(true)}
+              className="company-concall-btn"
+              title="Last concall details & forensic analysis"
+            >
+              <MessageSquareQuote size={15} />
+              <span>Concall</span>
             </button>
             <button
               type="button"
@@ -550,6 +563,14 @@ export default function CompanyDetails({
             </div>
           </div>
         </div>
+      )}
+
+      {showConcallModal && (
+        <ConcallModal
+          symbol={security.symbol}
+          companyName={security.name}
+          onClose={() => setShowConcallModal(false)}
+        />
       )}
     </div>
   );

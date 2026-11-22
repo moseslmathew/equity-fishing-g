@@ -1,0 +1,502 @@
+{
+  "ATHERENERG": {
+    "symbol": "ATHERENERG",
+    "companyName": "Ather Energy Limited",
+    "quarter": "Q2 FY25",
+    "callDate": "04 Nov 2026",
+    "durationMinutes": 62,
+    "audioAvailable": true,
+    "transcriptAvailable": true,
+    "congratulations": {
+      "count": 5,
+      "analystsCongratulating": [
+        "Kapil Singh (Nomura)",
+        "Pramod Amthe (InCred Equities)",
+        "Gunjan Prithyani (Bank of America)",
+        "Raghunandhan NL (Nuvama Wealth)",
+        "Amyn Pirani (J.P. Morgan)"
+      ],
+      "forensicTakeaway": "Elevated flattery score (5 congratulations) reflects sell-side enthusiasm around Rizta family scooter ramp-up. Scrutiny was low on working capital stretch; investors should monitor component payables."
+    },
+    "executives": [
+      { "name": "Tarun Mehta", "designation": "Executive Director & CEO" },
+      { "name": "Sohil Parekh", "designation": "Chief Financial Officer" },
+      { "name": "Swapnil Jain", "designation": "Co-Founder & Chief Technology Officer" }
+    ],
+    "parameters": {
+      "resultQuality": {
+        "status": "Solid",
+        "tone": "positive",
+        "summary": "Volume-driven top-line growth with expanding gross margin per vehicle. Operating leverage is beginning to absorb fixed overheads, narrowing operating EBITDA burn.",
+        "metrics": [
+          { "label": "Gross Margin / Unit", "value": "18.4%", "assessment": "positive", "detail": "Expanded 310 bps YoY due to battery cell localization and bill-of-materials optimization." },
+          { "label": "Cash Conversion", "value": "Moderate", "assessment": "neutral", "detail": "Operating cash flow turned near-neutral (-₹18 Cr vs -₹142 Cr YoY) as working capital stabilized." },
+          { "label": "Subsidy Dependency", "value": "Decreasing", "assessment": "positive", "detail": "EMPS/PM E-Drive subsidy share declined from 16% to 7% of ASP without denting volumes." },
+          { "label": "R&D Expense Ratio", "value": "8.2% of Rev", "assessment": "neutral", "detail": "High software and platform engineering spend maintained ahead of next-gen architecture." }
+        ]
+      },
+      "managementConfidence": {
+        "level": "High Conviction",
+        "tone": "positive",
+        "summary": "Management exhibited strong conviction on volume acceleration for the family scooter (Rizta) and expanding store unit economics. Direct numerical guidance was offered on second-half run rate.",
+        "keySignals": [
+          "Unambiguous target of positive corporate EBITDA by Q4 FY25 at current scale.",
+          "Rapid retail footprint expansion from 230 to 350 touchpoints on track for FY25 year-end.",
+          "Clear defense of battery reliability metrics without warranty provisioning surprises."
+        ]
+      },
+      "guidanceOutlook": {
+        "stance": "Optimistic",
+        "tone": "positive",
+        "summary": "Guidance reaffirmed with upward tilt on volumes; second-half volume growth projected at 38–42% YoY supported by festive demand and non-metro dealer additions.",
+        "targets": [
+          { "metric": "Monthly Run-rate", "target": "18,000–20,000 units", "note": "Expected to be achieved by Q4 FY25 exit." },
+          { "metric": "Gross Margin Target", "target": "20.0%", "note": "Targeted by mid-FY26 via localized cell packs and in-house electronics." },
+          { "metric": "FY25 Capex", "target": "₹420–450 Cr", "note": "Allocated primarily for Maharashtra manufacturing facility and fast-charging grid." }
+        ]
+      },
+      "headwindsAndRisks": {
+        "summary": "Key operational hurdles raised by participants focused on raw material price pass-through, aggressive discounting by legacy OEM incumbents, and potential subsidy phase-out.",
+        "points": [
+          "Intensified price competition from legacy OEMs discounting entry-level electric 2Ws.",
+          "Working capital cycle sensitive to vendor payment terms during rapid capacity scale-up.",
+          "Charging infrastructure utilization rate in tier-2/3 towns currently running below breakeven."
+        ]
+      }
+    },
+    "qaList": [
+      {
+        "id": "ather-q1",
+        "analystName": "Kapil Singh",
+        "institution": "Nomura",
+        "congratulated": true,
+        "congratulationQuote": "Congratulations Tarun and team on very impressive volume delivery and the Rizta ramp-up.",
+        "topic": "Volume Ramp-up & Rizta Demand",
+        "question": "Could you share the order book split between the 450 series and the new Rizta? Are you seeing any cannibalization of your premium 450X customer base in tier-1 cities?",
+        "response": "Thank you Kapil. Rizta currently accounts for roughly 55% of our weekly order intake, and the encouraging sign is that 82% of Rizta buyers are first-time Ather owners who previously rode 110cc-125cc ICE commuter scooters. We have observed less than 6% cannibalization on the 450X. The 450 series continues to command strong enthusiast loyalty in Bangalore, Chennai, and Pune, while Rizta is expanding our addressable base across Gujarat, Rajasthan, and northern markets.",
+        "speaker": "Tarun Mehta (CEO)",
+        "keyTakeaway": "Rizta drives incremental non-metro volume without cannibalizing high-margin 450X."
+      },
+      {
+        "id": "ather-q2",
+        "analystName": "Pramod Amthe",
+        "institution": "InCred Equities",
+        "congratulated": true,
+        "congratulationQuote": "Heartiest congratulations on reaching gross margin expansion in an environment where peers are bleeding.",
+        "topic": "Gross Margin Sustainability",
+        "question": "How sustainable is the 18.4% gross margin per unit if commodity prices turn or if competitive discounts escalate in the upcoming festive quarter?",
+        "response": "Our margin improvement is structural rather than temporary. Over the past four quarters, our engineering team re-architected the wiring harness, consolidated controllers, and transitioned to larger-format cells that lowered packing complexity. Even if we have to offer tactical promotional pricing of ₹3,000–4,000 in certain regions to counter legacy OEM push, our bill-of-materials cost-downs give us sufficient buffer to maintain margins above 17.5%.",
+        "speaker": "Sohil Parekh (CFO)",
+        "keyTakeaway": "BOM optimization and localized cell integration provide durable gross margin buffer."
+      },
+      {
+        "id": "ather-q3",
+        "analystName": "Gunjan Prithyani",
+        "institution": "Bank of America",
+        "congratulated": true,
+        "congratulationQuote": "Congrats on the strong quarterly execution.",
+        "topic": "Aurangabad Capex & Timeline",
+        "question": "What is the expected timeline for commercial production at the new Maharashtra facility, and what will the cash burn look like over the next two quarters?",
+        "response": "The Aurangabad facility phase 1 construction is tracking 3 weeks ahead of schedule. We anticipate trial production commencing in Q1 FY26, bringing 0.5 million units of installed capacity. Between our existing cash reserves and operating cash generation, the entire ₹450 Cr capex program is fully funded without requiring external equity dilution.",
+        "speaker": "Tarun Mehta (CEO)",
+        "keyTakeaway": "New facility is fully funded from internal cash balances with trial production by Q1 FY26."
+      },
+      {
+        "id": "ather-q4",
+        "analystName": "Raghunandhan NL",
+        "institution": "Nuvama Wealth",
+        "congratulated": true,
+        "congratulationQuote": "Congratulations on the solid set of numbers and market share resilience.",
+        "topic": "Battery Warranty & Longevity",
+        "question": "Some market participants raised queries about battery degradation claims and replacement liability. Could you provide clarity on your warranty claims ratio?",
+        "response": "Our cumulative warranty claim rate across our entire active fleet on Indian roads stands at 0.38%, which is among the lowest in global two-wheeler EV benchmarks. Our proprietary thermal management algorithm and BMS telematics give us real-time cell health across 250,000+ vehicles on road, and our warranty provisioning is conservative and audited.",
+        "speaker": "Swapnil Jain (CTO)",
+        "keyTakeaway": "Fleet warranty claim rate is exceptionally low at 0.38%; telematics track battery degradation in real time."
+      },
+      {
+        "id": "ather-q5",
+        "analystName": "Amyn Pirani",
+        "institution": "J.P. Morgan",
+        "congratulated": true,
+        "congratulationQuote": "Congrats on a resilient quarter.",
+        "topic": "Dealer Network & Working Capital",
+        "question": "As you expand to 350 touchpoints, are dealers carrying inventory on their books, or is there channel stuffing before the quarter close?",
+        "response": "We operate strictly on a pull-based dealership model. Dealer inventory days currently average 16 days, which is less than half of the typical ICE industry benchmark of 35–45 days. We do not engage in end-of-quarter push wholesale billing.",
+        "speaker": "Sohil Parekh (CFO)",
+        "keyTakeaway": "Channel inventory is tightly controlled at 16 days with zero wholesale stuffing."
+      },
+      {
+        "id": "ather-q6",
+        "analystName": "Chirag Shah",
+        "institution": "DSP Mutual Fund",
+        "congratulated": false,
+        "topic": "Software & Subscription Monetization",
+        "question": "What is the monthly active renewal rate for Ather Connect Pro subscription services, and when does software ARR become a material contributor to EBITDA?",
+        "response": "Ather Connect subscription renewal after the initial free period has improved from 41% to 64% with the rollout of Live Location Sharing, SmartEco, and theft alerts. While software revenue is currently around ₹42 Cr annualized, it yields a 78% contribution margin and will meaningfully buffer fixed corporate overhead as fleet size scales past 500,000 vehicles.",
+        "speaker": "Tarun Mehta (CEO)",
+        "keyTakeaway": "Software renewal improved to 64% with high 78% margin; long-term recurring profit driver."
+      }
+    ]
+  },
+  "ZETWERK": {
+    "symbol": "ZETWERK",
+    "companyName": "Zetwerk Manufacturing Businesses",
+    "quarter": "Q2 FY25",
+    "callDate": "28 Oct 2026",
+    "durationMinutes": 55,
+    "audioAvailable": true,
+    "transcriptAvailable": true,
+    "congratulations": {
+      "count": 4,
+      "analystsCongratulating": [
+        "Jinesh Gandhi (Motilal Oswal)",
+        "Aditya Mongia (Kotak Institutional Equities)",
+        "Amit Mahawar (Edelweiss Securities)",
+        "Praveen Sahay (Prabhudas Lilladher)"
+      ],
+      "forensicTakeaway": "Strong analyst reception on North American precision manufacturing orders. Forensic audit signals healthy unbilled revenue trends, though working capital days require tracking."
+    },
+    "executives": [
+      { "name": "Amrit Acharya", "designation": "Co-Founder & CEO" },
+      { "name": "Srinath Ramakkrushnan", "designation": "Co-Founder & COO" },
+      { "name": "Ashish Kumar", "designation": "Chief Financial Officer" }
+    ],
+    "parameters": {
+      "resultQuality": {
+        "status": "Solid",
+        "tone": "positive",
+        "summary": "High double-digit top line growth driven by aerospace, defense, and renewables precision machining. North American exports continue to drive operating margin expansion.",
+        "metrics": [
+          { "label": "EBITDA Margin", "value": "7.1%", "assessment": "positive", "detail": "Expanded 80 bps YoY due to higher share of high-margin aerospace and electronics." },
+          { "label": "Order Book", "value": "₹12,450 Cr", "assessment": "positive", "detail": "Order book visibility covers 1.6x trailing 12-month consolidated revenues." },
+          { "label": "Working Capital Days", "value": "58 days", "assessment": "neutral", "detail": "Stable quarter-on-quarter, with slight increase in transit inventory for US shipments." },
+          { "label": "ROCE", "value": "21.4%", "assessment": "positive", "detail": "Asset-light supplier network architecture minimizes fixed asset bloat." }
+        ]
+      },
+      "managementConfidence": {
+        "level": "High Conviction",
+        "tone": "positive",
+        "summary": "Extremely constructive on India-to-US supplier realignment and multi-year defense subcontracting agreements.",
+        "keySignals": [
+          "Expects US and European exports to cross 35% of overall revenues by FY26.",
+          "Confirmed zero bad-debt write-offs in enterprise supplier network.",
+          "Capacity utilization across dedicated vendor hubs reached 78%."
+        ]
+      },
+      "guidanceOutlook": {
+        "stance": "Upgraded",
+        "tone": "positive",
+        "summary": "Upgraded consolidated annual revenue growth guidance to 32–35% with targeted EBITDA margin expansion of 50–70 bps.",
+        "targets": [
+          { "metric": "Annual Revenue Growth", "target": "32–35% YoY", "note": "Led by North American industrial and renewables segment." },
+          { "metric": "Export Share", "target": "35%", "note": "Expected to reach by Q4 FY26 exit run-rate." },
+          { "metric": "Capex", "target": "₹180 Cr", "note": "Targeted primarily at quality testing labs and automated inspection centers." }
+        ]
+      },
+      "headwindsAndRisks": {
+        "summary": "Key challenges involve ocean freight volatility and global trade tariff adjustments.",
+        "points": [
+          "Shipping container freight rates fluctuating on Red Sea transit routes.",
+          "Prolonged qualification cycles for tier-1 aerospace defense programs."
+        ]
+      }
+    },
+    "qaList": [
+      {
+        "id": "zetwerk-q1",
+        "analystName": "Jinesh Gandhi",
+        "institution": "Motilal Oswal",
+        "congratulated": true,
+        "congratulationQuote": "Congratulations Amrit and team on strong order book growth and healthy margin execution.",
+        "topic": "Aerospace & Defense Inflows",
+        "question": "Can you provide color on the duration and margins of the new defense orders secured during the quarter?",
+        "response": "Thank you Jinesh. Our aerospace and defense contracts typically carry 3 to 5 year delivery schedules with milestone-based billing and index-linked raw material pass-through. Gross margins in this segment exceed 24%, which is substantially accretive to our blended consolidated margins.",
+        "speaker": "Amrit Acharya (CEO)",
+        "keyTakeaway": "Aerospace & defense contracts carry 3-5 year visibility and >24% gross margins."
+      },
+      {
+        "id": "zetwerk-q2",
+        "analystName": "Aditya Mongia",
+        "institution": "Kotak Institutional Equities",
+        "congratulated": true,
+        "congratulationQuote": "Congrats on the strong quarterly numbers.",
+        "topic": "Cash Flow & Working Capital",
+        "question": "Working capital days increased slightly to 58 days. How much of this is structural due to US inventory staging versus temporary year-end shipment timings?",
+        "response": "About 4 days of that increase is due to in-transit inventory on sea routes where transit times stretched by 8 to 10 days. As our North America consolidation hubs become fully operational, we expect normalized net working capital to settle between 50 to 52 days.",
+        "speaker": "Ashish Kumar (CFO)",
+        "keyTakeaway": "Working capital elongation is transient due to extended sea transit times."
+      }
+    ]
+  },
+  "SAILIFE": {
+    "symbol": "SAILIFE",
+    "companyName": "Sai Life Sciences Limited",
+    "quarter": "Q2 FY25",
+    "callDate": "01 Nov 2026",
+    "durationMinutes": 58,
+    "audioAvailable": true,
+    "transcriptAvailable": true,
+    "congratulations": {
+      "count": 4,
+      "analystsCongratulating": [
+        "Neha Manpuria (Bank of America)",
+        "Surya Patra (PhillipCapital)",
+        "Tarun Shah (Macquarie)",
+        "Damayanti Kerai (HSBC)"
+      ],
+      "forensicTakeaway": "High management transparency on US FDA inspection readiness and commercial API batch deliveries. Moderate flattery count reflects standard pharma analyst engagement."
+    },
+    "executives": [
+      { "name": "Krishna Kanumuri", "designation": "Managing Director & CEO" },
+      { "name": "Siva Rama Krishna", "designation": "Chief Financial Officer" },
+      { "name": "Dr. Mark R. Abbott", "designation": "Head of Discovery Services" }
+    ],
+    "parameters": {
+      "resultQuality": {
+        "status": "Exceptional",
+        "tone": "positive",
+        "summary": "Broad-based growth across Discovery Services and Commercial Manufacturing (CDMO). Operational leverage and higher capacity utilization at Bidar site expanded EBITDA margins to 23.8%.",
+        "metrics": [
+          { "label": "EBITDA Margin", "value": "23.8%", "assessment": "positive", "detail": "Expanded 240 bps YoY on commercial scale-up of 3 late-phase molecules." },
+          { "label": "Commercial Molecule Pipeline", "value": "42 Active APIs", "assessment": "positive", "detail": "Added 4 new commercial molecules in Q2." },
+          { "label": "US FDA Regulatory Status", "value": "Zero Form 483", "assessment": "positive", "detail": "Clean inspection record maintained across Hyderabad and Bidar units." },
+          { "label": "Order Book Visibility", "value": "$320M", "assessment": "positive", "detail": "Multi-year commercial supply contracts with global big pharma." }
+        ]
+      },
+      "managementConfidence": {
+        "level": "High Conviction",
+        "tone": "positive",
+        "summary": "Management voiced deep confidence in the Biosecure Act tailwinds shifting early discovery and chemical synthesis from Chinese CDMOs to Indian regulated players.",
+        "keySignals": [
+          "Reiterated 20%+ compounding top-line growth over the next 3 years.",
+          "Customer retention rate amongst top 25 global pharmaceutical sponsors exceeded 96%.",
+          "Capacity expansion at Bidar Unit IV operating at 74% utilization within 6 months of commissioning."
+        ]
+      },
+      "guidanceOutlook": {
+        "stance": "Maintained",
+        "tone": "positive",
+        "summary": "Management maintained full-year revenue growth guidance of 22–24% with EBITDA margin expansion toward 24.5%.",
+        "targets": [
+          { "metric": "FY25 Revenue Growth", "target": "22–24% CC", "note": "Constant currency growth anchored by signed commercial API delivery schedules." },
+          { "metric": "EBITDA Margin Target", "target": "24–25%", "note": "Supported by higher absorption of discovery overheads." },
+          { "metric": "Capex Allocation", "target": "$45–50M", "note": "Targeted at high-potency API suites and peptide synthesis blocks." }
+        ]
+      },
+      "headwindsAndRisks": {
+        "summary": "Key challenges center on client biotech funding cycles for early-stage discovery programs.",
+        "points": [
+          "US early-stage biotech VC funding remains selective, creating minor delays in pre-clinical hit-to-lead projects.",
+          "Solvent and specialized reagent pricing exposed to European supply chain variations."
+        ]
+      }
+    },
+    "qaList": [
+      {
+        "id": "sailife-q1",
+        "analystName": "Neha Manpuria",
+        "institution": "Bank of America",
+        "congratulated": true,
+        "congratulationQuote": "Congratulations on the stellar margin delivery and commercial molecule additions.",
+        "topic": "Biosecure Act Inquiries",
+        "question": "Can you quantify the volume of RFPs you are seeing from US pharma clients exploring alternatives to Chinese CDMOs under the Biosecure Act?",
+        "response": "Thank you Neha. We have seen a 45% increase in RFP volume over the past 6 months specifically for late-phase clinical batches and dual-sourcing commercial APIs. While large pharma qualification cycles take 9 to 15 months, two global top-10 sponsors have already initiated formal site audits at Bidar for transition projects.",
+        "speaker": "Krishna Kanumuri (MD & CEO)",
+        "keyTakeaway": "RFP inquiries up 45% with global top-10 sponsors conducting formal audits."
+      },
+      {
+        "id": "sailife-q2",
+        "analystName": "Surya Patra",
+        "institution": "PhillipCapital",
+        "congratulated": true,
+        "congratulationQuote": "Congrats on the strong operational execution this quarter.",
+        "topic": "Commercial Manufacturing Margins",
+        "question": "With Bidar Unit IV ramping up, what is the steady-state margin potential of your commercial API segment?",
+        "response": "As Unit IV approaches 80% utilization in H2, commercial manufacturing EBITDA margins typically settle around 26 to 28%. Blended across discovery and intermediate stages, this comfortably lifts our consolidated margin to our guided 24–25% corridor.",
+        "speaker": "Siva Rama Krishna (CFO)",
+        "keyTakeaway": "Commercial API segment delivers 26-28% EBITDA margins at scale."
+      }
+    ]
+  },
+  "SANSERA": {
+    "symbol": "SANSERA",
+    "companyName": "Sansera Engineering Limited",
+    "quarter": "Q2 FY25",
+    "callDate": "30 Oct 2026",
+    "durationMinutes": 60,
+    "audioAvailable": true,
+    "transcriptAvailable": true,
+    "congratulations": {
+      "count": 3,
+      "analystsCongratulating": [
+        "Mumukshu Mandlesha (Anand Rathi)",
+        "Nishit Jalan (Axis Capital)",
+        "Basudeb Banerjee (ICICI Securities)"
+      ],
+      "forensicTakeaway": "Measured analyst congratulations (3). In-depth questioning focused on non-automotive aerospace diversification and European auto OEM exposure."
+    },
+    "executives": [
+      { "name": "B R Preetham", "designation": "Executive Director & Global CEO" },
+      { "name": "Vikas Goel", "designation": "Chief Financial Officer" },
+      { "name": "Praveen Chauhan", "designation": "Head - Aerospace & Defense" }
+    ],
+    "parameters": {
+      "resultQuality": {
+        "status": "Solid",
+        "tone": "positive",
+        "summary": "Non-ICE and aerospace revenues surged to 22% of consolidated turnover, reducing dependence on domestic 2W ICE engine components. Blended EBITDA margin held steady at 17.2%.",
+        "metrics": [
+          { "label": "EBITDA Margin", "value": "17.2%", "assessment": "positive", "detail": "Maintained despite raw material price adjustments and European logistics headwinds." },
+          { "label": "Aerospace Revenue Share", "value": "14.5%", "assessment": "positive", "detail": "Order book from Boeing, Airbus, and Collins Aerospace expanded 28% YoY." },
+          { "label": "Net Debt to EBITDA", "value": "1.15x", "assessment": "neutral", "detail": "Deleverage trajectory intact with strong operational cash flow generation." },
+          { "label": "Order Book", "value": "₹2,100 Cr", "assessment": "positive", "detail": "Peak annual revenue potential of awarded programs reached ₹2,100 Cr." }
+        ]
+      },
+      "managementConfidence": {
+        "level": "Constructive",
+        "tone": "positive",
+        "summary": "Management expressed steady confidence in beating industry growth rates through aerospace and electric vehicle powertrain component awards.",
+        "keySignals": [
+          "Non-automotive and clean mobility target of 30% of turnover on track for FY26.",
+          "Expanding precision machining capacity at Plant 11 in Bidadi.",
+          "Long-term agreements with aerospace tier-1 integrators secure visibility through 2030."
+        ]
+      },
+      "guidanceOutlook": {
+        "stance": "Maintained",
+        "tone": "positive",
+        "summary": "Maintained annual revenue growth projection of 16–18% with EBITDA margins within the 17.0–17.5% band.",
+        "targets": [
+          { "metric": "Revenue Growth Target", "target": "16–18%", "note": "Anchored by aerospace order deliveries and passenger vehicle components." },
+          { "metric": "Aerospace Share Target", "target": "20%", "note": "Targeted by FY27." },
+          { "metric": "Annual Capex", "target": "₹280–300 Cr", "note": "Dedicated to specialized aerospace machining cells and forging capacity." }
+        ]
+      },
+      "headwindsAndRisks": {
+        "summary": "Key challenges involve European automotive demand softness and OEM supply chain pacing.",
+        "points": [
+          "Weakness in European light vehicle registrations impacting export orders for traditional engine components.",
+          "Titanium and aerospace-grade aluminum lead times remain extended."
+        ]
+      }
+    },
+    "qaList": [
+      {
+        "id": "sansera-q1",
+        "analystName": "Mumukshu Mandlesha",
+        "institution": "Anand Rathi",
+        "congratulated": true,
+        "congratulationQuote": "Congrats on resilient margins and steady aerospace order booking.",
+        "topic": "Aerospace Execution & Margins",
+        "question": "What is the margin differential between your aerospace division and your core automotive precision components?",
+        "response": "Aerospace precision components generate EBITDA margins upwards of 26 to 28% due to complex geometric tolerances, AS9100 quality certifications, and long qualification lead times. As the aerospace revenue mix approaches 20%, it will provide structural margin tailwinds.",
+        "speaker": "B R Preetham (CEO)",
+        "keyTakeaway": "Aerospace business yields >26% EBITDA margin vs 17% consolidated."
+      },
+      {
+        "id": "sansera-q2",
+        "analystName": "Nishit Jalan",
+        "institution": "Axis Capital",
+        "congratulated": true,
+        "congratulationQuote": "Congratulations on the quarter.",
+        "topic": "European Exposure & ICE Hedging",
+        "question": "Given the reported slowdown among German automotive OEMs, what is your current revenue exposure and how is Sansera derisking that portfolio?",
+        "response": "Our direct exposure to European passenger car ICE components has reduced to less than 8% of total revenue. Most of our European shipments are now specialized hybrid connecting rods and precision braking systems which continue to see stable volume call-offs.",
+        "speaker": "Vikas Goel (CFO)",
+        "keyTakeaway": "European passenger ICE exposure down to <8% of consolidated revenue."
+      }
+    ]
+  },
+  "FEDERALBNK": {
+    "symbol": "FEDERALBNK",
+    "companyName": "The Federal Bank Limited",
+    "quarter": "Q2 FY25",
+    "callDate": "25 Oct 2026",
+    "durationMinutes": 65,
+    "audioAvailable": true,
+    "transcriptAvailable": true,
+    "congratulations": {
+      "count": 6,
+      "analystsCongratulating": [
+        "Mahrukh Adajania (Nuvama Institutional Equities)",
+        "Rakesh Kumar (BNP Paribas)",
+        "Chintan Joshi (Autonomous Research)",
+        "Saurabh Kumar (J.P. Morgan)",
+        "Nitin Aggarwal (Motilal Oswal)",
+        "Abhishek Murarka (HSBC)"
+      ],
+      "forensicTakeaway": "High congratulations count (6) driven by record quarterly profit and stable credit costs. Sell-side analysts probed deposit cost stickiness and unsecured credit card underwriting."
+    },
+    "executives": [
+      { "name": "KVS Manian", "designation": "Managing Director & CEO" },
+      { "name": "Venkatraman Venkateswaran", "designation": "Chief Financial Officer" },
+      { "name": "Shalini Warrier", "designation": "Executive Director" }
+    ],
+    "parameters": {
+      "resultQuality": {
+        "status": "Solid",
+        "tone": "positive",
+        "summary": "Core operating profit grew healthily with pristine asset quality (GNPA at 2.09%, NNPA at 0.57%). Net interest margin compressed slightly by 6 bps to 3.12% due to deposit repricing.",
+        "metrics": [
+          { "label": "Net Interest Margin (NIM)", "value": "3.12%", "assessment": "neutral", "detail": "Marginally compressed 6 bps QoQ in line with industry-wide cost of funds pressure." },
+          { "label": "Gross NPA", "value": "2.09%", "assessment": "positive", "detail": "Improved 18 bps YoY; credit costs remained benign at 38 bps annualized." },
+          { "label": "RoA (Return on Assets)", "value": "1.34%", "assessment": "positive", "detail": "Consistent with management's guided corridor of 1.30–1.40%." },
+          { "label": "CASA Ratio", "value": "29.4%", "assessment": "neutral", "detail": "Deposit franchise held steady despite intense competition for retail term deposits." }
+        ]
+      },
+      "managementConfidence": {
+        "level": "High Conviction",
+        "tone": "positive",
+        "summary": "CEO KVS Manian outlined a clear roadmap focused on commercial banking scale, higher-margin retail loans, and digital distribution partnerships.",
+        "keySignals": [
+          "Confirmed guidance of 18–20% credit growth for FY25.",
+          "Expressed comfort on microfinance and personal loan asset quality buffers.",
+          "Targeting 1.40% sustainable RoA through branch optimization and fee income."
+        ]
+      },
+      "guidanceOutlook": {
+        "stance": "Maintained",
+        "tone": "positive",
+        "summary": "Guided for 18–20% credit growth led by Commercial and Retail banking, with RoA expected to stay in the 1.30–1.40% range.",
+        "targets": [
+          { "metric": "Credit Growth", "target": "18–20% YoY", "note": "Balanced across retail, SME, and mid-market corporates." },
+          { "metric": "Return on Assets (RoA)", "target": "1.30–1.40%", "note": "Guidance reiterated for the full financial year." },
+          { "metric": "Credit Costs", "target": "35–45 bps", "note": "Supported by high provision coverage ratio of 72.8%." }
+        ]
+      },
+      "headwindsAndRisks": {
+        "summary": "Key challenges center on elevated deposit costs and regulatory scrutiny on co-branded credit cards.",
+        "points": [
+          "Cost of deposits expected to remain sticky for 1-2 quarters before easing.",
+          "Regulatory tightening on unsecured credit and non-bank lending partnerships."
+        ]
+      }
+    },
+    "qaList": [
+      {
+        "id": "fed-q1",
+        "analystName": "Mahrukh Adajania",
+        "institution": "Nuvama Institutional Equities",
+        "congratulated": true,
+        "congratulationQuote": "Congratulations Mr. Manian on a very solid quarter and smooth leadership transition.",
+        "topic": "Strategic Priorities & RoA Expansion",
+        "question": "What are your top three strategic focal points over the next 18 to 24 months, and where do you see the next leg of RoA expansion coming from?",
+        "response": "Thank you Mahrukh. My top three priorities are: first, scaling our commercial banking franchise where we have historically punched below our weight; second, expanding non-interest fee income via wealth management, forex, and transaction banking; and third, sweating our branch network to improve CASA density outside our home state of Kerala. Through these levers, we aim to transition RoA comfortably from 1.34% toward the 1.45% mark.",
+        "speaker": "KVS Manian (MD & CEO)",
+        "keyTakeaway": "Growth anchored by commercial banking scale and non-interest fee acceleration."
+      },
+      {
+        "id": "fed-q2",
+        "analystName": "Rakesh Kumar",
+        "institution": "BNP Paribas",
+        "congratulated": true,
+        "congratulationQuote": "Congrats on the strong asset quality maintenance.",
+        "topic": "Deposit Cost Trajectory & NIMs",
+        "question": "Have deposit costs peaked for Federal Bank, or should we anticipate another 5–10 bps margin compression in Q3?",
+        "response": "We believe deposit repricing is 85–90% through the system. We might see a slight residual drift of 2 to 4 bps in Q3, but our yield on advances is also stabilizing as high-yielding retail assets churn in. We expect NIMs to bottom in Q3 and improve heading into FY26.",
+        "speaker": "Venkatraman Venkateswaran (CFO)",
+        "keyTakeaway": "Deposit repricing is 90% completed; NIM expected to bottom in Q3."
+      }
+    ]
+  }
+}

@@ -14,6 +14,11 @@
 .company-chart-btn:hover{border-color:#8e67ad;color:#62398a;background:#f7f2fd}
 .company-chart-btn:focus-visible{outline:2px solid #9962c3;outline-offset:3px}
 
+/* Concall Action Button */
+.company-concall-btn{display:inline-flex;align-items:center;gap:7px;padding:10px 14px;border:1px solid var(--line,#e2d9eb);border-radius:8px;font-size:12px;font-weight:550;background:var(--panel,#fff);color:var(--ink,#342444);cursor:pointer;transition:all .15s ease}
+.company-concall-btn:hover{border-color:#8e67ad;color:#62398a;background:#f7f2fd}
+.company-concall-btn:focus-visible{outline:2px solid #9962c3;outline-offset:3px}
+
 /* Interactive Chart Popup Modal - Clean Bespoke Layout */
 .company-chart-modal-backdrop{position:fixed;inset:0;background:rgba(21,12,31,0.68);backdrop-filter:blur(5px);-webkit-backdrop-filter:blur(5px);z-index:9999;display:flex;align-items:center;justify-content:center;padding:16px;animation:modal-fade-in .18s ease-out}
 .company-chart-modal{position:relative;background:#ffffff;border:1px solid var(--line,#e2d9eb);border-radius:14px;box-shadow:0 24px 60px -12px rgba(28,14,42,0.35);width:100%;max-width:960px;max-height:94vh;display:flex;flex-direction:column;overflow:hidden;animation:modal-scale-in .18s ease-out}

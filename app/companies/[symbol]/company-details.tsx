@@ -3,7 +3,15 @@
 import Link from "next/link";
 import GlobalCompanySearch from "../../global-company-search";
 import { useEffect, useRef, useState } from "react";
-import { ArrowLeft, ArrowUpRight, Bookmark, RefreshCw, TrendingUp } from "lucide-react";
+import {
+  ArrowLeft,
+  ArrowUpRight,
+  BarChart3,
+  Bookmark,
+  RefreshCw,
+  TrendingUp,
+  X,
+} from "lucide-react";
 import VolumeAnalysis from "./volume-analysis";
 import StockPriceVolumeChart from "./stock-price-volume-chart";
 import { getClerkAuthHeaders } from "../../clerk-client";
@@ -111,8 +119,10 @@ export default function CompanyDetails({
   const [reloadTrigger, setReloadTrigger] = useState(0);
   const [inWatchlist, setInWatchlist] = useState(false);
   const [watchlistBusy, setWatchlistBusy] = useState(false);
+  const [showChartModal, setShowChartModal] = useState(false);
   const active = useRef<AbortController | null>(null);
 
+  // Synchronize watchlist state with database
   useEffect(() => {
     let activeReq = true;
     getClerkAuthHeaders().then((headers) => {
@@ -131,6 +141,25 @@ export default function CompanyDetails({
       activeReq = false;
     };
   }, [security.symbol]);
+
+  // Handle escape key and body scroll lock for modal
+  useEffect(() => {
+    const handleKeyDown = (e: KeyboardEvent) => {
+      if (e.key === "Escape" && showChartModal) {
+        setShowChartModal(false);
+      }
+    };
+    if (showChartModal) {
+      document.body.style.overflow = "hidden";
+      window.addEventListener("keydown", handleKeyDown);
+    } else {
+      document.body.style.overflow = "";
+    }
+    return () => {
+      document.body.style.overflow = "";
+      window.removeEventListener("keydown", handleKeyDown);
+    };
+  }, [showChartModal]);
 
   const handleToggleWatchlist = async () => {
     if (watchlistBusy) return;
@@ -245,6 +274,15 @@ export default function CompanyDetails({
           <div className="company-actions">
             <button
               type="button"
+              onClick={() => setShowChartModal(true)}
+              className="company-chart-btn"
+              title="Open interactive price & volume chart"
+            >
+              <BarChart3 size={15} />
+              <span>Charts</span>
+            </button>
+            <button
+              type="button"
               onClick={handleToggleWatchlist}
               disabled={watchlistBusy}
               className={`company-watchlist-btn ${inWatchlist ? "is-in-watchlist" : ""}`}
@@ -290,96 +328,225 @@ export default function CompanyDetails({
             </div>
           )}
 
-          {/* 1. Primary Interactive Price & Volume Chart (5 Years, 1Y, 6M, 1M, 5D, 1D) */}
-          <StockPriceVolumeChart
-            symbol={security.symbol}
-            companyName={security.name}
-            currentPrice={q?.price ?? eod?.close ?? null}
-            currentChange={q?.change ?? null}
-            currentChangePercent={q?.changePercent ?? null}
-          />
-
-          {/* 2. Price Position & 52-Week Range */}
-          {q && (
-            <section
-              className="company-panel"
-              aria-labelledby="company-range-title"
-            >
-              <h2 id="company-range-title">
-                <TrendingUp size={17} />
-                Price Position & Ranges
-              </h2>
-              <div className="company-ranges">
-                <Range
-                  label="52-week range"
-                  low={q.yearLow}
-                  high={q.yearHigh}
-                  price={q.price}
-                />
-                <Range
-                  label="Session range"
-                  low={q.low}
-                  high={q.high}
-                  price={q.price}
-                />
-              </div>
-              <dl className="company-position-metrics">
-                <Metric
-                  label="From 52-week high"
-                  value={percent(distance)}
-                  note="Last price ÷ high − 1"
-                  className={tone(distance)}
-                />
-                <Metric
-                  label="Above 52-week low"
-                  value={percent(fromLow)}
-                  note="Last price ÷ low − 1"
-                  className={tone(fromLow)}
-                />
-                <Metric
-                  label="Session high–low spread"
-                  value={
-                    dayRange === null
-                      ? "Unavailable"
-                      : dayRange.toFixed(2) + "%"
-                  }
-                  note="High ÷ low − 1"
-                />
-              </dl>
-            </section>
-          )}
-
-          {/* 3. Delivery Volume Trends & Breakdown */}
-          <VolumeAnalysis
-            symbol={security.symbol}
-            series={q?.series ?? "EQ"}
-            refreshToken={volumeRefresh}
-          />
-
-          {/* 4. Official NSE Sources and Disclosures */}
           {snapshot && (
-            <details className="company-sources">
-              <summary>Sources and data notes</summary>
-              <p>
-                <a
-                  href="https://www.nseindia.com/nse-mcp"
-                  target="_blank"
-                  rel="noopener noreferrer"
+            <>
+              {q ? (
+                <>
+                  {/* 1. Last Traded Price Panel */}
+                  <section
+                    className="company-quote-panel"
+                    aria-labelledby="company-quote-title"
+                  >
+                    <div>
+                      <h2 id="company-quote-title" className="sr-only">
+                        Live quote
+                      </h2>
+                      <p className="company-eyebrow">Last traded price</p>
+                      <div className="company-price">
+                        <strong>{amount(q.price)}</strong>
+                        <span className={tone(q.change)}>
+                          {percent(q.changePercent)}
+                          <small>
+                            {q.change !== null
+                              ? (q.change > 0 ? "+" : "") +
+                                amount(q.change) +
+                                " vs previous close"
+                              : ""}
+                          </small>
+                        </span>
+                      </div>
+                      <p className="company-time">
+                        {time(q.time)} · Delayed quote
+                        {q.earlierSession ? " · Earlier trading session" : ""}
+                      </p>
+                    </div>
+                    <dl className="company-quick-metrics">
+                      <Metric
+                        label="30-day price change"
+                        value={percent(q.change30d)}
+                        className={tone(q.change30d)}
+                      />
+                      <Metric
+                        label="Session volume"
+                        value={count(q.volume)}
+                        note="Shares traded"
+                      />
+                    </dl>
+                  </section>
+
+                  {/* 2. Delivery Volume Percentage */}
+                  <VolumeAnalysis
+                    symbol={security.symbol}
+                    series={q?.series ?? "EQ"}
+                    refreshToken={volumeRefresh}
+                  />
+
+                  {/* 3. Price Position & 52-Week Range */}
+                  <section
+                    className="company-panel"
+                    aria-labelledby="company-range-title"
+                  >
+                    <h2 id="company-range-title">
+                      <TrendingUp size={17} />
+                      Price position
+                    </h2>
+                    <div className="company-ranges">
+                      <Range
+                        label="52-week range"
+                        low={q.yearLow}
+                        high={q.yearHigh}
+                        price={q.price}
+                      />
+                      <Range
+                        label="Session range"
+                        low={q.low}
+                        high={q.high}
+                        price={q.price}
+                      />
+                    </div>
+                    <dl className="company-position-metrics">
+                      <Metric
+                        label="From 52-week high"
+                        value={percent(distance)}
+                        note="Last price ÷ high − 1"
+                        className={tone(distance)}
+                      />
+                      <Metric
+                        label="Above 52-week low"
+                        value={percent(fromLow)}
+                        note="Last price ÷ low − 1"
+                        className={tone(fromLow)}
+                      />
+                      <Metric
+                        label="Session high–low spread"
+                        value={
+                          dayRange === null
+                            ? "Unavailable"
+                            : dayRange.toFixed(2) + "%"
+                        }
+                        note="High ÷ low − 1"
+                      />
+                    </dl>
+                  </section>
+
+                  {/* 4. Trading Session */}
+                  <section
+                    className="company-panel"
+                    aria-labelledby="company-session-title"
+                  >
+                    <h2 id="company-session-title">Trading session</h2>
+                    <dl className="company-session-metrics">
+                      <Metric label="Open" value={amount(q.open)} />
+                      <Metric
+                        label="Previous close"
+                        value={amount(q.previousClose)}
+                      />
+                      <Metric label="High" value={amount(q.high)} />
+                      <Metric label="Low" value={amount(q.low)} />
+                    </dl>
+                  </section>
+                </>
+              ) : (
+                <div className="company-notice" role="status">
+                  Latest quote unavailable. {snapshot.liveError}
+                </div>
+              )}
+
+              {/* 5. Latest Closing Data */}
+              {eod ? (
+                <section
+                  className="company-panel company-eod"
+                  aria-labelledby="company-eod-title"
                 >
-                  Official NSE MCP
-                </a>{" "}
-                · CM Market for quotes; Bhavcopy for closing data.
-                Retrieved {time(snapshot.retrievedAt)}.
-              </p>
-              <p>
-                Historical price and volume series sourced from exchange trading records.
-                NSE describes live quotes as 1–3 minutes delayed during active sessions.
-                Delivery percentage and volume trends are calculated from daily bhavdata disclosures.
-              </p>
-            </details>
+                  <div>
+                    <h2 id="company-eod-title">Latest closing data</h2>
+                    <p>{eod.date || "Date unavailable"} · NSE Bhavcopy</p>
+                  </div>
+                  <dl className="company-eod-metrics">
+                    <Metric
+                      label="Closing price"
+                      value={amount(eod.close)}
+                    />
+                    <Metric
+                      label="Full-session volume"
+                      value={count(eod.volume)}
+                      note="Shares traded"
+                    />
+                  </dl>
+                </section>
+              ) : (
+                <p className="company-time">
+                  Closing data unavailable. {snapshot.eodError}
+                </p>
+              )}
+
+              {/* 6. Sources and Data Notes */}
+              <details className="company-sources">
+                <summary>Sources and data notes</summary>
+                <p>
+                  <a
+                    href="https://www.nseindia.com/nse-mcp"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Official NSE MCP
+                  </a>{" "}
+                  · CM Market for quotes; Bhavcopy for closing data.
+                  Retrieved {time(snapshot.retrievedAt)}. Quote time above is
+                  NSE’s source timestamp, not the retrieval time.
+                </p>
+                <p>
+                  NSE describes quotes as 1–3 minutes delayed during active sessions.
+                  Delivery percentage and volume trends are calculated from daily bhavdata disclosures.
+                </p>
+              </details>
+            </>
           )}
         </div>
       </main>
+
+      {/* Chart Popup Modal Dialog */}
+      {showChartModal && (
+        <div
+          className="company-chart-modal-backdrop"
+          onClick={() => setShowChartModal(false)}
+          role="presentation"
+        >
+          <div
+            className="company-chart-modal"
+            role="dialog"
+            aria-modal="true"
+            aria-labelledby="company-chart-modal-title"
+            onClick={(e) => e.stopPropagation()}
+          >
+            <div className="company-chart-modal-header">
+              <div className="company-chart-modal-title">
+                <span className="company-chart-modal-tag">NSE · {security.symbol}</span>
+                <h2 id="company-chart-modal-title">{security.name}</h2>
+              </div>
+              <button
+                type="button"
+                className="company-chart-modal-close"
+                onClick={() => setShowChartModal(false)}
+                aria-label="Close chart dialog"
+                title="Close (Esc)"
+              >
+                <X size={18} />
+              </button>
+            </div>
+
+            <div className="company-chart-modal-body">
+              <StockPriceVolumeChart
+                symbol={security.symbol}
+                companyName={security.name}
+                currentPrice={q?.price ?? eod?.close ?? null}
+                currentChange={q?.change ?? null}
+                currentChangePercent={q?.changePercent ?? null}
+              />
+            </div>
+          </div>
+        </div>
+      )}
     </div>
   );
 }

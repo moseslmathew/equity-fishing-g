@@ -9,6 +9,35 @@
 .company-watchlist-btn.is-in-watchlist{background:#f3edf9;border-color:#9962c3;color:#62398a;font-weight:600}
 .company-watchlist-btn:disabled{opacity:.6;cursor:wait}
 
+/* Chart Action Button */
+.company-chart-btn{display:inline-flex;align-items:center;gap:7px;padding:10px 14px;border:1px solid var(--line,#e2d9eb);border-radius:8px;font-size:12px;font-weight:550;background:var(--panel,#fff);color:var(--ink,#342444);cursor:pointer;transition:all .15s ease}
+.company-chart-btn:hover{border-color:#8e67ad;color:#62398a;background:#f7f2fd}
+.company-chart-btn:focus-visible{outline:2px solid #9962c3;outline-offset:3px}
+
+/* Interactive Chart Popup Modal */
+.company-chart-modal-backdrop{position:fixed;inset:0;background:rgba(21,12,31,0.68);backdrop-filter:blur(5px);-webkit-backdrop-filter:blur(5px);z-index:9999;display:flex;align-items:center;justify-content:center;padding:16px;animation:modal-fade-in .18s ease-out}
+.company-chart-modal{position:relative;background:var(--panel,#ffffff);border:1px solid var(--line,#e2d9eb);border-radius:16px;box-shadow:0 24px 60px -12px rgba(28,14,42,0.4);width:100%;max-width:980px;max-height:92vh;display:flex;flex-direction:column;overflow:hidden;animation:modal-scale-in .18s ease-out}
+.company-chart-modal-header{display:flex;align-items:center;justify-content:space-between;padding:14px 20px;border-bottom:1px solid var(--line,#e7dced);background:#faf8fd}
+.company-chart-modal-title{display:flex;align-items:center;gap:10px}
+.company-chart-modal-title h2{font-size:16px;font-weight:650;margin:0;color:var(--ink,#342444);letter-spacing:-.3px}
+.company-chart-modal-tag{font-size:11px;font-weight:600;padding:3px 8px;border-radius:6px;background:#ede3f7;color:#6a349b;letter-spacing:.3px}
+.company-chart-modal-close{display:inline-flex;align-items:center;justify-content:center;width:34px;height:34px;border-radius:8px;border:1px solid var(--line,#e2d9eb);background:#ffffff;color:var(--muted,#6d5b7e);cursor:pointer;transition:all .15s ease}
+.company-chart-modal-close:hover{background:#f4eef9;color:#4a216e;border-color:#ba9fd8}
+.company-chart-modal-close:focus-visible{outline:2px solid #9962c3;outline-offset:2px}
+.company-chart-modal-body{padding:12px 16px 16px;overflow-y:auto;max-height:calc(92vh - 65px)}
+.company-chart-modal .stock-chart-card{border:none;box-shadow:none;margin-bottom:0;padding:6px 4px 10px}
+
+@keyframes modal-fade-in{from{opacity:0}to{opacity:1}}
+@keyframes modal-scale-in{from{opacity:0;transform:scale(0.97)}to{opacity:1;transform:scale(1)}}
+
+@media(max-width:640px){
+  .company-chart-modal{max-height:95vh;border-radius:12px}
+  .company-chart-modal-header{padding:12px 14px}
+  .company-chart-modal-title h2{font-size:14px}
+  .company-chart-modal-body{padding:8px;max-height:calc(95vh - 58px)}
+}
+
+
 
 
 

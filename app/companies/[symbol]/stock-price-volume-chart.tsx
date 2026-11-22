@@ -8,7 +8,6 @@ import {
   RefreshCw,
   TrendingDown,
   TrendingUp,
-  Volume2,
 } from "lucide-react";
 import type { ChartPoint, ChartResponse } from "../../api/nse/chart/route";
 
@@ -724,35 +723,6 @@ export default function StockPriceVolumeChart({
           </svg>
         )}
       </div>
-
-      {/* 4. Detailed HUD Card on Scrub */}
-      {activePoint && (
-        <div className="stock-chart-point-details">
-          <div className="stock-chart-point-metric">
-            <span className="stock-chart-detail-label">Open</span>
-            <span className="stock-chart-detail-val">{formatInr(activePoint.open)}</span>
-          </div>
-          <div className="stock-chart-point-metric">
-            <span className="stock-chart-detail-label">High</span>
-            <span className="stock-chart-detail-val is-high">{formatInr(activePoint.high)}</span>
-          </div>
-          <div className="stock-chart-point-metric">
-            <span className="stock-chart-detail-label">Low</span>
-            <span className="stock-chart-detail-val is-low">{formatInr(activePoint.low)}</span>
-          </div>
-          <div className="stock-chart-point-metric">
-            <span className="stock-chart-detail-label">Close</span>
-            <span className="stock-chart-detail-val">{formatInr(activePoint.close)}</span>
-          </div>
-          <div className="stock-chart-point-metric">
-            <span className="stock-chart-detail-label">
-              <Volume2 size={12} aria-hidden="true" />
-              Volume
-            </span>
-            <span className="stock-chart-detail-val">{formatVolume(activePoint.volume)}</span>
-          </div>
-        </div>
-      )}
     </div>
   );
 }

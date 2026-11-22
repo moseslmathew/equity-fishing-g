@@ -693,10 +693,10 @@ export default function WatchlistView() {
                     <td className="is-actions watchlist-cell-actions">
                       {isStock && (
                         <a
-                          href={`/companies/${encodeURIComponent(item.itemKey)}?view=charts`}
+                          href={`/companies/${encodeURIComponent(item.itemKey)}`}
                           className="watchlist-row-action watchlist-chart-action"
-                          aria-label={`Open charts for ${item.itemTitle}`}
-                          title="Open stock charts"
+                          aria-label={`Open price & volume chart for ${item.itemTitle}`}
+                          title="Open price & volume chart"
                         >
                           <BarChart3 size={15} />
                         </a>

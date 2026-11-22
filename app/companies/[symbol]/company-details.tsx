@@ -3,9 +3,10 @@
 import Link from "next/link";
 import GlobalCompanySearch from "../../global-company-search";
 import { useEffect, useRef, useState } from "react";
-import { ArrowLeft, ArrowUpRight, BarChart3, LayoutGrid, RefreshCw, TrendingUp } from "lucide-react";
+import { ArrowLeft, ArrowUpRight, RefreshCw, TrendingUp } from "lucide-react";
 import VolumeAnalysis from "./volume-analysis";
-import PriceDynamicsChart from "./price-dynamics-chart";
+import StockPriceVolumeChart from "./stock-price-volume-chart";
+import "./stock-price-volume-chart.css";
 import type { NseSnapshot } from "../../../lib/nse-mcp";
 
 const amount = (n: number | null | undefined) =>
@@ -107,19 +108,6 @@ export default function CompanyDetails({
   const [error, setError] = useState("");
   const [volumeRefresh, setVolumeRefresh] = useState(0);
   const [reloadTrigger, setReloadTrigger] = useState(0);
-  const [viewMode, setViewMode] = useState<"overview" | "charts">(() => {
-    if (typeof window !== "undefined") {
-      const params = new URLSearchParams(window.location.search);
-      if (
-        params.get("view") === "charts" ||
-        window.location.hash === "#charts" ||
-        window.location.hash === "#company-charts-section"
-      ) {
-        return "charts";
-      }
-    }
-    return "overview";
-  });
   const active = useRef<AbortController | null>(null);
 
   useEffect(() => {
@@ -171,14 +159,6 @@ export default function CompanyDetails({
   const fromLow = q?.price && q.yearLow ? (q.price / q.yearLow - 1) * 100 : null;
   const dayRange =
     q?.high && q.low && q.low <= q.high ? (q.high / q.low - 1) * 100 : null;
-  const quoteDate = q?.asOfIso
-    ? new Date(q.asOfIso).toLocaleDateString("en-CA", {
-        timeZone: "Asia/Kolkata",
-      })
-    : null;
-  const today = new Date().toLocaleDateString("en-CA", {
-    timeZone: "Asia/Kolkata",
-  });
 
   return (
     <div className="company-page">
@@ -210,19 +190,7 @@ export default function CompanyDetails({
           </div>
 
           <div className="company-actions">
-            <button
-              type="button"
-              className={`company-chart-btn ${viewMode === "charts" ? "is-active" : ""}`}
-              onClick={() => {
-                setViewMode((v) => (v === "charts" ? "overview" : "charts"));
-              }}
-              aria-pressed={viewMode === "charts"}
-              title="Toggle interactive stock charts"
-            >
-              <BarChart3 size={15} />
-              <span>Charts</span>
-            </button>
-            <button disabled={loading} onClick={handleRefresh}>
+            <button disabled={loading} onClick={handleRefresh} title="Refresh live quotes">
               <RefreshCw size={15} className={loading ? "company-spinning" : ""} />
               {loading ? "Loading" : "Refresh"}
             </button>
@@ -239,30 +207,6 @@ export default function CompanyDetails({
               <span className="sr-only"> (new tab)</span>
             </a>
           </div>
-        </div>
-
-        {/* View mode switcher */}
-        <div className="company-view-tabs" role="tablist" aria-label="Page section">
-          <button
-            type="button"
-            role="tab"
-            aria-selected={viewMode === "overview"}
-            className={`company-view-tab ${viewMode === "overview" ? "is-active" : ""}`}
-            onClick={() => setViewMode("overview")}
-          >
-            <LayoutGrid size={14} />
-            <span>Overview</span>
-          </button>
-          <button
-            type="button"
-            role="tab"
-            aria-selected={viewMode === "charts"}
-            className={`company-view-tab ${viewMode === "charts" ? "is-active" : ""}`}
-            onClick={() => setViewMode("charts")}
-          >
-            <BarChart3 size={14} />
-            <span>Charts Studio</span>
-          </button>
         </div>
 
         {error && (
@@ -283,270 +227,93 @@ export default function CompanyDetails({
             </div>
           )}
 
+          {/* 1. Primary Interactive Price & Volume Chart (5 Years, 1Y, 6M, 1M, 5D, 1D) */}
+          <StockPriceVolumeChart
+            symbol={security.symbol}
+            companyName={security.name}
+            currentPrice={q?.price ?? eod?.close ?? null}
+            currentChange={q?.change ?? null}
+            currentChangePercent={q?.changePercent ?? null}
+          />
+
+          {/* 2. Price Position & 52-Week Range */}
+          {q && (
+            <section
+              className="company-panel"
+              aria-labelledby="company-range-title"
+            >
+              <h2 id="company-range-title">
+                <TrendingUp size={17} />
+                Price Position & Ranges
+              </h2>
+              <div className="company-ranges">
+                <Range
+                  label="52-week range"
+                  low={q.yearLow}
+                  high={q.yearHigh}
+                  price={q.price}
+                />
+                <Range
+                  label="Session range"
+                  low={q.low}
+                  high={q.high}
+                  price={q.price}
+                />
+              </div>
+              <dl className="company-position-metrics">
+                <Metric
+                  label="From 52-week high"
+                  value={percent(distance)}
+                  note="Last price ÷ high − 1"
+                  className={tone(distance)}
+                />
+                <Metric
+                  label="Above 52-week low"
+                  value={percent(fromLow)}
+                  note="Last price ÷ low − 1"
+                  className={tone(fromLow)}
+                />
+                <Metric
+                  label="Session high–low spread"
+                  value={
+                    dayRange === null
+                      ? "Unavailable"
+                      : dayRange.toFixed(2) + "%"
+                  }
+                  note="High ÷ low − 1"
+                />
+              </dl>
+            </section>
+          )}
+
+          {/* 3. Delivery Volume Trends & Breakdown */}
+          <VolumeAnalysis
+            symbol={security.symbol}
+            series={q?.series ?? "EQ"}
+            refreshToken={volumeRefresh}
+          />
+
+          {/* 4. Official NSE Sources and Disclosures */}
           {snapshot && (
-            <>
-              {viewMode === "charts" ? (
-                /* Dedicated Charts Studio View */
-                <div className="company-chart-studio" id="company-charts-section">
-                  {q && (
-                    <section
-                      className="company-quote-panel"
-                      aria-label="Latest NSE quote"
-                    >
-                      <div>
-                        <span className="company-section-label">
-                          Last traded price
-                        </span>
-                        <div className="company-price">
-                          <strong>{amount(q.price)}</strong>
-                          <span className={tone(q.changePercent)}>
-                            {percent(q.changePercent)}
-                            <small>
-                              {q.change === null
-                                ? ""
-                                : amount(q.change) + " vs previous close"}
-                            </small>
-                          </span>
-                        </div>
-                        <p className="company-time">
-                          {time(q.asOfIso)} · Delayed quote
-                          {quoteDate && quoteDate !== today
-                            ? " · Earlier trading session"
-                            : ""}
-                        </p>
-                      </div>
-                      <dl className="company-quick-metrics">
-                        <Metric
-                          label="30-day price change"
-                          value={percent(q.change30d)}
-                          className={tone(q.change30d)}
-                        />
-                        <Metric
-                          label="Session volume"
-                          value={count(q.volume)}
-                          note="Shares traded"
-                        />
-                      </dl>
-                    </section>
-                  )}
-
-                  {/* Interactive Price Range & Dynamics Spectrum */}
-                  <PriceDynamicsChart
-                    symbol={security.symbol}
-                    price={q?.price ?? null}
-                    change={q?.change ?? null}
-                    changePercent={q?.changePercent ?? null}
-                    previousClose={q?.previousClose ?? null}
-                    open={q?.open ?? null}
-                    high={q?.high ?? null}
-                    low={q?.low ?? null}
-                    yearHigh={q?.yearHigh ?? null}
-                    yearLow={q?.yearLow ?? null}
-                    change30d={q?.change30d ?? null}
-                    volume={q?.volume ?? null}
-                  />
-
-                  {/* 3. Delivery Volume Trends & Breakdown */}
-                  <VolumeAnalysis
-                    symbol={security.symbol}
-                    series={q?.series ?? "EQ"}
-                    refreshToken={volumeRefresh}
-                  />
-
-                  <details className="company-sources">
-                    <summary>Sources and data notes</summary>
-                    <p>
-                      <a
-                        href="https://www.nseindia.com/nse-mcp"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                      >
-                        Official NSE MCP
-                      </a>{" "}
-                      · CM Market for quotes; Bhavcopy for closing data.
-                      Retrieved {time(snapshot.retrievedAt)}.
-                    </p>
-                    <p>
-                      NSE describes quotes as 1–3 minutes delayed. Older sessions
-                      remain dated. Price changes are not total returns.
-                    </p>
-                  </details>
-                </div>
-              ) : (
-                /* Standard Company Overview View */
-                <>
-                  {q ? (
-                    <>
-                      <section
-                        className="company-quote-panel"
-                        aria-label="Latest NSE quote"
-                      >
-                        <div>
-                          <span className="company-section-label">
-                            Last traded price
-                          </span>
-                          <div className="company-price">
-                            <strong>{amount(q.price)}</strong>
-                            <span className={tone(q.changePercent)}>
-                              {percent(q.changePercent)}
-                              <small>
-                                {q.change === null
-                                  ? ""
-                                  : amount(q.change) + " vs previous close"}
-                              </small>
-                            </span>
-                          </div>
-                          <p className="company-time">
-                            {time(q.asOfIso)} · Delayed quote
-                            {quoteDate && quoteDate !== today
-                              ? " · Earlier trading session"
-                              : ""}
-                          </p>
-                        </div>
-                        <dl className="company-quick-metrics">
-                          <Metric
-                            label="30-day price change"
-                            value={percent(q.change30d)}
-                            className={tone(q.change30d)}
-                          />
-                          <Metric
-                            label="Session volume"
-                            value={count(q.volume)}
-                            note="Shares traded"
-                          />
-                        </dl>
-                      </section>
-
-                      <section
-                        className="company-panel"
-                        aria-labelledby="company-range-title"
-                      >
-                        <h2 id="company-range-title">
-                          <TrendingUp size={17} />
-                          Price position
-                        </h2>
-                        <div className="company-ranges">
-                          <Range
-                            label="52-week range"
-                            low={q.yearLow}
-                            high={q.yearHigh}
-                            price={q.price}
-                          />
-                          <Range
-                            label="Session range"
-                            low={q.low}
-                            high={q.high}
-                            price={q.price}
-                          />
-                        </div>
-                        <dl className="company-position-metrics">
-                          <Metric
-                            label="From 52-week high"
-                            value={percent(distance)}
-                            note="Last price ÷ high − 1"
-                            className={tone(distance)}
-                          />
-                          <Metric
-                            label="Above 52-week low"
-                            value={percent(fromLow)}
-                            className={tone(fromLow)}
-                          />
-                          <Metric
-                            label="Session high–low spread"
-                            value={
-                              dayRange === null
-                                ? "Unavailable"
-                                : dayRange.toFixed(2) + "%"
-                            }
-                            note="High ÷ low − 1"
-                          />
-                        </dl>
-                      </section>
-
-                      <section
-                        className="company-panel"
-                        aria-labelledby="company-session-title"
-                      >
-                        <h2 id="company-session-title">Trading session</h2>
-                        <dl className="company-session-metrics">
-                          <Metric label="Open" value={amount(q.open)} />
-                          <Metric
-                            label="Previous close"
-                            value={amount(q.previousClose)}
-                          />
-                          <Metric label="High" value={amount(q.high)} />
-                          <Metric label="Low" value={amount(q.low)} />
-                        </dl>
-                      </section>
-                    </>
-                  ) : (
-                    <div className="company-notice" role="status">
-                      Latest quote unavailable. {snapshot.liveError}
-                    </div>
-                  )}
-
-                  {eod ? (
-                    <section
-                      className="company-panel company-eod"
-                      aria-labelledby="company-eod-title"
-                    >
-                      <div>
-                        <h2 id="company-eod-title">Latest closing data</h2>
-                        <p>{eod.date || "Date unavailable"} · NSE Bhavcopy</p>
-                      </div>
-                      <dl className="company-eod-metrics">
-                        <Metric
-                          label="Closing price"
-                          value={amount(eod.close)}
-                        />
-                        <Metric
-                          label="Full-session volume"
-                          value={count(eod.volume)}
-                          note="Shares traded"
-                        />
-                      </dl>
-                    </section>
-                  ) : (
-                    <p className="company-time">
-                      Closing data unavailable. {snapshot.eodError}
-                    </p>
-                  )}
-
-                  <details className="company-sources">
-                    <summary>Sources and data notes</summary>
-                    <p>
-                      <a
-                        href="https://www.nseindia.com/nse-mcp"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                      >
-                        Official NSE MCP
-                      </a>{" "}
-                      · CM Market for quotes; Bhavcopy for closing data.
-                      Retrieved {time(snapshot.retrievedAt)}. Quote time above is
-                      NSE’s source timestamp, not the retrieval time.
-                    </p>
-                    <p>
-                      NSE describes quotes as 1–3 minutes delayed. Older sessions
-                      remain dated. Price changes are not total returns;
-                      corporate actions can affect comparisons. Unavailable fields
-                      are never estimated.
-                    </p>
-                    <p>
-                      Distance and range figures are calculated from NSE prices.
-                      P/E, market cap, earnings and delivery percentages are not
-                      supplied by these quote tools.
-                    </p>
-                  </details>
-
-                  <VolumeAnalysis
-                    symbol={security.symbol}
-                    series={q?.series ?? "EQ"}
-                    refreshToken={volumeRefresh}
-                  />
-                </>
-              )}
-            </>
+            <details className="company-sources">
+              <summary>Sources and data notes</summary>
+              <p>
+                <a
+                  href="https://www.nseindia.com/nse-mcp"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Official NSE MCP
+                </a>{" "}
+                · CM Market for quotes; Bhavcopy for closing data.
+                Retrieved {time(snapshot.retrievedAt)}.
+              </p>
+              <p>
+                Historical price and volume series sourced from exchange trading records.
+                NSE describes live quotes as 1–3 minutes delayed during active sessions.
+                Delivery percentage and volume trends are calculated from daily bhavdata disclosures.
+              </p>
+            </details>
           )}
         </div>
       </main>

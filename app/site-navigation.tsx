@@ -77,8 +77,8 @@ export default function SiteNavigation({
             ? "/foreign-investors"
             : pending.id === "venture"
             ? "/foreign-investors?type=venture"
-            : pending.id === "watchlist"
-            ? "/#watchlist"
+            : pending.id === "funds"
+            ? "/#funds"
             : "/";
         window.location.assign(url);
       });
@@ -94,16 +94,16 @@ export default function SiteNavigation({
       {(
         [
           {
-            id: "funds",
-            label: "Mutual funds",
-            description: "Holdings & portfolio changes",
-            icon: BarChart3,
-          },
-          {
             id: "watchlist",
             label: "My Watchlist",
             description: "Personal pinned stocks, mutual funds & notes",
             icon: Bookmark,
+          },
+          {
+            id: "funds",
+            label: "Mutual funds",
+            description: "Holdings & portfolio changes",
+            icon: BarChart3,
           },
           {
             id: "foreign",

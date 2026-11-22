@@ -23,7 +23,7 @@ export default function WorkspaceHeader({
         onClick={(e) => {
           if (onNavigate) {
             e.preventDefault();
-            onNavigate("funds");
+            onNavigate("watchlist");
           }
         }}
       >

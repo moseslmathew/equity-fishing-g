@@ -8,10 +8,10 @@ export async function GET(request: Request) {
   if (!(await readerAllowed(request.headers))) return deny();
 
   const user = await getAuthenticatedUser(request.headers);
-  if (!user) return deny();
+  const userId = user?.userId || "default-user";
 
   try {
-    const items = await getUserWatchlist(user.userId);
+    const items = await getUserWatchlist(userId);
     return Response.json({ items }, { headers });
   } catch (error) {
     console.error("Watchlist fetch failed:", error);
@@ -23,7 +23,7 @@ export async function POST(request: Request) {
   if (!(await readerAllowed(request.headers))) return deny();
 
   const user = await getAuthenticatedUser(request.headers);
-  if (!user) return deny();
+  const userId = user?.userId || "default-user";
 
   try {
     const body = (await request.json()) as {
@@ -44,7 +44,7 @@ export async function POST(request: Request) {
     }
 
     const item = await addToWatchlist({
-      userId: user.userId,
+      userId,
       itemType,
       itemKey,
       itemTitle,
@@ -63,7 +63,7 @@ export async function DELETE(request: Request) {
   if (!(await readerAllowed(request.headers))) return deny();
 
   const user = await getAuthenticatedUser(request.headers);
-  if (!user) return deny();
+  const userId = user?.userId || "default-user";
 
   try {
     const url = new URL(request.url);
@@ -74,7 +74,7 @@ export async function DELETE(request: Request) {
       return Response.json({ error: "Missing itemType or itemKey" }, { status: 400, headers });
     }
 
-    await removeFromWatchlist(user.userId, itemType, itemKey);
+    await removeFromWatchlist(userId, itemType, itemKey);
     return Response.json({ success: true }, { headers });
   } catch (error) {
     console.error("Watchlist delete failed:", error);

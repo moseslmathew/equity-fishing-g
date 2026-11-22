@@ -17,7 +17,7 @@ const previousMonth=(s:string)=>{const [y,m]=s.split("-").map(Number);return new
 
 export default function Dashboard(){
   const [data,setData]=useState<MonthlyPortfolio|null>(null),[error,setError]=useState(""),[loading,setLoading]=useState(true),[requestedMonth,setRequestedMonth]=useState("latest");
-  const [section,setSection]=useState<"funds"|"investors"|"watchlist">(()=>typeof window !== "undefined" && window.location.hash==="#watchlist" ? "watchlist" : "funds");
+  const [section,setSection]=useState<"funds"|"investors"|"watchlist">(()=>typeof window !== "undefined" && window.location.hash==="#funds" ? "funds" : "watchlist");
   const [fundSearch,setFundSearch]=useState("");
   const [activePanel,setActivePanel]=useState<"combined"|"funds"|"shared"|null>(null);
   const panelToggle=(panel:"combined"|"funds"|"shared",open:boolean)=>setActivePanel(current=>open?panel:current===panel?null:current);
@@ -42,12 +42,13 @@ export default function Dashboard(){
   useEffect(()=>{
     const syncFromHash=()=>{
       const hash=window.location.hash;
-      if(hash==="#watchlist") setSection("watchlist");
-      else if(hash==="#investors") {
+      if(hash==="#funds") {
+        setSection("funds");
+      } else if(hash==="#investors") {
         window.history.replaceState(null,"",window.location.pathname+window.location.search);
         setSection("funds");
-      } else if(!hash || hash==="#funds") {
-        setSection("funds");
+      } else {
+        setSection("watchlist");
       }
     };
     window.addEventListener("hashchange",syncFromHash);
@@ -68,12 +69,12 @@ export default function Dashboard(){
 
   const handleNavigate=(next:"funds"|"investors"|"watchlist")=>{
     setSection(next);
-    if(next==="watchlist"){
-      if(window.location.hash!=="#watchlist"){
-        window.history.pushState(null,"","/#watchlist");
+    if(next==="funds"){
+      if(window.location.hash!=="#funds"){
+        window.history.pushState(null,"","/#funds");
       }
     }else{
-      if(window.location.hash==="#watchlist"){
+      if(window.location.hash){
         window.history.pushState(null,"",window.location.pathname+window.location.search);
       }
     }

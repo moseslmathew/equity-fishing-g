@@ -174,19 +174,13 @@ export default function WatchlistView() {
 
   useEffect(() => {
     let cancelled = false;
-    if (isSignedIn) {
-      Promise.resolve().then(() => {
-        if (!cancelled) void loadWatchlist();
-      });
-    } else if (isLoaded) {
-      Promise.resolve().then(() => {
-        if (!cancelled) setLoading(false);
-      });
-    }
+    Promise.resolve().then(() => {
+      if (!cancelled) void loadWatchlist();
+    });
     return () => {
       cancelled = true;
     };
-  }, [isSignedIn, isLoaded, loadWatchlist]);
+  }, [user?.id, loadWatchlist]);
 
   // Debounced NSE search in Add modal
   useEffect(() => {
@@ -433,32 +427,6 @@ export default function WatchlistView() {
     URL.revokeObjectURL(url);
   };
 
-  if (!isLoaded) {
-    return (
-      <div className="results-loader" role="status" style={{ padding: "40px" }}>
-        <span className="loading-spinner" aria-hidden="true" />
-        <span>Loading your profile…</span>
-      </div>
-    );
-  }
-
-  if (!isSignedIn) {
-    return (
-      <div className="watchlist-empty">
-        <div className="watchlist-empty-icon">
-          <Bookmark size={28} />
-        </div>
-        <h3>Sign in to manage your watchlist</h3>
-        <p>
-          Create a personalized watchlist of Indian equities and mutual fund schemes synced to your account.
-        </p>
-        <button className="watchlist-button-primary" onClick={openSignIn}>
-          Sign in with Clerk
-        </button>
-      </div>
-    );
-  }
-
   const stockCount = items.filter((i) => i.itemType === "stock").length;
   const fundCount = items.filter((i) => i.itemType === "fund").length;
   const mixedTypes = activeTab === "all" && stockCount > 0 && fundCount > 0;
@@ -487,7 +455,7 @@ export default function WatchlistView() {
             Personal Watchlist
           </h1>
           <p>
-            {user?.fullName || user?.primaryEmailAddress?.emailAddress || "Account"}
+            {user?.fullName || user?.primaryEmailAddress?.emailAddress || "Live Portfolio Watchlist"}
             {refreshedTimeLabel && stockCount > 0 ? ` · Live prices refreshed ${refreshedTimeLabel}` : ""}
           </p>
         </div>

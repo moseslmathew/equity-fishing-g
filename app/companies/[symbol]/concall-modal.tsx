@@ -208,7 +208,7 @@ export default function ConcallModal({
                 onClick={() => setActiveTab("parameters")}
               >
                 <ShieldCheck size={15} />
-                <span>Interpretation & Parameters</span>
+                <span>Parameters & Scores</span>
               </button>
               <button
                 type="button"
@@ -224,7 +224,7 @@ export default function ConcallModal({
                 onClick={() => setActiveTab("executives")}
               >
                 <Users size={15} />
-                <span>Executive Panel ({data.executives.length})</span>
+                <span>Executives ({data.executives.length})</span>
               </button>
             </div>
 
@@ -401,25 +401,35 @@ export default function ConcallModal({
                           <div
                             className="concall-qa-header"
                             onClick={() => toggleQaExpand(qa.id)}
+                            role="button"
+                            tabIndex={0}
+                            aria-expanded={isExpanded}
+                            onKeyDown={(e) => {
+                              if (e.key === "Enter" || e.key === " ") {
+                                e.preventDefault();
+                                toggleQaExpand(qa.id);
+                              }
+                            }}
                           >
                             <div className="concall-qa-meta">
-                              <span className="concall-qa-analyst">
-                                {qa.analystName}
-                              </span>
-                              <span className="concall-qa-inst">
-                                {qa.institution}
-                              </span>
-                              <span className="concall-qa-topic">{qa.topic}</span>
-                              {qa.congratulated && (
-                                <span className="concall-qa-congrats-badge">
-                                  🎉 Congratulated Result
-                                </span>
-                              )}
+                              <div className="concall-qa-speaker-info">
+                                <span className="concall-qa-analyst">{qa.analystName}</span>
+                                <span className="concall-qa-inst">({qa.institution})</span>
+                              </div>
+                              <div className="concall-qa-badges">
+                                <span className="concall-qa-topic">{qa.topic}</span>
+                                {qa.congratulated && (
+                                  <span className="concall-qa-congrats-badge">
+                                    🎉 Congratulated Result
+                                  </span>
+                                )}
+                              </div>
                             </div>
                             <button
                               type="button"
                               className="concall-qa-collapse-btn"
                               aria-label={isExpanded ? "Collapse Q&A" : "Expand Q&A"}
+                              tabIndex={-1}
                             >
                               {isExpanded ? <ChevronUp size={16} /> : <ChevronDown size={16} />}
                             </button>

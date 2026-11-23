@@ -5,7 +5,7 @@ import { getConcallAnalysis } from "../../../lib/concall-analysis";
 export const dynamic = "force-dynamic";
 
 export async function GET(request: NextRequest) {
-  if (!(await readerAllowed(request))) {
+  if (!(await readerAllowed(request.headers))) {
     return deny();
   }
 

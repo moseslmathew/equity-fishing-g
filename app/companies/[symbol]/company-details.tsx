@@ -130,10 +130,11 @@ export default function CompanyDetails({
     let activeReq = true;
     getClerkAuthHeaders().then((headers) => {
       fetch("/api/watchlist", { headers, cache: "no-store" })
-        .then((res) => (res.ok ? res.json() : { items: [] }))
-        .then((data: { items?: Array<{ itemKey: string; itemType: string }> }) => {
+        .then((res) => (res.ok ? (res.json() as Promise<{ items?: Array<{ itemKey: string; itemType: string }> }>) : { items: [] }))
+        .then((data) => {
           if (!activeReq) return;
-          const exists = (data.items || []).some(
+          const items = data.items || [];
+          const exists = items.some(
             (i) => i.itemType === "stock" && i.itemKey.toUpperCase() === security.symbol.toUpperCase()
           );
           setInWatchlist(exists);
@@ -369,8 +370,7 @@ export default function CompanyDetails({
                         </span>
                       </div>
                       <p className="company-time">
-                        {time(q.time)} · Delayed quote
-                        {q.earlierSession ? " · Earlier trading session" : ""}
+                        {time(q.asOfIso || q.asOf)} · Delayed quote
                       </p>
                     </div>
                     <dl className="company-quick-metrics">

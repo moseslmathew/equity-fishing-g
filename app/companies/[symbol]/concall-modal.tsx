@@ -50,9 +50,9 @@ export default function ConcallModal({
     })
       .then((res) => {
         if (!res.ok) throw new Error("Concall analysis currently unavailable");
-        return res.json();
+        return res.json() as Promise<ConcallAnalysis>;
       })
-      .then((json: ConcallAnalysis) => {
+      .then((json) => {
         if (isMounted) {
           setData(json);
           setLoading(false);

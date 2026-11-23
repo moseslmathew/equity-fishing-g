@@ -104,7 +104,7 @@
   border-color: var(--accent-border);
 }
 
-/* Toolbar: Asset Filter Tabs + Search */
+/* Toolbar: Search + Sort Reset */
 .watchlist-toolbar {
   display: flex;
   align-items: center;
@@ -114,37 +114,16 @@
   margin-bottom: 16px;
 }
 
-.watchlist-tabs {
-  display: inline-flex;
-  gap: 4px;
-  background: #f6f3fc;
-  border: 1px solid var(--line);
-  border-radius: 10px;
-  padding: 4px;
+.watchlist-toolbar-left {
+  display: flex;
+  align-items: center;
+  flex: 1 1 240px;
 }
 
-.watchlist-tab-button {
-  min-height: 36px;
-  padding: 6px 14px;
-  border-radius: 7px;
-  font-size: 13px;
-  font-weight: 550;
-  color: var(--muted);
-  background: transparent;
-  border: 1px solid transparent;
-  cursor: pointer;
-  transition: color 0.15s ease, background 0.15s ease;
-}
-
-.watchlist-tab-button:hover {
-  color: var(--ink);
-}
-
-.watchlist-tab-button.is-active {
-  background: var(--panel);
-  color: var(--blue);
-  border-color: var(--line);
-  box-shadow: 0 1px 4px rgba(33, 29, 48, 0.06);
+.watchlist-toolbar-right {
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
 
 .watchlist-table-filter {

@@ -7,10 +7,8 @@ import {
   ArrowUpDown,
   BarChart3,
   Bookmark,
-  Building2,
   ChevronDown,
   ChevronUp,
-  Download,
   ExternalLink,
   GripVertical,
   Plus,
@@ -22,7 +20,6 @@ import {
   X,
 } from "lucide-react";
 import { useClerkAuth, getClerkAuthHeaders } from "./clerk-client";
-import { fundCatalog } from "../lib/fund-catalog";
 import type { BatchQuoteEntry } from "../lib/nse-mcp";
 import "./watchlist.css";
 
@@ -58,14 +55,6 @@ function formatInr(value: number): string {
   return `₹${value.toLocaleString("en-IN", { minimumFractionDigits: 2, maximumFractionDigits: 2 })}`;
 }
 
-function formatCompactDate(value: string): string {
-  return new Date(value).toLocaleDateString("en-IN", {
-    day: "numeric",
-    month: "short",
-    year: "numeric",
-  });
-}
-
 function formatQuoteTimestamp(asOf?: string | null, asOfIso?: string | null): string | null {
   const iso = asOfIso || (asOf ? asOf.replace(" ", "T") + "+05:30" : null);
   if (!iso) return null;
@@ -85,7 +74,6 @@ export default function WatchlistView() {
   const [items, setItems] = useState<WatchlistItem[]>([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState("");
-  const [activeTab, setActiveTab] = useState<"all" | "stock" | "fund">("all");
   const [tableFilter, setTableFilter] = useState("");
   const [sort, setSort] = useState<{ key: SortKey; dir: SortDir }>({ key: "custom", dir: 1 });
 
@@ -101,7 +89,6 @@ export default function WatchlistView() {
 
   // Add modal state
   const [showAddModal, setShowAddModal] = useState(false);
-  const [itemType, setItemType] = useState<"stock" | "fund">("stock");
   const [itemKey, setItemKey] = useState("");
   const [itemTitle, setItemTitle] = useState("");
   const [itemSubtitle, setItemSubtitle] = useState("");
@@ -141,71 +128,71 @@ export default function WatchlistView() {
       let latestTime: string | null = null;
       for (let i = 0; i < stockSymbols.length; i += 30) {
         const chunk = stockSymbols.slice(i, i + 30);
-        const res = await fetch(`/api/nse?symbols=${encodeURIComponent(chunk.join(","))}`, { cache: "no-store" });
+        const res = await fetch(`/api/nse?symbols=${encodeURIComponent(chunk.join(","))}`);
         if (!res.ok) continue;
-        const payload = (await res.json()) as {
+        const data = (await res.json()) as {
           quotes?: Record<string, BatchQuoteEntry | null>;
-          retrievedAt?: string;
+          asOf?: string | null;
         };
-        if (payload.quotes) Object.assign(merged, payload.quotes);
-        if (payload.retrievedAt) latestTime = payload.retrievedAt;
+        if (data.quotes) {
+          Object.assign(merged, data.quotes);
+        }
+        if (data.asOf && (!latestTime || Date.parse(data.asOf) > Date.parse(latestTime))) {
+          latestTime = data.asOf;
+        }
       }
-      setQuotes((prev) => ({ ...prev, ...merged }));
-      setQuotesUpdatedAt(latestTime ?? new Date().toISOString());
-    } catch {
-      // Retain any prior quotes cleanly if live network request fails
+      setQuotes(merged);
+      if (latestTime) setQuotesUpdatedAt(latestTime);
+    } catch (err) {
+      console.warn("Failed to fetch live quotes for watchlist", err);
     } finally {
       setQuotesLoading(false);
     }
   }, []);
 
   const loadWatchlist = useCallback(async () => {
-    setError("");
     try {
+      setError("");
       const authHeaders = await getClerkAuthHeaders();
       const res = await fetch("/api/watchlist", {
         headers: authHeaders,
-        cache: "no-store",
       });
       if (!res.ok) {
-        if (res.status === 401) {
-          setItems([]);
-          return;
-        }
-        throw new Error("Failed to load watchlist");
+        throw new Error(`Failed to load watchlist (HTTP ${res.status})`);
       }
       const data = (await res.json()) as { items?: WatchlistItem[] };
       let list = data.items || [];
 
-      // Check localStorage for any previous items saved under observatory.watchlist.v1
-      if (typeof window !== "undefined") {
+      // If user is not logged in or watchlist is empty, check localStorage cache
+      if (list.length === 0 && typeof window !== "undefined") {
         try {
           const raw = localStorage.getItem("observatory.watchlist.v1");
-          const savedSymbols: string[] = raw ? JSON.parse(raw) : [];
-          if (Array.isArray(savedSymbols) && savedSymbols.length > 0) {
-            const existingKeys = new Set(list.map((i) => i.itemKey.toUpperCase()));
-            const missing = savedSymbols.filter((s) => typeof s === "string" && !existingKeys.has(s.toUpperCase()));
-            if (missing.length > 0) {
-              for (const sym of missing) {
+          if (raw) {
+            const parsed = JSON.parse(raw);
+            if (Array.isArray(parsed) && parsed.length > 0) {
+              for (const sym of parsed) {
+                const s = String(sym).trim().toUpperCase();
+                if (!s) continue;
                 try {
                   const addRes = await fetch("/api/watchlist", {
                     method: "POST",
-                    headers: { ...authHeaders, "Content-Type": "application/json" },
+                    headers: { "Content-Type": "application/json", ...authHeaders },
                     body: JSON.stringify({
                       itemType: "stock",
-                      itemKey: sym.toUpperCase(),
-                      itemTitle: sym.toUpperCase(),
+                      itemKey: s,
+                      itemTitle: s,
+                      itemSubtitle: "NSE Equity",
                     }),
                   });
                   if (addRes.ok) {
-                    const addData = (await addRes.json()) as { item?: WatchlistItem };
-                    if (addData.item) list.push(addData.item);
+                    const addedJson = (await addRes.json()) as { item?: WatchlistItem };
+                    if (addedJson.item) list.push(addedJson.item);
                   }
                 } catch {}
               }
             }
           }
-          // Mirror back to localStorage so both persist
+          // Mirror back to localStorage
           const stockKeys = list.filter((i) => i.itemType === "stock").map((i) => i.itemKey.toUpperCase());
           localStorage.setItem("observatory.watchlist.v1", JSON.stringify(stockKeys));
         } catch {}
@@ -233,7 +220,7 @@ export default function WatchlistView() {
   // Debounced NSE search in Add modal
   useEffect(() => {
     const q = searchQuery.trim();
-    if (itemType !== "stock" || q.length < 1) {
+    if (q.length < 1) {
       return;
     }
 
@@ -259,7 +246,7 @@ export default function WatchlistView() {
       active = false;
       clearTimeout(timeout);
     };
-  }, [searchQuery, itemType]);
+  }, [searchQuery]);
 
   const handleCloseModal = () => {
     setShowAddModal(false);
@@ -301,47 +288,24 @@ export default function WatchlistView() {
         setQuotes((prev) => ({
           ...prev,
           [c.symbol.trim().toUpperCase()]: {
+            symbol: c.symbol.trim().toUpperCase(),
+            series: "EQ",
             price: c.price,
             previousClose: c.close ?? null,
-            change: null,
-            changePercent: c.changePercent,
-            asOf: c.date ?? new Date().toLocaleTimeString("en-IN", { hour: "2-digit", minute: "2-digit" }),
-            asOfIso: new Date().toISOString(),
+            change: c.price !== null && c.close !== null ? c.price - c.close : null,
+            changePercent: c.changePercent ?? null,
+            volume: null,
+            open: null,
+            high: null,
+            low: null,
+            close: c.close ?? null,
+            bandUpper: null,
+            bandLower: null,
             source: "live",
+            asOf: c.date ?? null,
+            asOfIso: c.date ? `${c.date}T15:30:00+05:30` : null,
           },
         }));
-      }
-
-      handleCloseModal();
-      setLoading(true);
-      await loadWatchlist();
-    } catch (err) {
-      setSubmitError(err instanceof Error ? err.message : "Error adding to watchlist");
-    } finally {
-      setDirectAddingKey(null);
-    }
-  };
-
-  const handleDirectAddFund = async (fund: { id: string; name: string }) => {
-    if (directAddingKey) return;
-    setDirectAddingKey(fund.id);
-    setSubmitError("");
-    try {
-      const authHeaders = await getClerkAuthHeaders();
-      const res = await fetch("/api/watchlist", {
-        method: "POST",
-        headers: { "Content-Type": "application/json", ...authHeaders },
-        body: JSON.stringify({
-          itemType: "fund",
-          itemKey: fund.id,
-          itemTitle: fund.name,
-          itemSubtitle: "Mutual Fund",
-        }),
-      });
-
-      if (!res.ok) {
-        const errorData = (await res.json()) as { error?: string };
-        throw new Error(errorData.error || "Failed to add fund to watchlist");
       }
 
       handleCloseModal();
@@ -361,13 +325,13 @@ export default function WatchlistView() {
     setSubmitting(true);
     setSubmitError("");
     try {
-      const normalizedKey = itemType === "stock" ? itemKey.trim().toUpperCase() : itemKey.trim();
+      const normalizedKey = itemKey.trim().toUpperCase();
       const authHeaders = await getClerkAuthHeaders();
       const res = await fetch("/api/watchlist", {
         method: "POST",
         headers: { "Content-Type": "application/json", ...authHeaders },
         body: JSON.stringify({
-          itemType,
+          itemType: "stock",
           itemKey: normalizedKey,
           itemTitle: itemTitle.trim(),
           itemSubtitle: itemSubtitle.trim() || undefined,
@@ -377,7 +341,7 @@ export default function WatchlistView() {
 
       if (!res.ok) {
         const errorData = (await res.json()) as { error?: string };
-        throw new Error(errorData.error || "Failed to add item");
+        throw new Error(errorData.error || "Failed to add stock to watchlist");
       }
 
       handleCloseModal();
@@ -390,18 +354,18 @@ export default function WatchlistView() {
     }
   };
 
-  const handleRemove = async (type: "stock" | "fund", key: string) => {
+  const handleRemove = async (key: string) => {
     if (!confirm(`Remove ${key} from your personal watchlist?`)) return;
 
     try {
       const authHeaders = await getClerkAuthHeaders();
-      const res = await fetch(`/api/watchlist?itemType=${type}&itemKey=${encodeURIComponent(key)}`, {
+      const res = await fetch(`/api/watchlist?itemType=stock&itemKey=${encodeURIComponent(key)}`, {
         method: "DELETE",
         headers: authHeaders,
       });
       if (res.ok) {
         setItems((prev) => {
-          const next = prev.filter((i) => !(i.itemType === type && i.itemKey === key));
+          const next = prev.filter((i) => !(i.itemType === "stock" && i.itemKey === key));
           if (typeof window !== "undefined") {
             try {
               const stockKeys = next.filter((i) => i.itemType === "stock").map((i) => i.itemKey.toUpperCase());
@@ -429,7 +393,7 @@ export default function WatchlistView() {
   };
 
   const handleDragStart = (e: React.DragEvent, item: WatchlistItem) => {
-    const key = `${item.itemType}:${item.itemKey}`;
+    const key = `stock:${item.itemKey}`;
     setDraggedItemKey(key);
     e.dataTransfer.effectAllowed = "move";
     e.dataTransfer.setData("text/plain", key);
@@ -438,7 +402,7 @@ export default function WatchlistView() {
   const handleDragOver = (e: React.DragEvent, targetItem: WatchlistItem) => {
     e.preventDefault();
     e.dataTransfer.dropEffect = "move";
-    const targetKey = `${targetItem.itemType}:${targetItem.itemKey}`;
+    const targetKey = `stock:${targetItem.itemKey}`;
     if (targetKey === draggedItemKey) return;
 
     const rect = e.currentTarget.getBoundingClientRect();
@@ -474,14 +438,14 @@ export default function WatchlistView() {
   const handleDrop = (e: React.DragEvent, targetItem: WatchlistItem) => {
     e.preventDefault();
     if (!draggedItemKey) return;
-    const targetKey = `${targetItem.itemType}:${targetItem.itemKey}`;
+    const targetKey = `stock:${targetItem.itemKey}`;
     if (targetKey === draggedItemKey) {
       handleDragEnd();
       return;
     }
 
-    const fromIndex = items.findIndex((i) => `${i.itemType}:${i.itemKey}` === draggedItemKey);
-    const toIndex = items.findIndex((i) => `${i.itemType}:${i.itemKey}` === targetKey);
+    const fromIndex = items.findIndex((i) => `stock:${i.itemKey}` === draggedItemKey);
+    const toIndex = items.findIndex((i) => `stock:${i.itemKey}` === targetKey);
     if (fromIndex === -1 || toIndex === -1) {
       handleDragEnd();
       return;
@@ -489,7 +453,7 @@ export default function WatchlistView() {
 
     const updated = [...items];
     const [moved] = updated.splice(fromIndex, 1);
-    const targetIndexAfterRemoval = updated.findIndex((i) => `${i.itemType}:${i.itemKey}` === targetKey);
+    const targetIndexAfterRemoval = updated.findIndex((i) => `stock:${i.itemKey}` === targetKey);
     const insertIndex = dragDropSide === "above" ? targetIndexAfterRemoval : targetIndexAfterRemoval + 1;
 
     updated.splice(Math.max(0, Math.min(updated.length, insertIndex)), 0, moved);
@@ -517,13 +481,12 @@ export default function WatchlistView() {
   const visibleItems = useMemo(() => {
     const q = tableFilter.trim().toLowerCase();
     const list = items.filter((item) => {
-      if (activeTab !== "all" && item.itemType !== activeTab) return false;
+      if (item.itemType !== "stock") return false;
       if (!q) return true;
       return (
         item.itemKey.toLowerCase().includes(q) ||
         item.itemTitle.toLowerCase().includes(q) ||
-        (item.itemSubtitle?.toLowerCase().includes(q) ?? false) ||
-        (item.notes?.toLowerCase().includes(q) ?? false)
+        (item.itemSubtitle && item.itemSubtitle.toLowerCase().includes(q))
       );
     });
 
@@ -536,52 +499,20 @@ export default function WatchlistView() {
         return sort.dir * a.itemTitle.localeCompare(b.itemTitle);
       }
       if (sort.key === "price") {
-        const pa = a.itemType === "stock" ? quotes[a.itemKey.toUpperCase()]?.price ?? -Infinity : -Infinity;
-        const pb = b.itemType === "stock" ? quotes[b.itemKey.toUpperCase()]?.price ?? -Infinity : -Infinity;
+        const pa = quotes[a.itemKey.toUpperCase()]?.price ?? -Infinity;
+        const pb = quotes[b.itemKey.toUpperCase()]?.price ?? -Infinity;
         return sort.dir * (pa - pb);
       }
       if (sort.key === "change") {
-        const ca = a.itemType === "stock" ? quotes[a.itemKey.toUpperCase()]?.changePercent ?? -Infinity : -Infinity;
-        const cb = b.itemType === "stock" ? quotes[b.itemKey.toUpperCase()]?.changePercent ?? -Infinity : -Infinity;
+        const ca = quotes[a.itemKey.toUpperCase()]?.changePercent ?? -Infinity;
+        const cb = quotes[b.itemKey.toUpperCase()]?.changePercent ?? -Infinity;
         return sort.dir * (ca - cb);
       }
       return sort.dir * (Date.parse(a.createdAt) - Date.parse(b.createdAt));
     });
-  }, [items, activeTab, tableFilter, sort, quotes]);
+  }, [items, tableFilter, sort, quotes]);
 
-  const exportCsv = () => {
-    const esc = (v: string) => `"${v.replace(/"/g, '""')}"`;
-    const rows = [
-      ["Ticker / ID", "Security", "Type", "Sector", "Last Traded Price (INR)", "Day Change (%)", "Added", "Notes"].map(esc).join(","),
-      ...visibleItems.map((item) => {
-        const q = item.itemType === "stock" ? quotes[item.itemKey.toUpperCase()] : null;
-        return [
-          item.itemKey,
-          item.itemTitle,
-          item.itemType,
-          displaySubtitle(item) ?? "",
-          q?.price != null ? q.price.toFixed(2) : "",
-          q?.changePercent != null ? q.changePercent.toFixed(2) : "",
-          formatCompactDate(item.createdAt),
-          item.notes ?? "",
-        ]
-          .map(esc)
-          .join(",");
-      }),
-    ].join("\n");
-
-    const blob = new Blob([rows], { type: "text/csv;charset=utf-8;" });
-    const url = URL.createObjectURL(blob);
-    const a = document.createElement("a");
-    a.href = url;
-    a.download = `watchlist-${new Date().toISOString().slice(0, 10)}.csv`;
-    a.click();
-    URL.revokeObjectURL(url);
-  };
-
-  const stockCount = items.filter((i) => i.itemType === "stock").length;
-  const fundCount = items.filter((i) => i.itemType === "fund").length;
-  const mixedTypes = activeTab === "all" && stockCount > 0 && fundCount > 0;
+  const stockCount = visibleItems.length;
   const refreshedTimeLabel = quotesUpdatedAt
     ? new Date(quotesUpdatedAt).toLocaleTimeString("en-IN", { hour: "2-digit", minute: "2-digit", timeZone: "Asia/Kolkata" }) + " IST"
     : null;
@@ -622,72 +553,46 @@ export default function WatchlistView() {
             <RefreshCw size={15} className={loading || quotesLoading ? "refresh-spinning" : undefined} />
             <span>{quotesLoading ? "Updating…" : "Refresh"}</span>
           </button>
-          {visibleItems.length > 0 && (
-            <button
-              className="watchlist-button-secondary"
-              onClick={exportCsv}
-              title="Export visible rows to CSV"
-            >
-              <Download size={15} />
-              <span>CSV</span>
-            </button>
-          )}
           <button className="watchlist-button-primary" onClick={() => setShowAddModal(true)}>
             <Plus size={16} />
-            <span>Add to Watchlist</span>
+            <span>Add Stock</span>
           </button>
         </div>
       </div>
 
-      {/* Controls Toolbar */}
-      <div className="watchlist-toolbar">
-        <div className="watchlist-tabs" role="tablist" aria-label="Filter watchlist by asset type">
-          {(
-            [
-              { id: "all", label: `All (${items.length})` },
-              { id: "stock", label: `Stocks (${stockCount})` },
-              { id: "fund", label: `Funds (${fundCount})` },
-            ] as const
-          ).map((tab) => (
-            <button
-              key={tab.id}
-              role="tab"
-              aria-selected={activeTab === tab.id}
-              onClick={() => setActiveTab(tab.id)}
-              className={`watchlist-tab-button ${activeTab === tab.id ? "is-active" : ""}`}
-            >
-              {tab.label}
-            </button>
-          ))}
-        </div>
+      {/* Controls Toolbar: Search Filter & Custom Arrange Reset */}
+      {(items.length > 0 || sort.key !== "custom") && (
+        <div className="watchlist-toolbar">
+          <div className="watchlist-toolbar-left">
+            {items.length > 0 && (
+              <div className="watchlist-table-filter">
+                <Search size={14} className="watchlist-filter-icon" aria-hidden="true" />
+                <input
+                  type="search"
+                  placeholder="Filter ticker or company name…"
+                  aria-label="Filter watchlist"
+                  value={tableFilter}
+                  onChange={(e) => setTableFilter(e.target.value)}
+                />
+              </div>
+            )}
+          </div>
 
-        <div className="watchlist-toolbar-right">
-          {sort.key !== "custom" && (
-            <button
-              type="button"
-              className="watchlist-custom-sort-btn"
-              onClick={() => setSort({ key: "custom", dir: 1 })}
-              title="Reset to your custom arranged order"
-            >
-              <ArrowUpDown size={13} />
-              <span>Reset to Custom Order</span>
-            </button>
-          )}
-
-          {items.length > 0 && (
-            <div className="watchlist-table-filter">
-              <Search size={14} className="watchlist-filter-icon" aria-hidden="true" />
-              <input
-                type="search"
-                placeholder="Filter ticker or company…"
-                aria-label="Filter watchlist"
-                value={tableFilter}
-                onChange={(e) => setTableFilter(e.target.value)}
-              />
-            </div>
-          )}
+          <div className="watchlist-toolbar-right">
+            {sort.key !== "custom" && (
+              <button
+                type="button"
+                className="watchlist-custom-sort-btn"
+                onClick={() => setSort({ key: "custom", dir: 1 })}
+                title="Reset to your custom arranged order"
+              >
+                <ArrowUpDown size={13} />
+                <span>Reset to Custom Order</span>
+              </button>
+            )}
+          </div>
         </div>
-      </div>
+      )}
 
       {error && (
         <p className="error-notice" role="alert" style={{ marginBottom: "14px" }}>
@@ -713,11 +618,11 @@ export default function WatchlistView() {
           <div className="watchlist-empty-icon">
             <Bookmark size={26} />
           </div>
-          <h3>{tableFilter.trim() ? "No matching watchlist items" : "Your watchlist is empty"}</h3>
+          <h3>{tableFilter.trim() ? "No matching watchlist stocks" : "Your watchlist is empty"}</h3>
           <p>
             {tableFilter.trim()
-              ? `No saved holdings matched "${tableFilter.trim()}". Clear the search filter to see all items.`
-              : "Add NSE equities or mutual fund schemes to track live prices and notes in one table."}
+              ? `No saved stocks matched "${tableFilter.trim()}". Clear the search filter to see all items.`
+              : "Add NSE equities to track live prices, price charts, concalls, and notes in one table."}
           </p>
           {tableFilter.trim() ? (
             <button className="watchlist-button-secondary" onClick={() => setTableFilter("")}>
@@ -726,7 +631,7 @@ export default function WatchlistView() {
           ) : (
             <button className="watchlist-button-primary" onClick={() => setShowAddModal(true)}>
               <Plus size={15} />
-              <span>Add your first item</span>
+              <span>Add your first stock</span>
             </button>
           )}
         </div>
@@ -774,16 +679,13 @@ export default function WatchlistView() {
             </thead>
             <tbody>
               {visibleItems.map((item, index) => {
-                const isStock = item.itemType === "stock";
-                const quote = isStock ? quotes[item.itemKey.toUpperCase()] : null;
+                const quote = quotes[item.itemKey.toUpperCase()];
                 const sub = displaySubtitle(item);
                 const quoteTime = quote ? formatQuoteTimestamp(quote.asOf, quote.asOfIso) : null;
-                const href = isStock
-                  ? `/companies/${encodeURIComponent(item.itemKey)}`
-                  : `/#${encodeURIComponent(item.itemKey)}`;
+                const href = `/companies/${encodeURIComponent(item.itemKey)}`;
                 const pct = quote?.changePercent;
-                const hasQuoteLoaded = !isStock || item.itemKey.toUpperCase() in quotes;
-                const itemCompositeKey = `${item.itemType}:${item.itemKey}`;
+                const hasQuoteLoaded = item.itemKey.toUpperCase() in quotes;
+                const itemCompositeKey = `stock:${item.itemKey}`;
 
                 return (
                   <tr
@@ -842,9 +744,6 @@ export default function WatchlistView() {
                         <a href={href} className="watchlist-security-link">
                           <span className="watchlist-security-name">{item.itemTitle}</span>
                         </a>
-                        {mixedTypes && !isStock && (
-                          <span className="watchlist-kind-badge">Fund</span>
-                        )}
                       </div>
                       {(sub || item.notes) && (
                         <div className="watchlist-security-meta">
@@ -855,9 +754,7 @@ export default function WatchlistView() {
                     </td>
 
                     <td className="is-numeric watchlist-cell-price" data-label="LTP">
-                      {!isStock ? (
-                        <span className="watchlist-muted-dash">—</span>
-                      ) : quotesLoading && !hasQuoteLoaded ? (
+                      {quotesLoading && !hasQuoteLoaded ? (
                         <span className="watchlist-price-skeleton" aria-label="Fetching price" />
                       ) : quote?.price != null ? (
                         <div className="watchlist-price-stack">
@@ -877,9 +774,7 @@ export default function WatchlistView() {
                     </td>
 
                     <td className="is-numeric watchlist-cell-change" data-label="Day Change">
-                      {!isStock ? (
-                        <span className="watchlist-muted-dash">—</span>
-                      ) : quotesLoading && !hasQuoteLoaded ? (
+                      {quotesLoading && !hasQuoteLoaded ? (
                         <span className="watchlist-change-skeleton" aria-label="Fetching change" />
                       ) : pct != null ? (
                         <div className="watchlist-change-stack">
@@ -911,27 +806,25 @@ export default function WatchlistView() {
                     </td>
 
                     <td className="is-actions watchlist-cell-actions">
-                      {isStock && (
-                        <a
-                          href={`/companies/${encodeURIComponent(item.itemKey)}`}
-                          className="watchlist-row-action watchlist-chart-action"
-                          aria-label={`Open price & volume chart for ${item.itemTitle}`}
-                          title="Open price & volume chart"
-                        >
-                          <BarChart3 size={15} />
-                        </a>
-                      )}
+                      <a
+                        href={href}
+                        className="watchlist-row-action watchlist-chart-action"
+                        aria-label={`Open price & volume chart for ${item.itemTitle}`}
+                        title="Open price & volume chart"
+                      >
+                        <BarChart3 size={15} />
+                      </a>
                       <a
                         href={href}
                         className="watchlist-row-action"
                         aria-label={`Open details for ${item.itemTitle}`}
-                        title={isStock ? "Open stock analysis" : "View mutual fund"}
+                        title="Open stock analysis"
                       >
                         <ExternalLink size={15} />
                       </a>
                       <button
                         type="button"
-                        onClick={() => handleRemove(item.itemType, item.itemKey)}
+                        onClick={() => handleRemove(item.itemKey)}
                         className="watchlist-remove-btn"
                         aria-label={`Remove ${item.itemTitle}`}
                         title="Remove from watchlist"
@@ -957,54 +850,14 @@ export default function WatchlistView() {
         >
           <div className="watchlist-modal-card" role="dialog" aria-modal="true" aria-labelledby="watchlist-modal-title">
             <div className="watchlist-modal-header">
-              <h2 id="watchlist-modal-title">Add to Watchlist</h2>
+              <h2 id="watchlist-modal-title">Add Stock to Watchlist</h2>
               <button className="watchlist-modal-close" onClick={handleCloseModal} aria-label="Close modal">
                 <X size={18} />
               </button>
             </div>
 
             <form onSubmit={handleAdd}>
-              <div className="watchlist-form-group">
-                <label className="watchlist-form-label">Asset Type</label>
-                <div className="watchlist-type-selector">
-                  <button
-                    type="button"
-                    onClick={() => {
-                      setItemType("stock");
-                      setItemKey("");
-                      setItemTitle("");
-                      setItemSubtitle("");
-                      setSearchQuery("");
-                      setCandidates([]);
-                      setShowDropdown(false);
-                      setIsManualEdit(false);
-                    }}
-                    className={`watchlist-type-option ${itemType === "stock" ? "is-selected" : ""}`}
-                  >
-                    <TrendingUp size={14} />
-                    <span>Stock / Equity</span>
-                  </button>
-                  <button
-                    type="button"
-                    onClick={() => {
-                      setItemType("fund");
-                      setItemKey("");
-                      setItemTitle("");
-                      setItemSubtitle("");
-                      setSearchQuery("");
-                      setCandidates([]);
-                      setShowDropdown(false);
-                      setIsManualEdit(false);
-                    }}
-                    className={`watchlist-type-option ${itemType === "fund" ? "is-selected" : ""}`}
-                  >
-                    <Building2 size={14} />
-                    <span>Mutual Fund</span>
-                  </button>
-                </div>
-              </div>
-
-              {itemType === "stock" && !isManualEdit && (
+              {!isManualEdit ? (
                 <div className="watchlist-form-group">
                   <label className="watchlist-form-label">Search Security by Company Name or Ticker</label>
                   <div className="watchlist-search-wrapper">
@@ -1141,77 +994,26 @@ export default function WatchlistView() {
                     </button>
                   </div>
                 </div>
-              )}
-
-              {itemType === "fund" && !isManualEdit && (
-                <div className="watchlist-form-group">
-                  <label className="watchlist-form-label">Select Tracked Scheme to Add</label>
-                  <select
-                    className="watchlist-input"
-                    value=""
-                    disabled={Boolean(directAddingKey)}
-                    onChange={(e) => {
-                      const fundId = e.target.value;
-                      if (fundId) {
-                        const found = fundCatalog.find((f) => f.id === fundId);
-                        if (found) {
-                          void handleDirectAddFund(found);
-                        }
-                      }
-                    }}
-                  >
-                    <option value="" disabled>
-                      {directAddingKey ? "Adding fund to watchlist…" : "Click to select a fund to add directly…"}
-                    </option>
-                    {fundCatalog.map((f) => (
-                      <option key={f.id} value={f.id}>
-                        {f.name}
-                      </option>
-                    ))}
-                  </select>
-                  <div style={{ marginTop: "12px" }}>
-                    <button
-                      type="button"
-                      className="watchlist-manual-toggle"
-                      onClick={() => {
-                        setItemKey("");
-                        setItemTitle("");
-                        setItemSubtitle("Mutual Fund");
-                        setIsManualEdit(true);
-                      }}
-                    >
-                      Or enter custom fund manually
-                    </button>
-                  </div>
-                </div>
-              )}
-
-              {isManualEdit && (
+              ) : (
                 <>
                   <div className="watchlist-form-group">
-                    <label className="watchlist-form-label">
-                      {itemType === "stock" ? "NSE Ticker / Symbol" : "Fund Identifier"}
-                    </label>
+                    <label className="watchlist-form-label">NSE Ticker / Symbol</label>
                     <input
                       type="text"
                       required
-                      placeholder={itemType === "stock" ? "e.g. ZETWERK, ATHERENERG" : "e.g. nippon, quant-small-cap"}
+                      placeholder="e.g. ZETWERK, ATHERENERG"
                       value={itemKey}
-                      onChange={(e) => setItemKey(itemType === "stock" ? e.target.value.toUpperCase() : e.target.value)}
+                      onChange={(e) => setItemKey(e.target.value.toUpperCase())}
                       className="watchlist-input"
                     />
                   </div>
 
                   <div className="watchlist-form-group">
-                    <label className="watchlist-form-label">Name / Display Title</label>
+                    <label className="watchlist-form-label">Company Name</label>
                     <input
                       type="text"
                       required
-                      placeholder={
-                        itemType === "stock"
-                          ? "e.g. Zetwerk Manufacturing Businesses Limited"
-                          : "e.g. Nippon India Small Cap Fund"
-                      }
+                      placeholder="e.g. Zetwerk Manufacturing Businesses Limited"
                       value={itemTitle}
                       onChange={(e) => setItemTitle(e.target.value)}
                       className="watchlist-input"
@@ -1222,7 +1024,7 @@ export default function WatchlistView() {
                     <label className="watchlist-form-label">Sector / Category (Optional)</label>
                     <input
                       type="text"
-                      placeholder={itemType === "stock" ? "e.g. Electric Vehicles" : "e.g. Small Cap Fund"}
+                      placeholder="e.g. Electric Vehicles, Auto Ancillaries"
                       value={itemSubtitle}
                       onChange={(e) => setItemSubtitle(e.target.value)}
                       className="watchlist-input"

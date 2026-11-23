@@ -111,7 +111,6 @@ export default function WatchlistView() {
     }>
   >([]);
   const [isSearching, setIsSearching] = useState(false);
-  const [showDropdown, setShowDropdown] = useState(false);
   const [isManualEdit, setIsManualEdit] = useState(false);
   const [directAddingKey, setDirectAddingKey] = useState<string | null>(null);
 
@@ -233,7 +232,6 @@ export default function WatchlistView() {
         const data = (await res.json()) as { candidates?: typeof candidates };
         if (active) {
           setCandidates(data.candidates || []);
-          setShowDropdown(true);
         }
       } catch {
         if (active) setCandidates([]);
@@ -256,7 +254,6 @@ export default function WatchlistView() {
     setNotes("");
     setSearchQuery("");
     setCandidates([]);
-    setShowDropdown(false);
     setIsManualEdit(false);
     setDirectAddingKey(null);
     setSubmitError("");
@@ -840,7 +837,7 @@ export default function WatchlistView() {
         </div>
       )}
 
-      {/* Solid, Opaque Add Modal */}
+      {/* Streamlined Stock Search Modal */}
       {showAddModal && (
         <div
           className="watchlist-modal-overlay"
@@ -850,235 +847,238 @@ export default function WatchlistView() {
         >
           <div className="watchlist-modal-card" role="dialog" aria-modal="true" aria-labelledby="watchlist-modal-title">
             <div className="watchlist-modal-header">
-              <h2 id="watchlist-modal-title">Add Stock to Watchlist</h2>
+              <h2 id="watchlist-modal-title">{isManualEdit ? "Enter Ticker Manually" : "Add Stock to Watchlist"}</h2>
               <button className="watchlist-modal-close" onClick={handleCloseModal} aria-label="Close modal">
                 <X size={18} />
               </button>
             </div>
 
-            <form onSubmit={handleAdd}>
-              {!isManualEdit ? (
-                <div className="watchlist-form-group">
-                  <label className="watchlist-form-label">Search Security by Company Name or Ticker</label>
-                  <div className="watchlist-search-wrapper">
-                    <div className="watchlist-search-input-box">
-                      <Search size={16} className="watchlist-search-icon" />
-                      <input
-                        type="text"
-                        className="watchlist-input"
-                        placeholder="Type company name or ticker, e.g. Zetwerk, Sansera, CDSL..."
-                        value={searchQuery}
-                        onChange={(e) => {
-                          const next = e.target.value;
-                          setSearchQuery(next);
-                          if (next.trim().length < 1) {
-                            setCandidates([]);
-                            setShowDropdown(false);
-                            setIsSearching(false);
-                          } else {
-                            setShowDropdown(true);
-                          }
-                        }}
-                        onFocus={() => {
-                          if (candidates.length > 0 || searchQuery.trim().length >= 1) setShowDropdown(true);
-                        }}
-                        onKeyDown={(e) => {
-                          if (e.key === "Escape") setShowDropdown(false);
-                          else if (e.key === "Enter" && candidates.length > 0 && !directAddingKey) {
-                            e.preventDefault();
-                            void handleDirectAddStock(candidates[0]);
-                          }
-                        }}
-                        autoFocus
-                      />
-                      {isSearching ? (
-                        <span className="watchlist-search-spinner" />
-                      ) : searchQuery ? (
-                        <button
-                          type="button"
-                          className="watchlist-search-clear"
-                          onClick={() => {
-                            setSearchQuery("");
-                            setCandidates([]);
-                            setShowDropdown(false);
-                            setIsSearching(false);
-                          }}
-                          aria-label="Clear search"
-                        >
-                          <X size={14} />
-                        </button>
-                      ) : null}
-                    </div>
-
-                    {showDropdown && (
-                      <ul className="watchlist-suggestions-menu" role="listbox">
-                        {candidates.length > 0 ? (
-                          candidates.map((c) => {
-                            const isAddingThis = directAddingKey === c.symbol;
-                            return (
-                              <li
-                                key={c.symbol}
-                                className={`watchlist-suggestion-item ${isAddingThis ? "is-adding" : ""}`}
-                                onClick={() => {
-                                  if (!directAddingKey) void handleDirectAddStock(c);
-                                }}
-                                role="option"
-                                aria-selected={false}
-                                aria-disabled={Boolean(directAddingKey)}
-                              >
-                                <div className="watchlist-suggestion-left">
-                                  <div className="watchlist-suggestion-headline">
-                                    <span className="watchlist-suggestion-symbol">{c.symbol}</span>
-                                    <span className="watchlist-suggestion-name">{c.name}</span>
-                                  </div>
-                                  <div className="watchlist-suggestion-meta">
-                                    <span>{c.sector}</span>
-                                    {c.isin && <span>· ISIN: {c.isin}</span>}
-                                  </div>
-                                </div>
-                                <div className="watchlist-suggestion-right">
-                                  {isAddingThis ? (
-                                    <span className="watchlist-adding-indicator">Adding…</span>
-                                  ) : (
-                                    <>
-                                      {c.price !== null && c.price !== undefined && (
-                                        <span className="watchlist-suggestion-price">
-                                          ₹{c.price.toLocaleString("en-IN")}
-                                        </span>
-                                      )}
-                                      {c.changePercent !== null && c.changePercent !== undefined && (
-                                        <span
-                                          className={`watchlist-suggestion-change ${
-                                            c.changePercent >= 0 ? "positive" : "negative"
-                                          }`}
-                                        >
-                                          {c.changePercent >= 0 ? "+" : ""}
-                                          {c.changePercent.toFixed(2)}%
-                                        </span>
-                                      )}
-                                      <span className="watchlist-add-pill">+ Add</span>
-                                    </>
-                                  )}
-                                </div>
-                              </li>
-                            );
-                          })
-                        ) : !isSearching && searchQuery.trim().length >= 1 ? (
-                          <li className="watchlist-suggestions-empty">
-                            <span>No matching NSE equity found for &quot;{searchQuery}&quot;.</span>
-                            <button
-                              type="button"
-                              className="watchlist-manual-toggle"
-                              onClick={() => {
-                                const trimmed = searchQuery.trim();
-                                setItemKey(trimmed.toUpperCase().replace(/\s+/g, ""));
-                                setItemTitle(trimmed);
-                                setShowDropdown(false);
-                                setIsManualEdit(true);
-                              }}
-                            >
-                              Enter details manually
-                            </button>
-                          </li>
-                        ) : null}
-                      </ul>
-                    )}
-                  </div>
-                  <div style={{ marginTop: "12px" }}>
+            {!isManualEdit ? (
+              <div className="watchlist-modal-search-body">
+                <div className="watchlist-search-input-box">
+                  <Search size={18} className="watchlist-search-icon" aria-hidden="true" />
+                  <input
+                    type="text"
+                    className="watchlist-input watchlist-search-hero-input"
+                    placeholder="Search NSE stock by symbol or company (e.g. RELIANCE, CDSL, ZETWERK)…"
+                    value={searchQuery}
+                    onChange={(e) => {
+                      const next = e.target.value;
+                      setSearchQuery(next);
+                      if (next.trim().length < 1) {
+                        setCandidates([]);
+                        setIsSearching(false);
+                      }
+                    }}
+                    onKeyDown={(e) => {
+                      if (e.key === "Escape") handleCloseModal();
+                      else if (e.key === "Enter" && candidates.length > 0 && !directAddingKey) {
+                        e.preventDefault();
+                        void handleDirectAddStock(candidates[0]);
+                      }
+                    }}
+                    autoFocus
+                  />
+                  {isSearching ? (
+                    <span className="watchlist-search-spinner" />
+                  ) : searchQuery ? (
                     <button
                       type="button"
-                      className="watchlist-manual-toggle"
-                      onClick={() => setIsManualEdit(true)}
+                      className="watchlist-search-clear"
+                      onClick={() => {
+                        setSearchQuery("");
+                        setCandidates([]);
+                        setIsSearching(false);
+                      }}
+                      aria-label="Clear search"
                     >
-                      Or enter ticker details manually
+                      <X size={14} />
                     </button>
-                  </div>
+                  ) : null}
                 </div>
-              ) : (
-                <>
-                  <div className="watchlist-form-group">
-                    <label className="watchlist-form-label">NSE Ticker / Symbol</label>
-                    <input
-                      type="text"
-                      required
-                      placeholder="e.g. ZETWERK, ATHERENERG"
-                      value={itemKey}
-                      onChange={(e) => setItemKey(e.target.value.toUpperCase())}
-                      className="watchlist-input"
-                    />
+
+                {/* Candidate Results */}
+                {candidates.length > 0 ? (
+                  <div className="watchlist-modal-results">
+                    <ul className="watchlist-results-list" role="listbox">
+                      {candidates.map((c) => {
+                        const isAddingThis = directAddingKey === c.symbol;
+                        return (
+                          <li
+                            key={c.symbol}
+                            className={`watchlist-modal-result-item ${isAddingThis ? "is-adding" : ""}`}
+                            onClick={() => {
+                              if (!directAddingKey) void handleDirectAddStock(c);
+                            }}
+                            role="option"
+                            aria-selected={false}
+                          >
+                            <div className="watchlist-result-left">
+                              <div className="watchlist-result-title">
+                                <span className="watchlist-result-symbol">{c.symbol}</span>
+                                <span className="watchlist-result-name">{c.name}</span>
+                              </div>
+                              <div className="watchlist-result-meta">
+                                <span>{c.sector}</span>
+                                {c.isin && <span>· ISIN: {c.isin}</span>}
+                              </div>
+                            </div>
+                            <div className="watchlist-result-right">
+                              {isAddingThis ? (
+                                <span className="watchlist-adding-indicator">Adding…</span>
+                              ) : (
+                                <>
+                                  {c.price !== null && c.price !== undefined && (
+                                    <span className="watchlist-result-price">
+                                      ₹{c.price.toLocaleString("en-IN")}
+                                    </span>
+                                  )}
+                                  {c.changePercent !== null && c.changePercent !== undefined && (
+                                    <span
+                                      className={`watchlist-result-change ${
+                                        c.changePercent >= 0 ? "positive" : "negative"
+                                      }`}
+                                    >
+                                      {c.changePercent >= 0 ? "+" : ""}
+                                      {c.changePercent.toFixed(2)}%
+                                    </span>
+                                  )}
+                                  <span className="watchlist-add-pill">+ Add</span>
+                                </>
+                              )}
+                            </div>
+                          </li>
+                        );
+                      })}
+                    </ul>
                   </div>
-
-                  <div className="watchlist-form-group">
-                    <label className="watchlist-form-label">Company Name</label>
-                    <input
-                      type="text"
-                      required
-                      placeholder="e.g. Zetwerk Manufacturing Businesses Limited"
-                      value={itemTitle}
-                      onChange={(e) => setItemTitle(e.target.value)}
-                      className="watchlist-input"
-                    />
-                  </div>
-
-                  <div className="watchlist-form-group">
-                    <label className="watchlist-form-label">Sector / Category (Optional)</label>
-                    <input
-                      type="text"
-                      placeholder="e.g. Electric Vehicles, Auto Ancillaries"
-                      value={itemSubtitle}
-                      onChange={(e) => setItemSubtitle(e.target.value)}
-                      className="watchlist-input"
-                    />
-                  </div>
-
-                  <div className="watchlist-form-group">
-                    <label className="watchlist-form-label">Notes / Thesis (Optional)</label>
-                    <textarea
-                      placeholder="Target price, allocation strategy, or why you are monitoring this..."
-                      value={notes}
-                      onChange={(e) => setNotes(e.target.value)}
-                      className="watchlist-textarea"
-                    />
-                  </div>
-                </>
-              )}
-
-              {submitError && (
-                <p className="error-notice" role="alert" style={{ marginBottom: "12px" }}>
-                  {submitError}
-                </p>
-              )}
-
-              <div className="watchlist-modal-footer">
-                {isManualEdit ? (
-                  <>
+                ) : searchQuery.trim().length >= 1 && !isSearching ? (
+                  <div className="watchlist-modal-empty-results">
+                    <p>No NSE stocks found for &ldquo;{searchQuery}&rdquo;.</p>
                     <button
                       type="button"
-                      className="watchlist-button-secondary"
-                      onClick={() => setIsManualEdit(false)}
-                      disabled={submitting}
+                      className="watchlist-manual-link-btn"
+                      onClick={() => {
+                        const trimmed = searchQuery.trim();
+                        setItemKey(trimmed.toUpperCase().replace(/\s+/g, ""));
+                        setItemTitle(trimmed);
+                        setIsManualEdit(true);
+                      }}
                     >
-                      Back to Search
+                      Add &ldquo;{searchQuery.toUpperCase()}&rdquo; manually
                     </button>
-                    <button
-                      type="submit"
-                      className="watchlist-button-primary"
-                      disabled={submitting || !itemKey.trim() || !itemTitle.trim()}
-                    >
-                      {submitting ? "Adding…" : "Add to Watchlist"}
-                    </button>
-                  </>
+                  </div>
                 ) : (
+                  <div className="watchlist-quick-picks">
+                    <span className="watchlist-quick-picks-label">Popular NSE Equities:</span>
+                    <div className="watchlist-quick-picks-list">
+                      {["RELIANCE", "TCS", "HDFCBANK", "INFY", "TATAMOTORS", "CDSL", "ATHERENERG", "ZETWERK"].map(
+                        (sym) => (
+                          <button
+                            key={sym}
+                            type="button"
+                            className="watchlist-quick-pill"
+                            onClick={() => {
+                              setSearchQuery(sym);
+                            }}
+                          >
+                            +{sym}
+                          </button>
+                        )
+                      )}
+                    </div>
+                  </div>
+                )}
+
+                {submitError && (
+                  <p className="error-notice" role="alert" style={{ marginTop: "12px", marginBottom: "0" }}>
+                    {submitError}
+                  </p>
+                )}
+
+                <div className="watchlist-modal-subtle-footer">
+                  <button
+                    type="button"
+                    className="watchlist-manual-toggle"
+                    onClick={() => setIsManualEdit(true)}
+                  >
+                    Can&apos;t find your stock? Enter ticker manually
+                  </button>
+                </div>
+              </div>
+            ) : (
+              <form onSubmit={handleAdd}>
+                <div className="watchlist-form-group">
+                  <label className="watchlist-form-label">NSE Ticker / Symbol</label>
+                  <input
+                    type="text"
+                    required
+                    placeholder="e.g. ZETWERK, ATHERENERG"
+                    value={itemKey}
+                    onChange={(e) => setItemKey(e.target.value.toUpperCase())}
+                    className="watchlist-input"
+                    autoFocus
+                  />
+                </div>
+
+                <div className="watchlist-form-group">
+                  <label className="watchlist-form-label">Company Name</label>
+                  <input
+                    type="text"
+                    required
+                    placeholder="e.g. Zetwerk Manufacturing Businesses Limited"
+                    value={itemTitle}
+                    onChange={(e) => setItemTitle(e.target.value)}
+                    className="watchlist-input"
+                  />
+                </div>
+
+                <div className="watchlist-form-group">
+                  <label className="watchlist-form-label">Sector (Optional)</label>
+                  <input
+                    type="text"
+                    placeholder="e.g. Electric Vehicles, Auto Ancillaries"
+                    value={itemSubtitle}
+                    onChange={(e) => setItemSubtitle(e.target.value)}
+                    className="watchlist-input"
+                  />
+                </div>
+
+                <div className="watchlist-form-group">
+                  <label className="watchlist-form-label">Notes / Thesis (Optional)</label>
+                  <textarea
+                    placeholder="Target price, thesis, or allocation notes..."
+                    value={notes}
+                    onChange={(e) => setNotes(e.target.value)}
+                    className="watchlist-textarea"
+                  />
+                </div>
+
+                {submitError && (
+                  <p className="error-notice" role="alert" style={{ marginBottom: "12px" }}>
+                    {submitError}
+                  </p>
+                )}
+
+                <div className="watchlist-modal-footer">
                   <button
                     type="button"
                     className="watchlist-button-secondary"
-                    onClick={handleCloseModal}
+                    onClick={() => setIsManualEdit(false)}
+                    disabled={submitting}
                   >
-                    Close
+                    Back to Search
                   </button>
-                )}
-              </div>
-            </form>
+                  <button
+                    type="submit"
+                    className="watchlist-button-primary"
+                    disabled={submitting || !itemKey.trim() || !itemTitle.trim()}
+                  >
+                    {submitting ? "Adding…" : "Add to Watchlist"}
+                  </button>
+                </div>
+              </form>
+            )}
           </div>
         </div>
       )}

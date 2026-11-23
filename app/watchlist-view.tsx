@@ -37,18 +37,6 @@ type WatchlistItem = {
 type SortKey = "custom" | "title" | "price" | "change" | "createdAt";
 type SortDir = 1 | -1;
 
-const BOILERPLATE_SUBTITLES = new Set([
-  "equity · nse main board",
-  "equity",
-  "indian mutual fund scheme",
-]);
-
-function displaySubtitle(item: WatchlistItem): string | null {
-  const sub = item.itemSubtitle?.trim();
-  if (!sub || BOILERPLATE_SUBTITLES.has(sub.toLowerCase())) return null;
-  return sub;
-}
-
 function formatInr(value: number): string {
   return `₹${value.toLocaleString("en-IN", { minimumFractionDigits: 2, maximumFractionDigits: 2 })}`;
 }
@@ -658,7 +646,6 @@ export default function WatchlistView() {
             <tbody>
               {visibleItems.map((item, index) => {
                 const quote = quotes[item.itemKey.toUpperCase()];
-                const sub = displaySubtitle(item);
                 const quoteTime = quote ? formatQuoteTimestamp(quote.asOf, quote.asOfIso) : null;
                 const href = `/companies/${encodeURIComponent(item.itemKey)}`;
                 const pct = quote?.changePercent;
@@ -699,10 +686,9 @@ export default function WatchlistView() {
                           <span className="watchlist-security-name">{item.itemTitle}</span>
                         </a>
                       </div>
-                      {(sub || item.notes) && (
+                      {item.notes && (
                         <div className="watchlist-security-meta">
-                          {sub && <span className="watchlist-security-sector">{sub}</span>}
-                          {item.notes && <span className="watchlist-security-note">{item.notes}</span>}
+                          <span className="watchlist-security-note">{item.notes}</span>
                         </div>
                       )}
                     </td>
@@ -875,10 +861,11 @@ export default function WatchlistView() {
                                 <span className="watchlist-result-symbol">{c.symbol}</span>
                                 <span className="watchlist-result-name">{c.name}</span>
                               </div>
-                              <div className="watchlist-result-meta">
-                                <span>{c.sector}</span>
-                                {c.isin && <span>· ISIN: {c.isin}</span>}
-                              </div>
+                              {c.isin && (
+                                <div className="watchlist-result-meta">
+                                  <span>ISIN: {c.isin}</span>
+                                </div>
+                              )}
                             </div>
                             <div className="watchlist-result-right">
                               {isAddingThis ? (
@@ -986,17 +973,6 @@ export default function WatchlistView() {
                     placeholder="e.g. Zetwerk Manufacturing Businesses Limited"
                     value={itemTitle}
                     onChange={(e) => setItemTitle(e.target.value)}
-                    className="watchlist-input"
-                  />
-                </div>
-
-                <div className="watchlist-form-group">
-                  <label className="watchlist-form-label">Sector (Optional)</label>
-                  <input
-                    type="text"
-                    placeholder="e.g. Electric Vehicles, Auto Ancillaries"
-                    value={itemSubtitle}
-                    onChange={(e) => setItemSubtitle(e.target.value)}
                     className="watchlist-input"
                   />
                 </div>

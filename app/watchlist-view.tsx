@@ -7,8 +7,6 @@ import {
   ArrowUpDown,
   BarChart3,
   Bookmark,
-  ChevronDown,
-  ChevronUp,
   ExternalLink,
   GripVertical,
   Plus,
@@ -458,23 +456,6 @@ export default function WatchlistView() {
     void saveReorderedItems(updated);
   };
 
-  const handleMoveRow = (indexInVisible: number, delta: -1 | 1) => {
-    const targetIdx = indexInVisible + delta;
-    if (targetIdx < 0 || targetIdx >= visibleItems.length) return;
-
-    const currentItem = visibleItems[indexInVisible];
-    const targetItem = visibleItems[targetIdx];
-
-    const fromIndex = items.findIndex((i) => i.itemType === currentItem.itemType && i.itemKey === currentItem.itemKey);
-    const toIndex = items.findIndex((i) => i.itemType === targetItem.itemType && i.itemKey === targetItem.itemKey);
-    if (fromIndex === -1 || toIndex === -1) return;
-
-    const updated = [...items];
-    const [moved] = updated.splice(fromIndex, 1);
-    updated.splice(toIndex, 0, moved);
-    void saveReorderedItems(updated);
-  };
-
   const visibleItems = useMemo(() => {
     const q = tableFilter.trim().toLowerCase();
     const list = items.filter((item) => {
@@ -703,37 +684,13 @@ export default function WatchlistView() {
                     }`}
                   >
                     <td className="watchlist-cell-drag" onClick={(e) => e.stopPropagation()}>
-                      <div className="watchlist-drag-container">
-                        <span
-                          className="watchlist-drag-handle"
-                          title="Drag to arrange items"
-                          aria-label={`Drag to arrange ${item.itemTitle}`}
-                        >
-                          <GripVertical size={16} />
-                        </span>
-                        <div className="watchlist-reorder-arrows">
-                          <button
-                            type="button"
-                            onClick={() => handleMoveRow(index, -1)}
-                            disabled={index === 0}
-                            className="watchlist-reorder-btn"
-                            title="Move up"
-                            aria-label={`Move ${item.itemTitle} up`}
-                          >
-                            <ChevronUp size={12} />
-                          </button>
-                          <button
-                            type="button"
-                            onClick={() => handleMoveRow(index, 1)}
-                            disabled={index === visibleItems.length - 1}
-                            className="watchlist-reorder-btn"
-                            title="Move down"
-                            aria-label={`Move ${item.itemTitle} down`}
-                          >
-                            <ChevronDown size={12} />
-                          </button>
-                        </div>
-                      </div>
+                      <span
+                        className="watchlist-drag-handle"
+                        title="Drag to arrange items"
+                        aria-label={`Drag to arrange ${item.itemTitle}`}
+                      >
+                        <GripVertical size={16} />
+                      </span>
                     </td>
 
                     <td className="watchlist-cell-security" data-label="Security">

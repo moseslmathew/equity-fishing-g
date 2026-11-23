@@ -175,7 +175,42 @@ export default function WatchlistView() {
         throw new Error("Failed to load watchlist");
       }
       const data = (await res.json()) as { items?: WatchlistItem[] };
-      const list = data.items || [];
+      let list = data.items || [];
+
+      // Check localStorage for any previous items saved under observatory.watchlist.v1
+      if (typeof window !== "undefined") {
+        try {
+          const raw = localStorage.getItem("observatory.watchlist.v1");
+          const savedSymbols: string[] = raw ? JSON.parse(raw) : [];
+          if (Array.isArray(savedSymbols) && savedSymbols.length > 0) {
+            const existingKeys = new Set(list.map((i) => i.itemKey.toUpperCase()));
+            const missing = savedSymbols.filter((s) => typeof s === "string" && !existingKeys.has(s.toUpperCase()));
+            if (missing.length > 0) {
+              for (const sym of missing) {
+                try {
+                  const addRes = await fetch("/api/watchlist", {
+                    method: "POST",
+                    headers: { ...authHeaders, "Content-Type": "application/json" },
+                    body: JSON.stringify({
+                      itemType: "stock",
+                      itemKey: sym.toUpperCase(),
+                      itemTitle: sym.toUpperCase(),
+                    }),
+                  });
+                  if (addRes.ok) {
+                    const addData = (await addRes.json()) as { item?: WatchlistItem };
+                    if (addData.item) list.push(addData.item);
+                  }
+                } catch {}
+              }
+            }
+          }
+          // Mirror back to localStorage so both persist
+          const stockKeys = list.filter((i) => i.itemType === "stock").map((i) => i.itemKey.toUpperCase());
+          localStorage.setItem("observatory.watchlist.v1", JSON.stringify(stockKeys));
+        } catch {}
+      }
+
       setItems(list);
       void fetchLiveQuotes(list);
     } catch (err) {
@@ -365,7 +400,16 @@ export default function WatchlistView() {
         headers: authHeaders,
       });
       if (res.ok) {
-        setItems((prev) => prev.filter((i) => !(i.itemType === type && i.itemKey === key)));
+        setItems((prev) => {
+          const next = prev.filter((i) => !(i.itemType === type && i.itemKey === key));
+          if (typeof window !== "undefined") {
+            try {
+              const stockKeys = next.filter((i) => i.itemType === "stock").map((i) => i.itemKey.toUpperCase());
+              localStorage.setItem("observatory.watchlist.v1", JSON.stringify(stockKeys));
+            } catch {}
+          }
+          return next;
+        });
       }
     } catch (err) {
       console.error("Failed to remove item", err);

@@ -59,6 +59,21 @@ async function ensureWatchlistTable(db: DatabaseClient): Promise<void> {
   await ensuredWatchlistTable;
 }
 
+export const DEFAULT_SEED_STOCKS: Array<{
+  itemType: "stock";
+  itemKey: string;
+  itemTitle: string;
+  itemSubtitle: string;
+  notes?: string;
+}> = [
+  { itemType: "stock", itemKey: "ATHERENERG", itemTitle: "Ather Energy Limited", itemSubtitle: "Automotive & Electric Mobility", notes: "Core 2W EV thesis" },
+  { itemType: "stock", itemKey: "SAILIFE", itemTitle: "Sai Life Sciences Limited", itemSubtitle: "Pharmaceuticals & CDMO", notes: "High margin CDMO ramp-up" },
+  { itemType: "stock", itemKey: "ZETWERK", itemTitle: "Zetwerk Manufacturing Businesses", itemSubtitle: "Precision Engineering & Aerospace", notes: "Global supply chain beneficiary" },
+  { itemType: "stock", itemKey: "BONFIG", itemTitle: "Bonfiglioli Transmissions Private Limited", itemSubtitle: "Capital Goods & Transmission", notes: "Industrial gearbox manufacturing" },
+  { itemType: "stock", itemKey: "SANSERA", itemTitle: "Sansera Engineering Limited", itemSubtitle: "Auto Ancillary & Precision Forging", notes: "Aerospace diversification" },
+  { itemType: "stock", itemKey: "FEDERALBNK", itemTitle: "The Federal Bank Limited", itemSubtitle: "Banking & Financial Services", notes: "Commercial banking & asset quality" },
+];
+
 export async function getUserWatchlist(userId: string): Promise<WatchlistItem[]> {
   const db = database();
   await ensureWatchlistTable(db);
@@ -85,25 +100,50 @@ export async function getUserWatchlist(userId: string): Promise<WatchlistItem[]>
       .bind("default-user")
       .all<WatchlistItem>();
     const defaults = defaultRows.results || [];
-    for (let i = 0; i < defaults.length; i++) {
-      const item = defaults[i];
+    if (defaults.length > 0) {
+      for (let i = 0; i < defaults.length; i++) {
+        const item = defaults[i];
+        await addToWatchlist({
+          userId,
+          itemType: item.itemType,
+          itemKey: item.itemKey,
+          itemTitle: item.itemTitle,
+          itemSubtitle: item.itemSubtitle,
+          notes: item.notes,
+          sortOrder: item.sortOrder ?? i,
+        });
+      }
+      return getUserWatchlist(userId);
+    }
+  }
+
+  // If list is still empty, auto-seed default stocks so watchlist is never empty
+  if (list.length === 0) {
+    for (let i = 0; i < DEFAULT_SEED_STOCKS.length; i++) {
+      const seed = DEFAULT_SEED_STOCKS[i];
       await addToWatchlist({
         userId,
-        itemType: item.itemType,
-        itemKey: item.itemKey,
-        itemTitle: item.itemTitle,
-        itemSubtitle: item.itemSubtitle,
-        notes: item.notes,
-        sortOrder: item.sortOrder ?? i,
+        itemType: seed.itemType,
+        itemKey: seed.itemKey,
+        itemTitle: seed.itemTitle,
+        itemSubtitle: seed.itemSubtitle,
+        notes: seed.notes,
+        sortOrder: i,
       });
     }
-    list = defaults.map((d: any, idx: number) => ({
-      ...d,
-      userId,
-      id: `${userId}:${d.itemType}:${d.itemKey}`,
-      sortOrder: typeof d.sortOrder === "number" ? d.sortOrder : idx,
-      createdAt: typeof d.createdAt === "object" && d.createdAt?.toISOString ? d.createdAt.toISOString() : String(d.createdAt || new Date().toISOString()),
-      updatedAt: typeof d.updatedAt === "object" && d.updatedAt?.toISOString ? d.updatedAt.toISOString() : String(d.updatedAt || new Date().toISOString()),
+
+    const seededRows = await db
+      .prepare(
+        'SELECT id, user_id as "userId", item_type as "itemType", item_key as "itemKey", item_title as "itemTitle", item_subtitle as "itemSubtitle", notes, COALESCE(sort_order, 0) as "sortOrder", created_at as "createdAt", updated_at as "updatedAt" FROM user_watchlists WHERE user_id = ? ORDER BY sort_order ASC, created_at DESC'
+      )
+      .bind(userId)
+      .all<WatchlistItem>();
+
+    list = (seededRows.results || []).map((r: any, idx: number) => ({
+      ...r,
+      sortOrder: typeof r.sortOrder === "number" ? r.sortOrder : idx,
+      createdAt: typeof r.createdAt === "object" && r.createdAt?.toISOString ? r.createdAt.toISOString() : String(r.createdAt || new Date().toISOString()),
+      updatedAt: typeof r.updatedAt === "object" && r.updatedAt?.toISOString ? r.updatedAt.toISOString() : String(r.updatedAt || new Date().toISOString()),
     }));
   }
 

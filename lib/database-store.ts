@@ -2,6 +2,10 @@ import {env} from "cloudflare:workers";
 import {neon} from "@neondatabase/serverless";
 import performanceExpansion from "../data/performance-fund-expansion.json";
 import octoberRecheck from "../data/october-recheck.json";
+import growwExpansion from "../data/groww-expansion.json";
+import shortlistExpansion from "../data/shortlist-expansion.json";
+import requestedFunds from "../data/requested-funds.json";
+import whiteoakExpansion from "../data/whiteoak-expansion.json";
 import expansion from "../data/fund-expansion-2026-10.json";
 import seed from "../data/seed.json";
 import september from "../data/september-portfolios.json";
@@ -160,6 +164,10 @@ async function initializeDatabase(){
  await importOctober(db);
  await importPerformanceExpansion(db);
  await importOctoberRecheck(db);
+ await importWhiteoakExpansion(db);
+ await importAdditionalFunds(db, "groww-expansion", growwExpansion);
+ await importAdditionalFunds(db, "shortlist-expansion", shortlistExpansion);
+ await importAdditionalFunds(db, "requested-funds", requestedFunds);
 }
 async function importOctober(db:DatabaseClient){
  const marker="import:october-2026:"+october.checkedAt;
@@ -250,4 +258,26 @@ async function importOctoberRecheck(db:DatabaseClient){
  const current=parse<Portfolio>(await db.prepare("SELECT payload FROM app_documents WHERE key=?").bind("portfolio:current").first<{payload:string}>());
  if(current){const all=current.funds.map(f=>{const next=funds.find(n=>n.id===f.id);return next&&next.portfolioDate>=f.portfolioDate&&next.lastCheckedAt>f.lastCheckedAt?next:f;});await db.batch([documentStatement(db,"portfolio:current",{...current,funds:all,checkedAt:octoberRecheck.checkedAt},octoberRecheck.checkedAt)]);}
  await db.batch([documentStatement(db,marker,{funds:funds.length,audit:octoberRecheck.audit},octoberRecheck.checkedAt)]);
+}
+
+async function importWhiteoakExpansion(db:DatabaseClient){
+ const marker="import:whiteoak-expansion:"+whiteoakExpansion.checkedAt;
+ if(await db.prepare("SELECT key FROM app_documents WHERE key=?").bind(marker).first())return;
+ const funds=whiteoakExpansion.funds as Fund[],comparisons=whiteoakExpansion.comparisons as FullComparison[];
+ for(const c of comparisons)validateFullComparison(c);
+ await batches(db,[...funds.map(f=>fundStatement(db,f)),...comparisons.map(c=>comparisonStatement(db,c))]);
+ const current=parse<Portfolio>(await db.prepare("SELECT payload FROM app_documents WHERE key=?").bind("portfolio:current").first<{payload:string}>());
+ if(current){const all=[...current.funds];for(const f of funds)if(!all.some(old=>old.id===f.id))all.push(f);const checkedAt=[current.checkedAt,whiteoakExpansion.checkedAt].sort().at(-1)!;await db.batch([documentStatement(db,"portfolio:current",{...current,funds:all,checkedAt},checkedAt)]);}
+ await db.batch([documentStatement(db,marker,{funds:funds.length,audit:whiteoakExpansion.audit},whiteoakExpansion.checkedAt)]);
+}
+
+async function importAdditionalFunds(db:DatabaseClient, key:string, expansion:{checkedAt:string; funds:unknown[]; comparisons:unknown[]; audit:unknown[]}){
+ const marker="import:"+key+":"+expansion.checkedAt;
+ if(await db.prepare("SELECT key FROM app_documents WHERE key=?").bind(marker).first())return;
+ const funds=expansion.funds as Fund[],comparisons=expansion.comparisons as FullComparison[];
+ for(const c of comparisons)validateFullComparison(c);
+ await batches(db,[...funds.map(f=>fundStatement(db,f)),...comparisons.map(c=>comparisonStatement(db,c))]);
+ const current=parse<Portfolio>(await db.prepare("SELECT payload FROM app_documents WHERE key=?").bind("portfolio:current").first<{payload:string}>());
+ if(current){const all=[...current.funds];for(const f of funds)if(!all.some(old=>old.id===f.id))all.push(f);const checkedAt=[current.checkedAt,expansion.checkedAt].sort().at(-1)!;await db.batch([documentStatement(db,"portfolio:current",{...current,funds:all,checkedAt},checkedAt)]);}
+ await db.batch([documentStatement(db,marker,{funds:funds.length,audit:expansion.audit},expansion.checkedAt)]);
 }

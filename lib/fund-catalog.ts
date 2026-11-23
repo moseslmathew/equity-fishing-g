@@ -1,4 +1,41 @@
 export const fundCatalog = [
+  {"id": "ppfas-elss", "name": "Parag Parikh ELSS Tax Saver Fund"},
+  {"id": "mirae-elss", "name": "Mirae Asset ELSS Tax Saver Fund"},
+  {"id": "mirae-large", "name": "Mirae Asset Large Cap Fund"},
+  {"id": "icici-value", "name": "ICICI Prudential Value Fund"},
+  {"id": "icici-opportunities", "name": "ICICI Prudential India Opportunities Fund"},
+  {"id": "icici-aggressive", "name": "ICICI Prudential Aggressive Hybrid Fund"},
+  {"id": "icici-multiasset", "name": "ICICI Prudential Multi Asset Allocation Fund"},
+  {"id": "sbi-focused", "name": "SBI Focused Fund"},
+  {"id": "kotak-flexi", "name": "Kotak Flexi Cap Fund"},
+  {"id": "kotak-large-mid", "name": "Kotak Large & Mid Cap Fund"},
+  {"id": "uti-flexi", "name": "UTI Flexi Cap Fund"},
+  {"id": "canara-large", "name": "Canara Robeco Large Cap Fund"},
+  {"id": "canara-flexi", "name": "Canara Robeco Flexicap Fund"},
+  {"id": "canara-large-mid", "name": "Canara Robeco Large And Mid Cap Fund"},
+  {"id": "nippon-multi", "name": "Nippon India Multi Cap Fund"},
+  {"id": "oldbridge-focused", "name": "Old Bridge Focused Fund"},
+
+  {"id": "ppfas-flexi", "name": "Parag Parikh Flexi Cap Fund"},
+  {"id": "mirae-large-mid", "name": "Mirae Asset Large & Midcap Fund"},
+  {"id": "hdfc-small", "name": "HDFC Small Cap Fund"},
+  {"id": "nippon-large", "name": "Nippon India Large Cap Fund"},
+  {"id": "sbi-contra", "name": "SBI Contra Fund"},
+  {"id": "edelweiss-flexi", "name": "Edelweiss Flexi Cap Fund"},
+  {"id": "franklin-flexi", "name": "Franklin India Flexi Cap Fund"},
+
+  {"id": "groww-multi", "name": "Groww Multicap Fund"},
+  {"id": "groww-large", "name": "Groww Large Cap Fund"},
+  {"id": "groww-value", "name": "Groww Value Fund"},
+  {"id": "groww-elss", "name": "Groww ELSS Tax Saver Fund"},
+
+  {id:"whiteoak-flexi",name:"WhiteOak Capital Flexi Cap Fund"},
+  {id:"whiteoak-large",name:"WhiteOak Capital Large Cap Fund"},
+  {id:"whiteoak-large-mid",name:"WhiteOak Capital Large & Mid Cap Fund"},
+  {id:"whiteoak-multi",name:"WhiteOak Capital Multi Cap Fund"},
+  {id:"whiteoak-elss",name:"WhiteOak Capital ELSS Tax Saver Fund"},
+  {id:"whiteoak-dividend",name:"WhiteOak Capital Dividend Yield Fund"},
+
   {id:"bandhan-small",name:"Bandhan Small Cap Fund"},
   {id:"boi-small",name:"Bank of India Small Cap Fund"},
   {id:"quant-small",name:"Quant Small Cap Fund"},
@@ -45,17 +82,21 @@ export const fundCatalog = [
   {id:"franklin-mid",name:"Franklin India Mid Cap Fund"},
 ];
 export const schemeAliases:Record<string,string[]> = {
+  "icici-aggressive":["ICICI Prudential Equity & Debt Fund"],
+  "icici-multiasset":["ICICI Prudential Multi-Asset Fund"],
+  "kotak-flexi":["Kotak Flexicap Fund"],
+  "canara-flexi":["Canara Robeco Flexi Cap Fund"],
   "franklin-small":["Franklin India Smaller Companies Fund"],
   "kotak-mid":["Kotak Emerging Equity Fund"],
   "franklin-mid":["Franklin India Prima Fund"],
   "dsp-mid":["DSP Mid Cap Fund"],
 };
 export const schemeNames:Record<string,string> = Object.fromEntries(fundCatalog.map(f=>[f.id,f.name]));
-export const schemeCategories:Record<string,string> = Object.fromEntries(fundCatalog.map(f=>[f.id,({"helios-financial":"Financial services · Sector equity","helios-flexi":"Flexi cap","helios-large-mid":"Large & mid cap","helios-mid":"Mid cap","whiteoak-mid":"Mid cap","dsp-mid":"Mid cap","edelweiss-mid":"Mid cap","uti-mid":"Mid cap","kotak-mid":"Mid cap","franklin-mid":"Mid cap","motilal-mid":"Mid cap","invesco-mid":"Mid cap","hsbc-mid":"Mid cap","hdfc-mid":"Mid cap","nippon-mid":"Mid cap","icici-mid":"Mid cap"} as Record<string,string>)[f.id]??"Small cap"]));
+export const schemeCategories:Record<string,string> = Object.fromEntries(fundCatalog.map(f=>[f.id,({"ppfas-elss":"ELSS Tax Saver","mirae-elss":"ELSS Tax Saver","mirae-large":"Large Cap","icici-value":"Value","icici-opportunities":"Special Situations","icici-aggressive":"Aggressive Hybrid","icici-multiasset":"Multi Asset Allocation","sbi-focused":"Focused","kotak-flexi":"Flexi Cap","kotak-large-mid":"Large & Mid Cap","uti-flexi":"Flexi Cap","canara-large":"Large Cap","canara-flexi":"Flexi Cap","canara-large-mid":"Large & Mid Cap","nippon-multi":"Multi Cap","oldbridge-focused":"Focused","ppfas-flexi":"Flexi Cap","mirae-large-mid":"Large & Mid Cap","hdfc-small":"Small cap","nippon-large":"Large Cap","sbi-contra":"Contra","edelweiss-flexi":"Flexi Cap","franklin-flexi":"Flexi Cap","groww-multi":"Multicap","groww-large":"Large Cap","groww-value":"Value","groww-elss":"ELSS Tax Saver","whiteoak-flexi":"Flexi Cap","whiteoak-large":"Large Cap","whiteoak-large-mid":"Large & Mid Cap","whiteoak-multi":"Multi Cap","whiteoak-elss":"ELSS Tax Saver","whiteoak-dividend":"Dividend Yield","helios-financial":"Financial services · Sector equity","helios-flexi":"Flexi cap","helios-large-mid":"Large & mid cap","helios-mid":"Mid cap","whiteoak-mid":"Mid cap","dsp-mid":"Mid cap","edelweiss-mid":"Mid cap","uti-mid":"Mid cap","kotak-mid":"Mid cap","franklin-mid":"Mid cap","motilal-mid":"Mid cap","invesco-mid":"Mid cap","hsbc-mid":"Mid cap","hdfc-mid":"Mid cap","nippon-mid":"Mid cap","icici-mid":"Mid cap"} as Record<string,string>)[f.id]??"Small cap"]));
 export const selectionEvidence = {
   checkedOn:"2026-10-20",
   url:"https://www.indmoney.com/mutual-funds/equity/small-cap",
-  note:"The original 20 active small-cap schemes, retaining the original eight and adding the twelve largest remaining non-bank-branded schemes in the checked category list. The original selection excluded Tata, Franklin and Quant; Franklin schemes were subsequently added at your request. Coverage uses reported scheme AUM checked on 2 October 2026; fund cards and table rows are displayed alphabetically by full fund name. This is not a ranking of research quality or trust. Passive funds, ETFs and funds of funds are excluded. Four additional Helios equity schemes—Financial Services, Flexi Cap, Large & Mid Cap and Mid Cap—were added at your request on 15 October 2026. They are labelled by category and grouped with Helios Small Cap Fund. Ten further schemes—four small-cap and six mid-cap funds—were added at your request on 20 October 2026. Nine historically strong-performing schemes were added at user request on 16 November 2026. The catalogue now contains 43 schemes: 27 small-cap, 13 mid-cap, and three other Helios categories. The nine additions have provider-sourced October holdings; original AMC verification remains pending. Holdings dates are separate from selection dates."
+  note:"The original 20 active small-cap schemes, retaining the original eight and adding the twelve largest remaining non-bank-branded schemes in the checked category list. The original selection excluded Tata, Franklin and Quant; Franklin schemes were subsequently added at your request. Coverage uses reported scheme AUM checked on 2 October 2026; fund cards and table rows are displayed alphabetically by full fund name. This is not a ranking of research quality or trust. Passive funds, ETFs and funds of funds are excluded. Four additional Helios equity schemes—Financial Services, Flexi Cap, Large & Mid Cap and Mid Cap—were added at your request on 15 October 2026. They are labelled by category and grouped with Helios Small Cap Fund. Ten further schemes—four small-cap and six mid-cap funds—were added at your request on 20 October 2026. Nine historically strong-performing schemes were added at user request on 16 November 2026. The catalogue now contains 43 schemes: 27 small-cap, 13 mid-cap, and three other Helios categories. The nine additions have provider-sourced October holdings; original AMC verification remains pending. Six additional diversified WhiteOak equity schemes were added on 20 November 2026 with provider-sourced October holdings. The current catalogue contains 49 schemes, including seven WhiteOak schemes. Four additional diversified Groww equity schemes were added on 20 November 2026 with provider-sourced October holdings. The catalogue then contained 53 schemes, including five Groww schemes. Seven further active equity schemes were added on 21 November 2026, bringing coverage to 60 funds. The subsequent 16 additions brought coverage to 76 schemes, including two hybrid schemes tracked for their equity holdings. Holdings dates are separate from selection dates."
 };
 
-export const fundUniverseDescription = `${fundCatalog.length} equity funds · ${fundCatalog.filter(f=>schemeCategories[f.id]==="Small cap").length} small-cap · ${fundCatalog.filter(f=>schemeCategories[f.id]==="Mid cap").length} mid-cap · 3 other equity schemes`;
+export const fundUniverseDescription = `${fundCatalog.length} funds · ${fundCatalog.filter(f=>schemeCategories[f.id]==="Small cap").length} small-cap · ${fundCatalog.filter(f=>schemeCategories[f.id]==="Mid cap").length} mid-cap · ${fundCatalog.filter(f=>!["Small cap","Mid cap"].includes(schemeCategories[f.id])).length} other schemes`;

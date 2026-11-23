@@ -1,0 +1,4181 @@
+{
+  "checkedAt": "2026-11-20T04:17:02.327Z",
+  "funds": [
+    {
+      "id": "groww-multi",
+      "name": "Groww Multicap Fund",
+      "monogram": "GW",
+      "color": "#00a98f",
+      "portfolioDate": "2026-10-31",
+      "lastCheckedAt": "2026-11-20T04:17:02.327Z",
+      "verification": "provider_only",
+      "checkStatus": "checked",
+      "holdings": [
+        {
+          "key": "INE0LEZ01016",
+          "name": "Ather Energy Limited",
+          "weight": 3.1267
+        },
+        {
+          "key": "INE397D01024",
+          "name": "Bharti Airtel Limited",
+          "weight": 2.9776
+        },
+        {
+          "key": "INE0V6F01027",
+          "name": "Hyundai Motor India Limited",
+          "weight": 2.4803
+        },
+        {
+          "key": "INE419M01035",
+          "name": "TD Power Systems Limited",
+          "weight": 2.4677
+        },
+        {
+          "key": "INE009A01021",
+          "name": "Infosys Limited",
+          "weight": 2.3899
+        },
+        {
+          "key": "INE042A01014",
+          "name": "Escorts Kubota Limited",
+          "weight": 2.3794
+        },
+        {
+          "key": "INE877D01025",
+          "name": "Kanohar Electricals Limited",
+          "weight": 2.3738
+        },
+        {
+          "key": "INE241U01028",
+          "name": "Manipal Payment Identity Solutions Ltd",
+          "weight": 2.1441
+        },
+        {
+          "key": "INE018A01030",
+          "name": "Larsen & Toubro Limited",
+          "weight": 2.1243
+        },
+        {
+          "key": "INE208A01029",
+          "name": "Ashok Leyland Limited",
+          "weight": 2.0763
+        },
+        {
+          "key": "INE551W01018",
+          "name": "Ujjivan Small Finance Bank Limited",
+          "weight": 2.0553
+        },
+        {
+          "key": "INE101A01026",
+          "name": "Mahindra & Mahindra Limited",
+          "weight": 1.9955
+        },
+        {
+          "key": "INE745G01043",
+          "name": "Multi Commodity Exchange of India Ltd.",
+          "weight": 1.9564
+        },
+        {
+          "key": "INE513A01022",
+          "name": "Schaeffler India Ltd",
+          "weight": 1.9102
+        },
+        {
+          "key": "INE073K01018",
+          "name": "Sona BLW Precision Forgings Limited",
+          "weight": 1.8814
+        },
+        {
+          "key": "INE066A01021",
+          "name": "Eicher Motors Limited",
+          "weight": 1.8727
+        },
+        {
+          "key": "INE12F801023",
+          "name": "OnEMI Technology Solutions Limited",
+          "weight": 1.8671
+        },
+        {
+          "key": "INE372A01015",
+          "name": "APAR INDUSTRIES LTD",
+          "weight": 1.8198
+        },
+        {
+          "key": "INE758T01015",
+          "name": "Eternal Limited",
+          "weight": 1.8196
+        },
+        {
+          "key": "INE388Y01029",
+          "name": "FSN E-Commerce Ventures Limited",
+          "weight": 1.7921
+        },
+        {
+          "key": "INE19RI01016",
+          "name": "TENNECO CLEAN AIR INDIA LIMITED",
+          "weight": 1.7351
+        },
+        {
+          "key": "INE180A01020",
+          "name": "Max Financial Services Limited",
+          "weight": 1.6311
+        },
+        {
+          "key": "INE0W2G01015",
+          "name": "Sagility Limited",
+          "weight": 1.5522
+        },
+        {
+          "key": "INE118H01025",
+          "name": "BSE Ltd",
+          "weight": 1.5003
+        },
+        {
+          "key": "INE090A01021",
+          "name": "ICICI Bank Limited",
+          "weight": 1.4583
+        },
+        {
+          "key": "INE356A01018",
+          "name": "MphasiS Limited",
+          "weight": 1.3647
+        },
+        {
+          "key": "INE200A01026",
+          "name": "GE Vernova T&D India Limited",
+          "weight": 1.2698
+        },
+        {
+          "key": "INE761H01022",
+          "name": "Page Industries Limited",
+          "weight": 1.2613
+        },
+        {
+          "key": "INE324D01010",
+          "name": "LG Electronics India Limited",
+          "weight": 1.2321
+        },
+        {
+          "key": "INE0JO301016",
+          "name": "Yatharth Hospital & Trauma Care Serv Ltd",
+          "weight": 1.2306
+        },
+        {
+          "key": "INE686Y01026",
+          "name": "FINE ORGANIC INDUSTRIES LIMITED",
+          "weight": 1.2005
+        },
+        {
+          "key": "INE01NH01023",
+          "name": "Dhoot Transmission Limited",
+          "weight": 1.1631
+        },
+        {
+          "key": "INE298A01020",
+          "name": "Cummins India Limited",
+          "weight": 1.1043
+        },
+        {
+          "key": "INE263A01024",
+          "name": "Bharat Electronics Limited",
+          "weight": 1.0896
+        },
+        {
+          "key": "INE498L01015",
+          "name": "L&T Finance Limited",
+          "weight": 1.0866
+        },
+        {
+          "key": "INE00LO01017",
+          "name": "CRAFTSMAN AUTOMATION LIMITED",
+          "weight": 1.0832
+        },
+        {
+          "key": "INE849A01020",
+          "name": "Trent Limited",
+          "weight": 1.0799
+        },
+        {
+          "key": "INE0KBH01020",
+          "name": "Blue Jet Healthcare Ltd",
+          "weight": 1.0697
+        },
+        {
+          "key": "INE974X01010",
+          "name": "TUBE INVESTMENTS OF INDIA LTD",
+          "weight": 1.059
+        },
+        {
+          "key": "INE044A01036",
+          "name": "Sun Pharmaceutical Industries Limited",
+          "weight": 1.01
+        },
+        {
+          "key": "INE048G01026",
+          "name": "Navin Fluorine International Limited",
+          "weight": 1.0075
+        },
+        {
+          "key": "INE702C01027",
+          "name": "APL Apollo Tubes Limited",
+          "weight": 1.0042
+        },
+        {
+          "key": "INE810G01011",
+          "name": "Shyam Metalics and Energy Ltd.",
+          "weight": 1.0014
+        },
+        {
+          "key": "INE823G01014",
+          "name": "JK Cement Limited",
+          "weight": 0.9921
+        },
+        {
+          "key": "INE089A01031",
+          "name": "Dr. Reddy's Laboratories Limited",
+          "weight": 0.9845
+        },
+        {
+          "key": "INE976G01028",
+          "name": "RBL Bank Limited",
+          "weight": 0.9669
+        },
+        {
+          "key": "INE361B01024",
+          "name": "Divi's Laboratories Limited",
+          "weight": 0.9339
+        },
+        {
+          "key": "INE062A01020",
+          "name": "State Bank of India",
+          "weight": 0.9153
+        },
+        {
+          "key": "INE169A01031",
+          "name": "Coromandel International Limited",
+          "weight": 0.906
+        },
+        {
+          "key": "INE899I01028",
+          "name": "Symbiotec Pharmalab Ltd",
+          "weight": 0.8775
+        },
+        {
+          "key": "INE775A01035",
+          "name": "Samvardhana Motherson International Ltd",
+          "weight": 0.8706
+        },
+        {
+          "key": "INE591G01025",
+          "name": "Coforge Limited",
+          "weight": 0.85
+        },
+        {
+          "key": "INE02IJ01035",
+          "name": "Azad Engineering Limited",
+          "weight": 0.826
+        },
+        {
+          "key": "INE346A01027",
+          "name": "ICICI Prudential AMC Ltd",
+          "weight": 0.8
+        },
+        {
+          "key": "INE0JA001018",
+          "name": "VENUS PIPES & TUBES LTD",
+          "weight": 0.7606
+        },
+        {
+          "key": "INE296A01032",
+          "name": "Bajaj Finance Limited",
+          "weight": 0.7036
+        },
+        {
+          "key": "INE494B01023",
+          "name": "TVS Motor Company Limited",
+          "weight": 0.6769
+        },
+        {
+          "key": "INE065X01017",
+          "name": "Indegene Limited",
+          "weight": 0.6675
+        },
+        {
+          "key": "INE00F201020",
+          "name": "Prudent Corporate Advisory Services Ltd",
+          "weight": 0.6513
+        },
+        {
+          "key": "INE0IX101010",
+          "name": "Data Patterns (India) Limited",
+          "weight": 0.5795
+        }
+      ],
+      "sources": [
+        {
+          "label": "October 2026 published portfolio",
+          "url": "https://decryptmutualfunds.com/fund-houses/groww/multicap-fund",
+          "type": "third_party",
+          "portfolioDate": "2026-10-31",
+          "matched": true
+        },
+        {
+          "label": "Groww AMC scheme page · identity reference only",
+          "url": "https://www.growwmf.in/mutual-funds/groww-multicap-fund-direct-growth",
+          "type": "official",
+          "portfolioDate": "2026-10-31",
+          "matched": false
+        }
+      ],
+      "notes": [
+        "Equity holdings from the October provider disclosure. Original AMC verification remains pending.",
+        "The AMC scheme page confirms scheme identity; it does not corroborate portfolio quantities.",
+        "Debt, ETFs, fund units, REITs and InvITs are excluded. Allocations are percentages of total fund net assets."
+      ]
+    },
+    {
+      "id": "groww-large",
+      "name": "Groww Large Cap Fund",
+      "monogram": "GW",
+      "color": "#00a98f",
+      "portfolioDate": "2026-10-31",
+      "lastCheckedAt": "2026-11-20T04:17:02.327Z",
+      "verification": "provider_only",
+      "checkStatus": "checked",
+      "holdings": [
+        {
+          "key": "INE090A01021",
+          "name": "ICICI Bank Limited",
+          "weight": 8.7991
+        },
+        {
+          "key": "INE018A01030",
+          "name": "Larsen & Toubro Limited",
+          "weight": 6.9658
+        },
+        {
+          "key": "INE397D01024",
+          "name": "Bharti Airtel Limited",
+          "weight": 5.1058
+        },
+        {
+          "key": "INE040A01034",
+          "name": "HDFC Bank Limited",
+          "weight": 5.0008
+        },
+        {
+          "key": "INE361B01024",
+          "name": "Divi's Laboratories Limited",
+          "weight": 4.5478
+        },
+        {
+          "key": "INE758T01015",
+          "name": "Eternal Limited",
+          "weight": 4.0728
+        },
+        {
+          "key": "INE238A01034",
+          "name": "Axis Bank Limited",
+          "weight": 3.347
+        },
+        {
+          "key": "INE062A01020",
+          "name": "State Bank of India",
+          "weight": 2.9005
+        },
+        {
+          "key": "INE009A01021",
+          "name": "Infosys Limited",
+          "weight": 2.812
+        },
+        {
+          "key": "INE775A01035",
+          "name": "Samvardhana Motherson International Ltd",
+          "weight": 2.5013
+        },
+        {
+          "key": "INE002A01018",
+          "name": "Reliance Industries Limited",
+          "weight": 2.3896
+        },
+        {
+          "key": "INE669C01036",
+          "name": "Tech Mahindra Limited",
+          "weight": 2.3882
+        },
+        {
+          "key": "INE237A01036",
+          "name": "Kotak Mahindra Bank Limited",
+          "weight": 2.2465
+        },
+        {
+          "key": "INE101A01026",
+          "name": "Mahindra & Mahindra Limited",
+          "weight": 2.1519
+        },
+        {
+          "key": "INE685A01028",
+          "name": "Torrent Pharmaceuticals Limited",
+          "weight": 2.1018
+        },
+        {
+          "key": "INE296A01032",
+          "name": "Bajaj Finance Limited",
+          "weight": 2.061
+        },
+        {
+          "key": "INE298A01020",
+          "name": "Cummins India Limited",
+          "weight": 1.9875
+        },
+        {
+          "key": "INE0LEZ01016",
+          "name": "Ather Energy Limited",
+          "weight": 1.9108
+        },
+        {
+          "key": "INE118H01025",
+          "name": "BSE Ltd",
+          "weight": 1.8274
+        },
+        {
+          "key": "INE123W01016",
+          "name": "SBI Life Insurance Company Limited",
+          "weight": 1.5712
+        },
+        {
+          "key": "INE263A01024",
+          "name": "Bharat Electronics Limited",
+          "weight": 1.4162
+        },
+        {
+          "key": "INE324D01010",
+          "name": "LG Electronics India Limited",
+          "weight": 1.2085
+        },
+        {
+          "key": "INE089A01031",
+          "name": "Dr. Reddy's Laboratories Limited",
+          "weight": 1.2059
+        },
+        {
+          "key": "INE0V6F01027",
+          "name": "Hyundai Motor India Limited",
+          "weight": 1.176
+        },
+        {
+          "key": "INE481G01011",
+          "name": "UltraTech Cement Limited",
+          "weight": 1.1217
+        },
+        {
+          "key": "INE073K01018",
+          "name": "Sona BLW Precision Forgings Limited",
+          "weight": 1.0982
+        },
+        {
+          "key": "INE591G01025",
+          "name": "Coforge Limited",
+          "weight": 1.0533
+        },
+        {
+          "key": "INE356A01018",
+          "name": "MphasiS Limited",
+          "weight": 0.9888
+        },
+        {
+          "key": "INE044A01036",
+          "name": "Sun Pharmaceutical Industries Limited",
+          "weight": 0.9873
+        },
+        {
+          "key": "INE1CDF01017",
+          "name": "Vedanta Aluminium Metal Limited",
+          "weight": 0.9728
+        },
+        {
+          "key": "INE081A01020",
+          "name": "Tata Steel Limited",
+          "weight": 0.9587
+        },
+        {
+          "key": "INE280A01028",
+          "name": "Titan Company Limited",
+          "weight": 0.9572
+        },
+        {
+          "key": "INE053A01029",
+          "name": "The Indian Hotels Company Limited",
+          "weight": 0.9421
+        },
+        {
+          "key": "INE067A01029",
+          "name": "CG Power And Industrial Solutions Ltd",
+          "weight": 0.9332
+        },
+        {
+          "key": "INE494B01023",
+          "name": "TVS Motor Company Limited",
+          "weight": 0.913
+        },
+        {
+          "key": "INE200A01026",
+          "name": "GE Vernova T&D India Limited",
+          "weight": 0.907
+        },
+        {
+          "key": "INE721I01024",
+          "name": "National Stock Exchange of India Limited",
+          "weight": 0.9054
+        },
+        {
+          "key": "INE066A01021",
+          "name": "Eicher Motors Limited",
+          "weight": 0.8977
+        },
+        {
+          "key": "INE646L01027",
+          "name": "InterGlobe Aviation Limited",
+          "weight": 0.8846
+        },
+        {
+          "key": "INE030A01027",
+          "name": "Hindustan Unilever Limited",
+          "weight": 0.8817
+        },
+        {
+          "key": "INE721A01047",
+          "name": "Shriram Finance Limited",
+          "weight": 0.8806
+        },
+        {
+          "key": "INE038A01020",
+          "name": "Hindalco Industries Limited",
+          "weight": 0.8805
+        },
+        {
+          "key": "INE733E01010",
+          "name": "NTPC Limited",
+          "weight": 0.851
+        },
+        {
+          "key": "INE437A01024",
+          "name": "Apollo Hospitals Enterprise Limited",
+          "weight": 0.7354
+        },
+        {
+          "key": "INE836A01035",
+          "name": "Birlasoft Ltd",
+          "weight": 0.7264
+        },
+        {
+          "key": "INE976G01028",
+          "name": "RBL Bank Limited",
+          "weight": 0.713
+        },
+        {
+          "key": "INE323A01026",
+          "name": "Bosch Limited",
+          "weight": 0.6951
+        },
+        {
+          "key": "INE849A01020",
+          "name": "Trent Limited",
+          "weight": 0.6847
+        },
+        {
+          "key": "INE823G01014",
+          "name": "JK Cement Limited",
+          "weight": 0.6502
+        },
+        {
+          "key": "INE121A01024",
+          "name": "Cholamandalam Invest & Finance Co Ltd",
+          "weight": 0.5563
+        },
+        {
+          "key": "INE04I401011",
+          "name": "KPIT Technologies Limited",
+          "weight": 0.5385
+        },
+        {
+          "key": "INE066F01020",
+          "name": "Hindustan Aeronautics Limited",
+          "weight": 0.4764
+        },
+        {
+          "key": "INE208A01029",
+          "name": "Ashok Leyland Limited",
+          "weight": 0.4579
+        },
+        {
+          "key": "INE346A01027",
+          "name": "ICICI Prudential AMC Ltd",
+          "weight": 0.4507
+        },
+        {
+          "key": "INE200M01039",
+          "name": "Varun Beverages Limited",
+          "weight": 0.4266
+        },
+        {
+          "key": "INE343H01029",
+          "name": "Solar Industries India Limited",
+          "weight": 0.341
+        }
+      ],
+      "sources": [
+        {
+          "label": "October 2026 published portfolio",
+          "url": "https://decryptmutualfunds.com/fund-houses/groww/large-cap-fund",
+          "type": "third_party",
+          "portfolioDate": "2026-10-31",
+          "matched": true
+        },
+        {
+          "label": "Groww AMC scheme page · identity reference only",
+          "url": "https://www.growwmf.in/mutual-funds/groww-large-cap-fund-direct-growth",
+          "type": "official",
+          "portfolioDate": "2026-10-31",
+          "matched": false
+        }
+      ],
+      "notes": [
+        "Equity holdings from the October provider disclosure. Original AMC verification remains pending.",
+        "The AMC scheme page confirms scheme identity; it does not corroborate portfolio quantities.",
+        "Debt, ETFs, fund units, REITs and InvITs are excluded. Allocations are percentages of total fund net assets."
+      ]
+    },
+    {
+      "id": "groww-value",
+      "name": "Groww Value Fund",
+      "monogram": "GW",
+      "color": "#00a98f",
+      "portfolioDate": "2026-10-31",
+      "lastCheckedAt": "2026-11-20T04:17:02.327Z",
+      "verification": "provider_only",
+      "checkStatus": "checked",
+      "holdings": [
+        {
+          "key": "INE040A01034",
+          "name": "HDFC Bank Limited",
+          "weight": 7.8262
+        },
+        {
+          "key": "INE397D01024",
+          "name": "Bharti Airtel Limited",
+          "weight": 5.4231
+        },
+        {
+          "key": "INE090A01021",
+          "name": "ICICI Bank Limited",
+          "weight": 4.7699
+        },
+        {
+          "key": "INE002A01018",
+          "name": "Reliance Industries Limited",
+          "weight": 3.9358
+        },
+        {
+          "key": "INE062A01020",
+          "name": "State Bank of India",
+          "weight": 3.7784
+        },
+        {
+          "key": "INE018A01030",
+          "name": "Larsen & Toubro Limited",
+          "weight": 3.6117
+        },
+        {
+          "key": "INE009A01021",
+          "name": "Infosys Limited",
+          "weight": 3.1062
+        },
+        {
+          "key": "INE238A01034",
+          "name": "Axis Bank Limited",
+          "weight": 2.7934
+        },
+        {
+          "key": "INE180A01020",
+          "name": "Max Financial Services Limited",
+          "weight": 2.6835
+        },
+        {
+          "key": "INE551W01018",
+          "name": "Ujjivan Small Finance Bank Limited",
+          "weight": 2.5749
+        },
+        {
+          "key": "INE123W01016",
+          "name": "SBI Life Insurance Company Limited",
+          "weight": 2.1979
+        },
+        {
+          "key": "INE065X01017",
+          "name": "Indegene Limited",
+          "weight": 2.1219
+        },
+        {
+          "key": "INE597I01028",
+          "name": "Sharda Motor Industries Limited",
+          "weight": 1.8986
+        },
+        {
+          "key": "INE410P01011",
+          "name": "Narayana Hrudayalaya Limited",
+          "weight": 1.8664
+        },
+        {
+          "key": "INE0JO301016",
+          "name": "Yatharth Hospital & Trauma Care Serv Ltd",
+          "weight": 1.7743
+        },
+        {
+          "key": "INE0W2G01015",
+          "name": "Sagility Limited",
+          "weight": 1.7318
+        },
+        {
+          "key": "INE241U01028",
+          "name": "Manipal Payment Identity Solutions Ltd",
+          "weight": 1.6868
+        },
+        {
+          "key": "INE102D01028",
+          "name": "Godrej Consumer Products Limited",
+          "weight": 1.634
+        },
+        {
+          "key": "INE162A01010",
+          "name": "Gujarat Industries Power Company Limited",
+          "weight": 1.6022
+        },
+        {
+          "key": "INE836A01035",
+          "name": "Birlasoft Ltd",
+          "weight": 1.5966
+        },
+        {
+          "key": "INE1CDF01017",
+          "name": "Vedanta Aluminium Metal Limited",
+          "weight": 1.4948
+        },
+        {
+          "key": "INE0V6F01027",
+          "name": "Hyundai Motor India Limited",
+          "weight": 1.4632
+        },
+        {
+          "key": "INE482A01020",
+          "name": "CEAT Limited",
+          "weight": 1.3973
+        },
+        {
+          "key": "INE810G01011",
+          "name": "Shyam Metalics and Energy Ltd.",
+          "weight": 1.3576
+        },
+        {
+          "key": "INE337A01034",
+          "name": "LG BALAKRISHNAN & BROS LIMITED",
+          "weight": 1.3544
+        },
+        {
+          "key": "INE671H01015",
+          "name": "Sobha Limited",
+          "weight": 1.1336
+        },
+        {
+          "key": "INE278Y01022",
+          "name": "CAMPUS ACTIVEWEAR LIMITED",
+          "weight": 1.1272
+        },
+        {
+          "key": "INE148G01016",
+          "name": "Asset Reconstruction Company (India)Ltd",
+          "weight": 1.0904
+        },
+        {
+          "key": "INE979B01015",
+          "name": "Hawkins Cookers Limited",
+          "weight": 1.0776
+        },
+        {
+          "key": "INE155A01022",
+          "name": "Tata Motors Passenger Vehicles Limited",
+          "weight": 1.047
+        },
+        {
+          "key": "INE481G01011",
+          "name": "UltraTech Cement Limited",
+          "weight": 1.0171
+        },
+        {
+          "key": "INE669C01036",
+          "name": "Tech Mahindra Limited",
+          "weight": 1.0134
+        },
+        {
+          "key": "INE044A01036",
+          "name": "Sun Pharmaceutical Industries Limited",
+          "weight": 0.9918
+        },
+        {
+          "key": "INE0UOS01011",
+          "name": "Sanofi Consumer Healthcare India Limited",
+          "weight": 0.9753
+        },
+        {
+          "key": "INE208A01029",
+          "name": "Ashok Leyland Limited",
+          "weight": 0.9625
+        },
+        {
+          "key": "INE733E01010",
+          "name": "NTPC Limited",
+          "weight": 0.9408
+        },
+        {
+          "key": "INE04I401011",
+          "name": "KPIT Technologies Limited",
+          "weight": 0.9364
+        },
+        {
+          "key": "INE142Z01019",
+          "name": "Orient Electric Limited",
+          "weight": 0.9321
+        },
+        {
+          "key": "INE576I01022",
+          "name": "J.Kumar Infraprojects Limited",
+          "weight": 0.9093
+        },
+        {
+          "key": "INE205B01031",
+          "name": "Elecon Engineering Company Limited",
+          "weight": 0.8891
+        },
+        {
+          "key": "INE285K01026",
+          "name": "TECHNO ELECTRIC & ENGINEERING COMPANY LI",
+          "weight": 0.746
+        },
+        {
+          "key": "INE732I01021",
+          "name": "Angel One Limited",
+          "weight": 0.7344
+        },
+        {
+          "key": "INE176B01034",
+          "name": "Havells India Limited",
+          "weight": 0.7304
+        },
+        {
+          "key": "INE540L01014",
+          "name": "Alkem Laboratories Limited",
+          "weight": 0.7012
+        },
+        {
+          "key": "INE901L01018",
+          "name": "Alembic Pharmaceuticals Limited",
+          "weight": 0.6727
+        },
+        {
+          "key": "INE522F01014",
+          "name": "Coal India Limited",
+          "weight": 0.5575
+        },
+        {
+          "key": "INE437A01024",
+          "name": "Apollo Hospitals Enterprise Limited",
+          "weight": 0.5328
+        },
+        {
+          "key": "INE128S01021",
+          "name": "FIVE-STAR BUSINESS FINANCE LIMITED",
+          "weight": 0.5122
+        },
+        {
+          "key": "INE786A01032",
+          "name": "JK Lakshmi Cement Limited",
+          "weight": 0.4971
+        },
+        {
+          "key": "INE19RI01016",
+          "name": "TENNECO CLEAN AIR INDIA LIMITED",
+          "weight": 0.4457
+        },
+        {
+          "key": "INE149A01033",
+          "name": "Cholamandalam Financial Holdings Limited",
+          "weight": 0.3997
+        },
+        {
+          "key": "INE131C01011",
+          "name": "Disa India Limited",
+          "weight": 0.3504
+        },
+        {
+          "key": "INE852O01025",
+          "name": "Aptus Value Housing Finance India Ltd",
+          "weight": 0.3236
+        },
+        {
+          "key": "INE042A01014",
+          "name": "Escorts Kubota Limited",
+          "weight": 0.2476
+        }
+      ],
+      "sources": [
+        {
+          "label": "October 2026 published portfolio",
+          "url": "https://decryptmutualfunds.com/fund-houses/groww/value-fund",
+          "type": "third_party",
+          "portfolioDate": "2026-10-31",
+          "matched": true
+        },
+        {
+          "label": "Groww AMC scheme page · identity reference only",
+          "url": "https://www.growwmf.in/mutual-funds/groww-value-discovery-fund-direct-growth",
+          "type": "official",
+          "portfolioDate": "2026-10-31",
+          "matched": false
+        }
+      ],
+      "notes": [
+        "Equity holdings from the October provider disclosure. Original AMC verification remains pending.",
+        "The AMC scheme page confirms scheme identity; it does not corroborate portfolio quantities.",
+        "Debt, ETFs, fund units, REITs and InvITs are excluded. Allocations are percentages of total fund net assets."
+      ]
+    },
+    {
+      "id": "groww-elss",
+      "name": "Groww ELSS Tax Saver Fund",
+      "monogram": "GW",
+      "color": "#00a98f",
+      "portfolioDate": "2026-10-31",
+      "lastCheckedAt": "2026-11-20T04:17:02.327Z",
+      "verification": "provider_only",
+      "checkStatus": "checked",
+      "holdings": [
+        {
+          "key": "INE040A01034",
+          "name": "HDFC Bank Limited",
+          "weight": 5.0841
+        },
+        {
+          "key": "INE090A01021",
+          "name": "ICICI Bank Limited",
+          "weight": 4.7842
+        },
+        {
+          "key": "INE002A01018",
+          "name": "Reliance Industries Limited",
+          "weight": 3.3178
+        },
+        {
+          "key": "INE397D01024",
+          "name": "Bharti Airtel Limited",
+          "weight": 2.9312
+        },
+        {
+          "key": "INE018A01030",
+          "name": "Larsen & Toubro Limited",
+          "weight": 2.7883
+        },
+        {
+          "key": "INE062A01020",
+          "name": "State Bank of India",
+          "weight": 2.2826
+        },
+        {
+          "key": "INE237A01036",
+          "name": "Kotak Mahindra Bank Limited",
+          "weight": 2.1794
+        },
+        {
+          "key": "INE947Q01028",
+          "name": "Laurus Labs Limited",
+          "weight": 1.9729
+        },
+        {
+          "key": "INE296A01032",
+          "name": "Bajaj Finance Limited",
+          "weight": 1.737
+        },
+        {
+          "key": "INE101A01026",
+          "name": "Mahindra & Mahindra Limited",
+          "weight": 1.6754
+        },
+        {
+          "key": "INE118H01025",
+          "name": "BSE Ltd",
+          "weight": 1.5952
+        },
+        {
+          "key": "INE280A01028",
+          "name": "Titan Company Limited",
+          "weight": 1.5148
+        },
+        {
+          "key": "INE758T01015",
+          "name": "Eternal Limited",
+          "weight": 1.5098
+        },
+        {
+          "key": "INE009A01021",
+          "name": "Infosys Limited",
+          "weight": 1.4085
+        },
+        {
+          "key": "INE742F01042",
+          "name": "Adani Port & Special Economic Zone Ltd",
+          "weight": 1.4006
+        },
+        {
+          "key": "INE238A01034",
+          "name": "Axis Bank Limited",
+          "weight": 1.3439
+        },
+        {
+          "key": "INE745G01043",
+          "name": "Multi Commodity Exchange of India Ltd.",
+          "weight": 1.2853
+        },
+        {
+          "key": "INE044A01036",
+          "name": "Sun Pharmaceutical Industries Limited",
+          "weight": 1.2627
+        },
+        {
+          "key": "INE481G01011",
+          "name": "UltraTech Cement Limited",
+          "weight": 1.2069
+        },
+        {
+          "key": "INE917I01010",
+          "name": "Bajaj Auto Limited",
+          "weight": 1.163
+        },
+        {
+          "key": "INE053A01029",
+          "name": "The Indian Hotels Company Limited",
+          "weight": 1.1547
+        },
+        {
+          "key": "INE388Y01029",
+          "name": "FSN E-Commerce Ventures Limited",
+          "weight": 1.1428
+        },
+        {
+          "key": "INE982J01020",
+          "name": "One 97 Communications Limited",
+          "weight": 1.1362
+        },
+        {
+          "key": "INE154A01025",
+          "name": "ITC Limited",
+          "weight": 1.0639
+        },
+        {
+          "key": "INE494B01023",
+          "name": "TVS Motor Company Limited",
+          "weight": 1.0518
+        },
+        {
+          "key": "INE467B01029",
+          "name": "Tata Consultancy Services Limited",
+          "weight": 1.0474
+        },
+        {
+          "key": "INE721A01047",
+          "name": "Shriram Finance Limited",
+          "weight": 1.0207
+        },
+        {
+          "key": "INE646L01027",
+          "name": "InterGlobe Aviation Limited",
+          "weight": 1.0057
+        },
+        {
+          "key": "INE171A01029",
+          "name": "The Federal Bank  Limited",
+          "weight": 0.957
+        },
+        {
+          "key": "INE192A01025",
+          "name": "Tata Consumer Products Limited",
+          "weight": 0.9451
+        },
+        {
+          "key": "INE030A01027",
+          "name": "Hindustan Unilever Limited",
+          "weight": 0.9177
+        },
+        {
+          "key": "INE048G01026",
+          "name": "Navin Fluorine International Limited",
+          "weight": 0.9163
+        },
+        {
+          "key": "INE361B01024",
+          "name": "Divi's Laboratories Limited",
+          "weight": 0.9114
+        },
+        {
+          "key": "INE00FF01025",
+          "name": "Acutaas Chemicals Limited",
+          "weight": 0.8923
+        },
+        {
+          "key": "INE465A01025",
+          "name": "Bharat Forge Limited",
+          "weight": 0.8564
+        },
+        {
+          "key": "INE733E01010",
+          "name": "NTPC Limited",
+          "weight": 0.8541
+        },
+        {
+          "key": "INE343H01029",
+          "name": "Solar Industries India Limited",
+          "weight": 0.845
+        },
+        {
+          "key": "INE262H01021",
+          "name": "PERSISTENT SYSTEMS LTD",
+          "weight": 0.843
+        },
+        {
+          "key": "INE047A01021",
+          "name": "Grasim Industries Limited",
+          "weight": 0.8317
+        },
+        {
+          "key": "INE081A01020",
+          "name": "Tata Steel Limited",
+          "weight": 0.8241
+        },
+        {
+          "key": "INE196A01026",
+          "name": "Marico Limited",
+          "weight": 0.7754
+        },
+        {
+          "key": "INE849A01020",
+          "name": "Trent Limited",
+          "weight": 0.7503
+        },
+        {
+          "key": "INE208A01029",
+          "name": "Ashok Leyland Limited",
+          "weight": 0.7383
+        },
+        {
+          "key": "INE205A01025",
+          "name": "Vedanta Limited",
+          "weight": 0.7334
+        },
+        {
+          "key": "INE585B01010",
+          "name": "Maruti Suzuki India Limited",
+          "weight": 0.719
+        },
+        {
+          "key": "INE944F01028",
+          "name": "Radico Khaitan Limited",
+          "weight": 0.7002
+        },
+        {
+          "key": "INE570L01029",
+          "name": "Sai Life Sciences Ltd.",
+          "weight": 0.6984
+        },
+        {
+          "key": "INE0DYJ01015",
+          "name": "SYRMA SGS TECHNOLOGY LIMITED",
+          "weight": 0.6782
+        },
+        {
+          "key": "INE066A01021",
+          "name": "Eicher Motors Limited",
+          "weight": 0.6699
+        },
+        {
+          "key": "INE095A01012",
+          "name": "IndusInd Bank Limited",
+          "weight": 0.6664
+        },
+        {
+          "key": "INE021A01026",
+          "name": "Asian Paints Limited",
+          "weight": 0.6577
+        },
+        {
+          "key": "INE211B01039",
+          "name": "The Phoenix Mills Limited",
+          "weight": 0.6557
+        },
+        {
+          "key": "INE326A01037",
+          "name": "Lupin Limited",
+          "weight": 0.6493
+        },
+        {
+          "key": "INE1TAE01010",
+          "name": "Tata Motors Limited",
+          "weight": 0.6393
+        },
+        {
+          "key": "INE814H01029",
+          "name": "Adani Power Limited",
+          "weight": 0.6347
+        },
+        {
+          "key": "INE038A01020",
+          "name": "Hindalco Industries Limited",
+          "weight": 0.633
+        },
+        {
+          "key": "INE949L01017",
+          "name": "AU Small Finance Bank Limited",
+          "weight": 0.6247
+        },
+        {
+          "key": "INE364U01010",
+          "name": "Adani Green Energy Limited",
+          "weight": 0.6156
+        },
+        {
+          "key": "INE019A01038",
+          "name": "JSW Steel Limited",
+          "weight": 0.6135
+        },
+        {
+          "key": "INE158A01026",
+          "name": "Hero MotoCorp Limited",
+          "weight": 0.6115
+        }
+      ],
+      "sources": [
+        {
+          "label": "October 2026 published portfolio",
+          "url": "https://decryptmutualfunds.com/fund-houses/groww/elss-tax-saver-fund",
+          "type": "third_party",
+          "portfolioDate": "2026-10-31",
+          "matched": true
+        },
+        {
+          "label": "Groww AMC scheme page · identity reference only",
+          "url": "https://www.growwmf.in/mutual-funds/groww-elss-tax-saver-fund-direct-growth",
+          "type": "official",
+          "portfolioDate": "2026-10-31",
+          "matched": false
+        }
+      ],
+      "notes": [
+        "Equity holdings from the October provider disclosure. Original AMC verification remains pending.",
+        "The AMC scheme page confirms scheme identity; it does not corroborate portfolio quantities.",
+        "Debt, ETFs, fund units, REITs and InvITs are excluded. Allocations are percentages of total fund net assets."
+      ]
+    }
+  ],
+  "comparisons": [
+    {
+      "fundId": "groww-multi",
+      "currentDate": "2026-10-31",
+      "previousDate": "2026-09-30",
+      "checkedAt": "2026-11-20T04:17:02.327Z",
+      "scope": "full_equity",
+      "basis": "provider_quantity_comparison",
+      "rows": [
+        {
+          "key": "INE0LEZ01016",
+          "name": "Ather Energy Limited",
+          "previousQuantity": 248857,
+          "currentQuantity": 338933,
+          "weight": 3.1267,
+          "previousWeight": 2.1016,
+          "note": "Provider-only quantities; original AMC disclosure and independent quantity corroboration pending. Direction withheld."
+        },
+        {
+          "key": "INE397D01024",
+          "name": "Bharti Airtel Limited",
+          "previousQuantity": 255821,
+          "currentQuantity": 287170,
+          "weight": 2.9776,
+          "previousWeight": 2.6638,
+          "note": "Provider-only quantities; original AMC disclosure and independent quantity corroboration pending. Direction withheld."
+        },
+        {
+          "key": "INE0V6F01027",
+          "name": "Hyundai Motor India Limited",
+          "previousQuantity": 226147,
+          "currentQuantity": 247059,
+          "weight": 2.4803,
+          "previousWeight": 2.722,
+          "note": "Provider-only quantities; original AMC disclosure and independent quantity corroboration pending. Direction withheld."
+        },
+        {
+          "key": "INE419M01035",
+          "name": "TD Power Systems Limited",
+          "previousQuantity": 657970,
+          "currentQuantity": 657970,
+          "weight": 2.4677,
+          "previousWeight": 3.0651,
+          "note": "Provider-only quantities; original AMC disclosure and independent quantity corroboration pending. Direction withheld."
+        },
+        {
+          "key": "INE009A01021",
+          "name": "Infosys Limited",
+          "previousQuantity": 47135,
+          "currentQuantity": 383902,
+          "weight": 2.3899,
+          "previousWeight": 0.2777,
+          "note": "Provider-only quantities; original AMC disclosure and independent quantity corroboration pending. Direction withheld."
+        },
+        {
+          "key": "INE042A01014",
+          "name": "Escorts Kubota Limited",
+          "previousQuantity": 122068,
+          "currentQuantity": 175793,
+          "weight": 2.3794,
+          "previousWeight": 1.9643,
+          "note": "Provider-only quantities; original AMC disclosure and independent quantity corroboration pending. Direction withheld."
+        },
+        {
+          "key": "INE877D01025",
+          "name": "Kanohar Electricals Limited",
+          "previousQuantity": 475636,
+          "currentQuantity": 475636,
+          "weight": 2.3738,
+          "previousWeight": 2.415,
+          "note": "Provider-only quantities; original AMC disclosure and independent quantity corroboration pending. Direction withheld."
+        },
+        {
+          "key": "INE241U01028",
+          "name": "Manipal Payment Identity Solutions Ltd",
+          "previousQuantity": 1416179,
+          "currentQuantity": 1349625,
+          "weight": 2.1441,
+          "previousWeight": 3.434,
+          "note": "Provider-only quantities; original AMC disclosure and independent quantity corroboration pending. Direction withheld."
+        },
+        {
+          "key": "INE018A01030",
+          "name": "Larsen & Toubro Limited",
+          "previousQuantity": 78607,
+          "currentQuantity": 104441,
+          "weight": 2.1243,
+          "previousWeight": 1.7516,
+          "note": "Provider-only quantities; original AMC disclosure and independent quantity corroboration pending. Direction withheld."
+        },
+        {
+          "key": "INE208A01029",
+          "name": "Ashok Leyland Limited",
+          "previousQuantity": 2729035,
+          "currentQuantity": 2729035,
+          "weight": 2.0763,
+          "previousWeight": 2.4938,
+          "note": "Provider-only quantities; original AMC disclosure and independent quantity corroboration pending. Direction withheld."
+        },
+        {
+          "key": "INE551W01018",
+          "name": "Ujjivan Small Finance Bank Limited",
+          "previousQuantity": 7369204,
+          "currentQuantity": 7369204,
+          "weight": 2.0553,
+          "previousWeight": 2.9479,
+          "note": "Provider-only quantities; original AMC disclosure and independent quantity corroboration pending. Direction withheld."
+        },
+        {
+          "key": "INE101A01026",
+          "name": "Mahindra & Mahindra Limited",
+          "previousQuantity": 133734,
+          "currentQuantity": 133734,
+          "weight": 1.9955,
+          "previousWeight": 2.3381,
+          "note": "Provider-only quantities; original AMC disclosure and independent quantity corroboration pending. Direction withheld."
+        },
+        {
+          "key": "INE745G01043",
+          "name": "Multi Commodity Exchange of India Ltd.",
+          "previousQuantity": 116786,
+          "currentQuantity": 116786,
+          "weight": 1.9564,
+          "previousWeight": 2.2843,
+          "note": "Provider-only quantities; original AMC disclosure and independent quantity corroboration pending. Direction withheld."
+        },
+        {
+          "key": "INE513A01022",
+          "name": "Schaeffler India Ltd",
+          "previousQuantity": 77847,
+          "currentQuantity": 101737,
+          "weight": 1.9102,
+          "previousWeight": 1.798,
+          "note": "Provider-only quantities; original AMC disclosure and independent quantity corroboration pending. Direction withheld."
+        },
+        {
+          "key": "INE073K01018",
+          "name": "Sona BLW Precision Forgings Limited",
+          "previousQuantity": 205879,
+          "currentQuantity": 402167,
+          "weight": 1.8814,
+          "previousWeight": 1.0127,
+          "note": "Provider-only quantities; original AMC disclosure and independent quantity corroboration pending. Direction withheld."
+        },
+        {
+          "key": "INE066A01021",
+          "name": "Eicher Motors Limited",
+          "previousQuantity": 47189,
+          "currentQuantity": 49372,
+          "weight": 1.8727,
+          "previousWeight": 1.9996,
+          "note": "Provider-only quantities; original AMC disclosure and independent quantity corroboration pending. Direction withheld."
+        },
+        {
+          "key": "INE12F801023",
+          "name": "OnEMI Technology Solutions Limited",
+          "previousQuantity": 1166198,
+          "currentQuantity": 1166198,
+          "weight": 1.8671,
+          "previousWeight": 2.5541,
+          "note": "Provider-only quantities; original AMC disclosure and independent quantity corroboration pending. Direction withheld."
+        },
+        {
+          "key": "INE372A01015",
+          "name": "APAR INDUSTRIES LTD",
+          "previousQuantity": 22095,
+          "currentQuantity": 22095,
+          "weight": 1.8198,
+          "previousWeight": 2.2763,
+          "note": "Provider-only quantities; original AMC disclosure and independent quantity corroboration pending. Direction withheld."
+        },
+        {
+          "key": "INE758T01015",
+          "name": "Eternal Limited",
+          "previousQuantity": null,
+          "currentQuantity": 1007908,
+          "weight": 1.8196,
+          "previousWeight": null,
+          "note": "Provider-only quantities; original AMC disclosure and independent quantity corroboration pending. Direction withheld."
+        },
+        {
+          "key": "INE388Y01029",
+          "name": "FSN E-Commerce Ventures Limited",
+          "previousQuantity": 732160,
+          "currentQuantity": 976430,
+          "weight": 1.7921,
+          "previousWeight": 1.3885,
+          "note": "Provider-only quantities; original AMC disclosure and independent quantity corroboration pending. Direction withheld."
+        },
+        {
+          "key": "INE19RI01016",
+          "name": "TENNECO CLEAN AIR INDIA LIMITED",
+          "previousQuantity": 677493,
+          "currentQuantity": 765050,
+          "weight": 1.7351,
+          "previousWeight": 2.0407,
+          "note": "Provider-only quantities; original AMC disclosure and independent quantity corroboration pending. Direction withheld."
+        },
+        {
+          "key": "INE180A01020",
+          "name": "Max Financial Services Limited",
+          "previousQuantity": 242373,
+          "currentQuantity": 258740,
+          "weight": 1.6311,
+          "previousWeight": 1.9728,
+          "note": "Provider-only quantities; original AMC disclosure and independent quantity corroboration pending. Direction withheld."
+        },
+        {
+          "key": "INE0W2G01015",
+          "name": "Sagility Limited",
+          "previousQuantity": 7021612,
+          "currentQuantity": 7021612,
+          "weight": 1.5522,
+          "previousWeight": 1.7719,
+          "note": "Provider-only quantities; original AMC disclosure and independent quantity corroboration pending. Direction withheld."
+        },
+        {
+          "key": "INE118H01025",
+          "name": "BSE Ltd",
+          "previousQuantity": 69514,
+          "currentQuantity": 81353,
+          "weight": 1.5003,
+          "previousWeight": 1.2738,
+          "note": "Provider-only quantities; original AMC disclosure and independent quantity corroboration pending. Direction withheld."
+        },
+        {
+          "key": "INE090A01021",
+          "name": "ICICI Bank Limited",
+          "previousQuantity": 138558,
+          "currentQuantity": 198558,
+          "weight": 1.4583,
+          "previousWeight": 1.0853,
+          "note": "Provider-only quantities; original AMC disclosure and independent quantity corroboration pending. Direction withheld."
+        },
+        {
+          "key": "INE356A01018",
+          "name": "MphasiS Limited",
+          "previousQuantity": 49320,
+          "currentQuantity": 102858,
+          "weight": 1.3647,
+          "previousWeight": 0.6297,
+          "note": "Provider-only quantities; original AMC disclosure and independent quantity corroboration pending. Direction withheld."
+        },
+        {
+          "key": "INE200A01026",
+          "name": "GE Vernova T&D India Limited",
+          "previousQuantity": 60124,
+          "currentQuantity": 60124,
+          "weight": 1.2698,
+          "previousWeight": 1.4969,
+          "note": "Provider-only quantities; original AMC disclosure and independent quantity corroboration pending. Direction withheld."
+        },
+        {
+          "key": "INE761H01022",
+          "name": "Page Industries Limited",
+          "previousQuantity": 6959,
+          "currentQuantity": 6959,
+          "weight": 1.2613,
+          "previousWeight": 1.5006,
+          "note": "Provider-only quantities; original AMC disclosure and independent quantity corroboration pending. Direction withheld."
+        },
+        {
+          "key": "INE324D01010",
+          "name": "LG Electronics India Limited",
+          "previousQuantity": 106649,
+          "currentQuantity": 141167,
+          "weight": 1.2321,
+          "previousWeight": 1.0893,
+          "note": "Provider-only quantities; original AMC disclosure and independent quantity corroboration pending. Direction withheld."
+        },
+        {
+          "key": "INE0JO301016",
+          "name": "Yatharth Hospital & Trauma Care Serv Ltd",
+          "previousQuantity": 322127,
+          "currentQuantity": 252713,
+          "weight": 1.2306,
+          "previousWeight": 1.9711,
+          "note": "Provider-only quantities; original AMC disclosure and independent quantity corroboration pending. Direction withheld."
+        },
+        {
+          "key": "INE686Y01026",
+          "name": "FINE ORGANIC INDUSTRIES LIMITED",
+          "previousQuantity": 41622,
+          "currentQuantity": 45261,
+          "weight": 1.2005,
+          "previousWeight": 1.2641,
+          "note": "Provider-only quantities; original AMC disclosure and independent quantity corroboration pending. Direction withheld."
+        },
+        {
+          "key": "INE01NH01023",
+          "name": "Dhoot Transmission Limited",
+          "previousQuantity": 143261,
+          "currentQuantity": 143261,
+          "weight": 1.1631,
+          "previousWeight": 1.264,
+          "note": "Provider-only quantities; original AMC disclosure and independent quantity corroboration pending. Direction withheld."
+        },
+        {
+          "key": "INE298A01020",
+          "name": "Cummins India Limited",
+          "previousQuantity": 47208,
+          "currentQuantity": 47208,
+          "weight": 1.1043,
+          "previousWeight": 1.3317,
+          "note": "Provider-only quantities; original AMC disclosure and independent quantity corroboration pending. Direction withheld."
+        },
+        {
+          "key": "INE263A01024",
+          "name": "Bharat Electronics Limited",
+          "previousQuantity": 560715,
+          "currentQuantity": 560715,
+          "weight": 1.0896,
+          "previousWeight": 1.2903,
+          "note": "Provider-only quantities; original AMC disclosure and independent quantity corroboration pending. Direction withheld."
+        },
+        {
+          "key": "INE498L01015",
+          "name": "L&T Finance Limited",
+          "previousQuantity": 846265,
+          "currentQuantity": 846265,
+          "weight": 1.0866,
+          "previousWeight": 1.3291,
+          "note": "Provider-only quantities; original AMC disclosure and independent quantity corroboration pending. Direction withheld."
+        },
+        {
+          "key": "INE00LO01017",
+          "name": "CRAFTSMAN AUTOMATION LIMITED",
+          "previousQuantity": 20074,
+          "currentQuantity": 20074,
+          "weight": 1.0832,
+          "previousWeight": 1.2393,
+          "note": "Provider-only quantities; original AMC disclosure and independent quantity corroboration pending. Direction withheld."
+        },
+        {
+          "key": "INE849A01020",
+          "name": "Trent Limited",
+          "previousQuantity": 68127,
+          "currentQuantity": 68127,
+          "weight": 1.0799,
+          "previousWeight": 1.0585,
+          "note": "Provider-only quantities; original AMC disclosure and independent quantity corroboration pending. Direction withheld."
+        },
+        {
+          "key": "INE0KBH01020",
+          "name": "Blue Jet Healthcare Ltd",
+          "previousQuantity": 403568,
+          "currentQuantity": 403568,
+          "weight": 1.0697,
+          "previousWeight": 1.2869,
+          "note": "Provider-only quantities; original AMC disclosure and independent quantity corroboration pending. Direction withheld."
+        },
+        {
+          "key": "INE974X01010",
+          "name": "TUBE INVESTMENTS OF INDIA LTD",
+          "previousQuantity": 95086,
+          "currentQuantity": 95086,
+          "weight": 1.059,
+          "previousWeight": 1.3384,
+          "note": "Provider-only quantities; original AMC disclosure and independent quantity corroboration pending. Direction withheld."
+        },
+        {
+          "key": "INE044A01036",
+          "name": "Sun Pharmaceutical Industries Limited",
+          "previousQuantity": null,
+          "currentQuantity": 108143,
+          "weight": 1.01,
+          "previousWeight": null,
+          "note": "Provider-only quantities; original AMC disclosure and independent quantity corroboration pending. Direction withheld."
+        },
+        {
+          "key": "INE048G01026",
+          "name": "Navin Fluorine International Limited",
+          "previousQuantity": 21113,
+          "currentQuantity": 22094,
+          "weight": 1.0075,
+          "previousWeight": 1.0317,
+          "note": "Provider-only quantities; original AMC disclosure and independent quantity corroboration pending. Direction withheld."
+        },
+        {
+          "key": "INE702C01027",
+          "name": "APL Apollo Tubes Limited",
+          "previousQuantity": 88289,
+          "currentQuantity": 88289,
+          "weight": 1.0042,
+          "previousWeight": 1.1459,
+          "note": "Provider-only quantities; original AMC disclosure and independent quantity corroboration pending. Direction withheld."
+        },
+        {
+          "key": "INE810G01011",
+          "name": "Shyam Metalics and Energy Ltd.",
+          "previousQuantity": 163910,
+          "currentQuantity": 163910,
+          "weight": 1.0014,
+          "previousWeight": 1.0345,
+          "note": "Provider-only quantities; original AMC disclosure and independent quantity corroboration pending. Direction withheld."
+        },
+        {
+          "key": "INE823G01014",
+          "name": "JK Cement Limited",
+          "previousQuantity": 10573,
+          "currentQuantity": 39461,
+          "weight": 0.9921,
+          "previousWeight": 0.3181,
+          "note": "Provider-only quantities; original AMC disclosure and independent quantity corroboration pending. Direction withheld."
+        },
+        {
+          "key": "INE089A01031",
+          "name": "Dr. Reddy's Laboratories Limited",
+          "previousQuantity": 96380,
+          "currentQuantity": 138604,
+          "weight": 0.9845,
+          "previousWeight": 0.7043,
+          "note": "Provider-only quantities; original AMC disclosure and independent quantity corroboration pending. Direction withheld."
+        },
+        {
+          "key": "INE976G01028",
+          "name": "RBL Bank Limited",
+          "previousQuantity": 189323,
+          "currentQuantity": 524382,
+          "weight": 0.9669,
+          "previousWeight": 0.4526,
+          "note": "Provider-only quantities; original AMC disclosure and independent quantity corroboration pending. Direction withheld."
+        },
+        {
+          "key": "INE361B01024",
+          "name": "Divi's Laboratories Limited",
+          "previousQuantity": 18177,
+          "currentQuantity": 18177,
+          "weight": 0.9339,
+          "previousWeight": 1.0009,
+          "note": "Provider-only quantities; original AMC disclosure and independent quantity corroboration pending. Direction withheld."
+        },
+        {
+          "key": "INE062A01020",
+          "name": "State Bank of India",
+          "previousQuantity": 181144,
+          "currentQuantity": 181144,
+          "weight": 0.9153,
+          "previousWeight": 1.0301,
+          "note": "Provider-only quantities; original AMC disclosure and independent quantity corroboration pending. Direction withheld."
+        },
+        {
+          "key": "INE169A01031",
+          "name": "Coromandel International Limited",
+          "previousQuantity": 62441,
+          "currentQuantity": 101688,
+          "weight": 0.906,
+          "previousWeight": 0.6506,
+          "note": "Provider-only quantities; original AMC disclosure and independent quantity corroboration pending. Direction withheld."
+        },
+        {
+          "key": "INE899I01028",
+          "name": "Symbiotec Pharmalab Ltd",
+          "previousQuantity": 134025,
+          "currentQuantity": 134025,
+          "weight": 0.8775,
+          "previousWeight": 0.9347,
+          "note": "Provider-only quantities; original AMC disclosure and independent quantity corroboration pending. Direction withheld."
+        },
+        {
+          "key": "INE775A01035",
+          "name": "Samvardhana Motherson International Ltd",
+          "previousQuantity": 683522,
+          "currentQuantity": 1058936,
+          "weight": 0.8706,
+          "previousWeight": 0.6613,
+          "note": "Provider-only quantities; original AMC disclosure and independent quantity corroboration pending. Direction withheld."
+        },
+        {
+          "key": "INE591G01025",
+          "name": "Coforge Limited",
+          "previousQuantity": 39120,
+          "currentQuantity": 79120,
+          "weight": 0.85,
+          "previousWeight": 0.4055,
+          "note": "Provider-only quantities; original AMC disclosure and independent quantity corroboration pending. Direction withheld."
+        },
+        {
+          "key": "INE02IJ01035",
+          "name": "Azad Engineering Limited",
+          "previousQuantity": 52667,
+          "currentQuantity": 64302,
+          "weight": 0.826,
+          "previousWeight": 0.9249,
+          "note": "Provider-only quantities; original AMC disclosure and independent quantity corroboration pending. Direction withheld."
+        },
+        {
+          "key": "INE346A01027",
+          "name": "ICICI Prudential AMC Ltd",
+          "previousQuantity": 56254,
+          "currentQuantity": 56254,
+          "weight": 0.8,
+          "previousWeight": 1.0457,
+          "note": "Provider-only quantities; original AMC disclosure and independent quantity corroboration pending. Direction withheld."
+        },
+        {
+          "key": "INE0JA001018",
+          "name": "VENUS PIPES & TUBES LTD",
+          "previousQuantity": 80103,
+          "currentQuantity": 80103,
+          "weight": 0.7606,
+          "previousWeight": 1.0193,
+          "note": "Provider-only quantities; original AMC disclosure and independent quantity corroboration pending. Direction withheld."
+        },
+        {
+          "key": "INE296A01032",
+          "name": "Bajaj Finance Limited",
+          "previousQuantity": 142624,
+          "currentQuantity": 142624,
+          "weight": 0.7036,
+          "previousWeight": 0.8109,
+          "note": "Provider-only quantities; original AMC disclosure and independent quantity corroboration pending. Direction withheld."
+        },
+        {
+          "key": "INE494B01023",
+          "name": "TVS Motor Company Limited",
+          "previousQuantity": 30712,
+          "currentQuantity": 30712,
+          "weight": 0.6769,
+          "previousWeight": 0.7473,
+          "note": "Provider-only quantities; original AMC disclosure and independent quantity corroboration pending. Direction withheld."
+        },
+        {
+          "key": "INE065X01017",
+          "name": "Indegene Limited",
+          "previousQuantity": 216518,
+          "currentQuantity": 216518,
+          "weight": 0.6675,
+          "previousWeight": 0.758,
+          "note": "Provider-only quantities; original AMC disclosure and independent quantity corroboration pending. Direction withheld."
+        },
+        {
+          "key": "INE00F201020",
+          "name": "Prudent Corporate Advisory Services Ltd",
+          "previousQuantity": 44092,
+          "currentQuantity": 44092,
+          "weight": 0.6513,
+          "previousWeight": 0.8177,
+          "note": "Provider-only quantities; original AMC disclosure and independent quantity corroboration pending. Direction withheld."
+        },
+        {
+          "key": "INE0IX101010",
+          "name": "Data Patterns (India) Limited",
+          "previousQuantity": 29030,
+          "currentQuantity": 29030,
+          "weight": 0.5795,
+          "previousWeight": 0.7375,
+          "note": "Provider-only quantities; original AMC disclosure and independent quantity corroboration pending. Direction withheld."
+        },
+        {
+          "key": "INE731H01025",
+          "name": "Action Construction Equipment Ltd",
+          "previousQuantity": 72989,
+          "currentQuantity": 108440,
+          "weight": 0.5667,
+          "previousWeight": 0.5329,
+          "note": "Provider-only quantities; original AMC disclosure and independent quantity corroboration pending. Direction withheld."
+        },
+        {
+          "key": "INE423Y01016",
+          "name": "SBFC Finance Limited",
+          "previousQuantity": 1713187,
+          "currentQuantity": 1271062,
+          "weight": 0.5634,
+          "previousWeight": 0.8679,
+          "note": "Provider-only quantities; original AMC disclosure and independent quantity corroboration pending. Direction withheld."
+        },
+        {
+          "key": "INE053A01029",
+          "name": "The Indian Hotels Company Limited",
+          "previousQuantity": null,
+          "currentQuantity": 125000,
+          "weight": 0.533,
+          "previousWeight": null,
+          "note": "Provider-only quantities; original AMC disclosure and independent quantity corroboration pending. Direction withheld."
+        },
+        {
+          "key": "INE205B01031",
+          "name": "Elecon Engineering Company Limited",
+          "previousQuantity": 157720,
+          "currentQuantity": 239931,
+          "weight": 0.5291,
+          "previousWeight": 0.4317,
+          "note": "Provider-only quantities; original AMC disclosure and independent quantity corroboration pending. Direction withheld."
+        },
+        {
+          "key": "INE668A01016",
+          "name": "Tamilnad Mercantile Bank Ltd.",
+          "previousQuantity": 116674,
+          "currentQuantity": 116674,
+          "weight": 0.4912,
+          "previousWeight": 0.6025,
+          "note": "Provider-only quantities; original AMC disclosure and independent quantity corroboration pending. Direction withheld."
+        },
+        {
+          "key": "INE437A01024",
+          "name": "Apollo Hospitals Enterprise Limited",
+          "previousQuantity": null,
+          "currentQuantity": 11013,
+          "weight": 0.4888,
+          "previousWeight": null,
+          "note": "Provider-only quantities; original AMC disclosure and independent quantity corroboration pending. Direction withheld."
+        },
+        {
+          "key": "INE465A01025",
+          "name": "Bharat Forge Limited",
+          "previousQuantity": 52911,
+          "currentQuantity": 52911,
+          "weight": 0.4781,
+          "previousWeight": 0.6039,
+          "note": "Provider-only quantities; original AMC disclosure and independent quantity corroboration pending. Direction withheld."
+        },
+        {
+          "key": "INE967H01025",
+          "name": "Krishna Institute of Medical Science Ltd",
+          "previousQuantity": 119962,
+          "currentQuantity": 119962,
+          "weight": 0.4423,
+          "previousWeight": 0.5307,
+          "note": "Provider-only quantities; original AMC disclosure and independent quantity corroboration pending. Direction withheld."
+        },
+        {
+          "key": "INE922K01024",
+          "name": "INDIA SHELTER FIN CORP LTD",
+          "previousQuantity": 244214,
+          "currentQuantity": 134835,
+          "weight": 0.4361,
+          "previousWeight": 0.9199,
+          "note": "Provider-only quantities; original AMC disclosure and independent quantity corroboration pending. Direction withheld."
+        },
+        {
+          "key": "INE1CDF01017",
+          "name": "Vedanta Aluminium Metal Limited",
+          "previousQuantity": 496221,
+          "currentQuantity": 210000,
+          "weight": 0.3932,
+          "previousWeight": 1.2143,
+          "note": "Provider-only quantities; original AMC disclosure and independent quantity corroboration pending. Direction withheld."
+        },
+        {
+          "key": "INE00GO01025",
+          "name": "LEAP India Limited",
+          "previousQuantity": 628484,
+          "currentQuantity": 628484,
+          "weight": 0.385,
+          "previousWeight": 0.5132,
+          "note": "Provider-only quantities; original AMC disclosure and independent quantity corroboration pending. Direction withheld."
+        },
+        {
+          "key": "INE149A01033",
+          "name": "Cholamandalam Financial Holdings Limited",
+          "previousQuantity": 46106,
+          "currentQuantity": 46106,
+          "weight": 0.3273,
+          "previousWeight": 0.3788,
+          "note": "Provider-only quantities; original AMC disclosure and independent quantity corroboration pending. Direction withheld."
+        },
+        {
+          "key": "INE18UN01038",
+          "name": "Gaja Alternative AMC Limited",
+          "previousQuantity": 348378,
+          "currentQuantity": 348378,
+          "weight": 0.2252,
+          "previousWeight": 0.2892,
+          "note": "Provider-only quantities; original AMC disclosure and independent quantity corroboration pending. Direction withheld."
+        },
+        {
+          "key": "INE721I01024",
+          "name": "National Stock Exchange of India Limited",
+          "previousQuantity": 21009,
+          "currentQuantity": 21009,
+          "weight": 0.1967,
+          "previousWeight": 0.2195,
+          "note": "Provider-only quantities; original AMC disclosure and independent quantity corroboration pending. Direction withheld."
+        },
+        {
+          "key": "INE836A01035",
+          "name": "Birlasoft Ltd",
+          "previousQuantity": null,
+          "currentQuantity": 100000,
+          "weight": 0.1697,
+          "previousWeight": null,
+          "note": "Provider-only quantities; original AMC disclosure and independent quantity corroboration pending. Direction withheld."
+        },
+        {
+          "key": "INE757A01017",
+          "name": "Cosmo First Limited",
+          "previousQuantity": 37906,
+          "currentQuantity": 37906,
+          "weight": 0.1422,
+          "previousWeight": 0.19,
+          "note": "Provider-only quantities; original AMC disclosure and independent quantity corroboration pending. Direction withheld."
+        },
+        {
+          "key": "INE325A01013",
+          "name": "Timken India Limited",
+          "previousQuantity": 7846,
+          "currentQuantity": 7846,
+          "weight": 0.1176,
+          "previousWeight": 0.1458,
+          "note": "Provider-only quantities; original AMC disclosure and independent quantity corroboration pending. Direction withheld."
+        },
+        {
+          "key": "INE092B01025",
+          "name": "India Nippon Electricals Limited",
+          "previousQuantity": 149,
+          "currentQuantity": 149,
+          "weight": 0.0009,
+          "previousWeight": 0.0011,
+          "note": "Provider-only quantities; original AMC disclosure and independent quantity corroboration pending. Direction withheld."
+        },
+        {
+          "key": "INE721A01047",
+          "name": "Shriram Finance Limited",
+          "previousQuantity": 238824,
+          "currentQuantity": 0,
+          "weight": 0,
+          "previousWeight": 1.3909,
+          "note": "Provider-only quantities; original AMC disclosure and independent quantity corroboration pending. Direction withheld."
+        },
+        {
+          "key": "INE102D01028",
+          "name": "Godrej Consumer Products Limited",
+          "previousQuantity": 138776,
+          "currentQuantity": 0,
+          "weight": 0,
+          "previousWeight": 0.6991,
+          "note": "Provider-only quantities; original AMC disclosure and independent quantity corroboration pending. Direction withheld."
+        },
+        {
+          "key": "INE481N01025",
+          "name": "Home First Finance Company India Limited",
+          "previousQuantity": 104471,
+          "currentQuantity": 0,
+          "weight": 0,
+          "previousWeight": 0.684,
+          "note": "Provider-only quantities; original AMC disclosure and independent quantity corroboration pending. Direction withheld."
+        },
+        {
+          "key": "INE0BWX01014",
+          "name": "Aether Industries Limited",
+          "previousQuantity": 56437,
+          "currentQuantity": 0,
+          "weight": 0,
+          "previousWeight": 0.5684,
+          "note": "Provider-only quantities; original AMC disclosure and independent quantity corroboration pending. Direction withheld."
+        },
+        {
+          "key": "INE0CZ201020",
+          "name": "Anthem Biosciences Limited",
+          "previousQuantity": 96445,
+          "currentQuantity": 0,
+          "weight": 0,
+          "previousWeight": 0.4908,
+          "note": "Provider-only quantities; original AMC disclosure and independent quantity corroboration pending. Direction withheld."
+        },
+        {
+          "key": "INE121A01024",
+          "name": "Cholamandalam Invest & Finance Co Ltd",
+          "previousQuantity": 43622,
+          "currentQuantity": 0,
+          "weight": 0,
+          "previousWeight": 0.4188,
+          "note": "Provider-only quantities; original AMC disclosure and independent quantity corroboration pending. Direction withheld."
+        },
+        {
+          "key": "INE917I01010",
+          "name": "Bajaj Auto Limited",
+          "previousQuantity": 3506,
+          "currentQuantity": 0,
+          "weight": 0,
+          "previousWeight": 0.2259,
+          "note": "Provider-only quantities; original AMC disclosure and independent quantity corroboration pending. Direction withheld."
+        },
+        {
+          "key": "INE640G01020",
+          "name": "SBI Funds Management Ltd",
+          "previousQuantity": 53268,
+          "currentQuantity": 0,
+          "weight": 0,
+          "previousWeight": 0.1629,
+          "note": "Provider-only quantities; original AMC disclosure and independent quantity corroboration pending. Direction withheld."
+        }
+      ],
+      "sources": [
+        {
+          "label": "October 2026 published portfolio",
+          "url": "https://decryptmutualfunds.com/fund-houses/groww/multicap-fund",
+          "scope": "October provider quantities and allocations; not independently corroborated."
+        },
+        {
+          "label": "Groww AMC scheme page · identity reference only",
+          "url": "https://www.growwmf.in/mutual-funds/groww-multicap-fund-direct-growth",
+          "scope": "Scheme identity reference only; no portfolio corroboration."
+        }
+      ],
+      "notes": [
+        "Prior quantities are explicit provider values; missing values remain null. Direction withheld pending original disclosures and independent checks."
+      ]
+    },
+    {
+      "fundId": "groww-large",
+      "currentDate": "2026-10-31",
+      "previousDate": "2026-09-30",
+      "checkedAt": "2026-11-20T04:17:02.327Z",
+      "scope": "full_equity",
+      "basis": "provider_quantity_comparison",
+      "rows": [
+        {
+          "key": "INE090A01021",
+          "name": "ICICI Bank Limited",
+          "previousQuantity": 86762,
+          "currentQuantity": 86762,
+          "weight": 8.7991,
+          "previousWeight": 8.6437,
+          "note": "Provider-only quantities; original AMC disclosure and independent quantity corroboration pending. Direction withheld."
+        },
+        {
+          "key": "INE018A01030",
+          "name": "Larsen & Toubro Limited",
+          "previousQuantity": 24801,
+          "currentQuantity": 24801,
+          "weight": 6.9658,
+          "previousWeight": 7.029,
+          "note": "Provider-only quantities; original AMC disclosure and independent quantity corroboration pending. Direction withheld."
+        },
+        {
+          "key": "INE397D01024",
+          "name": "Bharti Airtel Limited",
+          "previousQuantity": 35660,
+          "currentQuantity": 35660,
+          "weight": 5.1058,
+          "previousWeight": 4.7227,
+          "note": "Provider-only quantities; original AMC disclosure and independent quantity corroboration pending. Direction withheld."
+        },
+        {
+          "key": "INE040A01034",
+          "name": "HDFC Bank Limited",
+          "previousQuantity": 109502,
+          "currentQuantity": 99502,
+          "weight": 5.0008,
+          "previousWeight": 5.8495,
+          "note": "Provider-only quantities; original AMC disclosure and independent quantity corroboration pending. Direction withheld."
+        },
+        {
+          "key": "INE361B01024",
+          "name": "Divi's Laboratories Limited",
+          "previousQuantity": 1410,
+          "currentQuantity": 6410,
+          "weight": 4.5478,
+          "previousWeight": 0.9875,
+          "note": "Provider-only quantities; original AMC disclosure and independent quantity corroboration pending. Direction withheld."
+        },
+        {
+          "key": "INE758T01015",
+          "name": "Eternal Limited",
+          "previousQuantity": 109370,
+          "currentQuantity": 163370,
+          "weight": 4.0728,
+          "previousWeight": 2.6381,
+          "note": "Provider-only quantities; original AMC disclosure and independent quantity corroboration pending. Direction withheld."
+        },
+        {
+          "key": "INE238A01034",
+          "name": "Axis Bank Limited",
+          "previousQuantity": 24911,
+          "currentQuantity": 37911,
+          "weight": 3.347,
+          "previousWeight": 2.3021,
+          "note": "Provider-only quantities; original AMC disclosure and independent quantity corroboration pending. Direction withheld."
+        },
+        {
+          "key": "INE062A01020",
+          "name": "State Bank of India",
+          "previousQuantity": 41569,
+          "currentQuantity": 41569,
+          "weight": 2.9005,
+          "previousWeight": 3.0064,
+          "note": "Provider-only quantities; original AMC disclosure and independent quantity corroboration pending. Direction withheld."
+        },
+        {
+          "key": "INE009A01021",
+          "name": "Infosys Limited",
+          "previousQuantity": 17711,
+          "currentQuantity": 32711,
+          "weight": 2.812,
+          "previousWeight": 1.3271,
+          "note": "Provider-only quantities; original AMC disclosure and independent quantity corroboration pending. Direction withheld."
+        },
+        {
+          "key": "INE775A01035",
+          "name": "Samvardhana Motherson International Ltd",
+          "previousQuantity": 220320,
+          "currentQuantity": 220320,
+          "weight": 2.5013,
+          "previousWeight": 2.7112,
+          "note": "Provider-only quantities; original AMC disclosure and independent quantity corroboration pending. Direction withheld."
+        },
+        {
+          "key": "INE002A01018",
+          "name": "Reliance Industries Limited",
+          "previousQuantity": 19277,
+          "currentQuantity": 28277,
+          "weight": 2.3896,
+          "previousWeight": 1.7247,
+          "note": "Provider-only quantities; original AMC disclosure and independent quantity corroboration pending. Direction withheld."
+        },
+        {
+          "key": "INE669C01036",
+          "name": "Tech Mahindra Limited",
+          "previousQuantity": 20383,
+          "currentQuantity": 18383,
+          "weight": 2.3882,
+          "previousWeight": 2.3415,
+          "note": "Provider-only quantities; original AMC disclosure and independent quantity corroboration pending. Direction withheld."
+        },
+        {
+          "key": "INE237A01036",
+          "name": "Kotak Mahindra Bank Limited",
+          "previousQuantity": 52086,
+          "currentQuantity": 67086,
+          "weight": 2.2465,
+          "previousWeight": 1.6372,
+          "note": "Provider-only quantities; original AMC disclosure and independent quantity corroboration pending. Direction withheld."
+        },
+        {
+          "key": "INE101A01026",
+          "name": "Mahindra & Mahindra Limited",
+          "previousQuantity": 11644,
+          "currentQuantity": 10444,
+          "weight": 2.1519,
+          "previousWeight": 2.5892,
+          "note": "Provider-only quantities; original AMC disclosure and independent quantity corroboration pending. Direction withheld."
+        },
+        {
+          "key": "INE685A01028",
+          "name": "Torrent Pharmaceuticals Limited",
+          "previousQuantity": 6280,
+          "currentQuantity": 6280,
+          "weight": 2.1018,
+          "previousWeight": 2.2721,
+          "note": "Provider-only quantities; original AMC disclosure and independent quantity corroboration pending. Direction withheld."
+        },
+        {
+          "key": "INE296A01032",
+          "name": "Bajaj Finance Limited",
+          "previousQuantity": 47253,
+          "currentQuantity": 30253,
+          "weight": 2.061,
+          "previousWeight": 3.4172,
+          "note": "Provider-only quantities; original AMC disclosure and independent quantity corroboration pending. Direction withheld."
+        },
+        {
+          "key": "INE298A01020",
+          "name": "Cummins India Limited",
+          "previousQuantity": 9153,
+          "currentQuantity": 6153,
+          "weight": 1.9875,
+          "previousWeight": 3.284,
+          "note": "Provider-only quantities; original AMC disclosure and independent quantity corroboration pending. Direction withheld."
+        },
+        {
+          "key": "INE0LEZ01016",
+          "name": "Ather Energy Limited",
+          "previousQuantity": null,
+          "currentQuantity": 15000,
+          "weight": 1.9108,
+          "previousWeight": null,
+          "note": "Provider-only quantities; original AMC disclosure and independent quantity corroboration pending. Direction withheld."
+        },
+        {
+          "key": "INE118H01025",
+          "name": "BSE Ltd",
+          "previousQuantity": 4476,
+          "currentQuantity": 7176,
+          "weight": 1.8274,
+          "previousWeight": 1.0432,
+          "note": "Provider-only quantities; original AMC disclosure and independent quantity corroboration pending. Direction withheld."
+        },
+        {
+          "key": "INE123W01016",
+          "name": "SBI Life Insurance Company Limited",
+          "previousQuantity": 13058,
+          "currentQuantity": 13058,
+          "weight": 1.5712,
+          "previousWeight": 1.6697,
+          "note": "Provider-only quantities; original AMC disclosure and independent quantity corroboration pending. Direction withheld."
+        },
+        {
+          "key": "INE263A01024",
+          "name": "Bharat Electronics Limited",
+          "previousQuantity": 76777,
+          "currentQuantity": 52777,
+          "weight": 1.4162,
+          "previousWeight": 2.2472,
+          "note": "Provider-only quantities; original AMC disclosure and independent quantity corroboration pending. Direction withheld."
+        },
+        {
+          "key": "INE324D01010",
+          "name": "LG Electronics India Limited",
+          "previousQuantity": 10027,
+          "currentQuantity": 10027,
+          "weight": 1.2085,
+          "previousWeight": 1.3026,
+          "note": "Provider-only quantities; original AMC disclosure and independent quantity corroboration pending. Direction withheld."
+        },
+        {
+          "key": "INE089A01031",
+          "name": "Dr. Reddy's Laboratories Limited",
+          "previousQuantity": 12295,
+          "currentQuantity": 12295,
+          "weight": 1.2059,
+          "previousWeight": 1.1427,
+          "note": "Provider-only quantities; original AMC disclosure and independent quantity corroboration pending. Direction withheld."
+        },
+        {
+          "key": "INE0V6F01027",
+          "name": "Hyundai Motor India Limited",
+          "previousQuantity": 13483,
+          "currentQuantity": 8483,
+          "weight": 1.176,
+          "previousWeight": 2.0641,
+          "note": "Provider-only quantities; original AMC disclosure and independent quantity corroboration pending. Direction withheld."
+        },
+        {
+          "key": "INE481G01011",
+          "name": "UltraTech Cement Limited",
+          "previousQuantity": null,
+          "currentQuantity": 1400,
+          "weight": 1.1217,
+          "previousWeight": null,
+          "note": "Provider-only quantities; original AMC disclosure and independent quantity corroboration pending. Direction withheld."
+        },
+        {
+          "key": "INE073K01018",
+          "name": "Sona BLW Precision Forgings Limited",
+          "previousQuantity": null,
+          "currentQuantity": 17000,
+          "weight": 1.0982,
+          "previousWeight": null,
+          "note": "Provider-only quantities; original AMC disclosure and independent quantity corroboration pending. Direction withheld."
+        },
+        {
+          "key": "INE591G01025",
+          "name": "Coforge Limited",
+          "previousQuantity": null,
+          "currentQuantity": 7100,
+          "weight": 1.0533,
+          "previousWeight": null,
+          "note": "Provider-only quantities; original AMC disclosure and independent quantity corroboration pending. Direction withheld."
+        },
+        {
+          "key": "INE356A01018",
+          "name": "MphasiS Limited",
+          "previousQuantity": null,
+          "currentQuantity": 5397,
+          "weight": 0.9888,
+          "previousWeight": null,
+          "note": "Provider-only quantities; original AMC disclosure and independent quantity corroboration pending. Direction withheld."
+        },
+        {
+          "key": "INE044A01036",
+          "name": "Sun Pharmaceutical Industries Limited",
+          "previousQuantity": null,
+          "currentQuantity": 7656,
+          "weight": 0.9873,
+          "previousWeight": null,
+          "note": "Provider-only quantities; original AMC disclosure and independent quantity corroboration pending. Direction withheld."
+        },
+        {
+          "key": "INE1CDF01017",
+          "name": "Vedanta Aluminium Metal Limited",
+          "previousQuantity": 37619,
+          "currentQuantity": 37619,
+          "weight": 0.9728,
+          "previousWeight": 1.1708,
+          "note": "Provider-only quantities; original AMC disclosure and independent quantity corroboration pending. Direction withheld."
+        },
+        {
+          "key": "INE081A01020",
+          "name": "Tata Steel Limited",
+          "previousQuantity": 78848,
+          "currentQuantity": 78848,
+          "weight": 0.9587,
+          "previousWeight": 1.0953,
+          "note": "Provider-only quantities; original AMC disclosure and independent quantity corroboration pending. Direction withheld."
+        },
+        {
+          "key": "INE280A01028",
+          "name": "Titan Company Limited",
+          "previousQuantity": 4474,
+          "currentQuantity": 2974,
+          "weight": 0.9572,
+          "previousWeight": 1.5469,
+          "note": "Provider-only quantities; original AMC disclosure and independent quantity corroboration pending. Direction withheld."
+        },
+        {
+          "key": "INE053A01029",
+          "name": "The Indian Hotels Company Limited",
+          "previousQuantity": null,
+          "currentQuantity": 16000,
+          "weight": 0.9421,
+          "previousWeight": null,
+          "note": "Provider-only quantities; original AMC disclosure and independent quantity corroboration pending. Direction withheld."
+        },
+        {
+          "key": "INE067A01029",
+          "name": "CG Power And Industrial Solutions Ltd",
+          "previousQuantity": null,
+          "currentQuantity": 16000,
+          "weight": 0.9332,
+          "previousWeight": null,
+          "note": "Provider-only quantities; original AMC disclosure and independent quantity corroboration pending. Direction withheld."
+        },
+        {
+          "key": "INE494B01023",
+          "name": "TVS Motor Company Limited",
+          "previousQuantity": null,
+          "currentQuantity": 3000,
+          "weight": 0.913,
+          "previousWeight": null,
+          "note": "Provider-only quantities; original AMC disclosure and independent quantity corroboration pending. Direction withheld."
+        },
+        {
+          "key": "INE200A01026",
+          "name": "GE Vernova T&D India Limited",
+          "previousQuantity": 3110,
+          "currentQuantity": 3110,
+          "weight": 0.907,
+          "previousWeight": 0.9848,
+          "note": "Provider-only quantities; original AMC disclosure and independent quantity corroboration pending. Direction withheld."
+        },
+        {
+          "key": "INE721I01024",
+          "name": "National Stock Exchange of India Limited",
+          "previousQuantity": 7003,
+          "currentQuantity": 7003,
+          "weight": 0.9054,
+          "previousWeight": 0.9306,
+          "note": "Provider-only quantities; original AMC disclosure and independent quantity corroboration pending. Direction withheld."
+        },
+        {
+          "key": "INE066A01021",
+          "name": "Eicher Motors Limited",
+          "previousQuantity": 1714,
+          "currentQuantity": 1714,
+          "weight": 0.8977,
+          "previousWeight": 0.9237,
+          "note": "Provider-only quantities; original AMC disclosure and independent quantity corroboration pending. Direction withheld."
+        },
+        {
+          "key": "INE646L01027",
+          "name": "InterGlobe Aviation Limited",
+          "previousQuantity": null,
+          "currentQuantity": 2500,
+          "weight": 0.8846,
+          "previousWeight": null,
+          "note": "Provider-only quantities; original AMC disclosure and independent quantity corroboration pending. Direction withheld."
+        },
+        {
+          "key": "INE030A01027",
+          "name": "Hindustan Unilever Limited",
+          "previousQuantity": 6518,
+          "currentQuantity": 6518,
+          "weight": 0.8817,
+          "previousWeight": 0.9232,
+          "note": "Provider-only quantities; original AMC disclosure and independent quantity corroboration pending. Direction withheld."
+        },
+        {
+          "key": "INE721A01047",
+          "name": "Shriram Finance Limited",
+          "previousQuantity": 31746,
+          "currentQuantity": 14746,
+          "weight": 0.8806,
+          "previousWeight": 2.3515,
+          "note": "Provider-only quantities; original AMC disclosure and independent quantity corroboration pending. Direction withheld."
+        },
+        {
+          "key": "INE038A01020",
+          "name": "Hindalco Industries Limited",
+          "previousQuantity": 13719,
+          "currentQuantity": 13719,
+          "weight": 0.8805,
+          "previousWeight": 0.9739,
+          "note": "Provider-only quantities; original AMC disclosure and independent quantity corroboration pending. Direction withheld."
+        },
+        {
+          "key": "INE733E01010",
+          "name": "NTPC Limited",
+          "previousQuantity": 37092,
+          "currentQuantity": 37092,
+          "weight": 0.851,
+          "previousWeight": 0.9024,
+          "note": "Provider-only quantities; original AMC disclosure and independent quantity corroboration pending. Direction withheld."
+        },
+        {
+          "key": "INE437A01024",
+          "name": "Apollo Hospitals Enterprise Limited",
+          "previousQuantity": null,
+          "currentQuantity": 1200,
+          "weight": 0.7354,
+          "previousWeight": null,
+          "note": "Provider-only quantities; original AMC disclosure and independent quantity corroboration pending. Direction withheld."
+        },
+        {
+          "key": "INE836A01035",
+          "name": "Birlasoft Ltd",
+          "previousQuantity": null,
+          "currentQuantity": 31000,
+          "weight": 0.7264,
+          "previousWeight": null,
+          "note": "Provider-only quantities; original AMC disclosure and independent quantity corroboration pending. Direction withheld."
+        },
+        {
+          "key": "INE976G01028",
+          "name": "RBL Bank Limited",
+          "previousQuantity": null,
+          "currentQuantity": 28000,
+          "weight": 0.713,
+          "previousWeight": null,
+          "note": "Provider-only quantities; original AMC disclosure and independent quantity corroboration pending. Direction withheld."
+        },
+        {
+          "key": "INE323A01026",
+          "name": "Bosch Limited",
+          "previousQuantity": 203,
+          "currentQuantity": 203,
+          "weight": 0.6951,
+          "previousWeight": 0.7207,
+          "note": "Provider-only quantities; original AMC disclosure and independent quantity corroboration pending. Direction withheld."
+        },
+        {
+          "key": "INE849A01020",
+          "name": "Trent Limited",
+          "previousQuantity": 5928,
+          "currentQuantity": 3128,
+          "weight": 0.6847,
+          "previousWeight": 1.1714,
+          "note": "Provider-only quantities; original AMC disclosure and independent quantity corroboration pending. Direction withheld."
+        },
+        {
+          "key": "INE823G01014",
+          "name": "JK Cement Limited",
+          "previousQuantity": 2295,
+          "currentQuantity": 1873,
+          "weight": 0.6502,
+          "previousWeight": 0.8781,
+          "note": "Provider-only quantities; original AMC disclosure and independent quantity corroboration pending. Direction withheld."
+        },
+        {
+          "key": "INE121A01024",
+          "name": "Cholamandalam Invest & Finance Co Ltd",
+          "previousQuantity": 20483,
+          "currentQuantity": 4835,
+          "weight": 0.5563,
+          "previousWeight": 2.5012,
+          "note": "Provider-only quantities; original AMC disclosure and independent quantity corroboration pending. Direction withheld."
+        },
+        {
+          "key": "INE04I401011",
+          "name": "KPIT Technologies Limited",
+          "previousQuantity": null,
+          "currentQuantity": 14000,
+          "weight": 0.5385,
+          "previousWeight": null,
+          "note": "Provider-only quantities; original AMC disclosure and independent quantity corroboration pending. Direction withheld."
+        },
+        {
+          "key": "INE066F01020",
+          "name": "Hindustan Aeronautics Limited",
+          "previousQuantity": 1353,
+          "currentQuantity": 1353,
+          "weight": 0.4764,
+          "previousWeight": 0.4761,
+          "note": "Provider-only quantities; original AMC disclosure and independent quantity corroboration pending. Direction withheld."
+        },
+        {
+          "key": "INE208A01029",
+          "name": "Ashok Leyland Limited",
+          "previousQuantity": 77587,
+          "currentQuantity": 43587,
+          "weight": 0.4579,
+          "previousWeight": 0.9017,
+          "note": "Provider-only quantities; original AMC disclosure and independent quantity corroboration pending. Direction withheld."
+        },
+        {
+          "key": "INE346A01027",
+          "name": "ICICI Prudential AMC Ltd",
+          "previousQuantity": 5795,
+          "currentQuantity": 2295,
+          "weight": 0.4507,
+          "previousWeight": 1.3701,
+          "note": "Provider-only quantities; original AMC disclosure and independent quantity corroboration pending. Direction withheld."
+        },
+        {
+          "key": "INE200M01039",
+          "name": "Varun Beverages Limited",
+          "previousQuantity": null,
+          "currentQuantity": 15000,
+          "weight": 0.4266,
+          "previousWeight": null,
+          "note": "Provider-only quantities; original AMC disclosure and independent quantity corroboration pending. Direction withheld."
+        },
+        {
+          "key": "INE343H01029",
+          "name": "Solar Industries India Limited",
+          "previousQuantity": null,
+          "currentQuantity": 250,
+          "weight": 0.341,
+          "previousWeight": null,
+          "note": "Provider-only quantities; original AMC disclosure and independent quantity corroboration pending. Direction withheld."
+        },
+        {
+          "key": "INE917I01010",
+          "name": "Bajaj Auto Limited",
+          "previousQuantity": 1906,
+          "currentQuantity": 0,
+          "weight": 0,
+          "previousWeight": 1.5622,
+          "note": "Provider-only quantities; original AMC disclosure and independent quantity corroboration pending. Direction withheld."
+        },
+        {
+          "key": "INE640G01020",
+          "name": "SBI Funds Management Ltd",
+          "previousQuantity": 17751,
+          "currentQuantity": 0,
+          "weight": 0,
+          "previousWeight": 0.6905,
+          "note": "Provider-only quantities; original AMC disclosure and independent quantity corroboration pending. Direction withheld."
+        },
+        {
+          "key": "INE00H001014",
+          "name": "SWIGGY LIMITED",
+          "previousQuantity": 23029,
+          "currentQuantity": 0,
+          "weight": 0,
+          "previousWeight": 0.4341,
+          "note": "Provider-only quantities; original AMC disclosure and independent quantity corroboration pending. Direction withheld."
+        },
+        {
+          "key": "INE027H01010",
+          "name": "Max Healthcare Institute Limited",
+          "previousQuantity": 5339,
+          "currentQuantity": 0,
+          "weight": 0,
+          "previousWeight": 0.3742,
+          "note": "Provider-only quantities; original AMC disclosure and independent quantity corroboration pending. Direction withheld."
+        },
+        {
+          "key": "INE2KCE01013",
+          "name": "Kwality Wall’s (India) Limited",
+          "previousQuantity": 6518,
+          "currentQuantity": 0,
+          "weight": 0,
+          "previousWeight": 0.0193,
+          "note": "Provider-only quantities; original AMC disclosure and independent quantity corroboration pending. Direction withheld."
+        }
+      ],
+      "sources": [
+        {
+          "label": "October 2026 published portfolio",
+          "url": "https://decryptmutualfunds.com/fund-houses/groww/large-cap-fund",
+          "scope": "October provider quantities and allocations; not independently corroborated."
+        },
+        {
+          "label": "Groww AMC scheme page · identity reference only",
+          "url": "https://www.growwmf.in/mutual-funds/groww-large-cap-fund-direct-growth",
+          "scope": "Scheme identity reference only; no portfolio corroboration."
+        }
+      ],
+      "notes": [
+        "Prior quantities are explicit provider values; missing values remain null. Direction withheld pending original disclosures and independent checks."
+      ]
+    },
+    {
+      "fundId": "groww-value",
+      "currentDate": "2026-10-31",
+      "previousDate": "2026-09-30",
+      "checkedAt": "2026-11-20T04:17:02.327Z",
+      "scope": "full_equity",
+      "basis": "provider_quantity_comparison",
+      "rows": [
+        {
+          "key": "INE040A01034",
+          "name": "HDFC Bank Limited",
+          "previousQuantity": 70949,
+          "currentQuantity": 89552,
+          "weight": 7.8262,
+          "previousWeight": 6.3188,
+          "note": "Provider-only quantities; original AMC disclosure and independent quantity corroboration pending. Direction withheld."
+        },
+        {
+          "key": "INE397D01024",
+          "name": "Bharti Airtel Limited",
+          "previousQuantity": 20496,
+          "currentQuantity": 21782,
+          "weight": 5.4231,
+          "previousWeight": 4.5255,
+          "note": "Provider-only quantities; original AMC disclosure and independent quantity corroboration pending. Direction withheld."
+        },
+        {
+          "key": "INE090A01021",
+          "name": "ICICI Bank Limited",
+          "previousQuantity": 27048,
+          "currentQuantity": 27048,
+          "weight": 4.7699,
+          "previousWeight": 4.4926,
+          "note": "Provider-only quantities; original AMC disclosure and independent quantity corroboration pending. Direction withheld."
+        },
+        {
+          "key": "INE002A01018",
+          "name": "Reliance Industries Limited",
+          "previousQuantity": 26784,
+          "currentQuantity": 26784,
+          "weight": 3.9358,
+          "previousWeight": 3.9953,
+          "note": "Provider-only quantities; original AMC disclosure and independent quantity corroboration pending. Direction withheld."
+        },
+        {
+          "key": "INE062A01020",
+          "name": "State Bank of India",
+          "previousQuantity": 31141,
+          "currentQuantity": 31141,
+          "weight": 3.7784,
+          "previousWeight": 3.755,
+          "note": "Provider-only quantities; original AMC disclosure and independent quantity corroboration pending. Direction withheld."
+        },
+        {
+          "key": "INE018A01030",
+          "name": "Larsen & Toubro Limited",
+          "previousQuantity": 6071,
+          "currentQuantity": 7395,
+          "weight": 3.6117,
+          "previousWeight": 2.8686,
+          "note": "Provider-only quantities; original AMC disclosure and independent quantity corroboration pending. Direction withheld."
+        },
+        {
+          "key": "INE009A01021",
+          "name": "Infosys Limited",
+          "previousQuantity": 8178,
+          "currentQuantity": 20780,
+          "weight": 3.1062,
+          "previousWeight": 1.0217,
+          "note": "Provider-only quantities; original AMC disclosure and independent quantity corroboration pending. Direction withheld."
+        },
+        {
+          "key": "INE238A01034",
+          "name": "Axis Bank Limited",
+          "previousQuantity": 18196,
+          "currentQuantity": 18196,
+          "weight": 2.7934,
+          "previousWeight": 2.8035,
+          "note": "Provider-only quantities; original AMC disclosure and independent quantity corroboration pending. Direction withheld."
+        },
+        {
+          "key": "INE180A01020",
+          "name": "Max Financial Services Limited",
+          "previousQuantity": 14327,
+          "currentQuantity": 17728,
+          "weight": 2.6835,
+          "previousWeight": 2.4728,
+          "note": "Provider-only quantities; original AMC disclosure and independent quantity corroboration pending. Direction withheld."
+        },
+        {
+          "key": "INE551W01018",
+          "name": "Ujjivan Small Finance Bank Limited",
+          "previousQuantity": 343121,
+          "currentQuantity": 384482,
+          "weight": 2.5749,
+          "previousWeight": 2.9106,
+          "note": "Provider-only quantities; original AMC disclosure and independent quantity corroboration pending. Direction withheld."
+        },
+        {
+          "key": "INE123W01016",
+          "name": "SBI Life Insurance Company Limited",
+          "previousQuantity": 10505,
+          "currentQuantity": 10505,
+          "weight": 2.1979,
+          "previousWeight": 2.2395,
+          "note": "Provider-only quantities; original AMC disclosure and independent quantity corroboration pending. Direction withheld."
+        },
+        {
+          "key": "INE065X01017",
+          "name": "Indegene Limited",
+          "previousQuantity": 28666,
+          "currentQuantity": 28666,
+          "weight": 2.1219,
+          "previousWeight": 2.1281,
+          "note": "Provider-only quantities; original AMC disclosure and independent quantity corroboration pending. Direction withheld."
+        },
+        {
+          "key": "INE597I01028",
+          "name": "Sharda Motor Industries Limited",
+          "previousQuantity": 18623,
+          "currentQuantity": 18623,
+          "weight": 1.8986,
+          "previousWeight": 2.2396,
+          "note": "Provider-only quantities; original AMC disclosure and independent quantity corroboration pending. Direction withheld."
+        },
+        {
+          "key": "INE410P01011",
+          "name": "Narayana Hrudayalaya Limited",
+          "previousQuantity": 8601,
+          "currentQuantity": 8601,
+          "weight": 1.8664,
+          "previousWeight": 1.9363,
+          "note": "Provider-only quantities; original AMC disclosure and independent quantity corroboration pending. Direction withheld."
+        },
+        {
+          "key": "INE0JO301016",
+          "name": "Yatharth Hospital & Trauma Care Serv Ltd",
+          "previousQuantity": 24164,
+          "currentQuantity": 15175,
+          "weight": 1.7743,
+          "previousWeight": 3.1354,
+          "note": "Provider-only quantities; original AMC disclosure and independent quantity corroboration pending. Direction withheld."
+        },
+        {
+          "key": "INE0W2G01015",
+          "name": "Sagility Limited",
+          "previousQuantity": 326258,
+          "currentQuantity": 326258,
+          "weight": 1.7318,
+          "previousWeight": 1.7458,
+          "note": "Provider-only quantities; original AMC disclosure and independent quantity corroboration pending. Direction withheld."
+        },
+        {
+          "key": "INE241U01028",
+          "name": "Manipal Payment Identity Solutions Ltd",
+          "previousQuantity": 44220,
+          "currentQuantity": 44220,
+          "weight": 1.6868,
+          "previousWeight": 2.2737,
+          "note": "Provider-only quantities; original AMC disclosure and independent quantity corroboration pending. Direction withheld."
+        },
+        {
+          "key": "INE102D01028",
+          "name": "Godrej Consumer Products Limited",
+          "previousQuantity": 15835,
+          "currentQuantity": 15835,
+          "weight": 1.634,
+          "previousWeight": 1.6915,
+          "note": "Provider-only quantities; original AMC disclosure and independent quantity corroboration pending. Direction withheld."
+        },
+        {
+          "key": "INE162A01010",
+          "name": "Gujarat Industries Power Company Limited",
+          "previousQuantity": 70104,
+          "currentQuantity": 79383,
+          "weight": 1.6022,
+          "previousWeight": 1.583,
+          "note": "Provider-only quantities; original AMC disclosure and independent quantity corroboration pending. Direction withheld."
+        },
+        {
+          "key": "INE836A01035",
+          "name": "Birlasoft Ltd",
+          "previousQuantity": null,
+          "currentQuantity": 39186,
+          "weight": 1.5966,
+          "previousWeight": null,
+          "note": "Provider-only quantities; original AMC disclosure and independent quantity corroboration pending. Direction withheld."
+        },
+        {
+          "key": "INE1CDF01017",
+          "name": "Vedanta Aluminium Metal Limited",
+          "previousQuantity": 33244,
+          "currentQuantity": 33244,
+          "weight": 1.4948,
+          "previousWeight": 1.725,
+          "note": "Provider-only quantities; original AMC disclosure and independent quantity corroboration pending. Direction withheld."
+        },
+        {
+          "key": "INE0V6F01027",
+          "name": "Hyundai Motor India Limited",
+          "previousQuantity": 5036,
+          "currentQuantity": 6070,
+          "weight": 1.4632,
+          "previousWeight": 1.2854,
+          "note": "Provider-only quantities; original AMC disclosure and independent quantity corroboration pending. Direction withheld."
+        },
+        {
+          "key": "INE482A01020",
+          "name": "CEAT Limited",
+          "previousQuantity": 2708,
+          "currentQuantity": 3588,
+          "weight": 1.3973,
+          "previousWeight": 1.1109,
+          "note": "Provider-only quantities; original AMC disclosure and independent quantity corroboration pending. Direction withheld."
+        },
+        {
+          "key": "INE810G01011",
+          "name": "Shyam Metalics and Energy Ltd.",
+          "previousQuantity": 9255,
+          "currentQuantity": 9255,
+          "weight": 1.3576,
+          "previousWeight": 1.2387,
+          "note": "Provider-only quantities; original AMC disclosure and independent quantity corroboration pending. Direction withheld."
+        },
+        {
+          "key": "INE337A01034",
+          "name": "LG BALAKRISHNAN & BROS LIMITED",
+          "previousQuantity": 6417,
+          "currentQuantity": 6417,
+          "weight": 1.3544,
+          "previousWeight": 1.3952,
+          "note": "Provider-only quantities; original AMC disclosure and independent quantity corroboration pending. Direction withheld."
+        },
+        {
+          "key": "INE671H01015",
+          "name": "Sobha Limited",
+          "previousQuantity": 7987,
+          "currentQuantity": 7987,
+          "weight": 1.1336,
+          "previousWeight": 1.2261,
+          "note": "Provider-only quantities; original AMC disclosure and independent quantity corroboration pending. Direction withheld."
+        },
+        {
+          "key": "INE278Y01022",
+          "name": "CAMPUS ACTIVEWEAR LIMITED",
+          "previousQuantity": 46819,
+          "currentQuantity": 46819,
+          "weight": 1.1272,
+          "previousWeight": 1.2287,
+          "note": "Provider-only quantities; original AMC disclosure and independent quantity corroboration pending. Direction withheld."
+        },
+        {
+          "key": "INE148G01016",
+          "name": "Asset Reconstruction Company (India)Ltd",
+          "previousQuantity": 71911,
+          "currentQuantity": 71911,
+          "weight": 1.0904,
+          "previousWeight": 1.3067,
+          "note": "Provider-only quantities; original AMC disclosure and independent quantity corroboration pending. Direction withheld."
+        },
+        {
+          "key": "INE979B01015",
+          "name": "Hawkins Cookers Limited",
+          "previousQuantity": 1125,
+          "currentQuantity": 1125,
+          "weight": 1.0776,
+          "previousWeight": 1.1321,
+          "note": "Provider-only quantities; original AMC disclosure and independent quantity corroboration pending. Direction withheld."
+        },
+        {
+          "key": "INE155A01022",
+          "name": "Tata Motors Passenger Vehicles Limited",
+          "previousQuantity": 31275,
+          "currentQuantity": 31275,
+          "weight": 1.047,
+          "previousWeight": 1.1142,
+          "note": "Provider-only quantities; original AMC disclosure and independent quantity corroboration pending. Direction withheld."
+        },
+        {
+          "key": "INE481G01011",
+          "name": "UltraTech Cement Limited",
+          "previousQuantity": null,
+          "currentQuantity": 730,
+          "weight": 1.0171,
+          "previousWeight": null,
+          "note": "Provider-only quantities; original AMC disclosure and independent quantity corroboration pending. Direction withheld."
+        },
+        {
+          "key": "INE669C01036",
+          "name": "Tech Mahindra Limited",
+          "previousQuantity": 4486,
+          "currentQuantity": 4486,
+          "weight": 1.0134,
+          "previousWeight": 0.8592,
+          "note": "Provider-only quantities; original AMC disclosure and independent quantity corroboration pending. Direction withheld."
+        },
+        {
+          "key": "INE044A01036",
+          "name": "Sun Pharmaceutical Industries Limited",
+          "previousQuantity": null,
+          "currentQuantity": 4423,
+          "weight": 0.9918,
+          "previousWeight": null,
+          "note": "Provider-only quantities; original AMC disclosure and independent quantity corroboration pending. Direction withheld."
+        },
+        {
+          "key": "INE0UOS01011",
+          "name": "Sanofi Consumer Healthcare India Limited",
+          "previousQuantity": 2246,
+          "currentQuantity": 2246,
+          "weight": 0.9753,
+          "previousWeight": 1.0734,
+          "note": "Provider-only quantities; original AMC disclosure and independent quantity corroboration pending. Direction withheld."
+        },
+        {
+          "key": "INE208A01029",
+          "name": "Ashok Leyland Limited",
+          "previousQuantity": 52687,
+          "currentQuantity": 52687,
+          "weight": 0.9625,
+          "previousWeight": 1.0209,
+          "note": "Provider-only quantities; original AMC disclosure and independent quantity corroboration pending. Direction withheld."
+        },
+        {
+          "key": "INE733E01010",
+          "name": "NTPC Limited",
+          "previousQuantity": 23582,
+          "currentQuantity": 23582,
+          "weight": 0.9408,
+          "previousWeight": 0.9565,
+          "note": "Provider-only quantities; original AMC disclosure and independent quantity corroboration pending. Direction withheld."
+        },
+        {
+          "key": "INE04I401011",
+          "name": "KPIT Technologies Limited",
+          "previousQuantity": null,
+          "currentQuantity": 14000,
+          "weight": 0.9364,
+          "previousWeight": null,
+          "note": "Provider-only quantities; original AMC disclosure and independent quantity corroboration pending. Direction withheld."
+        },
+        {
+          "key": "INE142Z01019",
+          "name": "Orient Electric Limited",
+          "previousQuantity": 40907,
+          "currentQuantity": 40907,
+          "weight": 0.9321,
+          "previousWeight": 0.8128,
+          "note": "Provider-only quantities; original AMC disclosure and independent quantity corroboration pending. Direction withheld."
+        },
+        {
+          "key": "INE576I01022",
+          "name": "J.Kumar Infraprojects Limited",
+          "previousQuantity": 10703,
+          "currentQuantity": 17771,
+          "weight": 0.9093,
+          "previousWeight": 0.6232,
+          "note": "Provider-only quantities; original AMC disclosure and independent quantity corroboration pending. Direction withheld."
+        },
+        {
+          "key": "INE205B01031",
+          "name": "Elecon Engineering Company Limited",
+          "previousQuantity": 16792,
+          "currentQuantity": 16792,
+          "weight": 0.8891,
+          "previousWeight": 0.9745,
+          "note": "Provider-only quantities; original AMC disclosure and independent quantity corroboration pending. Direction withheld."
+        },
+        {
+          "key": "INE285K01026",
+          "name": "TECHNO ELECTRIC & ENGINEERING COMPANY LI",
+          "previousQuantity": 7131,
+          "currentQuantity": 7131,
+          "weight": 0.746,
+          "previousWeight": 0.904,
+          "note": "Provider-only quantities; original AMC disclosure and independent quantity corroboration pending. Direction withheld."
+        },
+        {
+          "key": "INE732I01021",
+          "name": "Angel One Limited",
+          "previousQuantity": 20626,
+          "currentQuantity": 20626,
+          "weight": 0.7344,
+          "previousWeight": 0.7102,
+          "note": "Provider-only quantities; original AMC disclosure and independent quantity corroboration pending. Direction withheld."
+        },
+        {
+          "key": "INE176B01034",
+          "name": "Havells India Limited",
+          "previousQuantity": 5711,
+          "currentQuantity": 5711,
+          "weight": 0.7304,
+          "previousWeight": 0.7292,
+          "note": "Provider-only quantities; original AMC disclosure and independent quantity corroboration pending. Direction withheld."
+        },
+        {
+          "key": "INE540L01014",
+          "name": "Alkem Laboratories Limited",
+          "previousQuantity": 1087,
+          "currentQuantity": 1087,
+          "weight": 0.7012,
+          "previousWeight": 0.7053,
+          "note": "Provider-only quantities; original AMC disclosure and independent quantity corroboration pending. Direction withheld."
+        },
+        {
+          "key": "INE901L01018",
+          "name": "Alembic Pharmaceuticals Limited",
+          "previousQuantity": 6684,
+          "currentQuantity": 6684,
+          "weight": 0.6727,
+          "previousWeight": 0.6934,
+          "note": "Provider-only quantities; original AMC disclosure and independent quantity corroboration pending. Direction withheld."
+        },
+        {
+          "key": "INE522F01014",
+          "name": "Coal India Limited",
+          "previousQuantity": 11362,
+          "currentQuantity": 11362,
+          "weight": 0.5575,
+          "previousWeight": 0.6068,
+          "note": "Provider-only quantities; original AMC disclosure and independent quantity corroboration pending. Direction withheld."
+        },
+        {
+          "key": "INE437A01024",
+          "name": "Apollo Hospitals Enterprise Limited",
+          "previousQuantity": null,
+          "currentQuantity": 500,
+          "weight": 0.5328,
+          "previousWeight": null,
+          "note": "Provider-only quantities; original AMC disclosure and independent quantity corroboration pending. Direction withheld."
+        },
+        {
+          "key": "INE128S01021",
+          "name": "FIVE-STAR BUSINESS FINANCE LIMITED",
+          "previousQuantity": 10232,
+          "currentQuantity": 10232,
+          "weight": 0.5122,
+          "previousWeight": 0.6646,
+          "note": "Provider-only quantities; original AMC disclosure and independent quantity corroboration pending. Direction withheld."
+        },
+        {
+          "key": "INE786A01032",
+          "name": "JK Lakshmi Cement Limited",
+          "previousQuantity": 8683,
+          "currentQuantity": 8683,
+          "weight": 0.4971,
+          "previousWeight": 0.5372,
+          "note": "Provider-only quantities; original AMC disclosure and independent quantity corroboration pending. Direction withheld."
+        },
+        {
+          "key": "INE19RI01016",
+          "name": "TENNECO CLEAN AIR INDIA LIMITED",
+          "previousQuantity": 8184,
+          "currentQuantity": 8184,
+          "weight": 0.4457,
+          "previousWeight": 0.5227,
+          "note": "Provider-only quantities; original AMC disclosure and independent quantity corroboration pending. Direction withheld."
+        },
+        {
+          "key": "INE149A01033",
+          "name": "Cholamandalam Financial Holdings Limited",
+          "previousQuantity": 2345,
+          "currentQuantity": 2345,
+          "weight": 0.3997,
+          "previousWeight": 0.4085,
+          "note": "Provider-only quantities; original AMC disclosure and independent quantity corroboration pending. Direction withheld."
+        },
+        {
+          "key": "INE131C01011",
+          "name": "Disa India Limited",
+          "previousQuantity": 248,
+          "currentQuantity": 248,
+          "weight": 0.3504,
+          "previousWeight": 0.3676,
+          "note": "Provider-only quantities; original AMC disclosure and independent quantity corroboration pending. Direction withheld."
+        },
+        {
+          "key": "INE852O01025",
+          "name": "Aptus Value Housing Finance India Ltd",
+          "previousQuantity": 13410,
+          "currentQuantity": 13410,
+          "weight": 0.3236,
+          "previousWeight": 0.3919,
+          "note": "Provider-only quantities; original AMC disclosure and independent quantity corroboration pending. Direction withheld."
+        },
+        {
+          "key": "INE042A01014",
+          "name": "Escorts Kubota Limited",
+          "previousQuantity": null,
+          "currentQuantity": 762,
+          "weight": 0.2476,
+          "previousWeight": null,
+          "note": "Provider-only quantities; original AMC disclosure and independent quantity corroboration pending. Direction withheld."
+        },
+        {
+          "key": "INE600K01018",
+          "name": "Galaxy Surfactants Limited",
+          "previousQuantity": 5557,
+          "currentQuantity": 0,
+          "weight": 0,
+          "previousWeight": 1.6291,
+          "note": "Provider-only quantities; original AMC disclosure and independent quantity corroboration pending. Direction withheld."
+        },
+        {
+          "key": "INE721A01047",
+          "name": "Shriram Finance Limited",
+          "previousQuantity": 8496,
+          "currentQuantity": 0,
+          "weight": 0,
+          "previousWeight": 1.0492,
+          "note": "Provider-only quantities; original AMC disclosure and independent quantity corroboration pending. Direction withheld."
+        },
+        {
+          "key": "INE467B01029",
+          "name": "Tata Consultancy Services Limited",
+          "previousQuantity": 3914,
+          "currentQuantity": 0,
+          "weight": 0,
+          "previousWeight": 1.0086,
+          "note": "Provider-only quantities; original AMC disclosure and independent quantity corroboration pending. Direction withheld."
+        }
+      ],
+      "sources": [
+        {
+          "label": "October 2026 published portfolio",
+          "url": "https://decryptmutualfunds.com/fund-houses/groww/value-fund",
+          "scope": "October provider quantities and allocations; not independently corroborated."
+        },
+        {
+          "label": "Groww AMC scheme page · identity reference only",
+          "url": "https://www.growwmf.in/mutual-funds/groww-value-discovery-fund-direct-growth",
+          "scope": "Scheme identity reference only; no portfolio corroboration."
+        }
+      ],
+      "notes": [
+        "Prior quantities are explicit provider values; missing values remain null. Direction withheld pending original disclosures and independent checks."
+      ]
+    },
+    {
+      "fundId": "groww-elss",
+      "currentDate": "2026-10-31",
+      "previousDate": "2026-09-30",
+      "checkedAt": "2026-11-20T04:17:02.327Z",
+      "scope": "full_equity",
+      "basis": "provider_quantity_comparison",
+      "rows": [
+        {
+          "key": "INE040A01034",
+          "name": "HDFC Bank Limited",
+          "previousQuantity": 46077,
+          "currentQuantity": 35593,
+          "weight": 5.0841,
+          "previousWeight": 6.7685,
+          "note": "Provider-only quantities; original AMC disclosure and independent quantity corroboration pending. Direction withheld."
+        },
+        {
+          "key": "INE090A01021",
+          "name": "ICICI Bank Limited",
+          "previousQuantity": 21818,
+          "currentQuantity": 16598,
+          "weight": 4.7842,
+          "previousWeight": 5.9771,
+          "note": "Provider-only quantities; original AMC disclosure and independent quantity corroboration pending. Direction withheld."
+        },
+        {
+          "key": "INE002A01018",
+          "name": "Reliance Industries Limited",
+          "previousQuantity": 19988,
+          "currentQuantity": 13814,
+          "weight": 3.3178,
+          "previousWeight": 4.9177,
+          "note": "Provider-only quantities; original AMC disclosure and independent quantity corroboration pending. Direction withheld."
+        },
+        {
+          "key": "INE397D01024",
+          "name": "Bharti Airtel Limited",
+          "previousQuantity": 9659,
+          "currentQuantity": 7203,
+          "weight": 2.9312,
+          "previousWeight": 3.5176,
+          "note": "Provider-only quantities; original AMC disclosure and independent quantity corroboration pending. Direction withheld."
+        },
+        {
+          "key": "INE018A01030",
+          "name": "Larsen & Toubro Limited",
+          "previousQuantity": 3493,
+          "currentQuantity": 3493,
+          "weight": 2.7883,
+          "previousWeight": 2.7223,
+          "note": "Provider-only quantities; original AMC disclosure and independent quantity corroboration pending. Direction withheld."
+        },
+        {
+          "key": "INE062A01020",
+          "name": "State Bank of India",
+          "previousQuantity": 11510,
+          "currentQuantity": 11510,
+          "weight": 2.2826,
+          "previousWeight": 2.2891,
+          "note": "Provider-only quantities; original AMC disclosure and independent quantity corroboration pending. Direction withheld."
+        },
+        {
+          "key": "INE237A01036",
+          "name": "Kotak Mahindra Bank Limited",
+          "previousQuantity": 22899,
+          "currentQuantity": 22899,
+          "weight": 2.1794,
+          "previousWeight": 1.9792,
+          "note": "Provider-only quantities; original AMC disclosure and independent quantity corroboration pending. Direction withheld."
+        },
+        {
+          "key": "INE947Q01028",
+          "name": "Laurus Labs Limited",
+          "previousQuantity": 3978,
+          "currentQuantity": 3978,
+          "weight": 1.9729,
+          "previousWeight": 1.6326,
+          "note": "Provider-only quantities; original AMC disclosure and independent quantity corroboration pending. Direction withheld."
+        },
+        {
+          "key": "INE296A01032",
+          "name": "Bajaj Finance Limited",
+          "previousQuantity": 8971,
+          "currentQuantity": 8971,
+          "weight": 1.737,
+          "previousWeight": 1.784,
+          "note": "Provider-only quantities; original AMC disclosure and independent quantity corroboration pending. Direction withheld."
+        },
+        {
+          "key": "INE101A01026",
+          "name": "Mahindra & Mahindra Limited",
+          "previousQuantity": 2861,
+          "currentQuantity": 2861,
+          "weight": 1.6754,
+          "previousWeight": 1.7494,
+          "note": "Provider-only quantities; original AMC disclosure and independent quantity corroboration pending. Direction withheld."
+        },
+        {
+          "key": "INE118H01025",
+          "name": "BSE Ltd",
+          "previousQuantity": 1931,
+          "currentQuantity": 2204,
+          "weight": 1.5952,
+          "previousWeight": 1.2376,
+          "note": "Provider-only quantities; original AMC disclosure and independent quantity corroboration pending. Direction withheld."
+        },
+        {
+          "key": "INE280A01028",
+          "name": "Titan Company Limited",
+          "previousQuantity": 1656,
+          "currentQuantity": 1656,
+          "weight": 1.5148,
+          "previousWeight": 1.5745,
+          "note": "Provider-only quantities; original AMC disclosure and independent quantity corroboration pending. Direction withheld."
+        },
+        {
+          "key": "INE758T01015",
+          "name": "Eternal Limited",
+          "previousQuantity": 21309,
+          "currentQuantity": 21309,
+          "weight": 1.5098,
+          "previousWeight": 1.4134,
+          "note": "Provider-only quantities; original AMC disclosure and independent quantity corroboration pending. Direction withheld."
+        },
+        {
+          "key": "INE009A01021",
+          "name": "Infosys Limited",
+          "previousQuantity": 10075,
+          "currentQuantity": 5765,
+          "weight": 1.4085,
+          "previousWeight": 2.076,
+          "note": "Provider-only quantities; original AMC disclosure and independent quantity corroboration pending. Direction withheld."
+        },
+        {
+          "key": "INE742F01042",
+          "name": "Adani Port & Special Economic Zone Ltd",
+          "previousQuantity": 3280,
+          "currentQuantity": 3672,
+          "weight": 1.4006,
+          "previousWeight": 1.2226,
+          "note": "Provider-only quantities; original AMC disclosure and independent quantity corroboration pending. Direction withheld."
+        },
+        {
+          "key": "INE238A01034",
+          "name": "Axis Bank Limited",
+          "previousQuantity": 7327,
+          "currentQuantity": 5356,
+          "weight": 1.3439,
+          "previousWeight": 1.8619,
+          "note": "Provider-only quantities; original AMC disclosure and independent quantity corroboration pending. Direction withheld."
+        },
+        {
+          "key": "INE745G01043",
+          "name": "Multi Commodity Exchange of India Ltd.",
+          "previousQuantity": 1807,
+          "currentQuantity": 1955,
+          "weight": 1.2853,
+          "previousWeight": 1.2361,
+          "note": "Provider-only quantities; original AMC disclosure and independent quantity corroboration pending. Direction withheld."
+        },
+        {
+          "key": "INE044A01036",
+          "name": "Sun Pharmaceutical Industries Limited",
+          "previousQuantity": 3445,
+          "currentQuantity": 3445,
+          "weight": 1.2627,
+          "previousWeight": 1.2972,
+          "note": "Provider-only quantities; original AMC disclosure and independent quantity corroboration pending. Direction withheld."
+        },
+        {
+          "key": "INE481G01011",
+          "name": "UltraTech Cement Limited",
+          "previousQuantity": 466,
+          "currentQuantity": 530,
+          "weight": 1.2069,
+          "previousWeight": 1.0582,
+          "note": "Provider-only quantities; original AMC disclosure and independent quantity corroboration pending. Direction withheld."
+        },
+        {
+          "key": "INE917I01010",
+          "name": "Bajaj Auto Limited",
+          "previousQuantity": 545,
+          "currentQuantity": 545,
+          "weight": 1.163,
+          "previousWeight": 1.2284,
+          "note": "Provider-only quantities; original AMC disclosure and independent quantity corroboration pending. Direction withheld."
+        },
+        {
+          "key": "INE053A01029",
+          "name": "The Indian Hotels Company Limited",
+          "previousQuantity": 6308,
+          "currentQuantity": 6900,
+          "weight": 1.1547,
+          "previousWeight": 0.9527,
+          "note": "Provider-only quantities; original AMC disclosure and independent quantity corroboration pending. Direction withheld."
+        },
+        {
+          "key": "INE388Y01029",
+          "name": "FSN E-Commerce Ventures Limited",
+          "previousQuantity": 15866,
+          "currentQuantity": 15866,
+          "weight": 1.1428,
+          "previousWeight": 1.0524,
+          "note": "Provider-only quantities; original AMC disclosure and independent quantity corroboration pending. Direction withheld."
+        },
+        {
+          "key": "INE982J01020",
+          "name": "One 97 Communications Limited",
+          "previousQuantity": 3372,
+          "currentQuantity": 3372,
+          "weight": 1.1362,
+          "previousWeight": 1.1728,
+          "note": "Provider-only quantities; original AMC disclosure and independent quantity corroboration pending. Direction withheld."
+        },
+        {
+          "key": "INE154A01025",
+          "name": "ITC Limited",
+          "previousQuantity": 25022,
+          "currentQuantity": 19428,
+          "weight": 1.0639,
+          "previousWeight": 1.3627,
+          "note": "Provider-only quantities; original AMC disclosure and independent quantity corroboration pending. Direction withheld."
+        },
+        {
+          "key": "INE494B01023",
+          "name": "TVS Motor Company Limited",
+          "previousQuantity": 1216,
+          "currentQuantity": 1216,
+          "weight": 1.0518,
+          "previousWeight": 1.0349,
+          "note": "Provider-only quantities; original AMC disclosure and independent quantity corroboration pending. Direction withheld."
+        },
+        {
+          "key": "INE467B01029",
+          "name": "Tata Consultancy Services Limited",
+          "previousQuantity": 3009,
+          "currentQuantity": 2030,
+          "weight": 1.0474,
+          "previousWeight": 1.2789,
+          "note": "Provider-only quantities; original AMC disclosure and independent quantity corroboration pending. Direction withheld."
+        },
+        {
+          "key": "INE721A01047",
+          "name": "Shriram Finance Limited",
+          "previousQuantity": 6014,
+          "currentQuantity": 6014,
+          "weight": 1.0207,
+          "previousWeight": 1.225,
+          "note": "Provider-only quantities; original AMC disclosure and independent quantity corroboration pending. Direction withheld."
+        },
+        {
+          "key": "INE646L01027",
+          "name": "InterGlobe Aviation Limited",
+          "previousQuantity": 1000,
+          "currentQuantity": 1000,
+          "weight": 1.0057,
+          "previousWeight": 1.0331,
+          "note": "Provider-only quantities; original AMC disclosure and independent quantity corroboration pending. Direction withheld."
+        },
+        {
+          "key": "INE171A01029",
+          "name": "The Federal Bank  Limited",
+          "previousQuantity": 13664,
+          "currentQuantity": 13664,
+          "weight": 0.957,
+          "previousWeight": 0.8989,
+          "note": "Provider-only quantities; original AMC disclosure and independent quantity corroboration pending. Direction withheld."
+        },
+        {
+          "key": "INE192A01025",
+          "name": "Tata Consumer Products Limited",
+          "previousQuantity": 4468,
+          "currentQuantity": 4468,
+          "weight": 0.9451,
+          "previousWeight": 0.8793,
+          "note": "Provider-only quantities; original AMC disclosure and independent quantity corroboration pending. Direction withheld."
+        },
+        {
+          "key": "INE030A01027",
+          "name": "Hindustan Unilever Limited",
+          "previousQuantity": 2387,
+          "currentQuantity": 2387,
+          "weight": 0.9177,
+          "previousWeight": 0.9297,
+          "note": "Provider-only quantities; original AMC disclosure and independent quantity corroboration pending. Direction withheld."
+        },
+        {
+          "key": "INE048G01026",
+          "name": "Navin Fluorine International Limited",
+          "previousQuantity": 512,
+          "currentQuantity": 512,
+          "weight": 0.9163,
+          "previousWeight": 0.875,
+          "note": "Provider-only quantities; original AMC disclosure and independent quantity corroboration pending. Direction withheld."
+        },
+        {
+          "key": "INE361B01024",
+          "name": "Divi's Laboratories Limited",
+          "previousQuantity": 452,
+          "currentQuantity": 452,
+          "weight": 0.9114,
+          "previousWeight": 0.8705,
+          "note": "Provider-only quantities; original AMC disclosure and independent quantity corroboration pending. Direction withheld."
+        },
+        {
+          "key": "INE00FF01025",
+          "name": "Acutaas Chemicals Limited",
+          "previousQuantity": 901,
+          "currentQuantity": 1081,
+          "weight": 0.8923,
+          "previousWeight": 0.6124,
+          "note": "Provider-only quantities; original AMC disclosure and independent quantity corroboration pending. Direction withheld."
+        },
+        {
+          "key": "INE465A01025",
+          "name": "Bharat Forge Limited",
+          "previousQuantity": 2415,
+          "currentQuantity": 2415,
+          "weight": 0.8564,
+          "previousWeight": 0.9641,
+          "note": "Provider-only quantities; original AMC disclosure and independent quantity corroboration pending. Direction withheld."
+        },
+        {
+          "key": "INE733E01010",
+          "name": "NTPC Limited",
+          "previousQuantity": 13099,
+          "currentQuantity": 13099,
+          "weight": 0.8541,
+          "previousWeight": 0.8763,
+          "note": "Provider-only quantities; original AMC disclosure and independent quantity corroboration pending. Direction withheld."
+        },
+        {
+          "key": "INE343H01029",
+          "name": "Solar Industries India Limited",
+          "previousQuantity": 169,
+          "currentQuantity": 218,
+          "weight": 0.845,
+          "previousWeight": 0.6901,
+          "note": "Provider-only quantities; original AMC disclosure and independent quantity corroboration pending. Direction withheld."
+        },
+        {
+          "key": "INE262H01021",
+          "name": "PERSISTENT SYSTEMS LTD",
+          "previousQuantity": 676,
+          "currentQuantity": 676,
+          "weight": 0.843,
+          "previousWeight": 0.7397,
+          "note": "Provider-only quantities; original AMC disclosure and independent quantity corroboration pending. Direction withheld."
+        },
+        {
+          "key": "INE047A01021",
+          "name": "Grasim Industries Limited",
+          "previousQuantity": 1353,
+          "currentQuantity": 1353,
+          "weight": 0.8317,
+          "previousWeight": 0.8587,
+          "note": "Provider-only quantities; original AMC disclosure and independent quantity corroboration pending. Direction withheld."
+        },
+        {
+          "key": "INE081A01020",
+          "name": "Tata Steel Limited",
+          "previousQuantity": 23849,
+          "currentQuantity": 23849,
+          "weight": 0.8241,
+          "previousWeight": 0.911,
+          "note": "Provider-only quantities; original AMC disclosure and independent quantity corroboration pending. Direction withheld."
+        },
+        {
+          "key": "INE196A01026",
+          "name": "Marico Limited",
+          "previousQuantity": 4701,
+          "currentQuantity": 4701,
+          "weight": 0.7754,
+          "previousWeight": 0.7659,
+          "note": "Provider-only quantities; original AMC disclosure and independent quantity corroboration pending. Direction withheld."
+        },
+        {
+          "key": "INE849A01020",
+          "name": "Trent Limited",
+          "previousQuantity": 1206,
+          "currentQuantity": 1206,
+          "weight": 0.7503,
+          "previousWeight": 0.6553,
+          "note": "Provider-only quantities; original AMC disclosure and independent quantity corroboration pending. Direction withheld."
+        },
+        {
+          "key": "INE208A01029",
+          "name": "Ashok Leyland Limited",
+          "previousQuantity": 24725,
+          "currentQuantity": 24725,
+          "weight": 0.7383,
+          "previousWeight": 0.7902,
+          "note": "Provider-only quantities; original AMC disclosure and independent quantity corroboration pending. Direction withheld."
+        },
+        {
+          "key": "INE205A01025",
+          "name": "Vedanta Limited",
+          "previousQuantity": 14952,
+          "currentQuantity": 14952,
+          "weight": 0.7334,
+          "previousWeight": 0.8027,
+          "note": "Provider-only quantities; original AMC disclosure and independent quantity corroboration pending. Direction withheld."
+        },
+        {
+          "key": "INE585B01010",
+          "name": "Maruti Suzuki India Limited",
+          "previousQuantity": 306,
+          "currentQuantity": 306,
+          "weight": 0.719,
+          "previousWeight": 0.759,
+          "note": "Provider-only quantities; original AMC disclosure and independent quantity corroboration pending. Direction withheld."
+        },
+        {
+          "key": "INE944F01028",
+          "name": "Radico Khaitan Limited",
+          "previousQuantity": 601,
+          "currentQuantity": 831,
+          "weight": 0.7002,
+          "previousWeight": 0.5439,
+          "note": "Provider-only quantities; original AMC disclosure and independent quantity corroboration pending. Direction withheld."
+        },
+        {
+          "key": "INE570L01029",
+          "name": "Sai Life Sciences Ltd.",
+          "previousQuantity": 1532,
+          "currentQuantity": 2175,
+          "weight": 0.6984,
+          "previousWeight": 0.4841,
+          "note": "Provider-only quantities; original AMC disclosure and independent quantity corroboration pending. Direction withheld."
+        },
+        {
+          "key": "INE0DYJ01015",
+          "name": "SYRMA SGS TECHNOLOGY LIMITED",
+          "previousQuantity": 1443,
+          "currentQuantity": 2024,
+          "weight": 0.6782,
+          "previousWeight": 0.5333,
+          "note": "Provider-only quantities; original AMC disclosure and independent quantity corroboration pending. Direction withheld."
+        },
+        {
+          "key": "INE066A01021",
+          "name": "Eicher Motors Limited",
+          "previousQuantity": 450,
+          "currentQuantity": 450,
+          "weight": 0.6699,
+          "previousWeight": 0.6669,
+          "note": "Provider-only quantities; original AMC disclosure and independent quantity corroboration pending. Direction withheld."
+        },
+        {
+          "key": "INE095A01012",
+          "name": "IndusInd Bank Limited",
+          "previousQuantity": 3857,
+          "currentQuantity": 3857,
+          "weight": 0.6664,
+          "previousWeight": 0.7206,
+          "note": "Provider-only quantities; original AMC disclosure and independent quantity corroboration pending. Direction withheld."
+        },
+        {
+          "key": "INE021A01026",
+          "name": "Asian Paints Limited",
+          "previousQuantity": 1375,
+          "currentQuantity": 1375,
+          "weight": 0.6577,
+          "previousWeight": 0.6847,
+          "note": "Provider-only quantities; original AMC disclosure and independent quantity corroboration pending. Direction withheld."
+        },
+        {
+          "key": "INE211B01039",
+          "name": "The Phoenix Mills Limited",
+          "previousQuantity": 1625,
+          "currentQuantity": 1625,
+          "weight": 0.6557,
+          "previousWeight": 0.6517,
+          "note": "Provider-only quantities; original AMC disclosure and independent quantity corroboration pending. Direction withheld."
+        },
+        {
+          "key": "INE326A01037",
+          "name": "Lupin Limited",
+          "previousQuantity": 1566,
+          "currentQuantity": 1566,
+          "weight": 0.6493,
+          "previousWeight": 0.659,
+          "note": "Provider-only quantities; original AMC disclosure and independent quantity corroboration pending. Direction withheld."
+        },
+        {
+          "key": "INE1TAE01010",
+          "name": "Tata Motors Limited",
+          "previousQuantity": 7823,
+          "currentQuantity": 7823,
+          "weight": 0.6393,
+          "previousWeight": 0.6837,
+          "note": "Provider-only quantities; original AMC disclosure and independent quantity corroboration pending. Direction withheld."
+        },
+        {
+          "key": "INE814H01029",
+          "name": "Adani Power Limited",
+          "previousQuantity": 16288,
+          "currentQuantity": 16288,
+          "weight": 0.6347,
+          "previousWeight": 0.6887,
+          "note": "Provider-only quantities; original AMC disclosure and independent quantity corroboration pending. Direction withheld."
+        },
+        {
+          "key": "INE038A01020",
+          "name": "Hindalco Industries Limited",
+          "previousQuantity": 3470,
+          "currentQuantity": 3470,
+          "weight": 0.633,
+          "previousWeight": 0.6774,
+          "note": "Provider-only quantities; original AMC disclosure and independent quantity corroboration pending. Direction withheld."
+        },
+        {
+          "key": "INE949L01017",
+          "name": "AU Small Finance Bank Limited",
+          "previousQuantity": 3507,
+          "currentQuantity": 3507,
+          "weight": 0.6247,
+          "previousWeight": 0.7344,
+          "note": "Provider-only quantities; original AMC disclosure and independent quantity corroboration pending. Direction withheld."
+        },
+        {
+          "key": "INE364U01010",
+          "name": "Adani Green Energy Limited",
+          "previousQuantity": 1748,
+          "currentQuantity": 2299,
+          "weight": 0.6156,
+          "previousWeight": 0.463,
+          "note": "Provider-only quantities; original AMC disclosure and independent quantity corroboration pending. Direction withheld."
+        },
+        {
+          "key": "INE019A01038",
+          "name": "JSW Steel Limited",
+          "previousQuantity": 2388,
+          "currentQuantity": 2388,
+          "weight": 0.6135,
+          "previousWeight": 0.6204,
+          "note": "Provider-only quantities; original AMC disclosure and independent quantity corroboration pending. Direction withheld."
+        },
+        {
+          "key": "INE158A01026",
+          "name": "Hero MotoCorp Limited",
+          "previousQuantity": 574,
+          "currentQuantity": 574,
+          "weight": 0.6115,
+          "previousWeight": 0.6236,
+          "note": "Provider-only quantities; original AMC disclosure and independent quantity corroboration pending. Direction withheld."
+        },
+        {
+          "key": "INE263A01024",
+          "name": "Bharat Electronics Limited",
+          "previousQuantity": 7865,
+          "currentQuantity": 7865,
+          "weight": 0.5998,
+          "previousWeight": 0.633,
+          "note": "Provider-only quantities; original AMC disclosure and independent quantity corroboration pending. Direction withheld."
+        },
+        {
+          "key": "INE931S01010",
+          "name": "Adani Energy Solutions Limited",
+          "previousQuantity": 1599,
+          "currentQuantity": 2140,
+          "weight": 0.5954,
+          "previousWeight": 0.4357,
+          "note": "Provider-only quantities; original AMC disclosure and independent quantity corroboration pending. Direction withheld."
+        },
+        {
+          "key": "INE239A01024",
+          "name": "Nestle India Limited",
+          "previousQuantity": 2454,
+          "currentQuantity": 2454,
+          "weight": 0.5905,
+          "previousWeight": 0.6663,
+          "note": "Provider-only quantities; original AMC disclosure and independent quantity corroboration pending. Direction withheld."
+        },
+        {
+          "key": "INE423A01024",
+          "name": "Adani Enterprises Limited",
+          "previousQuantity": 807,
+          "currentQuantity": 1088,
+          "weight": 0.5786,
+          "previousWeight": 0.4857,
+          "note": "Provider-only quantities; original AMC disclosure and independent quantity corroboration pending. Direction withheld."
+        },
+        {
+          "key": "INE685A01028",
+          "name": "Torrent Pharmaceuticals Limited",
+          "previousQuantity": 588,
+          "currentQuantity": 588,
+          "weight": 0.5593,
+          "previousWeight": 0.585,
+          "note": "Provider-only quantities; original AMC disclosure and independent quantity corroboration pending. Direction withheld."
+        },
+        {
+          "key": "INE670K01029",
+          "name": "Lodha Developers Limited",
+          "previousQuantity": 2516,
+          "currentQuantity": 2516,
+          "weight": 0.5379,
+          "previousWeight": 0.5919,
+          "note": "Provider-only quantities; original AMC disclosure and independent quantity corroboration pending. Direction withheld."
+        },
+        {
+          "key": "INE956O01016",
+          "name": "Lenskart Solutions Limited",
+          "previousQuantity": 3752,
+          "currentQuantity": 3752,
+          "weight": 0.5246,
+          "previousWeight": 0.5328,
+          "note": "Provider-only quantities; original AMC disclosure and independent quantity corroboration pending. Direction withheld."
+        },
+        {
+          "key": "INE600L01024",
+          "name": "Dr. Lal Path Labs Ltd.",
+          "previousQuantity": 1327,
+          "currentQuantity": 1327,
+          "weight": 0.5216,
+          "previousWeight": 0.5465,
+          "note": "Provider-only quantities; original AMC disclosure and independent quantity corroboration pending. Direction withheld."
+        },
+        {
+          "key": "INE073K01018",
+          "name": "Sona BLW Precision Forgings Limited",
+          "previousQuantity": 2829,
+          "currentQuantity": 2829,
+          "weight": 0.5194,
+          "previousWeight": 0.4867,
+          "note": "Provider-only quantities; original AMC disclosure and independent quantity corroboration pending. Direction withheld."
+        },
+        {
+          "key": "INE121A01024",
+          "name": "Cholamandalam Invest & Finance Co Ltd",
+          "previousQuantity": 1580,
+          "currentQuantity": 1580,
+          "weight": 0.5167,
+          "previousWeight": 0.5305,
+          "note": "Provider-only quantities; original AMC disclosure and independent quantity corroboration pending. Direction withheld."
+        },
+        {
+          "key": "INE752E01010",
+          "name": "Power Grid Corporation of India Limited",
+          "previousQuantity": 9326,
+          "currentQuantity": 9326,
+          "weight": 0.5095,
+          "previousWeight": 0.5036,
+          "note": "Provider-only quantities; original AMC disclosure and independent quantity corroboration pending. Direction withheld."
+        },
+        {
+          "key": "INE208C01025",
+          "name": "AEGIS LOGISTICS LTD",
+          "previousQuantity": 1851,
+          "currentQuantity": 2253,
+          "weight": 0.5094,
+          "previousWeight": 0.5295,
+          "note": "Provider-only quantities; original AMC disclosure and independent quantity corroboration pending. Direction withheld."
+        },
+        {
+          "key": "INE819V01029",
+          "name": "Aditya Infotech Limited",
+          "previousQuantity": 647,
+          "currentQuantity": 647,
+          "weight": 0.5084,
+          "previousWeight": 0.5158,
+          "note": "Provider-only quantities; original AMC disclosure and independent quantity corroboration pending. Direction withheld."
+        },
+        {
+          "key": "INE591G01025",
+          "name": "Coforge Limited",
+          "previousQuantity": 1686,
+          "currentQuantity": 1198,
+          "weight": 0.5051,
+          "previousWeight": 0.6112,
+          "note": "Provider-only quantities; original AMC disclosure and independent quantity corroboration pending. Direction withheld."
+        },
+        {
+          "key": "INE976I01016",
+          "name": "Tata Capital Ltd",
+          "previousQuantity": 7536,
+          "currentQuantity": 7536,
+          "weight": 0.4971,
+          "previousWeight": 0.5123,
+          "note": "Provider-only quantities; original AMC disclosure and independent quantity corroboration pending. Direction withheld."
+        },
+        {
+          "key": "INE043W01024",
+          "name": "VIJAYA DIAGNOSTIC CENTRE LIMITED",
+          "previousQuantity": 1628,
+          "currentQuantity": 1628,
+          "weight": 0.4853,
+          "previousWeight": 0.4851,
+          "note": "Provider-only quantities; original AMC disclosure and independent quantity corroboration pending. Direction withheld."
+        },
+        {
+          "key": "INE061F01013",
+          "name": "Fortis Healthcare Limited",
+          "previousQuantity": 3032,
+          "currentQuantity": 3032,
+          "weight": 0.4802,
+          "previousWeight": 0.4839,
+          "note": "Provider-only quantities; original AMC disclosure and independent quantity corroboration pending. Direction withheld."
+        },
+        {
+          "key": "INE622W01025",
+          "name": "ACME Solar Holdings Ltd.",
+          "previousQuantity": 4017,
+          "currentQuantity": 5705,
+          "weight": 0.4761,
+          "previousWeight": 0.3655,
+          "note": "Provider-only quantities; original AMC disclosure and independent quantity corroboration pending. Direction withheld."
+        },
+        {
+          "key": "INE522F01014",
+          "name": "Coal India Limited",
+          "previousQuantity": 5780,
+          "currentQuantity": 5780,
+          "weight": 0.4636,
+          "previousWeight": 0.5092,
+          "note": "Provider-only quantities; original AMC disclosure and independent quantity corroboration pending. Direction withheld."
+        },
+        {
+          "key": "INE121J01017",
+          "name": "Indus Towers Limited",
+          "previousQuantity": 5867,
+          "currentQuantity": 5867,
+          "weight": 0.4576,
+          "previousWeight": 0.4538,
+          "note": "Provider-only quantities; original AMC disclosure and independent quantity corroboration pending. Direction withheld."
+        },
+        {
+          "key": "INE794A01010",
+          "name": "Neuland Laboratories Ltd",
+          "previousQuantity": 112,
+          "currentQuantity": 112,
+          "weight": 0.4549,
+          "previousWeight": 0.4956,
+          "note": "Provider-only quantities; original AMC disclosure and independent quantity corroboration pending. Direction withheld."
+        },
+        {
+          "key": "INE318A01026",
+          "name": "Pidilite Industries Limited",
+          "previousQuantity": 1501,
+          "currentQuantity": 1501,
+          "weight": 0.4523,
+          "previousWeight": 0.4558,
+          "note": "Provider-only quantities; original AMC disclosure and independent quantity corroboration pending. Direction withheld."
+        },
+        {
+          "key": "INE758E01017",
+          "name": "Jio Financial Services Limited",
+          "previousQuantity": 10641,
+          "currentQuantity": 10641,
+          "weight": 0.4487,
+          "previousWeight": 0.4784,
+          "note": "Provider-only quantities; original AMC disclosure and independent quantity corroboration pending. Direction withheld."
+        },
+        {
+          "key": "INE200A01026",
+          "name": "GE Vernova T&D India Limited",
+          "previousQuantity": 541,
+          "currentQuantity": 541,
+          "weight": 0.4484,
+          "previousWeight": 0.4711,
+          "note": "Provider-only quantities; original AMC disclosure and independent quantity corroboration pending. Direction withheld."
+        },
+        {
+          "key": "INE406A01037",
+          "name": "Aurobindo Pharma Limited",
+          "previousQuantity": 1272,
+          "currentQuantity": 1272,
+          "weight": 0.441,
+          "previousWeight": 0.4408,
+          "note": "Provider-only quantities; original AMC disclosure and independent quantity corroboration pending. Direction withheld."
+        },
+        {
+          "key": "INE881D01027",
+          "name": "Oracle Financial Services Software",
+          "previousQuantity": 212,
+          "currentQuantity": 212,
+          "weight": 0.4369,
+          "previousWeight": 0.4671,
+          "note": "Provider-only quantities; original AMC disclosure and independent quantity corroboration pending. Direction withheld."
+        },
+        {
+          "key": "INE860A01027",
+          "name": "HCL Technologies Limited",
+          "previousQuantity": 2159,
+          "currentQuantity": 1471,
+          "weight": 0.4331,
+          "previousWeight": 0.5504,
+          "note": "Provider-only quantities; original AMC disclosure and independent quantity corroboration pending. Direction withheld."
+        },
+        {
+          "key": "INE669C01036",
+          "name": "Tech Mahindra Limited",
+          "previousQuantity": 1165,
+          "currentQuantity": 1165,
+          "weight": 0.4301,
+          "previousWeight": 0.368,
+          "note": "Provider-only quantities; original AMC disclosure and independent quantity corroboration pending. Direction withheld."
+        },
+        {
+          "key": "INE07Y701011",
+          "name": "Hitachi Energy India Limited",
+          "previousQuantity": 75,
+          "currentQuantity": 75,
+          "weight": 0.421,
+          "previousWeight": 0.4762,
+          "note": "Provider-only quantities; original AMC disclosure and independent quantity corroboration pending. Direction withheld."
+        },
+        {
+          "key": "INE066F01020",
+          "name": "Hindustan Aeronautics Limited",
+          "previousQuantity": 418,
+          "currentQuantity": 418,
+          "weight": 0.4183,
+          "previousWeight": 0.4044,
+          "note": "Provider-only quantities; original AMC disclosure and independent quantity corroboration pending. Direction withheld."
+        },
+        {
+          "key": "INE918I01026",
+          "name": "Bajaj Finserv Limited",
+          "previousQuantity": 1203,
+          "currentQuantity": 1203,
+          "weight": 0.4136,
+          "previousWeight": 0.4316,
+          "note": "Provider-only quantities; original AMC disclosure and independent quantity corroboration pending. Direction withheld."
+        },
+        {
+          "key": "INE267A01025",
+          "name": "Hindustan Zinc Limited",
+          "previousQuantity": 3912,
+          "currentQuantity": 3912,
+          "weight": 0.408,
+          "previousWeight": 0.4589,
+          "note": "Provider-only quantities; original AMC disclosure and independent quantity corroboration pending. Direction withheld."
+        },
+        {
+          "key": "INE437A01024",
+          "name": "Apollo Hospitals Enterprise Limited",
+          "previousQuantity": 219,
+          "currentQuantity": 219,
+          "weight": 0.3815,
+          "previousWeight": 0.3707,
+          "note": "Provider-only quantities; original AMC disclosure and independent quantity corroboration pending. Direction withheld."
+        },
+        {
+          "key": "INE0YD401026",
+          "name": "Jain Resource Recycling Limited",
+          "previousQuantity": 6739,
+          "currentQuantity": 6739,
+          "weight": 0.3751,
+          "previousWeight": 0.4084,
+          "note": "Provider-only quantities; original AMC disclosure and independent quantity corroboration pending. Direction withheld."
+        },
+        {
+          "key": "INE1C6T01020",
+          "name": "Emmvee Photovoltaic Power Limited",
+          "previousQuantity": 7658,
+          "currentQuantity": 7658,
+          "weight": 0.3616,
+          "previousWeight": 0.5014,
+          "note": "Provider-only quantities; original AMC disclosure and independent quantity corroboration pending. Direction withheld."
+        },
+        {
+          "key": "INE216A01030",
+          "name": "Britannia Industries Limited",
+          "previousQuantity": 365,
+          "currentQuantity": 365,
+          "weight": 0.3492,
+          "previousWeight": 0.3654,
+          "note": "Provider-only quantities; original AMC disclosure and independent quantity corroboration pending. Direction withheld."
+        },
+        {
+          "key": "INE040H01021",
+          "name": "Suzlon Energy Limited",
+          "previousQuantity": 49768,
+          "currentQuantity": 49768,
+          "weight": 0.3479,
+          "previousWeight": 0.4074,
+          "note": "Provider-only quantities; original AMC disclosure and independent quantity corroboration pending. Direction withheld."
+        },
+        {
+          "key": "INE00LO01017",
+          "name": "CRAFTSMAN AUTOMATION LIMITED",
+          "previousQuantity": 149,
+          "currentQuantity": 149,
+          "weight": 0.3155,
+          "previousWeight": 0.3217,
+          "note": "Provider-only quantities; original AMC disclosure and independent quantity corroboration pending. Direction withheld."
+        },
+        {
+          "key": "INE0NT901020",
+          "name": "Netweb Technologies India Limited",
+          "previousQuantity": 340,
+          "currentQuantity": 340,
+          "weight": 0.2925,
+          "previousWeight": 0.3205,
+          "note": "Provider-only quantities; original AMC disclosure and independent quantity corroboration pending. Direction withheld."
+        },
+        {
+          "key": "INE702C01027",
+          "name": "APL Apollo Tubes Limited",
+          "previousQuantity": null,
+          "currentQuantity": 538,
+          "weight": 0.2402,
+          "previousWeight": null,
+          "note": "Provider-only quantities; original AMC disclosure and independent quantity corroboration pending. Direction withheld."
+        },
+        {
+          "key": "INE036D01028",
+          "name": "Karur Vysya Bank Limited",
+          "previousQuantity": null,
+          "currentQuantity": 2692,
+          "weight": 0.1976,
+          "previousWeight": null,
+          "note": "Provider-only quantities; original AMC disclosure and independent quantity corroboration pending. Direction withheld."
+        },
+        {
+          "key": "INE491A01021",
+          "name": "City Union Bank Limited",
+          "previousQuantity": null,
+          "currentQuantity": 3203,
+          "weight": 0.1415,
+          "previousWeight": null,
+          "note": "Provider-only quantities; original AMC disclosure and independent quantity corroboration pending. Direction withheld."
+        }
+      ],
+      "sources": [
+        {
+          "label": "October 2026 published portfolio",
+          "url": "https://decryptmutualfunds.com/fund-houses/groww/elss-tax-saver-fund",
+          "scope": "October provider quantities and allocations; not independently corroborated."
+        },
+        {
+          "label": "Groww AMC scheme page · identity reference only",
+          "url": "https://www.growwmf.in/mutual-funds/groww-elss-tax-saver-fund-direct-growth",
+          "scope": "Scheme identity reference only; no portfolio corroboration."
+        }
+      ],
+      "notes": [
+        "Prior quantities are explicit provider values; missing values remain null. Direction withheld pending original disclosures and independent checks."
+      ]
+    }
+  ],
+  "audit": [
+    {
+      "id": "groww-multi",
+      "category": "Multicap",
+      "scheme": "Groww Multicap Fund",
+      "url": "https://decryptmutualfunds.com/fund-houses/groww/multicap-fund",
+      "currentPositions": 78,
+      "displayed": 60,
+      "totalEquityWeight": 92.15339999999998
+    },
+    {
+      "id": "groww-large",
+      "category": "Large Cap",
+      "scheme": "Groww Large Cap Fund",
+      "url": "https://decryptmutualfunds.com/fund-houses/groww/large-cap-fund",
+      "currentPositions": 56,
+      "displayed": 56,
+      "totalEquityWeight": 97.16239999999995
+    },
+    {
+      "id": "groww-value",
+      "category": "Value",
+      "scheme": "Groww Value Fund",
+      "url": "https://decryptmutualfunds.com/fund-houses/groww/value-fund",
+      "currentPositions": 54,
+      "displayed": 54,
+      "totalEquityWeight": 88.17580000000002
+    },
+    {
+      "id": "groww-elss",
+      "category": "ELSS Tax Saver",
+      "scheme": "Groww ELSS Tax Saver Fund",
+      "url": "https://decryptmutualfunds.com/fund-houses/groww/elss-tax-saver-fund",
+      "currentPositions": 102,
+      "displayed": 60,
+      "totalEquityWeight": 93.77039999999997
+    }
+  ]
+}
